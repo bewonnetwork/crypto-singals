@@ -1,9 +1,28 @@
 {
  "interval": "1h",
- "coins": ["BTC", "ETH", "BNB", "SOL", "XRP", "ADA", "DOGE", "AVAX", "LINK", "DOT"],
- "stats": {"win": 0, "loss": 0, "tp2": 0, "expired": 0},
+ "coins": [
+  "BTC",
+  "ETH",
+  "BNB",
+  "SOL",
+  "XRP",
+  "ADA",
+  "DOGE",
+  "AVAX",
+  "LINK",
+  "DOT"
+ ],
+ "stats": {
+  "win": 0,
+  "loss": 0,
+  "tp2": 0,
+  "expired": 0
+ },
  "open": [],
  "history": [],
- "fear_greed": null,
- "updated": null
+ "fear_greed": {
+  "value": 70,
+  "label": "Greed"
+ },
+ "updated": "2026-09-27T13:49:56+00:00"
 }
