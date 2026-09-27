@@ -191,6 +191,15 @@ def check_signal(df):
 
 
 # ----------------------------- ৩. সিগনালের ফলাফল ট্র্যাক করা -----------------------------
+def _close(t, result, when, state):
+    """বন্ধ হওয়া সিগনাল ইতিহাসে রাখে (ওয়েবসাইটে দেখানোর জন্য)"""
+    state.setdefault("history", []).insert(0, {
+        "coin": t["coin"], "side": t["side"], "entry": t["entry"],
+        "sl": t.get("sl0", t["sl"]), "tp1": t["tp1"], "tp2": t["tp2"],
+        "opened": t.get("opened", ""), "closed": when, "result": result})
+    del state["history"][300:]
+
+
 def update_open_trades(coin, df, state):
     """খোলা সিগনালগুলো TP1 / TP2 / SL হিট করল কিনা দেখে; মেসেজ লিস্ট ফেরত দেয়"""
     msgs, still_open = [], []
@@ -209,9 +218,11 @@ def update_open_trades(coin, df, state):
             if hit_sl:   # একই ক্যান্ডেলে দুটোই হলে সাবধানে SL ধরছি
                 if t["tp1_hit"]:
                     msgs.append(f"🟡 {coin} {t['side']}: TP1 এর পর দাম Entry তে ফিরে এসেছে — লাভ লক (Breakeven)")
+                    _close(t, "TP1", c.time.isoformat(), state)
                 else:
                     state["stats"]["loss"] += 1
                     msgs.append(f"❌ {coin} {t['side']}: Stop Loss হিট ({fmt(t['sl'])})")
+                    _close(t, "SL", c.time.isoformat(), state)
                 closed = True
                 break
             if hit_tp2:
@@ -219,6 +230,7 @@ def update_open_trades(coin, df, state):
                     state["stats"]["win"] += 1
                 state["stats"]["tp2"] += 1
                 msgs.append(f"🎯🎯 {coin} {t['side']}: TP2 হিট! ({fmt(t['tp2'])})")
+                _close(t, "TP2", c.time.isoformat(), state)
                 closed = True
                 break
             if hit_tp1 and not t["tp1_hit"]:
@@ -230,6 +242,7 @@ def update_open_trades(coin, df, state):
                 if not t["tp1_hit"]:
                     state["stats"]["expired"] += 1
                 msgs.append(f"⌛ {coin} {t['side']}: সময় শেষ, সিগনাল বন্ধ")
+                _close(t, "TP1" if t["tp1_hit"] else "EXPIRED", c.time.isoformat(), state)
                 closed = True
                 break
         if len(after):
@@ -299,11 +312,40 @@ def load_state():
 def save_state(state):
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=1, ensure_ascii=False)
+    export_site(state)
+
+
+SITE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "data", "signals.json")
+
+
+def export_site(state):
+    """ওয়েবসাইটের জন্য docs/data/signals.json বানায় (কিছু বদলালে তবেই)"""
+    keep = ("coin", "side", "entry", "sl", "tp1", "tp2", "tp1_hit", "opened", "rsi")
+    payload = {
+        "interval": INTERVAL, "coins": COINS, "stats": state["stats"],
+        "open": [{k: t.get(k) for k in keep} for t in state["open"]],
+        "history": state.get("history", [])[:200],
+        "fear_greed": state.get("fear_greed"),
+    }
+    try:
+        with open(SITE_FILE, encoding="utf-8") as f:
+            old = json.load(f)
+        old.pop("updated", None)
+        if old == json.loads(json.dumps(payload)):
+            return
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    payload["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    os.makedirs(os.path.dirname(SITE_FILE), exist_ok=True)
+    with open(SITE_FILE, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=1)
 
 
 # ----------------------------- ৬. দৈনিক সারাংশ -----------------------------
 def daily_digest(frames, state):
     fg, fg_txt = get_fear_greed()
+    if fg is not None:
+        state["fear_greed"] = {"value": fg, "label": fg_txt}
     lines = [f"📊 <b>Daily Market Digest</b> — {datetime.now(timezone.utc):%d %b %Y}\n"]
     for coin, df in frames.items():
         if len(df) > 24:
@@ -343,7 +385,8 @@ def run_once(force_digest=False):
                 state["last_signal"][coin] = sig["candle"]
                 state["open"].append({"coin": coin, "side": sig["side"], "entry": sig["entry"],
                                       "sl": sig["sl"], "tp1": sig["tp1"], "tp2": sig["tp2"],
-                                      "tp1_hit": False, "age": 0, "checked_until": sig["candle"]})
+                                      "tp1_hit": False, "age": 0, "checked_until": sig["candle"],
+                                      "sl0": sig["sl"], "opened": sig["candle"], "rsi": sig["rsi"]})
                 print(f"sent {sig['side']} {coin} (data: {source})")
         time.sleep(0.3)
 

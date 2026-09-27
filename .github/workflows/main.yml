@@ -1,18 +1,19 @@
+# এই ফাইল GitHub কে বলে: প্রতি ১৫ মিনিটে বট একবার চালাও (সম্পূর্ণ ফ্রি)
 name: Signal Bot
 
 on:
   schedule:
-    - cron: "3,18,33,48 * * * *"
-  workflow_dispatch:
+    - cron: "3,18,33,48 * * * *"     # প্রতি ১৫ মিনিটে (UTC সময়)
+  workflow_dispatch:                  # হাতে চালানোর জন্য "Run workflow" বাটন
     inputs:
       mode:
-        description: "test / once / digest"
+        description: "test = টেস্ট মেসেজ, once = সিগনাল চেক, digest = দৈনিক সারাংশ"
         type: choice
         options: [test, once, digest]
         default: test
 
 permissions:
-  contents: write
+  contents: write                     # state.json সেভ করার অনুমতি
 
 concurrency:
   group: signal-bot
@@ -38,10 +39,10 @@ jobs:
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: python signal_bot.py --${{ github.event.inputs.mode || 'once' }}
 
-      - name: Save memory
+      - name: Save memory (state.json)
         if: always()
         run: |
           git config user.name "signal-bot"
           git config user.email "signal-bot@users.noreply.github.com"
-          git add state.json || true
+          git add state.json docs/data/signals.json || true
           git diff --cached --quiet || (git commit -m "bot state update" && git pull --rebase && git push)

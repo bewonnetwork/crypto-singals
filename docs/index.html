@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BEWON Signals — ফ্রি ক্রিপ্টো সিগনাল</title>
+<meta name="description" content="ফ্রি, অটোমেটেড ক্রিপ্টো ট্রেডিং সিগনাল। লাইভ মার্কেট, চার্ট, সিগনালের পুরো ইতিহাস ও Win rate। আর্থিক পরামর্শ নয়।">
+<meta property="og:title" content="BEWON Signals — ফ্রি ক্রিপ্টো সিগনাল">
+<meta property="og:description" content="লাইভ মার্কেট, চার্ট আর সৎ Win rate সহ ফ্রি ক্রিপ্টো সিগনাল।">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F2B33D'/%3E%3Cpath d='M9 22V13M16 22V8M23 22V16' stroke='%23111' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Hind+Siliguri:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#F3F4F6; --surface:#FFFFFF; --sunk:#EBEDF0; --ink:#12151A; --muted:#5A6371; --line:#DFE3E8;
+  --accent:#C98A0E; --accent-ink:#1A1405; --accent-soft:#FBF0D6;
+  --up:#0B9A68; --up-soft:#DDF4EA; --down:#D93D45; --down-soft:#FBE3E4; --flat:#7B8594; --flat-soft:#ECEEF1;
+  --shadow:0 1px 2px rgba(16,20,26,.05),0 4px 16px rgba(16,20,26,.05);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0B0D11; --surface:#13161B; --sunk:#1A1E25; --ink:#E7EAEE; --muted:#8C95A3; --line:#252A33;
+    --accent:#F2B33D; --accent-ink:#1A1405; --accent-soft:#2E2410;
+    --up:#27C48C; --up-soft:#10291F; --down:#F2626B; --down-soft:#321619; --flat:#8C95A3; --flat-soft:#1E232B;
+    --shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0B0D11; --surface:#13161B; --sunk:#1A1E25; --ink:#E7EAEE; --muted:#8C95A3; --line:#252A33;
+  --accent:#F2B33D; --accent-ink:#1A1405; --accent-soft:#2E2410;
+  --up:#27C48C; --up-soft:#10291F; --down:#F2626B; --down-soft:#321619; --flat:#8C95A3; --flat-soft:#1E232B;
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 "Hind Siliguri","IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%}
+.num,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:"Sora","Hind Siliguri",sans-serif;line-height:1.25;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(32px,5.4vw,54px);font-weight:800}
+h2{font-size:clamp(22px,3vw,28px);font-weight:700}
+h3{font-size:18px;font-weight:700}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:16px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+[hidden]{display:none!important}
+
+/* nav */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 18px "Sora",sans-serif;white-space:nowrap}
+.brand i{width:30px;height:30px;border-radius:8px;background:var(--accent);display:grid;place-items:center}
+.brand i svg{width:18px;height:18px}
+.nav{display:flex;gap:4px;margin-left:8px}
+.nav a{text-decoration:none;padding:7px 12px;border-radius:8px;color:var(--muted);font-weight:600;font-size:15px}
+.nav a:hover{color:var(--ink);background:var(--sunk)}
+.nav a.on{color:var(--ink);background:var(--sunk)}
+.top .sp{flex:1}
+.iconbtn{border:1px solid var(--line);background:var(--surface);color:var(--ink);width:38px;height:38px;border-radius:10px;display:grid;place-items:center;cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:10px 16px;font:600 15px "Hind Siliguri",sans-serif;text-decoration:none;border:1px solid transparent;cursor:pointer;white-space:nowrap}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{filter:brightness(1.06)}
+.btn-ghost{border-color:var(--line);background:var(--surface);color:var(--ink)}
+.btn-ghost:hover{background:var(--sunk)}
+.btn svg{width:18px;height:18px}
+.tg-top{display:inline-flex}
+@media (max-width:860px){
+  .nav{position:fixed;left:0;right:0;bottom:0;margin:0;background:var(--surface);border-top:1px solid var(--line);justify-content:space-around;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));z-index:30}
+  .nav a{font-size:13px;padding:6px 8px;text-align:center}
+  body{padding-bottom:64px}
+  .tg-top span{display:none}
+  .top{backdrop-filter:none;background:var(--bg)}
+  .tg-top{padding:9px 10px}
+}
+
+main{padding-block:28px 56px;display:grid;gap:40px}
+section{display:grid;gap:16px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sec-head p{color:var(--muted);font-size:15px}
+.eyebrow{font:600 12px "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.pad{padding:18px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center;padding-top:12px}
+.hero-copy{display:grid;gap:18px}
+.hero-copy .lede{font-size:18px;color:var(--muted);max-width:52ch}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:3px 11px;background:var(--surface);color:var(--muted)}
+.chip b{color:var(--ink)}
+.hero>*{min-width:0}
+@media (max-width:860px){.hero{grid-template-columns:1fr}}
+
+/* ticket */
+.ticket{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.ticket-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border-bottom:1px dashed var(--line)}
+.ticket-head .who{display:flex;align-items:center;gap:10px}
+.ticket-body{display:grid;grid-template-columns:1fr 92px;gap:14px;padding:16px}
+.levels{display:grid;gap:8px}
+.lv{display:flex;justify-content:space-between;gap:10px;font-size:14.5px;padding:6px 10px;border-radius:8px;background:var(--sunk)}
+.lv span{color:var(--muted)}
+.lv.tp{background:var(--up-soft)} .lv.tp span{color:var(--up)}
+.lv.sl{background:var(--down-soft)} .lv.sl span{color:var(--down)}
+.lv.en{background:var(--accent-soft)} .lv.en span{color:var(--accent)}
+.ladder{position:relative;border-left:2px solid var(--line);margin:4px 0 4px 34px}
+.ladder b{position:absolute;left:-7px;width:12px;height:12px;border-radius:50%;transform:translateY(-50%)}
+.ladder em{position:absolute;left:10px;transform:translateY(-50%);font:600 10.5px "IBM Plex Mono",monospace;font-style:normal;color:var(--muted);white-space:nowrap}
+.ticket-foot{display:flex;justify-content:space-between;gap:10px;padding:10px 16px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted)}
+.sample{font:600 11px "IBM Plex Mono",monospace;letter-spacing:.08em;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+
+/* pills */
+.pill{display:inline-flex;align-items:center;gap:5px;font:600 12.5px "IBM Plex Mono",monospace;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.p-buy,.p-up,.p-tp2,.p-tp1{background:var(--up-soft);color:var(--up)}
+.p-sell,.p-down,.p-sl{background:var(--down-soft);color:var(--down)}
+.p-exp,.p-flat{background:var(--flat-soft);color:var(--flat)}
+.p-open{background:var(--accent-soft);color:var(--accent)}
+.up{color:var(--up)} .down{color:var(--down)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.stat{padding:14px 16px;display:grid;gap:2px}
+.stat .k{font-size:13px;color:var(--muted)}
+.stat .v{font:600 24px "IBM Plex Mono",monospace}
+.bar{height:6px;border-radius:6px;background:var(--down-soft);overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:var(--up)}
+@media (max-width:860px){.stats{grid-template-columns:repeat(2,1fr)} .stat.wide{grid-column:span 2}}
+
+/* coin cards */
+.board{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+@media (max-width:1000px){.board{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.board{grid-template-columns:repeat(2,1fr)}}
+.cc{padding:14px;display:grid;gap:8px;text-decoration:none;transition:border-color .15s}
+.cc:hover{border-color:var(--accent)}
+.cc .row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.cc .px{font:600 17px "IBM Plex Mono",monospace}
+.cc svg{width:100%;height:40px;display:block}
+.logo{width:28px;height:28px;border-radius:50%;flex:none;background:var(--sunk);display:grid;place-items:center;font:700 11px "Sora",sans-serif;color:var(--muted);overflow:hidden}
+.logo img{width:100%;height:100%}
+.sym{display:flex;align-items:center;gap:8px;font-weight:700;min-width:0}
+.sym small{color:var(--muted);font-weight:500}
+
+/* two col */
+.duo{display:grid;grid-template-columns:1fr 1.4fr;gap:16px;align-items:start}
+@media (max-width:860px){.duo{grid-template-columns:1fr}}
+.gauge{display:grid;justify-items:center;gap:6px;padding:18px}
+.gauge svg{width:100%;max-width:260px;height:auto}
+.gauge .v{font:700 34px "Sora",sans-serif}
+.steps{display:grid;gap:12px;padding:18px;margin:0;list-style:none;counter-reset:s}
+.steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;counter-increment:s}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font:700 15px "Sora",sans-serif}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:15px}
+
+/* table */
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font:600 12px "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--sunk)}
+td.r,th.r{text-align:right}
+tbody tr:last-child td{border-bottom:0}
+tr.link{cursor:pointer}
+tr.link:hover td{background:var(--sunk)}
+@media (max-width:640px){.hide-sm{display:none}}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.tabs{display:flex;gap:4px;background:var(--sunk);padding:4px;border-radius:10px}
+.tabs button{border:0;background:none;color:var(--muted);font:600 14px "Hind Siliguri",sans-serif;padding:6px 12px;border-radius:7px;cursor:pointer}
+.tabs button.on{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+input,select{font:15px "Hind Siliguri",sans-serif;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+input{min-width:0;width:220px;max-width:100%}
+
+/* coin page */
+.coin-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.coin-head .l{display:flex;align-items:center;gap:14px}
+.coin-head .logo{width:44px;height:44px;font-size:14px}
+.coin-head .px{font:600 30px "IBM Plex Mono",monospace}
+#chart{height:430px;width:100%}
+@media (max-width:640px){#chart{height:320px}}
+.ind{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width:640px){.ind{grid-template-columns:repeat(2,1fr)}}
+.tickets{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+
+.empty{padding:28px;text-align:center;color:var(--muted)}
+.note{border-radius:12px;padding:14px 16px;background:var(--accent-soft);font-size:15px}
+.note.red{background:var(--down-soft)}
+.prose{display:grid;gap:14px;max-width:72ch}
+.prose ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.skel{background:linear-gradient(90deg,var(--sunk),var(--line),var(--sunk));background-size:200% 100%;border-radius:6px;color:transparent!important}
+@media (prefers-reduced-motion:no-preference){.skel{animation:sk 1.2s linear infinite}@keyframes sk{to{background-position:-200% 0}}}
+
+footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:grid;gap:10px}
+footer nav{display:flex;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#/"><i><svg viewBox="0 0 24 24" fill="none"><path d="M6 18V10M12 18V5M18 18V13" stroke="#1A1405" stroke-width="3" stroke-linecap="round"/></svg></i><span id="brandName">BEWON Signals</span></a>
+    <nav class="nav" id="nav">
+      <a href="#/" data-r="home">হোম</a>
+      <a href="#/market" data-r="market">মার্কেট</a>
+      <a href="#/signals" data-r="signals">সিগনাল</a>
+      <a href="#/about" data-r="about">আমাদের সম্পর্কে</a>
+    </nav>
+    <span class="sp"></span>
+    <button class="iconbtn" id="themeBtn" aria-label="থিম বদলান"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <a class="btn btn-primary tg-top" id="tgTop" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.1 1.4 11.6c-1-.3-1.1-1 .2-1.5L20.5 2.9c.9-.3 1.7.2 1.4 1.4z"/></svg><span>Telegram-এ Join</span></a>
+  </div>
+</header>
+
+<main class="wrap" id="app" aria-live="polite"></main>
+
+<footer>
+  <div class="wrap">
+    <nav><a href="#/">হোম</a><a href="#/market">মার্কেট</a><a href="#/signals">সিগনাল</a><a href="#/about">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
+    <p>⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।</p>
+    <p>দাম: Binance public API · Fear &amp; Greed Index: <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">alternative.me</a> · কয়েন আইকন: cryptocurrency-icons</p>
+    <p>© <span id="yr"></span> <span class="bn"></span></p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+<script>
+/* ===================== সেটিংস: এখানে নিজের তথ্য বদলান ===================== */
+const SITE = {
+  name: "BEWON Signals",
+  telegram: "https://t.me/all_crypt_signals",
+  channel: "@all_crypt_signals",
+  botCoins: ["BTC","ETH","BNB","SOL","XRP","ADA","DOGE","AVAX","LINK","DOT"],
+};
+/* ========================================================================== */
+
+const API = ["https://api.binance.com", "https://data-api.binance.vision"];
+const STABLE = new Set(["USDC","FDUSD","TUSD","BUSD","DAI","USDP","USDD","EUR","AEUR","EURI","USDE","USD1","XUSD","BFUSD","PYUSD","RLUSD","UST","USTC"]);
+const NAMES = {BTC:"Bitcoin",ETH:"Ethereum",BNB:"BNB",SOL:"Solana",XRP:"XRP",ADA:"Cardano",DOGE:"Dogecoin",AVAX:"Avalanche",LINK:"Chainlink",DOT:"Polkadot",TRX:"TRON",LTC:"Litecoin",BCH:"Bitcoin Cash",NEAR:"NEAR",SUI:"Sui",PEPE:"Pepe",SHIB:"Shiba Inu",TON:"Toncoin",UNI:"Uniswap",ARB:"Arbitrum",OP:"Optimism",APT:"Aptos",ATOM:"Cosmos",ETC:"Ethereum Classic",XLM:"Stellar",FIL:"Filecoin",AAVE:"Aave",INJ:"Injective",WLD:"Worldcoin",POL:"Polygon"};
+const $ = (s, el = document) => el.querySelector(s);
+const app = $("#app");
+let timers = [], chart = null, SIG = null;
+
+/* ---------- helpers ---------- */
+function fmtPx(x){ x=+x; if(!isFinite(x)) return "—";
+  if(x>=1000) return x.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+  if(x>=1) return x.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:4});
+  return x.toPrecision(4).replace(/0+$/,"").replace(/\.$/,""); }
+function fmtBig(x){ x=+x; if(x>=1e9) return (x/1e9).toFixed(2)+"B"; if(x>=1e6) return (x/1e6).toFixed(2)+"M"; if(x>=1e3) return (x/1e3).toFixed(1)+"K"; return x.toFixed(0); }
+function pct(x){ x=+x; return (x>=0?"+":"")+x.toFixed(2)+"%"; }
+function cls(x){ return +x>=0?"up":"down"; }
+function when(iso){ if(!iso) return "—"; const d=new Date(iso); return d.toLocaleString("bn-BD",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}); }
+function ago(iso){ if(!iso) return "—"; const m=Math.round((Date.now()-new Date(iso))/60000);
+  if(m<1) return "এইমাত্র"; if(m<60) return m+" মিনিট আগে"; const h=Math.round(m/60); if(h<48) return h+" ঘণ্টা আগে"; return Math.round(h/24)+" দিন আগে"; }
+function logo(sym){ const s=sym.toLowerCase();
+  return `<span class="logo"><img alt="" loading="lazy" src="https://cdn.jsdelivr.net/npm/cryptocurrency-icons@0.18.1/svg/color/${s}.svg" onerror="var p=this.parentNode;p.textContent='${sym.slice(0,3)}'"></span>`; }
+function clean(sym){ return String(sym||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,12); }
+async function bget(path){ let err;
+  for(const b of API){ try{ const r=await fetch(b+path); if(r.ok) return await r.json(); err=new Error(r.status);}catch(e){err=e;} }
+  throw err; }
+function every(ms, fn){ timers.push(setInterval(fn, ms)); }
+function pillResult(r){ const m={TP2:["p-tp2","🎯 TP2"],TP1:["p-tp1","✅ TP1"],SL:["p-sl","❌ SL"],EXPIRED:["p-exp","⌛ Expired"]}[r]||["p-flat",r];
+  return `<span class="pill ${m[0]}">${m[1]}</span>`; }
+function pillSide(s){ return `<span class="pill ${s==="BUY"?"p-buy":"p-sell"}">${s==="BUY"?"▲ BUY":"▼ SELL"}</span>`; }
+
+async function loadSignals(){
+  if(SIG) return SIG;
+  try{ const r=await fetch("data/signals.json?t="+Math.floor(Date.now()/60000)); SIG=await r.json(); }
+  catch(e){ SIG={stats:{win:0,loss:0,tp2:0,expired:0},open:[],history:[],coins:SITE.botCoins,interval:"1h"}; }
+  SIG.open=SIG.open||[]; SIG.history=SIG.history||[]; return SIG; }
+function winRate(st){ const d=st.win+st.loss; return d? Math.round(st.win*100/d) : null; }
+
+function spark(closes){
+  if(!closes||closes.length<2) return "";
+  const mn=Math.min(...closes), mx=Math.max(...closes), w=120, h=40, rng=(mx-mn)||1;
+  const pts=closes.map((c,i)=>[(i/(closes.length-1))*w, h-2-((c-mn)/rng)*(h-4)]);
+  const d=pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+  const col=closes.at(-1)>=closes[0]?"var(--up)":"var(--down)";
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${d} L${w} ${h} L0 ${h}Z" fill="${col}" opacity=".12"/>
+    <path d="${d}" fill="none" stroke="${col}" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+    <circle cx="${pts.at(-1)[0]}" cy="${pts.at(-1)[1]}" r="2.4" fill="${col}"/></svg>`; }
+
+function ticket(t, live, sample){
+  const buy=t.side==="BUY", lv=[t.tp2,t.tp1,t.entry,t.sl], mn=Math.min(...lv), mx=Math.max(...lv), rng=(mx-mn)||1;
+  const pos=v=>(100-((v-mn)/rng)*100).toFixed(1)+"%";
+  const status = t.result ? pillResult(t.result) : `<span class="pill p-open">● চলছে</span>`;
+  const dot=(v,c,l)=>`<b style="top:${pos(v)};background:${c}"></b><em style="top:${pos(v)}">${l}</em>`;
+  const cur = live && live>=mn*0.9 && live<=mx*1.1 ? `<b style="top:${pos(Math.min(mx,Math.max(mn,live)))};background:var(--ink);width:8px;height:8px;left:-5px"></b>` : "";
+  return `<article class="ticket">
+    <div class="ticket-head"><div class="who">${logo(t.coin)}<div><b>${t.coin}/USDT</b><div class="muted" style="font-size:13px">${SIG?.interval||"1h"} · ${when(t.opened)}</div></div></div>
+      <div style="display:flex;gap:6px;align-items:center">${sample?'<span class="sample">উদাহরণ</span>':""}${pillSide(t.side)}</div></div>
+    <div class="ticket-body">
+      <div class="levels">
+        <div class="lv tp"><span>TP2</span><b class="num">${fmtPx(t.tp2)}</b></div>
+        <div class="lv tp"><span>TP1</span><b class="num">${fmtPx(t.tp1)}</b></div>
+        <div class="lv en"><span>Entry</span><b class="num">${fmtPx(t.entry)}</b></div>
+        <div class="lv sl"><span>Stop Loss</span><b class="num">${fmtPx(t.sl)}</b></div>
+      </div>
+      <div class="ladder" aria-hidden="true">${dot(t.tp2,"var(--up)","TP2")}${dot(t.tp1,"var(--up)","TP1")}${dot(t.entry,"var(--accent)","IN")}${dot(t.sl,"var(--down)","SL")}${cur}</div>
+    </div>
+    <div class="ticket-foot"><span>${status}</span><span>${live?`এখন <b class="num" style="color:var(--ink)">${fmtPx(live)}</b>`:(buy?"দাম বাড়ার সিগনাল":"দাম কমার সিগনাল")}</span></div>
+  </article>`; }
+
+/* ---------- pages ---------- */
+async function pageHome(){
+  const s=await loadSignals(), st=s.stats, wr=winRate(st);
+  const latest = s.open[0] || s.history[0];
+  const sample = {coin:"SOL",side:"BUY",entry:142.35,tp1:145.10,tp2:147.85,sl:139.60,opened:new Date().toISOString()};
+  app.innerHTML = `
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">ফ্রি · অটোমেটেড · ২৪/৭</span>
+      <h1>ক্রিপ্টো সিগনাল, <span style="color:var(--accent)">সম্পূর্ণ ফ্রি</span></h1>
+      <p class="lede">আমাদের বট প্রতি ১৫ মিনিটে ১০টা বড় কয়েনের চার্ট দেখে। EMA, RSI আর ভলিউম মিললে Entry, Take Profit আর Stop Loss সহ সিগনাল দেয়। প্রতিটা সিগনাল শেষে ফলাফলও দেখায়, তাই কিছুই লুকানো নেই।</p>
+      <div class="cta"><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">Telegram চ্যানেলে Join করুন</a><a class="btn btn-ghost" href="#/signals">সব সিগনাল দেখুন</a></div>
+      <div class="chips"><span class="chip">খরচ <b>০ টাকা</b></span><span class="chip">কয়েন <b>${(s.coins||SITE.botCoins).length}টা</b></span><span class="chip">টাইমফ্রেম <b>${s.interval||"1h"}</b></span></div>
+    </div>
+    <div>${latest ? ticket(latest) : ticket(sample,null,true)}</div>
+  </section>
+
+  <section>
+    <div class="stats">
+      <div class="card stat wide"><span class="k">Win rate</span><span class="v">${wr===null?"—":wr+"%"}</span><div class="bar"><i style="width:${wr??0}%"></i></div></div>
+      <div class="card stat"><span class="k">জয় (Win)</span><span class="v up">${st.win}</span></div>
+      <div class="card stat"><span class="k">হার (Loss)</span><span class="v down">${st.loss}</span></div>
+      <div class="card stat"><span class="k">চলমান সিগনাল</span><span class="v">${s.open.length}</span></div>
+      <div class="card stat"><span class="k">শেষ আপডেট</span><span class="v" style="font-size:16px;padding-top:8px">${ago(s.updated)}</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="eyebrow">লাইভ</span><h2>বট যে কয়েনগুলো দেখে</h2></div><p>গত ২৪ ঘণ্টা · প্রতি ৩০ সেকেন্ডে আপডেট</p></div>
+    <div class="board" id="board">${(s.coins||SITE.botCoins).map(c=>`<a class="card cc" href="#/coin/${c}"><div class="row"><span class="sym">${logo(c)}${c}</span><span class="pill p-flat skel">+0.00%</span></div><span class="px skel">00,000.00</span><svg></svg></a>`).join("")}</div>
+  </section>
+
+  <section class="duo">
+    <div class="card"><div class="pad" style="padding-bottom:0"><span class="eyebrow">মার্কেটের মুড</span><h3 style="margin-top:4px">Fear &amp; Greed Index</h3></div><div class="gauge" id="fg"><span class="muted">লোড হচ্ছে…</span></div></div>
+    <div class="card"><div class="pad" style="padding-bottom:0"><span class="eyebrow">কীভাবে কাজ করে</span><h3 style="margin-top:4px">তিন ধাপে সিগনাল</h3></div>
+      <ol class="steps">
+        <li><div><b>দাম সংগ্রহ</b><span>Binance, OKX, KuCoin বা Kraken থেকে প্রতি ১৫ মিনিটে ক্যান্ডেল ডেটা আনে।</span></div></li>
+        <li><div><b>নিয়ম মিলিয়ে দেখা</b><span>EMA 9 আর EMA 21 ক্রস করলে, RSI ঠিক সীমায় থাকলে আর ভলিউম গড়ের বেশি হলে তবেই সিগনাল হয়।</span></div></li>
+        <li><div><b>Telegram-এ পাঠানো</b><span>Entry, TP1, TP2 আর Stop Loss সহ চ্যানেলে যায়। পরে ফলাফলও জানায়।</span></div></li>
+      </ol></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="eyebrow">সাম্প্রতিক</span><h2>শেষ সিগনালগুলো</h2></div><a class="btn btn-ghost" href="#/signals">সব দেখুন →</a></div>
+    ${recentTable(s)}
+  </section>
+  <p class="note">⚠️ সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। সবসময় Stop Loss ব্যবহার করুন, আর যতটুকু হারালে সমস্যা নেই তার বেশি লাগাবেন না।</p>`;
+
+  const coins=s.coins||SITE.botCoins;
+  const board=async()=>{ try{
+      const tk=await bget(`/api/v3/ticker/24hr?symbols=${encodeURIComponent(JSON.stringify(coins.map(c=>c+"USDT")))}`);
+      const map=Object.fromEntries(tk.map(t=>[t.symbol.replace("USDT",""),t]));
+      $("#board").innerHTML=coins.map(c=>{const t=map[c]||{}; const ch=+t.priceChangePercent;
+        return `<a class="card cc" href="#/coin/${c}"><div class="row"><span class="sym">${logo(c)}${c}</span><span class="pill ${ch>=0?"p-up":"p-down"}">${pct(ch)}</span></div><span class="px">${fmtPx(t.lastPrice)}</span><span class="sp" data-c="${c}"></span></a>`}).join("");
+      coins.forEach(async c=>{ try{ const k=await bget(`/api/v3/klines?symbol=${c}USDT&interval=1h&limit=24`);
+        const el=$(`.sp[data-c="${c}"]`); if(el) el.outerHTML=spark(k.map(r=>+r[4])); }catch(e){} });
+    }catch(e){ $("#board").innerHTML=`<div class="card empty" style="grid-column:1/-1">লাইভ দাম আনা যায়নি। ইন্টারনেট দেখে পাতা রিফ্রেশ করুন।</div>`; } };
+  board(); every(30000, board);
+  fearGreed(s);
+}
+
+function recentTable(s){
+  const rows=[...s.open.map(t=>({...t,live:true})), ...s.history].slice(0,6);
+  if(!rows.length) return `<div class="card empty">এখনো কোনো সিগনাল আসেনি। মার্কেটে নিয়ম মিললেই এখানে দেখা যাবে।<br><br><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">Telegram-এ Join করে অপেক্ষা করুন</a></div>`;
+  return `<div class="card tbl-wrap"><table><thead><tr><th>কয়েন</th><th>দিক</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">SL</th><th>অবস্থা</th><th class="hide-sm">সময়</th></tr></thead><tbody>
+  ${rows.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${t.live?`<span class="pill p-open">● চলছে</span>`:pillResult(t.result)}</td><td class="muted hide-sm">${when(t.opened)}</td></tr>`).join("")}
+  </tbody></table></div>`; }
+
+async function fearGreed(s){
+  let v=null,l="";
+  try{ const d=(await (await fetch("https://api.alternative.me/fng/?limit=1")).json()).data[0]; v=+d.value; l=d.value_classification; }
+  catch(e){ if(s.fear_greed){ v=s.fear_greed.value; l=s.fear_greed.label; } }
+  const el=$("#fg"); if(!el) return;
+  if(v===null){ el.innerHTML=`<span class="muted">এখন পাওয়া যাচ্ছে না</span>`; return; }
+  const bn={"Extreme Fear":"খুব ভয়","Fear":"ভয়","Neutral":"নিরপেক্ষ","Greed":"লোভ","Extreme Greed":"খুব লোভ"}[l]||l;
+  const a=Math.PI*(1-v/100), x=100+80*Math.cos(a), y=100-80*Math.sin(a);
+  const col=v<25?"var(--down)":v<45?"#E0873A":v<55?"var(--flat)":v<75?"#7DBB4A":"var(--up)";
+  const arc=(f,t,c)=>{const a1=Math.PI*(1-f/100),a2=Math.PI*(1-t/100);return `<path d="M${100+80*Math.cos(a1)} ${100-80*Math.sin(a1)} A80 80 0 0 1 ${100+80*Math.cos(a2)} ${100-80*Math.sin(a2)}" stroke="${c}" stroke-width="14" fill="none"/>`};
+  el.innerHTML=`<svg viewBox="0 0 200 116" role="img" aria-label="Fear and Greed ${v}">
+    ${arc(0,24.5,"var(--down)")}${arc(25.5,44.5,"#E0873A")}${arc(45.5,54.5,"var(--flat)")}${arc(55.5,74.5,"#7DBB4A")}${arc(75.5,100,"var(--up)")}
+    <line x1="100" y1="100" x2="${x}" y2="${y}" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><circle cx="100" cy="100" r="6" fill="var(--ink)"/></svg>
+    <span class="v" style="color:${col}">${v}</span><b>${bn} <span class="muted" style="font-weight:400">(${l})</span></b>
+    <span class="muted" style="font-size:13px">০ = খুব ভয়, ১০০ = খুব লোভ · সূত্র: alternative.me</span>`; }
+
+let mkt={rows:[],tab:"vol",q:""};
+async function pageMarket(){
+  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">লাইভ মার্কেট</span><h2>ক্রিপ্টো মার্কেট</h2></div><p id="mktNote">Binance-এর শীর্ষ USDT পেয়ার · প্রতি ৬০ সেকেন্ডে আপডেট</p></div>
+    <div class="toolbar"><div class="tabs" role="tablist">
+      <button data-t="vol" class="on">সবচেয়ে বেশি লেনদেন</button><button data-t="gain">Top Gainers</button><button data-t="lose">Top Losers</button></div>
+      <input id="q" type="search" placeholder="কয়েন খুঁজুন… যেমন BTC" aria-label="কয়েন খুঁজুন"></div>
+    <div class="card tbl-wrap" id="mkt"><div class="empty">লোড হচ্ছে…</div></div></section>`;
+  app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{mkt.tab=b.dataset.t;app.querySelectorAll(".tabs button").forEach(x=>x.classList.toggle("on",x===b));drawMarket();});
+  $("#q").oninput=e=>{mkt.q=clean(e.target.value);drawMarket();};
+  const load=async()=>{ try{
+      const all=await bget("/api/v3/ticker/24hr");
+      mkt.rows=all.filter(t=>t.symbol.endsWith("USDT")).map(t=>({...t,base:t.symbol.slice(0,-4)}))
+        .filter(t=>!STABLE.has(t.base)&&!/(UP|DOWN|BULL|BEAR)$/.test(t.base)&&+t.quoteVolume>0&&+t.count>0)
+        .sort((a,b)=>b.quoteVolume-a.quoteVolume).slice(0,120);
+      drawMarket();
+    }catch(e){ $("#mkt").innerHTML=`<div class="empty">মার্কেটের তথ্য আনা যায়নি। একটু পরে আবার চেষ্টা করুন।</div>`; } };
+  load(); every(60000, load);
+}
+function drawMarket(){
+  let r=[...mkt.rows];
+  if(mkt.q) r=r.filter(t=>t.base.includes(mkt.q));
+  if(mkt.tab==="gain") r.sort((a,b)=>b.priceChangePercent-a.priceChangePercent);
+  if(mkt.tab==="lose") r.sort((a,b)=>a.priceChangePercent-b.priceChangePercent);
+  r=r.slice(0,mkt.q?60:50);
+  const el=$("#mkt"); if(!el) return;
+  if(!r.length){ el.innerHTML=`<div class="empty">কিছু পাওয়া যায়নি</div>`; return; }
+  el.innerHTML=`<table><thead><tr><th>#</th><th>কয়েন</th><th class="r">দাম (USDT)</th><th class="r">২৪ঘ %</th><th class="r hide-sm">২৪ঘ সর্বোচ্চ</th><th class="r hide-sm">২৪ঘ সর্বনিম্ন</th><th class="r hide-sm">লেনদেন</th></tr></thead><tbody>
+  ${r.map((t,i)=>`<tr class="link" data-go="#/coin/${t.base}"><td class="muted num">${i+1}</td><td><span class="sym">${logo(t.base)}${t.base}${SITE.botCoins.includes(t.base)?' <span class="pill p-open" title="বট এই কয়েনে সিগনাল দেয়">BOT</span>':""}</span></td><td class="r num">${fmtPx(t.lastPrice)}</td><td class="r"><span class="pill ${+t.priceChangePercent>=0?"p-up":"p-down"}">${pct(t.priceChangePercent)}</span></td><td class="r num hide-sm">${fmtPx(t.highPrice)}</td><td class="r num hide-sm">${fmtPx(t.lowPrice)}</td><td class="r num hide-sm">$${fmtBig(t.quoteVolume)}</td></tr>`).join("")}</tbody></table>`; }
+
+function ema(v,n){ const k=2/(n+1); let e=v[0]; return v.map((x,i)=>i?(e=x*k+e*(1-k)):e); }
+function rsi(v,n=14){ let g=0,l=0; const a=1/n, out=[null];
+  for(let i=1;i<v.length;i++){ const d=v[i]-v[i-1]; g=i===1?Math.max(d,0):g+(Math.max(d,0)-g)*a; l=i===1?Math.max(-d,0):l+(Math.max(-d,0)-l)*a; out.push(l===0?100:100-100/(1+g/l)); } return out; }
+
+async function pageCoin(sym){
+  sym=clean(sym)||"BTC";
+  const s=await loadSignals(), isBot=(s.coins||SITE.botCoins).includes(sym);
+  const mine=[...s.open.map(t=>({...t,live:true})),...s.history].filter(t=>t.coin===sym);
+  app.innerHTML=`<section>
+    <a href="#/market" class="muted" style="text-decoration:none">← মার্কেট</a>
+    <div class="coin-head"><div class="l">${logo(sym)}<div><h2>${NAMES[sym]||sym} <span class="muted" style="font-weight:500">${sym}/USDT</span></h2>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="px" id="cpx">—</span><span id="cch"></span></div></div></div>
+      <div class="cta"><a class="btn btn-ghost" href="https://www.binance.com/en/trade/${sym}_USDT" target="_blank" rel="noopener">Binance-এ ট্রেড ↗</a></div></div>
+    <div class="card" style="padding:12px">
+      <div class="toolbar" style="margin-bottom:10px"><div class="tabs" id="tf"><button data-i="15m">15m</button><button data-i="1h" class="on">1h</button><button data-i="4h">4h</button><button data-i="1d">1D</button></div>
+      <span class="muted" style="font-size:13px"><span style="color:#F2B33D">━</span> EMA 9 &nbsp; <span style="color:#6C8EF5">━</span> EMA 21 ${isBot?"&nbsp; ▲▼ বটের সিগনাল":""}</span></div>
+      <div id="chart"></div></div>
+    <div class="ind" id="ind"></div>
+    ${isBot?"":`<p class="note">ℹ️ বট এখন এই কয়েনে সিগনাল দেয় না। বট যেসব কয়েন দেখে: ${(s.coins||SITE.botCoins).join(", ")}</p>`}
+  </section>
+  ${isBot?`<section><div class="sec-head"><h2>${sym}-এর সিগনাল</h2></div>${mine.length?`<div class="tickets">${mine.slice(0,12).map(t=>ticket(t)).join("")}</div>`:`<div class="card empty">এই কয়েনে এখনো কোনো সিগনাল আসেনি।</div>`}</section>`:""}`;
+
+  const el=$("#chart"), css=getComputedStyle(document.documentElement), c=v=>css.getPropertyValue(v).trim();
+  if(!window.LightweightCharts){ el.innerHTML=`<div class="empty">চার্ট লোড হয়নি</div>`; }
+  else{
+    chart=LightweightCharts.createChart(el,{autoSize:true,layout:{background:{color:"transparent"},textColor:c("--muted"),fontFamily:"IBM Plex Mono"},
+      grid:{vertLines:{color:c("--line")},horzLines:{color:c("--line")}},rightPriceScale:{borderColor:c("--line")},timeScale:{borderColor:c("--line"),timeVisible:true},crosshair:{mode:0},localization:{locale:"en-US"}});
+    var candles=chart.addCandlestickSeries({upColor:c("--up"),downColor:c("--down"),borderVisible:false,wickUpColor:c("--up"),wickDownColor:c("--down")});
+    var e9=chart.addLineSeries({color:"#F2B33D",lineWidth:2,priceLineVisible:false,lastValueVisible:false});
+    var e21=chart.addLineSeries({color:"#6C8EF5",lineWidth:2,priceLineVisible:false,lastValueVisible:false});
+  }
+  let tf="1h";
+  const draw=async()=>{ try{
+      const k=await bget(`/api/v3/klines?symbol=${sym}USDT&interval=${tf}&limit=300`);
+      const cl=k.map(r=>+r[4]), t=k.map(r=>Math.floor(r[0]/1000));
+      if(chart){
+        candles.setData(k.map(r=>({time:Math.floor(r[0]/1000),open:+r[1],high:+r[2],low:+r[3],close:+r[4]})));
+        const a=ema(cl,9), b=ema(cl,21); e9.setData(t.map((x,i)=>({time:x,value:a[i]}))); e21.setData(t.map((x,i)=>({time:x,value:b[i]})));
+        const tfSec={"15m":900,"1h":3600,"4h":14400,"1d":86400}[tf], t0=t[0];
+        const marks=mine.filter(m=>m.opened).map(m=>{const ts=Math.floor(new Date(m.opened)/1000); const snap=ts-((ts-t0)%tfSec+tfSec)%tfSec;
+          return snap>=t0?{time:snap,position:m.side==="BUY"?"belowBar":"aboveBar",color:m.side==="BUY"?c("--up"):c("--down"),shape:m.side==="BUY"?"arrowUp":"arrowDown",text:m.side}:null}).filter(Boolean).sort((x,y)=>x.time-y.time);
+        candles.setMarkers(marks);
+      }
+      const a9=ema(cl,9).at(-1), a21=ema(cl,21).at(-1), r=rsi(cl).at(-1);
+      const trend=a9>a21?`<span class="up">ঊর্ধ্বমুখী ▲</span>`:`<span class="down">নিম্নমুখী ▼</span>`;
+      const rl=r>=70?"বেশি কেনা হয়েছে":r<=30?"বেশি বিক্রি হয়েছে":"স্বাভাবিক";
+      $("#ind").innerHTML=`<div class="card stat"><span class="k">EMA 9</span><span class="v num" style="font-size:18px">${fmtPx(a9)}</span></div>
+        <div class="card stat"><span class="k">EMA 21</span><span class="v num" style="font-size:18px">${fmtPx(a21)}</span></div>
+        <div class="card stat"><span class="k">RSI 14 (${tf})</span><span class="v num" style="font-size:18px">${r.toFixed(1)}</span><span class="k">${rl}</span></div>
+        <div class="card stat"><span class="k">ট্রেন্ড (${tf})</span><span class="v" style="font-size:18px">${trend}</span></div>`;
+    }catch(e){ if(!chart) return; el.innerHTML=`<div class="empty">এই কয়েনের চার্ট পাওয়া যায়নি (${sym}USDT)।</div>`; } };
+  const tick=async()=>{ try{ const t=await bget(`/api/v3/ticker/24hr?symbol=${sym}USDT`);
+      $("#cpx").textContent=fmtPx(t.lastPrice); $("#cch").innerHTML=`<span class="pill ${+t.priceChangePercent>=0?"p-up":"p-down"}">${pct(t.priceChangePercent)} (২৪ঘ)</span>`;
+      document.title=`${sym} ${fmtPx(t.lastPrice)} — ${SITE.name}`; }catch(e){ $("#cpx").textContent="পাওয়া যায়নি"; } };
+  $("#tf").querySelectorAll("button").forEach(b=>b.onclick=()=>{tf=b.dataset.i;$("#tf").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));draw();});
+  draw(); tick(); every(15000,tick); every(60000,draw);
+}
+
+async function pageSignals(){
+  const s=await loadSignals(), st=s.stats, wr=winRate(st);
+  const coins=[...new Set([...s.open,...s.history].map(t=>t.coin))].sort();
+  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">সৎ রেকর্ড</span><h2>সব সিগনাল ও ফলাফল</h2></div><p>শেষ আপডেট: ${ago(s.updated)}</p></div>
+    <div class="stats">
+      <div class="card stat wide"><span class="k">Win rate</span><span class="v">${wr===null?"—":wr+"%"}</span><div class="bar"><i style="width:${wr??0}%"></i></div></div>
+      <div class="card stat"><span class="k">জয়</span><span class="v up">${st.win}</span></div>
+      <div class="card stat"><span class="k">হার</span><span class="v down">${st.loss}</span></div>
+      <div class="card stat"><span class="k">TP2 পর্যন্ত গেছে</span><span class="v">${st.tp2}</span></div>
+      <div class="card stat"><span class="k">সময় শেষ</span><span class="v">${st.expired}</span></div>
+    </div></section>
+  <section><div class="sec-head"><h2>চলমান সিগনাল <span class="muted" style="font-weight:500">(${s.open.length})</span></h2></div>
+    ${s.open.length?`<div class="tickets" id="openT">${s.open.map(t=>ticket(t)).join("")}</div>`:`<div class="card empty">এখন কোনো সিগনাল চলছে না।</div>`}</section>
+  <section><div class="toolbar"><h2>ইতিহাস</h2><div style="display:flex;gap:8px;flex-wrap:wrap">
+      <select id="fc" aria-label="কয়েন"><option value="">সব কয়েন</option>${coins.map(c=>`<option>${c}</option>`).join("")}</select>
+      <select id="fr" aria-label="ফলাফল"><option value="">সব ফলাফল</option><option value="TP2">TP2</option><option value="TP1">TP1</option><option value="SL">SL</option><option value="EXPIRED">Expired</option></select></div></div>
+    <div class="card tbl-wrap" id="hist"></div>
+    <p class="muted" style="font-size:14px">জয় = TP1 বা TP2 ছুঁয়েছে। হার = TP1 ছোঁয়ার আগেই Stop Loss। TP1-এর পর Stop Loss নিজে থেকেই Entry-তে সরে যায়।</p></section>`;
+  const draw=()=>{ const fc=$("#fc").value, fr=$("#fr").value;
+    const h=s.history.filter(t=>(!fc||t.coin===fc)&&(!fr||t.result===fr));
+    $("#hist").innerHTML=h.length?`<table><thead><tr><th>কয়েন</th><th>দিক</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">TP2</th><th class="r hide-sm">SL</th><th>ফলাফল</th><th class="hide-sm">শুরু</th><th class="hide-sm">শেষ</th></tr></thead><tbody>
+      ${h.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.tp2)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${pillResult(t.result)}</td><td class="muted hide-sm">${when(t.opened)}</td><td class="muted hide-sm">${when(t.closed)}</td></tr>`).join("")}</tbody></table>`
+      :`<div class="empty">${s.history.length?"এই ফিল্টারে কিছু নেই":"এখনো কোনো সিগনাল শেষ হয়নি।"}</div>`; };
+  $("#fc").onchange=draw; $("#fr").onchange=draw; draw();
+  if(s.open.length){ try{ const tk=await bget(`/api/v3/ticker/price?symbols=${encodeURIComponent(JSON.stringify([...new Set(s.open.map(t=>t.coin+"USDT"))]))}`);
+      const m=Object.fromEntries(tk.map(t=>[t.symbol.replace("USDT",""),+t.price])); $("#openT").innerHTML=s.open.map(t=>ticket(t,m[t.coin])).join(""); }catch(e){} }
+}
+
+async function pageAbout(){
+  const s=await loadSignals();
+  app.innerHTML=`<section class="prose">
+    <span class="eyebrow">আমাদের সম্পর্কে</span><h1 style="font-size:clamp(28px,4vw,40px)">${SITE.name}</h1>
+    <p>${SITE.name} একটা ফ্রি, অটোমেটেড ক্রিপ্টো সিগনাল সার্ভিস। আমরা কারো টাকা রাখি না, কারো হয়ে ট্রেড করি না, আর কোনো ফি নিই না। বট শুধু চার্ট দেখে, নিয়ম মিললে Telegram-এ জানায়। সিদ্ধান্ত আপনার।</p>
+    <h2>সিগনাল কীভাবে তৈরি হয়</h2>
+    <ul>
+      <li><b>টাইমফ্রেম:</b> ${s.interval||"1h"} ক্যান্ডেল, প্রতি ১৫ মিনিটে চেক করা হয়।</li>
+      <li><b>BUY:</b> EMA 9 নিচ থেকে EMA 21 কে কাটে, RSI ৪৫ থেকে ৭০-এর মধ্যে থাকে, আর ভলিউম ২০ ক্যান্ডেলের গড়ের বেশি হয়।</li>
+      <li><b>SELL:</b> EMA 9 ওপর থেকে EMA 21 কে কাটে, RSI ৩০ থেকে ৫৫-এর মধ্যে থাকে, আর ভলিউম গড়ের বেশি হয়।</li>
+      <li><b>Stop Loss:</b> Entry থেকে ১.৫ × ATR দূরে। <b>TP1:</b> ১.৫ × ATR। <b>TP2:</b> ৩ × ATR।</li>
+      <li>TP1 ছুঁলে Stop Loss Entry-তে সরে যায়। ৪৮ ক্যান্ডেলে কিছু না হলে সিগনাল "Expired" হয়।</li>
+      <li>প্রতিটা সিগনালের ফলাফল, জয় হোক বা হার, এই সাইটে থেকে যায়। কিছু মুছে ফেলা হয় না।</li>
+    </ul>
+    <h2>কয়েন</h2><p>${(s.coins||SITE.botCoins).join(" · ")}</p>
+    <h2>ঝুঁকি সতর্কতা</h2>
+    <p class="note red">ক্রিপ্টোর দাম খুব দ্রুত ওঠানামা করে, আর আপনি পুরো টাকা হারাতে পারেন। কোনো সিগনালই সবসময় সঠিক হয় না। যারা "গ্যারান্টিড প্রফিট" বলে, তাদের থেকে দূরে থাকুন। এই সাইটের কোনো কিছুই আর্থিক পরামর্শ নয়। নিজের দেশের আইন জেনে নিন।</p>
+    <h2>ডেটার সূত্র</h2>
+    <ul><li>দাম ও চার্ট: Binance public API (বটের জন্য ব্যাকআপ হিসেবে OKX, KuCoin, Kraken)</li><li>Fear &amp; Greed Index: alternative.me</li></ul>
+    <h2>যোগাযোগ</h2>
+    <p>Telegram চ্যানেল: <a href="${SITE.telegram}" target="_blank" rel="noopener">${SITE.channel}</a></p>
+  </section>`; }
+
+/* ---------- router ---------- */
+async function route(){
+  timers.forEach(clearInterval); timers=[]; if(chart){ chart.remove(); chart=null; }
+  const parts=(location.hash.replace(/^#\/?/,"")||"").split("/"), r=parts[0]||"home";
+  document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
+  document.title=`${SITE.name} — ফ্রি ক্রিপ্টো সিগনাল`;
+  window.scrollTo(0,0);
+  if(r==="market") await pageMarket();
+  else if(r==="coin") await pageCoin(parts[1]);
+  else if(r==="signals") await pageSignals();
+  else if(r==="about") await pageAbout();
+  else await pageHome();
+}
+app.addEventListener("click",e=>{ const tr=e.target.closest("tr[data-go]"); if(tr && !e.target.closest("a")) location.hash=tr.dataset.go; });
+window.addEventListener("hashchange",route);
+
+/* ---------- init ---------- */
+$("#brandName").textContent=SITE.name; document.querySelectorAll(".bn").forEach(e=>e.textContent=SITE.name);
+$("#tgTop").href=SITE.telegram; $("#tgFoot").href=SITE.telegram; $("#yr").textContent=new Date().getFullYear();
+(function(){ let t=null; try{ t=localStorage.getItem("theme"); }catch(e){}
+  if(t) document.documentElement.dataset.theme=t;
+  $("#themeBtn").onclick=()=>{ const dark=document.documentElement.dataset.theme? document.documentElement.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    const n=dark?"light":"dark"; document.documentElement.dataset.theme=n; try{ localStorage.setItem("theme",n);}catch(e){} route(); };
+})();
+route();
+</script>
+</body>
+</html>
