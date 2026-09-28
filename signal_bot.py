@@ -21,8 +21,12 @@ FREE Crypto Signal Bot  —  সম্পূর্ণ ফ্রি, শুধু
 Telegram token না দিলে মেসেজ পাঠাবে না, শুধু স্ক্রিনে দেখাবে (নিরাপদ টেস্ট)।
 """
 
+import html
 import json
 import os
+import re
+import xml.etree.ElementTree as ET
+from email.utils import parsedate_to_datetime
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -360,7 +364,86 @@ def daily_digest(frames, state):
     return "\n".join(lines)
 
 
-# ----------------------------- ৭. মূল কাজ -----------------------------
+# ----------------------------- ৭. ক্রিপ্টো নিউজ (ওয়েবসাইটের জন্য) -----------------------------
+NEWS_FEEDS = [
+    ("CoinDesk", "https://www.coindesk.com/arc/outboundfeeds/rss/"),
+    ("Decrypt", "https://decrypt.co/feed"),
+    ("Cointelegraph", "https://cointelegraph.com/rss"),
+    ("CryptoSlate", "https://cryptoslate.com/feed/"),
+    ("The Block", "https://www.theblock.co/rss.xml"),
+]
+NEWS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "data", "news.json")
+NS = {"media": "http://search.yahoo.com/mrss/", "content": "http://purl.org/rss/1.0/modules/content/"}
+
+
+def _clean_text(raw, limit=240):
+    txt = re.sub(r"<[^>]+>", " ", html.unescape(raw or ""))
+    txt = re.sub(r"\s+", " ", txt).strip()
+    return txt if len(txt) <= limit else txt[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def _image(item):
+    for tag in ("media:content", "media:thumbnail"):
+        for el in item.findall(tag, NS):
+            u = el.get("url", "")
+            if u.startswith("https://") and el.get("medium", "image") == "image":
+                return u
+    enc = item.find("enclosure")
+    if enc is not None and enc.get("url", "").startswith("https://") and "image" in enc.get("type", "image"):
+        return enc.get("url")
+    body = (item.findtext("content:encoded", "", NS) or "") + (item.findtext("description") or "")
+    m = re.search(r'<img[^>]+src="(https://[^"]+)"', body)
+    return m.group(1) if m else ""
+
+
+def fetch_news():
+    """৫টা বড় ক্রিপ্টো নিউজ সাইটের ফ্রি RSS থেকে খবর আনে"""
+    items, seen = [], set()
+    for source, url in NEWS_FEEDS:
+        try:
+            r = HTTP.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0 (compatible; SignalBot/1.0)"})
+            r.raise_for_status()
+            root = ET.fromstring(r.content)
+            for it in root.iter("item"):
+                title = _clean_text(it.findtext("title"), 200)
+                link = (it.findtext("link") or "").strip()
+                if not title or not link.startswith("https://"):
+                    continue
+                key = re.sub(r"\W+", "", title.lower())[:80]
+                if link in seen or key in seen:
+                    continue
+                seen.update([link, key])
+                try:
+                    pub = parsedate_to_datetime(it.findtext("pubDate")).astimezone(timezone.utc).isoformat()
+                except Exception:
+                    pub = ""
+                items.append({"title": title, "link": link, "source": source, "published": pub,
+                              "summary": _clean_text(it.findtext("description")), "image": _image(it)})
+        except Exception as e:
+            print(f"news {source}: {str(e)[:80]}")
+    items.sort(key=lambda x: x["published"], reverse=True)
+    return items[:80]
+
+
+def update_news():
+    items = fetch_news()
+    if not items:
+        return
+    try:
+        with open(NEWS_FILE, encoding="utf-8") as f:
+            old = json.load(f)
+        if [x["link"] for x in old.get("items", [])] == [x["link"] for x in items]:
+            return
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    os.makedirs(os.path.dirname(NEWS_FILE), exist_ok=True)
+    with open(NEWS_FILE, "w", encoding="utf-8") as f:
+        json.dump({"updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                   "sources": [s for s, _ in NEWS_FEEDS], "items": items}, f, ensure_ascii=False, indent=1)
+    print(f"news: {len(items)} items")
+
+
+# ----------------------------- ৮. মূল কাজ -----------------------------
 def run_once(force_digest=False):
     state = load_state()
     frames, fails, outbox = {}, [], []
@@ -401,6 +484,10 @@ def run_once(force_digest=False):
             state["last_digest"] = today
 
     save_state(state)   # কিছু বদলালে তবেই GitHub এ নতুন commit হবে
+    try:
+        update_news()
+    except Exception as e:
+        print("news error:", e)
     print(f"done: {len(frames)}/{len(COINS)} coins ok, open={len(state['open'])}")
     for f in fails:
         print("FAIL", f)
