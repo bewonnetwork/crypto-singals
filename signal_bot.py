@@ -58,6 +58,8 @@ TELEGRAM_CHAT_ID = os.getenv("TG_CHAT_ID", "")      # যেমন @my_free_sign
 
 COINS = ["BTC", "ETH", "BNB", "SOL", "XRP", "ADA", "DOGE", "AVAX", "LINK", "DOT"]
 INTERVAL = "1h"             # 15m / 1h / 4h
+TREND_INTERVAL = "4h"       # বড় ট্রেন্ড দেখার টাইমফ্রেম
+MIN_CONFIDENCE = 60         # এর কম Confidence হলে সিগনাল পাঠাবে না
 EMA_FAST, EMA_SLOW = 9, 21
 RSI_LEN, ATR_LEN = 14, 14
 SL_ATR, TP1_ATR, TP2_ATR = 1.5, 1.5, 3.0   # Stop Loss / Target দূরত্ব (ATR এর গুণ)
@@ -80,17 +82,17 @@ def _frame(rows, time_unit):
     return df.sort_values("time").reset_index(drop=True)
 
 
-def from_binance(coin, limit=200):
+def from_binance(coin, interval=None, limit=300):
     # api.binance.com আমেরিকার সার্ভার (GitHub) থেকে ব্লক, তাই data-api ব্যবহার করছি
     r = HTTP.get("https://data-api.binance.vision/api/v3/klines",
-                 params={"symbol": f"{coin}USDT", "interval": INTERVAL, "limit": limit}, timeout=15)
+                 params={"symbol": f"{coin}USDT", "interval": interval or INTERVAL, "limit": limit}, timeout=15)
     r.raise_for_status()
     df = _frame([row[:6] for row in r.json()], "ms")
     return df.iloc[:-1]                     # শেষ ক্যান্ডেল এখনো চলছে → বাদ
 
 
-def from_okx(coin, limit=200):
-    bar = {"15m": "15m", "1h": "1H", "4h": "4H"}[INTERVAL]
+def from_okx(coin, interval=None, limit=300):
+    bar = {"15m": "15m", "1h": "1H", "4h": "4H"}[interval or INTERVAL]
     r = HTTP.get("https://www.okx.com/api/v5/market/candles",
                  params={"instId": f"{coin}-USDT", "bar": bar, "limit": min(limit, 300)}, timeout=15)
     r.raise_for_status()
@@ -101,8 +103,8 @@ def from_okx(coin, limit=200):
     return _frame(closed, "ms")
 
 
-def from_kucoin(coin, limit=200):
-    typ = {"15m": "15min", "1h": "1hour", "4h": "4hour"}[INTERVAL]
+def from_kucoin(coin, interval=None, limit=300):
+    typ = {"15m": "15min", "1h": "1hour", "4h": "4hour"}[interval or INTERVAL]
     r = HTTP.get("https://api.kucoin.com/api/v1/market/candles",
                  params={"type": typ, "symbol": f"{coin}-USDT"}, timeout=15)
     r.raise_for_status()
@@ -114,9 +116,9 @@ def from_kucoin(coin, limit=200):
     return _frame(rows, "s").iloc[:-1]
 
 
-def from_kraken(coin, limit=200):
+def from_kraken(coin, interval=None, limit=300):
     base = {"BTC": "XBT", "DOGE": "XDG"}.get(coin, coin)
-    minutes = {"15m": 15, "1h": 60, "4h": 240}[INTERVAL]
+    minutes = {"15m": 15, "1h": 60, "4h": 240}[interval or INTERVAL]
     r = HTTP.get("https://api.kraken.com/0/public/OHLC",
                  params={"pair": f"{base}USD", "interval": minutes}, timeout=15)
     r.raise_for_status()
@@ -132,12 +134,12 @@ SOURCES = [("Binance", from_binance), ("OKX", from_okx),
            ("KuCoin", from_kucoin), ("Kraken", from_kraken)]
 
 
-def get_candles(coin):
+def get_candles(coin, interval=None):
     """একটা এক্সচেঞ্জ কাজ না করলে পরেরটা চেষ্টা করে"""
     errors = []
     for name, fn in SOURCES:
         try:
-            df = fn(coin)
+            df = fn(coin, interval)
             if len(df) >= 60:
                 return df, name
             errors.append(f"{name}: only {len(df)} candles")
@@ -169,7 +171,63 @@ def add_indicators(df):
                     (df["low"] - df["close"].shift()).abs()], axis=1).max(axis=1)
     df["atr"] = tr.ewm(alpha=1 / ATR_LEN, adjust=False).mean()
     df["vol_avg"] = df["volume"].rolling(20).mean()
+    df["ema50"] = df["close"].ewm(span=50, adjust=False).mean()
+    df["ema200"] = df["close"].ewm(span=200, adjust=False).mean()
+    macd = df["close"].ewm(span=12, adjust=False).mean() - df["close"].ewm(span=26, adjust=False).mean()
+    df["macd_hist"] = macd - macd.ewm(span=9, adjust=False).mean()
+    up, dn = df["high"].diff(), -df["low"].diff()
+    pdm = up.where((up > dn) & (up > 0), 0.0)
+    mdm = dn.where((dn > up) & (dn > 0), 0.0)
+    atr_w = tr.ewm(alpha=1 / 14, adjust=False).mean()
+    pdi = 100 * pdm.ewm(alpha=1 / 14, adjust=False).mean() / atr_w
+    mdi = 100 * mdm.ewm(alpha=1 / 14, adjust=False).mean() / atr_w
+    dx = 100 * (pdi - mdi).abs() / (pdi + mdi).replace(0, float("nan"))
+    df["adx"] = dx.ewm(alpha=1 / 14, adjust=False).mean().fillna(0)
     return df
+
+
+def trend_of(df):
+    """+1 = ঊর্ধ্বমুখী, -1 = নিম্নমুখী, 0 = পরিষ্কার না"""
+    c = df.iloc[-1]
+    if c.ema50 > c.ema200 and c.close > c.ema50:
+        return 1
+    if c.ema50 < c.ema200 and c.close < c.ema50:
+        return -1
+    return 0
+
+
+def score_signal(df, side, htf_trend, btc_trend, is_btc):
+    """বড় প্রোভাইডাররা যেসব ফিল্টার ব্যবহার করে সেগুলো মিলিয়ে Confidence % বানায়"""
+    c, prev = df.iloc[-1], df.iloc[-2]
+    d = 1 if side == "BUY" else -1
+    score, why = 20, ["EMA 9/21 ক্রস + RSI ঠিক সীমায় + ভলিউম বেশি"]
+    if htf_trend == d:
+        score += 20; why.append(f"{TREND_INTERVAL} বড় ট্রেন্ড একই দিকে")
+    elif htf_trend == -d:
+        score -= 10; why.append(f"⚠ {TREND_INTERVAL} বড় ট্রেন্ড উল্টো দিকে")
+    if (c.close - c.ema200) * d > 0:
+        score += 10; why.append("দাম EMA 200-এর " + ("ওপরে" if d > 0 else "নিচে"))
+    if c.macd_hist * d > 0 and (c.macd_hist - prev.macd_hist) * d > 0:
+        score += 10; why.append("MACD মোমেন্টাম বাড়ছে")
+    if c.adx >= 25:
+        score += 15; why.append(f"ট্রেন্ড শক্তিশালী (ADX {c.adx:.0f})")
+    elif c.adx >= 20:
+        score += 8; why.append(f"ট্রেন্ড মাঝারি (ADX {c.adx:.0f})")
+    else:
+        score -= 5; why.append(f"⚠ ট্রেন্ড দুর্বল (ADX {c.adx:.0f})")
+    vr = c.volume / c.vol_avg if c.vol_avg else 1
+    if vr >= 1.5:
+        score += 10; why.append(f"ভলিউম গড়ের {vr:.1f} গুণ")
+    else:
+        score += 3
+    if (50 <= c.rsi <= 65) if d > 0 else (35 <= c.rsi <= 50):
+        score += 5; why.append(f"RSI {c.rsi:.0f} ভালো জায়গায়")
+    if not is_btc and btc_trend:
+        if btc_trend == d:
+            score += 10; why.append("BTC-ও একই দিকে যাচ্ছে")
+        else:
+            score -= 10; why.append("⚠ BTC উল্টো দিকে")
+    return max(5, min(95, score)), why
 
 
 def check_signal(df):
@@ -200,7 +258,8 @@ def _close(t, result, when, state):
     state.setdefault("history", []).insert(0, {
         "coin": t["coin"], "side": t["side"], "entry": t["entry"],
         "sl": t.get("sl0", t["sl"]), "tp1": t["tp1"], "tp2": t["tp2"],
-        "opened": t.get("opened", ""), "closed": when, "result": result})
+        "opened": t.get("opened", ""), "closed": when, "result": result,
+        "conf": t.get("conf"), "why": t.get("why", [])})
     del state["history"][300:]
 
 
@@ -274,6 +333,8 @@ def signal_message(coin, s, source):
             f"TP2: <code>{fmt(s['tp2'])}</code>\n"
             f"Stop Loss: <code>{fmt(s['sl'])}</code>\n"
             f"RSI: {s['rsi']}  |  Data: {source}\n\n"
+            f"🎯 <b>Confidence: {s['conf']}%</b>  {'🟩' * (s['conf'] // 20)}{'⬜' * (5 - s['conf'] // 20)}\n"
+            + "".join(f"• {w}\n" for w in s["why"]) + "\n"
             f"⚠️ Free signal, not financial advice. Use Stop Loss. DYOR.")
 
 
@@ -324,9 +385,9 @@ SITE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "da
 
 def export_site(state):
     """ওয়েবসাইটের জন্য docs/data/signals.json বানায় (কিছু বদলালে তবেই)"""
-    keep = ("coin", "side", "entry", "sl", "tp1", "tp2", "tp1_hit", "opened", "rsi")
+    keep = ("coin", "side", "entry", "sl", "tp1", "tp2", "tp1_hit", "opened", "rsi", "conf", "why")
     payload = {
-        "interval": INTERVAL, "coins": COINS, "stats": state["stats"],
+        "interval": INTERVAL, "coins": COINS, "stats": state["stats"], "min_conf": MIN_CONFIDENCE,
         "open": [{k: t.get(k) for k in keep} for t in state["open"]],
         "history": state.get("history", [])[:200],
         "fear_greed": state.get("fear_greed"),
@@ -448,6 +509,7 @@ def run_once(force_digest=False):
     state = load_state()
     frames, fails, outbox = {}, [], []
 
+    btc_trend = 0
     for coin in COINS:
         try:
             raw, source = get_candles(coin)
@@ -460,16 +522,32 @@ def run_once(force_digest=False):
         # (ক) আগের সিগনালের ফলাফল
         outbox += update_open_trades(coin, df, state)
 
+        if coin == "BTC":
+            btc_trend = 1 if df.iloc[-1].ema_fast > df.iloc[-1].ema_slow else -1
+
         # (খ) নতুন সিগনাল
         sig = check_signal(df)
         has_open = any(t["coin"] == coin for t in state["open"])
-        if sig and not has_open and state["last_signal"].get(coin) != sig["candle"]:
+        if sig and (has_open or state["last_signal"].get(coin) == sig["candle"]):
+            sig = None
+        if sig:
+            try:
+                htf = trend_of(add_indicators(get_candles(coin, TREND_INTERVAL)[0]))
+            except Exception:
+                htf = 0
+            sig["conf"], sig["why"] = score_signal(df, sig["side"], htf, btc_trend, coin == "BTC")
+            if sig["conf"] < MIN_CONFIDENCE:
+                print(f"skip {sig['side']} {coin}: confidence {sig['conf']}% < {MIN_CONFIDENCE}%")
+                state["last_signal"][coin] = sig["candle"]
+                sig = None
+        if sig:
             if send_telegram(signal_message(coin, sig, source)):
                 state["last_signal"][coin] = sig["candle"]
                 state["open"].append({"coin": coin, "side": sig["side"], "entry": sig["entry"],
                                       "sl": sig["sl"], "tp1": sig["tp1"], "tp2": sig["tp2"],
                                       "tp1_hit": False, "age": 0, "checked_until": sig["candle"],
-                                      "sl0": sig["sl"], "opened": sig["candle"], "rsi": sig["rsi"]})
+                                      "sl0": sig["sl"], "opened": sig["candle"], "rsi": sig["rsi"],
+                                      "conf": sig["conf"], "why": sig["why"]})
                 print(f"sent {sig['side']} {coin} (data: {source})")
         time.sleep(0.3)
 

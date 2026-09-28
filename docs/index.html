@@ -195,6 +195,17 @@ input{min-width:0;width:220px;max-width:100%}
 .skel{background:linear-gradient(90deg,var(--sunk),var(--line),var(--sunk));background-size:200% 100%;border-radius:6px;color:transparent!important}
 @media (prefers-reduced-motion:no-preference){.skel{animation:sk 1.2s linear infinite}@keyframes sk{to{background-position:-200% 0}}}
 
+/* confidence */
+.conf{display:grid;gap:6px;padding:0 16px 14px}
+.conf .top{display:flex;justify-content:space-between;align-items:center;font-size:13.5px}
+.conf .top b{font:700 15px "IBM Plex Mono",monospace}
+.cbar{height:7px;border-radius:7px;background:var(--sunk);overflow:hidden}
+.cbar i{display:block;height:100%;border-radius:7px}
+.why{margin:2px 0 0;padding:0;list-style:none;display:grid;gap:3px;font-size:13px;color:var(--muted)}
+.why li::before{content:"✓ ";color:var(--up);font-weight:700}
+.why li.warn::before{content:"! ";color:var(--down)}
+.cpill{font:600 12px "IBM Plex Mono",monospace;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+
 /* news */
 .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media (max-width:1000px){.news-grid{grid-template-columns:repeat(2,1fr)}}
@@ -301,6 +312,11 @@ async function bget(path){ let err;
 function every(ms, fn){ timers.push(setInterval(fn, ms)); }
 function pillResult(r){ const m={TP2:["p-tp2","🎯 TP2"],TP1:["p-tp1","✅ TP1"],SL:["p-sl","❌ SL"],EXPIRED:["p-exp","⌛ Expired"]}[r]||["p-flat",r];
   return `<span class="pill ${m[0]}">${m[1]}</span>`; }
+function confColor(c){ return c>=75?"var(--up)":c>=60?"var(--accent)":"var(--down)"; }
+function confBlock(t){ if(t.conf==null) return "";
+  const why=(t.why||[]).map(w=>w.startsWith("⚠")?`<li class="warn">${esc(w.replace(/^⚠\s*/,""))}</li>`:`<li>${esc(w)}</li>`).join("");
+  return `<div class="conf"><div class="top"><span class="muted">Confidence</span><b style="color:${confColor(t.conf)}">${t.conf}%</b></div>
+    <div class="cbar"><i style="width:${t.conf}%;background:${confColor(t.conf)}"></i></div>${why?`<ul class="why">${why}</ul>`:""}</div>`; }
 function pillSide(s){ return `<span class="pill ${s==="BUY"?"p-buy":"p-sell"}">${s==="BUY"?"▲ BUY":"▼ SELL"}</span>`; }
 
 async function loadSignals(){
@@ -339,6 +355,7 @@ function ticket(t, live, sample){
       </div>
       <div class="ladder" aria-hidden="true">${dot(t.tp2,"var(--up)","TP2")}${dot(t.tp1,"var(--up)","TP1")}${dot(t.entry,"var(--accent)","IN")}${dot(t.sl,"var(--down)","SL")}${cur}</div>
     </div>
+    ${confBlock(t)}
     <div class="ticket-foot"><span>${status}</span><span>${live?`এখন <b class="num" style="color:var(--ink)">${fmtPx(live)}</b>`:(buy?"দাম বাড়ার সিগনাল":"দাম কমার সিগনাল")}</span></div>
   </article>`; }
 
@@ -515,6 +532,14 @@ async function pageCoin(sym){
   draw(); tick(); every(15000,tick); every(60000,draw);
 }
 
+function bandStats(s){
+  const bands=[["৭৫% বা বেশি",75,101],["৬০–৭৪%",60,75],["৬০%-এর কম (পুরোনো)",0,60]];
+  const h=s.history.filter(t=>t.conf!=null); if(!h.length) return "";
+  const rows=bands.map(([l,a,b])=>{const x=h.filter(t=>t.conf>=a&&t.conf<b); const w=x.filter(t=>t.result==="TP1"||t.result==="TP2").length, lo=x.filter(t=>t.result==="SL").length;
+    return x.length?`<tr><td>${l}</td><td class="r num">${x.length}</td><td class="r num up">${w}</td><td class="r num down">${lo}</td><td class="r num">${w+lo?Math.round(w*100/(w+lo))+"%":"—"}</td></tr>`:""}).join("");
+  return `<section><div class="sec-head"><div><span class="eyebrow">সৎ হিসাব</span><h2>Confidence অনুযায়ী ফলাফল</h2></div><p>বেশি Confidence-এর সিগনাল আসলেই বেশি জেতে কিনা, এখানে দেখা যায়</p></div>
+    <div class="card tbl-wrap"><table><thead><tr><th>Confidence</th><th class="r">সিগনাল</th><th class="r">জয়</th><th class="r">হার</th><th class="r">Win rate</th></tr></thead><tbody>${rows}</tbody></table></div></section>`; }
+
 async function pageSignals(){
   const s=await loadSignals(), st=s.stats, wr=winRate(st);
   const coins=[...new Set([...s.open,...s.history].map(t=>t.coin))].sort();
@@ -526,6 +551,7 @@ async function pageSignals(){
       <div class="card stat"><span class="k">TP2 পর্যন্ত গেছে</span><span class="v">${st.tp2}</span></div>
       <div class="card stat"><span class="k">সময় শেষ</span><span class="v">${st.expired}</span></div>
     </div></section>
+  ${bandStats(s)}
   <section><div class="sec-head"><h2>চলমান সিগনাল <span class="muted" style="font-weight:500">(${s.open.length})</span></h2></div>
     ${s.open.length?`<div class="tickets" id="openT">${s.open.map(t=>ticket(t)).join("")}</div>`:`<div class="card empty">এখন কোনো সিগনাল চলছে না।</div>`}</section>
   <section><div class="toolbar"><h2>ইতিহাস</h2><div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -535,8 +561,8 @@ async function pageSignals(){
     <p class="muted" style="font-size:14px">জয় = TP1 বা TP2 ছুঁয়েছে। হার = TP1 ছোঁয়ার আগেই Stop Loss। TP1-এর পর Stop Loss নিজে থেকেই Entry-তে সরে যায়।</p></section>`;
   const draw=()=>{ const fc=$("#fc").value, fr=$("#fr").value;
     const h=s.history.filter(t=>(!fc||t.coin===fc)&&(!fr||t.result===fr));
-    $("#hist").innerHTML=h.length?`<table><thead><tr><th>কয়েন</th><th>দিক</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">TP2</th><th class="r hide-sm">SL</th><th>ফলাফল</th><th class="hide-sm">শুরু</th><th class="hide-sm">শেষ</th></tr></thead><tbody>
-      ${h.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.tp2)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${pillResult(t.result)}</td><td class="muted hide-sm">${when(t.opened)}</td><td class="muted hide-sm">${when(t.closed)}</td></tr>`).join("")}</tbody></table>`
+    $("#hist").innerHTML=h.length?`<table><thead><tr><th>কয়েন</th><th>দিক</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">TP2</th><th class="r hide-sm">SL</th><th>ফলাফল</th><th class="r">Conf.</th><th class="hide-sm">শুরু</th><th class="hide-sm">শেষ</th></tr></thead><tbody>
+      ${h.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.tp2)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${pillResult(t.result)}</td><td class="r">${t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${t.conf}%</span>`:'<span class="muted">—</span>'}</td><td class="muted hide-sm">${when(t.opened)}</td><td class="muted hide-sm">${when(t.closed)}</td></tr>`).join("")}</tbody></table>`
       :`<div class="empty">${s.history.length?"এই ফিল্টারে কিছু নেই":"এখনো কোনো সিগনাল শেষ হয়নি।"}</div>`; };
   $("#fc").onchange=draw; $("#fr").onchange=draw; draw();
   if(s.open.length){ try{ const tk=await bget(`/api/v3/ticker/price?symbols=${encodeURIComponent(JSON.stringify([...new Set(s.open.map(t=>t.coin+"USDT"))]))}`);
@@ -575,6 +601,8 @@ async function pageAbout(){
       <li><b>SELL:</b> EMA 9 ওপর থেকে EMA 21 কে কাটে, RSI ৩০ থেকে ৫৫-এর মধ্যে থাকে, আর ভলিউম গড়ের বেশি হয়।</li>
       <li><b>Stop Loss:</b> Entry থেকে ১.৫ × ATR দূরে। <b>TP1:</b> ১.৫ × ATR। <b>TP2:</b> ৩ × ATR।</li>
       <li>TP1 ছুঁলে Stop Loss Entry-তে সরে যায়। ৪৮ ক্যান্ডেলে কিছু না হলে সিগনাল "Expired" হয়।</li>
+      <li><b>Confidence %:</b> বড় সিগনাল প্রোভাইডাররা যেসব বাড়তি ফিল্টার ব্যবহার করে, সেগুলো মিলিয়ে ০–৯৫% স্কোর দেওয়া হয়। ফিল্টারগুলো হলো: ৪ ঘণ্টার বড় ট্রেন্ড (EMA 50/200), দাম EMA 200-এর কোন দিকে, MACD মোমেন্টাম, ট্রেন্ডের শক্তি (ADX), ভলিউম কতটা বেশি, আর BTC একই দিকে যাচ্ছে কিনা।</li>
+      <li>Confidence ${s.min_conf??60}%-এর কম হলে সিগনাল পাঠানো হয় না। Confidence মানে জেতার নিশ্চয়তা নয়, শুধু কতগুলো শর্ত মিলেছে তার হিসাব।</li>
       <li>প্রতিটা সিগনালের ফলাফল, জয় হোক বা হার, এই সাইটে থেকে যায়। কিছু মুছে ফেলা হয় না।</li>
     </ul>
     <h2>কয়েন</h2><p>${(s.coins||SITE.botCoins).join(" · ")}</p>
