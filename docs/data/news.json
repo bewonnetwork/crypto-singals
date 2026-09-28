@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28T18:45:47+00:00",
+ "updated": "2026-09-28T23:34:06+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,118 @@
   "The Block"
  ],
  "items": [
+  {
+   "title": "Nearly 5,000 BTC leaves Bitget as hackers begin laundering $387 million haul",
+   "link": "https://cryptoslate.com/nearly-5000-btc-leaves-bitget-as-hackers-begin-laundering-387-million-haul/",
+   "source": "CryptoSlate",
+   "published": "2026-09-28T22:50:12+00:00",
+   "summary": "Nearly 5,000 Bitcoin has left Bitget’s tracked reserves after the crypto exchange reopened withdrawals following its $387.5 million hack. On Sept. 28, Bitget Chief Executive Officer Gracy Chen said the exchange had processed 9,585…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/bitget-hack-funds-route.webp"
+  },
+  {
+   "title": "OpenAI Halts Model Training as Rogue Agents Target US Government Sites",
+   "link": "https://decrypt.co/379508/openai-ai-agents-target-us-government-sites",
+   "source": "Decrypt",
+   "published": "2026-09-28T21:46:03+00:00",
+   "summary": "OpenAI says its agents keep landing on government websites because they treat them as reliable sources, but it's pausing training while it adds safeguards.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/04/decrypt-style-sam-altman-3-gID_7.png"
+  },
+  {
+   "title": "Strategy makes first back-to-back Bitcoin buys since June as accumulation picks up",
+   "link": "https://cryptoslate.com/strategy-makes-first-back-to-back-bitcoin-buys-since-june-as-accumulation-picks-up/",
+   "source": "CryptoSlate",
+   "published": "2026-09-28T21:40:16+00:00",
+   "summary": "Michael Saylor-led Strategy (formerly MicroStrategy) has made back-to-back weekly Bitcoin purchases for the first time since June, rebuilding its holdings after selling some of the cryptocurrency earlier this quarter. On Sept. 28, the…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/strategy-bitcoin-capital-allocation.webp"
+  },
+  {
+   "title": "A Clever RSA Attack Fooled a Hardware Vault—Here's What It Means for Crypto",
+   "link": "https://decrypt.co/379505/rsa-attack-without-stealing-key-what-it-means-crypto",
+   "source": "Decrypt",
+   "published": "2026-09-28T21:16:03+00:00",
+   "summary": "A UC San Diego-led team impersonated a hardware security module without extracting its key.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/blockchain-decrypt-style-02-gID_7.jpg"
+  },
+  {
+   "title": "Canadian ‘crypto king’ set to represent himself at fraud trial",
+   "link": "https://cointelegraph.com/news/canada-aiden-pleterski-fraud-trial-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-09-28T20:41:44+00:00",
+   "summary": "Aiden Pleterski was allegedly behind a crypto Ponzi scheme between 2021 and 2022 that resulted in a kidnapping and related criminal charges.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MQWPR3MTCT9E31PTGCN3TH/court-law-judge-flags-canada.jpg"
+  },
+  {
+   "title": "Citi Clients Can Now Take Stablecoin Payments Through Coinbase—Without Touching Crypto",
+   "link": "https://decrypt.co/379497/citi-stablecoin-payments-coinbase-without-touching-crypto",
+   "source": "Decrypt",
+   "published": "2026-09-28T20:36:03+00:00",
+   "summary": "Coinbase and Citi expanded an existing deal so Citi's institutional clients can accept stablecoin payments, while Coinbase business accounts run on Citi's banking rails.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/citi-decrypt-style-gID_7.jpg"
+  },
+  {
+   "title": "Lido’s 1,500 ETH reserve target could slow stETH withdrawals in a crunch",
+   "link": "https://cryptoslate.com/lidos-new-reserve-power-could-reshape-steth-withdrawal-waits-when-the-buffer-is-tight/",
+   "source": "CryptoSlate",
+   "published": "2026-09-28T20:30:08+00:00",
+   "summary": "The setting remains at 1,500 ETH, but the committee’s unexecuted plan would shift deposit priority as a new staking module approaches. The post Lido’s 1,500 ETH reserve target could slow stETH withdrawals in a crunch appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/lido-withdrawal-valve.webp"
+  },
+  {
+   "title": "Blockchain.com eyes $500M IPO as crypto capital markets thaw: Report",
+   "link": "https://cointelegraph.com/news/blockchain-com-500m-ipo-bloomberg-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-09-28T20:28:13+00:00",
+   "summary": "The crypto company is seeking a valuation of up to $6 billion, well below its 2022 peak, as recently listed crypto stocks struggle to hold their gains.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3MTCJ1E1J8KDT907A531CF3/hi-ipo-stocks-bitpgo.png"
+  },
+  {
+   "title": "Anthropic's Claude Sonnet 5.5 Is Out, Beats Opus 5.5 at Coding for Half the Price",
+   "link": "https://decrypt.co/379482/anthropic-claude-sonnet-5-5-release",
+   "source": "Decrypt",
+   "published": "2026-09-28T20:06:03+00:00",
+   "summary": "Anthropic's mid-tier model tops its own flagship on Terminal-Bench 4.0 and costs half as much per token, but an independent tester found it burns more tokens than any model it has measured.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/decrypt-style-anthropic-claude-gID_7.jpg"
+  },
+  {
+   "title": "After AI Agent Hacked Its Government, Australia Calls Altman and Amodei to Testify",
+   "link": "https://decrypt.co/379481/australia-sam-altman-dario-amodei-ai-hack",
+   "source": "Decrypt",
+   "published": "2026-09-28T19:36:21+00:00",
+   "summary": "Senator Sarah Hanson-Young has invited the OpenAI and Anthropic CEOs to a Canberra hearing on October 1, after an OpenAI agent quietly accessed Australia's Medicare data and nobody said a word for months.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/09/Sydney-gID_7.jpg"
+  },
+  {
+   "title": "Bitget says Bitcoin withdrawals are open after $387M hack, but ETH and USDT must wait",
+   "link": "https://cryptoslate.com/bitget-says-bitcoin-withdrawals-open-after-hack/",
+   "source": "CryptoSlate",
+   "published": "2026-09-28T19:35:25+00:00",
+   "summary": "Sept. 28 public fills show BTC and ETH futures activity before the scheduled 08:00 UTC Bitcoin withdrawal restart. The post Bitget says Bitcoin withdrawals are open after $387M hack, but ETH and USDT must wait appeared first on CryptoSlate…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/bitget-futures-withdrawal-gate.webp"
+  },
+  {
+   "title": "Tether’s USDT at center of Iran’s shadow banking network, new Senate Report says",
+   "link": "https://www.theblock.co/news/regulation/2026-09-28-tethers-usdt-center-iran-shadow-banking-network-new-senate-report-says-417094",
+   "source": "The Block",
+   "published": "2026-09-28T19:10:42+00:00",
+   "summary": "Tether and its stablecoin have become central in \"Iran's shadow banking system,\" according to a new Senate investigation.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/04/20240429_Tether_News_3.jpg"
+  },
+  {
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-09-28T19:02:45+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "title": "Nvidia Built a Kill Switch for AI Agents Because They Keep Getting Out",
+   "link": "https://decrypt.co/379468/nvidia-kill-switch-ai-agents",
+   "source": "Decrypt",
+   "published": "2026-09-28T18:46:03+00:00",
+   "summary": "OpenShell and Sentry give AI agents a hardware-enforced leash, arriving after a summer of agents breaching a government site, hacking their own tests, and going rogue during a security evaluation.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/07/nvidia-logo-decrypt-style-02-gID_7.png"
+  },
   {
    "title": "US SEC follows CFTC in staff guidance for crypto",
    "link": "https://cointelegraph.com/news/sec-cftc-staff-guidance-crypto-clarity-fail?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -185,14 +297,6 @@
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/tom-lee-article-16x9-1.png"
   },
   {
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-09-28T13:32:34+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
    "title": "California signs into law restrictions banning public officers from issuing crypto meme coins",
    "link": "https://cryptoslate.com/newsom-signs-california-law-barring-public-officers-and-certain-employees-from-issuing-meme-coins/",
    "source": "CryptoSlate",
@@ -239,14 +343,6 @@
    "published": "2026-09-28T12:38:01+00:00",
    "summary": "Strategy sold 1.47 million MSTR shares for $246.2 million, using the proceeds for Bitcoin purchases and STRC preferred stock repurchases.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3KYHA0Z0DAFRPRWE639Z8D7/hi-why-saylors-strategy-keeps-buying-bitcoin-the-long-term-bet-explained-6.jpg"
-  },
-  {
-   "title": "Bitcoin dips below $83,000 to start the week as Asia markets sell, extending last week’s retreat",
-   "link": "https://cryptoslate.com/bitcoin-dips-below-83000-on-monday-extending-last-weeks-retreat/",
-   "source": "CryptoSlate",
-   "published": "2026-09-28T12:30:41+00:00",
-   "summary": "The Asia-session quote crossed the lower edge of Friday's range while oil and Treasury yields rose in the wider market. The post Bitcoin dips below $83,000 to start the week as Asia markets sell, extending last week’s retreat appeared…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/crypto-price-watch.webp"
   },
   {
    "title": "Chainlink launches new version of its crypto bridge tech 'CCIP' to give apps more control over their security",
@@ -297,14 +393,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/2422f4cb8addf51ff9749bd06180d8af713edf6b-3000x2001.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
   },
   {
-   "title": "Ethereum’s next scaling leap may come from making everyone stop doing the same work",
-   "link": "https://cryptoslate.com/ethereums-next-scaling-leap-may-come-from-making-everyone-stop-doing-the-same-work/",
-   "source": "CryptoSlate",
-   "published": "2026-09-28T11:30:01+00:00",
-   "summary": "Cheaper proofs could widen verification while builders and provers still need the data to keep blocks and rollups moving. The post Ethereum’s next scaling leap may come from making everyone stop doing the same work appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/ethereum-state-access.webp"
-  },
-  {
    "title": "Bitget resumes Bitcoin withdrawals as hacker swaps ETH via THORChain",
    "link": "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
@@ -319,14 +407,6 @@
    "published": "2026-09-28T11:00:00+00:00",
    "summary": "Franklin Templeton’s tokenized money market shares can be used as collateral for USDT or USDC trading credit lines on Bybit while earning yield on the underlying assets.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/ad2bfefb79599f5b40634c14c22a9a628a33a13f-2048x1152.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Evernorth’s XRP buying power could shrink if SPAC shareholders redeem this week",
-   "link": "https://cryptoslate.com/evernorths-xrp-buying-power-could-shrink-if-spac-shareholders-redeem-this-week/",
-   "source": "CryptoSlate",
-   "published": "2026-09-28T10:30:17+00:00",
-   "summary": "Armada’s August trust balance and a conditional note show possible funding, but redemptions and spending choices will decide any new token purchases. The post Evernorth’s XRP buying power could shrink if SPAC shareholders redeem this week…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/evernorth-merger-cash.webp"
   },
   {
    "title": "California Bans Public Officials From Issuing Meme Coins Under New Newsom Law",
@@ -345,7 +425,7 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/a9b2334bbdd72659a819b0cd5f242c7fb85126fd-1920x1080.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
   },
   {
-   "title": "Live updates: Bitcoin pulls off worst levels as oil dips on Iran deal hopes",
+   "title": "Live updates: Bitcoin remains under pressure as Iran denies report of peace progress",
    "link": "https://www.coindesk.com/business/2026/09/28/live-updates-bitcoin-sinks-below-usd83-000-as-iran-talks-stall-and-oil-climbs",
    "source": "CoinDesk",
    "published": "2026-09-28T10:02:37+00:00",
@@ -391,14 +471,6 @@
    "published": "2026-09-28T09:19:50+00:00",
    "summary": "DYORSWAP said it paid more than 200 ETH in compensation, while Upbit operator Dunamu’s GIWA warned that its mainnet had not launched.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3KJTCBBBDP28G69E25NG96Q/fake-giwa.png"
-  },
-  {
-   "title": "Crypto scammers built an entire fake blockchain to steal over $2 million",
-   "link": "https://cryptoslate.com/crypto-scammers-built-an-entire-fake-blockchain-to-steal-over-2-million/",
-   "source": "CryptoSlate",
-   "published": "2026-09-28T09:10:29+00:00",
-   "summary": "Scammers built a counterfeit version of Upbit-backed GIWA blockchain and lured 1,333 wallets into depositing 767 ETH, worth about $2 million, before draining almost all of it. The fake network appeared to be GIWA’s anticipated Ethereum…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/fake-giwa-blockchain-scam.webp"
   },
   {
    "title": "Bitcoin drops under $83K as liquidity hunting keeps bulls from targeting yearly open",
@@ -575,78 +647,6 @@
    "published": "2026-09-27T07:18:42+00:00",
    "summary": "Our ambition should be to “enable 10 million new companies to raise capital,” Strategy’s executive chairman Michael Saylor wrote in an essay.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3GVCZQXE2KGQ9ZJ6AN3C2VH/hi-michael-saylor2.png"
-  },
-  {
-   "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow, their largest since October",
-   "link": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
-   "source": "The Block",
-   "published": "2026-09-26T17:24:12+00:00",
-   "summary": "The inflows pushed bitcoin ETFs' year-to-date net flows back above zero, after the funds sat roughly $5.8 billion in the red just two months ago.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-v2.png"
-  },
-  {
-   "title": "Bitcoin ETFs Notch Seven-Day Winning Streak as 2026 Flows Turn Green",
-   "link": "https://decrypt.co/379391/bitcoin-etfs-notch-seven-day-winning-streak-as-2026-flows-turn-green",
-   "source": "Decrypt",
-   "published": "2026-09-26T17:01:03+00:00",
-   "summary": "Bitcoin ETFs have drawn nearly $3 billion over seven straight sessions, erasing post-Clarity Act losses and pushing 2026 flows back into positive territory.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-02-gID_7.png"
-  },
-  {
-   "title": "How Crypto Stopped Waiting for Congress and Learned to Love the Regulators",
-   "link": "https://decrypt.co/379383/how-crypto-stopped-waiting-congress-learned-love-regulators",
-   "source": "Decrypt",
-   "published": "2026-09-26T16:06:03+00:00",
-   "summary": "After the Clarity Act failed in the Senate, the SEC, CFTC, and the Fed moved within days to write crypto's rules themselves. Will it be enough?",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/US-Capitol-decrypt-style-02-gID_7.png"
-  },
-  {
-   "title": "Kalshi loses appeal over Ohio and Tennessee sports betting laws, widening circuit split",
-   "link": "https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937",
-   "source": "The Block",
-   "published": "2026-09-26T15:17:34+00:00",
-   "summary": "A federal appeals court ruled on Friday that Kalshi has not adequately shown its sports event contracts are swaps under the Commodity Exchange Act.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-1.png"
-  },
-  {
-   "title": "AI Agents Are Racing to Make Quantum-Safe Bitcoin Cheap—And Winning",
-   "link": "https://decrypt.co/379378/ai-agents-racing-make-quantum-safe-bitcoin-cheap",
-   "source": "Decrypt",
-   "published": "2026-09-26T15:01:05+00:00",
-   "summary": "An open competition run by StarkWare, Yukon Research, and Eigen Labs drove the estimated cost of building a quantum-safe Bitcoin transaction from about $320 to roughly $67, with AI models topping the leaderboards.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/09/Bitcoin-decrypt-style-23-gID_7.jpg"
-  },
-  {
-   "title": "Kraken’s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
-   "link": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
-   "source": "CoinDesk",
-   "published": "2026-09-26T14:00:00+00:00",
-   "summary": "Kraken parent Payward is unifying trading, payments, asset management and institutional services on common rails, co-CEO Arjun Sethi said.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/60eaa4392d735a85d254d5ac89ec08baf0b7a62e-2048x1152.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Kalshi loses appeal, setting up potential Supreme Court case",
-   "link": "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-09-26T13:21:12+00:00",
-   "summary": "The 6th US Circuit Court of Appeals ruled against prediction market Kalshi, siding with Ohio and Tennessee on regulating sports-event contracts under state laws.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1M5NCSJSS1MAFGEDXXFPQN1/court-vs-kalshi-3.jpg"
-  },
-  {
-   "title": "Google Just Made Free 1080p AI Video Generation Available to Anyone",
-   "link": "https://decrypt.co/379353/google-free-1080p-ai-video-generation",
-   "source": "Decrypt",
-   "published": "2026-09-26T13:01:03+00:00",
-   "summary": "Google Vids now lets any Google account holder generate free HD AI video using Gemini Omni 1.1 Flash, with new scene, timing, and watermark controls.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/05/decrypt-style-google-3-gID_7.png"
-  },
-  {
-   "title": "Binance deal gives Circle a boost in stablecoin race with Tether, analysts say",
-   "link": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say",
-   "source": "CoinDesk",
-   "published": "2026-09-26T13:00:00+00:00",
-   "summary": "The five-year deal could strengthen USDC’s reach in emerging markets, though Tether’s liquidity advantage remains hard to dislodge, analysts told CoinDesk.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/9bfacc43729daed7fb15a2d284673bb17f22de40-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
   }
  ]
 }
