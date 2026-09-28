@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28T07:17:49+00:00",
+ "updated": "2026-09-28T08:42:01+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,30 @@
   "The Block"
  ],
  "items": [
+  {
+   "title": "Bitget starts phased withdrawal resumption following $388 million exploit",
+   "link": "https://www.theblock.co/news/business/2026-09-28-bitget-starts-phased-withdrawal-resumption-416965",
+   "source": "The Block",
+   "published": "2026-09-28T08:31:18+00:00",
+   "summary": "The exchange said it has patched the vulnerability, and losses from the incident will be fully covered by a user protection fund.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/09/20230911_Bitget_News.jpg"
+  },
+  {
+   "title": "Bitcoin ETFs draw $2.4B in biggest inflow week since October 2025",
+   "link": "https://cointelegraph.com/markets/bitcoin-etf-billion-biggest-inflow-week-october-2025?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-09-28T08:24:40+00:00",
+   "summary": "Daily inflows slowed as Bitcoin pulled back from above $87,100, while Ether and XRP ETFs also attracted fresh capital during the week.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3KCZXGV1C50ET53JWS4RJ0V/hi-can-bitcoins-hard-cap-be-changed-3.jpg"
+  },
+  {
+   "title": "RedotPay completes financial audit as it presses ahead with U.S. IPO plans",
+   "link": "https://www.coindesk.com/business/2026/09/28/redotpay-completes-financial-audit-as-it-presses-ahead-with-u-s-ipo-plans",
+   "source": "CoinDesk",
+   "published": "2026-09-28T07:50:00+00:00",
+   "summary": "The stablecoin payments company said the audit is part of its preparations to go public, disputing an August report that the listing had been put on hold.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/b809e903b20dd26de1240800f8539bcb475389ca-1500x1000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
   {
    "title": "California's Newsom signs memecoin ban and calls it 'The Opposite of Trump'",
    "link": "https://www.coindesk.com/markets/2026/09/28/california-s-newsom-signs-memecoin-ban-and-calls-it-the-opposite-of-trump",
@@ -623,30 +647,6 @@
    "published": "2026-09-25T12:44:30+00:00",
    "summary": "CoinGlass will retain its brand and team, while its website, app, free tools, API and pricing will remain unchanged following the acquisition.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3C95VNCWEKXAFT14D52K8ZQ/crypto-market-trading2.jpg"
-  },
-  {
-   "title": "SlowMist has yet to confirm crypto theft from iPhone Safari attack",
-   "link": "https://cointelegraph.com/news/no-confirmed-crypto-theft-iphone-safari-attack-slowmist?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-09-25T12:19:34+00:00",
-   "summary": "The analyzed Safari sample targets iOS 18.4–18.6.2 using previously patched flaws, while its effectiveness on iOS 26.5 remains unverified.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M3BTS7FTRRJXR7DWT1DQ8993/hi-browser-for-ios1.jpg"
-  },
-  {
-   "title": "Defense Secretary Pete Hegseth Holds Bitcoin in a Coinbase Wallet, Filing Shows",
-   "link": "https://decrypt.co/379290/defense-secretary-pete-hegseth-holds-bitcoin-in-a-coinbase-wallet-filing-shows",
-   "source": "Decrypt",
-   "published": "2026-09-25T12:01:15+00:00",
-   "summary": "Two entries in his annual disclosure put the holding somewhere between $16,000 and $65,000, alongside more than $1 million in cash.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/09/pete-hegseth-decrypt-style-gID_7.jpg"
-  },
-  {
-   "title": "Bond volatility surges while bitcoin and Wall Street stay calm",
-   "link": "https://www.coindesk.com/markets/2026/09/25/bond-volatility-surges-while-bitcoin-and-wall-street-stay-calm",
-   "source": "CoinDesk",
-   "published": "2026-09-25T11:54:28+00:00",
-   "summary": "Bond volatility is at its highest since March, while the bitcoin VIX, BVIV and Wall Street's VIX remain near its yearly low.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/77696cb11ed522d8f5a7bb512cc29ab103a42ee7-1542x969.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
   }
  ]
 }
