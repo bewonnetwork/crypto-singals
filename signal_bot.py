@@ -55,6 +55,11 @@ _load_settings_file()
 # ============================ সেটিংস (এখানে বদলাতে পারেন) ============================
 TELEGRAM_BOT_TOKEN = os.getenv("TG_TOKEN", "")      # GitHub Secrets থেকে আসবে
 TELEGRAM_CHAT_ID = os.getenv("TG_CHAT_ID", "")      # যেমন @my_free_signals
+# নিউজ আলাদা চ্যানেলে পাঠাতে চাইলে GitHub Secret-এ TG_NEWS_CHAT_ID দিন; না দিলে একই চ্যানেলে যাবে
+TELEGRAM_NEWS_CHAT_ID = os.getenv("TG_NEWS_CHAT_ID", "") or TELEGRAM_CHAT_ID
+NEWS_TO_TELEGRAM = True     # False করলে নিউজ Telegram-এ যাবে না (শুধু ওয়েবসাইটে থাকবে)
+NEWS_PER_RUN = 2            # প্রতি ১৫ মিনিটে সর্বোচ্চ কয়টা নতুন খবর Telegram-এ যাবে
+SITE_URL = "https://bewonnetwork.github.io/crypto-singals/"
 
 COINS = ["BTC", "ETH", "BNB", "SOL", "XRP", "ADA", "DOGE", "AVAX", "LINK", "DOT"]
 INTERVAL = "1h"             # 15m / 1h / 4h
@@ -346,14 +351,15 @@ def win_rate_text(st):
             f"Win rate {st['win'] * 100 / done:.0f}%")
 
 
-def send_telegram(text):
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+def send_telegram(text, chat_id=None, preview=False):
+    chat_id = chat_id or TELEGRAM_CHAT_ID
+    if not TELEGRAM_BOT_TOKEN or not chat_id:
         print("---- (Telegram সেট করা নেই, তাই শুধু দেখাচ্ছি) ----\n" + text + "\n")
         return True
     try:
         r = HTTP.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
-                      data={"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML",
-                            "disable_web_page_preview": "true"}, timeout=15)
+                      data={"chat_id": chat_id, "text": text, "parse_mode": "HTML",
+                            "disable_web_page_preview": "false" if preview else "true"}, timeout=15)
         if r.ok:
             return True
         print("Telegram error:", r.text)
@@ -486,10 +492,36 @@ def fetch_news():
     return items[:80]
 
 
-def update_news():
+def news_message(n):
+    e = html.escape
+    return (f"📰 <b>{e(n['title'])}</b>\n\n"
+            + (f"{e(n['summary'])}\n\n" if n.get("summary") else "")
+            + f"🔗 <a href=\"{e(n['link'])}\">পুরো খবর পড়ুন — {e(n['source'])}</a>\n"
+            f"🌐 <a href=\"{SITE_URL}#/news\">আরও খবর আমাদের ওয়েবসাইটে</a>\n\n#CryptoNews")
+
+
+def post_news_to_telegram(items, state):
+    """নতুন খবর Telegram-এ পাঠায়। প্রথমবার শুধু মনে রাখে, পাঠায় না (যাতে ৮০টা খবর একসাথে না যায়)"""
+    posted = state.setdefault("news_posted", [])
+    links = [x["link"] for x in items]
+    if not state.get("news_seeded"):
+        state["news_seeded"] = True
+        state["news_posted"] = links[:500]
+        return
+    seen = set(posted)
+    new = [x for x in items if x["link"] not in seen]
+    for n in reversed(new[:NEWS_PER_RUN]):          # পুরোনোটা আগে, নতুনটা পরে
+        send_telegram(news_message(n), chat_id=TELEGRAM_NEWS_CHAT_ID, preview=True)
+        time.sleep(1)
+    state["news_posted"] = ([x["link"] for x in new] + posted)[:500]
+
+
+def update_news(state=None):
     items = fetch_news()
     if not items:
         return
+    if state is not None and NEWS_TO_TELEGRAM:
+        post_news_to_telegram(items, state)
     try:
         with open(NEWS_FILE, encoding="utf-8") as f:
             old = json.load(f)
@@ -561,11 +593,11 @@ def run_once(force_digest=False):
         if frames and send_telegram(daily_digest(frames, state)):
             state["last_digest"] = today
 
-    save_state(state)   # কিছু বদলালে তবেই GitHub এ নতুন commit হবে
     try:
-        update_news()
+        update_news(state)
     except Exception as e:
         print("news error:", e)
+    save_state(state)   # কিছু বদলালে তবেই GitHub এ নতুন commit হবে
     print(f"done: {len(frames)}/{len(COINS)} coins ok, open={len(state['open'])}")
     for f in fails:
         print("FAIL", f)

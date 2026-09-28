@@ -231,6 +231,8 @@ input{min-width:0;width:220px;max-width:100%}
 footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--muted);font-size:14px}
 footer .wrap{display:grid;gap:10px}
 footer nav{display:flex;gap:16px;flex-wrap:wrap}
+.langbtn{border:1px solid var(--line);background:var(--surface);color:var(--ink);height:38px;padding:0 10px;border-radius:10px;font:700 13px "IBM Plex Mono","Hind Siliguri",monospace;cursor:pointer;white-space:nowrap}
+.langbtn:hover{background:var(--sunk)}
 </style>
 </head>
 <body>
@@ -239,15 +241,16 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <a class="brand" href="#/"><i><svg viewBox="0 0 24 24" fill="none"><path d="M6 18V10M12 18V5M18 18V13" stroke="#1A1405" stroke-width="3" stroke-linecap="round"/></svg></i><span id="brandName">BEWON Signals</span></a>
     <nav class="nav" id="nav">
-      <a href="#/" data-r="home">হোম</a>
-      <a href="#/market" data-r="market">মার্কেট</a>
-      <a href="#/signals" data-r="signals">সিগনাল</a>
-      <a href="#/news" data-r="news">নিউজ</a>
-      <a href="#/about" data-r="about">আমাদের সম্পর্কে</a>
+      <a href="#/" data-r="home" data-bn="হোম" data-en="Home">হোম</a>
+      <a href="#/market" data-r="market" data-bn="মার্কেট" data-en="Market">মার্কেট</a>
+      <a href="#/signals" data-r="signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a>
+      <a href="#/news" data-r="news" data-bn="নিউজ" data-en="News">নিউজ</a>
+      <a href="#/about" data-r="about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a>
     </nav>
     <span class="sp"></span>
-    <button class="iconbtn" id="themeBtn" aria-label="থিম বদলান"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
-    <a class="btn btn-primary tg-top" id="tgTop" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.1 1.4 11.6c-1-.3-1.1-1 .2-1.5L20.5 2.9c.9-.3 1.7.2 1.4 1.4z"/></svg><span>Telegram-এ Join</span></a>
+    <button class="langbtn" id="langBtn" aria-label="Language / ভাষা">EN</button>
+    <button class="iconbtn" id="themeBtn" aria-label="Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <a class="btn btn-primary tg-top" id="tgTop" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.1 1.4 11.6c-1-.3-1.1-1 .2-1.5L20.5 2.9c.9-.3 1.7.2 1.4 1.4z"/></svg><span data-bn="Telegram-এ Join" data-en="Join Telegram">Telegram-এ Join</span></a>
   </div>
 </header>
 
@@ -255,9 +258,9 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap}
 
 <footer>
   <div class="wrap">
-    <nav><a href="#/">হোম</a><a href="#/market">মার্কেট</a><a href="#/signals">সিগনাল</a><a href="#/news">নিউজ</a><a href="#/about">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
-    <p>⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।</p>
-    <p>দাম: Binance public API · Fear &amp; Greed Index: <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">alternative.me</a> · কয়েন আইকন: cryptocurrency-icons</p>
+    <nav><a href="#/" data-bn="হোম" data-en="Home">হোম</a><a href="#/market" data-bn="মার্কেট" data-en="Market">মার্কেট</a><a href="#/signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a><a href="#/news" data-bn="নিউজ" data-en="News">নিউজ</a><a href="#/about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
+    <p data-bn="⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।" data-en="⚠️ Signals on this site are for information only, not financial advice. Crypto carries a real risk of loss. Do your own research.">⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।</p>
+    <p><span data-bn="দাম" data-en="Prices">দাম</span>: Binance public API · Fear &amp; Greed Index: <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">alternative.me</a> · <span data-bn="কয়েন আইকন" data-en="Coin icons">কয়েন আইকন</span>: cryptocurrency-icons</p>
     <p>© <span id="yr"></span> <span class="bn"></span></p>
   </div>
 </footer>
@@ -270,6 +273,7 @@ const SITE = {
   telegram: "https://t.me/all_crypt_signals",
   channel: "@all_crypt_signals",
   botCoins: ["BTC","ETH","BNB","SOL","XRP","ADA","DOGE","AVAX","LINK","DOT"],
+  defaultLang: "bn",          // "bn" = বাংলা, "en" = English
 };
 /* ========================================================================== */
 
@@ -280,6 +284,32 @@ const $ = (s, el = document) => el.querySelector(s);
 const app = $("#app");
 let timers = [], chart = null, SIG = null;
 
+/* ---------- language ---------- */
+let LANG = SITE.defaultLang;
+try{ const saved=localStorage.getItem("lang"); if(saved==="bn"||saved==="en") LANG=saved; }catch(e){}
+const tr = (bn, en) => LANG === "en" ? en : bn;
+const WHY_EN = [
+  [/^EMA 9\/21 ক্রস \+ RSI ঠিক সীমায় \+ ভলিউম বেশি$/, "EMA 9/21 cross + RSI in range + above-average volume"],
+  [/^(\S+) বড় ট্রেন্ড একই দিকে$/, "$1 higher-timeframe trend agrees"],
+  [/^(\S+) বড় ট্রেন্ড উল্টো দিকে$/, "$1 higher-timeframe trend is opposite"],
+  [/^দাম EMA 200-এর ওপরে$/, "Price above EMA 200"],
+  [/^দাম EMA 200-এর নিচে$/, "Price below EMA 200"],
+  [/^MACD মোমেন্টাম বাড়ছে$/, "MACD momentum building"],
+  [/^ট্রেন্ড শক্তিশালী \(ADX (\d+)\)$/, "Strong trend (ADX $1)"],
+  [/^ট্রেন্ড মাঝারি \(ADX (\d+)\)$/, "Moderate trend (ADX $1)"],
+  [/^ট্রেন্ড দুর্বল \(ADX (\d+)\)$/, "Weak trend (ADX $1)"],
+  [/^ভলিউম গড়ের ([\d.]+) গুণ$/, "Volume $1× the average"],
+  [/^RSI (\d+) ভালো জায়গায়$/, "RSI $1 in the sweet spot"],
+  [/^BTC-ও একই দিকে যাচ্ছে$/, "BTC moving the same way"],
+  [/^BTC উল্টো দিকে$/, "BTC moving the opposite way"],
+];
+function whyText(w){ if(LANG!=="en") return w; for(const [re,en] of WHY_EN){ if(re.test(w)) return w.replace(re,en); } return w; }
+function applyStatic(){
+  document.documentElement.lang = LANG;
+  document.querySelectorAll("[data-bn]").forEach(el=>{ el.textContent = LANG==="en" ? el.dataset.en : el.dataset.bn; });
+  $("#langBtn").textContent = LANG==="en" ? "বাংলা" : "EN";
+}
+
 /* ---------- helpers ---------- */
 function fmtPx(x){ x=+x; if(!isFinite(x)) return "—";
   if(x>=1000) return x.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -287,10 +317,10 @@ function fmtPx(x){ x=+x; if(!isFinite(x)) return "—";
   return x.toPrecision(4).replace(/0+$/,"").replace(/\.$/,""); }
 function fmtBig(x){ x=+x; if(x>=1e9) return (x/1e9).toFixed(2)+"B"; if(x>=1e6) return (x/1e6).toFixed(2)+"M"; if(x>=1e3) return (x/1e3).toFixed(1)+"K"; return x.toFixed(0); }
 function pct(x){ x=+x; return (x>=0?"+":"")+x.toFixed(2)+"%"; }
-function cls(x){ return +x>=0?"up":"down"; }
-function when(iso){ if(!iso) return "—"; const d=new Date(iso); return d.toLocaleString("bn-BD",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}); }
+function when(iso){ if(!iso) return "—"; const d=new Date(iso); return d.toLocaleString(LANG==="en"?"en-GB":"bn-BD",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}); }
 function ago(iso){ if(!iso) return "—"; const m=Math.round((Date.now()-new Date(iso))/60000);
-  if(m<1) return "এইমাত্র"; if(m<60) return m+" মিনিট আগে"; const h=Math.round(m/60); if(h<48) return h+" ঘণ্টা আগে"; return Math.round(h/24)+" দিন আগে"; }
+  if(m<1) return tr("এইমাত্র","just now"); if(m<60) return tr(m+" মিনিট আগে",m+" min ago"); const h=Math.round(m/60);
+  if(h<48) return tr(h+" ঘণ্টা আগে",h+" h ago"); const d=Math.round(h/24); return tr(d+" দিন আগে",d+" days ago"); }
 function logo(sym){ const s=sym.toLowerCase();
   return `<span class="logo"><img alt="" loading="lazy" src="https://cdn.jsdelivr.net/npm/cryptocurrency-icons@0.18.1/svg/color/${s}.svg" onerror="var p=this.parentNode;p.textContent='${sym.slice(0,3)}'"></span>`; }
 function esc(t){ return String(t??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
@@ -304,7 +334,7 @@ function newsCard(n, lead){
   return `<a class="card nc${lead?" lead":""}" href="${safeUrl(n.link)}" target="_blank" rel="noopener">
     <div class="img">${img?`<img src="${img}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}</div>
     <div class="body"><div class="meta"><span class="src">${esc(n.source)}</span><span>${ago(n.published)}</span></div>
-    <h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p><span class="meta">পুরো খবর পড়ুন ↗</span></div></a>`; }
+    <h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p><span class="meta">${tr("পুরো খবর পড়ুন ↗","Read full story ↗")}</span></div></a>`; }
 function clean(sym){ return String(sym||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,12); }
 async function bget(path){ let err;
   for(const b of API){ try{ const r=await fetch(b+path); if(r.ok) return await r.json(); err=new Error(r.status);}catch(e){err=e;} }
@@ -312,9 +342,10 @@ async function bget(path){ let err;
 function every(ms, fn){ timers.push(setInterval(fn, ms)); }
 function pillResult(r){ const m={TP2:["p-tp2","🎯 TP2"],TP1:["p-tp1","✅ TP1"],SL:["p-sl","❌ SL"],EXPIRED:["p-exp","⌛ Expired"]}[r]||["p-flat",r];
   return `<span class="pill ${m[0]}">${m[1]}</span>`; }
+function pillOpen(){ return `<span class="pill p-open">● ${tr("চলছে","Active")}</span>`; }
 function confColor(c){ return c>=75?"var(--up)":c>=60?"var(--accent)":"var(--down)"; }
 function confBlock(t){ if(t.conf==null) return "";
-  const why=(t.why||[]).map(w=>w.startsWith("⚠")?`<li class="warn">${esc(w.replace(/^⚠\s*/,""))}</li>`:`<li>${esc(w)}</li>`).join("");
+  const why=(t.why||[]).map(w=>w.startsWith("⚠")?`<li class="warn">${esc(whyText(w.replace(/^⚠\s*/,"")))}</li>`:`<li>${esc(whyText(w))}</li>`).join("");
   return `<div class="conf"><div class="top"><span class="muted">Confidence</span><b style="color:${confColor(t.conf)}">${t.conf}%</b></div>
     <div class="cbar"><i style="width:${t.conf}%;background:${confColor(t.conf)}"></i></div>${why?`<ul class="why">${why}</ul>`:""}</div>`; }
 function pillSide(s){ return `<span class="pill ${s==="BUY"?"p-buy":"p-sell"}">${s==="BUY"?"▲ BUY":"▼ SELL"}</span>`; }
@@ -340,12 +371,12 @@ function spark(closes){
 function ticket(t, live, sample){
   const buy=t.side==="BUY", lv=[t.tp2,t.tp1,t.entry,t.sl], mn=Math.min(...lv), mx=Math.max(...lv), rng=(mx-mn)||1;
   const pos=v=>(100-((v-mn)/rng)*100).toFixed(1)+"%";
-  const status = t.result ? pillResult(t.result) : `<span class="pill p-open">● চলছে</span>`;
+  const status = t.result ? pillResult(t.result) : pillOpen();
   const dot=(v,c,l)=>`<b style="top:${pos(v)};background:${c}"></b><em style="top:${pos(v)}">${l}</em>`;
   const cur = live && live>=mn*0.9 && live<=mx*1.1 ? `<b style="top:${pos(Math.min(mx,Math.max(mn,live)))};background:var(--ink);width:8px;height:8px;left:-5px"></b>` : "";
   return `<article class="ticket">
     <div class="ticket-head"><div class="who">${logo(t.coin)}<div><b>${t.coin}/USDT</b><div class="muted" style="font-size:13px">${SIG?.interval||"1h"} · ${when(t.opened)}</div></div></div>
-      <div style="display:flex;gap:6px;align-items:center">${sample?'<span class="sample">উদাহরণ</span>':""}${pillSide(t.side)}</div></div>
+      <div style="display:flex;gap:6px;align-items:center">${sample?`<span class="sample">${tr("উদাহরণ","SAMPLE")}</span>`:""}${pillSide(t.side)}</div></div>
     <div class="ticket-body">
       <div class="levels">
         <div class="lv tp"><span>TP2</span><b class="num">${fmtPx(t.tp2)}</b></div>
@@ -356,7 +387,7 @@ function ticket(t, live, sample){
       <div class="ladder" aria-hidden="true">${dot(t.tp2,"var(--up)","TP2")}${dot(t.tp1,"var(--up)","TP1")}${dot(t.entry,"var(--accent)","IN")}${dot(t.sl,"var(--down)","SL")}${cur}</div>
     </div>
     ${confBlock(t)}
-    <div class="ticket-foot"><span>${status}</span><span>${live?`এখন <b class="num" style="color:var(--ink)">${fmtPx(live)}</b>`:(buy?"দাম বাড়ার সিগনাল":"দাম কমার সিগনাল")}</span></div>
+    <div class="ticket-foot"><span>${status}</span><span>${live?`${tr("এখন","Now")} <b class="num" style="color:var(--ink)">${fmtPx(live)}</b>`:(buy?tr("দাম বাড়ার সিগনাল","Expects price to rise"):tr("দাম কমার সিগনাল","Expects price to fall"))}</span></div>
   </article>`; }
 
 /* ---------- pages ---------- */
@@ -364,14 +395,16 @@ async function pageHome(){
   const s=await loadSignals(), st=s.stats, wr=winRate(st);
   const latest = s.open[0] || s.history[0];
   const sample = {coin:"SOL",side:"BUY",entry:142.35,tp1:145.10,tp2:147.85,sl:139.60,opened:new Date().toISOString()};
+  const nCoins=(s.coins||SITE.botCoins).length;
   app.innerHTML = `
   <section class="hero">
     <div class="hero-copy">
-      <span class="eyebrow">ফ্রি · অটোমেটেড · ২৪/৭</span>
-      <h1>ক্রিপ্টো সিগনাল, <span style="color:var(--accent)">সম্পূর্ণ ফ্রি</span></h1>
-      <p class="lede">আমাদের বট প্রতি ১৫ মিনিটে ১০টা বড় কয়েনের চার্ট দেখে। EMA, RSI আর ভলিউম মিললে Entry, Take Profit আর Stop Loss সহ সিগনাল দেয়। প্রতিটা সিগনাল শেষে ফলাফলও দেখায়, তাই কিছুই লুকানো নেই।</p>
-      <div class="cta"><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">Telegram চ্যানেলে Join করুন</a><a class="btn btn-ghost" href="#/signals">সব সিগনাল দেখুন</a></div>
-      <div class="chips"><span class="chip">খরচ <b>০ টাকা</b></span><span class="chip">কয়েন <b>${(s.coins||SITE.botCoins).length}টা</b></span><span class="chip">টাইমফ্রেম <b>${s.interval||"1h"}</b></span></div>
+      <span class="eyebrow">${tr("ফ্রি · অটোমেটেড · ২৪/৭","Free · Automated · 24/7")}</span>
+      <h1>${tr(`ক্রিপ্টো সিগনাল, <span style="color:var(--accent)">সম্পূর্ণ ফ্রি</span>`,`Crypto signals, <span style="color:var(--accent)">completely free</span>`)}</h1>
+      <p class="lede">${tr(`আমাদের বট প্রতি ১৫ মিনিটে ${nCoins}টা বড় কয়েনের চার্ট দেখে। EMA, RSI আর ভলিউম মিললে Entry, Take Profit আর Stop Loss সহ সিগনাল দেয়। প্রতিটা সিগনাল শেষে ফলাফলও দেখায়, তাই কিছুই লুকানো নেই।`,
+        `Our bot checks the charts of ${nCoins} major coins every 15 minutes. When EMA, RSI and volume line up, it sends a signal with Entry, Take Profit and Stop Loss — and publishes the result of every signal, wins and losses alike.`)}</p>
+      <div class="cta"><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">${tr("Telegram চ্যানেলে Join করুন","Join the Telegram channel")}</a><a class="btn btn-ghost" href="#/signals">${tr("সব সিগনাল দেখুন","See all signals")}</a></div>
+      <div class="chips"><span class="chip">${tr("খরচ","Cost")} <b>${tr("০ টাকা","Free")}</b></span><span class="chip">${tr("কয়েন","Coins")} <b>${nCoins}</b></span><span class="chip">${tr("টাইমফ্রেম","Timeframe")} <b>${s.interval||"1h"}</b></span></div>
     </div>
     <div>${latest ? ticket(latest) : ticket(sample,null,true)}</div>
   </section>
@@ -379,34 +412,34 @@ async function pageHome(){
   <section>
     <div class="stats">
       <div class="card stat wide"><span class="k">Win rate</span><span class="v">${wr===null?"—":wr+"%"}</span><div class="bar"><i style="width:${wr??0}%"></i></div></div>
-      <div class="card stat"><span class="k">জয় (Win)</span><span class="v up">${st.win}</span></div>
-      <div class="card stat"><span class="k">হার (Loss)</span><span class="v down">${st.loss}</span></div>
-      <div class="card stat"><span class="k">চলমান সিগনাল</span><span class="v">${s.open.length}</span></div>
-      <div class="card stat"><span class="k">শেষ আপডেট</span><span class="v" style="font-size:16px;padding-top:8px">${ago(s.updated)}</span></div>
+      <div class="card stat"><span class="k">${tr("জয় (Win)","Wins")}</span><span class="v up">${st.win}</span></div>
+      <div class="card stat"><span class="k">${tr("হার (Loss)","Losses")}</span><span class="v down">${st.loss}</span></div>
+      <div class="card stat"><span class="k">${tr("চলমান সিগনাল","Active signals")}</span><span class="v">${s.open.length}</span></div>
+      <div class="card stat"><span class="k">${tr("শেষ আপডেট","Last update")}</span><span class="v" style="font-size:16px;padding-top:8px">${ago(s.updated)}</span></div>
     </div>
   </section>
 
   <section>
-    <div class="sec-head"><div><span class="eyebrow">লাইভ</span><h2>বট যে কয়েনগুলো দেখে</h2></div><p>গত ২৪ ঘণ্টা · প্রতি ৩০ সেকেন্ডে আপডেট</p></div>
+    <div class="sec-head"><div><span class="eyebrow">${tr("লাইভ","Live")}</span><h2>${tr("বট যে কয়েনগুলো দেখে","Coins the bot watches")}</h2></div><p>${tr("গত ২৪ ঘণ্টা · প্রতি ৩০ সেকেন্ডে আপডেট","Last 24 hours · refreshes every 30 s")}</p></div>
     <div class="board" id="board">${(s.coins||SITE.botCoins).map(c=>`<a class="card cc" href="#/coin/${c}"><div class="row"><span class="sym">${logo(c)}${c}</span><span class="pill p-flat skel">+0.00%</span></div><span class="px skel">00,000.00</span><svg></svg></a>`).join("")}</div>
   </section>
 
   <section class="duo">
-    <div class="card"><div class="pad" style="padding-bottom:0"><span class="eyebrow">মার্কেটের মুড</span><h3 style="margin-top:4px">Fear &amp; Greed Index</h3></div><div class="gauge" id="fg"><span class="muted">লোড হচ্ছে…</span></div></div>
-    <div class="card"><div class="pad" style="padding-bottom:0"><span class="eyebrow">কীভাবে কাজ করে</span><h3 style="margin-top:4px">তিন ধাপে সিগনাল</h3></div>
+    <div class="card"><div class="pad" style="padding-bottom:0"><span class="eyebrow">${tr("মার্কেটের মুড","Market mood")}</span><h3 style="margin-top:4px">Fear &amp; Greed Index</h3></div><div class="gauge" id="fg"><span class="muted">${tr("লোড হচ্ছে…","Loading…")}</span></div></div>
+    <div class="card"><div class="pad" style="padding-bottom:0"><span class="eyebrow">${tr("কীভাবে কাজ করে","How it works")}</span><h3 style="margin-top:4px">${tr("তিন ধাপে সিগনাল","A signal in three steps")}</h3></div>
       <ol class="steps">
-        <li><div><b>দাম সংগ্রহ</b><span>Binance, OKX, KuCoin বা Kraken থেকে প্রতি ১৫ মিনিটে ক্যান্ডেল ডেটা আনে।</span></div></li>
-        <li><div><b>নিয়ম মিলিয়ে দেখা</b><span>EMA 9 আর EMA 21 ক্রস করলে, RSI ঠিক সীমায় থাকলে আর ভলিউম গড়ের বেশি হলে তবেই সিগনাল হয়।</span></div></li>
-        <li><div><b>Telegram-এ পাঠানো</b><span>Entry, TP1, TP2 আর Stop Loss সহ চ্যানেলে যায়। পরে ফলাফলও জানায়।</span></div></li>
+        <li><div><b>${tr("দাম সংগ্রহ","Collect prices")}</b><span>${tr("Binance, OKX, KuCoin বা Kraken থেকে প্রতি ১৫ মিনিটে ক্যান্ডেল ডেটা আনে।","Pulls candle data from Binance, OKX, KuCoin or Kraken every 15 minutes.")}</span></div></li>
+        <li><div><b>${tr("নিয়ম মিলিয়ে দেখা","Check the rules")}</b><span>${tr("EMA 9/21 ক্রস, RSI, ভলিউম আর বড় ট্রেন্ড মিলিয়ে Confidence % বের করে। ৬০%-এর কম হলে সিগনাল দেয় না।","Scores the EMA 9/21 cross, RSI, volume and higher-timeframe trend into a Confidence %. Below 60% it stays silent.")}</span></div></li>
+        <li><div><b>${tr("Telegram-এ পাঠানো","Send to Telegram")}</b><span>${tr("Entry, TP1, TP2 আর Stop Loss সহ চ্যানেলে যায়। পরে ফলাফলও জানায়।","Posts Entry, TP1, TP2 and Stop Loss to the channel, then reports the outcome.")}</span></div></li>
       </ol></div>
   </section>
 
   <section>
-    <div class="sec-head"><div><span class="eyebrow">সাম্প্রতিক</span><h2>শেষ সিগনালগুলো</h2></div><a class="btn btn-ghost" href="#/signals">সব দেখুন →</a></div>
+    <div class="sec-head"><div><span class="eyebrow">${tr("সাম্প্রতিক","Recent")}</span><h2>${tr("শেষ সিগনালগুলো","Latest signals")}</h2></div><a class="btn btn-ghost" href="#/signals">${tr("সব দেখুন →","View all →")}</a></div>
     ${recentTable(s)}
   </section>
-  <section id="homeNews" hidden><div class="sec-head"><div><span class="eyebrow">বিশ্বজুড়ে</span><h2>সর্বশেষ ক্রিপ্টো খবর</h2></div><a class="btn btn-ghost" href="#/news">সব খবর →</a></div><div class="news-grid" id="hn"></div></section>
-  <p class="note">⚠️ সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। সবসময় Stop Loss ব্যবহার করুন, আর যতটুকু হারালে সমস্যা নেই তার বেশি লাগাবেন না।</p>`;
+  <section id="homeNews" hidden><div class="sec-head"><div><span class="eyebrow">${tr("বিশ্বজুড়ে","Worldwide")}</span><h2>${tr("সর্বশেষ ক্রিপ্টো খবর","Latest crypto news")}</h2></div><a class="btn btn-ghost" href="#/news">${tr("সব খবর →","All news →")}</a></div><div class="news-grid" id="hn"></div></section>
+  <p class="note">${tr("⚠️ সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। সবসময় Stop Loss ব্যবহার করুন, আর যতটুকু হারালে সমস্যা নেই তার বেশি লাগাবেন না।","⚠️ Signals are for information only, not financial advice. Always use a Stop Loss and never risk more than you can afford to lose.")}</p>`;
   loadNews().then(n=>{ const el=$("#hn"); if(!el||!n.items.length) return; el.innerHTML=n.items.slice(0,3).map(x=>newsCard(x)).join(""); $("#homeNews").hidden=false; });
 
   const coins=s.coins||SITE.botCoins;
@@ -417,41 +450,43 @@ async function pageHome(){
         return `<a class="card cc" href="#/coin/${c}"><div class="row"><span class="sym">${logo(c)}${c}</span><span class="pill ${ch>=0?"p-up":"p-down"}">${pct(ch)}</span></div><span class="px">${fmtPx(t.lastPrice)}</span><span class="sp" data-c="${c}"></span></a>`}).join("");
       coins.forEach(async c=>{ try{ const k=await bget(`/api/v3/klines?symbol=${c}USDT&interval=1h&limit=24`);
         const el=$(`.sp[data-c="${c}"]`); if(el) el.outerHTML=spark(k.map(r=>+r[4])); }catch(e){} });
-    }catch(e){ $("#board").innerHTML=`<div class="card empty" style="grid-column:1/-1">লাইভ দাম আনা যায়নি। ইন্টারনেট দেখে পাতা রিফ্রেশ করুন।</div>`; } };
+    }catch(e){ const b=$("#board"); if(b) b.innerHTML=`<div class="card empty" style="grid-column:1/-1">${tr("লাইভ দাম আনা যায়নি। ইন্টারনেট দেখে পাতা রিফ্রেশ করুন।","Couldn't load live prices. Check your connection and refresh.")}</div>`; } };
   board(); every(30000, board);
   fearGreed(s);
 }
 
 function recentTable(s){
   const rows=[...s.open.map(t=>({...t,live:true})), ...s.history].slice(0,6);
-  if(!rows.length) return `<div class="card empty">এখনো কোনো সিগনাল আসেনি। মার্কেটে নিয়ম মিললেই এখানে দেখা যাবে।<br><br><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">Telegram-এ Join করে অপেক্ষা করুন</a></div>`;
-  return `<div class="card tbl-wrap"><table><thead><tr><th>কয়েন</th><th>দিক</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">SL</th><th>অবস্থা</th><th class="hide-sm">সময়</th></tr></thead><tbody>
-  ${rows.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${t.live?`<span class="pill p-open">● চলছে</span>`:pillResult(t.result)}</td><td class="muted hide-sm">${when(t.opened)}</td></tr>`).join("")}
+  if(!rows.length) return `<div class="card empty">${tr("এখনো কোনো সিগনাল আসেনি। মার্কেটে নিয়ম মিললেই এখানে দেখা যাবে।","No signals yet. They'll appear here as soon as the market meets the rules.")}<br><br><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">${tr("Telegram-এ Join করে অপেক্ষা করুন","Join Telegram to get the first one")}</a></div>`;
+  return `<div class="card tbl-wrap"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">SL</th><th>${tr("অবস্থা","Status")}</th><th class="r hide-sm">Conf.</th><th class="hide-sm">${tr("সময়","Time")}</th></tr></thead><tbody>
+  ${rows.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${t.live?pillOpen():pillResult(t.result)}</td><td class="r hide-sm">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td></tr>`).join("")}
   </tbody></table></div>`; }
+function confPill(t){ return t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${t.conf}%</span>`:'<span class="muted">—</span>'; }
 
 async function fearGreed(s){
   let v=null,l="";
   try{ const d=(await (await fetch("https://api.alternative.me/fng/?limit=1")).json()).data[0]; v=+d.value; l=d.value_classification; }
   catch(e){ if(s.fear_greed){ v=s.fear_greed.value; l=s.fear_greed.label; } }
   const el=$("#fg"); if(!el) return;
-  if(v===null){ el.innerHTML=`<span class="muted">এখন পাওয়া যাচ্ছে না</span>`; return; }
-  const bn={"Extreme Fear":"খুব ভয়","Fear":"ভয়","Neutral":"নিরপেক্ষ","Greed":"লোভ","Extreme Greed":"খুব লোভ"}[l]||l;
+  if(v===null){ el.innerHTML=`<span class="muted">${tr("এখন পাওয়া যাচ্ছে না","Not available right now")}</span>`; return; }
+  const lbl=LANG==="en"?l:({"Extreme Fear":"খুব ভয়","Fear":"ভয়","Neutral":"নিরপেক্ষ","Greed":"লোভ","Extreme Greed":"খুব লোভ"}[l]||l);
   const a=Math.PI*(1-v/100), x=100+80*Math.cos(a), y=100-80*Math.sin(a);
   const col=v<25?"var(--down)":v<45?"#E0873A":v<55?"var(--flat)":v<75?"#7DBB4A":"var(--up)";
   const arc=(f,t,c)=>{const a1=Math.PI*(1-f/100),a2=Math.PI*(1-t/100);return `<path d="M${100+80*Math.cos(a1)} ${100-80*Math.sin(a1)} A80 80 0 0 1 ${100+80*Math.cos(a2)} ${100-80*Math.sin(a2)}" stroke="${c}" stroke-width="14" fill="none"/>`};
   el.innerHTML=`<svg viewBox="0 0 200 116" role="img" aria-label="Fear and Greed ${v}">
     ${arc(0,24.5,"var(--down)")}${arc(25.5,44.5,"#E0873A")}${arc(45.5,54.5,"var(--flat)")}${arc(55.5,74.5,"#7DBB4A")}${arc(75.5,100,"var(--up)")}
     <line x1="100" y1="100" x2="${x}" y2="${y}" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><circle cx="100" cy="100" r="6" fill="var(--ink)"/></svg>
-    <span class="v" style="color:${col}">${v}</span><b>${bn} <span class="muted" style="font-weight:400">(${l})</span></b>
-    <span class="muted" style="font-size:13px">০ = খুব ভয়, ১০০ = খুব লোভ · সূত্র: alternative.me</span>`; }
+    <span class="v" style="color:${col}">${v}</span><b>${lbl}${LANG==="en"?"":` <span class="muted" style="font-weight:400">(${l})</span>`}</b>
+    <span class="muted" style="font-size:13px">${tr("০ = খুব ভয়, ১০০ = খুব লোভ · সূত্র: alternative.me","0 = extreme fear, 100 = extreme greed · source: alternative.me")}</span>`; }
 
 let mkt={rows:[],tab:"vol",q:""};
 async function pageMarket(){
-  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">লাইভ মার্কেট</span><h2>ক্রিপ্টো মার্কেট</h2></div><p id="mktNote">Binance-এর শীর্ষ USDT পেয়ার · প্রতি ৬০ সেকেন্ডে আপডেট</p></div>
+  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">${tr("লাইভ মার্কেট","Live market")}</span><h2>${tr("ক্রিপ্টো মার্কেট","Crypto market")}</h2></div><p>${tr("Binance-এর শীর্ষ USDT পেয়ার · প্রতি ৬০ সেকেন্ডে আপডেট","Top USDT pairs on Binance · refreshes every 60 s")}</p></div>
     <div class="toolbar"><div class="tabs" role="tablist">
-      <button data-t="vol" class="on">সবচেয়ে বেশি লেনদেন</button><button data-t="gain">Top Gainers</button><button data-t="lose">Top Losers</button></div>
-      <input id="q" type="search" placeholder="কয়েন খুঁজুন… যেমন BTC" aria-label="কয়েন খুঁজুন"></div>
-    <div class="card tbl-wrap" id="mkt"><div class="empty">লোড হচ্ছে…</div></div></section>`;
+      <button data-t="vol" class="on">${tr("সবচেয়ে বেশি লেনদেন","Top volume")}</button><button data-t="gain">Top Gainers</button><button data-t="lose">Top Losers</button></div>
+      <input id="q" type="search" placeholder="${tr("কয়েন খুঁজুন… যেমন BTC","Search coin… e.g. BTC")}" aria-label="${tr("কয়েন খুঁজুন","Search coin")}"></div>
+    <div class="card tbl-wrap" id="mkt"><div class="empty">${tr("লোড হচ্ছে…","Loading…")}</div></div></section>`;
+  mkt.tab="vol"; mkt.q="";
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{mkt.tab=b.dataset.t;app.querySelectorAll(".tabs button").forEach(x=>x.classList.toggle("on",x===b));drawMarket();});
   $("#q").oninput=e=>{mkt.q=clean(e.target.value);drawMarket();};
   const load=async()=>{ try{
@@ -460,7 +495,7 @@ async function pageMarket(){
         .filter(t=>!STABLE.has(t.base)&&!/(UP|DOWN|BULL|BEAR)$/.test(t.base)&&+t.quoteVolume>0&&+t.count>0)
         .sort((a,b)=>b.quoteVolume-a.quoteVolume).slice(0,120);
       drawMarket();
-    }catch(e){ $("#mkt").innerHTML=`<div class="empty">মার্কেটের তথ্য আনা যায়নি। একটু পরে আবার চেষ্টা করুন।</div>`; } };
+    }catch(e){ const m=$("#mkt"); if(m) m.innerHTML=`<div class="empty">${tr("মার্কেটের তথ্য আনা যায়নি। একটু পরে আবার চেষ্টা করুন।","Couldn't load market data. Please try again shortly.")}</div>`; } };
   load(); every(60000, load);
 }
 function drawMarket(){
@@ -470,9 +505,9 @@ function drawMarket(){
   if(mkt.tab==="lose") r.sort((a,b)=>a.priceChangePercent-b.priceChangePercent);
   r=r.slice(0,mkt.q?60:50);
   const el=$("#mkt"); if(!el) return;
-  if(!r.length){ el.innerHTML=`<div class="empty">কিছু পাওয়া যায়নি</div>`; return; }
-  el.innerHTML=`<table><thead><tr><th>#</th><th>কয়েন</th><th class="r">দাম (USDT)</th><th class="r">২৪ঘ %</th><th class="r hide-sm">২৪ঘ সর্বোচ্চ</th><th class="r hide-sm">২৪ঘ সর্বনিম্ন</th><th class="r hide-sm">লেনদেন</th></tr></thead><tbody>
-  ${r.map((t,i)=>`<tr class="link" data-go="#/coin/${t.base}"><td class="muted num">${i+1}</td><td><span class="sym">${logo(t.base)}${t.base}${SITE.botCoins.includes(t.base)?' <span class="pill p-open" title="বট এই কয়েনে সিগনাল দেয়">BOT</span>':""}</span></td><td class="r num">${fmtPx(t.lastPrice)}</td><td class="r"><span class="pill ${+t.priceChangePercent>=0?"p-up":"p-down"}">${pct(t.priceChangePercent)}</span></td><td class="r num hide-sm">${fmtPx(t.highPrice)}</td><td class="r num hide-sm">${fmtPx(t.lowPrice)}</td><td class="r num hide-sm">$${fmtBig(t.quoteVolume)}</td></tr>`).join("")}</tbody></table>`; }
+  if(!r.length){ el.innerHTML=`<div class="empty">${tr("কিছু পাওয়া যায়নি","Nothing found")}</div>`; return; }
+  el.innerHTML=`<table><thead><tr><th>#</th><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("দাম (USDT)","Price (USDT)")}</th><th class="r">${tr("২৪ঘ %","24h %")}</th><th class="r hide-sm">${tr("২৪ঘ সর্বোচ্চ","24h high")}</th><th class="r hide-sm">${tr("২৪ঘ সর্বনিম্ন","24h low")}</th><th class="r hide-sm">${tr("লেনদেন","Volume")}</th></tr></thead><tbody>
+  ${r.map((t,i)=>`<tr class="link" data-go="#/coin/${t.base}"><td class="muted num">${i+1}</td><td><span class="sym">${logo(t.base)}${t.base}${SITE.botCoins.includes(t.base)?` <span class="pill p-open" title="${tr("বট এই কয়েনে সিগনাল দেয়","The bot signals this coin")}">BOT</span>`:""}</span></td><td class="r num">${fmtPx(t.lastPrice)}</td><td class="r"><span class="pill ${+t.priceChangePercent>=0?"p-up":"p-down"}">${pct(t.priceChangePercent)}</span></td><td class="r num hide-sm">${fmtPx(t.highPrice)}</td><td class="r num hide-sm">${fmtPx(t.lowPrice)}</td><td class="r num hide-sm">$${fmtBig(t.quoteVolume)}</td></tr>`).join("")}</tbody></table>`; }
 
 function ema(v,n){ const k=2/(n+1); let e=v[0]; return v.map((x,i)=>i?(e=x*k+e*(1-k)):e); }
 function rsi(v,n=14){ let g=0,l=0; const a=1/n, out=[null];
@@ -483,21 +518,21 @@ async function pageCoin(sym){
   const s=await loadSignals(), isBot=(s.coins||SITE.botCoins).includes(sym);
   const mine=[...s.open.map(t=>({...t,live:true})),...s.history].filter(t=>t.coin===sym);
   app.innerHTML=`<section>
-    <a href="#/market" class="muted" style="text-decoration:none">← মার্কেট</a>
+    <a href="#/market" class="muted" style="text-decoration:none">← ${tr("মার্কেট","Market")}</a>
     <div class="coin-head"><div class="l">${logo(sym)}<div><h2>${NAMES[sym]||sym} <span class="muted" style="font-weight:500">${sym}/USDT</span></h2>
       <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="px" id="cpx">—</span><span id="cch"></span></div></div></div>
-      <div class="cta"><a class="btn btn-ghost" href="https://www.binance.com/en/trade/${sym}_USDT" target="_blank" rel="noopener">Binance-এ ট্রেড ↗</a></div></div>
+      <div class="cta"><a class="btn btn-ghost" href="https://www.binance.com/en/trade/${sym}_USDT" target="_blank" rel="noopener">${tr("Binance-এ ট্রেড ↗","Trade on Binance ↗")}</a></div></div>
     <div class="card" style="padding:12px">
       <div class="toolbar" style="margin-bottom:10px"><div class="tabs" id="tf"><button data-i="15m">15m</button><button data-i="1h" class="on">1h</button><button data-i="4h">4h</button><button data-i="1d">1D</button></div>
-      <span class="muted" style="font-size:13px"><span style="color:#F2B33D">━</span> EMA 9 &nbsp; <span style="color:#6C8EF5">━</span> EMA 21 ${isBot?"&nbsp; ▲▼ বটের সিগনাল":""}</span></div>
+      <span class="muted" style="font-size:13px"><span style="color:#F2B33D">━</span> EMA 9 &nbsp; <span style="color:#6C8EF5">━</span> EMA 21 ${isBot?`&nbsp; ▲▼ ${tr("বটের সিগনাল","bot signals")}`:""}</span></div>
       <div id="chart"></div></div>
     <div class="ind" id="ind"></div>
-    ${isBot?"":`<p class="note">ℹ️ বট এখন এই কয়েনে সিগনাল দেয় না। বট যেসব কয়েন দেখে: ${(s.coins||SITE.botCoins).join(", ")}</p>`}
+    ${isBot?"":`<p class="note">ℹ️ ${tr("বট এখন এই কয়েনে সিগনাল দেয় না। বট যেসব কয়েন দেখে:","The bot doesn't signal this coin yet. Coins it watches:")} ${(s.coins||SITE.botCoins).join(", ")}</p>`}
   </section>
-  ${isBot?`<section><div class="sec-head"><h2>${sym}-এর সিগনাল</h2></div>${mine.length?`<div class="tickets">${mine.slice(0,12).map(t=>ticket(t)).join("")}</div>`:`<div class="card empty">এই কয়েনে এখনো কোনো সিগনাল আসেনি।</div>`}</section>`:""}`;
+  ${isBot?`<section><div class="sec-head"><h2>${tr(`${sym}-এর সিগনাল`,`${sym} signals`)}</h2></div>${mine.length?`<div class="tickets">${mine.slice(0,12).map(t=>ticket(t)).join("")}</div>`:`<div class="card empty">${tr("এই কয়েনে এখনো কোনো সিগনাল আসেনি।","No signals for this coin yet.")}</div>`}</section>`:""}`;
 
   const el=$("#chart"), css=getComputedStyle(document.documentElement), c=v=>css.getPropertyValue(v).trim();
-  if(!window.LightweightCharts){ el.innerHTML=`<div class="empty">চার্ট লোড হয়নি</div>`; }
+  if(!window.LightweightCharts){ el.innerHTML=`<div class="empty">${tr("চার্ট লোড হয়নি","Chart failed to load")}</div>`; }
   else{
     chart=LightweightCharts.createChart(el,{autoSize:true,layout:{background:{color:"transparent"},textColor:c("--muted"),fontFamily:"IBM Plex Mono"},
       grid:{vertLines:{color:c("--line")},horzLines:{color:c("--line")}},rightPriceScale:{borderColor:c("--line")},timeScale:{borderColor:c("--line"),timeVisible:true},crosshair:{mode:0},localization:{locale:"en-US"}});
@@ -518,70 +553,71 @@ async function pageCoin(sym){
         candles.setMarkers(marks);
       }
       const a9=ema(cl,9).at(-1), a21=ema(cl,21).at(-1), r=rsi(cl).at(-1);
-      const trend=a9>a21?`<span class="up">ঊর্ধ্বমুখী ▲</span>`:`<span class="down">নিম্নমুখী ▼</span>`;
-      const rl=r>=70?"বেশি কেনা হয়েছে":r<=30?"বেশি বিক্রি হয়েছে":"স্বাভাবিক";
+      const trend=a9>a21?`<span class="up">${tr("ঊর্ধ্বমুখী","Uptrend")} ▲</span>`:`<span class="down">${tr("নিম্নমুখী","Downtrend")} ▼</span>`;
+      const rl=r>=70?tr("বেশি কেনা হয়েছে","Overbought"):r<=30?tr("বেশি বিক্রি হয়েছে","Oversold"):tr("স্বাভাবিক","Neutral");
       $("#ind").innerHTML=`<div class="card stat"><span class="k">EMA 9</span><span class="v num" style="font-size:18px">${fmtPx(a9)}</span></div>
         <div class="card stat"><span class="k">EMA 21</span><span class="v num" style="font-size:18px">${fmtPx(a21)}</span></div>
         <div class="card stat"><span class="k">RSI 14 (${tf})</span><span class="v num" style="font-size:18px">${r.toFixed(1)}</span><span class="k">${rl}</span></div>
-        <div class="card stat"><span class="k">ট্রেন্ড (${tf})</span><span class="v" style="font-size:18px">${trend}</span></div>`;
-    }catch(e){ if(!chart) return; el.innerHTML=`<div class="empty">এই কয়েনের চার্ট পাওয়া যায়নি (${sym}USDT)।</div>`; } };
+        <div class="card stat"><span class="k">${tr("ট্রেন্ড","Trend")} (${tf})</span><span class="v" style="font-size:18px">${trend}</span></div>`;
+    }catch(e){ if(!chart) return; el.innerHTML=`<div class="empty">${tr("এই কয়েনের চার্ট পাওয়া যায়নি","No chart available for")} (${sym}USDT)</div>`; } };
   const tick=async()=>{ try{ const t=await bget(`/api/v3/ticker/24hr?symbol=${sym}USDT`);
-      $("#cpx").textContent=fmtPx(t.lastPrice); $("#cch").innerHTML=`<span class="pill ${+t.priceChangePercent>=0?"p-up":"p-down"}">${pct(t.priceChangePercent)} (২৪ঘ)</span>`;
-      document.title=`${sym} ${fmtPx(t.lastPrice)} — ${SITE.name}`; }catch(e){ $("#cpx").textContent="পাওয়া যায়নি"; } };
+      $("#cpx").textContent=fmtPx(t.lastPrice); $("#cch").innerHTML=`<span class="pill ${+t.priceChangePercent>=0?"p-up":"p-down"}">${pct(t.priceChangePercent)} (${tr("২৪ঘ","24h")})</span>`;
+      document.title=`${sym} ${fmtPx(t.lastPrice)} — ${SITE.name}`; }catch(e){ const p=$("#cpx"); if(p) p.textContent=tr("পাওয়া যায়নি","Unavailable"); } };
   $("#tf").querySelectorAll("button").forEach(b=>b.onclick=()=>{tf=b.dataset.i;$("#tf").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));draw();});
   draw(); tick(); every(15000,tick); every(60000,draw);
 }
 
 function bandStats(s){
-  const bands=[["৭৫% বা বেশি",75,101],["৬০–৭৪%",60,75],["৬০%-এর কম (পুরোনো)",0,60]];
+  const bands=[[tr("৭৫% বা বেশি","75% or higher"),75,101],["60–74%",60,75],[tr("৬০%-এর কম (পুরোনো)","Below 60% (older)"),0,60]];
   const h=s.history.filter(t=>t.conf!=null); if(!h.length) return "";
   const rows=bands.map(([l,a,b])=>{const x=h.filter(t=>t.conf>=a&&t.conf<b); const w=x.filter(t=>t.result==="TP1"||t.result==="TP2").length, lo=x.filter(t=>t.result==="SL").length;
     return x.length?`<tr><td>${l}</td><td class="r num">${x.length}</td><td class="r num up">${w}</td><td class="r num down">${lo}</td><td class="r num">${w+lo?Math.round(w*100/(w+lo))+"%":"—"}</td></tr>`:""}).join("");
-  return `<section><div class="sec-head"><div><span class="eyebrow">সৎ হিসাব</span><h2>Confidence অনুযায়ী ফলাফল</h2></div><p>বেশি Confidence-এর সিগনাল আসলেই বেশি জেতে কিনা, এখানে দেখা যায়</p></div>
-    <div class="card tbl-wrap"><table><thead><tr><th>Confidence</th><th class="r">সিগনাল</th><th class="r">জয়</th><th class="r">হার</th><th class="r">Win rate</th></tr></thead><tbody>${rows}</tbody></table></div></section>`; }
+  return `<section><div class="sec-head"><div><span class="eyebrow">${tr("সৎ হিসাব","Honest numbers")}</span><h2>${tr("Confidence অনুযায়ী ফলাফল","Results by confidence")}</h2></div><p>${tr("বেশি Confidence-এর সিগনাল আসলেই বেশি জেতে কিনা, এখানে দেখা যায়","Shows whether higher-confidence signals really win more often")}</p></div>
+    <div class="card tbl-wrap"><table><thead><tr><th>Confidence</th><th class="r">${tr("সিগনাল","Signals")}</th><th class="r">${tr("জয়","Wins")}</th><th class="r">${tr("হার","Losses")}</th><th class="r">Win rate</th></tr></thead><tbody>${rows}</tbody></table></div></section>`; }
 
 async function pageSignals(){
   const s=await loadSignals(), st=s.stats, wr=winRate(st);
   const coins=[...new Set([...s.open,...s.history].map(t=>t.coin))].sort();
-  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">সৎ রেকর্ড</span><h2>সব সিগনাল ও ফলাফল</h2></div><p>শেষ আপডেট: ${ago(s.updated)}</p></div>
+  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">${tr("সৎ রেকর্ড","Full track record")}</span><h2>${tr("সব সিগনাল ও ফলাফল","All signals & results")}</h2></div><p>${tr("শেষ আপডেট","Last update")}: ${ago(s.updated)}</p></div>
     <div class="stats">
       <div class="card stat wide"><span class="k">Win rate</span><span class="v">${wr===null?"—":wr+"%"}</span><div class="bar"><i style="width:${wr??0}%"></i></div></div>
-      <div class="card stat"><span class="k">জয়</span><span class="v up">${st.win}</span></div>
-      <div class="card stat"><span class="k">হার</span><span class="v down">${st.loss}</span></div>
-      <div class="card stat"><span class="k">TP2 পর্যন্ত গেছে</span><span class="v">${st.tp2}</span></div>
-      <div class="card stat"><span class="k">সময় শেষ</span><span class="v">${st.expired}</span></div>
+      <div class="card stat"><span class="k">${tr("জয়","Wins")}</span><span class="v up">${st.win}</span></div>
+      <div class="card stat"><span class="k">${tr("হার","Losses")}</span><span class="v down">${st.loss}</span></div>
+      <div class="card stat"><span class="k">${tr("TP2 পর্যন্ত গেছে","Reached TP2")}</span><span class="v">${st.tp2}</span></div>
+      <div class="card stat"><span class="k">${tr("সময় শেষ","Expired")}</span><span class="v">${st.expired}</span></div>
     </div></section>
   ${bandStats(s)}
-  <section><div class="sec-head"><h2>চলমান সিগনাল <span class="muted" style="font-weight:500">(${s.open.length})</span></h2></div>
-    ${s.open.length?`<div class="tickets" id="openT">${s.open.map(t=>ticket(t)).join("")}</div>`:`<div class="card empty">এখন কোনো সিগনাল চলছে না।</div>`}</section>
-  <section><div class="toolbar"><h2>ইতিহাস</h2><div style="display:flex;gap:8px;flex-wrap:wrap">
-      <select id="fc" aria-label="কয়েন"><option value="">সব কয়েন</option>${coins.map(c=>`<option>${c}</option>`).join("")}</select>
-      <select id="fr" aria-label="ফলাফল"><option value="">সব ফলাফল</option><option value="TP2">TP2</option><option value="TP1">TP1</option><option value="SL">SL</option><option value="EXPIRED">Expired</option></select></div></div>
+  <section><div class="sec-head"><h2>${tr("চলমান সিগনাল","Active signals")} <span class="muted" style="font-weight:500">(${s.open.length})</span></h2></div>
+    ${s.open.length?`<div class="tickets" id="openT">${s.open.map(t=>ticket(t)).join("")}</div>`:`<div class="card empty">${tr("এখন কোনো সিগনাল চলছে না।","No signal is active right now.")}</div>`}</section>
+  <section><div class="toolbar"><h2>${tr("ইতিহাস","History")}</h2><div style="display:flex;gap:8px;flex-wrap:wrap">
+      <select id="fc" aria-label="${tr("কয়েন","Coin")}"><option value="">${tr("সব কয়েন","All coins")}</option>${coins.map(c=>`<option>${c}</option>`).join("")}</select>
+      <select id="fr" aria-label="${tr("ফলাফল","Result")}"><option value="">${tr("সব ফলাফল","All results")}</option><option value="TP2">TP2</option><option value="TP1">TP1</option><option value="SL">SL</option><option value="EXPIRED">Expired</option></select></div></div>
     <div class="card tbl-wrap" id="hist"></div>
-    <p class="muted" style="font-size:14px">জয় = TP1 বা TP2 ছুঁয়েছে। হার = TP1 ছোঁয়ার আগেই Stop Loss। TP1-এর পর Stop Loss নিজে থেকেই Entry-তে সরে যায়।</p></section>`;
+    <p class="muted" style="font-size:14px">${tr("জয় = TP1 বা TP2 ছুঁয়েছে। হার = TP1 ছোঁয়ার আগেই Stop Loss। TP1-এর পর Stop Loss নিজে থেকেই Entry-তে সরে যায়।","Win = reached TP1 or TP2. Loss = hit Stop Loss before TP1. After TP1 the Stop Loss moves to Entry automatically.")}</p></section>`;
   const draw=()=>{ const fc=$("#fc").value, fr=$("#fr").value;
     const h=s.history.filter(t=>(!fc||t.coin===fc)&&(!fr||t.result===fr));
-    $("#hist").innerHTML=h.length?`<table><thead><tr><th>কয়েন</th><th>দিক</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">TP2</th><th class="r hide-sm">SL</th><th>ফলাফল</th><th class="r">Conf.</th><th class="hide-sm">শুরু</th><th class="hide-sm">শেষ</th></tr></thead><tbody>
-      ${h.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.tp2)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${pillResult(t.result)}</td><td class="r">${t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${t.conf}%</span>`:'<span class="muted">—</span>'}</td><td class="muted hide-sm">${when(t.opened)}</td><td class="muted hide-sm">${when(t.closed)}</td></tr>`).join("")}</tbody></table>`
-      :`<div class="empty">${s.history.length?"এই ফিল্টারে কিছু নেই":"এখনো কোনো সিগনাল শেষ হয়নি।"}</div>`; };
+    $("#hist").innerHTML=h.length?`<table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">TP2</th><th class="r hide-sm">SL</th><th>${tr("ফলাফল","Result")}</th><th class="r">Conf.</th><th class="hide-sm">${tr("শুরু","Opened")}</th><th class="hide-sm">${tr("শেষ","Closed")}</th></tr></thead><tbody>
+      ${h.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.tp2)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${pillResult(t.result)}</td><td class="r">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td><td class="muted hide-sm">${when(t.closed)}</td></tr>`).join("")}</tbody></table>`
+      :`<div class="empty">${s.history.length?tr("এই ফিল্টারে কিছু নেই","Nothing matches this filter"):tr("এখনো কোনো সিগনাল শেষ হয়নি।","No signal has closed yet.")}</div>`; };
   $("#fc").onchange=draw; $("#fr").onchange=draw; draw();
   if(s.open.length){ try{ const tk=await bget(`/api/v3/ticker/price?symbols=${encodeURIComponent(JSON.stringify([...new Set(s.open.map(t=>t.coin+"USDT"))]))}`);
-      const m=Object.fromEntries(tk.map(t=>[t.symbol.replace("USDT",""),+t.price])); $("#openT").innerHTML=s.open.map(t=>ticket(t,m[t.coin])).join(""); }catch(e){} }
+      const m=Object.fromEntries(tk.map(t=>[t.symbol.replace("USDT",""),+t.price])); const o=$("#openT"); if(o) o.innerHTML=s.open.map(t=>ticket(t,m[t.coin])).join(""); }catch(e){} }
 }
 
 let nf={src:"",q:"",n:25};
 async function pageNews(){
   const n=await loadNews(); nf={src:"",q:"",n:25};
   const sources=[...new Set(n.items.map(x=>x.source))];
-  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">নিউজ পোর্টাল · নিজে থেকে আপডেট হয়</span><h2>বিশ্বজুড়ে ক্রিপ্টো খবর</h2></div><p>শেষ আপডেট: ${ago(n.updated)}</p></div>
-    <div class="toolbar"><div class="chipbar" id="srcs"><button class="on" data-s="">সব</button>${sources.map(x=>`<button data-s="${esc(x)}">${esc(x)}</button>`).join("")}</div>
-      <input id="nq" type="search" placeholder="খবর খুঁজুন… যেমন ETF" aria-label="খবর খুঁজুন"></div>
+  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">${tr("নিউজ পোর্টাল · নিজে থেকে আপডেট হয়","News portal · updates automatically")}</span><h2>${tr("বিশ্বজুড়ে ক্রিপ্টো খবর","Crypto news from around the world")}</h2></div><p>${tr("শেষ আপডেট","Last update")}: ${ago(n.updated)}</p></div>
+    <div class="toolbar"><div class="chipbar" id="srcs"><button class="on" data-s="">${tr("সব","All")}</button>${sources.map(x=>`<button data-s="${esc(x)}">${esc(x)}</button>`).join("")}</div>
+      <input id="nq" type="search" placeholder="${tr("খবর খুঁজুন… যেমন ETF","Search news… e.g. ETF")}" aria-label="${tr("খবর খুঁজুন","Search news")}"></div>
     <div class="news-grid" id="ng"></div>
-    <div style="text-align:center" id="moreWrap"><button class="btn btn-ghost" id="more">আরও খবর দেখুন</button></div>
-    <p class="muted" style="font-size:13px">খবরগুলো ${sources.map(esc).join(", ")||"বিভিন্ন সাইট"}-এর ফ্রি RSS থেকে নিজে থেকে আসে। শিরোনামে চাপলে মূল সাইটে পুরো খবর খুলবে। সব খবরের স্বত্ব মূল প্রকাশকের।</p></section>`;
+    <div style="text-align:center" id="moreWrap"><button class="btn btn-ghost" id="more">${tr("আরও খবর দেখুন","Load more")}</button></div>
+    <p class="muted" style="font-size:13px">${tr(`খবরগুলো ${sources.map(esc).join(", ")||"বিভিন্ন সাইট"}-এর ফ্রি RSS থেকে নিজে থেকে আসে। শিরোনামে চাপলে মূল সাইটে পুরো খবর খুলবে। সব খবরের স্বত্ব মূল প্রকাশকের।`,
+      `Headlines come automatically from the free RSS feeds of ${sources.map(esc).join(", ")||"several publishers"}. Click a story to read it in full on the publisher's site. All rights belong to the original publishers.`)}</p></section>`;
   const draw=()=>{ let it=n.items.filter(x=>(!nf.src||x.source===nf.src)&&(!nf.q||(x.title+" "+x.summary).toLowerCase().includes(nf.q)));
     const el=$("#ng"); if(!el) return;
-    el.innerHTML=it.length? it.slice(0,nf.n).map((x,i)=>newsCard(x,i===0&&!nf.q)).join("") : `<div class="card empty" style="grid-column:1/-1">${n.items.length?"কিছু পাওয়া যায়নি":"খবর এখনো আসেনি। বট পরের বার চললে এখানে খবর দেখা যাবে।"}</div>`;
+    el.innerHTML=it.length? it.slice(0,nf.n).map((x,i)=>newsCard(x,i===0&&!nf.q)).join("") : `<div class="card empty" style="grid-column:1/-1">${n.items.length?tr("কিছু পাওয়া যায়নি","Nothing found"):tr("খবর এখনো আসেনি। বট পরের বার চললে এখানে খবর দেখা যাবে।","No news yet. It will appear after the bot's next run.")}</div>`;
     $("#moreWrap").hidden = it.length<=nf.n; };
   $("#srcs").querySelectorAll("button").forEach(b=>b.onclick=()=>{nf.src=b.dataset.s;nf.n=25;$("#srcs").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));draw();});
   $("#nq").oninput=e=>{nf.q=e.target.value.trim().toLowerCase();draw();};
@@ -590,8 +626,29 @@ async function pageNews(){
 }
 
 async function pageAbout(){
-  const s=await loadSignals();
-  app.innerHTML=`<section class="prose">
+  const s=await loadSignals(), mc=s.min_conf??60;
+  app.innerHTML= LANG==="en" ? `<section class="prose">
+    <span class="eyebrow">About</span><h1 style="font-size:clamp(28px,4vw,40px)">${SITE.name}</h1>
+    <p>${SITE.name} is a free, automated crypto signal service. We never hold anyone's money, never trade on anyone's behalf and never charge a fee. The bot only reads charts and posts to Telegram when its rules line up. Every decision is yours.</p>
+    <h2>How a signal is made</h2>
+    <ul>
+      <li><b>Timeframe:</b> ${s.interval||"1h"} candles, checked every 15 minutes.</li>
+      <li><b>BUY:</b> EMA 9 crosses above EMA 21, RSI is between 45 and 70, and volume is above its 20-candle average.</li>
+      <li><b>SELL:</b> EMA 9 crosses below EMA 21, RSI is between 30 and 55, and volume is above average.</li>
+      <li><b>Stop Loss:</b> 1.5 × ATR from entry. <b>TP1:</b> 1.5 × ATR. <b>TP2:</b> 3 × ATR.</li>
+      <li>After TP1 the Stop Loss moves to entry. If nothing happens within 48 candles, the signal expires.</li>
+      <li><b>Confidence %:</b> a 0–95% score from the extra filters experienced providers use: the 4-hour trend (EMA 50/200), price vs EMA 200, MACD momentum, trend strength (ADX), how far volume is above average, and whether BTC is moving the same way.</li>
+      <li>Signals below ${mc}% confidence are not sent. Confidence counts how many conditions agree — it is not a promise of profit.</li>
+      <li>Every result, win or loss, stays on this site. Nothing is deleted.</li>
+    </ul>
+    <h2>Coins</h2><p>${(s.coins||SITE.botCoins).join(" · ")}</p>
+    <h2>Risk warning</h2>
+    <p class="note red">Crypto prices move fast and you can lose all of your money. No signal is right every time. Stay away from anyone promising "guaranteed profit". Nothing on this site is financial advice. Check the law in your country.</p>
+    <h2>Data sources</h2>
+    <ul><li>Prices and charts: Binance public API (OKX, KuCoin and Kraken as backups for the bot)</li><li>Fear &amp; Greed Index: alternative.me</li><li>News: CoinDesk, Decrypt, Cointelegraph, CryptoSlate, The Block (RSS)</li></ul>
+    <h2>Contact</h2>
+    <p>Telegram channel: <a href="${SITE.telegram}" target="_blank" rel="noopener">${SITE.channel}</a></p>
+  </section>` : `<section class="prose">
     <span class="eyebrow">আমাদের সম্পর্কে</span><h1 style="font-size:clamp(28px,4vw,40px)">${SITE.name}</h1>
     <p>${SITE.name} একটা ফ্রি, অটোমেটেড ক্রিপ্টো সিগনাল সার্ভিস। আমরা কারো টাকা রাখি না, কারো হয়ে ট্রেড করি না, আর কোনো ফি নিই না। বট শুধু চার্ট দেখে, নিয়ম মিললে Telegram-এ জানায়। সিদ্ধান্ত আপনার।</p>
     <h2>সিগনাল কীভাবে তৈরি হয়</h2>
@@ -602,14 +659,14 @@ async function pageAbout(){
       <li><b>Stop Loss:</b> Entry থেকে ১.৫ × ATR দূরে। <b>TP1:</b> ১.৫ × ATR। <b>TP2:</b> ৩ × ATR।</li>
       <li>TP1 ছুঁলে Stop Loss Entry-তে সরে যায়। ৪৮ ক্যান্ডেলে কিছু না হলে সিগনাল "Expired" হয়।</li>
       <li><b>Confidence %:</b> বড় সিগনাল প্রোভাইডাররা যেসব বাড়তি ফিল্টার ব্যবহার করে, সেগুলো মিলিয়ে ০–৯৫% স্কোর দেওয়া হয়। ফিল্টারগুলো হলো: ৪ ঘণ্টার বড় ট্রেন্ড (EMA 50/200), দাম EMA 200-এর কোন দিকে, MACD মোমেন্টাম, ট্রেন্ডের শক্তি (ADX), ভলিউম কতটা বেশি, আর BTC একই দিকে যাচ্ছে কিনা।</li>
-      <li>Confidence ${s.min_conf??60}%-এর কম হলে সিগনাল পাঠানো হয় না। Confidence মানে জেতার নিশ্চয়তা নয়, শুধু কতগুলো শর্ত মিলেছে তার হিসাব।</li>
+      <li>Confidence ${mc}%-এর কম হলে সিগনাল পাঠানো হয় না। Confidence মানে জেতার নিশ্চয়তা নয়, শুধু কতগুলো শর্ত মিলেছে তার হিসাব।</li>
       <li>প্রতিটা সিগনালের ফলাফল, জয় হোক বা হার, এই সাইটে থেকে যায়। কিছু মুছে ফেলা হয় না।</li>
     </ul>
     <h2>কয়েন</h2><p>${(s.coins||SITE.botCoins).join(" · ")}</p>
     <h2>ঝুঁকি সতর্কতা</h2>
     <p class="note red">ক্রিপ্টোর দাম খুব দ্রুত ওঠানামা করে, আর আপনি পুরো টাকা হারাতে পারেন। কোনো সিগনালই সবসময় সঠিক হয় না। যারা "গ্যারান্টিড প্রফিট" বলে, তাদের থেকে দূরে থাকুন। এই সাইটের কোনো কিছুই আর্থিক পরামর্শ নয়। নিজের দেশের আইন জেনে নিন।</p>
     <h2>ডেটার সূত্র</h2>
-    <ul><li>দাম ও চার্ট: Binance public API (বটের জন্য ব্যাকআপ হিসেবে OKX, KuCoin, Kraken)</li><li>Fear &amp; Greed Index: alternative.me</li></ul>
+    <ul><li>দাম ও চার্ট: Binance public API (বটের জন্য ব্যাকআপ হিসেবে OKX, KuCoin, Kraken)</li><li>Fear &amp; Greed Index: alternative.me</li><li>খবর: CoinDesk, Decrypt, Cointelegraph, CryptoSlate, The Block (RSS)</li></ul>
     <h2>যোগাযোগ</h2>
     <p>Telegram চ্যানেল: <a href="${SITE.telegram}" target="_blank" rel="noopener">${SITE.channel}</a></p>
   </section>`; }
@@ -619,7 +676,7 @@ async function route(){
   timers.forEach(clearInterval); timers=[]; if(chart){ chart.remove(); chart=null; }
   const parts=(location.hash.replace(/^#\/?/,"")||"").split("/"), r=parts[0]||"home";
   document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
-  document.title=`${SITE.name} — ফ্রি ক্রিপ্টো সিগনাল`;
+  document.title=`${SITE.name} — ${tr("ফ্রি ক্রিপ্টো সিগনাল","Free crypto signals")}`;
   window.scrollTo(0,0);
   if(r==="market") await pageMarket();
   else if(r==="coin") await pageCoin(parts[1]);
@@ -628,7 +685,7 @@ async function route(){
   else if(r==="about") await pageAbout();
   else await pageHome();
 }
-app.addEventListener("click",e=>{ const tr=e.target.closest("tr[data-go]"); if(tr && !e.target.closest("a")) location.hash=tr.dataset.go; });
+app.addEventListener("click",e=>{ const tr_=e.target.closest("tr[data-go]"); if(tr_ && !e.target.closest("a")) location.hash=tr_.dataset.go; });
 window.addEventListener("hashchange",route);
 
 /* ---------- init ---------- */
@@ -639,6 +696,8 @@ $("#tgTop").href=SITE.telegram; $("#tgFoot").href=SITE.telegram; $("#yr").textCo
   $("#themeBtn").onclick=()=>{ const dark=document.documentElement.dataset.theme? document.documentElement.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches;
     const n=dark?"light":"dark"; document.documentElement.dataset.theme=n; try{ localStorage.setItem("theme",n);}catch(e){} route(); };
 })();
+$("#langBtn").onclick=()=>{ LANG = LANG==="en" ? "bn" : "en"; try{ localStorage.setItem("lang",LANG); }catch(e){} applyStatic(); route(); };
+applyStatic();
 route();
 </script>
 </body>
