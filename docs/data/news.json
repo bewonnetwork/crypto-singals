@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T20:39:54+00:00",
+ "updated": "2026-09-29T23:58:41+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,46 @@
   "The Block"
  ],
  "items": [
+  {
+   "title": "Robinhood adds AI agents, perps and weekend trading in push to win active traders",
+   "link": "https://www.coindesk.com/markets/2026/09/29/robinhood-adds-ai-agents-perps-and-weekend-trading-in-push-to-win-active-traders",
+   "source": "CoinDesk",
+   "published": "2026-09-29T23:00:00+00:00",
+   "summary": "The brokerage is expanding its trading hours and adding leveraged crypto products and automated trading tools to attract more active investors.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/a92db287f1805105761bc517860540b2fdd5b741-2600x1302.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "title": "Hut 8 locks in $1B credit line, but faces 40% liquidity rules",
+   "link": "https://cryptoslate.com/hut-8-locks-in-1b-credit-line-but-faces-40-liquidity-rules/",
+   "source": "CryptoSlate",
+   "published": "2026-09-29T22:50:49+00:00",
+   "summary": "Letters of credit can cover site obligations without equivalent cash deposits, while borrowing would add corporate debt exposure. The post Hut 8 locks in $1B credit line, but faces 40% liquidity rules appeared first on CryptoSlate .",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/hut-8-one-billion-credit-line-standard.jpg"
+  },
+  {
+   "title": "Ethereum Gets Another Privacy Boost as Aztec Brings Back zk.money",
+   "link": "https://decrypt.co/379621/ethereum-privacy-aztec-brings-back-zk-money",
+   "source": "Decrypt",
+   "published": "2026-09-29T21:46:03+00:00",
+   "summary": "Aztec Labs relaunched its self-custodial zk.money wallet on Aztec Network, letting users make private stablecoin payments using readable tags.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Ethereum-decrypt-style-03-gID_7.png"
+  },
+  {
+   "title": "Cboe's New S&P Deal Opens the Door to Tokenized Options",
+   "link": "https://decrypt.co/379619/cboes-sp-deal-tokenized-options",
+   "source": "Decrypt",
+   "published": "2026-09-29T21:16:04+00:00",
+   "summary": "The renewed agreement preserves Cboe's exclusive rights to S&P 500 index options through 2051 while opening the door to pairing the flagship benchmark with blockchain infrastructure.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/stocks-gID_7.jpg"
+  },
+  {
+   "title": "Bitcoin drops to $82,000 on US data, and inflation fear is blamed",
+   "link": "https://cryptoslate.com/bitcoin-drops-to-82000-on-us-data-and-inflation-fear-is-blamed/",
+   "source": "CryptoSlate",
+   "published": "2026-09-29T21:10:53+00:00",
+   "summary": "August job openings eased modestly, while households' inflation views kept the path to lower yields uncertain. The post Bitcoin drops to $82,000 on US data, and inflation fear is blamed appeared first on CryptoSlate .",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/bitcoin-rate-pressure-turnstile.webp"
+  },
   {
    "title": "Bitwise Launches First US Spot Near ETF After Token Nearly Triples Since August",
    "link": "https://decrypt.co/379612/bitwise-launches-first-spot-near-etf",
@@ -297,14 +337,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/2a77c714f950490d92fe6afe133dc6a75706c94e-5760x3840.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
   },
   {
-   "title": "BitMine nears 5% Ethereum threshold, yet stock valuation rules dictate its next move",
-   "link": "https://cryptoslate.com/bitmine-nears-5-ethereum-as-treasury-premiums-fade-its-next-capital-choice-is-harder/",
-   "source": "CryptoSlate",
-   "published": "2026-09-29T11:20:31+00:00",
-   "summary": "Its remaining ETH gap is about $280 million at the company's reference price, against $672 million in reported cash and securities. The post BitMine nears 5% Ethereum threshold, yet stock valuation rules dictate its next move appeared…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/bitmine-ethereum-build.webp"
-  },
-  {
    "title": "Zcash developers begin moving Tachyon code into faster private-payment software",
    "link": "https://www.coindesk.com/tech/2026/09/29/zcash-s-faster-private-payment-code-is-being-rebuilt-for-its-bigger-scaling-plan",
    "source": "CoinDesk",
@@ -343,14 +375,6 @@
    "published": "2026-09-29T10:28:51+00:00",
    "summary": "Aave jumped 11% on speculation over a token burn, with 72 of 100 CoinDesk 100 constituents higher even as the 10-year Treasury yield sat at 5.234%.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/9bc2fa5ce3b1b8ae3a33a66f3abe1158bea8b2d1-1920x1080.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Altcoin spot volume nears 4x Bitcoin’s as ETF inflows shrink across five sessions",
-   "link": "https://cryptoslate.com/altcoin-spot-volume-nears-4x-bitcoins-as-etf-inflows-shrink-across-five-sessions/",
-   "source": "CryptoSlate",
-   "published": "2026-09-29T10:20:49+00:00",
-   "summary": "Altcoin spot volume has climbed to nearly four times Bitcoin's, the highest ratio since September 2025, according to Glassnode. Wintermute says retail clients on its OTC desk sold BTC last week to fund that rotation, while US spot Bitcoin…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/crypto-rotation-bridge.webp"
   },
   {
    "title": "US crypto ETF inflows cool after $3.3B week but streaks hold",
@@ -623,30 +647,6 @@
    "published": "2026-09-28T16:35:29+00:00",
    "summary": "After nearly a decade at the Securities and Exchange Commission, Hester Peirce is wrapping up her last week at the agency.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/06/20210628_Hester_Peirce.jpg"
-  },
-  {
-   "title": "Vitalik Buterin Outlines 'Cryptographic World Computer' Plan for Ethereum",
-   "link": "https://decrypt.co/379461/vitalik-buterin-outlines-cryptographic-world-computer-plan-for-ethereum",
-   "source": "Decrypt",
-   "published": "2026-09-28T16:29:42+00:00",
-   "summary": "Hegota will be Ethereum's last 'normal' fork, he argues, with everything after built on recursive STARKs and formal verification.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Ethereum-Vitalik-Buterin-decrypt-style-decrypt-source-01-gID_7.png"
-  },
-  {
-   "title": "The restaking gold rush is over, and top protocols are barely making a profit",
-   "link": "https://www.coindesk.com/business/2026/09/28/the-restaking-gold-rush-is-over-and-top-protocols-are-barely-making-a-profit",
-   "source": "CoinDesk",
-   "published": "2026-09-28T16:24:51+00:00",
-   "summary": "As restaking yields dried up and smart-contract risks mounted, Ethereum's top liquid restaking protocol walked away from its core business to build a crypto neobank instead.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/7eaf553e8abf889a62ef0301a3a12b6d6e1ddce6-4498x3000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Tether is a ‘lifeline’ for Iranian regime, Senate Dems say in new report",
-   "link": "https://www.coindesk.com/policy/2026/09/28/tether-is-a-lifeline-for-iranian-regime-senate-dems-say-in-new-report",
-   "source": "CoinDesk",
-   "published": "2026-09-28T16:16:40+00:00",
-   "summary": "Democrats on the Senate's Permanent Subcommittee on Intelligence published a report alleging that USDT had become a key tool for the Iranian government.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/ad8e6630721cca761fc441079ebcd6819e13f93e-8256x5504.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
   }
  ]
 }
