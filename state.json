@@ -5,7 +5,7 @@
   "DOT": "2026-09-28T04:00:00+00:00"
  },
  "open": [],
- "last_digest": "2026-09-28",
+ "last_digest": "2026-09-29",
  "stats": {
   "win": 0,
   "loss": 3,
@@ -13,7 +13,7 @@
   "expired": 0
  },
  "fear_greed": {
-  "value": 74,
+  "value": 73,
   "label": "Greed"
  },
  "history": [
@@ -52,6 +52,11 @@
   }
  ],
  "news_posted": [
+  "https://cointelegraph.com/news/nvidia-unveils-ai-safety-platform-to-rein-in-rogue-ai-agents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/compound-dao-used-protocol-reserves-to-buy-52-million-worth-of-comp-and-delegates-call-it-a-mandate-breach/",
+  "https://www.theblock.co/news/business/2026-09-28-coinbase-dco-approval-417105",
+  "https://cointelegraph.com/news/near-intents-says-it-blocked-50m-tied-to-bitget-hackers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/robinhood-chains-1-5-billion-boom-is-attracting-memecoin-rug-factories/",
   "https://cryptoslate.com/nearly-5000-btc-leaves-bitget-as-hackers-begin-laundering-387-million-haul/",
   "https://decrypt.co/379508/openai-ai-agents-target-us-government-sites",
   "https://cryptoslate.com/strategy-makes-first-back-to-back-bitcoin-buys-since-june-as-accumulation-picks-up/",
