@@ -354,6 +354,94 @@ select.langbtn{appearance:none;-webkit-appearance:none;padding:0 26px 0 10px;bac
 body{top:0!important}
 .goog-text-highlight{background:none!important;box-shadow:none!important}
 #gte{display:none}
+/* ---------- engine page ---------- */
+.eg{display:grid;gap:64px}
+.eg h2{font:700 clamp(24px,3.2vw,34px)/1.2 "Space Grotesk","Hind Siliguri",sans-serif;margin:6px 0 8px}
+.eg .sub{color:var(--muted);max-width:68ch;margin:0}
+.eg-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;padding-top:12px}
+.eg-hero h1{font:700 clamp(36px,5.6vw,64px)/1.05 "Space Grotesk","Hind Siliguri",sans-serif;margin:14px 0 8px}
+.eg-hero .tag{font:600 clamp(17px,2vw,21px)/1.4 "Inter","Hind Siliguri",sans-serif;margin:0 0 14px}
+.eg-hero p{color:var(--muted);margin:0 0 12px}
+.eg-hero .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.eg-radar{position:relative;width:min(380px,100%);aspect-ratio:1;margin:auto;border-radius:50%;
+  background:radial-gradient(circle,rgba(var(--r1),.10) 0 1px,transparent 1px 100%) 0 0/22px 22px,radial-gradient(circle at 50% 50%,rgba(var(--r1),.16),transparent 62%),#060a12;
+  border:1px solid rgba(var(--r1),.35);box-shadow:0 0 0 10px rgba(var(--r1),.05),0 30px 80px rgba(0,0,0,.45);overflow:hidden}
+.eg-radar::before,.eg-radar::after{content:"";position:absolute;inset:16%;border:1px solid rgba(var(--r1),.22);border-radius:50%}
+.eg-radar::after{inset:33%}
+.eg-sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,rgba(var(--r2),.0) 0deg,rgba(var(--r2),.0) 290deg,rgba(var(--r2),.45) 360deg)}
+.eg-core{position:absolute;inset:42%;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 13px "Space Grotesk",sans-serif;box-shadow:0 0 30px rgba(var(--r1),.6);z-index:2;text-align:center;line-height:1.1}
+.eg-blip{position:absolute;transform:translate(-50%,-50%);font:700 10.5px "IBM Plex Mono",monospace;color:#e5e7eb;display:flex;align-items:center;gap:5px;z-index:2;white-space:nowrap}
+.eg-blip i{width:7px;height:7px;border-radius:50%;background:var(--p1);box-shadow:0 0 10px var(--p1)}
+.eg-blip.dn i{background:var(--down);box-shadow:0 0 10px var(--down)}
+.eg-blip.up i{background:var(--up);box-shadow:0 0 10px var(--up)}
+@media (prefers-reduced-motion:no-preference){.eg-sweep{animation:egspin 4s linear infinite}.eg-blip i{animation:pulse 2.4s ease-in-out infinite}@keyframes egspin{to{transform:rotate(360deg)}}}
+.eg-pairs{display:grid;gap:6px;padding:18px;border-radius:16px}
+.eg-pairs .hd{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px;color:var(--muted);margin-bottom:6px}
+.eg-row{display:grid;grid-template-columns:70px minmax(0,1fr) 72px;align-items:center;gap:10px;font:600 13px "IBM Plex Mono",monospace;text-decoration:none;color:var(--ink)}
+.eg-bar{position:relative;height:12px;border-radius:6px;background:var(--sunk)}
+.eg-bar::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--line)}
+.eg-bar b{position:absolute;top:0;bottom:0;border-radius:6px}
+.eg-row .v{text-align:right}
+.eg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.eg-card{padding:22px;border-radius:16px;display:grid;gap:8px;align-content:start}
+.eg-card .ic{font-size:26px;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--blue-soft)}
+.eg-card h3{margin:4px 0 0;font:700 17px "Inter","Hind Siliguri",sans-serif}
+.eg-card p{margin:0;color:var(--muted);font-size:14.5px}
+.eg-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.eg-chips span{font:600 11.5px "IBM Plex Mono",monospace;padding:3px 8px;border-radius:999px;background:var(--sunk);border:1px solid var(--line)}
+.eg-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;counter-reset:st}
+.eg-step{padding:18px;border-radius:16px;position:relative}
+.eg-step .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:700 15px "Space Grotesk",sans-serif;background:var(--grad);color:var(--btn-ink,#07090d);margin-bottom:10px}
+.eg-step h3{margin:0 0 6px;font:700 15.5px "Inter","Hind Siliguri",sans-serif}
+.eg-step p{margin:0;color:var(--muted);font-size:13.5px}
+.eg-day{padding:20px;border-radius:16px;display:grid;gap:12px}
+.eg-lane{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;align-items:center;font-size:13.5px}
+.eg-lane small{display:block;color:var(--muted);font-size:12px}
+.eg-rail{position:relative;height:26px;border-radius:8px;background:var(--sunk)}
+.eg-rail i{position:absolute;top:5px;bottom:5px;width:2px;border-radius:2px;background:var(--p1)}
+.eg-rail i.g{background:var(--p2);width:6px;margin-left:-2px;top:2px;bottom:2px;box-shadow:0 0 10px var(--p2)}
+.eg-axis{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;font:500 11.5px "IBM Plex Mono",monospace;color:var(--muted)}
+.eg-axis div{display:flex;justify-content:space-between}
+.eg-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.eg-kpis div{padding:16px 18px;border-radius:14px}
+.eg-kpis strong{display:block;font:700 clamp(22px,3vw,30px) "Space Grotesk",sans-serif}
+.eg-kpis span{color:var(--muted);font-size:13.5px}
+.eg-chart{padding:20px;border-radius:16px}
+.eg-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);margin-bottom:12px}
+.eg-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.eg-cols{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:6px;align-items:end;height:180px;border-bottom:1px solid var(--line)}
+.eg-col{display:flex;flex-direction:column-reverse;gap:2px;height:100%;justify-content:flex-start;position:relative}
+.eg-col b{display:block;border-radius:4px 4px 2px 2px;min-height:0}
+.eg-col .c{background:var(--p1)}.eg-col .f{background:var(--p2)}
+.eg-col em{position:absolute;left:0;right:0;text-align:center;font:600 11px "IBM Plex Mono",monospace;color:var(--muted);font-style:normal}
+.eg-dates{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:6px;font:500 10.5px "IBM Plex Mono",monospace;color:var(--muted);text-align:center;margin-top:6px}
+.eg-chart details{margin-top:12px;font-size:13.5px}
+.eg-chart table{width:100%;border-collapse:collapse;margin-top:8px;font:500 12.5px "IBM Plex Mono",monospace}
+.eg-chart td,.eg-chart th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right}
+.eg-chart td:first-child,.eg-chart th:first-child{text-align:left}
+.eg-free{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:30px;border-radius:20px;border:1px solid rgba(var(--r2),.35);background:radial-gradient(circle at 15% 20%,rgba(var(--r1),.14),transparent 50%),radial-gradient(circle at 90% 90%,rgba(var(--r2),.12),transparent 50%),var(--surface)}
+.eg-price{font:700 clamp(44px,6vw,64px)/1 "Space Grotesk",sans-serif}
+.eg-price small{font-size:16px;color:var(--muted);font-weight:500}
+.eg-check{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:14.5px}
+.eg-check li::before{content:"✓";color:var(--up);font-weight:700;margin-right:8px}
+.eg-faq{display:grid;gap:10px}
+.eg-faq details{padding:16px 18px;border-radius:14px}
+.eg-faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.eg-faq summary::after{content:"+";color:var(--accent);font-size:20px;line-height:1}
+.eg-faq details[open] summary::after{content:"–"}
+.eg-faq p{margin:10px 0 0;color:var(--muted)}
+.eg-log{display:grid;gap:14px}
+.eg-ver{padding:20px 22px;border-radius:16px;border-left:3px solid var(--p1)}
+.eg-ver:first-child{border-left-color:var(--p2)}
+.eg-ver .vh{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.eg-ver .vh b{font:700 18px "Space Grotesk",sans-serif}
+.eg-ver .vh span{color:var(--muted);font-size:13.5px}
+.eg-ver .lbl{display:inline-block;font:700 11px "Inter",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:var(--up-soft);color:var(--up);margin:10px 0 4px}
+.eg-ver .lbl.imp{background:var(--blue-soft);color:var(--blue)}
+.eg-ver ul{margin:4px 0 0;padding-left:20px;color:var(--muted);font-size:14.5px;display:grid;gap:4px}
+@media (max-width:980px){.eg-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.eg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.eg-hero,.eg-free{grid-template-columns:minmax(0,1fr)}.eg-grid,.eg-steps{grid-template-columns:minmax(0,1fr)}.eg-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .eg-lane,.eg-axis{grid-template-columns:minmax(0,1fr)}.eg-axis>span{display:none}.eg-cols{gap:3px}.eg-dates{gap:3px;font-size:9px}.eg-free{padding:22px 16px}}
 </style>
 </head>
 <body>
@@ -368,6 +456,7 @@ body{top:0!important}
       <a href="#/market" data-r="market" data-bn="মার্কেট" data-en="Market">মার্কেট</a>
       <a href="#/signals" data-r="signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a>
       <a href="#/forex" data-r="forex" data-bn="Forex" data-en="Forex">Forex</a>
+      <a href="#/engine" data-r="engine" data-bn="ইঞ্জিন" data-en="Engine">ইঞ্জিন</a>
       <a href="#/news" data-r="news" data-bn="নিউজ" data-en="News">নিউজ</a>
       <a href="#/about" data-r="about" data-bn="সম্পর্কে" data-en="About">সম্পর্কে</a>
     </nav>
@@ -382,7 +471,7 @@ body{top:0!important}
 
 <footer>
   <div class="wrap">
-    <nav><a href="#/" data-bn="হোম" data-en="Home">হোম</a><a href="#/market" data-bn="মার্কেট" data-en="Market">মার্কেট</a><a href="#/signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a><a href="#/forex">Forex</a><a href="#/news" data-bn="নিউজ" data-en="News">নিউজ</a><a href="#/about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
+    <nav><a href="#/" data-bn="হোম" data-en="Home">হোম</a><a href="#/market" data-bn="মার্কেট" data-en="Market">মার্কেট</a><a href="#/signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a><a href="#/forex">Forex</a><a href="#/engine" data-bn="BEWON Engine" data-en="BEWON Engine">BEWON Engine</a><a href="#/news" data-bn="নিউজ" data-en="News">নিউজ</a><a href="#/about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
     <p data-bn="⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।" data-en="⚠️ Signals on this site are for information only, not financial advice. Crypto carries a real risk of loss. Do your own research.">⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।</p>
     <p><span data-bn="দাম" data-en="Prices">দাম</span>: Binance public API · Fear &amp; Greed Index: <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">alternative.me</a> · <span data-bn="কয়েন আইকন" data-en="Coin icons">কয়েন আইকন</span>: cryptocurrency-icons</p>
     <p>© <span id="yr"></span> <span class="bn"></span></p>
@@ -1154,6 +1243,177 @@ async function pageAbout(){
     <p>Telegram চ্যানেল: <a href="${SITE.telegram}" target="_blank" rel="noopener">${SITE.channel}</a></p>
   </section>`; }
 
+/* ---------- engine page ---------- */
+const ENGINE_VER="1.4";
+const FXN={EURUSD:"EUR/USD",GBPUSD:"GBP/USD",USDJPY:"USD/JPY",XAUUSD:"XAU/USD"};
+async function pageEngine(){
+  const s=await loadSignals(), coins=s.coins||SITE.botCoins, mc=s.min_conf??60;
+  const fxq=(s.forex&&s.forex.quotes)||{}, fxs=Object.keys(fxq).length?Object.keys(fxq):Object.keys(FXN);
+  const all=[...s.open.map(t=>({...t,result:"OPEN"})),...s.history];
+  // last 14 complete days (Bangladesh time), today excluded
+  const BD=6*3600e3, dkey=ms=>new Date(ms+BD).toISOString().slice(0,10), today=dkey(Date.now());
+  const days=[]; for(let i=14;i>=1;i--) days.push(dkey(Date.now()-i*86400e3));
+  const per=Object.fromEntries(days.map(d=>[d,{c:0,f:0}]));
+  all.forEach(t=>{ const k=t.opened&&dkey(new Date(t.opened).getTime()); if(per[k]) per[k][isFx(t)?"f":"c"]++; });
+  const nC=days.reduce((a,d)=>a+per[d].c,0), nF=days.reduce((a,d)=>a+per[d].f,0), mx=Math.max(4,...days.map(d=>per[d].c+per[d].f));
+  const fmtD=d=>new Date(d+"T00:00:00Z").toLocaleDateString(LANG==="en"?"en-GB":"bn-BD",{day:"numeric",month:"short",timeZone:"UTC"});
+  const st=s.stats, wr=winRate(st);
+  const blipPos=[[24,30],[70,22],[80,58],[60,80],[22,70],[44,14],[86,38],[14,48],[40,88],[74,74]];
+  const scanMarks=Array.from({length:96},(_,i)=>`<i style="left:${(i*15+3)/1440*100}%"></i>`).join("");
+  const step=(n,h,p)=>`<div class="eg-step card"><div class="n">${n}</div><h3>${h}</h3><p>${p}</p></div>`;
+  const card=(ic,h,p,extra="")=>`<div class="eg-card card"><div class="ic">${ic}</div><h3>${h}</h3><p>${p}</p>${extra}</div>`;
+  const faq=(q,a)=>`<details class="card"><summary>${q}</summary><p>${a}</p></details>`;
+  app.innerHTML=`<div class="eg">
+  <section class="eg-hero">
+    <div>
+      <span class="pill-live"><span class="dot"></span>${tr("লাইভ · অটোমেটেড সিগনাল ইঞ্জিন","Live · Automated signal engine")}</span>
+      <h1>BEWON <span class="grad-text">Engine</span> <span style="font-size:.38em;color:var(--muted);font-family:'IBM Plex Mono',monospace">v${ENGINE_VER}</span></h1>
+      <p class="tag">${tr("নিয়ম মেনে চলা, আবেগহীন সিগনাল — দিনরাত ২৪ ঘণ্টা।","Rule-based, emotion-free signals — around the clock.")}</p>
+      <p>${tr(`BEWON Engine হলো আমাদের নিজের বানানো সিগনাল বট। প্রতি ১৫ মিনিটে লাইভ মার্কেট ডেটা দেখে ${coins.length}টা ক্রিপ্টো আর ${fxs.length}টা Forex/Gold পেয়ার বিশ্লেষণ করে। ভালো সেটআপ পেলে Entry, Target, Stop Loss আর Confidence % সহ Telegram-এ পাঠায়। সাথে দৈনিক সারাংশ আর ক্রিপ্টো নিউজও পাঠায়।`,
+        `BEWON Engine is our own signal bot. Every 15 minutes it reads live market data for ${coins.length} crypto and ${fxs.length} Forex/Gold pairs. When it finds a good setup it sends Entry, Target, Stop Loss and a Confidence % to Telegram, along with a daily digest and crypto news.`)}</p>
+      <p><b>${tr("বট কখনো আপনার হয়ে ট্রেড করে না। সব সিদ্ধান্ত আর সব ট্রেড আপনার নিজের।","The engine never trades for you. Every decision, and every trade, stays yours.")}</b></p>
+      <div class="cta"><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">${tr("ফ্রি-তে Join করুন →","Join free →")}</a><button class="btn btn-ghost" id="egSee">${tr("কী কী পাবেন দেখুন","See what you get")}</button></div>
+    </div>
+    <div class="eg-radar" role="img" aria-label="${tr("রাডার অ্যানিমেশন: বট সব পেয়ার স্ক্যান করছে","Radar animation: the engine scanning every pair")}">
+      <div class="eg-sweep"></div>
+      ${[...coins.slice(0,8),...fxs.slice(0,2).map(f=>FXN[f]||f)].slice(0,10).map((c,i)=>`<span class="eg-blip" data-c="${esc(c)}" style="left:${blipPos[i][0]}%;top:${blipPos[i][1]}%"><i></i>${esc(c)}</span>`).join("")}
+      <div class="eg-core">BEWON<br>ENGINE</div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-track">${[0,1].map(()=>`<div class="ticker-copy">${[...coins.map(c=>c+" /USDT"),...fxs.map(f=>FXN[f]||f)].map(p=>`<span class="tk"><b>${esc(p)}</b></span>`).join("")}</div>`).join("")}</div></div>
+
+  <section>
+    <div class="sec-head"><div><span class="kicker">${tr("যে পেয়ারগুলো বট দেখে","The pairs the engine watches")}</span><h2>${tr("২৪ ঘণ্টার পরিবর্তন","24h change")}</h2></div></div>
+    <div class="eg-pairs card" id="egPairs"><div class="hd"><span id="egUpDn">${tr("লোড হচ্ছে…","Loading…")}</span><span>${tr("একই স্কেলে","One shared scale")}</span></div>
+      ${coins.map(()=>`<div class="eg-row"><span class="skel">BTC</span><span class="eg-bar"></span><span class="skel v">+0.00%</span></div>`).join("")}</div>
+    <p class="muted" style="font-size:13.5px;margin-top:10px">${tr("Binance-এর পাবলিক, শুধু-পড়ার ডেটা। বট এই পেয়ারগুলো বিশ্লেষণ করে ফলাফল পাঠায়। কোনো ট্রেড করে না, কোনো এক্সচেঞ্জ অ্যাকাউন্ট ছোঁয় না, কোনো API key চায় না। আগের দামের ওঠানামা ভবিষ্যতের নিশ্চয়তা নয়।","Public, read-only Binance data. The engine analyses these pairs and sends you the result. It never places a trade, never touches an exchange account and never asks for API keys. Past movement is not an indication of future movement.")}</p>
+  </section>
+
+  <section id="egWhat">
+    <div class="sec-head"><div><span class="kicker">${tr("বট আসলে কী করে","What the engine actually does")}</span><h2>${tr("৬টা অটোমেটিক সার্ভিস, সব ফ্রি","6 automated services, all free")}</h2><p class="sub">${tr("নিচের সবকিছু নিজে থেকে চলে। কেউ হাতে পোস্ট করে না। আসল মার্কেট ডেটা ঢোকে, নোটিফিকেশন বের হয়।","Everything below runs by itself — no manual posting. Real market data in, a notification out.")}</p></div></div>
+    <div class="eg-grid">
+      ${card("📡",tr("অটোমেটিক ক্রিপ্টো সিগনাল","Automated crypto signals"),tr(`১ ঘণ্টার ক্যান্ডেলে EMA 9/21 ক্রস, RSI(14) দিয়ে যাচাই। তারপর ৪ ঘণ্টার ট্রেন্ড, EMA 200, MACD, ADX, ভলিউম আর BTC-র দিক মিলিয়ে Confidence % বের হয়। ${mc}%-এর কম হলে সিগনাল যায় না।`,`EMA 9/21 crossover on 1h candles, confirmed by RSI(14), then scored on the 4h trend, EMA 200, MACD, ADX, volume and BTC direction. Below ${mc}% confidence, nothing is sent.`),`<div class="eg-chips">${coins.map(c=>`<span>${esc(c)}</span>`).join("")}</div>`)}
+      ${card("💱",tr("Forex ও Gold সিগনাল","Forex & Gold signals"),tr("সোমবার থেকে শুক্রবার একই নিয়মে Forex আর Gold দেখা হয়। Forex-এ কেন্দ্রীয় ভলিউম নেই, তাই ভলিউমের শর্ত বাদ, আর লাভ-ক্ষতি দেখানো হয় pips-এ।","The same rules run on Forex and Gold, Monday to Friday. Forex has no central volume, so that filter is skipped, and targets are shown in pips."),`<div class="eg-chips">${fxs.map(f=>`<span>${esc(FXN[f]||f)}</span>`).join("")}</div>`)}
+      ${card("📊",tr("দৈনিক মার্কেট সারাংশ","Daily market digest"),tr("প্রতিদিন সকাল ৮টায় (বাংলাদেশ সময়) একটা সারাংশ: প্রতিটা কয়েনের দাম ও পরিবর্তন, Fear & Greed, চলমান সিগনাল আর Win rate।","Every day at 8 AM Bangladesh time: price and change for every coin, Fear & Greed, open signals and the win rate."))}
+      ${card("📰",tr("ক্রিপ্টো নিউজ, Telegram-এ","Crypto news to Telegram"),tr("৫টা বড় নিউজ সাইট থেকে খবর নিজে থেকে আসে। সাইটের নিউজ পেজে দেখা যায়, আর নতুন খবর প্রতি ১৫ মিনিটে সর্বোচ্চ ২টা করে Telegram-এ যায়।","Headlines from 5 major news sites arrive automatically. They appear on the News page, and up to 2 new stories go to Telegram every 15 minutes."))}
+      ${card("🎯",tr("প্রতিটা সিগনালের হিসাব","Every signal tracked"),tr("TP1 ছুঁলে Stop Loss Entry-তে সরে যায়। TP2, SL বা ৪৮ ক্যান্ডেলে Expired হলে ফলাফল Telegram-এ যায়, আর সাইটে চিরকাল থেকে যায়।","When TP1 hits, the stop moves to entry. TP2, SL or expiry after 48 candles is reported to Telegram and stays on the site for good."))}
+      ${card("🌐",tr("লাইভ ওয়েবসাইট","Live website"),tr("লাইভ দাম, চার্ট, সিগনালের পুরো ইতিহাস আর Win rate। ২০টা ভাষা আর ৮টা রঙে দেখা যায়।","Live prices, charts, the full signal history and win rate — in 20 languages and 8 color themes."))}
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="kicker">${tr("কীভাবে কাজ করে","How it works")}</span><h2>${tr("ডেটা ঢোকে, নোটিফিকেশন বের হয়, ব্যস","Data in, a notification out — nothing after it")}</h2><p class="sub">${tr("এখানে কোনো অর্ডার দেওয়ার ধাপ নেই, কারণ বটের কোনো এক্সচেঞ্জ অ্যাকাউন্টই নেই।","There is no order step, because the engine has no exchange account to place one through.")}</p></div></div>
+    <div class="eg-steps">
+      ${step(1,tr("পাবলিক ডেটা আসে","Public data in"),tr("Binance (ব্যাকআপ: OKX, KuCoin, Kraken) আর Yahoo Finance থেকে দাম। শুধু পড়া যায়, কোনো অ্যাকাউন্ট লাগে না।","Prices from Binance (backups: OKX, KuCoin, Kraken) and Yahoo Finance. Read-only, no account."))}
+      ${step(2,tr("প্রতিটা পেয়ার যাচাই","Every pair checked"),tr("EMA 9/21 ক্রস আর RSI মিললে তবেই সেটআপ ধরা হয়।","A setup only counts when the EMA 9/21 cross and RSI agree."))}
+      ${step(3,tr("Confidence স্কোর","Confidence score"),tr(`ট্রেন্ড, মোমেন্টাম, ADX, ভলিউম, BTC মিলিয়ে ০–৯৫%। ${mc}%-এর কম হলে বাদ।`,`Trend, momentum, ADX, volume and BTC give 0–95%. Under ${mc}% it is dropped.`))}
+      ${step(4,tr("কারণসহ পাঠানো","Sent with reasons"),tr("Entry, TP1, TP2, SL আর কেন এই সিগনাল, সব Telegram-এ আর সাইটে।","Entry, TP1, TP2, SL and why — on Telegram and on the site."))}
+      ${step(5,tr("সিদ্ধান্ত আপনার","You decide"),tr("বট এখানেই থামে। ট্রেড করবেন কিনা, সেটা পুরোপুরি আপনার।","The engine stops here. Whether to trade is entirely up to you."))}
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="kicker">${tr("বটের একটা দিন","One day of the engine")}</span><h2>${tr("কখন কী চলে","What runs when")}</h2></div></div>
+    <div class="eg-day card">
+      <div class="eg-lane"><div>${tr("সিগনাল স্ক্যান","Signal scan")}<small>${tr("প্রতি ১৫ মিনিটে","every 15 min")}</small></div><div class="eg-rail">${scanMarks}</div></div>
+      <div class="eg-lane"><div>${tr("নিউজ চেক","News check")}<small>${tr("প্রতি ১৫ মিনিটে","every 15 min")}</small></div><div class="eg-rail">${scanMarks}</div></div>
+      <div class="eg-lane"><div>${tr("দৈনিক সারাংশ","Daily digest")}<small>${tr("দিনে ১ বার","once a day")}</small></div><div class="eg-rail"><i class="g" style="left:${8/24*100}%"></i></div></div>
+      <div class="eg-axis"><span></span><div><span>0h</span><span>6h</span><span>12h</span><span>18h</span><span>24h</span></div></div>
+      <p class="muted" style="font-size:13px;margin:0">${tr("সময় বাংলাদেশ অনুযায়ী। প্রতিটা দাগ একটা নির্ধারিত রান। GitHub মাঝে মাঝে কয়েক মিনিট দেরিতে চালায়।","Times are Bangladesh time. Each mark is one scheduled run; GitHub sometimes starts a run a few minutes late.")}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="kicker">${tr("বটের কাজের খাতা","Engine activity")}</span><h2>${tr("প্রতিশ্রুতি নয়, আসল হিসাব","Not a promise — a log")}</h2><p class="sub">${tr("শেষ ১৪টা পুরো দিনে বট আসলে কয়টা সিগনাল পাঠিয়েছে (আজকের দিন বাদে)। এটা কাজের পরিমাণ, লাভের দাবি নয়।","How many signals the engine actually sent over the last 14 complete days (today excluded). This is work done, not a performance claim.")}</p></div></div>
+    <div class="eg-kpis">
+      <div class="card"><strong>${nC+nF}</strong><span>${tr("১৪ দিনে মোট সিগনাল","signals in 14 days")}</span></div>
+      <div class="card"><strong>${nC}</strong><span>${tr("ক্রিপ্টো সিগনাল","crypto signals")}</span></div>
+      <div class="card"><strong>${nF}</strong><span>${tr("Forex/Gold সিগনাল","Forex/Gold signals")}</span></div>
+      <div class="card"><strong>${wr===null?"—":wr+"%"}</strong><span>${tr("সব সময়ের Win rate","all-time win rate")}</span></div>
+    </div>
+    <div class="eg-chart card" style="margin-top:12px">
+      <div class="eg-legend"><span><i style="background:var(--p1)"></i>${tr("ক্রিপ্টো","Crypto")}</span><span><i style="background:var(--p2)"></i>Forex / Gold</span></div>
+      <div class="eg-cols">${days.map(d=>{ const v=per[d], tot=v.c+v.f; return `<div class="eg-col" title="${fmtD(d)}: ${tr("ক্রিপ্টো","Crypto")} ${v.c}, Forex ${v.f}">${tot?`<em style="bottom:${tot/mx*100}%">${tot}</em>`:""}<b class="c" style="height:${v.c/mx*100}%"></b><b class="f" style="height:${v.f/mx*100}%"></b></div>`; }).join("")}</div>
+      <div class="eg-dates">${days.map((d,i)=>`<span>${i%2?"":fmtD(d)}</span>`).join("")}</div>
+      <details><summary>${tr("টেবিল আকারে দেখুন","View as table")}</summary><table><tr><th>${tr("দিন","Day")}</th><th>${tr("ক্রিপ্টো","Crypto")}</th><th>Forex</th><th>${tr("মোট","Total")}</th></tr>${days.map(d=>`<tr><td>${fmtD(d)}</td><td>${per[d].c}</td><td>${per[d].f}</td><td>${per[d].c+per[d].f}</td></tr>`).join("")}</table></details>
+      <p class="muted" style="font-size:13px;margin:12px 0 0">${tr(`সাইটে থাকা সিগনাল ইতিহাস থেকে গোনা। কোনো দিন ০ মানে নিয়ম মেনে ভালো সেটআপ পাওয়া যায়নি, বট ইচ্ছে করে চুপ ছিল। সিগনালের সংখ্যা দিয়ে নির্ভুলতা মাপা যায় না। ফলাফল দেখতে <a href="#/signals">সিগনাল পেজ</a> দেখুন।`,`Counted from the signal history published on this site. A zero day means no setup cleared the rules, so the engine stayed quiet on purpose. The number of signals says nothing about accuracy; see the <a href="#/signals">Signals page</a> for results.`)}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="kicker">${tr("নিরাপত্তা","Security & trust")}</span><h2>${tr("আপনার কিছুই ঝুঁকিতে নেই","Nothing of yours at risk")}</h2><p class="sub">${tr("BEWON Engine শুধু নোটিফিকেশন পাঠায়। এটা আপনার এক্সচেঞ্জের সাথে যুক্ত কোনো ট্রেডিং বট নয়।","BEWON Engine only sends notifications. It is not a trading bot connected to your exchange.")}</p></div></div>
+    <div class="eg-grid">
+      ${card("🔑",tr("কোনো API key চাই না","No API keys"),tr("এক্সচেঞ্জের API key, ওয়ালেটের seed phrase বা টাকা তোলার অনুমতি কখনো চাওয়া হয় না।","Never asks for exchange API keys, wallet seed phrases or withdrawal access."))}
+      ${card("🛰️",tr("শুধু পাবলিক ডেটা","Read-only public data"),tr("শুধু সবার জন্য খোলা মার্কেট ডেটা পড়ে। আপনার অ্যাকাউন্টের সাথে কোনো সংযোগ নেই।","Reads only public market data. No connection to your account."))}
+      ${card("💸",tr("কোনো টাকা লাগে না","No money involved"),tr("কোনো ডিপোজিট, পেমেন্ট বা লগইন নেই। কেউ BEWON-এর নামে টাকা চাইলে সেটা প্রতারণা।","No deposit, payment or login. Anyone asking for money in BEWON's name is a scam."))}
+      ${card("📜",tr("পুরো ইতিহাস খোলা","Full history, public"),tr("জয় হোক বা হার, প্রতিটা সিগনাল সাইটে থেকে যায়। কিছু মুছে ফেলা হয় না।","Every signal stays on the site, win or loss. Nothing is deleted."))}
+      ${card("🧾",tr("খোলা নিয়ম","Open rules"),tr("কোনো গোপন 'AI' নেই। EMA, RSI, MACD, ADX-এর পরিষ্কার নিয়ম, আর প্রতিটা সিগনালের সাথে কারণ লেখা থাকে।","No secret 'AI'. Clear EMA, RSI, MACD and ADX rules, with the reasons printed on every signal."))}
+      ${card("🤖",tr("২৪/৭ নিজে চলে","Runs 24/7 on its own"),tr("GitHub-এর ফ্রি সার্ভারে নিজে থেকে চলে। কারো কম্পিউটার চালু রাখতে হয় না।","Runs by itself on GitHub's free servers. Nobody has to keep a computer on."))}
+    </div>
+  </section>
+
+  <section class="eg-free">
+    <div>
+      <span class="kicker">${tr("দাম","Price")}</span>
+      <h2 style="margin-bottom:4px">${tr("BEWON Engine — সবার জন্য","BEWON Engine — for everyone")}</h2>
+      <div class="eg-price">${tr("৳০","$0")} <small>${tr("/ চিরকাল ফ্রি","/ free forever")}</small></div>
+      <p class="sub" style="margin-top:10px">${tr("কোনো সাবস্ক্রিপশন নেই, কোনো লুকানো চার্জ নেই, কোনো কমিশন নেই। শুধু Telegram চ্যানেলে Join করুন।","No subscription, no hidden charges, no commissions. Just join the Telegram channel.")}</p>
+      <div class="cta" style="margin-top:16px"><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">${tr("Telegram-এ ফ্রি Join →","Join free on Telegram →")}</a></div>
+    </div>
+    <ul class="eg-check">
+      <li>${tr(`অটোমেটিক ক্রিপ্টো সিগনাল (${coins.length}টা কয়েন)`,`Automated crypto signals (${coins.length} coins)`)}</li>
+      <li>${tr(`Forex ও Gold সিগনাল (${fxs.length}টা পেয়ার)`,`Forex & Gold signals (${fxs.length} pairs)`)}</li>
+      <li>${tr("প্রতিটা সিগনালে Confidence % আর কারণ","Confidence % and reasons on every signal")}</li>
+      <li>${tr("দৈনিক মার্কেট সারাংশ","Daily market digest")}</li>
+      <li>${tr("ক্রিপ্টো নিউজ, Telegram-এ","Crypto news on Telegram")}</li>
+      <li>${tr("TP/SL ফলাফলের আপডেট","TP/SL result updates")}</li>
+      <li>${tr("পুরো ইতিহাস আর Win rate, সবার জন্য খোলা","Full public history and win rate")}</li>
+      <li>${tr("২০টা ভাষা, ৮টা রং","20 languages, 8 color themes")}</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="kicker">FAQ</span><h2>${tr("সাধারণ প্রশ্ন","Common questions")}</h2></div></div>
+    <div class="eg-faq">
+      ${faq(tr("এটা কি আর্থিক পরামর্শ?","Is this financial advice?"),tr("না। প্রতিটা সিগনাল শুধু টেকনিক্যাল অ্যানালাইসিসের ফল, তথ্যের জন্য। কোনো লাভের নিশ্চয়তা নেই।","No. Every signal is technical-analysis output for information only. No profit is guaranteed."))}
+      ${faq(tr("বট কি আমার হয়ে ট্রেড করে?","Does the engine trade for me?"),tr("না। বট কখনো ট্রেড খোলে, চালায় বা বন্ধ করে না। সব সিদ্ধান্ত আপনার।","No. It never opens, manages or closes a trade. Every decision is yours."))}
+      ${faq(tr("সত্যিই কি পুরো ফ্রি?","Is it really free?"),tr("হ্যাঁ। কোনো পেমেন্ট, ডিপোজিট বা লগইন নেই। কেউ টাকা চাইলে বুঝবেন সেটা BEWON নয়।","Yes. No payment, deposit or login. If anyone asks you for money, it isn't BEWON."))}
+      ${faq(tr("এটা কি 'আসল AI'?","Is it 'real AI'?"),tr("না, কোনো গোপন মডেল নেই। পরিষ্কার নিয়ম (EMA, RSI, MACD, ADX) আসল মার্কেট ডেটায় চলে, তাই প্রতিটা সিগনালের কারণ দেখা যায়।","No black box. Clear rules (EMA, RSI, MACD, ADX) run on real market data, so every signal shows its reasons."))}
+      ${faq(tr("আমার এক্সচেঞ্জ অ্যাকাউন্ট লাগবে?","Does it need my exchange account?"),tr("না। কোনো API key বা ওয়ালেট লাগে না। বট শুধু পাবলিক ডেটা পড়ে আর নোটিফিকেশন পাঠায়।","No. No API keys or wallet. It only reads public data and sends notifications."))}
+      ${faq(tr("দিনে কয়টা সিগনাল আসে?","How many signals per day?"),tr(`ঠিক নেই। নিয়ম মিললে আর Confidence ${mc}%-এর বেশি হলে তবেই আসে। সাধারণত দিনে কয়েকটা, কোনো দিন একটাও না।`,`It varies. A signal only goes out when the rules line up and confidence is above ${mc}%. Usually a few a day, some days none.`))}
+      ${faq(tr("বট কি লাভের গ্যারান্টি দিতে পারে?","Can it guarantee profit?"),tr("না, আর যারা গ্যারান্টি দেয় তাদের থেকে সাবধান। মার্কেটের ঝুঁকি পুরোপুরি আপনার।","No — and be wary of anyone who claims to. The market risk is entirely yours."))}
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="kicker">${tr("পরিবর্তনের তালিকা","Changelog")}</span><h2>${tr("BEWON-এ নতুন কী","What's new in BEWON")}</h2><p class="sub">${tr("শুধু যা সত্যিই চালু হয়েছে। 'শীঘ্রই আসছে' জিনিস এখানে লেখা হয় না।","Only what has actually shipped — never a 'coming soon' item.")}</p></div></div>
+    <div class="eg-log">
+      ${[["1.4",tr("অক্টোবর ২০২৬","October 2026"),[[0,tr("3D রোবট আর ধীরে ঘোরা 3D পৃথিবী, ঢাকা থেকে বিশ্বের বাজারে আলোর লাইন","3D robot mascot and a slowly turning 3D world with lines from Dhaka to world markets")],[0,tr("৮টা রঙের থিম: কালো + সাদা, সাদা + নীল ইত্যাদি","8 color themes: Black + White, White + Blue and more")],[0,tr("২০টা ভাষা","20 languages")],[0,tr("এই Engine পেজ","This Engine page")]]],
+         ["1.3",tr("সেপ্টেম্বর ২০২৬","September 2026"),[[0,tr("Forex ও Gold সিগনাল: EUR/USD, GBP/USD, USD/JPY, XAU/USD","Forex & Gold signals: EUR/USD, GBP/USD, USD/JPY, XAU/USD")],[0,tr("প্রতিটা সিগনালে Confidence % আর কারণ","Confidence % and reasons on every signal")],[1,tr(`${mc}%-এর কম Confidence হলে সিগনাল বাদ, তাই কম কিন্তু ভালো সিগনাল`,`Signals under ${mc}% confidence are dropped — fewer, better signals`)]]],
+         ["1.2",tr("সেপ্টেম্বর ২০২৬","September 2026"),[[0,tr("ক্রিপ্টো নিউজ পোর্টাল, ৫টা সূত্র থেকে নিজে থেকে আপডেট","Crypto news portal, auto-updated from 5 sources")],[0,tr("নতুন খবরের লিংক Telegram-এ","New headlines posted to Telegram")],[0,tr("বাংলা / English বদলানোর বোতাম","Bangla / English switch")]]],
+         ["1.1",tr("সেপ্টেম্বর ২০২৬","September 2026"),[[0,tr("ওয়েবসাইট: লাইভ মার্কেট, চার্ট, সিগনালের পুরো ইতিহাস আর Win rate","Website: live market, charts, full signal history and win rate")]]],
+         ["1.0",tr("সেপ্টেম্বর ২০২৬","September 2026"),[[0,tr("GitHub-এ ফ্রি, প্রতি ১৫ মিনিটে চলা Telegram সিগনাল বট","Free Telegram signal bot on GitHub, running every 15 minutes")],[0,tr("EMA 9/21 + RSI, সাথে TP1, TP2, SL আর অটো ফলাফল","EMA 9/21 + RSI with TP1, TP2, SL and automatic results")],[0,tr("দৈনিক মার্কেট সারাংশ","Daily market digest")]]]
+        ].map(([v,d,items])=>`<div class="eg-ver card"><div class="vh"><b>BEWON v${v}</b><span>${d}</span></div>
+          ${items.some(x=>!x[0])?`<span class="lbl">${tr("নতুন","Added")}</span><ul>${items.filter(x=>!x[0]).map(x=>`<li>${x[1]}</li>`).join("")}</ul>`:""}
+          ${items.some(x=>x[0])?`<span class="lbl imp">${tr("উন্নতি","Improved")}</span><ul>${items.filter(x=>x[0]).map(x=>`<li>${x[1]}</li>`).join("")}</ul>`:""}</div>`).join("")}
+    </div>
+  </section>
+  </div>`;
+  $("#egSee").onclick=()=>$("#egWhat").scrollIntoView({behavior:"smooth"});
+  // live 24h change bars
+  const drawPairs=async()=>{ try{
+    const tk=await bget(`/api/v3/ticker/24hr?symbols=${encodeURIComponent(JSON.stringify(coins.map(c=>c+"USDT")))}`);
+    const rows=tk.map(t=>({c:t.symbol.slice(0,-4),ch:+t.priceChangePercent})).sort((a,b)=>b.ch-a.ch);
+    const m=Math.max(1,...rows.map(r=>Math.abs(r.ch))), up=rows.filter(r=>r.ch>=0).length, box=$("#egPairs"); if(!box) return;
+    box.innerHTML=`<div class="hd"><span>${tr(`২৪ ঘণ্টা · ${up}টা বেড়েছে · ${rows.length-up}টা কমেছে`,`24h change · ${up} up · ${rows.length-up} down`)}</span><span>${tr("একই স্কেলে","One shared scale")}</span></div>`+
+      rows.map(r=>{ const w=Math.abs(r.ch)/m*50, pos=r.ch>=0; return `<a class="eg-row" href="#/coin/${r.c}"><span>${esc(r.c)}</span><span class="eg-bar"><b style="${pos?`left:50%`:`right:50%`};width:${w}%;background:${pos?"var(--up)":"var(--down)"}"></b></span><span class="v" style="color:${pos?"var(--up)":"var(--down)"}">${pct(r.ch)}</span></a>`; }).join("")+
+      Object.keys(fxq).map(f=>{ const ch=+fxq[f].ch||0, w=Math.min(50,Math.abs(ch)/m*50), pos=ch>=0; return `<a class="eg-row" href="#/forex"><span>${esc(FXN[f]||f)}</span><span class="eg-bar"><b style="${pos?`left:50%`:`right:50%`};width:${w}%;background:${pos?"var(--up)":"var(--down)"};opacity:.75"></b></span><span class="v" style="color:${pos?"var(--up)":"var(--down)"}">${pct(ch)}</span></a>`; }).join("");
+    rows.forEach(r=>{ const b=document.querySelector(`.eg-blip[data-c="${r.c}"]`); if(b) b.className="eg-blip "+(r.ch>=0?"up":"dn"); });
+  }catch(e){ const u=$("#egUpDn"); if(u) u.textContent=tr("দাম লোড হয়নি, একটু পরে আবার চেষ্টা করুন","Couldn't load prices, try again shortly"); } };
+  drawPairs(); every(60000,drawPairs);
+}
+
 /* ---------- router ---------- */
 async function route(){
   timers.forEach(clearInterval); timers=[]; if(chart){ chart.remove(); chart=null; } stopHero3D();
@@ -1166,6 +1426,7 @@ async function route(){
   else if(r==="signals") await pageSignals();
   else if(r==="news") await pageNews();
   else if(r==="forex") await pageForex();
+  else if(r==="engine") await pageEngine();
   else if(r==="about") await pageAbout();
   else await pageHome();
 }
