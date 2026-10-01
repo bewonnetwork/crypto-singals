@@ -70,7 +70,7 @@ p{margin:0}
 .tg-top{display:inline-flex}
 @media (max-width:860px){
   .nav{position:fixed;left:0;right:0;bottom:0;margin:0;background:var(--surface);border-top:1px solid var(--line);justify-content:space-around;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));z-index:30}
-  .nav a{font-size:12.5px;padding:6px 5px;text-align:center;line-height:1.3}
+  .nav a{font-size:12px;padding:6px 3px;text-align:center;line-height:1.3}
   body{padding-bottom:64px}
   .tg-top span{display:none}
   .top{backdrop-filter:none;background:var(--bg)}
@@ -322,8 +322,9 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap}
       <a href="#/" data-r="home" data-bn="হোম" data-en="Home">হোম</a>
       <a href="#/market" data-r="market" data-bn="মার্কেট" data-en="Market">মার্কেট</a>
       <a href="#/signals" data-r="signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a>
+      <a href="#/forex" data-r="forex" data-bn="Forex" data-en="Forex">Forex</a>
       <a href="#/news" data-r="news" data-bn="নিউজ" data-en="News">নিউজ</a>
-      <a href="#/about" data-r="about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a>
+      <a href="#/about" data-r="about" data-bn="সম্পর্কে" data-en="About">সম্পর্কে</a>
     </nav>
     <span class="sp"></span>
     <button class="langbtn" id="langBtn" aria-label="Language / ভাষা">EN</button>
@@ -336,7 +337,7 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap}
 
 <footer>
   <div class="wrap">
-    <nav><a href="#/" data-bn="হোম" data-en="Home">হোম</a><a href="#/market" data-bn="মার্কেট" data-en="Market">মার্কেট</a><a href="#/signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a><a href="#/news" data-bn="নিউজ" data-en="News">নিউজ</a><a href="#/about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
+    <nav><a href="#/" data-bn="হোম" data-en="Home">হোম</a><a href="#/market" data-bn="মার্কেট" data-en="Market">মার্কেট</a><a href="#/signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a><a href="#/forex">Forex</a><a href="#/news" data-bn="নিউজ" data-en="News">নিউজ</a><a href="#/about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
     <p data-bn="⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।" data-en="⚠️ Signals on this site are for information only, not financial advice. Crypto carries a real risk of loss. Do your own research.">⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।</p>
     <p><span data-bn="দাম" data-en="Prices">দাম</span>: Binance public API · Fear &amp; Greed Index: <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">alternative.me</a> · <span data-bn="কয়েন আইকন" data-en="Coin icons">কয়েন আইকন</span>: cryptocurrency-icons</p>
     <p>© <span id="yr"></span> <span class="bn"></span></p>
@@ -368,6 +369,7 @@ try{ const saved=localStorage.getItem("lang"); if(saved==="bn"||saved==="en") LA
 const tr = (bn, en) => LANG === "en" ? en : bn;
 const WHY_EN = [
   [/^EMA 9\/21 ক্রস \+ RSI ঠিক সীমায় \+ ভলিউম বেশি$/, "EMA 9/21 cross + RSI in range + above-average volume"],
+  [/^EMA 9\/21 ক্রস \+ RSI ঠিক সীমায়$/, "EMA 9/21 cross + RSI in range"],
   [/^(\S+) বড় ট্রেন্ড একই দিকে$/, "$1 higher-timeframe trend agrees"],
   [/^(\S+) বড় ট্রেন্ড উল্টো দিকে$/, "$1 higher-timeframe trend is opposite"],
   [/^দাম EMA 200-এর ওপরে$/, "Price above EMA 200"],
@@ -420,6 +422,14 @@ async function bget(path){ let err;
 function every(ms, fn){ timers.push(setInterval(fn, ms)); }
 function pillResult(r){ const m={TP2:["p-tp2","🎯 TP2"],TP1:["p-tp1","✅ TP1"],SL:["p-sl","❌ SL"],EXPIRED:["p-exp","⌛ Expired"]}[r]||["p-flat",r];
   return `<span class="pill ${m[0]}">${m[1]}</span>`; }
+function isFx(t){ return t.market==="forex"; }
+function nameOf(t){ return isFx(t) ? (t.name||t.coin) : `${t.coin}/USDT`; }
+function goOf(t){ return isFx(t) ? "#/forex" : `#/coin/${t.coin}`; }
+function fxDec(sym){ return sym.startsWith("XAU")?2:sym.includes("JPY")?3:5; }
+function px(t,x){ return isFx(t) ? (+x).toLocaleString("en-US",{minimumFractionDigits:fxDec(t.coin),maximumFractionDigits:fxDec(t.coin)}) : fmtPx(x); }
+function fxLogo(sym){ const g=sym.startsWith("XAU"); return `<span class="logo" style="background:${g?"var(--accent-soft)":"var(--blue-soft)"};color:${g?"var(--accent)":"var(--blue)"};font-size:${g?13:10}px">${g?"Au":sym.slice(0,3)}</span>`; }
+function logoOf(t){ return isFx(t) ? fxLogo(t.coin) : logo(t.coin); }
+function pipsOf(t,v){ if(!isFx(t)) return ""; const ps=t.coin.includes("JPY")?0.01:t.coin.startsWith("XAU")?0.1:0.0001; return ` <span class="muted" style="font-size:11.5px">${Math.round(Math.abs(v-t.entry)/ps)}p</span>`; }
 function pillOpen(){ return `<span class="pill p-open">● ${tr("চলছে","Active")}</span>`; }
 function confColor(c){ return c>=75?"var(--up)":c>=60?"var(--accent)":"var(--down)"; }
 function confBlock(t){ if(t.conf==null) return "";
@@ -453,19 +463,19 @@ function ticket(t, live, sample){
   const dot=(v,c,l)=>`<b style="top:${pos(v)};background:${c}"></b><em style="top:${pos(v)}">${l}</em>`;
   const cur = live && live>=mn*0.9 && live<=mx*1.1 ? `<b style="top:${pos(Math.min(mx,Math.max(mn,live)))};background:var(--ink);width:8px;height:8px;left:-5px"></b>` : "";
   return `<article class="ticket">
-    <div class="ticket-head"><div class="who">${logo(t.coin)}<div><b>${t.coin}/USDT</b><div class="muted" style="font-size:13px">${SIG?.interval||"1h"} · ${when(t.opened)}</div></div></div>
+    <div class="ticket-head"><div class="who">${logoOf(t)}<div><b>${nameOf(t)}</b>${isFx(t)?' <span class="pill" style="background:var(--blue-soft);color:var(--blue);font-size:10.5px">FOREX</span>':""}<div class="muted" style="font-size:13px">${SIG?.interval||"1h"} · ${when(t.opened)}</div></div></div>
       <div style="display:flex;gap:6px;align-items:center">${sample?`<span class="sample">${tr("উদাহরণ","SAMPLE")}</span>`:""}${pillSide(t.side)}</div></div>
     <div class="ticket-body">
       <div class="levels">
-        <div class="lv tp"><span>TP2</span><b class="num">${fmtPx(t.tp2)}</b></div>
-        <div class="lv tp"><span>TP1</span><b class="num">${fmtPx(t.tp1)}</b></div>
-        <div class="lv en"><span>Entry</span><b class="num">${fmtPx(t.entry)}</b></div>
-        <div class="lv sl"><span>Stop Loss</span><b class="num">${fmtPx(t.sl)}</b></div>
+        <div class="lv tp"><span>TP2${pipsOf(t,t.tp2)}</span><b class="num">${px(t,t.tp2)}</b></div>
+        <div class="lv tp"><span>TP1${pipsOf(t,t.tp1)}</span><b class="num">${px(t,t.tp1)}</b></div>
+        <div class="lv en"><span>Entry</span><b class="num">${px(t,t.entry)}</b></div>
+        <div class="lv sl"><span>Stop Loss${pipsOf(t,t.sl)}</span><b class="num">${px(t,t.sl)}</b></div>
       </div>
       <div class="ladder" aria-hidden="true">${dot(t.tp2,"var(--up)","TP2")}${dot(t.tp1,"var(--up)","TP1")}${dot(t.entry,"var(--accent)","IN")}${dot(t.sl,"var(--down)","SL")}${cur}</div>
     </div>
     ${confBlock(t)}
-    <div class="ticket-foot"><span>${status}</span><span>${live?`${tr("এখন","Now")} <b class="num" style="color:var(--ink)">${fmtPx(live)}</b>`:(buy?tr("দাম বাড়ার সিগনাল","Expects price to rise"):tr("দাম কমার সিগনাল","Expects price to fall"))}</span></div>
+    <div class="ticket-foot"><span>${status}</span><span>${live?`${tr("এখন","Now")} <b class="num" style="color:var(--ink)">${px(t,live)}</b>`:(buy?tr("দাম বাড়ার সিগনাল","Expects price to rise"):tr("দাম কমার সিগনাল","Expects price to fall"))}</span></div>
   </article>`; }
 
 /* ---------- pages ---------- */
@@ -524,16 +534,18 @@ async function pageHome(){
 
   <section class="fbox">
     <div class="txt">
-      <span class="pill-live blue"><span class="dot"></span>${tr("শিগগিরই · Forex ও Gold","Coming soon · Forex & Gold")}</span>
+      <span class="pill-live blue"><span class="dot"></span>${tr("চালু · Forex ও Gold","Live · Forex & Gold")}</span>
       <h2>${tr(`<span class="grad-text">Forex ও Gold</span> সিগনাল`,`<span class="grad-text">Forex &amp; Gold</span> signals`)}</h2>
-      <p>${tr("বিশ্বের সবচেয়ে বড় মার্কেটের জন্য আলাদা সিগনাল আসছে। একই নিয়মে Entry, TP, SL আর ফলাফলের সৎ হিসাব থাকবে, সোমবার থেকে শুক্রবার।","A separate signal stream for the world's largest market is on the way — the same Entry, TP, SL and honest results, Monday to Friday.")}</p>
-      <div class="pairs"><span class="pair">EUR/USD</span><span class="pair">GBP/USD</span><span class="pair">USD/JPY</span><span class="pair gold">Gold</span></div>
+      <p>${tr("বিশ্বের সবচেয়ে বড় মার্কেটের জন্য আলাদা সিগনাল: EUR/USD, GBP/USD, USD/JPY আর Gold। একই নিয়মে Entry, TP, SL, pip-এর হিসাব আর ফলাফলের সৎ রেকর্ড, সোমবার থেকে শুক্রবার।","A separate signal stream for the world's largest market — EUR/USD, GBP/USD, USD/JPY and Gold — with Entry, TP, SL, pip distances and an honest record, Monday to Friday.")}</p>
+      <div class="pairs">${((s.forex||{}).pairs||[{sym:"EURUSD",name:"EUR/USD"},{sym:"GBPUSD",name:"GBP/USD"},{sym:"USDJPY",name:"USD/JPY"},{sym:"XAUUSD",name:"Gold"}]).map(p=>{const x=((s.forex||{}).quotes||{})[p.sym];
+        return `<span class="pair${p.sym.startsWith("XAU")?" gold":""}">${esc(p.sym.startsWith("XAU")?"Gold":p.name)}${x?` · <span class="${x.ch>=0?"up":"down"}">${pct(x.ch)}</span>`:""}</span>`}).join("")}</div>
+      <div class="cta"><a class="btn btn-primary" href="#/forex">${tr("Forex সিগনাল দেখুন →","See Forex signals →")}</a></div>
     </div>
     <div class="tiles">
       <div class="tile"><em>🧠</em><b>${tr("নিয়মভিত্তিক","Rule-based")}</b>${tr("বড় ট্রেন্ডের দিকে","Trades with the bigger trend")}</div>
       <div class="tile"><em>📐</em><b>${tr("ঝুঁকির হিসাব","Risk shown")}</b>${tr("লাভ-ক্ষতির অনুপাতসহ","Reward-to-risk on each")}</div>
-      <div class="tile"><em>📰</em><b>${tr("নিউজের সময় সাবধান","News-aware")}</b>${tr("বড় খবরের আগে বিরতি","Pauses around big news")}</div>
-      <div class="tile"><em>🆓</em><b>${tr("ফ্রি","Free")}</b>${tr("কোনো চার্জ নেই","No charge")}</div>
+      <div class="tile"><em>🗓️</em><b>${tr("সোম–শুক্র","Mon–Fri")}</b>${tr("উইকেন্ডে মার্কেট বন্ধ","Market closed at weekends")}</div>
+      <div class="tile"><em>💱</em><b>${tr("Pip-এর হিসাব","Pips shown")}</b>${tr("TP আর SL কত pip দূরে","TP and SL distance in pips")}</div>
     </div>
   </section>
 
@@ -583,7 +595,7 @@ function recentTable(s){
   const rows=[...s.open.map(t=>({...t,live:true})), ...s.history].slice(0,6);
   if(!rows.length) return `<div class="card empty">${tr("এখনো কোনো সিগনাল আসেনি। মার্কেটে নিয়ম মিললেই এখানে দেখা যাবে।","No signals yet. They'll appear here as soon as the market meets the rules.")}<br><br><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">${tr("Telegram-এ Join করে অপেক্ষা করুন","Join Telegram to get the first one")}</a></div>`;
   return `<div class="card tbl-wrap"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">SL</th><th>${tr("অবস্থা","Status")}</th><th class="r hide-sm">Conf.</th><th class="hide-sm">${tr("সময়","Time")}</th></tr></thead><tbody>
-  ${rows.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${t.live?pillOpen():pillResult(t.result)}</td><td class="r hide-sm">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td></tr>`).join("")}
+  ${rows.map(t=>`<tr class="link" data-go="${goOf(t)}"><td><span class="sym">${logoOf(t)}${isFx(t)?t.name||t.coin:t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${px(t,t.entry)}</td><td class="r num hide-sm">${px(t,t.tp1)}</td><td class="r num hide-sm">${px(t,t.sl)}</td><td>${t.live?pillOpen():pillResult(t.result)}</td><td class="r hide-sm">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td></tr>`).join("")}
   </tbody></table></div>`; }
 function confPill(t){ return t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${t.conf}%</span>`:'<span class="muted">—</span>'; }
 
@@ -639,6 +651,7 @@ function rsi(v,n=14){ let g=0,l=0; const a=1/n, out=[null];
 
 async function pageCoin(sym){
   sym=clean(sym)||"BTC";
+  if(["EURUSD","GBPUSD","USDJPY","XAUUSD"].includes(sym)){ location.hash="#/forex"; return; }
   const s=await loadSignals(), isBot=(s.coins||SITE.botCoins).includes(sym);
   const mine=[...s.open.map(t=>({...t,live:true})),...s.history].filter(t=>t.coin===sym);
   app.innerHTML=`<section>
@@ -714,18 +727,72 @@ async function pageSignals(){
   <section><div class="sec-head"><h2>${tr("চলমান সিগনাল","Active signals")} <span class="muted" style="font-weight:500">(${s.open.length})</span></h2></div>
     ${s.open.length?`<div class="tickets" id="openT">${s.open.map(t=>ticket(t)).join("")}</div>`:`<div class="card empty">${tr("এখন কোনো সিগনাল চলছে না।","No signal is active right now.")}</div>`}</section>
   <section><div class="toolbar"><h2>${tr("ইতিহাস","History")}</h2><div style="display:flex;gap:8px;flex-wrap:wrap">
+      <select id="fm" aria-label="${tr("মার্কেট","Market")}"><option value="">${tr("সব মার্কেট","All markets")}</option><option value="crypto">${tr("ক্রিপ্টো","Crypto")}</option><option value="forex">Forex &amp; Gold</option></select>
       <select id="fc" aria-label="${tr("কয়েন","Coin")}"><option value="">${tr("সব কয়েন","All coins")}</option>${coins.map(c=>`<option>${c}</option>`).join("")}</select>
       <select id="fr" aria-label="${tr("ফলাফল","Result")}"><option value="">${tr("সব ফলাফল","All results")}</option><option value="TP2">TP2</option><option value="TP1">TP1</option><option value="SL">SL</option><option value="EXPIRED">Expired</option></select></div></div>
     <div class="card tbl-wrap" id="hist"></div>
     <p class="muted" style="font-size:14px">${tr("জয় = TP1 বা TP2 ছুঁয়েছে। হার = TP1 ছোঁয়ার আগেই Stop Loss। TP1-এর পর Stop Loss নিজে থেকেই Entry-তে সরে যায়।","Win = reached TP1 or TP2. Loss = hit Stop Loss before TP1. After TP1 the Stop Loss moves to Entry automatically.")}</p></section>`;
-  const draw=()=>{ const fc=$("#fc").value, fr=$("#fr").value;
-    const h=s.history.filter(t=>(!fc||t.coin===fc)&&(!fr||t.result===fr));
+  const draw=()=>{ const fc=$("#fc").value, fr=$("#fr").value, fm=$("#fm").value;
+    const h=s.history.filter(t=>(!fc||t.coin===fc)&&(!fr||t.result===fr)&&(!fm||(t.market||"crypto")===fm));
     $("#hist").innerHTML=h.length?`<table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">TP2</th><th class="r hide-sm">SL</th><th>${tr("ফলাফল","Result")}</th><th class="r">Conf.</th><th class="hide-sm">${tr("শুরু","Opened")}</th><th class="hide-sm">${tr("শেষ","Closed")}</th></tr></thead><tbody>
-      ${h.map(t=>`<tr class="link" data-go="#/coin/${t.coin}"><td><span class="sym">${logo(t.coin)}${t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${fmtPx(t.entry)}</td><td class="r num hide-sm">${fmtPx(t.tp1)}</td><td class="r num hide-sm">${fmtPx(t.tp2)}</td><td class="r num hide-sm">${fmtPx(t.sl)}</td><td>${pillResult(t.result)}</td><td class="r">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td><td class="muted hide-sm">${when(t.closed)}</td></tr>`).join("")}</tbody></table>`
+      ${h.map(t=>`<tr class="link" data-go="${goOf(t)}"><td><span class="sym">${logoOf(t)}${isFx(t)?t.name||t.coin:t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${px(t,t.entry)}</td><td class="r num hide-sm">${px(t,t.tp1)}</td><td class="r num hide-sm">${px(t,t.tp2)}</td><td class="r num hide-sm">${px(t,t.sl)}</td><td>${pillResult(t.result)}</td><td class="r">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td><td class="muted hide-sm">${when(t.closed)}</td></tr>`).join("")}</tbody></table>`
       :`<div class="empty">${s.history.length?tr("এই ফিল্টারে কিছু নেই","Nothing matches this filter"):tr("এখনো কোনো সিগনাল শেষ হয়নি।","No signal has closed yet.")}</div>`; };
-  $("#fc").onchange=draw; $("#fr").onchange=draw; draw();
-  if(s.open.length){ try{ const tk=await bget(`/api/v3/ticker/price?symbols=${encodeURIComponent(JSON.stringify([...new Set(s.open.map(t=>t.coin+"USDT"))]))}`);
-      const m=Object.fromEntries(tk.map(t=>[t.symbol.replace("USDT",""),+t.price])); const o=$("#openT"); if(o) o.innerHTML=s.open.map(t=>ticket(t,m[t.coin])).join(""); }catch(e){} }
+  $("#fc").onchange=draw; $("#fr").onchange=draw; $("#fm").onchange=draw; draw();
+  const cr=s.open.filter(t=>!isFx(t));
+  if(cr.length){ try{ const tk=await bget(`/api/v3/ticker/price?symbols=${encodeURIComponent(JSON.stringify([...new Set(cr.map(t=>t.coin+"USDT"))]))}`);
+      const m=Object.fromEntries(tk.map(t=>[t.symbol.replace("USDT",""),+t.price])); const fq=(s.forex||{}).quotes||{};
+      const o=$("#openT"); if(o) o.innerHTML=s.open.map(t=>ticket(t,isFx(t)?fq[t.coin]?.price:m[t.coin])).join(""); }catch(e){} }
+}
+
+function fxOpenNow(){ const d=new Date(), wd=d.getUTCDay(), h=d.getUTCHours();
+  if(wd===6) return false; if(wd===5&&h>=21) return false; if(wd===0&&h<22) return false; return true; }
+async function pageForex(){
+  const s=await loadSignals(), fx=s.forex||{}, q=fx.quotes||{};
+  const pairs=(fx.pairs&&fx.pairs.length)?fx.pairs:[{sym:"EURUSD",name:"EUR/USD"},{sym:"GBPUSD",name:"GBP/USD"},{sym:"USDJPY",name:"USD/JPY"},{sym:"XAUUSD",name:"Gold (XAU/USD)"}];
+  const hist=s.history.filter(isFx), open=s.open.filter(isFx);
+  const w=hist.filter(t=>t.result==="TP1"||t.result==="TP2").length, l=hist.filter(t=>t.result==="SL").length, wr=w+l?Math.round(w*100/(w+l)):null;
+  const isOpen=fxOpenNow();
+  const tv=sym=>`https://www.tradingview.com/symbols/${sym}/`;
+  app.innerHTML=`<section class="fbox" style="grid-template-columns:minmax(0,1fr)">
+    <div class="txt">
+      <span class="pill-live ${isOpen?"blue":""}"><span class="dot" style="${isOpen?"":"background:var(--down);box-shadow:none"}"></span>${isOpen?tr("মার্কেট খোলা · সোম–শুক্র","Market open · Mon–Fri"):tr("মার্কেট বন্ধ · সোমবার আবার খুলবে","Market closed · reopens Monday")}</span>
+      <h1 style="font-size:clamp(30px,4.6vw,48px)">${tr(`<span class="grad-text">Forex ও Gold</span> সিগনাল`,`<span class="grad-text">Forex &amp; Gold</span> signals`)}</h1>
+      <p>${tr("বিশ্বের সবচেয়ে বেশি লেনদেন হওয়া কারেন্সি পেয়ার আর সোনার ১ ঘণ্টার চার্টে একই নিয়ম: EMA ক্রস, RSI, MACD, ADX আর ৪ ঘণ্টার বড় ট্রেন্ড। প্রতিটা সিগনালে Entry, TP, SL আর কত pip দূরে তা লেখা থাকে। শুধু সিগনাল, আপনার হয়ে কিছু ট্রেড করা হয় না।",
+        "The same rules on the 1-hour charts of the most-traded currency pairs and gold: EMA cross, RSI, MACD, ADX and the 4-hour trend. Each signal shows Entry, TP and SL with the distance in pips. Signals only — nothing is traded for you.")}</p>
+      <div class="pairs">${pairs.map(p=>`<span class="pair${p.sym.startsWith("XAU")?" gold":""}">${esc(p.name)}</span>`).join("")}</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="kicker">${tr("সর্বশেষ দাম","Latest prices")}</span><h2>${tr("পেয়ারগুলো","The pairs")}</h2></div><p>${tr("প্রতি ঘণ্টায় বট আপডেট করে","Updated hourly by the bot")}</p></div>
+    <div class="movers">${pairs.map(p=>{const x=q[p.sym]; const t={coin:p.sym,market:"forex"};
+      return `<div class="card mv"><h3>${fxLogo(p.sym)} ${esc(p.name)}</h3>
+        <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="num" style="font-size:24px;font-weight:600">${x?px(t,x.price):"—"}</span>${x?`<span class="pill ${x.ch>=0?"p-up":"p-down"}">${pct(x.ch)}</span>`:""}</div>
+        <span class="muted" style="font-size:13px">${x?tr("২৪ ঘণ্টা · ","24h · ")+ago(x.time):tr("বট পরের বার চললে দাম আসবে","Price appears after the bot's next run")}</span>
+        <a href="${tv(p.sym)}" target="_blank" rel="noopener" style="color:var(--blue)">${tr("লাইভ চার্ট TradingView-এ ↗","Live chart on TradingView ↗")}</a></div>`}).join("")}</div>
+  </section>
+
+  <section>
+    <div class="stats">
+      <div class="card stat wide"><span class="k">Forex win rate</span><span class="v">${wr===null?"—":wr+"%"}</span><div class="bar"><i style="width:${wr??0}%"></i></div></div>
+      <div class="card stat"><span class="k">${tr("জয়","Wins")}</span><span class="v up">${w}</span></div>
+      <div class="card stat"><span class="k">${tr("হার","Losses")}</span><span class="v down">${l}</span></div>
+      <div class="card stat"><span class="k">${tr("চলমান","Active")}</span><span class="v">${open.length}</span></div>
+      <div class="card stat"><span class="k">${tr("মোট শেষ হয়েছে","Closed")}</span><span class="v">${hist.length}</span></div>
+    </div>
+  </section>
+
+  <section><div class="sec-head"><h2>${tr("চলমান Forex সিগনাল","Active Forex signals")}</h2></div>
+    ${open.length?`<div class="tickets">${open.map(t=>ticket(t,q[t.coin]?.price)).join("")}</div>`:`<div class="card empty">${tr("এখন কোনো Forex সিগনাল চলছে না। নিয়ম মিললেই Telegram আর এখানে আসবে।","No Forex signal is active right now. New ones appear here and on Telegram as soon as the rules line up.")}</div>`}
+  </section>
+
+  <section><div class="sec-head"><h2>${tr("Forex ইতিহাস","Forex history")}</h2></div>
+    ${hist.length?`<div class="card tbl-wrap"><table><thead><tr><th>${tr("পেয়ার","Pair")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">SL</th><th>${tr("ফলাফল","Result")}</th><th class="r">Conf.</th><th class="hide-sm">${tr("শুরু","Opened")}</th></tr></thead><tbody>
+      ${hist.map(t=>`<tr><td><span class="sym">${logoOf(t)}${esc(t.name||t.coin)}</span></td><td>${pillSide(t.side)}</td><td class="r num">${px(t,t.entry)}</td><td class="r num hide-sm">${px(t,t.tp1)}</td><td class="r num hide-sm">${px(t,t.sl)}</td><td>${pillResult(t.result)}</td><td class="r">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td></tr>`).join("")}</tbody></table></div>`
+      :`<div class="card empty">${tr("এখনো কোনো Forex সিগনাল শেষ হয়নি।","No Forex signal has closed yet.")}</div>`}
+    <p class="muted" style="font-size:13.5px">${tr("দাম: Yahoo Finance (ব্যাকআপ: Twelve Data; Gold-এর জন্য শেষ ব্যাকআপ PAXG টোকেন)। Forex মার্কেট শুক্রবার রাত থেকে রবিবার রাত পর্যন্ত বন্ধ থাকে, তখন সিগনাল আসে না। Forex-এ লিভারেজের কারণে ঝুঁকি অনেক বেশি, এটা আর্থিক পরামর্শ নয়।",
+      "Prices: Yahoo Finance (backup: Twelve Data; PAXG token as a last backup for gold). The Forex market is closed from Friday night to Sunday night, so no signals then. Leverage makes Forex very risky — this is not financial advice.")}</p>
+  </section>`;
 }
 
 let nf={src:"",q:"",n:25};
@@ -763,6 +830,7 @@ async function pageAbout(){
       <li>After TP1 the Stop Loss moves to entry. If nothing happens within 48 candles, the signal expires.</li>
       <li><b>Confidence %:</b> a 0–95% score from the extra filters experienced providers use: the 4-hour trend (EMA 50/200), price vs EMA 200, MACD momentum, trend strength (ADX), how far volume is above average, and whether BTC is moving the same way.</li>
       <li>Signals below ${mc}% confidence are not sent. Confidence counts how many conditions agree — it is not a promise of profit.</li>
+      <li><b>Forex &amp; Gold:</b> EUR/USD, GBP/USD, USD/JPY and Gold use the same rules on 1-hour candles (no volume filter, since forex has no central volume), Monday to Friday. Prices come from Yahoo Finance.</li>
       <li>Every result, win or loss, stays on this site. Nothing is deleted.</li>
     </ul>
     <h2>Coins</h2><p>${(s.coins||SITE.botCoins).join(" · ")}</p>
@@ -784,6 +852,7 @@ async function pageAbout(){
       <li>TP1 ছুঁলে Stop Loss Entry-তে সরে যায়। ৪৮ ক্যান্ডেলে কিছু না হলে সিগনাল "Expired" হয়।</li>
       <li><b>Confidence %:</b> বড় সিগনাল প্রোভাইডাররা যেসব বাড়তি ফিল্টার ব্যবহার করে, সেগুলো মিলিয়ে ০–৯৫% স্কোর দেওয়া হয়। ফিল্টারগুলো হলো: ৪ ঘণ্টার বড় ট্রেন্ড (EMA 50/200), দাম EMA 200-এর কোন দিকে, MACD মোমেন্টাম, ট্রেন্ডের শক্তি (ADX), ভলিউম কতটা বেশি, আর BTC একই দিকে যাচ্ছে কিনা।</li>
       <li>Confidence ${mc}%-এর কম হলে সিগনাল পাঠানো হয় না। Confidence মানে জেতার নিশ্চয়তা নয়, শুধু কতগুলো শর্ত মিলেছে তার হিসাব।</li>
+      <li><b>Forex ও Gold:</b> EUR/USD, GBP/USD, USD/JPY আর Gold-এ ১ ঘণ্টার ক্যান্ডেলে একই নিয়ম চলে, সোমবার থেকে শুক্রবার। Forex-এ কেন্দ্রীয় ভলিউম নেই, তাই ভলিউমের শর্ত বাদ। দাম আসে Yahoo Finance থেকে।</li>
       <li>প্রতিটা সিগনালের ফলাফল, জয় হোক বা হার, এই সাইটে থেকে যায়। কিছু মুছে ফেলা হয় না।</li>
     </ul>
     <h2>কয়েন</h2><p>${(s.coins||SITE.botCoins).join(" · ")}</p>
@@ -806,6 +875,7 @@ async function route(){
   else if(r==="coin") await pageCoin(parts[1]);
   else if(r==="signals") await pageSignals();
   else if(r==="news") await pageNews();
+  else if(r==="forex") await pageForex();
   else if(r==="about") await pageAbout();
   else await pageHome();
 }

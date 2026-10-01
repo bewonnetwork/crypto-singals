@@ -65,6 +65,17 @@ COINS = ["BTC", "ETH", "BNB", "SOL", "XRP", "ADA", "DOGE", "AVAX", "LINK", "DOT"
 INTERVAL = "1h"             # 15m / 1h / 4h
 TREND_INTERVAL = "4h"       # বড় ট্রেন্ড দেখার টাইমফ্রেম
 MIN_CONFIDENCE = 60         # এর কম Confidence হলে সিগনাল পাঠাবে না
+
+# ---- Forex ও Gold ----
+FOREX_ENABLED = True        # False করলে Forex সিগনাল বন্ধ
+# নিজের নাম: (Yahoo Finance-এর চিহ্ন, Twelve Data-র চিহ্ন, দেখানোর নাম)
+FX_PAIRS = {
+    "EURUSD": ("EURUSD=X", "EUR/USD", "EUR/USD"),
+    "GBPUSD": ("GBPUSD=X", "GBP/USD", "GBP/USD"),
+    "USDJPY": ("JPY=X", "USD/JPY", "USD/JPY"),
+    "XAUUSD": ("GC=F", "XAU/USD", "Gold (XAU/USD)"),
+}
+TWELVE_KEY = os.getenv("TWELVE_DATA_KEY", "")   # ঐচ্ছিক ব্যাকআপ (GitHub Secret-এ বসাবেন)
 EMA_FAST, EMA_SLOW = 9, 21
 RSI_LEN, ATR_LEN = 14, 14
 SL_ATR, TP1_ATR, TP2_ATR = 1.5, 1.5, 3.0   # Stop Loss / Target দূরত্ব (ATR এর গুণ)
@@ -162,6 +173,81 @@ def get_fear_greed():
         return None, None
 
 
+# ----------------------------- ১খ. Forex ও Gold-এর দাম -----------------------------
+BROWSER_UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
+
+
+def _resample_4h(df):
+    d = df.set_index("time").resample("4h", label="left", closed="left").agg(
+        {"open": "first", "high": "max", "low": "min", "close": "last", "volume": "sum"}).dropna()
+    return d.reset_index().iloc[:-1]
+
+
+def fx_from_yahoo(sym, interval=None):
+    ysym = FX_PAIRS[sym][0]
+    r = HTTP.get(f"https://query1.finance.yahoo.com/v8/finance/chart/{ysym}",
+                 params={"interval": "60m", "range": "60d"}, headers=BROWSER_UA, timeout=15)
+    r.raise_for_status()
+    res = r.json()["chart"]["result"][0]
+    q = res["indicators"]["quote"][0]
+    df = pd.DataFrame({"time": res["timestamp"], "open": q["open"], "high": q["high"],
+                       "low": q["low"], "close": q["close"], "volume": q.get("volume") or 0}).dropna(subset=["close"])
+    df["time"] = pd.to_datetime(df["time"], unit="s", utc=True).dt.floor("h")
+    df = df.drop_duplicates("time", keep="last").sort_values("time").reset_index(drop=True)
+    df[COLS[1:]] = df[COLS[1:]].astype(float)
+    df = df.iloc[:-1]                                  # চলমান ক্যান্ডেল বাদ
+    return _resample_4h(df) if (interval or INTERVAL) == "4h" else df
+
+
+def fx_from_twelve(sym, interval=None):
+    if not TWELVE_KEY:
+        raise ValueError("Twelve Data key নেই")
+    r = HTTP.get("https://api.twelvedata.com/time_series",
+                 params={"symbol": FX_PAIRS[sym][1], "interval": {"1h": "1h", "4h": "4h"}[interval or INTERVAL],
+                         "outputsize": 300, "apikey": TWELVE_KEY}, timeout=15)
+    j = r.json()
+    if j.get("status") != "ok":
+        raise ValueError(j.get("message", "Twelve Data error")[:80])
+    rows = [[v["datetime"], v["open"], v["high"], v["low"], v["close"], v.get("volume", 0)] for v in j["values"]]
+    df = pd.DataFrame(rows, columns=COLS)
+    df[COLS[1:]] = df[COLS[1:]].astype(float)
+    df["time"] = pd.to_datetime(df["time"], utc=True)
+    return df.sort_values("time").reset_index(drop=True).iloc[:-1]
+
+
+def get_fx_candles(sym, interval=None):
+    """Yahoo → Twelve Data → (শুধু Gold-এর জন্য) PAXG টোকেন"""
+    errors = []
+    for name, fn in (("Yahoo", fx_from_yahoo), ("TwelveData", fx_from_twelve)):
+        try:
+            df = fn(sym, interval)
+            if len(df) >= 60:
+                return df, name
+            errors.append(f"{name}: only {len(df)}")
+        except Exception as e:
+            errors.append(f"{name}: {str(e)[:60]}")
+    if sym == "XAUUSD":
+        df, src = get_candles("PAXG", interval)
+        return df, f"PAXG via {src}"
+    raise RuntimeError(" | ".join(errors))
+
+
+def fx_market_open(now):
+    """Forex: রবিবার ২২:০০ UTC থেকে শুক্রবার ২১:০০ UTC পর্যন্ত খোলা"""
+    wd, h = now.weekday(), now.hour      # সোম=0 … রবি=6
+    if wd == 5:
+        return False
+    if wd == 4 and h >= 21:
+        return False
+    if wd == 6 and h < 22:
+        return False
+    return True
+
+
+def pip_size(sym):
+    return 0.01 if "JPY" in sym else (0.1 if sym.startswith("XAU") else 0.0001)
+
+
 # ----------------------------- ২. ইন্ডিকেটর ও সিগনাল -----------------------------
 def add_indicators(df):
     df = df.copy()
@@ -201,11 +287,11 @@ def trend_of(df):
     return 0
 
 
-def score_signal(df, side, htf_trend, btc_trend, is_btc):
+def score_signal(df, side, htf_trend, btc_trend, is_btc, fx=False):
     """বড় প্রোভাইডাররা যেসব ফিল্টার ব্যবহার করে সেগুলো মিলিয়ে Confidence % বানায়"""
     c, prev = df.iloc[-1], df.iloc[-2]
     d = 1 if side == "BUY" else -1
-    score, why = 20, ["EMA 9/21 ক্রস + RSI ঠিক সীমায় + ভলিউম বেশি"]
+    score, why = (25, ["EMA 9/21 ক্রস + RSI ঠিক সীমায়"]) if fx else (20, ["EMA 9/21 ক্রস + RSI ঠিক সীমায় + ভলিউম বেশি"])
     if htf_trend == d:
         score += 20; why.append(f"{TREND_INTERVAL} বড় ট্রেন্ড একই দিকে")
     elif htf_trend == -d:
@@ -221,7 +307,9 @@ def score_signal(df, side, htf_trend, btc_trend, is_btc):
     else:
         score -= 5; why.append(f"⚠ ট্রেন্ড দুর্বল (ADX {c.adx:.0f})")
     vr = c.volume / c.vol_avg if c.vol_avg else 1
-    if vr >= 1.5:
+    if fx:
+        pass                                    # Forex-এ নির্ভরযোগ্য ভলিউম নেই
+    elif vr >= 1.5:
         score += 10; why.append(f"ভলিউম গড়ের {vr:.1f} গুণ")
     else:
         score += 3
@@ -235,12 +323,12 @@ def score_signal(df, side, htf_trend, btc_trend, is_btc):
     return max(5, min(95, score)), why
 
 
-def check_signal(df):
+def check_signal(df, need_volume=True):
     """শেষ বন্ধ হওয়া ক্যান্ডেলে নতুন সিগনাল আছে কিনা"""
     prev, cur = df.iloc[-2], df.iloc[-1]
     crossed_up = prev.ema_fast <= prev.ema_slow and cur.ema_fast > cur.ema_slow
     crossed_down = prev.ema_fast >= prev.ema_slow and cur.ema_fast < cur.ema_slow
-    good_volume = cur.volume > cur.vol_avg
+    good_volume = (cur.volume > cur.vol_avg) if need_volume else True
 
     if crossed_up and 45 < cur.rsi < 70 and good_volume:
         side = "BUY"
@@ -264,7 +352,8 @@ def _close(t, result, when, state):
         "coin": t["coin"], "side": t["side"], "entry": t["entry"],
         "sl": t.get("sl0", t["sl"]), "tp1": t["tp1"], "tp2": t["tp2"],
         "opened": t.get("opened", ""), "closed": when, "result": result,
-        "conf": t.get("conf"), "why": t.get("why", [])})
+        "conf": t.get("conf"), "why": t.get("why", []),
+        "market": t.get("market", "crypto"), "name": t.get("name", t["coin"])})
     del state["history"][300:]
 
 
@@ -285,11 +374,11 @@ def update_open_trades(coin, df, state):
             hit_tp2 = c.high >= t["tp2"] if buy else c.low <= t["tp2"]
             if hit_sl:   # একই ক্যান্ডেলে দুটোই হলে সাবধানে SL ধরছি
                 if t["tp1_hit"]:
-                    msgs.append(f"🟡 {coin} {t['side']}: TP1 এর পর দাম Entry তে ফিরে এসেছে — লাভ লক (Breakeven)")
+                    msgs.append(f"🟡 {label(coin)} {t['side']}: TP1 এর পর দাম Entry তে ফিরে এসেছে — লাভ লক (Breakeven)")
                     _close(t, "TP1", c.time.isoformat(), state)
                 else:
                     state["stats"]["loss"] += 1
-                    msgs.append(f"❌ {coin} {t['side']}: Stop Loss হিট ({fmt(t['sl'])})")
+                    msgs.append(f"❌ {label(coin)} {t['side']}: Stop Loss হিট ({fmt(t['sl'], coin)})")
                     _close(t, "SL", c.time.isoformat(), state)
                 closed = True
                 break
@@ -297,7 +386,7 @@ def update_open_trades(coin, df, state):
                 if not t["tp1_hit"]:
                     state["stats"]["win"] += 1
                 state["stats"]["tp2"] += 1
-                msgs.append(f"🎯🎯 {coin} {t['side']}: TP2 হিট! ({fmt(t['tp2'])})")
+                msgs.append(f"🎯🎯 {label(coin)} {t['side']}: TP2 হিট! ({fmt(t['tp2'], coin)})")
                 _close(t, "TP2", c.time.isoformat(), state)
                 closed = True
                 break
@@ -305,11 +394,11 @@ def update_open_trades(coin, df, state):
                 t["tp1_hit"] = True
                 state["stats"]["win"] += 1
                 t["sl"] = t["entry"]          # TP1 এর পর SL কে Entry তে সরানো হলো
-                msgs.append(f"✅ {coin} {t['side']}: TP1 হিট! ({fmt(t['tp1'])}) — এখন SL = Entry")
+                msgs.append(f"✅ {label(coin)} {t['side']}: TP1 হিট! ({fmt(t['tp1'], coin)}) — এখন SL = Entry")
             if t["age"] >= MAX_TRADE_CANDLES:
                 if not t["tp1_hit"]:
                     state["stats"]["expired"] += 1
-                msgs.append(f"⌛ {coin} {t['side']}: সময় শেষ, সিগনাল বন্ধ")
+                msgs.append(f"⌛ {label(coin)} {t['side']}: সময় শেষ, সিগনাল বন্ধ")
                 _close(t, "TP1" if t["tp1_hit"] else "EXPIRED", c.time.isoformat(), state)
                 closed = True
                 break
@@ -322,7 +411,13 @@ def update_open_trades(coin, df, state):
 
 
 # ----------------------------- ৪. মেসেজ ও Telegram -----------------------------
-def fmt(x):
+def label(sym):
+    return FX_PAIRS[sym][2] if sym in FX_PAIRS else sym
+
+
+def fmt(x, sym=None):
+    if sym in FX_PAIRS:
+        return f"{x:,.{2 if sym.startswith('XAU') else 3 if 'JPY' in sym else 5}f}"
     if x >= 100:
         return f"{x:,.2f}"
     if x >= 1:
@@ -332,15 +427,25 @@ def fmt(x):
 
 def signal_message(coin, s, source):
     icon = "🟢" if s["side"] == "BUY" else "🔴"
-    return (f"{icon} <b>{s['side']} — {coin}/USDT</b>  ({INTERVAL})\n\n"
-            f"Entry: <code>{fmt(s['entry'])}</code>\n"
-            f"TP1: <code>{fmt(s['tp1'])}</code>\n"
-            f"TP2: <code>{fmt(s['tp2'])}</code>\n"
-            f"Stop Loss: <code>{fmt(s['sl'])}</code>\n"
+    fx = coin in FX_PAIRS
+    if fx:
+        ps = pip_size(coin)
+        pips = lambda v: f"  ({abs(v - s['entry']) / ps:,.0f} pips)"
+        head = f"💱 <b>FOREX</b> · {icon} <b>{s['side']} — {label(coin)}</b>  ({INTERVAL})\n\n"
+        link = f"{SITE_URL}#/forex"
+    else:
+        pips = lambda v: ""
+        head = f"{icon} <b>{s['side']} — {coin}/USDT</b>  ({INTERVAL})\n\n"
+        link = f"{SITE_URL}#/coin/{coin}"
+    return (head +
+            f"Entry: <code>{fmt(s['entry'], coin)}</code>\n"
+            f"TP1: <code>{fmt(s['tp1'], coin)}</code>{pips(s['tp1'])}\n"
+            f"TP2: <code>{fmt(s['tp2'], coin)}</code>{pips(s['tp2'])}\n"
+            f"Stop Loss: <code>{fmt(s['sl'], coin)}</code>{pips(s['sl'])}\n"
             f"RSI: {s['rsi']}  |  Data: {source}\n\n"
             f"🎯 <b>Confidence: {s['conf']}%</b>  {'🟩' * (s['conf'] // 20)}{'⬜' * (5 - s['conf'] // 20)}\n"
             + "".join(f"• {w}\n" for w in s["why"]) + "\n"
-            f"📊 <a href=\"{SITE_URL}#/coin/{coin}\">চার্ট ও সব সিগনাল দেখুন</a>\n\n"
+            f"📊 <a href=\"{link}\">চার্ট ও সব সিগনাল দেখুন</a>\n\n"
             f"⚠️ Free signal, not financial advice. Use Stop Loss. DYOR.")
 
 
@@ -392,12 +497,14 @@ SITE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "da
 
 def export_site(state):
     """ওয়েবসাইটের জন্য docs/data/signals.json বানায় (কিছু বদলালে তবেই)"""
-    keep = ("coin", "side", "entry", "sl", "tp1", "tp2", "tp1_hit", "opened", "rsi", "conf", "why")
+    keep = ("coin", "side", "entry", "sl", "tp1", "tp2", "tp1_hit", "opened", "rsi", "conf", "why", "market", "name")
     payload = {
         "interval": INTERVAL, "coins": COINS, "stats": state["stats"], "min_conf": MIN_CONFIDENCE,
         "open": [{k: t.get(k) for k in keep} for t in state["open"]],
         "history": state.get("history", [])[:200],
         "fear_greed": state.get("fear_greed"),
+        "forex": {"enabled": FOREX_ENABLED, "pairs": [{"sym": k, "name": v[2]} for k, v in FX_PAIRS.items()],
+                  "quotes": state.get("fx_quotes", {})},
     }
     try:
         with open(SITE_FILE, encoding="utf-8") as f:
@@ -424,6 +531,11 @@ def daily_digest(frames, state):
             now, before = df["close"].iloc[-1], df["close"].iloc[-25]
             ch = (now - before) * 100 / before
             lines.append(f"{'🟢' if ch >= 0 else '🔴'} {coin}: {fmt(now)} ({ch:+.2f}%)")
+    fxq = state.get("fx_quotes", {})
+    if fxq:
+        lines.append("\n💱 <b>Forex ও Gold</b>")
+        for k, q in fxq.items():
+            lines.append(f"{'🟢' if q['ch'] >= 0 else '🔴'} {label(k)}: {fmt(q['price'], k)} ({q['ch']:+.2f}%)")
     if fg is not None:
         lines.append(f"\n😨→🤑 Fear & Greed: <b>{fg}</b> ({fg_txt})  <i>source: alternative.me</i>")
     lines.append(f"\n📈 Bot record: {win_rate_text(state['stats'])}")
@@ -539,6 +651,55 @@ def update_news(state=None):
 
 
 # ----------------------------- ৮. মূল কাজ -----------------------------
+def try_new_signal(sym, df, source, state, htf_fn, btc_trend=0, is_btc=True, market="crypto"):
+    """একটা কয়েন বা Forex পেয়ারে নতুন সিগনাল আছে কিনা দেখে, থাকলে পাঠায়"""
+    sig = check_signal(df, need_volume=(market == "crypto"))
+    has_open = any(t["coin"] == sym for t in state["open"])
+    if not sig or has_open or state["last_signal"].get(sym) == sig["candle"]:
+        return
+    try:
+        htf = trend_of(add_indicators(htf_fn()))
+    except Exception:
+        htf = 0
+    sig["conf"], sig["why"] = score_signal(df, sig["side"], htf, btc_trend, is_btc, fx=(market == "forex"))
+    if sig["conf"] < MIN_CONFIDENCE:
+        print(f"skip {sig['side']} {sym}: confidence {sig['conf']}% < {MIN_CONFIDENCE}%")
+        state["last_signal"][sym] = sig["candle"]
+        return
+    if send_telegram(signal_message(sym, sig, source)):
+        state["last_signal"][sym] = sig["candle"]
+        state["open"].append({"coin": sym, "side": sig["side"], "entry": sig["entry"],
+                              "sl": sig["sl"], "tp1": sig["tp1"], "tp2": sig["tp2"],
+                              "tp1_hit": False, "age": 0, "checked_until": sig["candle"],
+                              "sl0": sig["sl"], "opened": sig["candle"], "rsi": sig["rsi"],
+                              "conf": sig["conf"], "why": sig["why"], "market": market, "name": label(sym)})
+        print(f"sent {sig['side']} {sym} (data: {source})")
+
+
+def run_forex(state, outbox, fails):
+    now = datetime.now(timezone.utc)
+    if not FOREX_ENABLED or not fx_market_open(now):
+        print("forex: market closed")
+        return
+    quotes = {}
+    for sym in FX_PAIRS:
+        try:
+            raw, source = get_fx_candles(sym)
+            df = add_indicators(raw)
+        except Exception as e:
+            fails.append(f"{sym}: {e}")
+            continue
+        outbox += update_open_trades(sym, df, state)
+        if len(df) > 24:
+            quotes[sym] = {"price": round(float(df["close"].iloc[-1]), 5),
+                           "ch": round(float((df["close"].iloc[-1] / df["close"].iloc[-25] - 1) * 100), 2),
+                           "time": df["time"].iloc[-1].isoformat()}
+        try_new_signal(sym, df, source, state, lambda s=sym: get_fx_candles(s, TREND_INTERVAL)[0], market="forex")
+        time.sleep(0.5)
+    if quotes:
+        state["fx_quotes"] = quotes
+
+
 def run_once(force_digest=False):
     state = load_state()
     frames, fails, outbox = {}, [], []
@@ -560,30 +721,15 @@ def run_once(force_digest=False):
             btc_trend = 1 if df.iloc[-1].ema_fast > df.iloc[-1].ema_slow else -1
 
         # (খ) নতুন সিগনাল
-        sig = check_signal(df)
-        has_open = any(t["coin"] == coin for t in state["open"])
-        if sig and (has_open or state["last_signal"].get(coin) == sig["candle"]):
-            sig = None
-        if sig:
-            try:
-                htf = trend_of(add_indicators(get_candles(coin, TREND_INTERVAL)[0]))
-            except Exception:
-                htf = 0
-            sig["conf"], sig["why"] = score_signal(df, sig["side"], htf, btc_trend, coin == "BTC")
-            if sig["conf"] < MIN_CONFIDENCE:
-                print(f"skip {sig['side']} {coin}: confidence {sig['conf']}% < {MIN_CONFIDENCE}%")
-                state["last_signal"][coin] = sig["candle"]
-                sig = None
-        if sig:
-            if send_telegram(signal_message(coin, sig, source)):
-                state["last_signal"][coin] = sig["candle"]
-                state["open"].append({"coin": coin, "side": sig["side"], "entry": sig["entry"],
-                                      "sl": sig["sl"], "tp1": sig["tp1"], "tp2": sig["tp2"],
-                                      "tp1_hit": False, "age": 0, "checked_until": sig["candle"],
-                                      "sl0": sig["sl"], "opened": sig["candle"], "rsi": sig["rsi"],
-                                      "conf": sig["conf"], "why": sig["why"]})
-                print(f"sent {sig['side']} {coin} (data: {source})")
+        try_new_signal(coin, df, source, state, lambda c=coin: get_candles(c, TREND_INTERVAL)[0],
+                       btc_trend, coin == "BTC", "crypto")
         time.sleep(0.3)
+
+    # (খ২) Forex ও Gold
+    try:
+        run_forex(state, outbox, fails)
+    except Exception as e:
+        print("forex error:", e)
 
     for m in outbox:
         send_telegram(m + f"\n🌐 <a href=\"{SITE_URL}#/signals\">সব ফলাফল ওয়েবসাইটে</a>")
