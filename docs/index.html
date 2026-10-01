@@ -248,6 +248,14 @@ input{min-width:0;width:220px;max-width:100%}
 .orb.b{width:260px;height:260px;background:#3fb6ff;top:-40px;right:-30px;opacity:.18}
 .orb.g{width:220px;height:220px;background:#f5c451;bottom:-50px;left:-20px;opacity:.13}
 .hx-visual .ticket{position:relative;z-index:1;max-width:420px;margin:0 auto}
+.stage{position:relative;z-index:1;width:100%;max-width:520px;margin:0 auto;aspect-ratio:1.08/1;border-radius:24px;overflow:hidden;
+  background:radial-gradient(circle at 50% 38%,rgba(63,182,255,.16),transparent 58%),radial-gradient(circle at 70% 85%,rgba(245,196,81,.12),transparent 55%),#0a0e16;
+  border:1px solid rgba(255,255,255,.10);box-shadow:0 30px 80px rgba(0,0,0,.55),inset 0 -2px 0 rgba(245,196,81,.35)}
+:root[data-theme="light"] .stage{background:radial-gradient(circle at 50% 38%,rgba(63,182,255,.18),transparent 58%),#0e1422}
+.stage canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
+.stage .ticket{margin:24px;max-width:none}
+.fchip.c4{bottom:16%;right:-4px}.fchip.c4 i{background:var(--up);box-shadow:0 0 8px var(--up)}
+@media (prefers-reduced-motion:no-preference){.fchip.c4{animation-delay:-3s}}
 .fchip{position:absolute;z-index:2;display:inline-flex;align-items:center;gap:8px;font:600 13px "Inter","Hind Siliguri",sans-serif;padding:8px 13px;border-radius:12px;text-decoration:none;
   background:rgba(13,17,24,.86);border:1px solid var(--line);backdrop-filter:blur(8px);box-shadow:var(--shadow);white-space:nowrap}
 :root[data-theme="light"] .fchip{background:rgba(255,255,255,.92)}
@@ -345,6 +353,7 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap}
 </footer>
 
 <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
 <script>
 /* ===================== সেটিংস: এখানে নিজের তথ্য বদলান ===================== */
 const SITE = {
@@ -478,6 +487,100 @@ function ticket(t, live, sample){
     <div class="ticket-foot"><span>${status}</span><span>${live?`${tr("এখন","Now")} <b class="num" style="color:var(--ink)">${px(t,live)}</b>`:(buy?tr("দাম বাড়ার সিগনাল","Expects price to rise"):tr("দাম কমার সিগনাল","Expects price to fall"))}</span></div>
   </article>`; }
 
+/* ---------- 3D hero (Three.js) ---------- */
+let H3D=null;
+function stopHero3D(){ if(!H3D) return; cancelAnimationFrame(H3D.raf); H3D.io&&H3D.io.disconnect(); H3D.ro&&H3D.ro.disconnect();
+  window.removeEventListener("pointermove",H3D.onMove); document.removeEventListener("visibilitychange",H3D.onVis);
+  H3D.scene.traverse(o=>{ if(o.geometry) o.geometry.dispose(); const m=o.material; (Array.isArray(m)?m:m?[m]:[]).forEach(x=>{ x.map&&x.map.dispose(); x.emissiveMap&&x.emissiveMap.dispose(); x.dispose(); }); });
+  H3D.renderer.dispose(); H3D.renderer.domElement.remove(); H3D=null; }
+function coinFace(kind, base, edge){
+  const c=document.createElement("canvas"); c.width=c.height=256; const g=c.getContext("2d");
+  const gr=g.createRadialGradient(96,84,10,128,128,130); gr.addColorStop(0,"#fff6d6"); gr.addColorStop(.45,base); gr.addColorStop(1,edge);
+  g.fillStyle=gr; g.beginPath(); g.arc(128,128,128,0,7); g.fill();
+  g.lineWidth=12; g.strokeStyle="rgba(0,0,0,.18)"; g.beginPath(); g.arc(128,128,104,0,7); g.stroke();
+  g.fillStyle="rgba(60,40,0,.78)"; g.strokeStyle="rgba(60,40,0,.78)";
+  if(kind==="btc"){ g.font="bold 150px Arial,Helvetica,sans-serif"; g.textAlign="center"; g.textBaseline="middle"; g.fillText("B",132,134);
+    g.lineWidth=14; [[110,52,110,78],[140,52,140,78],[110,190,110,214],[140,190,140,214]].forEach(([a,b,cx,d])=>{g.beginPath();g.moveTo(a,b);g.lineTo(cx,d);g.stroke();}); }
+  else if(kind==="eth"){ g.fillStyle="rgba(20,30,70,.8)"; g.beginPath(); g.moveTo(128,40); g.lineTo(196,132); g.lineTo(128,170); g.lineTo(60,132); g.closePath(); g.fill();
+    g.fillStyle="rgba(20,30,70,.55)"; g.beginPath(); g.moveTo(60,148); g.lineTo(128,188); g.lineTo(196,148); g.lineTo(128,220); g.closePath(); g.fill(); }
+  else { g.font="bold 160px Arial,Helvetica,sans-serif"; g.textAlign="center"; g.textBaseline="middle"; g.fillText("$",128,138); }
+  const t=new THREE.CanvasTexture(c); t.encoding=THREE.sRGBEncoding; return t; }
+function screenTex(){
+  const c=document.createElement("canvas"); c.width=512; c.height=340; const g=c.getContext("2d");
+  const gr=g.createLinearGradient(0,0,512,340); gr.addColorStop(0,"#0c1424"); gr.addColorStop(1,"#070a12"); g.fillStyle=gr; g.fillRect(0,0,512,340);
+  g.strokeStyle="rgba(120,170,255,.10)"; g.lineWidth=1; for(let x=0;x<=512;x+=42){g.beginPath();g.moveTo(x,0);g.lineTo(x,340);g.stroke();} for(let y=0;y<=340;y+=42){g.beginPath();g.moveTo(0,y);g.lineTo(512,y);g.stroke();}
+  g.fillStyle="rgba(245,196,81,.9)"; g.font="bold 22px Arial"; g.fillText("BEWON",18,32); g.fillStyle="rgba(63,182,255,.9)"; g.fillText("SIGNALS",108,32);
+  const t=new THREE.CanvasTexture(c); t.encoding=THREE.sRGBEncoding; return t; }
+function initHero3D(el){
+  if(!window.THREE||!el) return false;
+  let renderer; try{ renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:"low-power"}); }catch(e){ return false; }
+  if(!renderer.getContext()) return false;
+  const W=()=>Math.max(el.clientWidth,1), H=()=>Math.max(el.clientHeight,1);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2)); renderer.setSize(W(),H()); renderer.outputEncoding=THREE.sRGBEncoding;
+  el.appendChild(renderer.domElement);
+  const scene=new THREE.Scene(), cam=new THREE.PerspectiveCamera(36,W()/H(),.1,100);
+  cam.position.set(0,1.6,8.4); cam.lookAt(0,.25,0);
+  scene.add(new THREE.HemisphereLight(0xcfe3ff,0x0a0c14,.9));
+  const key=new THREE.DirectionalLight(0xffffff,1.15); key.position.set(3,6,5); scene.add(key);
+  const pb=new THREE.PointLight(0x3fb6ff,2.4,14); pb.position.set(-3.2,1.6,2.4); scene.add(pb);
+  const pg=new THREE.PointLight(0xf5c451,2.2,14); pg.position.set(3.2,.6,2.6); scene.add(pg);
+  const root=new THREE.Group(); scene.add(root);
+
+  // tablet
+  const tab=new THREE.Group(); tab.rotation.x=.62; tab.position.set(0,-.95,0); tab.scale.setScalar(.92); root.add(tab);
+  tab.add(new THREE.Mesh(new THREE.BoxGeometry(3.7,.16,2.55),new THREE.MeshStandardMaterial({color:0xc7cdf6,metalness:.35,roughness:.32})));
+  const scr=new THREE.Mesh(new THREE.PlaneGeometry(3.42,2.3),new THREE.MeshStandardMaterial({color:0x05070c,emissive:0xffffff,emissiveMap:screenTex(),emissiveIntensity:.5,roughness:.6,metalness:.1}));
+  scr.rotation.x=-Math.PI/2; scr.position.y=.081; tab.add(scr);
+  // 3D candles
+  const candles=[], upM=new THREE.MeshStandardMaterial({color:0x00c288,emissive:0x00c288,emissiveIntensity:.45,roughness:.35}),
+        dnM=new THREE.MeshStandardMaterial({color:0xff5c6c,emissive:0xff5c6c,emissiveIntensity:.45,roughness:.35});
+  const heights=[.35,.5,.3,.62,.78,.55,.9,1.05,.8,1.2];
+  heights.forEach((h,i)=>{ const up=!(i===2||i===5||i===8), grp=new THREE.Group();
+    const b=new THREE.Mesh(new THREE.BoxGeometry(.16,1,.16),up?upM:dnM), w=new THREE.Mesh(new THREE.BoxGeometry(.03,1,.03),up?upM:dnM);
+    grp.add(b); grp.add(w); grp.position.set(-1.38+i*.3,.08,.35-i*.07); tab.add(grp); candles.push({b,w,h,ph:i*.7}); });
+  // trend line
+  const pts=heights.map((h,i)=>new THREE.Vector3(-1.38+i*.3,.08+h+.25,.35-i*.07));
+  const tube=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),80,.022,8,false),new THREE.MeshBasicMaterial({color:0x3fb6ff}));
+  tab.add(tube);
+
+  // coins
+  const sideM=new THREE.MeshStandardMaterial({color:0xe0a92c,metalness:.85,roughness:.28});
+  const blueSide=new THREE.MeshStandardMaterial({color:0x6f8fe8,metalness:.8,roughness:.3});
+  const defs=[["btc",[-1.75,1.55,.4],.46,"#f5c451","#b9821a",sideM],["eth",[1.8,1.75,-.2],.4,"#c9d6ff","#6f86d6",blueSide],
+              ["usd",[1.85,.15,1.1],.32,"#f5c451","#b9821a",sideM],["btc",[-1.9,-.05,1.2],.28,"#f5c451","#b9821a",sideM],["usd",[.1,2.45,-.9],.26,"#f5c451","#b9821a",sideM]];
+  const coins=defs.map(([k,p,r,c1,c2,side],i)=>{ const face=new THREE.MeshStandardMaterial({map:coinFace(k,c1,c2),metalness:.55,roughness:.32});
+    const m=new THREE.Mesh(new THREE.CylinderGeometry(r,r,r*.22,56),[side,face,face]); m.rotation.x=Math.PI/2;
+    const w=new THREE.Group(); w.add(m); w.position.set(...p); root.add(w); return {w,y:p[1],ph:i*1.3,sp:.6+i*.12}; });
+
+  // crystals & stars
+  const gems=[]; [[-2.2,.75,-.6,0x3fb6ff,.22],[2.2,.95,.4,0xff7ac8,.18],[-.9,2.3,-.4,0x3fb6ff,.14],[.9,-1.7,1.4,0xf5c451,.12]].forEach(([x,y,z,c,s],i)=>{
+    const g=new THREE.Mesh(i%2?new THREE.OctahedronGeometry(s):new THREE.IcosahedronGeometry(s),new THREE.MeshStandardMaterial({color:c,emissive:c,emissiveIntensity:.5,metalness:.2,roughness:.2,flatShading:true}));
+    g.position.set(x,y,z); root.add(g); gems.push({g,y,ph:i}); });
+
+  // particles
+  const N=140, pos=new Float32Array(N*3), col=new Float32Array(N*3), cA=new THREE.Color(0x3fb6ff), cB=new THREE.Color(0xf5c451);
+  for(let i=0;i<N;i++){ pos[i*3]=(Math.random()-.5)*9; pos[i*3+1]=(Math.random()-.3)*5; pos[i*3+2]=(Math.random()-.5)*5; const c=Math.random()<.5?cA:cB; col.set([c.r,c.g,c.b],i*3); }
+  const pgeo=new THREE.BufferGeometry(); pgeo.setAttribute("position",new THREE.BufferAttribute(pos,3)); pgeo.setAttribute("color",new THREE.BufferAttribute(col,3));
+  const stars=new THREE.Points(pgeo,new THREE.PointsMaterial({size:.045,vertexColors:true,transparent:true,opacity:.85})); root.add(stars);
+
+  const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let tx=0,ty=0,visible=true; const clock=new THREE.Clock();
+  const onMove=e=>{ const r=el.getBoundingClientRect(); tx=Math.max(-.35,Math.min(.35,((e.clientX-r.left)/r.width-.5)*.3)); ty=Math.max(-.12,Math.min(.12,((e.clientY-r.top)/r.height-.5)*.2)); };
+  const frame=()=>{ const t=clock.getElapsedTime();
+    candles.forEach(c=>{ const h=c.h*(.78+.22*Math.sin(t*1.4+c.ph)); c.b.scale.y=h; c.b.position.y=h/2; c.w.scale.y=h+.22; c.w.position.y=h/2; });
+    coins.forEach(c=>{ c.w.rotation.y=t*c.sp; c.w.position.y=c.y+Math.sin(t*1.1+c.ph)*.13; });
+    gems.forEach(g=>{ g.g.rotation.x=t*.6+g.ph; g.g.rotation.y=t*.8; g.g.position.y=g.y+Math.sin(t*1.3+g.ph)*.1; });
+    stars.rotation.y=t*.03;
+    root.rotation.y+=((tx+Math.sin(t*.25)*.12)-root.rotation.y)*.05; root.rotation.x+=(ty-root.rotation.x)*.05;
+    renderer.render(scene,cam); };
+  const loop=()=>{ if(!H3D) return; if(visible&&!document.hidden) frame(); H3D.raf=requestAnimationFrame(loop); };
+  const resize=()=>{ renderer.setSize(W(),H()); cam.aspect=W()/H(); cam.updateProjectionMatrix(); if(reduce) frame(); };
+  H3D={renderer,scene,raf:0,onMove,onVis:()=>{}};
+  H3D.ro=new ResizeObserver(resize); H3D.ro.observe(el);
+  if("IntersectionObserver" in window){ H3D.io=new IntersectionObserver(es=>{ visible=es[0].isIntersecting; }); H3D.io.observe(el); }
+  if(reduce){ frame(); } else { window.addEventListener("pointermove",onMove,{passive:true}); H3D.raf=requestAnimationFrame(loop); }
+  return true; }
+
 /* ---------- pages ---------- */
 async function pageHome(){
   const s=await loadSignals(), st=s.stats, wr=winRate(st);
@@ -498,10 +601,11 @@ async function pageHome(){
     <div class="hx-visual">
       <span class="orb b" aria-hidden="true"></span><span class="orb g" aria-hidden="true"></span>
       <span class="ring" aria-hidden="true"></span><span class="ring in" aria-hidden="true"></span>
-      ${latest ? ticket(latest) : ticket(sample,null,true)}
+      <div class="stage" id="h3d" role="img" aria-label="${tr("3D অ্যানিমেশন: ট্যাবলেটে ক্যান্ডেলস্টিক চার্ট আর ঘুরতে থাকা ক্রিপ্টো কয়েন","3D animation: candlestick chart on a tablet with spinning crypto coins")}"></div>
       <a class="fchip c1" href="#/signals"><i></i>${tr("BEWON ক্রিপ্টো সিগনাল","BEWON crypto signals")}</a>
-      <a class="fchip c2" href="#/news"><i></i>${tr("লাইভ ক্রিপ্টো নিউজ","Live crypto news")}</a>
-      <a class="fchip c3" href="#/market"><i></i>${tr("লাইভ মার্কেট","Live market")}</a>
+      <a class="fchip c2" href="#/forex"><i></i>${tr("Forex ও Gold সিগনাল","Forex & Gold signals")}</a>
+      <a class="fchip c3" href="#/news"><i></i>${tr("লাইভ ক্রিপ্টো নিউজ","Live crypto news")}</a>
+      ${latest?`<a class="fchip c4" href="${goOf(latest)}"><i style="${latest.side==="BUY"?"":"background:var(--down);box-shadow:0 0 8px var(--down)"}"></i>${latest.side==="BUY"?"▲":"▼"} ${esc(isFx(latest)?latest.name||latest.coin:latest.coin)} ${latest.side}${latest.conf!=null?` · ${latest.conf}%`:""}</a>`:""}
     </div>
   </section>
   <div class="hstats">
@@ -566,6 +670,7 @@ async function pageHome(){
   <section id="homeNews" hidden><div class="sec-head"><div><span class="kicker">${tr("বিশ্বজুড়ে","Worldwide")}</span><h2>${tr(`সর্বশেষ <span class="grad-text">ক্রিপ্টো খবর</span>`,`Latest <span class="grad-text">crypto news</span>`)}</h2></div><a class="btn btn-ghost" href="#/news">${tr("সব খবর →","All news →")}</a></div><div class="news-grid" id="hn"></div></section>
   <p class="note">${tr("⚠️ সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। সবসময় Stop Loss ব্যবহার করুন, আর যতটুকু হারালে সমস্যা নেই তার বেশি লাগাবেন না।","⚠️ Signals are for information only, not financial advice. Always use a Stop Loss and never risk more than you can afford to lose.")}</p>`;
   loadNews().then(n=>{ const el=$("#hn"); if(!el||!n.items.length) return; el.innerHTML=n.items.slice(0,3).map(x=>newsCard(x)).join(""); $("#homeNews").hidden=false; });
+  if(!initHero3D($("#h3d"))){ const st=$("#h3d"); st.style.aspectRatio="auto"; st.innerHTML=latest?ticket(latest):ticket(sample,null,true); }
 
   const ticker=async()=>{ try{
       const tk=await bget(`/api/v3/ticker/24hr?symbols=${encodeURIComponent(JSON.stringify(coins.map(c=>c+"USDT")))}`);
@@ -866,7 +971,7 @@ async function pageAbout(){
 
 /* ---------- router ---------- */
 async function route(){
-  timers.forEach(clearInterval); timers=[]; if(chart){ chart.remove(); chart=null; }
+  timers.forEach(clearInterval); timers=[]; if(chart){ chart.remove(); chart=null; } stopHero3D();
   const parts=(location.hash.replace(/^#\/?/,"")||"").split("/"), r=parts[0]||"home";
   document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
   document.title=`${SITE.name} — ${tr("ফ্রি ক্রিপ্টো সিগনাল","Free crypto signals")}`;
