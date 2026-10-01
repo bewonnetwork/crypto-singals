@@ -54,6 +54,18 @@
   }
  ],
  "news_posted": [
+  "https://cointelegraph.com/magazine/china-claims-crypto-used-by-spies-singapore-dominates-asian-crypto-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/us-factory-costs-spike-threatening-bitcoins-rally-above-85000/",
+  "https://decrypt.co/379901/zcash-price-drops-etf-flows-rally",
+  "https://cryptoslate.com/wall-street-arrived-in-near-just-as-a-4-billion-a-month-app-got-hacked/",
+  "https://cointelegraph.com/news/evernorth-clears-shareholder-vote-ahead-nasdaq-debut-473m-xrp-treasury?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://www.theblock.co/news/regulation/2026-10-01-sec-proposes-crypto-custody-rule-investment-advisers-funds-417498",
+  "https://cointelegraph.com/news/donald-trump-memecoin-dinner-corruption-claims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://decrypt.co/379899/sec-proposes-rules-advisers-funds-hold-crypto",
+  "https://decrypt.co/379892/reddit-killing-rss-feeds-public-api-access-ai-scrapers",
+  "https://cryptoslate.com/xrp-is-becoming-collateral-for-real-loans-and-the-first-market-is-already-dominated-by-whales/",
+  "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
+  "https://decrypt.co/379890/openai-china-moonshot-copy-ai-hidden-reasoning",
   "https://decrypt.co/379868/meta-muse-ai-agent-read-messages-without-permission",
   "https://www.theblock.co/news/regulation/2026-10-01-hyperliquid-circle-mica-review-417452",
   "https://cryptoslate.com/bitcoin-etfs-are-5-billion-from-a-new-flow-record-after-a-brutal-11-month-reset/",
@@ -417,24 +429,24 @@
  "news_seeded": true,
  "fx_quotes": {
   "EURUSD": {
-   "price": 1.12385,
-   "ch": -0.85,
-   "time": "2026-10-01T18:00:00+00:00"
+   "price": 1.12473,
+   "ch": -0.75,
+   "time": "2026-10-01T20:00:00+00:00"
   },
   "GBPUSD": {
-   "price": 1.31907,
-   "ch": -0.55,
-   "time": "2026-10-01T18:00:00+00:00"
+   "price": 1.31998,
+   "ch": -0.49,
+   "time": "2026-10-01T20:00:00+00:00"
   },
   "USDJPY": {
-   "price": 158.121,
-   "ch": 0.5,
-   "time": "2026-10-01T18:00:00+00:00"
+   "price": 158.049,
+   "ch": 0.42,
+   "time": "2026-10-01T20:00:00+00:00"
   },
   "XAUUSD": {
-   "price": 4207.7998,
-   "ch": 0.6,
-   "time": "2026-10-01T18:00:00+00:00"
+   "price": 4208.2998,
+   "ch": 0.46,
+   "time": "2026-10-01T22:00:00+00:00"
   }
  }
 }
