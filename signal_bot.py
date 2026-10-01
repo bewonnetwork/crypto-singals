@@ -340,6 +340,7 @@ def signal_message(coin, s, source):
             f"RSI: {s['rsi']}  |  Data: {source}\n\n"
             f"🎯 <b>Confidence: {s['conf']}%</b>  {'🟩' * (s['conf'] // 20)}{'⬜' * (5 - s['conf'] // 20)}\n"
             + "".join(f"• {w}\n" for w in s["why"]) + "\n"
+            f"📊 <a href=\"{SITE_URL}#/coin/{coin}\">চার্ট ও সব সিগনাল দেখুন</a>\n\n"
             f"⚠️ Free signal, not financial advice. Use Stop Loss. DYOR.")
 
 
@@ -427,6 +428,7 @@ def daily_digest(frames, state):
         lines.append(f"\n😨→🤑 Fear & Greed: <b>{fg}</b> ({fg_txt})  <i>source: alternative.me</i>")
     lines.append(f"\n📈 Bot record: {win_rate_text(state['stats'])}")
     lines.append(f"🔓 Open signals: {len(state['open'])}")
+    lines.append(f"\n🌐 <a href=\"{SITE_URL}\">ওয়েবসাইট</a> · <a href=\"{SITE_URL}#/signals\">সব ফলাফল</a> · <a href=\"{SITE_URL}#/news\">নিউজ</a>")
     lines.append("\n⚠️ Not financial advice.")
     return "\n".join(lines)
 
@@ -584,7 +586,7 @@ def run_once(force_digest=False):
         time.sleep(0.3)
 
     for m in outbox:
-        send_telegram(m)
+        send_telegram(m + f"\n🌐 <a href=\"{SITE_URL}#/signals\">সব ফলাফল ওয়েবসাইটে</a>")
 
     # (গ) দিনে একবার সারাংশ
     now = datetime.now(timezone.utc)
@@ -615,6 +617,7 @@ def run_test():
             lines.append(f"❌ {name}: {str(e)[:60]}")
     fg, fg_txt = get_fear_greed()
     lines.append(f"{'✅' if fg is not None else '❌'} Fear & Greed: {fg} {fg_txt or ''}")
+    lines.append(f"\n🌐 ওয়েবসাইট: {SITE_URL}")
     ok = send_telegram("\n".join(lines))
     print("Telegram:", "OK" if ok else "FAILED")
     if not ok:
