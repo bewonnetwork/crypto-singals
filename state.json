@@ -3,7 +3,8 @@
   "ADA": "2026-09-27T22:00:00+00:00",
   "DOGE": "2026-09-30T10:00:00+00:00",
   "DOT": "2026-09-28T04:00:00+00:00",
-  "SOL": "2026-09-30T10:00:00+00:00"
+  "SOL": "2026-09-30T10:00:00+00:00",
+  "XAUUSD": "2026-10-01T18:00:00+00:00"
  },
  "open": [],
  "last_digest": "2026-10-01",
@@ -53,6 +54,29 @@
   }
  ],
  "news_posted": [
+  "https://decrypt.co/379868/meta-muse-ai-agent-read-messages-without-permission",
+  "https://www.theblock.co/news/regulation/2026-10-01-hyperliquid-circle-mica-review-417452",
+  "https://cryptoslate.com/bitcoin-etfs-are-5-billion-from-a-new-flow-record-after-a-brutal-11-month-reset/",
+  "https://decrypt.co/379856/the-largest-pure-play-xrp-treasury-is-about-to-go-public",
+  "https://www.coindesk.com/policy/2026/10/01/another-trump-memecoin-dinner-advertised-for-token-s-top-investors",
+  "https://cointelegraph.com/news/50000-europeans-call-on-eu-to-ease-stablecoin-rewards-restrictions-in-mica-review?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://decrypt.co/379857/openai-fires-researchers-alledged-leak-safety-group",
+  "https://cointelegraph.com/news/illinois-postpones-crypto-tax-industry-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/bond-yield-explosion-gives-bitcoin-a-strong-signal-is-now-finally-satoshis-time/",
+  "https://decrypt.co/379833/uptober-will-bitcoin-live-up-to-it",
+  "https://cryptoslate.com/uks-2027-crypto-rules-could-block-new-business-with-existing-customers/",
+  "https://www.theblock.co/news/ecosystems/2026-10-01-ethereum-staking-reward-burn-proposal-eip-8363-pulled-hegota-upgrade-417419",
+  "https://decrypt.co/379830/illinois-delays-controversial-crypto-tax",
+  "https://cointelegraph.com/news/new-york-wyoming-regulators-sign-pact-coordinate-crypto-oversight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/open-usd-bets-stripes-1-9-trillion-network-can-break-usdt-and-usdcs-grip/",
+  "https://cointelegraph.com/markets/bitcoin-fights-local-uptrend-us-bond-yields-drop-from-new-24-year-highs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cointelegraph.com/news/near-intents-exploit-assistance-bitget-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://decrypt.co/379822/near-intents-hacked-days-after-denying-bitget-hacker",
+  "https://www.theblock.co/news/deals/2026-10-01-evernorth-xrpn-nasdaq-armada-shareholders-approve-417413",
+  "https://www.coindesk.com/coindesk-indices/2026/10/01/crypto-for-advisors-the-clarity-act-failed-but-the-rules-came-anyway",
+  "https://cryptoslate.com/treasury-will-let-states-file-for-stablecoin-approval-before-finishing-their-rules/",
+  "https://www.coindesk.com/tech/2026/10/01/near-intents-hit-by-usd3-8-million-exploit-as-crypto-s-rough-year-of-hacks-continues",
+  "https://www.theblock.co/news/ecosystems/2026-10-01-near-intents-halts-services-after-3-8-million-exploit-promises-full-compensation-417404",
   "https://cryptoslate.com/metamask-security-scare-pushes-ethereum-validator-exits-to-a-nine-month-high/",
   "https://cointelegraph.com/news/bitget-hack-q3-industry-losses-1-26-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
   "https://cointelegraph.com/news/latam-stablecoin-liquidity-may-depend-on-few-providers-investor-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -390,5 +414,27 @@
   "https://decrypt.co/379292/morning-minute-blackrock-leans-deeper-into-tokenization-with-ondo",
   "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
  ],
- "news_seeded": true
+ "news_seeded": true,
+ "fx_quotes": {
+  "EURUSD": {
+   "price": 1.12385,
+   "ch": -0.85,
+   "time": "2026-10-01T18:00:00+00:00"
+  },
+  "GBPUSD": {
+   "price": 1.31907,
+   "ch": -0.55,
+   "time": "2026-10-01T18:00:00+00:00"
+  },
+  "USDJPY": {
+   "price": 158.121,
+   "ch": 0.5,
+   "time": "2026-10-01T18:00:00+00:00"
+  },
+  "XAUUSD": {
+   "price": 4207.7998,
+   "ch": 0.6,
+   "time": "2026-10-01T18:00:00+00:00"
+  }
+ }
 }
