@@ -6,7 +6,7 @@
   "SOL": "2026-09-30T10:00:00+00:00"
  },
  "open": [],
- "last_digest": "2026-09-30",
+ "last_digest": "2026-10-01",
  "stats": {
   "win": 0,
   "loss": 3,
@@ -14,7 +14,7 @@
   "expired": 0
  },
  "fear_greed": {
-  "value": 71,
+  "value": 74,
   "label": "Greed"
  },
  "history": [
@@ -53,6 +53,15 @@
   }
  ],
  "news_posted": [
+  "https://cryptoslate.com/us-court-blocks-victims-from-127000-seized-bitcoin-and-petition-rules-are-blamed/",
+  "https://cointelegraph.com/news/msci-strategy-metaplanet-index-rule-bpi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/three-hidden-flaws-in-uniswaps-stablepair-hook-drain-lp-returns/",
+  "https://www.coindesk.com/tech/2026/10/01/dogecoin-gets-defi-testnet-as-dogeos-bets-miners-will-eventually-secure-its-apps",
+  "https://cointelegraph.com/news/crypto-hacks-total-766m-in-september-peckshield?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://www.coindesk.com/markets/2026/10/01/bitcoin-s-soft-inflation-pop-to-usd85-500-fades-as-bond-yields-refuse-to-fall",
+  "https://cryptoslate.com/bitcoin-enters-its-best-season-after-a-43-surge-with-147000-suddenly-on-the-math/",
+  "https://cryptoslate.com/new-bitcoin-upgrade-catches-hidden-key-leaks-hiding-the-exact-fix/",
+  "https://cointelegraph.com/news/cftc-seeks-to-define-event-contracts-as-swaps-amid-prediction-market-fight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
   "https://cointelegraph.com/news/metamask-exits-lido-validators-as-it-investigates-security-incident?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
   "https://decrypt.co/379784/gemini-4-google-flagship-tops-ai-models-cybersecurity",
   "https://cryptoslate.com/brazils-largest-energy-giant-tests-cardano-to-fix-carbon-double-counting/",
