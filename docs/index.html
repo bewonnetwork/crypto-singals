@@ -249,7 +249,7 @@ input{min-width:0;width:220px;max-width:100%}
 .orb.g{width:220px;height:220px;background:#f5c451;bottom:-50px;left:-20px;opacity:.13}
 .hx-visual .ticket{position:relative;z-index:1;max-width:420px;margin:0 auto}
 .stage{position:relative;z-index:1;width:100%;max-width:520px;margin:0 auto;aspect-ratio:1.08/1;border-radius:24px;overflow:hidden;
-  background:radial-gradient(circle at 50% 38%,rgba(63,182,255,.16),transparent 58%),radial-gradient(circle at 70% 85%,rgba(245,196,81,.12),transparent 55%),#0a0e16;
+  background:radial-gradient(circle at 50% 38%,rgba(63,182,255,.16),transparent 58%),radial-gradient(circle at 70% 85%,rgba(245,196,81,.12),transparent 55%),rgba(10,14,22,.42);
   border:1px solid rgba(255,255,255,.10);box-shadow:0 30px 80px rgba(0,0,0,.55),inset 0 -2px 0 rgba(245,196,81,.35)}
 :root[data-theme="light"] .stage{background:radial-gradient(circle at 50% 38%,rgba(63,182,255,.18),transparent 58%),#0e1422}
 .stage canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
@@ -314,7 +314,10 @@ input{min-width:0;width:220px;max-width:100%}
 .pair.gold{color:var(--accent);background:var(--accent-soft);border-color:rgba(245,196,81,.3)}
 @media (max-width:820px){.fbox{grid-template-columns:minmax(0,1fr);padding:22px 16px}}
 
-#bgChart{position:fixed;inset:0;z-index:0;pointer-events:none}
+#bgWorld{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.75}
+#bgWorld canvas{display:block}
+:root[data-theme="light"] #bgWorld{opacity:.35}
+@media (max-width:900px){#bgWorld{opacity:.5}}
 main,footer{position:relative;z-index:1}
 footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--muted);font-size:14px}
 footer .wrap{display:grid;gap:10px}
@@ -324,7 +327,7 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap}
 </style>
 </head>
 <body>
-<canvas id="bgChart" aria-hidden="true"></canvas>
+<div id="bgWorld" aria-hidden="true"></div>
 
 <header class="top">
   <div class="wrap">
@@ -639,39 +642,71 @@ function initHero3D(el){
   if(reduce){ frame(); } else { window.addEventListener("pointermove",onMove,{passive:true}); H3D.raf=requestAnimationFrame(loop); }
   return true; }
 
-/* ---------- moving trading chart behind the whole site ---------- */
-function startBgChart(){
-  const cv=document.getElementById("bgChart"); if(!cv||!cv.getContext) return;
-  const g=cv.getContext("2d"), dpr=Math.min(window.devicePixelRatio||1,1.5);
-  const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let W=0,H=0,cw=16,candles=[],off=0,last=performance.now();
-  const size=()=>{ W=innerWidth; H=innerHeight; cv.width=W*dpr; cv.height=H*dpr; cv.style.width=W+"px"; cv.style.height=H+"px"; g.setTransform(dpr,0,0,dpr,0,0);
-    const need=Math.ceil(W/cw)+3; while(candles.length<need) candles.push(nextCandle(candles[candles.length-1])); };
-  size(); addEventListener("resize",size);
-  const css=()=>getComputedStyle(document.documentElement);
-  const draw=(now)=>{
-    const dt=Math.min(64,now-last); last=now;
-    if(!document.hidden){
-      if(!reduce){ off+=dt*.018; if(off>=cw){ off-=cw; candles.shift(); candles.push(nextCandle(candles[candles.length-1])); } }
-      const light=document.documentElement.dataset.theme==="light";
-      g.clearRect(0,0,W,H);
-      g.strokeStyle=light?"rgba(16,20,27,.05)":"rgba(255,255,255,.035)"; g.lineWidth=1;
-      for(let x=-off%64;x<W;x+=64){ g.beginPath(); g.moveTo(x,0); g.lineTo(x,H); g.stroke(); }
-      for(let y=0;y<H;y+=64){ g.beginPath(); g.moveTo(0,y); g.lineTo(W,y); g.stroke(); }
-      const vis=candles; let mn=Infinity,mx=-Infinity; vis.forEach(d=>{ mn=Math.min(mn,d.l); mx=Math.max(mx,d.h); });
-      const top=H*.38, bot=H*.96, Y=v=>bot-(v-mn)/(mx-mn||1)*(bot-top);
-      const a=light?.16:.22;
-      vis.forEach((d,i)=>{ const x=i*cw-off+cw/2, up=d.c>=d.o;
-        g.strokeStyle=g.fillStyle=up?`rgba(0,194,136,${a})`:`rgba(255,92,108,${a})`;
-        g.beginPath(); g.moveTo(x,Y(d.h)); g.lineTo(x,Y(d.l)); g.stroke();
-        const y1=Y(Math.max(d.o,d.c)), y2=Y(Math.min(d.o,d.c)); g.fillRect(x-cw*.3,y1,cw*.6,Math.max(1.5,y2-y1)); });
-      const grad=g.createLinearGradient(0,0,W,0); grad.addColorStop(0,`rgba(63,182,255,${a+.1})`); grad.addColorStop(1,`rgba(245,196,81,${a+.1})`);
-      g.strokeStyle=grad; g.lineWidth=2; g.beginPath(); vis.forEach((d,i)=>{ const x=i*cw-off+cw/2, y=Y(d.e); i?g.lineTo(x,y):g.moveTo(x,y); }); g.stroke();
-      const lastC=vis[vis.length-2], ly=Y(lastC.c);
-      g.setLineDash([4,6]); g.strokeStyle=`rgba(245,196,81,${a})`; g.beginPath(); g.moveTo(0,ly); g.lineTo(W,ly); g.stroke(); g.setLineDash([]);
-    }
-    if(!reduce) requestAnimationFrame(draw); };
-  requestAnimationFrame(draw);
+/* ---------- slow 3D world globe behind the whole site ---------- */
+const LAND_MASK="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//8AFb///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///+x/////76fAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gD/p////////AAAAAAAAAACxBwAAAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAA///uAf//////+AAAABrvwAAAAAAAAAAH8AAAAAAAAAAAAAAAAAAAAAAAAeHznn/h////////4AAAABXsAAAAAAAAAAAAD4AAAAAAAAAAAAAAAAAAAAAAEcIA5MfAI///////8AAAAAPFAAAAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAABoCGc8X/AH///////4AAAAAAAAAAAAAB4AAAAB9+AAAAAAAAAAAAAAAAAAAAAD/wMzz8AAAP/////2AAAAAAAAAAAAD4AAAA////AAAB/oAAAAAAAAAAAAAACAwACAcAAAAP/////+AAAAAAAAAAAAMAAAAX///6AAAAAAAAAAAAAAAAAAAAP+Ac8+M/gAAD////+8AAAAAAAAAAAA4AAAH///+O+HAAHAAAAAAAAAAAAAAAf/+4/Y/94AAD////+wAAAAAAAAAAABwAHhH///////8AHwAAAAAwAAAAAAAAON/8E4//9AADf////gAAAAAAAAAAABwAPZ+///////4nv/gAAAAAAAH8gAAAAAP+A8f//8AA3///ogAAAAAABtgAAAAAfv/////////////8AAAAAB///+B/2H/+DnDxf8AAz////AAAAAAA//wAAAA8Pv//////////////9H8wAP////////QsDPzwD8AAf///wAAAAAAG///wIBe/3+/////////////////+AD////////+//fz4Y/wA7//4AAAAAAAD///+I////v//////////////////4EP///////////5gD/8A///gAAAAAAAf//5+P///8//////////////////7w/////////////qAD+QAP/wABr8AAAAf8f+D///////////////////////AwAf///////////zwx/AAP/wAAP8AAAB/4/+f//////////////////////4AMAf//////////+DBAbwAH/AAADAAAAN/j/////////////////////////+AAH///////////4AwgHQAD/AAAAAAAAf/H///////////////////////n/6AAP///////////wAA/AAAB+AAAAAAAB/+H//////////////////////jP+AAAH/9z////////gAA/wAAAMAAAAAACB//D7////////////////////+A/YAAAA/xAD///////gAA/wQAAAAAAAAAAB9/Ab///////////////////+ODgAAAAAB0AAX//////4AA/94AAAAAAAAAYA5+C///////////////////4AAHQAAAAABcAAP//////8AAf/+AAAAAAAAB8AA+i///////////////////wAAfgAAAAAMAAAC///////wAf/+AAAAAAAAAYAOeH///////////////////AAA/gAAAABQAAADf//////8Af//AAAAAAAAAcAPQH//////////////////8AAA/AAAAAEAAAAAP///////z///4AAAAAAADuAEDv//////////////////+AAA+AAAAAAAAAABP///////x///8AAAAAAAPHAf/////////////////////4AA8AAAAAAAAAAAn///////x///8AAAAAAAPPx//////////////////////6AA4AAAAAAAAAAAD///////////6AAAAAAAAPH//////////////////////6AAwAAAAAAAAAAAC///////////kAAAAAAAAQP//////////////////////zAAAAAAAAAAAAAABv////////+MMAAAAAAAAC///////////////////////7AAAAAAAAAAAAAAAL////////7wPgAAAAAAAf///////////////////////yAAAAAAAAAAAAAAAP/////////gCgAAAAAAAD///////////////////////iAAAAAAAAAAAAAAAP/////////pAAAAAAAAAD/////vP////////////////BAAAAAAAAAAAAAAAP/////////+AAAAAAAAAB//v//GP///////////////+AAAAAAAAAAAAAAAAP////////8wAAAAAAAAAB//P/+EP///////////////8CAAAAAAAAAAAAAAAP////////wgAAAAAAAADj/jz/+AD///////////////4HgAAAAAAAAAAAAAAP////////gAAAAAAAAAH/4Fw/4AA//////////////+ACAAAAAAAAAAAAAAAP////////gAAAAAAAAAH/wAcP8PA//////////////8AAAAAAAAAAAAAAAAAP///////8AAAAAAAAAAH/gMHfV///////////////v4AMAAAAAAAAAAAAAAAP///////8AAAAAAAAAAH/IMCOH//////////////+ZwAMAAAAAAAAAAAAAAAH///////oAAAAAAAQAAH/AACGP//////////////8BwAMAAAAAAAAAAAAAAAH///////wAAAAAAAAAAH+AAYDH//////////////+g4AYAAAAAAAAAAAAAAAD///////wAAAAAAAAAAAgf+AABs//////////////g4D4AAAAAAAAAAAAAAAB///////wAAAAAAAAAAAh/+AAAA//////////////A4fwAAAAAAAAAAAAAAAB///////gAAAAAAAAAAB//8AAAA//////////////Ah2AAAAAAAAAAAAAAAAAP/////+AAAAAAAAAAAD//+AAAB//////////////gjwAAAAAAAAAAAAAAAAAH/////4AAAAAAAAAAQH///4GAB//////////////gBAAAAAAAAAAAAAAAAAAG/////4AAAAAAAAAAAP///8PwD//////////////gCAAAAAAAAAAAAAAAAAACf////4AAAAAAAAAAAP////v////////////////gAAAAAAAAAAAAAAAAAAABv//xAYAAAAAAAAAAAP//////3//H///////////gAAAAAAAAAAAAAAAAAAAAv//AAYAAAAAAAAAAAf/////////H///////////wAAAAAAAAAAAAAAAAAAAB3/+AAcAAAAAAAAAAB///////8//h///////////gAAAAAAAAAAAAAAAAAAAAZ/+AAMAAAAAAAAAAD///////8//wH//////////AAAAAAAAAAAAAAAAAAAAAJ/+AAEAAAAAAAAAAH///////+f/wB/f////////AAAAAAAAAAAAAAAAAAAAAI/8AAAAAAAAAAAAAH///////+f/44Af///////8QAAAAAAAAAAAAAAAAAAAACf8AAAAAAAAAAAAAP///////+H//+AP///////4gAAAAAAAAAAAAAAAAAAAAAP8AAvAAAAAAAAAAP////////H///AD///////ggAAAAAAAAAAAAAAAAAAAAAH8AQBggAAAAAAAAf////////n//+ADf/4P//YAAAAAAAAAAAAAAAAAAAAAAAH+A4AYAAAAAAAAAP////////j//+AAf/4H/+IAAAAAAAAAAAAAAAgAAAAAAAH/B4ABwAAAAAAAAP////////h//8AAf/gD/8YAAAAAAAAAAAAAAAAAAAAAAAD/lwAD8AAAAAAAAP////////x//4AAf/AD/8QAAAAAAAAAAAAAAAAAAAAAAAAf/wAAAAAAAAAAAP////////4//gAAf+AB/+AAwAAAAAAAAAAAAAAAAAAAAAAH/wAAAAAAAAAAAP////////4f+AAAf8AD//AAwAAAAAAAAAAAAAAAAAAAAAAAH/AAAAAAAAAAAf////////8/8AAAPwAAP/gAgAAAAAAAAAAAAAAAAAAAAAAAD/gAAAAAAAAAAf////////+fgAAAPwAAP/gAwAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAf/////////eAAAAHwAAP/gAsAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAf/////////gBAAAHwAAM/gAKAAAAAAAAAAAAAAAAAAAAAAAADABIAAAAAAAAH/////////gIAAADwAAEfgALAAAAAAAAAAAAAAAAAAAAAAAADgPfIAAAAAAAH/////////34AAADwAAIPABIAAAAAAAAAAAAAAAAAAAAAAAAAyPf+AAAAAAAD//////////4AAADoAAIEACBAAAAAAAAAAAAAAAAAAAAAAAAA8///AAAAAAAB//////////wAAABIAAMAAEHAAAAAAAAAAAAAAAAAAAAAAAAAE///gAAAAAAB//////////wAAAAMAAEAAADgIAAAAAAAAAAAAAAAAAAAAAAAAf//wAAAAAAAf/////////gAAAAMAADAAMDAAAAAAAAAAAAAAAAAAAAAAAAAA////gAAAAAAP/B///////gAAAAAABDgAeAAAAAAAAAAAAAAAAAAAAAAAAAAAf///wAAAAAACAA3//////AAAAAAAAxgA+AAAAAAAAAAAAAAAAAAAAAAAAAAAf///4AAAAAAAAAD/////+AAAAAAAAZgB8BAAAAAAAAAAAAAAAAAAAAAAAAAB////4AAAAAAAAAD/////8AAAAAAAAMwH8AIAAAAAAAAAAAAAAAAAAAAAAAAB////8AAAAAAAAAD/////wAAAAAAAAHQf8AIAAAAAAAAAAAAAAAAAAAAAAAAD////4AAAAAAAAAH/////gAAAAAAAAHgf8cIAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAH/////AAAAAAAAAD4f8ASgAAAAAAAAAAAAAAAAAAAAAAAH////+4AAAAAAAAH/////AAAAAAAAABwP50QwAAAAAAAAAAAAAAAAAAAAAAAH/////+AAAAAAAAD////+AAAAAAAAAB8P5wAL4AgAAAAAAAAAAAAAAAAAAAAD//////4AAAAAAAB////8AAAAAAAAAA8AxQif/AAAAAAAAAAAAAAAAAAAAAAH//////8AAAAAAAA////4AAAAAAAAAAcAAQAD/gAAAAAAAAAAAAAAAAAAAAAH///////gAAAAAAA////4AAAAAAAAAAMABAAI/ywAAAAAAAAAAAAAAAAAAAAD///////gAAAAAAA////4AAAAAAAAAADgAAAIf8BAAAAAAAAAAAAAAAAAAAAD///////gAAAAAAAf///4AAAAAAAAAAB+AABA/4AAAAAAAAAAAAAAAAAAAAAB///////gAAAAAAAf///4AAAAAAAAAAAAfsgAOMAAAAAAAAAAAAAAAAAAAAAA///////AAAAAAAAf///8AAAAAAAAAAAABCAAAGgAAAAAAAAAAAAAAAAAAAAA///////AAAAAAAAP///+AAAAAAAAAAAAAAAAAAgBAAAAAAAAAAAAAAAAAAAAf/////+AAAAAAAAP///8AAAAAAAAAAAAAACgCAEAAAAAAAAAAAAAAAAAAAAAf/////8AAAAAAAAf///8AQAAAAAAAAAAAAB+CAAAAAAAQAAAAAAAAAAAAAAAP/////4AAAAAAAAf///+AQAAAAAAAAAAAAD8DAAAAAAAAAAAAAAAAAAAAAAAP/////4AAAAAAAA////+AwAAAAAAAAAAAA38DgAAAAAAAAAAAAAAAAAAAAAAH/////4AAAAAAAA////+BwAAAAAAAAAAAD/8HgAAAAAAAAAAAAAAAAAAAAAAB/////4AAAAAAAA////8PwAAAAAAAAAAAH//XgAABABAAAAAgAAAAAAAAAAAAf////4AAAAAAAA////wPgAAAAAAAAAAAP//3wAAAAAAAAAAAAAAAAAAAAAAAP////wAAAAAAAA////gPgAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAP////wAAAAAAAAf//+APgAAAAAAAAAAAf///8AAAAAAAAAAAAAAAAAAAAAAAP////wAAAAAAAAf//+APgEAAAAAAAAAD////+AAIAAAAAAAAAIAAAAAAAAAAP////gAAAAAAAAP//+AfAAAAAAAAAAAf////+AAEAAAAAAAAAAAAAAAAAAAAP////AAAAAAAAAP///AfAAAAAAAAAAA//////AAAAAAAAAAAAAAAAAAAAAAAP///4AAAAAAAAAP//+APAAAAAAAAAAA//////gAAAAAAAAAAAAAAAAAAAAAAf///gAAAAAAAAAH//+AOAAAAAAAAAAB//////wAAAAAAAAAAAAAAAAAAAAAAf//+AAAAAAAAAAH//4AEAAAAAAAAAAA//////4AAAAAAAAAAAAAAAAAAAAAAf//+AAAAAAAAAAH//4AAAAAAAAAAAAB//////4AAAAAAAAAAAAAAAAAAAAAAf///AAAAAAAAAAH//4AAAAAAAAAAAAA//////8AAAAAAAAAAAAAAAAAAAAAAf//+AAAAAAAAAAD//wAAAAAAAAAAAAAf/////8AAAAAAAAAAAAAAAAAAAAAAf//8AAAAAAAAAAB//gAAAAAAAAAAAAAf/////4AAAAAAAAAAAAAAAAAAAAAA///8AAAAAAAAAAB//gAAAAAAAAAAAAAf/////4AAAAAAAAAAAAAAAAAAAAAA///wAAAAAAAAAAA//AAAAAAAAAAAAAAP/////4AAAAAAAAAAAAAAAAAAAAAAf//wAAAAAAAAAAA/+AAAAAAAAAAAAAAP/AP//wAAAAAAAAAAAAAAAAAAAAAA//vgAAAAAAAAAAA/4AAAAAAAAAAAAAAP8AG//gAAAAAAAAAAAAAAAAAAAAAA//3AAAAAAAAAAAAQAAAAAAAAAAAAAAAOAAF//gAAAAAAAAAAAAAAAAAAAAAB//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//AAABAAAAAAAAAAAAAAAAAAB//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/AAAAgAAAAAAAAAAAAAAAAAD//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/AAAAQAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYAAAAcAAAAAAAAAAAAAAAAAB/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAD/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAD/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAADQAAAAAAAAAAAAAAAAAD/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAHAAAAAAAAAAAAAAAAAAB/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAOAAAAAAAAAAAAAAAAAAF/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAH+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAAAAAH+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAP4AAAAAAL+HgBj/AAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAAAADf/gAAB//////////AAAAAAAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAAAB////8A////////////mAAAAAAAAAAAAAAAAAAAAAB38AAAAAAAAAAAAAAAGD////4D/////////////4AAAAAAAAAAAAAAAAAAAAAb+AAAAAAAAAAAM/gB//////4//////////////+gAAAAAAAAAAAAAAAAAAAD/8AAAAAAAA7+///////////5////////////////4AAAAAAAAAAAAAAHQABh5+AAAAAAAA//////////////////////////////gAAAAAAAAABgAAAP/+Gl/8AAAAAAAf/////////////////////////////+AAAAAAAAAAiARsAv/////+AAAAAAA//////////////////////////////sAAAAAAAAX////////////wAAAAAAF//////////////////////////////gAAAAAAAX///////////PwAAAAAAf///////////////////////////////gAAAAAD+P///////////8AAAAAAP////////////////////////////////zgAAAAAP///////////fgCAAD8A/////////////////////////////////+AAAAD4B///////////7wwAAD+AB///////////////////////////////+AAAAAAAA////////////wAAA/wAH///////////////////////////////+AAAAAAAP//////////////AAAA/////////////////////////////////+AAAAAAAH//////////////4D/n//////////////////////////////////8AAAAAH//////////////////////////////////////////////////////8A/wAP////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////";
+function startBgWorld(){
+  const el=document.getElementById("bgWorld"); if(!el||!window.THREE) return;
+  let renderer; try{ renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:"low-power"}); }catch(e){ return; }
+  if(!renderer.getContext()) return;
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.5));
+  el.appendChild(renderer.domElement);
+  const scene=new THREE.Scene(), cam=new THREE.PerspectiveCamera(40,1,.1,100); cam.position.set(0,0,7);
+  const R=2.3, globe=new THREE.Group(); scene.add(globe);
+  const tilt=new THREE.Group(); tilt.rotation.set(.32,0,-.18); globe.add(tilt);
+  const spin=new THREE.Group(); tilt.add(spin);
+  const v3=(lat,lon,r=R)=>{ const p=(90-lat)*Math.PI/180, t=(lon+180)*Math.PI/180; return new THREE.Vector3(-r*Math.sin(p)*Math.cos(t), r*Math.cos(p), r*Math.sin(p)*Math.sin(t)); };
+  // dark core hides the back side
+  spin.add(new THREE.Mesh(new THREE.SphereGeometry(R*.985,64,48),new THREE.MeshBasicMaterial({color:0x050b16,transparent:true,opacity:.92})));
+  // land dots from mask
+  const bits=atob(LAND_MASK), land=(lat,lon)=>{ const r=Math.min(179,Math.max(0,Math.floor(90-lat))), c=((Math.floor(lon+180)%360)+360)%360, i=r*360+c; return (bits.charCodeAt(i>>3)>>(7-(i&7)))&1; };
+  const P=[], C=[], cA=new THREE.Color(0x3fb6ff), cB=new THREE.Color(0xf5c451);
+  for(let lat=-84;lat<=84;lat+=1.35){ const n=Math.max(1,Math.round(360*Math.cos(lat*Math.PI/180)/1.35));
+    for(let k=0;k<n;k++){ const lon=-180+k*360/n; if(!land(lat,lon)) continue; const v=v3(lat,lon); P.push(v.x,v.y,v.z);
+      const c=cA.clone().lerp(cB,Math.max(0,Math.min(1,(lat+10)/90))*.55); C.push(c.r,c.g,c.b); } }
+  const dot=document.createElement("canvas"); dot.width=dot.height=32; const dg=dot.getContext("2d"); dg.fillStyle="#fff"; dg.beginPath(); dg.arc(16,16,13,0,7); dg.fill();
+  const geo=new THREE.BufferGeometry(); geo.setAttribute("position",new THREE.Float32BufferAttribute(P,3)); geo.setAttribute("color",new THREE.Float32BufferAttribute(C,3));
+  spin.add(new THREE.Points(geo,new THREE.PointsMaterial({size:.042,map:new THREE.CanvasTexture(dot),vertexColors:true,transparent:true,alphaTest:.3})));
+  // faint lat/long grid
+  const gridM=new THREE.LineBasicMaterial({color:0x3fb6ff,transparent:true,opacity:.08});
+  for(let lat=-60;lat<=60;lat+=30){ const pts=[]; for(let lon=-180;lon<=180;lon+=4) pts.push(v3(lat,lon,R*1.002)); spin.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),gridM)); }
+  for(let lon=-180;lon<180;lon+=30){ const pts=[]; for(let lat=-90;lat<=90;lat+=4) pts.push(v3(lat,lon,R*1.002)); spin.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),gridM)); }
+  // city pins + trade arcs
+  const city={dhaka:[23.8,90.4],ny:[40.7,-74],london:[51.5,-.1],tokyo:[35.7,139.7],sg:[1.35,103.8],dubai:[25.2,55.3],fra:[50.1,8.7],hk:[22.3,114.2],sp:[-23.5,-46.6],syd:[-33.9,151.2]};
+  const pins=[]; Object.keys(city).forEach((k,i)=>{ const [la,lo]=city[k], gold=k==="dhaka";
+    const m=new THREE.Mesh(new THREE.SphereGeometry(gold?.045:.03,12,10),new THREE.MeshBasicMaterial({color:gold?0xf5c451:0x7fd3ff})); m.position.copy(v3(la,lo,R*1.01)); spin.add(m);
+    const ring=new THREE.Mesh(new THREE.RingGeometry(.05,.065,24),new THREE.MeshBasicMaterial({color:gold?0xf5c451:0x3fb6ff,transparent:true,side:THREE.DoubleSide}));
+    ring.position.copy(v3(la,lo,R*1.012)); ring.lookAt(v3(la,lo,R*2)); spin.add(ring); pins.push({ring,ph:i*.7}); });
+  const pairs=[["dhaka","london"],["dhaka","ny"],["dhaka","tokyo"],["dhaka","dubai"],["sg","syd"],["ny","london"],["fra","hk"],["sp","ny"],["dubai","sg"],["tokyo","ny"]];
+  const arcs=pairs.map(([a,b],i)=>{ const s=v3(...city[a]), e=v3(...city[b]), mid=s.clone().add(e).normalize().multiplyScalar(R*(1+.18+.22*s.distanceTo(e)/(2*R)));
+    const curve=new THREE.QuadraticBezierCurve3(s,mid,e), gold=i%2===0;
+    spin.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoints(60)),new THREE.LineBasicMaterial({color:gold?0xf5c451:0x3fb6ff,transparent:true,opacity:.6})));
+    const m=new THREE.Mesh(new THREE.SphereGeometry(.035,10,8),new THREE.MeshBasicMaterial({color:gold?0xffe08a:0x9fe0ff})); spin.add(m);
+    return {curve,m,off:i*.13,sp:.08+(i%3)*.025}; });
+  // atmosphere glow + orbit ring
+  const gc=document.createElement("canvas"); gc.width=gc.height=256; const gg=gc.getContext("2d"), gr=gg.createRadialGradient(128,128,70,128,128,128);
+  gr.addColorStop(0,"rgba(63,182,255,.0)"); gr.addColorStop(.55,"rgba(63,182,255,.28)"); gr.addColorStop(.75,"rgba(63,182,255,.08)"); gr.addColorStop(1,"rgba(63,182,255,0)"); gg.fillStyle=gr; gg.fillRect(0,0,256,256);
+  const halo=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(gc),transparent:true,depthWrite:false})); halo.scale.set(R*3.05,R*3.05,1); globe.add(halo);
+  const orbit=new THREE.Mesh(new THREE.TorusGeometry(R*1.32,.006,6,160),new THREE.MeshBasicMaterial({color:0xf5c451,transparent:true,opacity:.25}));
+  orbit.rotation.set(Math.PI/2.35,0,.3); globe.add(orbit);
+  const sat=new THREE.Mesh(new THREE.SphereGeometry(.05,12,10),new THREE.MeshBasicMaterial({color:0xf5c451})); orbit.add(sat);
+  // far stars
+  const N=260, sp=new Float32Array(N*3); for(let i=0;i<N;i++){ sp[i*3]=(Math.random()-.5)*22; sp[i*3+1]=(Math.random()-.5)*14; sp[i*3+2]=-4-Math.random()*6; }
+  const sg=new THREE.BufferGeometry(); sg.setAttribute("position",new THREE.BufferAttribute(sp,3));
+  const stars=new THREE.Points(sg,new THREE.PointsMaterial({size:.03,color:0xbfd8ff,transparent:true,opacity:.6})); scene.add(stars);
+
+  const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches, clock=new THREE.Clock();
+  const resize=()=>{ const w=innerWidth,h=innerHeight; renderer.setSize(w,h); cam.aspect=w/h; cam.updateProjectionMatrix();
+    const mob=cam.aspect<.9; globe.position.set(mob?0:1.75,mob?-1.05:-.15,0); globe.scale.setScalar(mob?.68:.62); if(reduce) frame(); };
+  const frame=()=>{ const t=clock.getElapsedTime();
+    spin.rotation.y=Math.PI+t*.045;                       // slow spin (~2.3 min per turn)
+    arcs.forEach(a=>{ a.m.position.copy(a.curve.getPoint((t*a.sp+a.off)%1)); });
+    pins.forEach(p=>{ const s=1+((t*.6+p.ph)%1)*1.6; p.ring.scale.setScalar(s); p.ring.material.opacity=.7*(1-((t*.6+p.ph)%1)); });
+    const a=t*.12; sat.position.set(Math.cos(a)*R*1.32,Math.sin(a)*R*1.32,0);
+    stars.rotation.z=t*.004; globe.position.y+=Math.sin(t*.5)*.0004;
+    renderer.render(scene,cam); };
+  resize(); addEventListener("resize",resize);
+  if(reduce){ frame(); return; }
+  const loop=()=>{ if(!document.hidden) frame(); requestAnimationFrame(loop); }; requestAnimationFrame(loop);
 }
 
 /* ---------- pages ---------- */
@@ -1090,7 +1125,7 @@ $("#tgTop").href=SITE.telegram; $("#tgFoot").href=SITE.telegram; $("#yr").textCo
 })();
 $("#langBtn").onclick=()=>{ LANG = LANG==="en" ? "bn" : "en"; try{ localStorage.setItem("lang",LANG); }catch(e){} applyStatic(); route(); };
 applyStatic();
-startBgChart();
+startBgWorld();
 route();
 </script>
 </body>
