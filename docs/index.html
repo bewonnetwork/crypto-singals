@@ -17,7 +17,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap">
 <style>
 /* color themes: html[data-pal] (+ data-theme dark/light) */
 :root,:root[data-pal="gold"]{--p1:#3fb6ff;--r1:63,182,255;--p2:#f5c451;--r2:245,196,81;--btn-ink:#07090d}
@@ -52,12 +52,12 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{background:var(--bg);color:var(--ink);font:16px/1.65 "Inter","Hind Siliguri",system-ui,sans-serif;-webkit-font-smoothing:antialiased;
+body{background:var(--bg);color:var(--ink);font:16px/1.6 "Inter","Hind Siliguri",system-ui,sans-serif;font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1,"cv11" 1;-webkit-font-smoothing:antialiased;
   background-image:radial-gradient(900px 500px at 85% -10%,rgba(var(--r1),.10),transparent 60%),radial-gradient(700px 420px at -10% 20%,rgba(var(--r2),.07),transparent 60%);background-attachment:fixed}
 a{color:inherit}
 img{max-width:100%}
-.num,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
-h1,h2,h3{font-family:"Space Grotesk","Hind Siliguri",sans-serif;line-height:1.25;margin:0;text-wrap:balance;letter-spacing:-.01em}
+.num,.mono{font-family:"Inter","Hind Siliguri",sans-serif;font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:"Inter","Hind Siliguri",sans-serif;line-height:1.25;margin:0;text-wrap:balance;letter-spacing:-.01em}
 h1{font-size:clamp(34px,5.6vw,60px);font-weight:700;letter-spacing:-.02em;line-height:1.1}
 h2{font-size:clamp(22px,3vw,28px);font-weight:700}
 h3{font-size:18px;font-weight:700}
@@ -69,10 +69,11 @@ p{margin:0}
 /* nav */
 .top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
 .top .wrap{display:flex;align-items:center;gap:20px;height:60px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 19px "Space Grotesk",sans-serif;white-space:nowrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 19px "Inter","Hind Siliguri",sans-serif;white-space:nowrap}
 .brand i{width:32px;height:32px;border-radius:10px;background:var(--grad);display:grid;place-items:center;box-shadow:0 6px 18px rgba(var(--r1),.25)}
 .brand i svg{width:18px;height:18px}
-.brand img{width:36px;height:36px;border-radius:50%;display:block;box-shadow:0 4px 14px rgba(var(--r1),.25)}
+.brand .bm{display:none}
+.brand img{width:40px;height:40px;border-radius:50%;display:block;box-shadow:0 4px 14px rgba(var(--r1),.25)}
 .nav{display:flex;gap:4px;margin-left:8px}
 .nav a{text-decoration:none;padding:7px 12px;border-radius:8px;color:var(--muted);font-weight:600;font-size:15px}
 .nav a:hover{color:var(--ink);background:var(--sunk)}
@@ -100,7 +101,7 @@ main{padding-block:28px 56px;display:grid;gap:40px}
 section{display:grid;gap:16px}
 .sec-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .sec-head p{color:var(--muted);font-size:15px}
-.eyebrow{font:600 12px "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.eyebrow{font:600 12px "Inter","Hind Siliguri",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 .muted{color:var(--muted)}
 .card{background:var(--glass),var(--surface);border:1px solid var(--line);border-radius:16px}
 .pad{padding:18px}
@@ -131,12 +132,12 @@ main>*,section>*{min-width:0}
 .lv.en{background:var(--accent-soft)} .lv.en span{color:var(--accent)}
 .ladder{position:relative;border-left:2px solid var(--line);margin:4px 0 4px 34px}
 .ladder b{position:absolute;left:-7px;width:12px;height:12px;border-radius:50%;transform:translateY(-50%)}
-.ladder em{position:absolute;left:10px;transform:translateY(-50%);font:600 10.5px "IBM Plex Mono",monospace;font-style:normal;color:var(--muted);white-space:nowrap}
+.ladder em{position:absolute;left:10px;transform:translateY(-50%);font:600 10.5px "Inter","Hind Siliguri",sans-serif;font-style:normal;color:var(--muted);white-space:nowrap}
 .ticket-foot{display:flex;justify-content:space-between;gap:10px;padding:10px 16px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted)}
-.sample{font:600 11px "IBM Plex Mono",monospace;letter-spacing:.08em;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+.sample{font:600 11px "Inter","Hind Siliguri",sans-serif;letter-spacing:.08em;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
 
 /* pills */
-.pill{display:inline-flex;align-items:center;gap:5px;font:600 12.5px "IBM Plex Mono",monospace;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;gap:5px;font:600 12.5px "Inter","Hind Siliguri",sans-serif;padding:2px 9px;border-radius:999px;white-space:nowrap}
 .p-buy,.p-up,.p-tp2,.p-tp1{background:var(--up-soft);color:var(--up)}
 .p-sell,.p-down,.p-sl{background:var(--down-soft);color:var(--down)}
 .p-exp,.p-flat{background:var(--flat-soft);color:var(--flat)}
@@ -147,7 +148,7 @@ main>*,section>*{min-width:0}
 .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .stat{padding:14px 16px;display:grid;gap:2px}
 .stat .k{font-size:13px;color:var(--muted)}
-.stat .v{font:600 24px "IBM Plex Mono",monospace}
+.stat .v{font:600 24px "Inter","Hind Siliguri",sans-serif}
 .bar{height:6px;border-radius:6px;background:var(--down-soft);overflow:hidden;margin-top:6px}
 .bar i{display:block;height:100%;background:var(--up)}
 @media (max-width:860px){.stats{grid-template-columns:repeat(2,1fr)} .stat.wide{grid-column:span 2}}
@@ -159,7 +160,7 @@ main>*,section>*{min-width:0}
 .cc{padding:14px;display:grid;gap:8px;text-decoration:none;transition:border-color .15s}
 .cc:hover{border-color:var(--accent)}
 .cc .row{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.cc .px{font:600 17px "IBM Plex Mono",monospace}
+.cc .px{font:600 17px "Inter","Hind Siliguri",sans-serif}
 .cc svg{width:100%;height:40px;display:block}
 .logo{width:28px;height:28px;border-radius:50%;flex:none;background:var(--sunk);display:grid;place-items:center;font:700 11px "Sora",sans-serif;color:var(--muted);overflow:hidden}
 .logo img{width:100%;height:100%}
@@ -182,7 +183,7 @@ main>*,section>*{min-width:0}
 .tbl-wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:15px}
 th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
-th{font:600 12px "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--sunk)}
+th{font:600 12px "Inter","Hind Siliguri",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--sunk)}
 td.r,th.r{text-align:right}
 tbody tr:last-child td{border-bottom:0}
 tr.link{cursor:pointer}
@@ -199,7 +200,7 @@ input{min-width:0;width:220px;max-width:100%}
 .coin-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .coin-head .l{display:flex;align-items:center;gap:14px}
 .coin-head .logo{width:44px;height:44px;font-size:14px}
-.coin-head .px{font:600 30px "IBM Plex Mono",monospace}
+.coin-head .px{font:600 30px "Inter","Hind Siliguri",sans-serif}
 #chart{height:430px;width:100%}
 @media (max-width:640px){#chart{height:320px}}
 .ind{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
@@ -217,13 +218,13 @@ input{min-width:0;width:220px;max-width:100%}
 /* confidence */
 .conf{display:grid;gap:6px;padding:0 16px 14px}
 .conf .top{display:flex;justify-content:space-between;align-items:center;font-size:13.5px}
-.conf .top b{font:700 15px "IBM Plex Mono",monospace}
+.conf .top b{font:700 15px "Inter","Hind Siliguri",sans-serif}
 .cbar{height:7px;border-radius:7px;background:var(--sunk);overflow:hidden}
 .cbar i{display:block;height:100%;border-radius:7px}
 .why{margin:2px 0 0;padding:0;list-style:none;display:grid;gap:3px;font-size:13px;color:var(--muted)}
 .why li::before{content:"✓ ";color:var(--up);font-weight:700}
 .why li.warn::before{content:"! ";color:var(--down)}
-.cpill{font:600 12px "IBM Plex Mono",monospace;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.cpill{font:600 12px "Inter","Hind Siliguri",sans-serif;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
 
 /* news */
 .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -237,7 +238,7 @@ input{min-width:0;width:220px;max-width:100%}
 .nc h3{font:600 17px/1.4 "Hind Siliguri","Sora",sans-serif;letter-spacing:0}
 .nc p{color:var(--muted);font-size:14.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .meta{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap}
-.src{font:600 11.5px "IBM Plex Mono",monospace;letter-spacing:.04em;color:var(--accent);background:var(--accent-soft);padding:1px 8px;border-radius:999px}
+.src{font:600 11.5px "Inter","Hind Siliguri",sans-serif;letter-spacing:.04em;color:var(--accent);background:var(--accent-soft);padding:1px 8px;border-radius:999px}
 .nc.lead{grid-column:1/-1;grid-template-columns:1.3fr 1fr;grid-template-rows:auto}
 .nc.lead .img{aspect-ratio:auto;min-height:260px}
 .nc.lead h3{font-size:clamp(20px,2.4vw,26px)}
@@ -294,14 +295,14 @@ input{min-width:0;width:220px;max-width:100%}
 @media (max-width:900px){.hx{grid-template-columns:minmax(0,1fr)}.hx-visual{padding:40px 0 30px}.fchip.c2{right:0}}
 .hstats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:8px}
 .hstats div{padding:16px 18px;border-left:2px solid var(--line)}
-.hstats strong{display:block;font:700 clamp(24px,3vw,32px) "Space Grotesk",sans-serif}
+.hstats strong{display:block;font:700 clamp(24px,3vw,32px) "Inter","Hind Siliguri",sans-serif}
 .hstats span{color:var(--muted);font-size:14px}
 @media (max-width:700px){.hstats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 /* ticker */
 .ticker{overflow:hidden;border-block:1px solid var(--line);background:rgba(255,255,255,.015);-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
 .ticker-track{display:flex;width:max-content}
 .ticker-copy{display:flex;gap:34px;padding:12px 17px;white-space:nowrap}
-.tk{display:inline-flex;align-items:center;gap:8px;font:600 14px "IBM Plex Mono",monospace;text-decoration:none}
+.tk{display:inline-flex;align-items:center;gap:8px;font:600 14px "Inter","Hind Siliguri",sans-serif;text-decoration:none}
 .tk b{font-family:"Inter",sans-serif}
 @media (prefers-reduced-motion:no-preference){.ticker-track{animation:marquee 40s linear infinite}.ticker:hover .ticker-track{animation-play-state:paused}@keyframes marquee{to{transform:translateX(-50%)}}}
 /* movers */
@@ -329,7 +330,7 @@ input{min-width:0;width:220px;max-width:100%}
 .tile em{font-style:normal;font-size:20px}
 @media (prefers-reduced-motion:no-preference){.tile{transition:transform .2s,border-color .2s}.tile:hover{transform:translateY(-3px);border-color:rgba(var(--r2),.45)}}
 .pairs{display:flex;gap:8px;flex-wrap:wrap}
-.pair{font:600 13px "IBM Plex Mono",monospace;padding:5px 12px;border-radius:999px;color:var(--blue);background:var(--blue-soft);border:1px solid rgba(var(--r1),.3)}
+.pair{font:600 13px "Inter","Hind Siliguri",sans-serif;padding:5px 12px;border-radius:999px;color:var(--blue);background:var(--blue-soft);border:1px solid rgba(var(--r1),.3)}
 .pair.gold{color:var(--accent);background:var(--accent-soft);border-color:rgba(var(--r2),.3)}
 @media (max-width:820px){.fbox{grid-template-columns:minmax(0,1fr);padding:22px 16px}}
 
@@ -347,8 +348,17 @@ footer nav a svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-wid
 .sheet-note{margin:14px 2px 0;font-size:11.5px;line-height:1.5;color:var(--muted)}
 .srch{display:none}
 .xw{display:none}.morebtn{display:none}
+.hl3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.hl3 a{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:16px;border-radius:16px;text-decoration:none;color:var(--ink);border:1px solid var(--line)}
+.hl3 i{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-style:normal}
+.hl3 i svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hl3 b{display:block;font:700 15.5px "Inter","Hind Siliguri",sans-serif}.hl3 small{display:block;color:var(--muted);font-size:12.5px;line-height:1.4}
+.hl3 span{font:700 12.5px "Inter","Hind Siliguri",sans-serif;padding:7px 12px;border-radius:99px;white-space:nowrap}
+.hl-tg{background:linear-gradient(135deg,rgba(42,171,238,.16),transparent 70%),var(--surface)!important;border-color:rgba(42,171,238,.45)!important}.hl-tg i,.hl-tg span{background:#2aabee;color:#fff}
+.hl-sg i,.hl-sg span{background:var(--up);color:#fff}.hl-tr i,.hl-tr span{background:var(--grad);color:var(--btn-ink,#07090d)}
+@media (max-width:860px){.hl3{grid-template-columns:minmax(0,1fr);gap:10px}.hl3 a{padding:13px}}
 .hc2{display:none}.fd{display:none}
-.langbtn{border:1px solid var(--line);background:var(--surface);color:var(--ink);height:38px;padding:0 10px;border-radius:10px;font:700 13px "IBM Plex Mono","Hind Siliguri",monospace;cursor:pointer;white-space:nowrap}
+.langbtn{border:1px solid var(--line);background:var(--surface);color:var(--ink);height:38px;padding:0 10px;border-radius:10px;font:700 13px "Inter","Hind Siliguri",sans-serif;cursor:pointer;white-space:nowrap}
 .langbtn:hover{background:var(--sunk)}
 .palwrap{position:relative}
 .palbtn .sw{width:18px;height:18px;border-radius:50%;background:conic-gradient(var(--p1),var(--p2),var(--p1))}
@@ -371,10 +381,10 @@ body{top:0!important}
 #gte{display:none}
 /* ---------- engine page ---------- */
 .eg{display:grid;gap:64px}
-.eg h2{font:700 clamp(24px,3.2vw,34px)/1.2 "Space Grotesk","Hind Siliguri",sans-serif;margin:6px 0 8px}
+.eg h2{font:700 clamp(24px,3.2vw,34px)/1.2 "Inter","Hind Siliguri",sans-serif;margin:6px 0 8px}
 .eg .sub{color:var(--muted);max-width:68ch;margin:0}
 .eg-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;padding-top:12px}
-.eg-hero h1{font:700 clamp(36px,5.6vw,64px)/1.05 "Space Grotesk","Hind Siliguri",sans-serif;margin:14px 0 8px}
+.eg-hero h1{font:700 clamp(36px,5.6vw,64px)/1.05 "Inter","Hind Siliguri",sans-serif;margin:14px 0 8px}
 .eg-hero .tag{font:600 clamp(17px,2vw,21px)/1.4 "Inter","Hind Siliguri",sans-serif;margin:0 0 14px}
 .eg-hero p{color:var(--muted);margin:0 0 12px}
 .eg-hero .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
@@ -384,15 +394,15 @@ body{top:0!important}
 .eg-radar::before,.eg-radar::after{content:"";position:absolute;inset:16%;border:1px solid rgba(var(--r1),.22);border-radius:50%}
 .eg-radar::after{inset:33%}
 .eg-sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,rgba(var(--r2),.0) 0deg,rgba(var(--r2),.0) 290deg,rgba(var(--r2),.45) 360deg)}
-.eg-core{position:absolute;inset:42%;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 13px "Space Grotesk",sans-serif;box-shadow:0 0 30px rgba(var(--r1),.6);z-index:2;text-align:center;line-height:1.1}
-.eg-blip{position:absolute;transform:translate(-50%,-50%);font:700 10.5px "IBM Plex Mono",monospace;color:#e5e7eb;display:flex;align-items:center;gap:5px;z-index:2;white-space:nowrap}
+.eg-core{position:absolute;inset:42%;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 13px "Inter","Hind Siliguri",sans-serif;box-shadow:0 0 30px rgba(var(--r1),.6);z-index:2;text-align:center;line-height:1.1}
+.eg-blip{position:absolute;transform:translate(-50%,-50%);font:700 10.5px "Inter","Hind Siliguri",sans-serif;color:#e5e7eb;display:flex;align-items:center;gap:5px;z-index:2;white-space:nowrap}
 .eg-blip i{width:7px;height:7px;border-radius:50%;background:var(--p1);box-shadow:0 0 10px var(--p1)}
 .eg-blip.dn i{background:var(--down);box-shadow:0 0 10px var(--down)}
 .eg-blip.up i{background:var(--up);box-shadow:0 0 10px var(--up)}
 @media (prefers-reduced-motion:no-preference){.eg-sweep{animation:egspin 4s linear infinite}.eg-blip i{animation:pulse 2.4s ease-in-out infinite}@keyframes egspin{to{transform:rotate(360deg)}}}
 .eg-pairs{display:grid;gap:6px;padding:18px;border-radius:16px}
 .eg-pairs .hd{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px;color:var(--muted);margin-bottom:6px}
-.eg-row{display:grid;grid-template-columns:70px minmax(0,1fr) 72px;align-items:center;gap:10px;font:600 13px "IBM Plex Mono",monospace;text-decoration:none;color:var(--ink)}
+.eg-row{display:grid;grid-template-columns:70px minmax(0,1fr) 72px;align-items:center;gap:10px;font:600 13px "Inter","Hind Siliguri",sans-serif;text-decoration:none;color:var(--ink)}
 .eg-bar{position:relative;height:12px;border-radius:6px;background:var(--sunk)}
 .eg-bar::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--line)}
 .eg-bar b{position:absolute;top:0;bottom:0;border-radius:6px}
@@ -403,10 +413,10 @@ body{top:0!important}
 .eg-card h3{margin:4px 0 0;font:700 17px "Inter","Hind Siliguri",sans-serif}
 .eg-card p{margin:0;color:var(--muted);font-size:14.5px}
 .eg-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
-.eg-chips span{font:600 11.5px "IBM Plex Mono",monospace;padding:3px 8px;border-radius:999px;background:var(--sunk);border:1px solid var(--line)}
+.eg-chips span{font:600 11.5px "Inter","Hind Siliguri",sans-serif;padding:3px 8px;border-radius:999px;background:var(--sunk);border:1px solid var(--line)}
 .eg-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;counter-reset:st}
 .eg-step{padding:18px;border-radius:16px;position:relative}
-.eg-step .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:700 15px "Space Grotesk",sans-serif;background:var(--grad);color:var(--btn-ink,#07090d);margin-bottom:10px}
+.eg-step .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:700 15px "Inter","Hind Siliguri",sans-serif;background:var(--grad);color:var(--btn-ink,#07090d);margin-bottom:10px}
 .eg-step h3{margin:0 0 6px;font:700 15.5px "Inter","Hind Siliguri",sans-serif}
 .eg-step p{margin:0;color:var(--muted);font-size:13.5px}
 .eg-day{padding:20px;border-radius:16px;display:grid;gap:12px}
@@ -415,11 +425,11 @@ body{top:0!important}
 .eg-rail{position:relative;height:26px;border-radius:8px;background:var(--sunk)}
 .eg-rail i{position:absolute;top:5px;bottom:5px;width:2px;border-radius:2px;background:var(--p1)}
 .eg-rail i.g{background:var(--p2);width:6px;margin-left:-2px;top:2px;bottom:2px;box-shadow:0 0 10px var(--p2)}
-.eg-axis{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;font:500 11.5px "IBM Plex Mono",monospace;color:var(--muted)}
+.eg-axis{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;font:500 11.5px "Inter","Hind Siliguri",sans-serif;color:var(--muted)}
 .eg-axis div{display:flex;justify-content:space-between}
 .eg-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .eg-kpis div{padding:16px 18px;border-radius:14px}
-.eg-kpis strong{display:block;font:700 clamp(22px,3vw,30px) "Space Grotesk",sans-serif}
+.eg-kpis strong{display:block;font:700 clamp(22px,3vw,30px) "Inter","Hind Siliguri",sans-serif}
 .eg-kpis span{color:var(--muted);font-size:13.5px}
 .eg-chart{padding:20px;border-radius:16px}
 .eg-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);margin-bottom:12px}
@@ -428,14 +438,14 @@ body{top:0!important}
 .eg-col{display:flex;flex-direction:column-reverse;gap:2px;height:100%;justify-content:flex-start;position:relative}
 .eg-col b{display:block;border-radius:4px 4px 2px 2px;min-height:0}
 .eg-col .c{background:var(--p1)}.eg-col .f{background:var(--p2)}
-.eg-col em{position:absolute;left:0;right:0;text-align:center;font:600 11px "IBM Plex Mono",monospace;color:var(--muted);font-style:normal}
-.eg-dates{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:6px;font:500 10.5px "IBM Plex Mono",monospace;color:var(--muted);text-align:center;margin-top:6px}
+.eg-col em{position:absolute;left:0;right:0;text-align:center;font:600 11px "Inter","Hind Siliguri",sans-serif;color:var(--muted);font-style:normal}
+.eg-dates{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:6px;font:500 10.5px "Inter","Hind Siliguri",sans-serif;color:var(--muted);text-align:center;margin-top:6px}
 .eg-chart details{margin-top:12px;font-size:13.5px}
-.eg-chart table{width:100%;border-collapse:collapse;margin-top:8px;font:500 12.5px "IBM Plex Mono",monospace}
+.eg-chart table{width:100%;border-collapse:collapse;margin-top:8px;font:500 12.5px "Inter","Hind Siliguri",sans-serif}
 .eg-chart td,.eg-chart th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right}
 .eg-chart td:first-child,.eg-chart th:first-child{text-align:left}
 .eg-free{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:30px;border-radius:20px;border:1px solid rgba(var(--r2),.35);background:radial-gradient(circle at 15% 20%,rgba(var(--r1),.14),transparent 50%),radial-gradient(circle at 90% 90%,rgba(var(--r2),.12),transparent 50%),var(--surface)}
-.eg-price{font:700 clamp(44px,6vw,64px)/1 "Space Grotesk",sans-serif}
+.eg-price{font:700 clamp(44px,6vw,64px)/1 "Inter","Hind Siliguri",sans-serif}
 .eg-price small{font-size:16px;color:var(--muted);font-weight:500}
 .eg-check{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:14.5px}
 .eg-check li::before{content:"✓";color:var(--up);font-weight:700;margin-right:8px}
@@ -449,7 +459,7 @@ body{top:0!important}
 .eg-ver{padding:20px 22px;border-radius:16px;border-left:3px solid var(--p1)}
 .eg-ver:first-child{border-left-color:var(--p2)}
 .eg-ver .vh{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
-.eg-ver .vh b{font:700 18px "Space Grotesk",sans-serif}
+.eg-ver .vh b{font:700 18px "Inter","Hind Siliguri",sans-serif}
 .eg-ver .vh span{color:var(--muted);font-size:13.5px}
 .eg-ver .lbl{display:inline-block;font:700 11px "Inter",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:var(--up-soft);color:var(--up);margin:10px 0 4px}
 .eg-ver .lbl.imp{background:var(--blue-soft);color:var(--blue)}
@@ -466,19 +476,19 @@ body{top:0!important}
 .dm-tabs button.on{background:var(--grad);color:var(--btn-ink,#07090d);border-color:transparent}
 .dm-top{display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px}
 .dm-prof{padding:20px;border-radius:16px;display:grid;gap:10px;align-content:start}
-.dm-av{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 22px "Space Grotesk",sans-serif}
+.dm-av{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 22px "Inter","Hind Siliguri",sans-serif}
 .dm-prof .nm{display:flex;gap:6px;align-items:center;font:700 18px "Inter","Hind Siliguri",sans-serif}
 .dm-prof .nm button{border:0;background:none;color:var(--muted);cursor:pointer;font-size:14px}
 .dm-kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:13.5px}
 .dm-kv span{color:var(--muted)}
-.dm-kv b{font:600 13px "IBM Plex Mono",monospace;text-align:right}
+.dm-kv b{font:600 13px "Inter","Hind Siliguri",sans-serif;text-align:right}
 .dm-bal{padding:22px;border-radius:16px;display:grid;gap:14px;background:radial-gradient(circle at 90% 0%,rgba(var(--r1),.14),transparent 55%),var(--surface)}
-.dm-bal .big{font:700 clamp(30px,4.6vw,44px)/1 "Space Grotesk",sans-serif}
+.dm-bal .big{font:700 clamp(30px,4.6vw,44px)/1 "Inter","Hind Siliguri",sans-serif}
 .dm-bal .big small{font-size:15px;color:var(--muted);font-weight:500}
 .dm-row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .dm-row3 div{padding:12px;border-radius:12px;background:var(--sunk)}
 .dm-row3 span{display:block;color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
-.dm-row3 b{font:600 15px "IBM Plex Mono",monospace}
+.dm-row3 b{font:600 15px "Inter","Hind Siliguri",sans-serif}
 .dm-act{display:flex;gap:8px;flex-wrap:wrap}
 .dm-act .btn{min-height:40px;padding:8px 16px;font-size:14px}
 .dm-grid{display:grid;grid-template-columns:360px minmax(0,1fr);gap:16px;align-items:start}
@@ -488,10 +498,10 @@ body{top:0!important}
 .dm-side button{border:0;padding:9px;border-radius:9px;font:700 14px "Inter",sans-serif;cursor:pointer;background:transparent;color:var(--muted)}
 .dm-side button.on.b{background:var(--up);color:#fff}.dm-side button.on.s{background:var(--down);color:#fff}
 .dm-f{display:grid;gap:5px;font-size:13px;color:var(--muted)}
-.dm-f input,.dm-f select,.dm-f textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--sunk);color:var(--ink);font:500 15px "IBM Plex Mono","Hind Siliguri",monospace}
+.dm-f input,.dm-f select,.dm-f textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--sunk);color:var(--ink);font:500 15px "Inter","Hind Siliguri",sans-serif}
 .dm-f textarea{font-family:"Inter","Hind Siliguri",sans-serif;font-size:14px;min-height:60px;resize:vertical}
-.dm-pct{display:flex;gap:6px}.dm-pct button{flex:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px;font:600 12.5px "IBM Plex Mono",monospace;cursor:pointer}
-.dm-est{font:500 13px "IBM Plex Mono",monospace;color:var(--muted);display:flex;justify-content:space-between}
+.dm-pct{display:flex;gap:6px}.dm-pct button{flex:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px;font:600 12.5px "Inter","Hind Siliguri",sans-serif;cursor:pointer}
+.dm-est{font:500 13px "Inter","Hind Siliguri",sans-serif;color:var(--muted);display:flex;justify-content:space-between}
 .dm-msg{font-size:13.5px;min-height:18px}
 .dm-msg.ok{color:var(--up)}.dm-msg.err{color:var(--down)}
 .dm-sig{display:grid;gap:8px}
@@ -500,34 +510,34 @@ body{top:0!important}
 .dm-empty{padding:26px;text-align:center;color:var(--muted)}
 .dm-panel{grid-template-columns:minmax(0,1fr)}
 .wl-tot{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.wl-tot span{color:var(--muted);font-size:13px}.wl-tot b{font:700 26px "Space Grotesk",sans-serif}.wl-tot small{font-size:13px;color:var(--muted);font-weight:500}
+.wl-tot span{color:var(--muted);font-size:13px}.wl-tot b{font:700 26px "Inter","Hind Siliguri",sans-serif}.wl-tot small{font-size:13px;color:var(--muted);font-weight:500}
 .wl-as{display:grid;gap:2px}
-.wl-as>div{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line);font:600 14px "IBM Plex Mono",monospace}
+.wl-as>div{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line);font:600 14px "Inter","Hind Siliguri",sans-serif}
 .wl-as>div span:first-child{display:flex;align-items:center;gap:8px;font-family:"Inter",sans-serif}
 .wl-as>div span:last-child{text-align:right}.wl-as small{display:block;font-size:11.5px;color:var(--muted);font-weight:500}
 .wl-net{display:grid;gap:8px;margin-top:2px}
 .wl-net button{text-align:left;border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:12px;padding:10px 12px;cursor:pointer;display:grid;gap:2px}
 .wl-net button.on{border-color:var(--p1);box-shadow:0 0 0 1px var(--p1) inset}
-.wl-net b{font:700 14px "IBM Plex Mono",monospace}.wl-net small{font-size:12px;color:var(--muted)}
+.wl-net b{font:700 14px "Inter","Hind Siliguri",sans-serif}.wl-net small{font-size:12px;color:var(--muted)}
 .wl-addr{display:grid;gap:6px;padding:12px;border-radius:12px;border:1px dashed var(--accent);background:var(--accent-soft)}
-.wl-addr span{font-size:12.5px;color:var(--muted)}.wl-addr code{font:600 12.5px "IBM Plex Mono",monospace;word-break:break-all}.wl-addr small{font-size:12px;color:var(--accent)}
+.wl-addr span{font-size:12.5px;color:var(--muted)}.wl-addr code{font:600 12.5px "Inter","Hind Siliguri",sans-serif;word-break:break-all}.wl-addr small{font-size:12px;color:var(--accent)}
 .wl-tx{position:relative;display:grid;gap:0;overflow:hidden}
 .wl-tx>div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:10px 0;border-top:1px solid var(--line);font-size:13.5px;align-items:center}
 .wl-tx>div>span{color:var(--muted);font-size:12.5px}
-.wl-tx code{font:500 12px "IBM Plex Mono",monospace;word-break:break-all}
+.wl-tx code{font:500 12px "Inter","Hind Siliguri",sans-serif;word-break:break-all}
 .wl-tx .xs{justify-self:start;margin-top:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;font:600 12.5px "Inter","Hind Siliguri",sans-serif;cursor:pointer}
-.wl-wm{position:absolute!important;inset:0;display:grid!important;place-items:center;grid-template-columns:1fr!important;border:0!important;font:800 64px "Space Grotesk",sans-serif!important;color:var(--ink);opacity:.05;transform:rotate(-18deg);pointer-events:none;letter-spacing:.1em}
+.wl-wm{position:absolute!important;inset:0;display:grid!important;place-items:center;grid-template-columns:1fr!important;border:0!important;font:800 64px "Inter","Hind Siliguri",sans-serif!important;color:var(--ink);opacity:.05;transform:rotate(-18deg);pointer-events:none;letter-spacing:.1em}
 .p2-ads{display:grid;gap:10px}
 .p2-ad{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 12px;align-items:center;padding:12px;border-radius:14px;background:var(--sunk)}
 .p2-m{display:flex;gap:10px;align-items:center;min-width:0}
-.p2-m i{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 14px "Space Grotesk",sans-serif;font-style:normal}
+.p2-m i{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 14px "Inter","Hind Siliguri",sans-serif;font-style:normal}
 .p2-m b{display:block;font-size:14px}.p2-m small,.p2-l small{display:block;font-size:12px;color:var(--muted)}
-.p2-p{text-align:right}.p2-p b{font:700 19px "IBM Plex Mono",monospace}.p2-p small{color:var(--muted);font-size:12px}
+.p2-p{text-align:right}.p2-p b{font:700 19px "Inter","Hind Siliguri",sans-serif}.p2-p small{color:var(--muted);font-size:12px}
 .p2-ad .btn{min-height:36px;padding:6px 18px;font-size:13.5px;color:#fff;border:0}
 .p2-b{background:var(--up)}.p2-s{background:var(--down)}
 .p2-st{margin:0;padding:0;list-style:none;display:grid;gap:8px;counter-reset:s}
 .p2-st li{counter-increment:s;display:flex;gap:10px;align-items:center;font-size:13.5px;color:var(--muted)}
-.p2-st li::before{content:counter(s);flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);font:700 12px "IBM Plex Mono",monospace}
+.p2-st li::before{content:counter(s);flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);font:700 12px "Inter","Hind Siliguri",sans-serif}
 .p2-st li.ok{color:var(--ink)}.p2-st li.ok::before{content:"✓";background:var(--up);border-color:var(--up);color:#fff}
 .p2-st li.now{color:var(--ink);font-weight:600}.p2-st li.now::before{border-color:var(--p1);color:var(--p1)}
 .dx-qk{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
@@ -540,28 +550,28 @@ body:not(.is-home) #bgWorld{display:none}
 .cn-bs .cn-b,.cn-bs .cn-s{color:#fff;border:0;min-width:120px;justify-content:center}.cn-b{background:var(--up)}.cn-s{background:var(--down)}
 @media (max-width:860px){.cn-bs{position:fixed;left:0;right:0;bottom:calc(64px + env(safe-area-inset-bottom));z-index:39;display:grid!important;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px;background:var(--bg);border-top:1px solid var(--line);margin:0}.cn-bs .btn-ghost{display:none}.cn-bs .btn{min-height:44px}}
 .w3-seed{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.w3-seed span{display:flex;gap:8px;align-items:center;padding:9px 10px;border-radius:10px;background:var(--sunk);font:600 13px "IBM Plex Mono",monospace;overflow:hidden}
+.w3-seed span{display:flex;gap:8px;align-items:center;padding:9px 10px;border-radius:10px;background:var(--sunk);font:600 13px "Inter","Hind Siliguri",sans-serif;overflow:hidden}
 .w3-seed i{font-style:normal;color:var(--muted);font-size:11px;min-width:14px}
-.w3-q{display:flex;gap:8px;flex-wrap:wrap}.w3-q button{border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:10px;padding:10px 16px;font:600 14px "IBM Plex Mono",monospace;cursor:pointer}
+.w3-q{display:flex;gap:8px;flex-wrap:wrap}.w3-q button{border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:10px;padding:10px 16px;font:600 14px "Inter","Hind Siliguri",sans-serif;cursor:pointer}
 .w3-top{display:flex;gap:12px;align-items:center}.w3-top>i{flex:none;width:40px;height:40px;border-radius:50%;background:conic-gradient(from 40deg,var(--p1),var(--p2),var(--p1))}
-.w3-top div{flex:1;min-width:0}.w3-top b{display:block;font-size:14.5px}.w3-top code{font:500 12px "IBM Plex Mono",monospace;color:var(--muted)}
+.w3-top div{flex:1;min-width:0}.w3-top b{display:block;font-size:14.5px}.w3-top code{font:500 12px "Inter","Hind Siliguri",sans-serif;color:var(--muted)}
 .w3-top .xs,.w3-nft .xs,.dm-msg .xs{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:5px 10px;font:600 12px "Inter","Hind Siliguri",sans-serif;cursor:pointer}
-.w3-tk{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--sunk);border:1px solid var(--line);font:700 12px "Space Grotesk",sans-serif;font-style:normal}
+.w3-tk{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--sunk);border:1px solid var(--line);font:700 12px "Inter","Hind Siliguri",sans-serif;font-style:normal}
 .w3-ca{display:grid;gap:6px}.w3-ca button{display:flex;gap:8px;align-items:center;flex-wrap:wrap;text-align:left;border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer;font-size:13px}
-.w3-ca code{font:500 11.5px "IBM Plex Mono",monospace;color:var(--muted);margin-left:auto}
+.w3-ca code{font:500 11.5px "Inter","Hind Siliguri",sans-serif;color:var(--muted);margin-left:auto}
 .w3-nfts{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
 .w3-nft{display:grid;gap:8px;padding:10px;border-radius:14px;background:var(--sunk)}.w3-nft svg{width:100%;height:auto;border-radius:10px}.w3-nft b{font-size:13px}
 .ky-doc{display:grid;place-items:center;padding:14px;border-radius:14px;background:var(--sunk)}
 .ky-card{position:relative;width:220px;max-width:100%;aspect-ratio:1.6;border-radius:12px;border:1px solid var(--line);background:var(--surface);padding:14px;display:grid;gap:8px;align-content:center;grid-template-columns:54px 1fr}
 .ky-card i{grid-row:span 3;width:54px;height:64px;border-radius:8px;background:var(--line)}.ky-card span{height:9px;border-radius:9px;background:var(--line);align-self:center}.ky-card span:nth-of-type(2){width:70%}.ky-card span:nth-of-type(3){width:45%}
-.ky-card b{position:absolute;right:10px;bottom:8px;font:800 12px "Space Grotesk",sans-serif;color:var(--accent);letter-spacing:.12em}
+.ky-card b{position:absolute;right:10px;bottom:8px;font:800 12px "Inter","Hind Siliguri",sans-serif;color:var(--accent);letter-spacing:.12em}
 .ky-face{width:110px;height:110px;border-radius:50%;border:3px dashed var(--p1);background:radial-gradient(circle at 50% 38%,var(--line) 0 22%,transparent 23%),radial-gradient(circle at 50% 100%,var(--line) 0 42%,transparent 43%)}
 .sq{display:grid;gap:16px;max-width:760px;margin-inline:auto;width:100%}
 .sq-post{padding:18px;border-radius:16px;display:grid;gap:10px}
-.sq-h{display:flex;gap:10px;align-items:center}.sq-h i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 15px "Space Grotesk",sans-serif;font-style:normal}
+.sq-h{display:flex;gap:10px;align-items:center}.sq-h i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 15px "Inter","Hind Siliguri",sans-serif;font-style:normal}
 .sq-h b{display:block;font-size:14.5px}.sq-h small{color:var(--muted);font-size:12px}.sq-h a{margin-left:auto}
 .sq-post h3{margin:0;font:700 18px/1.3 "Inter","Hind Siliguri",sans-serif}.sq-post p{margin:0;color:var(--muted);line-height:1.65;font-size:15px}
-.sq-tags{display:flex;gap:6px;flex-wrap:wrap}.sq-tags span{font:600 12px "IBM Plex Mono",monospace;color:var(--p1)}
+.sq-tags{display:flex;gap:6px;flex-wrap:wrap}.sq-tags span{font:600 12px "Inter","Hind Siliguri",sans-serif;color:var(--p1)}
 .sq-act{display:flex;gap:8px;border-top:1px solid var(--line);padding-top:10px}
 .sq-act button{border:0;background:none;color:var(--muted);font:600 13.5px "Inter","Hind Siliguri",sans-serif;cursor:pointer;padding:6px 10px;border-radius:8px}.sq-act button.on{color:var(--down)}
 .sq-f{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}.sq-f button{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 14px;border-radius:999px;font:600 13px "Inter","Hind Siliguri",sans-serif;cursor:pointer}.sq-f button.on{background:var(--grad);color:var(--btn-ink,#07090d);border-color:transparent}
@@ -580,16 +590,26 @@ body:not(.is-home) #bgWorld{display:none}
 .qt-h{display:flex;justify-content:space-between;align-items:center;font-size:16px}.qt-h>span{display:flex;gap:8px;align-items:center}
 .qt-x{border:0;background:var(--sunk);color:var(--ink);width:32px;height:32px;border-radius:50%;cursor:pointer}
 @media (max-width:860px){#qt{place-items:end center}.qt-box{border-radius:18px 18px 0 0;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}#mkt th:last-child,#mkt td:last-child{padding:11px 10px 11px 0}#mkt .qt-b{padding:5px 8px}#mkt .pill.p-up,#mkt .pill.p-down{min-width:64px}}
+#rc{position:fixed;inset:0;z-index:85;display:grid;place-items:center;padding:14px}
+.rc-box{position:relative;width:min(380px,100%);display:grid;gap:12px}
+.rc-card{position:relative;overflow:hidden;background:linear-gradient(160deg,rgba(var(--r1),.14),transparent 55%),var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px;display:grid;gap:14px}
+.rc-wm{position:absolute;inset:0;display:grid;place-items:center;font:800 84px "Inter","Hind Siliguri",sans-serif;letter-spacing:.1em;color:var(--ink);opacity:.06;transform:rotate(-20deg);pointer-events:none}
+.rc-h{display:flex;gap:10px;align-items:center}.rc-h img{width:40px;height:40px;border-radius:50%}.rc-h div{flex:1}.rc-h b{display:block}.rc-h small{color:var(--muted);font-size:12px}
+.rc-big{font:700 34px/1.1 "Inter","Hind Siliguri",sans-serif;text-align:center}.rc-big small{font-size:14px;color:var(--muted);font-weight:500}.rc-big div{font:600 16px "Inter","Hind Siliguri",sans-serif;margin-top:4px}
+.rc-kv{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;font-size:13.5px;border-top:1px dashed var(--line);padding-top:12px}.rc-kv span{color:var(--muted)}.rc-kv b{text-align:right;font:600 13px "Inter","Hind Siliguri",sans-serif}
+.rc-card p{margin:0;font-size:11.5px;color:var(--muted);text-align:center;line-height:1.5}
+.fa-code{font:700 30px "Inter","Hind Siliguri",sans-serif;letter-spacing:.18em;text-align:center}
+.fa-bar{height:5px;border-radius:9px;background:var(--sunk);overflow:hidden}.fa-bar i{display:block;height:100%;background:var(--p1)}
 .dx-head{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:12px 16px;border-radius:16px}
-.dx-pair select{appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:10px;padding:9px 30px 9px 12px;font:700 16px "Space Grotesk","Inter",sans-serif;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 15px) 55%,calc(100% - 10px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+.dx-pair select{appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:10px;padding:9px 30px 9px 12px;font:700 16px "Inter","Hind Siliguri",sans-serif;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 15px) 55%,calc(100% - 10px) 55%;background-size:5px 5px;background-repeat:no-repeat}
 .dx-px{display:flex;align-items:center;gap:10px}
-.dx-px b{font:700 24px "IBM Plex Mono",monospace}
+.dx-px b{font:700 24px "Inter","Hind Siliguri",sans-serif}
 .dx-px b.up,.dx-mid.up{color:var(--up)}.dx-px b.down,.dx-mid.down{color:var(--down)}
-.dx-px .chg{display:inline-block;padding:4px 8px;border-radius:7px;font:700 12.5px "IBM Plex Mono",monospace;color:#fff}
+.dx-px .chg{display:inline-block;padding:4px 8px;border-radius:7px;font:700 12.5px "Inter","Hind Siliguri",sans-serif;color:#fff}
 .dx-px .chg.u{background:var(--up)}.dx-px .chg.d{background:var(--down)}
 .dx-kv{display:flex;gap:20px;margin-left:auto;flex-wrap:wrap}
 .dx-kv span{display:block;font-size:11.5px;color:var(--muted)}
-.dx-kv b{font:600 13.5px "IBM Plex Mono",monospace}
+.dx-kv b{font:600 13.5px "Inter","Hind Siliguri",sans-serif}
 .dx-main{display:grid;grid-template-columns:minmax(0,1fr) 230px 310px;gap:16px;align-items:stretch}
 .dx-chart{padding:12px;border-radius:16px;display:grid;gap:10px;grid-template-rows:auto 1fr;min-width:0}
 .dx-chart .tabs{justify-self:start}
@@ -597,12 +617,12 @@ body:not(.is-home) #bgWorld{display:none}
 .dx-book{padding:14px;border-radius:16px;display:flex;flex-direction:column;gap:3px;min-width:0}
 .dx-book h3{margin:0 0 6px;font:700 14px "Inter","Hind Siliguri",sans-serif}
 .dx-bh{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);padding:0 4px 4px}
-.dx-r{position:relative;display:flex;justify-content:space-between;width:100%;border:0;background:none;padding:3.5px 4px;font:500 12.5px "IBM Plex Mono",monospace;color:var(--ink);cursor:pointer;overflow:hidden;border-radius:4px}
+.dx-r{position:relative;display:flex;justify-content:space-between;width:100%;border:0;background:none;padding:3.5px 4px;font:500 12.5px "Inter","Hind Siliguri",sans-serif;color:var(--ink);cursor:pointer;overflow:hidden;border-radius:4px}
 .dx-r i{position:absolute;right:0;top:0;bottom:0;opacity:.16}
 .dx-r.a i{background:var(--down)}.dx-r.b i{background:var(--up)}
 .dx-r span{position:relative}
 .dx-r.a span:first-of-type{color:var(--down)}.dx-r.b span:first-of-type{color:var(--up)}
-.dx-mid{font:700 16px "IBM Plex Mono",monospace;padding:8px 4px;border-block:1px solid var(--line);margin-block:4px}
+.dx-mid{font:700 16px "Inter","Hind Siliguri",sans-serif;padding:8px 4px;border-block:1px solid var(--line);margin-block:4px}
 .dx-form{align-content:start}
 .dx-ot{display:flex;gap:16px;border-bottom:1px solid var(--line)}
 .dx-ot button{border:0;background:none;color:var(--muted);padding:6px 0 8px;font:600 13.5px "Inter",sans-serif;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
@@ -610,7 +630,7 @@ body:not(.is-home) #bgWorld{display:none}
 .dx-lt{display:flex;gap:18px;border-bottom:1px solid var(--line);overflow-x:auto}
 .dx-lt button{border:0;background:none;color:var(--muted);padding:4px 0 10px;font:700 14.5px "Inter","Hind Siliguri",sans-serif;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
 .dx-lt button.on{color:var(--ink);border-bottom-color:var(--p1)}
-.dx-lt small{font:600 11px "IBM Plex Mono",monospace;background:var(--sunk);padding:2px 6px;border-radius:99px;margin-left:2px}
+.dx-lt small{font:600 11px "Inter","Hind Siliguri",sans-serif;background:var(--sunk);padding:2px 6px;border-radius:99px;margin-left:2px}
 .dx-sw{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px;border-radius:14px;background:var(--sunk);border:1px solid var(--line)}
 .dx-sw.on{border-color:var(--up)}
 .dx-sw b{display:block;font-size:15px}.dx-sw span{font-size:12.5px;color:var(--muted)}
@@ -629,14 +649,14 @@ body:not(.is-home) #bgWorld{display:none}
 .ln-dom{display:grid;grid-template-columns:260px minmax(0,1fr);gap:18px;align-items:center;padding:22px;border-radius:16px}
 .ln-ring{width:220px;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;margin:auto;background:conic-gradient(var(--p2) calc(var(--v)*1%),var(--sunk) 0)}
 .ln-ring>div{width:76%;aspect-ratio:1;border-radius:50%;background:var(--surface);display:grid;place-items:center;text-align:center}
-.ln-ring b{font:700 38px "Space Grotesk",sans-serif;display:block}
+.ln-ring b{font:700 38px "Inter","Hind Siliguri",sans-serif;display:block}
 .ln-ring span{font-size:12.5px;color:var(--muted)}
 .ln-k{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}
 .ln-k div{padding:12px;border-radius:12px;background:var(--sunk)}
 .ln-k span{display:block;color:var(--muted);font-size:12px}
-.ln-k b{font:600 16px "IBM Plex Mono",monospace}
+.ln-k b{font:600 16px "Inter","Hind Siliguri",sans-serif}
 .ln-mood{padding:10px 14px;border-radius:12px;background:var(--accent-soft);border:1px solid var(--line);font-size:14.5px}
-.ln-wall{display:grid;grid-template-columns:76px minmax(0,1fr) 54px;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font:500 13px "IBM Plex Mono",monospace}
+.ln-wall{display:grid;grid-template-columns:76px minmax(0,1fr) 54px;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font:500 13px "Inter","Hind Siliguri",sans-serif}
 .ln-wall .bar{position:relative;height:26px;border-radius:7px;background:var(--sunk);overflow:hidden}
 .ln-wall .bar i{position:absolute;top:0;bottom:0;background:var(--up-soft);left:0}
 .ln-wall .bar em{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:center;padding:0 8px;font-style:normal;font-size:12px}
@@ -671,10 +691,45 @@ body:not(.is-home) #bgWorld{display:none}
 .mk-row{padding-top:11px;padding-bottom:11px;text-decoration:none;color:var(--ink)}
 .mk-row:hover{background:var(--sunk)}
 .mk-row .nm{display:flex;gap:10px;align-items:center;min-width:0}
-.mk-row .nm b{font:700 15.5px "Inter",sans-serif}.mk-row .nm small{display:block;color:var(--muted);font:500 11.5px "IBM Plex Mono",monospace}
-.mk-row .px{font:600 15px "IBM Plex Mono",monospace}.mk-row .px small{display:block;color:var(--muted);font-size:11.5px;font-weight:500}
-.chg{display:block;text-align:center;padding:8px 0;border-radius:8px;font:700 13.5px "IBM Plex Mono",monospace;color:#fff}
+.mk-row .nm b{font:700 15.5px "Inter",sans-serif}.mk-row .nm small{display:block;color:var(--muted);font:500 11.5px "Inter","Hind Siliguri",sans-serif}
+.mk-row .px{font:600 15px "Inter","Hind Siliguri",sans-serif}.mk-row .px small{display:block;color:var(--muted);font-size:11.5px;font-weight:500}
+.chg{display:block;text-align:center;padding:8px 0;border-radius:8px;font:700 13.5px "Inter","Hind Siliguri",sans-serif;color:#fff}
 .chg.u{background:var(--up)}.chg.d{background:var(--down)}
+/* app typography: one clean sans, medium weights, generous rows */
+.mk-tabs{gap:22px;padding:16px 16px 0;border-bottom:0}
+.mk-tabs button{font:500 16px "Inter","Hind Siliguri",sans-serif;padding:0 0 8px;border-bottom:0}
+.mk-tabs button.on{color:var(--ink);font-weight:600}
+.mk-head{font:400 12.5px "Inter","Hind Siliguri",sans-serif;padding-top:8px;padding-bottom:2px}
+.mk-head,.mk-row{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) 84px;gap:12px}
+.mk-row{padding-top:13px;padding-bottom:13px}
+.mk-row .nm{gap:12px}.mk-row .nm img,.mk-row .nm .cl{width:32px;height:32px}
+.mk-row .nm b{font:600 15.5px/1.25 "Inter",sans-serif;letter-spacing:-.01em}
+.mk-row .nm small{font:400 12.5px/1.3 "Inter","Hind Siliguri",sans-serif;color:var(--muted)}
+.mk-row .px{font:600 15.5px/1.25 "Inter",sans-serif;letter-spacing:-.01em}
+.mk-row .px small{font:400 12.5px/1.3 "Inter",sans-serif}
+.chg{padding:7px 0;border-radius:6px;font:500 14px "Inter",sans-serif;letter-spacing:0}
+.mk-more{display:block;text-align:center;padding:12px 0 16px;color:var(--muted);font:400 14.5px "Inter","Hind Siliguri",sans-serif;text-decoration:none}
+h1,h2,h3{letter-spacing:-.015em}
+.av{padding:20px 18px;border-radius:16px;display:grid;gap:6px}
+.av-l{color:var(--muted);font-size:14px;display:flex;gap:8px;align-items:center}
+.av-t{font:700 34px/1.15 "Inter",sans-serif;letter-spacing:-.02em}.av-t small{font:600 14px "Inter",sans-serif;letter-spacing:0}
+.av-s{color:var(--muted);font-size:14px}
+.av-p{font-size:14px;margin-top:2px}.av-p u{text-decoration:underline dotted;text-underline-offset:4px;color:var(--ink)}
+.av-a{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:14px}
+.av-a button{display:grid;justify-items:center;gap:8px;border:0;background:none;color:var(--ink);font:500 13px "Inter","Hind Siliguri",sans-serif;cursor:pointer;padding:0}
+.av-a i{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--sunk);border:1px solid var(--line);font-style:normal}
+.av-a svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.av-al{padding:14px 18px;border-radius:16px;display:grid;gap:10px}.av-al span{color:var(--muted);font-size:14px}
+.av-al .pf-bar{height:8px;gap:2px;background:none}.av-al .pf-bar i{border-radius:3px;transform:skewX(-18deg)}
+.av-list{padding:6px 18px;border-radius:16px}
+.av-r{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.av-r:last-child{border-bottom:0}
+.av-r img,.av-r .cl{width:34px;height:34px}
+.av-r b{display:block;font:600 15.5px/1.3 "Inter",sans-serif}.av-r small{display:block;color:var(--muted);font:400 12.5px/1.3 "Inter","Hind Siliguri",sans-serif}
+.av-r .q{text-align:right}
+.av-r .pn{grid-column:2/4;display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted)}
+.av-r .bt{grid-column:1/4;display:flex;justify-content:flex-end;gap:8px}
+.av-r .bt button{border:0;background:var(--sunk);color:var(--ink);border-radius:6px;padding:6px 20px;font:500 13px "Inter","Hind Siliguri",sans-serif;cursor:pointer}
 .mk-more{display:block;text-align:center;padding:13px;border-top:1px solid var(--line);text-decoration:none;color:var(--muted);font:600 13.5px "Inter","Hind Siliguri",sans-serif}
 @media (max-width:860px){
   body{padding-bottom:calc(66px + env(safe-area-inset-bottom,0px))}
@@ -700,15 +755,20 @@ body:not(.is-home) #bgWorld{display:none}
   .hx-visual{display:none}
   .hx h1{font-size:30px;line-height:1.15}
   .hx h1 br{display:none}
-  .brand span{display:none}.tg-top{display:none!important}
+  .dm>.sec-head{display:none}.dm-banner{font-size:12px;line-height:1.45;padding:8px 12px}.dm-banner>span:first-child{display:none}
+  #mkt .p-open{display:none}#mkt th,#mkt td{padding:12px 5px}#mkt td:last-child,#mkt th:last-child{padding-right:10px}
+  #mkt .pill.p-up,#mkt .pill.p-down{min-width:66px;padding:6px 4px;border-radius:6px;font:500 13px "Inter",sans-serif}
+  #mkt .sym{font-weight:600}#mkt .num{font-weight:600}
+  body{font-size:15px}
+  .brand span{display:none}.brand .bm{display:block;font:700 18px "Inter",sans-serif;letter-spacing:.08em}.tg-top{display:none!important}
   .morebtn{display:grid;place-items:center}.morebtn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
-  .xw{display:flex;background:var(--sunk);border-radius:10px;padding:3px;margin-left:4px}
-  .xw a{padding:6px 10px;border-radius:8px;font:600 13px "Inter","Hind Siliguri",sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap}
+  .xw{display:grid;grid-template-columns:1fr 1fr;background:var(--sunk);border-radius:12px;padding:4px}
+  .xw a{text-align:center;padding:8px 10px;border-radius:8px;font:600 13px "Inter","Hind Siliguri",sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap}
   .xw a.on{background:var(--surface);color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.25)}
   .top .wrap{gap:8px}
   .hc2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
   .hc2 a{display:grid;gap:4px;padding:14px;border-radius:16px;text-decoration:none;color:var(--ink);min-width:0;align-content:start}
-  .hc2 small{color:var(--muted);font-size:12px}.hc2 b{font:700 20px "IBM Plex Mono",monospace}.hc2 .t{font:600 14px "Inter","Hind Siliguri",sans-serif;display:flex;gap:6px;align-items:center}
+  .hc2 small{color:var(--muted);font-size:12px}.hc2 b{font:700 20px "Inter","Hind Siliguri",sans-serif}.hc2 .t{font:600 14px "Inter","Hind Siliguri",sans-serif;display:flex;gap:6px;align-items:center}
   .hc2 svg{width:100%;height:44px;display:block;margin-top:4px}
   .fd{display:grid;gap:0;border-radius:18px 18px 0 0;padding:6px 16px 12px}
   .fd-t{display:flex;gap:20px;overflow-x:auto;scrollbar-width:none;padding:10px 0}
@@ -753,7 +813,7 @@ body:not(.is-home) #bgWorld{display:none}
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#/"><img src="logo.png" alt="BEWON" width="36" height="36"><span id="brandName" class="notranslate" translate="no">BEWON Signals</span></a>
+    <a class="brand" href="#/"><img src="logo-mark.png" alt="BEWON" width="40" height="40"><b class="bm notranslate" translate="no">BEWON</b><span id="brandName" class="notranslate" translate="no">BEWON Signals</span></a>
     <nav class="nav" id="nav">
       <a href="#/" data-r="home" data-bn="হোম" data-en="Home">হোম</a>
       <a href="#/market" data-r="market" data-bn="মার্কেট" data-en="Market">মার্কেট</a>
@@ -764,7 +824,6 @@ body:not(.is-home) #bgWorld{display:none}
       <a href="#/news" data-r="news" data-bn="নিউজ" data-en="News">নিউজ</a>
       <a href="#/learn" data-r="learn" data-bn="শেখা" data-en="Learn">শেখা</a>
     </nav>
-    <div class="xw" id="xw"><a href="#/" data-x="ex" data-bn="এক্সচেঞ্জ" data-en="Exchange">এক্সচেঞ্জ</a><a href="#/demo/web3" data-x="w3" data-bn="ওয়ালেট" data-en="Wallet">ওয়ালেট</a></div>
     <span class="sp"></span>
     <select class="langbtn notranslate" id="langSel" aria-label="Language / ভাষা" translate="no"></select>
     <div class="palwrap notranslate" translate="no"><button class="iconbtn palbtn" id="palBtn" aria-label="Color / রং" aria-expanded="false"><span class="sw"></span></button><div class="palmenu" id="palMenu" role="menu"></div></div>
@@ -1222,6 +1281,12 @@ async function pageHome(){
   </div>
   <div class="ticker" aria-label="${tr("লাইভ দাম","Live prices")}"><div class="ticker-track" id="tkr">${[0,1].map(k=>`<div class="ticker-copy"${k?' aria-hidden="true"':""}>${coins.map(c=>`<span class="tk"><b>${c}</b> <span class="skel">00,000</span></span>`).join("")}</div>`).join("")}</div></div>
   <a class="srch" href="#/market"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>${tr("কয়েন খুঁজুন… BTC, ETH, SOL","Search coin… BTC, ETH, SOL")}</a>
+  <div class="xw" id="xw"><a href="#/" class="on">${tr("এক্সচেঞ্জ","Exchange")}</a><a href="#/demo/web3">${tr("Web3 ওয়ালেট","Web3 wallet")}</a></div>
+  <div class="hl3">
+    <a class="card hl-tg" href="${SITE.telegram}" target="_blank" rel="noopener"><i>${asv("tg")}</i><div><b>${tr("Telegram চ্যানেলে যোগ দিন","Join the Telegram channel")}</b><small>${tr("প্রতিটা সিগনাল, খবর আর দৈনিক টিপস সবার আগে","Every signal, news and daily tip first")}</small></div><span>${tr("যোগ দিন","Join")} →</span></a>
+    <a class="card hl-sg" href="#/signals"><i>${asv("signals")}</i><div><b>${tr("ফ্রি সিগনাল","Free signals")}</b><small>${tr("Entry, TP, SL আর সব ফলাফল খোলা","Entry, TP, SL and every result in the open")}</small></div><span>${tr("দেখুন","View")} →</span></a>
+    <a class="card hl-tr" href="#/learn"><i>${asv("learn")}</i><div><b>${tr("ফ্রি ট্রেনিং","Free training")}</b><small>${tr("ধাপে ধাপে শিখুন, তারপর ডেমোতে অনুশীলন","Learn step by step, then practise in demo")}</small></div><span>${tr("শুরু করুন","Start")} →</span></a>
+  </div>
   <div class="hc2"><a class="card" href="#/signals" id="hcSig"><small>${tr("সর্বশেষ সিগনাল","Latest signal")}</small><span class="t">—</span><small>&nbsp;</small></a><a class="card" href="#/coin/BTC" id="hcBtc"><span class="t">${logo("BTC")} BTC</span><b>…</b><small>&nbsp;</small></a></div>
   <div class="qa">${quickActions()}</div>
   <div class="card mk mk-wrap"><div class="mk-tabs" id="mkTabs"></div><div class="mk-head"><span>${tr("নাম","Name")}</span><span>${tr("দাম","Price")}</span><span style="text-align:center">${tr("২৪ ঘণ্টা","24h")}</span></div><div id="mkList">${"<div class='mk-row'><span class='skel'>BTC 0000</span><span class='skel px'>00000</span><span class='skel'>0.00%</span></div>".repeat(6)}</div><a class="mk-more" href="#/market">${tr("সব মার্কেট দেখুন →","View all markets →")}</a></div>
@@ -1314,7 +1379,7 @@ async function pageHome(){
         ["🤖",tr("বটের কয়েন","Bot coins"),all.filter(t=>coins.includes(t.base)).sort((a,b)=>Math.abs(b.priceChangePercent)-Math.abs(a.priceChangePercent)).slice(0,5)]];
       const mt=$("#mkTabs"), ml=$("#mkList");
       if(mt&&ml){ const drawMk=()=>{ mt.innerHTML=lists.map(([e,title],k)=>`<button class="${k===MK_TAB?"on":""}" data-k="${k}">${title}</button>`).join("");
-          ml.innerHTML=lists[MK_TAB][2].concat(MK_TAB===0?top.slice(5,8):[]).map(t=>`<a class="mk-row" href="#/coin/${t.base}"><span class="nm">${logo(t.base)}<span><b>${t.base}</b><small>${NAMES[t.base]||"Vol "+fmtBig(t.quoteVolume)}</small></span></span><span class="px">${fmtPx(t.lastPrice)}<small>$${fmtPx(t.lastPrice)}</small></span><span class="chg ${+t.priceChangePercent>=0?"u":"d"}">${pct(t.priceChangePercent)}</span></a>`).join("");
+          ml.innerHTML=lists[MK_TAB][2].concat(MK_TAB===0?top.slice(5,8):[]).map(t=>`<a class="mk-row" href="#/coin/${t.base}"><span class="nm">${logo(t.base)}<span><b>${t.base}</b><small>${NAMES[t.base]||"Vol "+fmtBig(t.quoteVolume)}</small></span></span><span class="px">${fmtPx(t.lastPrice)}<small>$${fmtPx(t.lastPrice)}</small></span><span class="chg ${+t.priceChangePercent>=0?"u":"d"}">${pct(t.priceChangePercent)}</span></a>`).join("")+`<a class="mk-more" href="#/market">${tr("আরও দেখুন","View More")}</a>`;
           mt.querySelectorAll("button").forEach(b=>b.onclick=()=>{ MK_TAB=+b.dataset.k; drawMk(); }); }; drawMk(); }
       const el=$("#movers"); if(!el) return;
       el.innerHTML=lists.map(([e,title,rows])=>`<div class="card mv"><h3>${e} ${title}</h3>${rows.map(t=>`<a href="#/coin/${t.base}"><span class="sym">${logo(t.base)}${t.base}</span><span style="text-align:right"><span class="num">${fmtPx(t.lastPrice)}</span> <span class="pill ${+t.priceChangePercent>=0?"p-up":"p-down"}">${pct(t.priceChangePercent)}</span></span></a>`).join("")}</div>`).join("");
@@ -1403,7 +1468,7 @@ async function pageCoin(sym){
   const el=$("#chart"), css=getComputedStyle(document.documentElement), c=v=>css.getPropertyValue(v).trim();
   if(!window.LightweightCharts){ el.innerHTML=`<div class="empty">${tr("চার্ট লোড হয়নি","Chart failed to load")}</div>`; }
   else{
-    chart=LightweightCharts.createChart(el,{autoSize:true,layout:{background:{color:"transparent"},textColor:c("--muted"),fontFamily:"IBM Plex Mono"},
+    chart=LightweightCharts.createChart(el,{autoSize:true,layout:{background:{color:"transparent"},textColor:c("--muted"),fontFamily:"Inter"},
       grid:{vertLines:{color:c("--line")},horzLines:{color:c("--line")}},rightPriceScale:{borderColor:c("--line")},timeScale:{borderColor:c("--line"),timeVisible:true},crosshair:{mode:0},localization:{locale:"en-US"}});
     var candles=chart.addCandlestickSeries({upColor:c("--up"),downColor:c("--down"),borderVisible:false,wickUpColor:c("--up"),wickDownColor:c("--down")});
     var e9=chart.addLineSeries({color:"#F2B33D",lineWidth:2,priceLineVisible:false,lastValueVisible:false});
@@ -1623,7 +1688,7 @@ async function pageEngine(){
   <section class="eg-hero">
     <div>
       <span class="pill-live"><span class="dot"></span>${tr("লাইভ · অটোমেটেড সিগনাল ইঞ্জিন","Live · Automated signal engine")}</span>
-      <h1>BEWON <span class="grad-text">Engine</span> <span style="font-size:.38em;color:var(--muted);font-family:'IBM Plex Mono',monospace">v${ENGINE_VER}</span></h1>
+      <h1>BEWON <span class="grad-text">Engine</span> <span style="font-size:.38em;color:var(--muted);font-family:'Inter','Hind Siliguri',sans-serif">v${ENGINE_VER}</span></h1>
       <p class="tag">${tr("নিয়ম মেনে চলা, আবেগহীন সিগনাল — দিনরাত ২৪ ঘণ্টা।","Rule-based, emotion-free signals — around the clock.")}</p>
       <p>${tr(`BEWON Engine হলো আমাদের নিজের বানানো সিগনাল বট। প্রতি ১৫ মিনিটে লাইভ মার্কেট ডেটা দেখে ${coins.length}টা ক্রিপ্টো আর ${fxs.length}টা Forex/Gold পেয়ার বিশ্লেষণ করে। ভালো সেটআপ পেলে Entry, Target, Stop Loss আর Confidence % সহ Telegram-এ পাঠায়। সাথে দৈনিক সারাংশ আর ক্রিপ্টো নিউজও পাঠায়।`,
         `BEWON Engine is our own signal bot. Every 15 minutes it reads live market data for ${coins.length} crypto and ${fxs.length} Forex/Gold pairs. When it finds a good setup it sends Entry, Target, Stop Loss and a Confidence % to Telegram, along with a daily digest and crypto news.`)}</p>
@@ -1841,6 +1906,10 @@ const W3_NETS=["BNB Testnet (demo)","Ethereum Sepolia (demo)","Polygon Amoy (dem
 const W3_WORDS="demo-mango demo-river demo-tiger demo-cloud demo-paddy demo-boat demo-lamp demo-kite demo-stone demo-tea demo-rain demo-moon demo-drum demo-jute demo-fish demo-road demo-bell demo-leaf demo-gold demo-sand demo-wind demo-rice demo-star demo-bird".split(" ");
 const W3_TOK={"0xDEMO00000000000000000000000000000000BWN1":{s:"BWN"},"0xDEMO00000000000000000000000000000000BWN7":{s:"BWN",fake:true},"0xDEMO0000000000000000000000000000000DUSDT":{s:"dUSDT"}};
 const hx=n=>Array.from({length:n},()=>Math.floor(Math.random()*16).toString(16)).join("");
+async function totp(key,counter){ try{ const A="ABCDEFGHIJKLMNOPQRSTUVWXYZ234567"; let bits=""; for(const c of key) bits+=A.indexOf(c).toString(2).padStart(5,"0"); const kb=new Uint8Array(Math.floor(bits.length/8)).map((_,i)=>parseInt(bits.slice(i*8,i*8+8),2));
+    const msg=new Uint8Array(8); let c=counter; for(let i=7;i>=0;i--){ msg[i]=c&255; c=Math.floor(c/256); }
+    const k=await crypto.subtle.importKey("raw",kb,{name:"HMAC",hash:"SHA-1"},false,["sign"]), h=new Uint8Array(await crypto.subtle.sign("HMAC",k,msg)), o=h[19]&15;
+    return String((((h[o]&127)<<24)|(h[o+1]<<16)|(h[o+2]<<8)|h[o+3])%1e6).padStart(6,"0"); }catch(e){ return ""; } }
 function scanHeight(){ return 40000000+Math.floor((Date.now()-Date.UTC(2026,0,1))/3000); }
 function scanUrl(h){ return "scan/#/tx/"+h; }
 function loadQR(cb){ if(window.qrcode) return cb(); if(window.__qrL){ window.__qrL.push(cb); return; } window.__qrL=[cb]; const sc=document.createElement("script"); sc.src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"; sc.onload=()=>{ window.__qrL.forEach(f=>{ try{ f(); }catch(e){} }); window.__qrL=[]; }; document.head.appendChild(sc); }
@@ -1862,7 +1931,6 @@ async function pageDemo(){
   else if(hp[2]){ const hc=clean(hp[2]); if(hc){ DEMO_COIN=hc; DEMO_TAB="trade"; if(hp[3]==="sell") side="SELL"; } try{ history.replaceState(null,"","#/demo"); }catch(e){} }
   document.querySelectorAll("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(DEMO_TAB==="wallet"?"assets":["web3","kyc","tools","journal"].includes(DEMO_TAB)?"":"trade")));
   document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.r==="demo"));
-  document.querySelectorAll("#xw a").forEach(a=>a.classList.toggle("on",a.dataset.x===(DEMO_TAB==="web3"?"w3":"ex")));
   const s=await loadSignals(), d=demoLoad(), PX={}, coins=[...new Set([...(s.coins||SITE.botCoins),DEMO_COIN,...Object.keys(d.hold)])].filter(c=>/^[A-Z0-9]{2,12}$/.test(c));
   const sigs=s.open.filter(t=>!isFx(t));
   app.innerHTML=`<div class="dm">
@@ -1914,11 +1982,20 @@ async function pageDemo(){
       const addr=`DEMO-${N.k}-${d.uid}-NOT-A-REAL-ADDRESS`;
       const st=x=>{ const c=demoConf(x), nn=DEMO_NETS.find(n=>n.k===x.net)||N; return x.done||!["dep","wd"].includes(x.type)?`<span class="pill p-tp2">✔ ${tr("সম্পন্ন","Completed")}</span>`:`<span class="pill p-open">⏳ ${Math.min(c,nn.conf)}/${nn.conf}</span>`; };
       const X=sel&&d.wtx.find(x=>x.id===sel);
-      body.innerHTML=`<div class="dm-grid">
+      const ev=d.earn.reduce((a,e)=>a+e.amt,0), fv=d.fut.reduce((a,f)=>a+f.margin,0), ov=d.orders.reduce((a,o)=>a+(o.side==="BUY"?o.usdt:o.cost),0), tot=d.cash+v+ev+fv+ov, ready=hs.every(([c])=>PX[c]);
+      const today=new Date().toISOString().slice(0,10); if(ready&&(!d.day||d.day.k!==today)){ d.day={k:today,v:tot,f:demoFunded(d)}; demoSave(d); }
+      const pnl=d.day&&ready?tot-d.day.v-(demoFunded(d)-d.day.f):0, pnp=d.day&&d.day.v?pnl/d.day.v*100:0;
+      const parts=[["USDT",d.cash],...hs.map(([c,h])=>[c,PX[c]?h.qty*PX[c]:h.cost]),["Earn",ev],["Futures",fv],["Orders",ov]].filter(x=>x[1]>0.005), col=i=>["#2f7fd1","#f0b90b","#0ecb81","#9b6cf0","#f6465d","#17b8c9"][i%6];
+      const ic={dep:"M12 4v14M6 12l6 6 6-6",wd:"M12 20V6M6 12l6-6 6 6",cv:"M4 9h15M15 5l4 4-4 4M20 15H5M9 11l-4 4 4 4",en:"M12 21V10M12 10c0-4 3-6 7-6 0 4-2 7-7 7M12 13c0-3-2-5-6-5 0 3 2 6 6 6"};
+      body.innerHTML=`<div class="av card"><div class="av-l">${tr("আনুমানিক মোট মূল্য","Est. Total Value")} <span class="pill p-open">${fake}</span></div>
+          <div class="av-t">${usd(tot)} <small>USDT</small></div><div class="av-s">≈ $${usd(tot)}</div>
+          <div class="av-p"><u>${tr("আজকের লাভ/ক্ষতি","Today's PNL")}</u> <span class="${pnl>=0?"up":"down"}">${pnl>=0?"+":""}${usd(pnl)} USDT (${pnp>=0?"+":""}${pnp.toFixed(2)}%)</span></div>
+          <div class="av-a">${[["dep",tr("টাকা যোগ","Add Funds")],["wd",tr("পাঠান","Send")],["cv",tr("কনভার্ট","Convert")],["en","Earn"]].map(([k,n])=>`<button type="button" data-av="${k}"><i><svg viewBox="0 0 24 24"><path d="${ic[k]}"/></svg></i>${n}</button>`).join("")}</div></div>
+        <div class="card av-al"><span>${tr("কোথায় কত আছে","Allocation")}</span><div class="pf-bar">${parts.map((x,i)=>`<i style="width:${Math.max(1.5,x[1]/(tot||1)*100).toFixed(2)}%;background:${col(i)}"></i>`).join("")}</div></div>
+        <div class="card av-list"><div class="av-r"><span>${logo("USDT")}</span><span><b>USDT</b><small>TetherUS</small></span><span class="q"><b>${usd(d.cash)}</b><small>${usd(d.cash)} USDT</small></span><span class="bt"><button type="button" data-av="en">Earn</button><button type="button" data-av="tr">${tr("ট্রেড","Trade")}</button></span></div>
+          ${hs.map(([c,h])=>{ const val=PX[c]?h.qty*PX[c]:h.cost, l=val-h.cost; return `<div class="av-r"><span>${logo(c)}</span><span><b>${esc(c)}</b><small>${esc(NAMES[c]||c)}</small></span><span class="q"><b>${qtyF(h.qty)}</b><small>${usd(val)} USDT</small></span><span class="pn"><span>${tr("এখনো না-নেওয়া লাভ/ক্ষতি","Unrealized PNL")}</span><span class="${l>=0?"up":"down"}">${l>=0?"+":""}${usd(l)} USDT (${(l/h.cost*100).toFixed(2)}%)</span></span><span class="bt"><button type="button" data-av="cv">${tr("কনভার্ট","Convert")}</button><button type="button" data-qt="${esc(c)}" data-qs="SELL">${tr("ট্রেড","Trade")}</button></span></div>`; }).join("")}</div>
+        <div class="dm-grid">
         <div style="display:grid;gap:16px">
-          <div class="dm-panel card"><h3>👛 ${tr("ডেমো ওয়ালেট","Demo wallet")}</h3>
-            <div class="wl-tot"><span>${tr("মোট মূল্য","Total value")}</span><b>${usd(d.cash+v)} <small>USDT</small></b></div>
-            <div class="wl-as"><div><span>${logo("USDT")}<b>USDT</b></span><span>${usd(d.cash)}</span></div>${hs.map(([c,h])=>`<div><span>${logo(c)}<b>${esc(c)}</b></span><span>${qtyF(h.qty)}<small>≈ ${usd(PX[c]?h.qty*PX[c]:h.cost)} USDT</small></span></div>`).join("")}</div></div>
           <form class="dm-panel card" id="wlF">
             <div class="dm-side"><button type="button" class="b ${mode==="dep"?"on":""}" data-m="dep">↓ ${tr("ডিপোজিট","Deposit")}</button><button type="button" class="s ${mode==="wd"?"on":""}" data-m="wd">↑ ${tr("উইথড্র","Withdraw")}</button></div>
             <label class="dm-f">${tr("কয়েন","Coin")}<select disabled><option>USDT (${fake})</option></select></label>
@@ -1949,6 +2026,7 @@ async function pageDemo(){
             :`<div class="dm-empty">${tr("এখনো কোনো ডেমো লেনদেন নেই। বাঁ পাশ থেকে একটা ডেমো ডিপোজিট করে দেখুন।","No demo transactions yet. Try a demo deposit on the left.")}</div>`}</div>
         </div></div>`;
       drawQR($("#wlQr"),addr);
+      body.querySelectorAll("[data-av]").forEach(b=>b.onclick=()=>{ const k=b.dataset.av; if(k==="dep"||k==="wd"){ mode=k; draw(); const f=$("#wlF"); if(f) f.scrollIntoView({behavior:"smooth",block:"start"}); } else { DEMO_TAB=k==="cv"?"conv":k==="en"?"earn":"trade"; pageDemo(); } });
       const m=(t,ok)=>{ const e=$("#wlMsg"); e.textContent=t; e.className="dm-msg "+(ok?"ok":"err"); };
       body.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{ mode=b.dataset.m; draw(); });
       body.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{ net=b.dataset.n; draw(); });
@@ -2206,7 +2284,8 @@ async function pageDemo(){
   }
 
   if(DEMO_TAB==="tools"){ // ---------------- portfolio, price alerts, security centre ----------------
-    let msgT="";
+    let msgT="", faMsg="", faOk=true; if(!d.sec.key){ d.sec.key=Array.from({length:16},()=>"ABCDEFGHIJKLMNOPQRSTUVWXYZ234567"[Math.floor(Math.random()*32)]).join(""); demoSave(d); }
+    const faTick=async()=>{ const e=$("#faNow"); if(!e) return; const t=Date.now()/30000; e.textContent=await totp(d.sec.key,Math.floor(t)); const b=$("#faBar"); if(b) b.style.width=((1-(t%1))*100).toFixed(0)+"%"; };
     const SEC=[["2fa",tr("2FA (Google Authenticator) চালু","2FA (Google Authenticator) on"),tr("পাসওয়ার্ড চুরি হলেও অ্যাকাউন্ট বাঁচে। SMS-এর চেয়ে অ্যাপ ভালো।","Protects the account even if the password leaks. An app is safer than SMS.")],["aph",tr("Anti-phishing কোড সেট","Anti-phishing code set"),tr("এক্সচেঞ্জের আসল ইমেইলে আপনার গোপন কোড থাকবে। না থাকলে ইমেইল নকল।","Real exchange emails carry your secret code. No code means a fake email.")],["wl",tr("উইথড্র Whitelist চালু","Withdrawal whitelist on"),tr("শুধু আগে থেকে ঠিক করা ঠিকানায় টাকা তোলা যায়।","Funds can only go to addresses you approved earlier.")],["pw",tr("আলাদা, শক্ত পাসওয়ার্ড","Unique, strong password"),tr("অন্য কোনো সাইটের পাসওয়ার্ড এখানে ব্যবহার করবেন না।","Never reuse a password from another site.")],["em",tr("আলাদা ইমেইল","Separate email"),tr("ক্রিপ্টোর জন্য আলাদা ইমেইল রাখুন, সেটাতেও 2FA দিন।","Keep a separate email for crypto, with 2FA on it too.")],["dv",tr("ডিভাইস তালিকা দেখা","Device list checked"),tr("অচেনা ডিভাইস দেখলে সাথে সাথে সরান আর পাসওয়ার্ড বদলান।","Remove unknown devices at once and change the password.")]];
     const draw=()=>{ if(!alive()) return; const hs=Object.entries(d.hold), hv=hs.map(([c,h])=>[c,PX[c]?h.qty*PX[c]:h.cost]), ev=d.earn.reduce((a,e)=>a+e.amt,0), fv=d.fut.reduce((a,f)=>a+f.margin,0), ov=d.orders.reduce((a,o)=>a+(o.side==="BUY"?o.usdt:o.cost),0);
       const parts=[["USDT",d.cash],...hv,[tr("Earn","Earn"),ev],[tr("ফিউচার মার্জিন","Futures margin"),fv],[tr("অর্ডারে","In orders"),ov]].filter(x=>x[1]>0.005), tot=parts.reduce((a,x)=>a+x[1],0)||1;
@@ -2226,13 +2305,25 @@ async function pageDemo(){
         <div class="dm-panel card"><h3>🔐 ${tr("সিকিউরিটি সেন্টার","Security centre")} · <span class="${sc>=5?"up":sc>=3?"":"down"}">${sc}/${SEC.length}</span></h3>
           <p class="muted" style="margin:0;font-size:13px">${tr("আসল এক্সচেঞ্জ অ্যাকাউন্টে এগুলো করেছেন? করা থাকলে টিক দিন।","Have you done these on your real exchange account? Tick the ones you have.")}</p>
           <div class="sc-l">${SEC.map(s2=>`<label><input type="checkbox" data-sc="${s2[0]}"${d.sec[s2[0]]?" checked":""}><span><b>${s2[1]}</b><small>${s2[2]}</small></span></label>`).join("")}</div>
-          <div class="wl-addr"><small>${tr("BEWON কখনো আপনার পাসওয়ার্ড, 2FA কোড বা seed phrase চায় না।","BEWON never asks for your password, 2FA code or seed phrase.")}</small></div></div></div>`;
+          <div class="wl-addr"><small>${tr("BEWON কখনো আপনার পাসওয়ার্ড, 2FA কোড বা seed phrase চায় না।","BEWON never asks for your password, 2FA code or seed phrase.")}</small></div>
+          <h3 style="margin-top:6px">📲 ${tr("Google Authenticator অনুশীলন","Google Authenticator practice")} ${d.sec.fa?`<span class="pill p-tp2">✔ ${tr("শেখা হয়েছে","Done")}</span>`:""}</h3>
+          <p class="muted" style="margin:0;font-size:13px">${tr("১) ফোনে Google Authenticator অ্যাপ খুলুন। ২) এই QR স্ক্যান করুন। ৩) অ্যাপে যে ৬ সংখ্যার কোড আসবে সেটা নিচে লিখুন। কোড প্রতি ৩০ সেকেন্ডে বদলায়।","1) Open the Google Authenticator app. 2) Scan this QR. 3) Type the 6-digit code from the app below. The code changes every 30 seconds.")}</p>
+          <div class="wl-qr" id="faQr"></div>
+          <div class="wl-addr"><span>${tr("QR স্ক্যান করতে না পারলে এই চাবি অ্যাপে লিখুন (ডেমো চাবি)","If you cannot scan, type this key into the app (demo key)")}</span><code>${d.sec.key}</code></div>
+          <div style="display:flex;gap:8px"><input id="faIn" inputmode="numeric" maxlength="6" placeholder="000000" style="flex:1;min-width:0;width:auto;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--sunk);color:var(--ink);font:600 18px 'Inter','Hind Siliguri',sans-serif;letter-spacing:.2em"><button type="button" class="btn btn-primary" id="faGo">${tr("যাচাই","Verify")}</button></div>
+          <div class="dm-msg ${faOk?"ok":"err"}">${faMsg}</div>
+          <details><summary class="muted" style="font-size:13px;cursor:pointer">${tr("অ্যাপ নেই? এখনকার কোড দেখুন","No app? Show the current code")}</summary><div class="fa-code" id="faNow">······</div><div class="fa-bar"><i id="faBar"></i></div></details>
+          <p class="muted" style="margin:0;font-size:12px">${tr("এই চাবি শুধু অনুশীলনের জন্য, কোনো অ্যাকাউন্ট রক্ষা করে না। আসল এক্সচেঞ্জের 2FA চাবি বা ব্যাকআপ কোড কাউকে দেবেন না।","This key is for practice only and protects no account. Never share a real exchange's 2FA key or backup codes.")}</p></div></div>`;
+      drawQR($("#faQr"),`otpauth://totp/BEWON-Demo:${d.uid}?secret=${d.sec.key}&issuer=BEWON-Demo`);
+      $("#faGo").onclick=async()=>{ const v=$("#faIn").value.trim(), now=Math.floor(Date.now()/30000); let ok=false; for(const k of [now-1,now,now+1]) if(await totp(d.sec.key,k)===v) ok=true;
+        faOk=ok; faMsg=ok?tr("✅ কোড ঠিক আছে। আসল এক্সচেঞ্জেও ঠিক এভাবেই 2FA কাজ করে।","✅ Correct code. Real exchange 2FA works exactly like this."):tr("কোড মেলেনি। অ্যাপের এখনকার কোডটা আবার দেখে লিখুন।","Code did not match. Check the current code in the app and try again."); if(ok){ d.sec.fa=true; demoSave(d); } draw(); };
+      faTick();
       msgT="";
       body.querySelectorAll("[data-sc]").forEach(b=>b.onchange=()=>{ d.sec[b.dataset.sc]=b.checked; demoSave(d); draw(); });
       body.querySelectorAll("[data-ax]").forEach(b=>b.onclick=()=>{ d.alerts=d.alerts.filter(a=>a.id!==b.dataset.ax); demoSave(d); draw(); });
       $("#alF").onsubmit=e=>{ e.preventDefault(); const f=new FormData(e.target), p=+f.get("p"); if(!(p>0)) return; d.alerts.unshift({id:Date.now().toString(36),coin:clean(f.get("c")),dir:String(f.get("dir")),price:p,hit:false}); d.alerts=d.alerts.slice(0,15); demoSave(d); msgT=tr("✅ অ্যালার্ট বসানো হলো।","✅ Alert set."); draw(); }; };
     const tick=async()=>{ if(!alive()) return; await demoPrices([...need(),...d.alerts.map(a=>a.coin),...d.fut.map(f=>f.coin)],PX); if(!alive()) return; if(demoTick(d,PX,null)) demoSave(d); const a=document.activeElement; if(!a||!["INPUT","SELECT"].includes(a.tagName)) draw(); };
-    draw(); await tick(); draw(); every(10000,tick); return;
+    draw(); await tick(); draw(); every(10000,tick); every(1000,faTick); return;
   }
 
   if(DEMO_TAB==="bot"){ // ---------------- demo auto-trade bot ----------------
@@ -2250,11 +2341,12 @@ async function pageDemo(){
           <div class="dm-panel card"><h3>${tr("বটের খোলা ট্রেড","Bot open trades")} <span class="muted" style="font-weight:500">(${hs.length})</span></h3>
             ${hs.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("গড় দাম","Avg")}</th><th class="r">${tr("এখন","Now")}</th><th class="r">TP / SL</th><th class="r">P/L</th></tr></thead><tbody>${hs.map(([k,h])=>{ const p=PX[k], l=p?h.qty*p-h.cost:0; return `<tr><td>${logo(k)} <b>${esc(k)}</b></td><td class="r">${fmtPx(h.cost/h.qty)}</td><td class="r">${p?fmtPx(p):"…"}</td><td class="r">${fmtPx(h.tp)} / ${fmtPx(h.sl)}</td><td class="r ${l>=0?"up":"down"}">${l>=0?"+":""}${usd(l)}</td></tr>`; }).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("বটের কোনো খোলা ট্রেড নেই।","The bot has no open trade.")}</div>`}</div>
           <div class="dm-panel card"><h3>📜 ${tr("বটের শেষ হওয়া ট্রেড","Bot trade history")} <span class="muted" style="font-weight:500">(${sells.length})</span></h3>
-            ${sells.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("কেনা দাম","Entry")}</th><th class="r">${tr("বেচা দাম","Exit")}</th><th class="r">P/L</th><th>${tr("কারণ","Reason")}</th><th class="r">${tr("কখন","When")}</th></tr></thead><tbody>${sells.slice(0,50).map(x=>{ const pc=x.avg?(x.price*(1-DEMO_FEE)/x.avg-1)*100:null; return `<tr><td>${logo(x.coin)} <b>${esc(x.coin)}</b><div class="muted" style="font-size:12px">${qtyF(x.qty)}</div></td><td class="r">${x.avg?fmtPx(x.avg):"—"}</td><td class="r">${fmtPx(x.price)}</td><td class="r ${x.pl>=0?"up":"down"}">${x.pl>=0?"+":""}${usd(x.pl)}${pc!=null?`<div style="font-size:11.5px">${pc>=0?"+":""}${pc.toFixed(2)}%</div>`:""}</td><td><span class="pill ${x.why==="TP"?"p-tp2":x.why==="SL"?"p-sl":"p-flat"}">${esc(x.why||"—")}</span></td><td class="r muted" style="font-size:12.5px">${when(x.t)}</td></tr>`; }).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("বট এখনো কোনো ট্রেড শেষ করেনি।","The bot has not closed a trade yet.")}</div>`}</div>
+            ${sells.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("কেনা দাম","Entry")}</th><th class="r">${tr("বেচা দাম","Exit")}</th><th class="r">P/L</th><th>${tr("কারণ","Reason")}</th><th class="r">${tr("কখন","When")}</th></tr></thead><tbody>${sells.slice(0,50).map(x=>{ const pc=x.avg?(x.price*(1-DEMO_FEE)/x.avg-1)*100:null; return `<tr><td>${logo(x.coin)} <b>${esc(x.coin)}</b><div class="muted" style="font-size:12px">${qtyF(x.qty)}</div></td><td class="r">${x.avg?fmtPx(x.avg):"—"}</td><td class="r">${fmtPx(x.price)}</td><td class="r ${x.pl>=0?"up":"down"}">${x.pl>=0?"+":""}${usd(x.pl)}${pc!=null?`<div style="font-size:11.5px">${pc>=0?"+":""}${pc.toFixed(2)}%</div>`:""}</td><td><span class="pill ${x.why==="TP"?"p-tp2":x.why==="SL"?"p-sl":"p-flat"}">${esc(x.why||"—")}</span></td><td class="r muted" style="font-size:12.5px">${when(x.t)}<div><button class="xs" data-rc="${sells.indexOf(x)}">🧾 ${tr("রসিদ","Receipt")}</button></div></td></tr>`; }).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("বট এখনো কোনো ট্রেড শেষ করেনি।","The bot has not closed a trade yet.")}</div>`}</div>
           <div class="dm-panel card"><h3>🧾 ${tr("বটের কাজের তালিকা","Bot activity")}</h3>
             ${bt.length?`<div class="tbl-wrap dm"><table><tbody>${bt.slice(0,25).map(x=>`<tr><td><b>${x.type==="buy"?tr("কিনেছে","Bought"):tr("বেচেছে","Sold")}</b> · ${esc(x.coin)}${x.why?` <span class="pill p-flat">${esc(x.why)}</span>`:""}<div class="muted" style="font-size:12px">${ago(x.t)}</div></td><td class="r">${qtyF(x.qty)} @ ${fmtPx(x.price)}</td><td class="r ${x.type==="sell"?(x.pl>=0?"up":"down"):""}">${x.type==="sell"?(x.pl>=0?"+":"")+usd(x.pl):"−"+usd(x.usdt)}</td></tr>`).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("বট এখনো কোনো ট্রেড করেনি। চালু রাখলে নতুন সিগনাল এলে করবে।","No bot trades yet. Leave it on and it will act on the next signal.")}</div>`}</div>
           <div class="dm-panel card"><h3>${tr("বট কীভাবে কাজ করে","How the bot works")}</h3><ol class="dx-how"><li>${tr("নতুন BUY সিগনাল এলে, আর Confidence আপনার সীমার ওপরে হলে, ডেমো টাকায় কেনে।","When a new BUY signal arrives with confidence above your limit, it buys with demo money.")}</li><li>${tr("সিগনালের TP2 আর Stop Loss নিজে বসায়।","It sets the signal's TP2 and stop loss by itself.")}</li><li>${tr("দাম TP বা SL ছুঁলে, বা সিগনাল বন্ধ হলে, নিজে বেচে দেয়।","It sells when price hits TP or SL, or when the signal closes.")}</li><li>${tr("এটা স্পট ডেমো, তাই SELL সিগনালে নতুন ট্রেড নেয় না।","This is spot demo, so it does not open trades on SELL signals.")}</li></ol></div>
         </div></div>`;
+      body.querySelectorAll("[data-rc]").forEach(b2=>b2.onclick=()=>showReceipt(sells[+b2.dataset.rc],d));
       $("#bxT").onclick=()=>{ d.bot.on=!d.bot.on; demoSave(d); draw(); if(d.bot.on) tick(); };
       $("#bxA").onchange=e=>{ d.bot.amt=Math.max(10,Math.min(5000,+e.target.value||200)); demoSave(d); };
       $("#bxM").onchange=e=>{ d.bot.min=+e.target.value; demoSave(d); }; $("#bxX").onchange=e=>{ d.bot.max=+e.target.value; demoSave(d); }; };
@@ -2273,7 +2365,7 @@ async function pageDemo(){
       <div class="dm-prof card"><div class="dm-av" id="dmAv"></div><div class="nm"><span id="dmName"></span><button id="dmRen" aria-label="${tr("নাম বদলান","Rename")}">✏️</button></div>
         <div class="dm-kv"><span>${tr("ডেমো আইডি","Demo ID")}</span><b>${esc(d.uid)}</b><span>${tr("শুরু","Since")}</span><b>${new Date(d.since).toLocaleDateString(LANG==="en"?"en-GB":"bn-BD")}</b><span>${tr("মোট ট্রেড","Trades")}</span><b id="dmN"></b><span>${tr("অ্যাকাউন্টের ধরন","Account type")}</span><b style="color:var(--accent)">DEMO</b></div></div>
       <div class="dm-bal card">
-        <div><span class="muted" style="font-size:13px">${tr("মোট ডেমো ব্যালান্স","Total demo balance")}</span><div class="big"><span id="dmTot">—</span> <small>USDT</small></div><div id="dmPL" style="font:600 14px 'IBM Plex Mono',monospace;margin-top:6px"></div></div>
+        <div><span class="muted" style="font-size:13px">${tr("মোট ডেমো ব্যালান্স","Total demo balance")}</span><div class="big"><span id="dmTot">—</span> <small>USDT</small></div><div id="dmPL" style="font:600 14px 'Inter','Hind Siliguri',sans-serif;margin-top:6px"></div></div>
         <div class="dm-row3"><div><span>${tr("নগদ","Cash")}</span><b id="dmCash"></b></div><div><span>${tr("কয়েনে","In coins")}</span><b id="dmVal"></b></div><div><span>${tr("অর্ডার, Earn, ফিউচার","Orders, Earn, futures")}</span><b id="dmCost"></b></div></div>
         <div class="dm-act"><button class="btn btn-primary" id="dmTop">＋ ${tr(`${DEMO_TOPUP.toLocaleString("en-US")} ডেমো USDT নিন`,`Add ${DEMO_TOPUP.toLocaleString("en-US")} demo USDT`)}</button><button class="btn btn-ghost" id="dmReset">↺ ${tr("রিসেট","Reset")}</button><button class="btn btn-ghost" id="dmBot">🤖 ${tr("অটো বট","Auto bot")}</button></div>
         <div class="dx-qk">${[["wallet","↓",tr("ডিপোজিট","Deposit")],["wallet","↑",tr("উইথড্র","Withdraw")],["p2p","🤝","P2P"],["conv","🔄",tr("কনভার্ট","Convert")],["earn","🌱","Earn"],["fut","📈",tr("ফিউচার","Futures")]].map(x=>`<button type="button" data-qk="${x[0]}"><i>${x[1]}</i>${x[2]}</button>`).join("")}</div>
@@ -2307,7 +2399,7 @@ async function pageDemo(){
   const coin=()=>{ const e=$("#dmCoin"); return e?e.value:DEMO_COIN; };
   // chart
   const el=$("#dxChart"), css=getComputedStyle(document.documentElement), cv=v=>css.getPropertyValue(v).trim();
-  if(window.LightweightCharts){ chart=LightweightCharts.createChart(el,{autoSize:true,layout:{background:{color:"transparent"},textColor:cv("--muted"),fontFamily:"IBM Plex Mono"},
+  if(window.LightweightCharts){ chart=LightweightCharts.createChart(el,{autoSize:true,layout:{background:{color:"transparent"},textColor:cv("--muted"),fontFamily:"Inter"},
       grid:{vertLines:{color:cv("--line")},horzLines:{color:cv("--line")}},rightPriceScale:{borderColor:cv("--line")},timeScale:{borderColor:cv("--line"),timeVisible:true},crosshair:{mode:0},localization:{locale:"en-US"}});
     cs=chart.addCandlestickSeries({upColor:cv("--up"),downColor:cv("--down"),borderVisible:false,wickUpColor:cv("--up"),wickDownColor:cv("--down")}); }
   else el.innerHTML=`<div class="empty">${tr("চার্ট লোড হয়নি","Chart failed to load")}</div>`;
@@ -2580,7 +2672,7 @@ async function addBacktest(){
       <div class="card stat"><span class="k">${tr("গড়, প্রতি ট্রেড","Average per trade")}</span><span class="v ${cls(bt.all.avg_r)}">${R(bt.all.avg_r)}</span></div>
       <div class="card stat"><span class="k">${tr("সর্বোচ্চ পতন","Max drawdown")}</span><span class="v down">${bt.all.max_dd_r}R</span></div>
     </div>
-    ${m.length?`<div class="card dm-panel" style="margin-top:12px"><h3>${tr("মাস অনুযায়ী জমা ফল (R)","Cumulative result by month (R)")}</h3><div style="display:flex;align-items:center;gap:3px;height:160px">${m.map(x=>`<div title="${x.m}: ${R(x.eq)}" style="flex:1;height:100%;display:flex;flex-direction:column;justify-content:center"><div style="height:50%;display:flex;align-items:flex-end">${x.eq>0?`<i style="display:block;width:100%;height:${Math.abs(x.eq)/mx*100}%;background:var(--up);border-radius:3px 3px 0 0"></i>`:""}</div><div style="height:50%">${x.eq<0?`<i style="display:block;width:100%;height:${Math.abs(x.eq)/mx*100}%;background:var(--down);border-radius:0 0 3px 3px"></i>`:""}</div></div>`).join("")}</div><div class="muted" style="display:flex;justify-content:space-between;font:500 11.5px 'IBM Plex Mono',monospace"><span>${m[0].m}</span><span>${m[m.length-1].m}</span></div></div>`:""}
+    ${m.length?`<div class="card dm-panel" style="margin-top:12px"><h3>${tr("মাস অনুযায়ী জমা ফল (R)","Cumulative result by month (R)")}</h3><div style="display:flex;align-items:center;gap:3px;height:160px">${m.map(x=>`<div title="${x.m}: ${R(x.eq)}" style="flex:1;height:100%;display:flex;flex-direction:column;justify-content:center"><div style="height:50%;display:flex;align-items:flex-end">${x.eq>0?`<i style="display:block;width:100%;height:${Math.abs(x.eq)/mx*100}%;background:var(--up);border-radius:3px 3px 0 0"></i>`:""}</div><div style="height:50%">${x.eq<0?`<i style="display:block;width:100%;height:${Math.abs(x.eq)/mx*100}%;background:var(--down);border-radius:0 0 3px 3px"></i>`:""}</div></div>`).join("")}</div><div class="muted" style="display:flex;justify-content:space-between;font:500 11.5px 'Inter','Hind Siliguri',sans-serif"><span>${m[0].m}</span><span>${m[m.length-1].m}</span></div></div>`:""}
     <div class="card tbl-wrap" style="margin-top:12px"><table>${head}<tbody>${row(tr("সব সিগনাল","All signals"),bt.all)}${row("BUY",bt.buy)}${row("SELL",bt.sell)}${row(tr("ফিল্টার ছাড়া (সব সেটআপ)","Unfiltered (every setup)"),bt.unfiltered)}</tbody></table></div>
     <div class="card tbl-wrap" style="margin-top:12px"><table>${head.replace("<th></th>",`<th>Confidence</th>`)}<tbody>${(bt.by_conf||[]).map(x=>row(x.bucket+"%",x)).join("")}</tbody></table></div>
     <div class="card tbl-wrap" style="margin-top:12px"><table>${head.replace("<th></th>",`<th>${tr("কয়েন","Coin")}</th>`)}<tbody>${(bt.by_coin||[]).map(x=>row(x.coin,x)).join("")}</tbody></table></div>
@@ -2610,7 +2702,6 @@ async function route(){
   timers.forEach(clearInterval); timers=[]; liveStop(); if(chart){ chart.remove(); chart=null; } stopHero3D();
   const parts=(location.hash.replace(/^#\/?/,"")||"").split("/"), r=parts[0]||"home";
   document.querySelectorAll("#nav a,#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
-  if(r!=="demo") document.querySelectorAll("#xw a").forEach(a=>a.classList.toggle("on",a.dataset.x==="ex"));
   $("#moreBtn").classList.toggle("on",["forex","engine","news","about","square","learn"].includes(r));
   document.title=`${SITE.name} — ${tr("ফ্রি ক্রিপ্টো সিগনাল","Free crypto signals")}`;
   window.scrollTo(0,0); document.body.classList.toggle("is-home",r==="home"); if(r==="home"){ if(!BGW) startBgWorld(); } else stopBgWorld();
@@ -2628,6 +2719,16 @@ async function route(){
 }
 document.addEventListener("click",e=>{ const q=e.target.closest("[data-qt]"); if(q){ e.preventDefault(); e.stopPropagation(); openQT(q.dataset.qt,q.dataset.qs||"BUY"); } },true);
 app.addEventListener("click",e=>{ const tr_=e.target.closest("tr[data-go]"); if(tr_ && !e.target.closest("a") && !e.target.closest("[data-qt]")) location.hash=tr_.dataset.go; });
+/* receipt of a finished demo bot trade: the real demo result (win or loss), stamped DEMO */
+function showReceipt(x,d){ const o=$("#rc"); if(o) o.remove(); if(!x) return; const pc=x.avg?(x.price*(1-DEMO_FEE)/x.avg-1)*100:0, up=x.pl>=0, w=document.createElement("div"); w.id="rc";
+  w.innerHTML=`<div class="qt-bg"></div><div class="rc-box"><div class="rc-card"><div class="rc-wm">DEMO</div>
+    <div class="rc-h"><img src="logo-mark.png" alt=""><div><b>BEWON Signals</b><small>${tr("ডেমো অটো-ট্রেড রসিদ","Demo auto-trade receipt")}</small></div><span class="pill p-open">${tr("নকল টাকা","PLAY MONEY")}</span></div>
+    <div class="rc-big ${up?"up":"down"}">${up?"+":""}${usd(x.pl)} <small>USDT</small><div>${pc>=0?"+":""}${pc.toFixed(2)}%</div></div>
+    <div class="rc-kv"><span>${tr("কয়েন","Coin")}</span><b>${esc(x.coin)}/USDT</b><span>${tr("কেনা দাম","Entry")}</span><b>${x.avg?fmtPx(x.avg):"—"}</b><span>${tr("বেচা দাম","Exit")}</span><b>${fmtPx(x.price)}</b><span>${tr("পরিমাণ","Quantity")}</span><b>${qtyF(x.qty)}</b><span>${tr("বন্ধ হওয়ার কারণ","Closed by")}</span><b>${esc(x.why||"—")}</b><span>${tr("সময়","Time")}</span><b>${when(x.t)}</b><span>${tr("ডেমো আইডি","Demo ID")}</span><b>${esc(d.uid)}</b></div>
+    <p>${tr("এটা ডেমো (নকল টাকার) ট্রেডের ফলাফল। আসল লাভ বা আয়ের প্রমাণ নয়, আর ভবিষ্যতের ফলাফলের নিশ্চয়তাও নয়।","This is the result of a demo (play-money) trade. It is not proof of real profit or income and does not guarantee future results.")}</p></div>
+    <div class="dm-act" style="justify-content:center"><button class="btn btn-primary" id="rcS">${tr("শেয়ার করুন","Share")}</button><button class="btn btn-ghost" id="rcX">${tr("বন্ধ","Close")}</button></div></div>`;
+  document.body.appendChild(w); const cl=()=>w.remove(); w.querySelector(".qt-bg").onclick=cl; $("#rcX").onclick=cl;
+  $("#rcS").onclick=()=>{ const t=`BEWON Signals — DEMO (play money) bot trade: ${x.coin} ${up?"+":""}${usd(x.pl)} USDT (${pc>=0?"+":""}${pc.toFixed(2)}%). Not real profit. ${location.origin+location.pathname}`; if(navigator.share) navigator.share({text:t}).catch(()=>{}); else { try{ navigator.clipboard.writeText(t); }catch(e){} $("#rcS").textContent="✓ "+tr("কপি হয়েছে","Copied"); } }; }
 /* quick demo trade from anywhere */
 let QT=null;
 function closeQT(){ if(QT){ clearInterval(QT.iv); QT=null; } const e=$("#qt"); if(e) e.remove(); }
