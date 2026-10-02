@@ -339,7 +339,12 @@ input{min-width:0;width:220px;max-width:100%}
 main,footer{position:relative;z-index:1}
 footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--muted);font-size:14px}
 footer .wrap{display:grid;gap:10px}
-footer nav{display:flex;gap:16px;flex-wrap:wrap}
+footer nav{display:flex;gap:8px;flex-wrap:wrap}
+footer nav a{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border:1px solid var(--line);border-radius:10px;color:var(--muted);font-size:13px;text-decoration:none}
+footer nav a:hover{color:var(--ink,#fff);border-color:var(--p1)}
+footer nav a svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sheet-note{margin:14px 2px 0;font-size:11.5px;line-height:1.5;color:var(--muted)}
+.srch{display:none}
 .langbtn{border:1px solid var(--line);background:var(--surface);color:var(--ink);height:38px;padding:0 10px;border-radius:10px;font:700 13px "IBM Plex Mono","Hind Siliguri",monospace;cursor:pointer;white-space:nowrap}
 .langbtn:hover{background:var(--sunk)}
 .palwrap{position:relative}
@@ -568,6 +573,13 @@ body{top:0!important}
   .hx-visual{display:none}
   .hx h1{font-size:30px;line-height:1.15}
   .hx h1 br{display:none}
+  .hx .cta .btn-ghost{display:none}
+  .hx .cta .btn-primary{width:100%;justify-content:center;text-align:center}
+  footer{border-top:0;padding-block:4px 14px;font-size:11px;text-align:center;opacity:.75}
+  footer nav,footer .f-src{display:none}
+  footer .wrap{gap:4px}
+  .srch{display:flex;align-items:center;gap:10px;height:42px;padding:0 14px;border-radius:12px;background:var(--card,rgba(255,255,255,.06));border:1px solid var(--line);color:var(--muted);font-size:14px;text-decoration:none}
+  .srch svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
   #mkt table{font-size:14px}
   #mkt th:first-child,#mkt td:first-child{display:none}
   #mkt th,#mkt td{padding:11px 8px}
@@ -628,14 +640,15 @@ body{top:0!important}
   <h3 data-bn="সব সার্ভিস" data-en="All services">সব সার্ভিস</h3>
   <div class="qa" id="sheetQa"></div>
   <button class="btn btn-primary inst" id="instBtn" hidden><span data-bn="📲 অ্যাপ হিসেবে ইনস্টল করুন" data-en="📲 Install as an app">📲 অ্যাপ হিসেবে ইনস্টল করুন</span></button>
+  <p class="sheet-note" data-bn="দাম: Binance public API · Fear &amp; Greed: alternative.me · সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়।" data-en="Prices: Binance public API · Fear &amp; Greed: alternative.me · Signals are information only, not financial advice.">দাম: Binance public API · Fear &amp; Greed: alternative.me · সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়।</p>
 </div>
 
 
 <footer>
   <div class="wrap">
-    <nav><a href="#/" data-bn="হোম" data-en="Home">হোম</a><a href="#/market" data-bn="মার্কেট" data-en="Market">মার্কেট</a><a href="#/signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a><a href="#/forex">Forex</a><a href="#/engine" data-bn="BEWON Engine" data-en="BEWON Engine">BEWON Engine</a><a href="#/demo" data-bn="ডেমো ট্রেড" data-en="Demo trading">ডেমো ট্রেড</a><a href="BEWON_Guide.pdf" download="BEWON_Guide.pdf" data-bn="গাইড PDF" data-en="Guide PDF">গাইড PDF</a><a href="#/learn" data-bn="শেখা ও ইনসাইট" data-en="Learn &amp; insights">শেখা ও ইনসাইট</a><a href="#/news" data-bn="নিউজ" data-en="News">নিউজ</a><a href="#/about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
-    <p data-bn="⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।" data-en="⚠️ Signals on this site are for information only, not financial advice. Crypto carries a real risk of loss. Do your own research.">⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।</p>
-    <p><span data-bn="দাম" data-en="Prices">দাম</span>: Binance public API · Fear &amp; Greed Index: <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">alternative.me</a> · <span data-bn="কয়েন আইকন" data-en="Coin icons">কয়েন আইকন</span>: cryptocurrency-icons</p>
+    <nav id="footNav"></nav>
+    <p class="f-risk" data-bn="⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।" data-en="⚠️ Signals on this site are for information only, not financial advice. Crypto carries a real risk of loss. Do your own research.">⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।</p>
+    <p class="f-src"><span data-bn="দাম" data-en="Prices">দাম</span>: Binance public API · Fear &amp; Greed Index: <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">alternative.me</a> · <span data-bn="কয়েন আইকন" data-en="Coin icons">কয়েন আইকন</span>: cryptocurrency-icons</p>
     <p>© <span id="yr"></span> <span class="bn"></span></p>
   </div>
 </footer>
@@ -705,6 +718,7 @@ function whyText(w){ if(LANG!=="en") return w; for(const [re,en] of WHY_EN){ if(
 function applyStatic(){
   document.documentElement.lang = LANG;
   document.querySelectorAll("[data-bn]").forEach(el=>{ el.textContent = LANG==="en" ? el.dataset.en : el.dataset.bn; });
+  try{ drawFoot(); }catch(e){}
 }
 
 /* ---------- helpers ---------- */
@@ -1052,6 +1066,7 @@ async function pageHome(){
     <div><strong>24/7</strong><span>${tr("অটোমেটিক","Automated")}</span></div>
   </div>
   <div class="ticker" aria-label="${tr("লাইভ দাম","Live prices")}"><div class="ticker-track" id="tkr">${[0,1].map(k=>`<div class="ticker-copy"${k?' aria-hidden="true"':""}>${coins.map(c=>`<span class="tk"><b>${c}</b> <span class="skel">00,000</span></span>`).join("")}</div>`).join("")}</div></div>
+  <a class="srch" href="#/market"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>${tr("কয়েন খুঁজুন… BTC, ETH, SOL","Search coin… BTC, ETH, SOL")}</a>
   <div class="qa">${quickActions()}</div>
   <div class="card mk mk-wrap"><div class="mk-tabs" id="mkTabs"></div><div class="mk-head"><span>${tr("নাম / ভলিউম","Name / Vol")}</span><span>${tr("দাম","Price")}</span><span style="text-align:center">${tr("২৪ ঘণ্টা","24h")}</span></div><div id="mkList">${"<div class='mk-row'><span class='skel'>BTC 0000</span><span class='skel px'>00000</span><span class='skel'>0.00%</span></div>".repeat(6)}</div><a class="mk-more" href="#/market">${tr("সব মার্কেট দেখুন →","View all markets →")}</a></div>
 
@@ -1889,6 +1904,8 @@ const AICON={"home": `<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>`, "mar
 const asv=k=>`<svg viewBox="0 0 24 24">${AICON[k]}</svg>`;
 function quickActions(){ const a=[["signals","#/signals",tr("সিগনাল","Signals")],["market","#/market",tr("মার্কেট","Markets")],["forex","#/forex","Forex"],["demo","#/demo",tr("ডেমো","Demo")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["engine","#/engine",tr("ইঞ্জিন","Engine")],["tg",SITE.telegram,"Telegram"]];
   return a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':""}><i>${asv(k)}</i>${n}</a>`).join(""); }
+function drawFoot(){ const el=$("#footNav"); if(!el) return; const a=[["home","#/",tr("হোম","Home")],["market","#/market",tr("মার্কেট","Market")],["signals","#/signals",tr("সিগনাল","Signals")],["forex","#/forex","Forex"],["engine","#/engine","Engine"],["demo","#/demo",tr("ডেমো","Demo")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["about","#/about",tr("সম্পর্কে","About")],["pdf","BEWON_Guide.pdf",tr("গাইড PDF","Guide PDF")],["tg",SITE.telegram,"Telegram"]];
+  el.innerHTML=a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':k==="pdf"?' download="BEWON_Guide.pdf"':""}>${asv(k)}${n}</a>`).join(""); }
 function drawSheet(){ const el=$("#sheetQa"); if(el) el.innerHTML=quickActions()+`<a href="#/about"><i>${asv("about")}</i>${tr("সম্পর্কে","About")}</a><a href="BEWON_Guide.pdf" download="BEWON_Guide.pdf"><i>${asv("pdf")}</i>${tr("গাইড PDF","Guide PDF")}</a>`; }
 (function(){ const sh=$("#sheet"), bg=$("#sheetBg"), open=o=>{ sh.classList.toggle("open",o); bg.classList.toggle("open",o); };
   $("#moreBtn").onclick=()=>{ drawSheet(); open(!sh.classList.contains("open")); };
@@ -1923,7 +1940,7 @@ window.addEventListener("hashchange",route);
 
 /* ---------- init ---------- */
 $("#brandName").textContent=SITE.name; document.querySelectorAll(".bn").forEach(e=>e.textContent=SITE.name);
-$("#tgTop").href=SITE.telegram; $("#tgFoot").href=SITE.telegram; $("#yr").textContent=new Date().getFullYear();
+$("#tgTop").href=SITE.telegram; drawFoot(); window.addEventListener("hashchange",drawFoot); $("#yr").textContent=new Date().getFullYear();
 /* language picker */
 function gtCookie(v){ const h=location.hostname, parts=h.split("."), doms=["",h]; if(parts.length>2) doms.push("."+parts.slice(-2).join("."));
   doms.forEach(d=>{ document.cookie="googtrans="+(v||"")+";path=/"+(d?";domain="+d:"")+(v?"":";expires=Thu, 01 Jan 1970 00:00:00 GMT"); }); }
