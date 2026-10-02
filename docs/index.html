@@ -805,6 +805,65 @@ h1,h2,h3{letter-spacing:-.015em}
   footer{padding-bottom:20px}
 }
 @media (min-width:861px){.mk-wrap{display:none}}
+
+/* ===== compact app scale on phones (smaller type, tighter rows) ===== */
+@media (max-width:860px){
+  body{font-size:14px;line-height:1.5}
+  main{gap:14px!important;padding-block:10px 22px!important}
+  h2,.sec-head h2{font-size:17px!important;line-height:1.3}h3{font-size:14.5px}
+  .sec-head p,.muted{font-size:12.5px}.eyebrow{font-size:10.5px}
+  .btn{min-height:38px;padding:8px 14px;font-size:13.5px;font-weight:600;border-radius:10px}
+  .top .wrap{padding-block:8px}.brand img{width:32px;height:32px}.brand .bm{font-size:15px}
+  select.langbtn{height:34px;font-size:12px}.iconbtn{width:34px;height:34px}
+  .srch{height:36px;font-size:12.5px;border-radius:10px}
+  .xw a{font-size:12.5px;padding:6px 8px}
+  .hl3{gap:8px}.hl3 a{padding:10px 12px;gap:10px;border-radius:12px}.hl3 i{width:36px;height:36px;border-radius:10px}.hl3 i svg{width:19px;height:19px}
+  .hl3 b{font-size:13.5px}.hl3 small{font-size:11.5px}.hl3 span{font-size:11.5px;padding:5px 10px}
+  .hc2 a{padding:12px;border-radius:12px}.hc2 b{font-size:17px}.hc2 .t{font-size:13px}.hc2 small{font-size:11.5px}.hc2 svg{height:36px}
+  .qa{gap:10px 4px}.qa a{font-size:11.5px;font-weight:500;gap:5px}.qa i{width:42px;height:42px;border-radius:12px}.qa svg{width:20px;height:20px}
+  .mk{border-radius:12px}.mk-tabs{gap:18px;padding:12px 14px 0}.mk-tabs button{font-size:14.5px;padding-bottom:6px}
+  .mk-head{font-size:11px;padding:6px 14px 0}
+  .mk-head,.mk-row{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) 76px;gap:10px;padding-inline:14px}
+  .mk-row{padding-top:9px;padding-bottom:9px}.mk-row .nm{gap:10px}.mk-row .nm img,.mk-row .nm .cl{width:28px;height:28px}
+  .mk-row .nm b,.mk-row .px{font-size:14px}.mk-row .nm small,.mk-row .px small{font-size:11.5px}
+  .chg{padding:6px 0;font-size:12.5px;border-radius:5px}
+  .mk-more{font-size:13px;padding:8px 0 12px}
+  .fd-t button{font-size:15px}.fd-i b{font-size:13.5px}.fd-i small{font-size:11.5px}
+  .tabbar{padding:4px 4px calc(4px + env(safe-area-inset-bottom,0px))!important}.tabbar a,.tabbar button{font-size:10px!important;gap:2px}.tabbar svg{width:21px;height:21px}
+  .tabbar .mid i{width:40px;height:40px;margin-top:-18px;border-width:3px}
+  body{padding-bottom:56px}
+  table{font-size:13px}th,td{padding:9px 10px}th{font-size:10.5px}
+  #mkt table{font-size:13px}#mkt th,#mkt td{padding:9px 5px}#mkt .pill.p-up,#mkt .pill.p-down{min-width:60px;padding:5px 3px;font-size:12px;border-radius:5px}.qt-b{font-size:11.5px;padding:4px 8px}
+  .pill{font-size:10.5px}
+  .card{border-radius:12px}
+  .dm{gap:12px!important}.dm-banner{font-size:11.5px;padding:7px 10px;border-radius:10px}
+  .dm-banner .lg{display:none}.dm-banner{text-align:center;border-style:solid;border-width:0;background:var(--accent-soft)}
+  .dm-tabs{display:flex!important;flex-wrap:nowrap!important;gap:18px!important;overflow-x:auto;scrollbar-width:none;padding:2px 2px 0;border-bottom:1px solid var(--line)}
+  .dm-tabs::-webkit-scrollbar{display:none}
+  .dm-tabs button{flex:none;border:0!important;background:none!important;color:var(--muted)!important;font-size:15px;font-weight:500;padding:4px 0 8px;border-radius:0;white-space:nowrap;border-bottom:2px solid transparent!important}
+  .dm-tabs button.on{color:var(--ink)!important;font-weight:700;border-bottom-color:var(--p1)!important}
+  .mk-row .nm b,.mk-row .px{font-weight:500}.av-r b{font-weight:500}
+  .dm-panel{padding:14px;border-radius:12px;gap:10px}.dm-panel h3{font-size:14px}
+  .dm-f{font-size:11.5px}.dm-f input,.dm-f select,.dm-f textarea{font-size:14px;padding:8px 10px;border-radius:8px}
+  .dm-est{font-size:12px}.dm-side button{font-size:13px;padding:7px}.dm-pct button{font-size:11.5px;padding:5px}
+  .dm-msg{font-size:12.5px}.dm-kv{font-size:12px}.dm-row3 b{font-size:13.5px}.dm-row3 span{font-size:10.5px}
+  .dm-bal{padding:14px}.dm-bal .big{font-size:26px}.dm-prof{display:none}
+  .dx-qk i{width:34px;height:34px;font-size:15px}.dx-qk button{font-size:11px;font-weight:500}
+  .dx-head{padding:10px 12px}.dx-pair select{font-size:14.5px;padding:7px 26px 7px 10px}.dx-px b{font-size:19px!important}.dx-kv b{font-size:12px}.dx-kv span{font-size:10.5px}
+  #dxChart{height:260px!important}.dx-r{font-size:11.5px;padding:3px 4px}.dx-mid{font-size:14.5px;padding:6px 4px}
+  .dx-ot button,.dx-lt button{font-size:13px}
+  .av{padding:14px;border-radius:12px}.av-l,.av-s,.av-p{font-size:12.5px}.av-t{font-size:27px}.av-t small{font-size:12px}
+  .av-a{margin-top:10px}.av-a i{width:44px;height:44px;border-radius:12px}.av-a svg{width:19px;height:19px}.av-a button{font-size:11.5px;gap:6px}
+  .av-al{padding:12px 14px}.av-al span{font-size:12.5px}.av-list{padding:2px 14px}
+  .av-r{padding:11px 0}.av-r img,.av-r .cl{width:30px;height:30px}.av-r b{font-size:14px}.av-r small,.av-r .pn{font-size:11.5px}.av-r .bt button{font-size:12px;padding:5px 16px}
+  .wl-net b{font-size:13px}.wl-net small{font-size:11px}.wl-tx>div{font-size:12.5px;padding:8px 0}
+  .p2-m b{font-size:13px}.p2-p b{font-size:16px}.p2-st li,.dx-how{font-size:12.5px}
+  .qt-box{padding:14px;gap:10px}.qt-h{font-size:14.5px}
+  .sq-post{padding:14px}.sq-post h3{font-size:15px}.sq-post p{font-size:13px;line-height:1.55}
+  .ticket-head,.ticket-body{padding:12px}.lv{font-size:13px;padding:5px 8px}
+  .note{font-size:12px}.prose{font-size:13.5px}.prose h1{font-size:22px!important}
+  .cn-bs .btn{min-height:40px}.coin-head h2{font-size:17px!important}.coin-head .px{font-size:24px!important}
+}
 </style>
 </head>
 <body>
@@ -1936,10 +1995,11 @@ async function pageDemo(){
   app.innerHTML=`<div class="dm">
     <section class="sec-head"><div><span class="eyebrow">${tr("প্র্যাকটিস · টেস্ট","Practice · Test")}</span><h2>${tr("ডেমো এক্সচেঞ্জ","Demo exchange")}</h2>
       <p>${tr("নকল টাকায় আসল এক্সচেঞ্জের মতো ট্রেড শিখুন: চার্ট, অর্ডার বুক, Market ও Limit অর্ডার, TP/SL আর অটো বট।","Learn to trade like on a real exchange with play money: chart, order book, market and limit orders, TP/SL and an auto bot.")}</p></div></section>
-    <div class="dm-banner"><span style="font-size:22px">🧪</span><div><b>${tr("ডেমো অ্যাকাউন্ট — সব টাকা নকল।","Demo account — all money is pretend.")}</b> ${tr("এখানে আসল টাকা জমা দেওয়া, তোলা বা পাঠানো যায় না। সব তথ্য শুধু আপনার এই ব্রাউজারে থাকে, আমাদের কাছে আসে না। ব্রাউজারের ডেটা মুছলে ডেমো অ্যাকাউন্টও মুছে যাবে।","No real money can be deposited, withdrawn or sent. Everything stays in this browser only and never reaches us. Clearing browser data clears the demo account too.")}</div></div>
+    <div class="dm-banner"><span style="font-size:22px">🧪</span><div><b>${tr("ডেমো অ্যাকাউন্ট — সব টাকা নকল।","Demo account — all money is pretend.")}</b> <span class="lg">${tr("এখানে আসল টাকা জমা দেওয়া, তোলা বা পাঠানো যায় না। সব তথ্য শুধু আপনার এই ব্রাউজারে থাকে, আমাদের কাছে আসে না। ব্রাউজারের ডেটা মুছলে ডেমো অ্যাকাউন্টও মুছে যাবে।","No real money can be deposited, withdrawn or sent. Everything stays in this browser only and never reaches us. Clearing browser data clears the demo account too.")}</span></div></div>
     <div class="dm-tabs" role="tablist"><button data-tab="trade" class="${DEMO_TAB==="trade"?"on":""}">🎮 ${tr("ডেমো ট্রেড","Demo trade")}</button><button data-tab="fut" class="${DEMO_TAB==="fut"?"on":""}">📈 ${tr("ফিউচার","Futures")}</button><button data-tab="conv" class="${DEMO_TAB==="conv"?"on":""}">🔄 ${tr("কনভার্ট","Convert")}</button><button data-tab="earn" class="${DEMO_TAB==="earn"?"on":""}">🌱 Earn</button><button data-tab="wallet" class="${DEMO_TAB==="wallet"?"on":""}">👛 ${tr("ওয়ালেট","Wallet")}</button><button data-tab="p2p" class="${DEMO_TAB==="p2p"?"on":""}">🤝 P2P</button><button data-tab="web3" class="${DEMO_TAB==="web3"?"on":""}">🌐 Web3</button><button data-tab="kyc" class="${DEMO_TAB==="kyc"?"on":""}">🪪 KYC</button><button data-tab="bot" class="${DEMO_TAB==="bot"?"on":""}">🤖 ${tr("অটো বট","Auto bot")}</button><button data-tab="tools" class="${DEMO_TAB==="tools"?"on":""}">🧰 ${tr("পোর্টফোলিও ও নিরাপত্তা","Portfolio & security")}</button><button data-tab="journal" class="${DEMO_TAB==="journal"?"on":""}">📒 ${tr("আমার ট্রেড খাতা","My trade journal")}</button></div>
     <div id="dmBody"></div></div>`;
   app.querySelectorAll(".dm-tabs button").forEach(b=>b.onclick=()=>{ DEMO_TAB=b.dataset.tab; pageDemo(); });
+  { const tb=app.querySelector(".dm-tabs"), on=tb&&tb.querySelector(".on"); if(on) tb.scrollLeft=on.offsetLeft-tb.clientWidth/2+on.offsetWidth/2; }
   const body=$("#dmBody");
   const need=()=>[...new Set([...coins,...d.fut.map(f=>f.coin),...Object.keys(d.hold),...d.jr.filter(j=>!j.exit).map(j=>j.coin)])].filter(c=>/^[A-Z0-9]{2,12}$/.test(c));
   const fetchPx=async()=>{ try{ const r=await bget(`/api/v3/ticker/price?symbols=${encodeURIComponent(JSON.stringify(need().map(c=>c+"USDT")))}`);
