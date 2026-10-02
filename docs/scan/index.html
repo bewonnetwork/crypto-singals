@@ -3,138 +3,258 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BEWON TestScan — Demo Explorer</title>
-<meta name="description" content="BEWON TestScan: a pretend blockchain explorer for learning. Nothing here exists on a real blockchain.">
+<title>BEWON TestScan — Demo Testnet Explorer</title>
+<meta name="description" content="BEWON TestScan: a pretend testnet explorer for learning. Nothing here exists on a real blockchain.">
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/png" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600&display=swap">
 <style>
-:root{--bg:#f6f8fb;--card:#fff;--ink:#12161c;--muted:#66707f;--line:#e3e8ef;--pri:#2f7fd1;--pri-soft:#e8f2fc;--up:#0ea66b;--warn:#b7791f;--warn-soft:#fff6e0;--down:#d9364f}
-@media (prefers-color-scheme:dark){:root{--bg:#07090d;--card:#0e131b;--ink:#e6e9ee;--muted:#8b94a3;--line:rgba(255,255,255,.09);--pri:#5aa9f0;--pri-soft:rgba(90,169,240,.12);--warn:#f2b33d;--warn-soft:rgba(242,179,61,.1)}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,"Hind Siliguri",system-ui,sans-serif}
+:root{--bg:#f8f9fb;--card:#fff;--ink:#1b2430;--muted:#6c7785;--line:#e6eaf0;--pri:#1273c4;--pri-soft:#eaf3fb;--up:#0b9f6a;--up-soft:#e6f6ef;--warn:#a86f0a;--warn-soft:#fff5dc;--down:#d63a50;--down-soft:#fdecef;--sunk:#f3f5f8;--sh:0 1px 3px rgba(20,30,50,.06)}
+:root[data-t="dark"]{--bg:#0b0e13;--card:#12171f;--ink:#e7eaef;--muted:#8a94a4;--line:rgba(255,255,255,.09);--pri:#5aa9f0;--pri-soft:rgba(90,169,240,.12);--up:#22c58b;--up-soft:rgba(34,197,139,.12);--warn:#f2b33d;--warn-soft:rgba(242,179,61,.1);--down:#f0607a;--down-soft:rgba(240,96,122,.12);--sunk:#0e1219;--sh:none}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Inter,"Hind Siliguri",system-ui,sans-serif;font-variant-numeric:tabular-nums}
 a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-header{background:var(--card);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;gap:12px;padding-block:12px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--ink)}
-.brand img{width:34px;height:34px;border-radius:50%}
-.badge{font:700 11px/1 ui-monospace,monospace;letter-spacing:.08em;padding:5px 8px;border-radius:6px;background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn)}
-header nav{margin-left:auto;display:flex;gap:14px;font-size:14px}
-.warn{background:var(--warn-soft);color:var(--warn);border-bottom:1px solid var(--line);font-size:13px}
-.warn .wrap{padding-block:8px}
-.hero{padding:22px 0 6px}
-.hero h1{margin:0 0 10px;font-size:20px}
-form.s{display:flex;gap:8px}
-form.s input{flex:1;min-width:0;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:14px ui-monospace,monospace}
-form.s button,.btn{padding:11px 18px;border-radius:10px;border:0;background:var(--pri);color:#fff;font-weight:700;cursor:pointer;font-size:14px}
-main{display:grid;gap:16px;padding:14px 0 40px}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.stats div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
-.stats span{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
-.stats b{font:700 18px ui-monospace,monospace}
-.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.card h2{margin:0;padding:14px 16px;font-size:15px;border-bottom:1px solid var(--line)}
-.row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);font-size:13.5px}
-.row:last-child{border-bottom:0}
-.ic{width:38px;height:38px;border-radius:10px;background:var(--pri-soft);color:var(--pri);display:grid;place-items:center;font:700 12px ui-monospace,monospace}
-.row small{display:block;color:var(--muted);font-size:12px}
-.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+button,input,select{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.sbar{background:var(--card);border-bottom:1px solid var(--line)}
+.sbar .wrap{display:flex;gap:10px;align-items:center;padding-block:8px}
+.sbar form{flex:1;display:flex;align-items:center;gap:8px;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:0 10px;max-width:560px}
+.sbar input{flex:1;min-width:0;border:0;background:none;padding:9px 0;outline:0;font-size:13.5px}
+.sbar svg{width:17px;height:17px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;flex:none}
+.pillx{font:600 11.5px Inter,sans-serif;padding:5px 9px;border-radius:6px;background:var(--sunk);border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.ib{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--card);display:grid;place-items:center;cursor:pointer;flex:none}
+header{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header .wrap{display:flex;align-items:center;gap:14px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:9px;color:var(--ink);font-weight:700;font-size:18px;letter-spacing:-.01em}.brand:hover{text-decoration:none}
+.brand img{width:32px;height:32px;border-radius:50%}.brand small{display:block;font:500 10.5px Inter,sans-serif;color:var(--muted);letter-spacing:0}
+.badge{font:700 10px/1 Inter,sans-serif;letter-spacing:.08em;padding:4px 6px;border-radius:5px;background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn)}
+nav.mn{margin-left:auto;display:flex;gap:2px;align-items:center}
+.dd{position:relative}.dd>button,nav.mn>a{border:0;background:none;padding:8px 11px;border-radius:7px;font:500 13.5px Inter,"Hind Siliguri",sans-serif;color:var(--ink);cursor:pointer;display:block}
+.dd>button:hover,nav.mn>a:hover,nav.mn .on{background:var(--sunk);text-decoration:none}
+.dd>div{display:none;position:absolute;right:0;top:100%;min-width:210px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px;box-shadow:0 10px 30px rgba(10,20,40,.14);z-index:30}
+.dd:hover>div,.dd.open>div{display:grid}.dd>div a{padding:8px 10px;border-radius:6px;color:var(--ink);font-size:13.5px}.dd>div a:hover{background:var(--sunk);text-decoration:none}
+#mb{display:none}
+.warn{background:var(--warn-soft);color:var(--warn);font-size:12px;border-bottom:1px solid var(--line)}.warn .wrap{padding-block:6px}@media (max-width:900px){.warn{font-size:11px;line-height:1.4}}
+main{display:grid;gap:14px;padding:16px 0 36px}
+h1{font-size:19px;margin:0;letter-spacing:-.01em;font-weight:600}h1 small{font:400 13px Inter,sans-serif;color:var(--muted)}
+.sub{color:var(--muted);font-size:13px;margin:4px 0 0}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh)}
+.stats>div{padding:14px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;gap:11px;align-items:center;min-width:0}
+.stats>div:nth-child(4n){border-right:0}.stats>div:nth-last-child(-n+4){border-bottom:0}
+.stats i{width:34px;height:34px;border-radius:9px;background:var(--sunk);display:grid;place-items:center;font-style:normal;flex:none;font-size:16px}
+.stats span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}.stats b{font-size:15px;font-weight:600;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);overflow:hidden}
+.card>h2{margin:0;padding:13px 16px;font-size:14.5px;font-weight:600;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:8px}
+.card>h2 small{font:400 12px Inter,sans-serif;color:var(--muted)}
+.more{display:block;text-align:center;padding:11px;border-top:1px solid var(--line);font:500 12px Inter,sans-serif;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--sunk)}
+.row{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px 16px;border-bottom:1px solid var(--line);font-size:13px}
+.row:last-of-type{border-bottom:0}.row.new{animation:fl 1.6s ease}
+@keyframes fl{0%{background:var(--pri-soft)}100%{background:transparent}}
+.ic{width:38px;height:38px;border-radius:9px;background:var(--sunk);color:var(--muted);display:grid;place-items:center;font:600 11px Inter,sans-serif}
+.row small,.kv small{display:block;color:var(--muted);font-size:12px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px}
 .el{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block}
-.val{font:600 12.5px ui-monospace,monospace;padding:4px 8px;border:1px solid var(--line);border-radius:6px;white-space:nowrap}
-.kv{display:grid}
-.kv>div{display:grid;grid-template-columns:190px minmax(0,1fr);gap:12px;padding:13px 16px;border-bottom:1px solid var(--line);font-size:14px}
-.kv>div:last-child{border-bottom:0}
-.kv>div>span:first-child{color:var(--muted)}
-.kv .mono{word-break:break-all;font-size:13px}
-.ok{display:inline-block;padding:3px 9px;border-radius:6px;font:700 12px ui-monospace,monospace;background:rgba(14,166,107,.12);color:var(--up);border:1px solid var(--up)}
-.pend{background:var(--warn-soft);color:var(--warn);border-color:var(--warn)}
-.mine{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:5px;font:700 10.5px ui-monospace,monospace;background:var(--pri-soft);color:var(--pri)}
+.val{font:600 11.5px Inter,sans-serif;padding:4px 7px;border:1px solid var(--line);border-radius:6px;white-space:nowrap;background:var(--card)}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;font:600 12px Inter,"Hind Siliguri",sans-serif;padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--sunk)}
+td{padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap}tr:last-child td{border-bottom:0}
+.kv>div{display:grid;grid-template-columns:230px minmax(0,1fr);gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:13.5px}
+.kv>div:last-child{border-bottom:0}.kv>div>span:first-child{color:var(--muted)}.kv .mono{word-break:break-all}
+.tag{display:inline-block;padding:3px 8px;border-radius:6px;font:600 11.5px Inter,sans-serif;border:1px solid var(--line);background:var(--sunk)}
+.ok{background:var(--up-soft);color:var(--up);border-color:transparent}.pend{background:var(--warn-soft);color:var(--warn);border-color:transparent}.bad{background:var(--down-soft);color:var(--down);border-color:transparent}
+.in{background:var(--up-soft);color:var(--up)}.out{background:var(--warn-soft);color:var(--warn)}
+.mine{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:5px;font:700 10px Inter,sans-serif;background:var(--pri-soft);color:var(--pri)}
 .empty{padding:26px 16px;color:var(--muted);text-align:center}
-.wm{position:relative}.wm::after{content:"DEMO";position:absolute;inset:0;display:grid;place-items:center;font:800 90px Inter,sans-serif;letter-spacing:.12em;color:var(--ink);opacity:.045;transform:rotate(-16deg);pointer-events:none}
-footer{color:var(--muted);font-size:12.5px;padding:0 0 30px;text-align:center}
-@media (max-width:800px){.cols{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.kv>div{grid-template-columns:minmax(0,1fr);gap:2px}header nav{margin-left:0;width:100%}}
+.pg{display:flex;gap:6px;justify-content:flex-end;align-items:center;padding:10px 14px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line)}
+.pg a,.pg span{padding:5px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}.tabs a{padding:7px 12px;border-radius:8px;font:500 13px Inter,"Hind Siliguri",sans-serif;color:var(--ink);background:var(--card);border:1px solid var(--line)}.tabs a.on{background:var(--pri);color:#fff;border-color:var(--pri)}.tabs a:hover{text-decoration:none}
+.form{padding:18px;display:grid;gap:14px;max-width:620px}.form label{display:grid;gap:6px;font-size:13px}
+.form input,.form select{padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);width:100%}
+.form .rd{display:flex;gap:18px}.form .rd label{display:flex;gap:6px;align-items:center}
+.act{padding:14px 18px;background:var(--sunk);border-top:1px solid var(--line);display:flex;gap:14px;align-items:center}
+.btn{padding:9px 18px;border-radius:8px;border:0;background:var(--pri);color:#fff;font-weight:600;cursor:pointer}.lnk{border:0;background:none;color:var(--muted);cursor:pointer}
+.res{margin:0 18px 18px;padding:14px;border-radius:10px;background:var(--pri-soft);font-size:13.5px}.res b{font-size:18px}
+.bar{height:4px;background:var(--sunk);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--pri);transition:width .25s linear}
+.gas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:16px}.gas div{border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center}.gas b{display:block;font-size:22px;font-weight:600}.gas span{color:var(--muted);font-size:12px}
+.nfts{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:16px}.nft{border:1px solid var(--line);border-radius:10px;padding:8px;display:grid;gap:6px;font-size:12.5px}.nft svg{width:100%;border-radius:8px}
+.spark{width:100%;height:60px;display:block}
+footer{color:var(--muted);font-size:12px;padding:0 0 28px;text-align:center}
+.wm{position:relative}.wm::after{content:"DEMO";position:absolute;right:18px;top:46px;font:800 64px Inter,sans-serif;letter-spacing:.1em;color:var(--ink);opacity:.045;transform:rotate(-12deg);pointer-events:none}
+@media (max-width:900px){
+  .cols{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats>div:nth-child(2n){border-right:0}.stats>div:nth-last-child(-n+4){border-bottom:1px solid var(--line)}.stats>div:nth-last-child(-n+2){border-bottom:0}
+  .kv>div{grid-template-columns:minmax(0,1fr);gap:2px}
+  #mb{display:grid;margin-left:auto}nav.mn{display:none;position:absolute;left:0;right:0;top:100%;background:var(--card);border-bottom:1px solid var(--line);padding:8px 12px;flex-direction:column;align-items:stretch;margin:0}nav.mn.open{display:flex}
+  .dd>div{position:static;display:grid;border:0;box-shadow:none;padding:0 0 0 12px}.dd>button{font-weight:600;width:100%;text-align:left}
+  .row{grid-template-columns:auto minmax(0,1fr) auto}.row .mid{display:none}.pillx.h{display:none}.wm::after{font-size:44px}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap"><a class="brand" href="#/"><img src="../logo-mark.png" alt="">BEWON TestScan</a><span class="badge">DEMO</span>
-  <nav><a href="#/" id="nHome"></a><a href="../#/demo/wallet" id="nWallet"></a><a href="../" id="nSite"></a></nav></div></header>
+<div class="sbar"><div class="wrap"><form id="sf"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" autocomplete="off" spellcheck="false"></form><span class="pillx h" id="gasP"></span><button class="ib" id="thB" aria-label="Theme">◐</button></div></div>
+<header><div class="wrap"><a class="brand" href="#/"><img src="../logo-mark.png" alt=""><span>BEWON TestScan<small id="tag"></small></span></a><span class="badge">DEMO</span>
+  <button class="ib" id="mb" aria-label="Menu">☰</button>
+  <nav class="mn" id="mn"><a href="#/" id="nHome"></a>
+    <div class="dd"><button id="nBc"></button><div><a href="#/txs" id="nTx"></a><a href="#/blocks" id="nBl"></a><a href="#/validators" id="nVa"></a></div></div>
+    <div class="dd"><button id="nTk"></button><div><a href="#/tokens" id="nTl"></a><a href="#/nfts" id="nNf"></a></div></div>
+    <div class="dd"><button id="nTo"></button><div><a href="#/tools/balance" id="nT1"></a><a href="#/tools/unit" id="nT2"></a><a href="#/tools/gas" id="nT3"></a><a href="../#/demo/web3" id="nT4"></a></div></div>
+    <a href="../#/demo/wallet" id="nWa"></a></nav></div></header>
 <div class="warn"><div class="wrap" id="warn"></div></div>
-<div class="wrap">
-  <div class="hero"><h1 id="h1"></h1><form class="s" id="sf"><input id="q" autocomplete="off" spellcheck="false"><button id="sb"></button></form></div>
-  <main id="app"></main>
-  <footer id="ft"></footer>
-</div>
+<div class="wrap"><main id="app"></main><footer id="ft"></footer></div>
 <script>
 "use strict";
-/* BEWON TestScan — a pretend explorer for learning. It reads the visitor's own demo activity from this browser
-   and fills the rest of the chain with clearly pretend blocks. Nothing here is on a real blockchain. */
+/* BEWON TestScan — a pretend testnet explorer for learning. It shows the visitor's own demo activity (from this browser)
+   inside a clearly pretend chain. Nothing here exists on a real blockchain or has any monetary value. */
 let LANG="bn"; try{ const l=localStorage.getItem("lang"); if(l&&l!=="bn") LANG="en"; }catch(e){}
+try{ const t=localStorage.getItem("scan_theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"); document.documentElement.dataset.t=t; }catch(e){}
 const tr=(bn,en)=>LANG==="en"?en:bn, $=s=>document.querySelector(s), app=$("#app");
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const BT=3000, EPOCH=Date.UTC(2026,0,1), height=()=>40000000+Math.floor((Date.now()-EPOCH)/BT), btime=n=>EPOCH+(n-40000000)*BT;
+const BT=3000, EPOCH=Date.UTC(2026,0,1), G0=40000000, height=()=>G0+Math.floor((Date.now()-EPOCH)/BT), btime=n=>EPOCH+(n-G0)*BT;
 function rng(a){ return ()=>{ a|=0; a=a+0x6D2B79F5|0; let t=Math.imul(a^a>>>15,1|a); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
 const hexR=(r,n)=>Array.from({length:n},()=>Math.floor(r()*16).toString(16)).join("");
-const addrR=r=>"0xDEMO"+hexR(r,34).toUpperCase();
-function simBlock(n){ const r=rng(n*2654435761%4294967296), cnt=2+Math.floor(r()*5), txs=[];
-  for(let i=0;i<cnt;i++){ const tail=hexR(r,54), kind=r(); txs.push({sim:true,hash:"0x"+n.toString(16).padStart(8,"0")+i.toString(16).padStart(2,"0")+tail,block:n,t:btime(n),from:addrR(r),to:addrR(r),
-    amt:+(r()*(kind<.7?5:900)).toFixed(4),coin:kind<.7?"tBNB":"dUSDT",fee:0.0005,feeCoin:"tBNB",net:"BNB Testnet (demo)",label:kind<.7?"Transfer":"Token transfer",done:true}); }
-  return {n,t:btime(n),val:"Demo Validator "+(1+n%21),txs}; }
-function mine(){ let d=null; try{ d=JSON.parse(localStorage.getItem("bewon_demo_v1")||"null"); }catch(e){} if(!d||!Array.isArray(d.wtx)) return {d:null,txs:[]};
-  const H=height(), need={BEP20:15,TRC20:20,ERC20:6};
-  const txs=d.wtx.map(x=>{ const conf=Math.max(0,Math.floor((Date.now()-new Date(x.t))/1000)), nd=need[x.net]||1, done=x.done||!["dep","wd"].includes(x.type)||conf>=nd;
-    return {mine:true,hash:x.hash,block:Math.min(x.block||H,H),t:+new Date(x.t),from:x.from||"—",to:x.to||"—",amt:x.amt||0,coin:x.coin||"USDT",fee:x.fee||0,feeCoin:x.type==="w3"?"tBNB":"USDT",net:x.net||"—",
-      label:x.type==="dep"?"Deposit":x.type==="wd"?"Withdraw":x.type==="p2p"?"P2P "+(x.label||""):(x.label||"Web3"),done,conf:Math.min(conf,nd),need:nd}; });
-  return {d,txs}; }
+const seedOf=s=>{ let h=2166136261; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; };
+const POOL=Array.from({length:60},(_,i)=>"0xDEMO"+hexR(rng(9000+i),34).toUpperCase());   // a fixed set of pretend accounts so addresses repeat like on a real chain
+const TOK=[{s:"tBNB",n:"Test BNB",native:true,dec:18},{s:"BWN",n:"BEWON Demo Token",ca:"0xDEMO00000000000000000000000000000000BWN1",sup:1e9,dec:18},{s:"dUSDT",n:"Demo Tether USD",ca:"0xDEMO0000000000000000000000000000000DUSDT",sup:5e8,dec:6},{s:"dBTC",n:"Demo Bitcoin",ca:"0xDEMO00000000000000000000000000000000DBTC",sup:21e6,dec:8},{s:"dETH",n:"Demo Ether",ca:"0xDEMO00000000000000000000000000000000DETH",sup:12e7,dec:18},{s:"BWN",n:"BEWON Demo Token (copy)",ca:"0xDEMO00000000000000000000000000000000BWN7",sup:1e15,dec:18,fake:true}];
+const METH=[["Transfer","0x"],["Transfer","0xa9059cbb"],["Approve","0x095ea7b3"],["Swap","0x38ed1739"],["Mint","0x40c10f19"],["Claim","0x4e71d92d"]];
+function extra(hash){ const r=rng(seedOf(hash)), gp=+(3+r()*2).toFixed(2), gl=[21000,60000,120000,210000][Math.floor(r()*4)], gu=Math.round(gl*(0.55+r()*0.4)); return {gp,gl,gu,nonce:Math.floor(r()*900),pos:Math.floor(r()*120)}; }
+function simBlock(n){ const r=rng(n*2654435761%4294967296), cnt=2+Math.floor(r()*6), txs=[];
+  for(let i=0;i<cnt;i++){ const tail=hexR(r,54), k=Math.floor(r()*METH.length), coin=k===0?"tBNB":["dUSDT","BWN","dBTC","dETH"][Math.floor(r()*4)], big=coin==="dUSDT"||coin==="BWN";
+    txs.push({sim:true,hash:"0x"+n.toString(16).padStart(8,"0")+i.toString(16).padStart(2,"0")+tail,block:n,t:btime(n),from:POOL[Math.floor(r()*60)],to:k>=3?TOK[1+Math.floor(r()*4)].ca:POOL[Math.floor(r()*60)],
+      amt:+(r()*(big?900:coin==="tBNB"?4:0.6)).toFixed(4),coin,fee:0,feeCoin:"tBNB",net:"BEWON Testnet (demo)",label:METH[k][0],sig:METH[k][1],done:r()>.02,fail:false}); }
+  txs.forEach(x=>{ const e=extra(x.hash); x.fee=+(e.gp*e.gu/1e9).toFixed(6); if(!x.done){ x.done=true; x.fail=true; } });
+  return {n,t:btime(n),val:1+n%21,txs,gasUsed:txs.reduce((a,x)=>a+extra(x.hash).gu,0),gasLimit:140000000,size:900+txs.length*310,reward:+(txs.reduce((a,x)=>a+x.fee,0)).toFixed(6)}; }
+function store(){ try{ return JSON.parse(localStorage.getItem("bewon_demo_v1")||"null"); }catch(e){ return null; } }
+function mine(){ const d=store(); if(!d||!Array.isArray(d.wtx)) return {d:null,txs:[]}; const H=height(), need={BEP20:15,TRC20:20,ERC20:6};
+  return {d,txs:d.wtx.map(x=>{ const conf=Math.max(0,Math.floor((Date.now()-new Date(x.t))/1000)), nd=need[x.net]||1, done=x.done||!["dep","wd"].includes(x.type)||conf>=nd, w3=x.type==="w3";
+    return {mine:true,hash:x.hash,block:Math.min(x.block||H,H),t:+new Date(x.t),from:x.from||"—",to:x.to||"—",amt:x.amt||0,coin:x.coin||"USDT",fee:x.fee||0,feeCoin:w3?"tBNB":"USDT",net:x.net||"—",
+      label:x.type==="dep"?"Deposit":x.type==="wd"?"Withdraw":x.type==="p2p"?"P2P "+(x.label||""):(x.label||"Web3"),sig:w3?"0xa9059cbb":"0x",done,conf:Math.min(conf,nd),need:nd}; })}; }
 function ago(t){ const s=Math.max(0,Math.round((Date.now()-t)/1000)); if(s<60) return tr(`${s} সেকেন্ড আগে`,`${s} secs ago`); const m=Math.round(s/60); if(m<60) return tr(`${m} মিনিট আগে`,`${m} mins ago`); const h=Math.round(m/60); if(h<48) return tr(`${h} ঘণ্টা আগে`,`${h} hrs ago`); return tr(`${Math.round(h/24)} দিন আগে`,`${Math.round(h/24)} days ago`); }
-const sh=(h,a=10,b=6)=>h.length>a+b+3?h.slice(0,a)+"…"+h.slice(-b):h;
-const num=x=>(+x).toLocaleString("en-US",{maximumFractionDigits:6});
-const aLink=a=>`<a class="mono" href="#/address/${encodeURIComponent(a)}">${esc(a)}</a>`;
+const sh=(h,a=10,b=6)=>h.length>a+b+3?h.slice(0,a)+"…"+h.slice(-b):h, num=(x,d=6)=>(+x).toLocaleString("en-US",{maximumFractionDigits:d});
+const aL=(a,short)=>`<a class="mono" href="#/address/${encodeURIComponent(a)}" title="${esc(a)}">${esc(short?sh(a,10,6):a)}</a>`, txL=h=>`<a class="mono" href="#/tx/${h}">${sh(h,12,6)}</a>`;
+const cp=t=>`<button class="lnk" data-cp="${esc(t)}" title="Copy">⧉</button>`;
 function findTx(h){ h=String(h||"").trim(); const m=mine().txs.find(x=>x.hash.toLowerCase()===h.toLowerCase()); if(m) return m;
-  if(/^0x[0-9a-f]{64}$/i.test(h)){ const n=parseInt(h.slice(2,10),16), i=parseInt(h.slice(10,12),16); if(n>=40000000&&n<=height()){ const t=simBlock(n).txs[i]; if(t&&t.hash===h.toLowerCase()) return t; } } return null; }
-function txRow(x){ return `<div class="row"><div class="ic">Tx</div><div><a class="mono el" href="#/tx/${x.hash}">${sh(x.hash,14,8)}</a>${x.mine?`<span class="mine">${tr("আপনার","YOURS")}</span>`:""}<small class="el">${esc(x.label)} · ${tr("থেকে","From")} ${esc(sh(x.from,10,4))} → ${esc(sh(x.to,10,4))}</small></div><div style="text-align:right"><span class="val">${num(x.amt)} ${esc(x.coin)}</span><small>${ago(x.t)}</small></div></div>`; }
-function pageHome(){ const H=height(), my=mine().txs, blocks=[]; for(let i=0;i<8;i++) blocks.push(simBlock(H-i));
-  const sim=blocks.slice(0,3).flatMap(b=>b.txs).slice(0,8-Math.min(my.length,4)), list=my.slice(0,4).concat(sim);
-  app.innerHTML=`<div class="stats"><div><span>${tr("সর্বশেষ ব্লক","Latest block")}</span><b>${H.toLocaleString("en-US")}</b></div><div><span>${tr("ব্লকের সময়","Block time")}</span><b>3.0 s</b></div><div><span>${tr("আপনার লেনদেন","Your transactions")}</span><b>${my.length}</b></div><div><span>${tr("নেটওয়ার্ক","Network")}</span><b>DEMO</b></div></div>
-   <div class="cols"><div class="card"><h2>${tr("সর্বশেষ ব্লক","Latest blocks")}</h2>${blocks.map(b=>`<div class="row"><div class="ic">Bk</div><div><a class="mono" href="#/block/${b.n}">${b.n}</a><small>${ago(b.t)}</small></div><div style="text-align:right"><span class="el">${b.val}</span><small>${b.txs.length} txns</small></div></div>`).join("")}</div>
-   <div class="card"><h2>${tr("সর্বশেষ লেনদেন","Latest transactions")}</h2>${list.map(txRow).join("")}</div></div>
-   ${my.length?`<div class="card"><h2>${tr("আপনার ডেমো লেনদেন","Your demo transactions")} (${my.length})</h2>${my.slice(0,40).map(txRow).join("")}</div>`:`<div class="card"><div class="empty">${tr("আপনার এখনো কোনো ডেমো লেনদেন নেই। BEWON-এর ডেমো ওয়ালেটে একটা ডিপোজিট করুন, তারপর Hash দিয়ে এখানে খুঁজুন।","You have no demo transactions yet. Make a deposit in the BEWON demo wallet, then search its hash here.")} <a href="../#/demo/wallet">${tr("ডেমো ওয়ালেট খুলুন →","Open demo wallet →")}</a></div></div>`}`; }
-function pageTx(h){ const x=findTx(h); if(!x){ app.innerHTML=`<div class="card"><div class="empty">${tr("এই Hash পাওয়া যায়নি। Hash পুরোটা ঠিকমতো কপি হয়েছে কিনা দেখুন।","Transaction not found. Check that the whole hash was copied correctly.")}</div></div>`; return; }
-  const H=height(), conf=x.mine&&!x.done?x.conf:Math.max(1,H-x.block+1);
-  app.innerHTML=`<div class="card wm"><h2>${tr("লেনদেনের বিবরণ","Transaction details")}${x.mine?`<span class="mine">${tr("আপনার","YOURS")}</span>`:""}</h2><div class="kv">
-    <div><span>Transaction Hash</span><span class="mono">${x.hash}</span></div>
-    <div><span>Status</span><span>${x.done?`<span class="ok">✔ Success</span>`:`<span class="ok pend">⏳ Pending ${x.conf}/${x.need}</span>`}</span></div>
-    <div><span>Block</span><span><a class="mono" href="#/block/${x.block}">${x.block}</a> <small style="color:var(--muted)">${x.done?num(conf)+" "+tr("কনফার্মেশন","block confirmations"):""}</small></span></div>
+  if(/^0x[0-9a-f]{64}$/i.test(h)){ const n=parseInt(h.slice(2,10),16), i=parseInt(h.slice(10,12),16); if(n>=G0&&n<=height()){ const t=simBlock(n).txs[i]; if(t&&t.hash===h.toLowerCase()) return t; } } return null; }
+const stTag=x=>x.fail?`<span class="tag bad">✕ Failed</span>`:x.done?`<span class="tag ok">✔ Success</span>`:`<span class="tag pend">⏳ Pending ${x.conf}/${x.need}</span>`;
+function txRow(x,cls){ return `<div class="row ${cls||""}"><div class="ic">Tx</div><div>${txL(x.hash)}${x.mine?`<span class="mine">${tr("আপনার","YOURS")}</span>`:""}<small data-t="${x.t}">${ago(x.t)}</small></div><div class="mid"><span class="el">${tr("থেকে","From")} ${aL(x.from,1)}</span><span class="el">${tr("প্রতি","To")} ${aL(x.to,1)}</span></div><div><span class="val">${num(x.amt,4)} ${esc(x.coin)}</span></div></div>`; }
+function blRow(b,cls){ return `<div class="row ${cls||""}"><div class="ic">Bk</div><div><a class="mono" href="#/block/${b.n}">${b.n}</a><small data-t="${b.t}">${ago(b.t)}</small></div><div class="mid"><span class="el">${tr("যাচাইকারী","Validated by")} <a href="#/validators">Validator ${b.val}</a></span><small><a href="#/block/${b.n}">${b.txs.length} txns</a> · 3 secs</small></div><div><span class="val">${b.reward} tBNB</span></div></div>`; }
+function txTable(list,addr){ return list.length?`<div class="tw"><table><thead><tr><th>Txn Hash</th><th>${tr("ধরন","Method")}</th><th>Block</th><th>${tr("সময়","Age")}</th><th>From</th>${addr?"<th></th>":""}<th>To</th><th>${tr("পরিমাণ","Value")}</th><th>Txn Fee</th></tr></thead><tbody>${list.map(x=>`<tr><td>${x.fail?"<span title='Failed' style='color:var(--down)'>✕ </span>":""}${txL(x.hash)}${x.mine?`<span class="mine">${tr("আপনার","YOURS")}</span>`:""}</td><td><span class="tag">${esc(x.label)}</span></td><td><a href="#/block/${x.block}">${x.block}</a></td><td>${ago(x.t)}</td><td>${aL(x.from,1)}</td>${addr?`<td><span class="tag ${x.to===addr?"in":"out"}">${x.to===addr?"IN":"OUT"}</span></td>`:""}<td>${aL(x.to,1)}</td><td>${num(x.amt,4)} ${esc(x.coin)}</td><td class="mono" style="color:var(--muted)">${num(x.fee,6)}</td></tr>`).join("")}</tbody></table></div>`:`<div class="empty">${tr("কোনো লেনদেন পাওয়া যায়নি।","No transactions found.")}</div>`; }
+const pager=(base,p,last)=>`<div class="pg"><a href="${base}1">First</a>${p>1?`<a href="${base}${p-1}">‹</a>`:""}<span>Page ${p}${last?" of "+num(last,0):""}</span>${!last||p<last?`<a href="${base}${p+1}">›</a>`:""}</div>`;
+function gasNow(){ const r=rng(Math.floor(Date.now()/15000)), b=3+r()*1.2; return {lo:b.toFixed(2),av:(b+0.4+r()*0.3).toFixed(2),hi:(b+1.1+r()*0.8).toFixed(2)}; }
+
+function pageHome(){ const H=height(), my=mine().txs, blocks=[]; for(let i=0;i<7;i++) blocks.push(simBlock(H-i));
+  const sim=blocks.flatMap(b=>b.txs).slice(0,7), total=(H-G0)*4.6+my.length, g=gasNow(), days=Array.from({length:14},(_,i)=>{ const d=Math.floor(Date.now()/864e5)-13+i; return 90000+Math.floor(rng(d)()*60000); }), mx=Math.max(...days), mn=Math.min(...days);
+  const pts=days.map((v,i)=>`${(i/13*100).toFixed(1)},${(54-(v-mn)/((mx-mn)||1)*46).toFixed(1)}`).join(" ");
+  app.innerHTML=`<div><h1>${tr("BEWON ডেমো টেস্টনেট এক্সপ্লোরার","BEWON demo testnet explorer")}</h1><p class="sub">${tr("ব্লক, লেনদেন, ঠিকানা আর টোকেন খুঁজে দেখুন। শেখার জন্য বানানো নকল চেইন।","Look up blocks, transactions, addresses and tokens. A pretend chain made for learning.")}</p></div>
+   <div class="stats"><div><i>⛓</i><div><span>${tr("সর্বশেষ ব্লক","Latest block")}</span><b id="sH">${num(H,0)}</b></div></div><div><i>⇄</i><div><span>${tr("মোট লেনদেন","Transactions")}</span><b id="sT">${num(total,0)}</b></div></div><div><i>⛽</i><div><span>${tr("গ্যাস দাম","Med gas price")}</span><b>${g.av} Gwei</b></div></div><div><i>🛡</i><div><span>${tr("যাচাইকারী","Validators")}</span><b>21 <small style="font-weight:400;color:var(--muted)">(demo)</small></b></div></div>
+     <div><i>⏱</i><div><span>${tr("ব্লকের সময়","Block time")}</span><b>3.0 s</b></div></div><div><i>⚡</i><div><span>TPS</span><b>${(1.4+rng(H)()*0.6).toFixed(1)}</b></div></div><div><i>👤</i><div><span>${tr("আপনার লেনদেন","Your transactions")}</span><b>${my.length}</b></div></div><div style="display:block"><span style="display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em">${tr("১৪ দিনের লেনদেন (নকল)","14-day transactions (demo)")}</span><svg class="spark" viewBox="0 0 100 56" preserveAspectRatio="none" style="height:36px"><polyline points="${pts}" fill="none" stroke="var(--pri)" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg></div></div>
+   <div class="bar"><i id="nb" style="width:0"></i></div>
+   <div class="cols"><div class="card"><h2>${tr("সর্বশেষ ব্লক","Latest Blocks")}<small id="nx"></small></h2><div id="lb">${blocks.map(b=>blRow(b)).join("")}</div><a class="more" href="#/blocks">${tr("সব ব্লক দেখুন →","View all blocks →")}</a></div>
+   <div class="card"><h2>${tr("সর্বশেষ লেনদেন","Latest Transactions")}</h2><div id="lt">${my.slice(0,2).concat(sim).slice(0,7).map(x=>txRow(x)).join("")}</div><a class="more" href="#/txs">${tr("সব লেনদেন দেখুন →","View all transactions →")}</a></div></div>
+   ${my.length?`<div class="card"><h2>${tr("আপনার ডেমো লেনদেন","Your demo transactions")} <small>${my.length}</small></h2>${txTable(my.slice(0,25))}</div>`:`<div class="card"><div class="empty">${tr("আপনার এখনো কোনো ডেমো লেনদেন নেই। BEWON-এর ডেমো ওয়ালেটে একটা ডিপোজিট করুন, তারপর Hash দিয়ে এখানে খুঁজুন।","You have no demo transactions yet. Make a deposit in the BEWON demo wallet, then search its hash here.")} <a href="../#/demo/wallet">${tr("ডেমো ওয়ালেট খুলুন →","Open demo wallet →")}</a></div></div>`}`;
+  HOME={h:H}; }
+let HOME=null;
+let TA=0;
+function tickHome(){ if(!HOME||!$("#lb")) return; if(Date.now()-TA>1000){ TA=Date.now(); document.querySelectorAll("small[data-t]").forEach(e=>e.textContent=ago(+e.dataset.t)); } const H=height(), f=((Date.now()-EPOCH)%BT)/BT; const nb=$("#nb"); if(nb) nb.style.width=(f*100).toFixed(0)+"%"; const nx=$("#nx"); if(nx) nx.textContent=tr(`পরের ব্লক ${(3-f*3).toFixed(1)} সে.`,`next block in ${(3-f*3).toFixed(1)}s`);
+  while(HOME.h<H){ HOME.h++; const b=simBlock(HOME.h), lb=$("#lb"), lt=$("#lt"); lb.insertAdjacentHTML("afterbegin",blRow(b,"new")); while(lb.children.length>7) lb.lastElementChild.remove();
+    b.txs.slice(0,2).forEach(x=>lt.insertAdjacentHTML("afterbegin",txRow(x,"new"))); while(lt.children.length>7) lt.lastElementChild.remove();
+    $("#sH").textContent=num(HOME.h,0); $("#sT").textContent=num((HOME.h-G0)*4.6+mine().txs.length,0); } }
+function pageBlocks(p){ p=Math.max(1,+p||1); const H=height(), rows=[]; for(let i=0;i<25;i++){ const n=H-(p-1)*25-i; if(n>=G0) rows.push(simBlock(n)); }
+  app.innerHTML=`<h1>${tr("ব্লক","Blocks")}</h1><div class="card"><div class="tw"><table><thead><tr><th>Block</th><th>${tr("সময়","Age")}</th><th>Txn</th><th>Validator</th><th>Gas Used</th><th>Gas Limit</th><th>Reward</th></tr></thead><tbody>${rows.map(b=>`<tr><td><a href="#/block/${b.n}">${b.n}</a></td><td>${ago(b.t)}</td><td><a href="#/block/${b.n}">${b.txs.length}</a></td><td><a href="#/validators">Validator ${b.val}</a></td><td>${num(b.gasUsed,0)} <small style="color:var(--muted)">(${(b.gasUsed/b.gasLimit*100).toFixed(2)}%)</small></td><td>${num(b.gasLimit,0)}</td><td>${b.reward} tBNB</td></tr>`).join("")}</tbody></table></div>${pager("#/blocks/",p,Math.ceil((H-G0)/25))}</div>`; }
+function pageTxs(p){ p=Math.max(1,+p||1); const H=height(), my=p===1?mine().txs.slice(0,5):[], rows=[]; let n=H-(p-1)*6; while(rows.length<25&&n>=G0){ rows.push(...simBlock(n).txs); n--; }
+  app.innerHTML=`<h1>${tr("লেনদেন","Transactions")}</h1><div class="card">${txTable(my.concat(rows).slice(0,25))}${pager("#/txs/",p)}</div>`; }
+function pageTx(h){ const x=findTx(h); if(!x){ app.innerHTML=`<h1>${tr("লেনদেন","Transaction")}</h1><div class="card"><div class="empty">${tr("এই Hash পাওয়া যায়নি। Hash পুরোটা ঠিকমতো কপি হয়েছে কিনা দেখুন।","Transaction not found. Check that the whole hash was copied correctly.")}</div></div>`; return; }
+  const H=height(), conf=x.mine&&!x.done?x.conf:Math.max(1,H-x.block+1), e=extra(x.hash), fee=x.mine?x.fee:+(e.gp*e.gu/1e9).toFixed(6), tok=x.coin!=="tBNB"&&x.coin!=="USDT";
+  app.innerHTML=`<h1>${tr("লেনদেনের বিবরণ","Transaction Details")}${x.mine?`<span class="mine">${tr("আপনার","YOURS")}</span>`:""}</h1>
+   <div class="card wm"><h2>Overview</h2><div class="kv">
+    <div><span>Transaction Hash</span><span class="mono">${x.hash} ${cp(x.hash)}</span></div>
+    <div><span>Status</span><span>${stTag(x)}</span></div>
+    <div><span>Block</span><span><a href="#/block/${x.block}">${x.block}</a> ${x.done?`<span class="tag">${num(conf,0)} ${tr("কনফার্মেশন","Block Confirmations")}</span>`:""}</span></div>
     <div><span>Timestamp</span><span>${ago(x.t)} (${new Date(x.t).toUTCString()})</span></div>
-    <div><span>${tr("ধরন","Method")}</span><span><span class="val">${esc(x.label)}</span></span></div>
-    <div><span>From</span><span>${aLink(x.from)}</span></div>
-    <div><span>To</span><span>${aLink(x.to)}</span></div>
-    <div><span>Value</span><span><b>${num(x.amt)} ${esc(x.coin)}</b> <span class="badge">DEMO</span></span></div>
-    <div><span>Transaction Fee</span><span>${num(x.fee)} ${esc(x.feeCoin)}</span></div>
-    <div><span>Network</span><span>${esc(x.net)}</span></div></div></div>
-   <div class="card"><div class="empty" style="text-align:left">💡 ${tr("আসল এক্সপ্লোরারেও (যেমন BscScan, Etherscan, Tronscan) ঠিক এই তথ্যগুলো দেখা যায়। টাকা পাঠানোর পর Hash দিয়ে খুঁজে Status \"Success\" আর To ঠিকানা মিলিয়ে নিন।","Real explorers (BscScan, Etherscan, Tronscan) show these same fields. After sending money, search the hash and check that Status is \"Success\" and the To address matches.")}</div></div>`; }
-function pageBlock(n){ n=+n; const H=height(); if(!(n>=40000000&&n<=H)){ app.innerHTML=`<div class="card"><div class="empty">${tr("এই ব্লক পাওয়া যায়নি।","Block not found.")}</div></div>`; return; }
-  const b=simBlock(n), my=mine().txs.filter(x=>x.block===n), all=my.concat(b.txs);
-  app.innerHTML=`<div class="card wm"><h2>${tr("ব্লক","Block")} #${n}</h2><div class="kv"><div><span>Block Height</span><span class="mono">${n} &nbsp; ${n>40000000?`<a href="#/block/${n-1}">‹ ${tr("আগের","Prev")}</a>`:""} ${n<H?` · <a href="#/block/${n+1}">${tr("পরের","Next")} ›</a>`:""}</span></div>
-    <div><span>Timestamp</span><span>${ago(b.t)} (${new Date(b.t).toUTCString()})</span></div><div><span>Transactions</span><span>${all.length}</span></div><div><span>Validated by</span><span>${b.val}</span></div>
-    <div><span>Block Hash</span><span class="mono">0x${hexR(rng(n+7),64)}</span></div><div><span>Parent Hash</span><span class="mono">0x${hexR(rng(n+6),64)}</span></div><div><span>Confirmations</span><span>${num(H-n+1)}</span></div></div></div>
-   <div class="card"><h2>${tr("এই ব্লকের লেনদেন","Transactions in this block")}</h2>${all.map(txRow).join("")}</div>`; }
-function pageAddr(a){ a=decodeURIComponent(a||""); const {d,txs}=mine(), list=txs.filter(x=>x.from===a||x.to===a), w=d&&d.w3&&d.w3.addr===a?d.w3:null;
-  app.innerHTML=`<div class="card wm"><h2>${tr("ঠিকানা","Address")}${w?`<span class="mine">${tr("আপনার ওয়ালেট","YOUR WALLET")}</span>`:""}</h2><div class="kv"><div><span>Address</span><span class="mono">${esc(a)}</span></div>
-     ${w?Object.entries(w.bal||{}).map(([k,v])=>`<div><span>${esc(k)} Balance</span><span><b>${num(v)}</b> <span class="badge">DEMO</span></span></div>`).join("")+`<div><span>NFT</span><span>${(w.nfts||[]).length}</span></div>`:""}
-     <div><span>Transactions</span><span>${list.length}</span></div></div></div>
-   <div class="card"><h2>${tr("লেনদেন","Transactions")}</h2>${list.length?list.map(txRow).join(""):`<div class="empty">${tr("এই ঠিকানায় আপনার কোনো ডেমো লেনদেন নেই।","No demo transactions of yours for this address.")}</div>`}</div>`; }
-function route(){ const p=location.hash.replace(/^#\/?/,"").split("/"); window.scrollTo(0,0);
-  if(p[0]==="tx") pageTx(p[1]); else if(p[0]==="block") pageBlock(p[1]); else if(p[0]==="address") pageAddr(p.slice(1).join("/")); else pageHome(); }
-$("#sf").onsubmit=e=>{ e.preventDefault(); const v=$("#q").value.trim(); if(!v) return; location.hash=/^\d+$/.test(v)?"#/block/"+v:/^0x[0-9a-f]{64}$/i.test(v)?"#/tx/"+v:"#/address/"+encodeURIComponent(v); $("#q").value=""; };
+    <div><span>${tr("ধরন","Method")}</span><span><span class="tag">${esc(x.label)}</span></span></div>
+    <div><span>From</span><span>${aL(x.from)} ${cp(x.from)}</span></div>
+    <div><span>${tok?"Interacted With (To)":"To"}</span><span>${aL(x.to)} ${cp(x.to)}</span></div>
+    ${tok?`<div><span>Tokens Transferred</span><span>From ${aL(x.from,1)} To ${aL(x.to,1)} For <b>${num(x.amt)}</b> <a href="#/token/${esc(x.coin)}">${esc(x.coin)}</a></span></div>`:""}
+    <div><span>Value</span><span><b>${tok?0:num(x.amt)} ${tok?"tBNB":esc(x.coin)}</b> <span class="badge">DEMO</span></span></div>
+    <div><span>Transaction Fee</span><span>${num(fee,8)} ${esc(x.feeCoin)}</span></div>
+    <div><span>Gas Price</span><span>${e.gp} Gwei <small>(${(e.gp/1e9).toFixed(12)} tBNB)</small></span></div>
+    <div><span>Gas Limit & Usage</span><span>${num(e.gl,0)} | ${num(e.gu,0)} (${(e.gu/e.gl*100).toFixed(2)}%)</span></div>
+    <div><span>Nonce · Position</span><span>${e.nonce} · ${e.pos}</span></div>
+    <div><span>Network</span><span>${esc(x.net)}</span></div>
+    <div><span>Input Data</span><span class="mono" style="background:var(--sunk);padding:8px;border-radius:8px">${x.sig==="0x"?"0x":x.sig+hexR(rng(seedOf(x.hash)+1),64)+hexR(rng(seedOf(x.hash)+2),64)}</span></div></div></div>
+   <div class="card"><div class="empty" style="text-align:left">💡 ${tr("আসল এক্সপ্লোরারেও ঠিক এই তথ্যগুলো দেখা যায়। টাকা পাঠানোর পর Hash দিয়ে খুঁজে Status \"Success\", To ঠিকানা আর পরিমাণ মিলিয়ে নিন।","Real explorers show these same fields. After sending money, search the hash and check that Status is \"Success\" and that the To address and amount match.")}</div></div>`; }
+function pageBlock(n){ n=+n; const H=height(); if(!(n>=G0&&n<=H)){ app.innerHTML=`<h1>${tr("ব্লক","Block")}</h1><div class="card"><div class="empty">${tr("এই ব্লক পাওয়া যায়নি।","Block not found.")}</div></div>`; return; }
+  const b=simBlock(n), all=mine().txs.filter(x=>x.block===n).concat(b.txs);
+  app.innerHTML=`<h1>${tr("ব্লক","Block")} <small>#${n}</small></h1><div class="card wm"><h2>Overview<small>${n>G0?`<a href="#/block/${n-1}">‹ Prev</a>`:""} ${n<H?` · <a href="#/block/${n+1}">Next ›</a>`:""}</small></h2><div class="kv">
+    <div><span>Block Height</span><span>${n}</span></div><div><span>Status</span><span><span class="tag ok">✔ Finalized</span></span></div>
+    <div><span>Timestamp</span><span>${ago(b.t)} (${new Date(b.t).toUTCString()})</span></div><div><span>Transactions</span><span>${all.length} ${tr("টা লেনদেন এই ব্লকে","transactions in this block")}</span></div>
+    <div><span>Validated by</span><span><a href="#/validators">Validator ${b.val}</a> in 3 secs</span></div><div><span>Block Reward</span><span>${b.reward} tBNB</span></div>
+    <div><span>Gas Used</span><span>${num(b.gasUsed,0)} (${(b.gasUsed/b.gasLimit*100).toFixed(2)}%)</span></div><div><span>Gas Limit</span><span>${num(b.gasLimit,0)}</span></div><div><span>Size</span><span>${num(b.size,0)} bytes</span></div>
+    <div><span>Hash</span><span class="mono">0x${hexR(rng(n+7),64)}</span></div><div><span>Parent Hash</span><span class="mono"><a href="#/block/${n-1}">0x${hexR(rng(n+6),64)}</a></span></div><div><span>Confirmations</span><span>${num(H-n+1,0)}</span></div></div></div>
+   <div class="card"><h2>${tr("এই ব্লকের লেনদেন","Transactions in this block")}</h2>${txTable(all)}</div>`; }
+function recentFor(a){ const H=height(), out=[]; for(let n=H;n>H-260&&out.length<25;n--) simBlock(n).txs.forEach(x=>{ if(x.from===a||x.to===a) out.push(x); }); return out; }
+function balOf(a,until){ const {d,txs}=mine(), my=txs.filter(x=>(x.from===a||x.to===a)&&x.done&&(!until||x.t<=until)); const b={};
+  if(my.length||(d&&d.w3&&d.w3.addr===a)){ my.forEach(x=>{ b[x.coin]=(b[x.coin]||0)+(x.to===a?x.amt:-x.amt); if(x.from===a&&x.feeCoin==="tBNB") b.tBNB=(b.tBNB||0)-x.fee; }); if(d&&d.w3&&d.w3.addr===a&&!until) Object.assign(b,d.w3.bal||{}); Object.keys(b).forEach(k=>{ if(b[k]<0) b[k]=0; }); return {b,own:true}; }
+  const r=rng(seedOf(a)); return {b:{tBNB:+(r()*12).toFixed(4),dUSDT:+(r()*3000).toFixed(2),BWN:Math.floor(r()*9000)},own:false}; }
+function pageAddr(a){ a=decodeURIComponent(a||""); const {d,txs}=mine(), list=txs.filter(x=>x.from===a||x.to===a).concat(recentFor(a)), {b,own}=balOf(a), tk=TOK.find(t=>t.ca===a), w=d&&d.w3&&d.w3.addr===a;
+  app.innerHTML=`<h1>${tk?tr("কন্ট্রাক্ট","Contract"):tr("ঠিকানা","Address")} ${w?`<span class="mine">${tr("আপনার ওয়ালেট","YOUR WALLET")}</span>`:""}</h1><p class="sub mono" style="word-break:break-all">${esc(a)} ${cp(a)}</p>
+   <div class="cols"><div class="card wm"><h2>Overview</h2><div class="kv"><div><span>tBNB Balance</span><span><b>${num(b.tBNB||0)} tBNB</b> <span class="badge">DEMO</span></span></div>
+     <div><span>Token Holdings</span><span>${Object.entries(b).filter(([k,v])=>k!=="tBNB"&&v>0).map(([k,v])=>`<span class="tag" style="margin:0 4px 4px 0">${num(v,4)} <a href="#/token/${esc(k)}">${esc(k)}</a></span>`).join("")||"—"}</span></div>
+     ${w?`<div><span>NFT</span><span><a href="#/nfts">${(d.w3.nfts||[]).length}</a></span></div>`:""}</div></div>
+   <div class="card"><h2>More Info</h2><div class="kv"><div><span>${tr("ধরন","Type")}</span><span>${tk?`Token contract · <a href="#/token/${esc(tk.s)}${tk.fake?"-fake":""}">${esc(tk.n)}</a>`:own?tr("আপনার ডেমো ঠিকানা","Your demo address"):tr("নকল (সিমুলেটেড) ঠিকানা","Pretend (simulated) address")}</span></div><div><span>Transactions</span><span>${list.length}${list.length>=25?"+":""} <small>(${tr("সাম্প্রতিক","recent")})</small></span></div><div><span>Balance Checker</span><span><a href="#/tools/balance/${encodeURIComponent(a)}">${tr("পুরনো তারিখের ব্যালান্স দেখুন →","Check balance at a past date →")}</a></span></div></div></div></div>
+   <div class="card"><h2>${tr("লেনদেন","Transactions")}</h2>${txTable(list,a)}</div>`; }
+function pageTokens(){ app.innerHTML=`<h1>${tr("টোকেন ট্র্যাকার","Token Tracker")} <small>(BEP-20 demo)</small></h1><div class="card"><div class="tw"><table><thead><tr><th>#</th><th>Token</th><th>Contract</th><th>Total Supply</th><th>Holders</th></tr></thead><tbody>${TOK.map((t,i)=>`<tr><td>${i+1}</td><td><a href="#/token/${t.s}${t.fake?"-fake":""}"><b>${esc(t.n)}</b> (${t.s})</a> ${t.fake?`<span class="tag bad">⚠ ${tr("নকল কপি","fake copy")}</span>`:""}</td><td>${t.native?"—":aL(t.ca,1)}</td><td>${t.native?"—":num(t.sup,0)}</td><td>${num(1200+seedOf(t.n)%90000,0)}</td></tr>`).join("")}</tbody></table></div></div>
+   <div class="card"><div class="empty" style="text-align:left">💡 ${tr("একই নামের দুটো BWN দেখছেন? নাম নকল করা যায়, কিন্তু কন্ট্রাক্ট ঠিকানা নকল করা যায় না। টোকেন কেনার আগে সবসময় কন্ট্রাক্ট ঠিকানা প্রজেক্টের অফিসিয়াল সাইটের সাথে মিলিয়ে নিন।","See two tokens called BWN? A name can be copied, a contract address cannot. Always match the contract address with the project's official site before buying.")}</div></div>`; }
+function pageToken(k){ const fake=/-fake$/.test(k), s=k.replace(/-fake$/,""), t=TOK.find(x=>x.s===s&&!!x.fake===fake); if(!t){ app.innerHTML=`<div class="card"><div class="empty">Token not found.</div></div>`; return; }
+  const H=height(), tf=[]; for(let n=H;n>H-200&&tf.length<25;n--) simBlock(n).txs.forEach(x=>{ if(x.coin===t.s&&!fake) tf.push(x); }); const my=fake?[]:mine().txs.filter(x=>x.coin===t.s);
+  app.innerHTML=`<h1>Token <small>${esc(t.n)} (${t.s})</small> ${t.fake?`<span class="tag bad">⚠ ${tr("নকল কপি, শেখার উদাহরণ","fake copy — lesson example")}</span>`:""}</h1>
+   <div class="cols"><div class="card wm"><h2>Overview</h2><div class="kv"><div><span>Max Total Supply</span><span>${t.native?"—":num(t.sup,0)+" "+t.s}</span></div><div><span>Holders</span><span>${num(1200+seedOf(t.n)%90000,0)}</span></div><div><span>Decimals</span><span>${t.dec}</span></div></div></div>
+   <div class="card"><h2>Profile</h2><div class="kv"><div><span>Contract</span><span>${t.native?tr("নেটিভ কয়েন (কন্ট্রাক্ট নেই)","Native coin (no contract)"):aL(t.ca)+" "+cp(t.ca)}</span></div><div><span>${tr("ধরন","Type")}</span><span>${t.native?"Native":"BEP-20"} <span class="badge">DEMO</span></span></div></div></div></div>
+   <div class="card"><h2>Transfers</h2>${txTable(my.concat(tf).slice(0,25))}</div>`; }
+function pageNfts(){ const d=store(), n=(d&&d.w3&&d.w3.nfts)||[], art=x=>{ const h=(x.s*47)%360; return `<svg viewBox="0 0 100 100"><rect width="100" height="100" rx="12" fill="hsl(${h},55%,16%)"/><circle cx="${30+x.s%40}" cy="${35+x.s%25}" r="${18+x.s%12}" fill="hsl(${(h+40)%360},80%,60%)" opacity=".85"/><rect x="${20+x.s%30}" y="${50+x.s%15}" width="${30+x.s%20}" height="${22+x.s%10}" rx="6" fill="hsl(${(h+200)%360},75%,62%)" opacity=".8"/></svg>`; };
+  app.innerHTML=`<h1>NFT <small>BEWON Demo Collection (BEP-721 demo)</small></h1><div class="card">${n.length?`<div class="nfts">${n.map(x=>{ const t=(d.wtx||[]).find(w=>w.id===x.tx); return `<div class="nft">${art(x)}<b>BEWON Demo #${x.n}</b><span>${tr("মালিক","Owner")}: ${aL(d.w3.addr,1)}</span>${t?`<span>Mint: ${txL(t.hash)}</span>`:""}</div>`; }).join("")}</div>`:`<div class="empty">${tr("আপনার এখনো কোনো ডেমো NFT নেই।","You have no demo NFTs yet.")} <a href="../#/demo/web3">${tr("Web3 ওয়ালেটে গিয়ে একটা Mint করুন →","Mint one in the Web3 wallet →")}</a></div>`}</div>`; }
+function pageVals(){ const H=height(); app.innerHTML=`<h1>${tr("যাচাইকারী","Validators")} <small>(demo)</small></h1><div class="card"><div class="tw"><table><thead><tr><th>#</th><th>Validator</th><th>Address</th><th>Status</th><th>Blocks (24h)</th><th>Last Block</th></tr></thead><tbody>${Array.from({length:21},(_,i)=>{ const v=i+1, last=H-((H-v)%21+21)%21; return `<tr><td>${v}</td><td><b>Validator ${v}</b></td><td>${aL(POOL[v],1)}</td><td><span class="tag ok">Active</span></td><td>${num(Math.floor(28800/21),0)}</td><td><a href="#/block/${last}">${last}</a></td></tr>`; }).join("")}</tbody></table></div></div>
+   <div class="card"><div class="empty" style="text-align:left">💡 ${tr("যাচাইকারীরা পালা করে ব্লক বানায় আর লেনদেন ঠিক আছে কিনা দেখে। আসল চেইনে এর জন্য তারা কয়েন জমা (stake) রাখে।","Validators take turns producing blocks and checking transactions. On a real chain they lock up (stake) coins to do this.")}</div></div>`; }
+function toolTabs(k){ return `<div class="tabs"><a href="#/tools/balance" class="${k==="balance"?"on":""}">${tr("ব্যালান্স চেকার","Balance Checker")}</a><a href="#/tools/unit" class="${k==="unit"?"on":""}">${tr("ইউনিট কনভার্টার","Unit Converter")}</a><a href="#/tools/gas" class="${k==="gas"?"on":""}">${tr("গ্যাস ট্র্যাকার","Gas Tracker")}</a></div>`; }
+function pageBalance(pre){ const d=store(), mineA=d&&d.w3&&d.w3.addr||"", today=new Date().toISOString().slice(0,10);
+  app.innerHTML=`<h1>Tools</h1>${toolTabs("balance")}<div><h1 style="font-size:16px">${tr("অ্যাকাউন্ট ব্যালান্স চেকার","Account Balance Checker")}</h1><p class="sub">${tr("কোনো ঠিকানার নির্দিষ্ট তারিখ বা ব্লকের ব্যালান্স দেখুন।","Look up an account's balance at a specific date or block number.")}</p></div>
+   <form class="card" id="bf"><div class="form"><label>${tr("কী দেখবেন","Choose an option")}<select name="c">${[...new Set(TOK.filter(t=>!t.fake).map(t=>t.s))].map(s=>`<option>${s}</option>`).join("")}</select></label>
+     <label>${tr("অ্যাকাউন্ট / কন্ট্রাক্ট ঠিকানা","Account Address / Contract Address")} *<input name="a" placeholder="0xDEMO…" value="${esc(decodeURIComponent(pre||"")||mineA)}" required></label>
+     <div><div style="font-size:13px;margin-bottom:6px">Filter by:</div><div class="rd"><label><input type="radio" name="f" value="d" checked> Date</label><label><input type="radio" name="f" value="b"> Block Number</label></div></div>
+     <label id="fd">${tr("কোন তারিখের","Date for the snapshot")}<input type="date" name="d" value="${today}" max="${today}"></label><label id="fb" hidden>Block Number<input type="number" name="b" value="${height()}" min="${G0}"></label></div>
+     <div class="act"><button class="btn">Lookup</button><button type="reset" class="lnk">Reset</button></div><div id="br"></div></form>`;
+  const f=$("#bf"); f.querySelectorAll("[name=f]").forEach(r=>r.onchange=()=>{ const b=f.f.value==="b"; $("#fd").hidden=b; $("#fb").hidden=!b; });
+  f.onreset=()=>{ $("#br").innerHTML=""; setTimeout(()=>{ $("#fd").hidden=false; $("#fb").hidden=true; }); };
+  f.onsubmit=e=>{ e.preventDefault(); const a=f.a.value.trim(), c=f.c.value, isB=f.f.value==="b", n=isB?Math.min(height(),Math.max(G0,+f.b.value||height())):null, until=isB?btime(n)+BT:new Date(f.d.value+"T23:59:59Z").getTime(), now=until>=Date.now()-6e4, {b,own}=balOf(a,now?0:until);
+    let v=b[c]||0; if(!own&&!now){ v=+(v*(0.4+rng(seedOf(a)+Math.floor(until/864e5))()*0.6)).toFixed(4); }
+    $("#br").innerHTML=`<div class="res">${tr("ব্যালান্স","Balance")} (${isB?"Block "+n:f.d.value}):<br><b>${num(v)} ${esc(c)}</b> <span class="badge">DEMO</span><br><small style="color:var(--muted)">${aL(a,1)} · ${own?tr("আপনার ডেমো লেনদেন থেকে হিসাব করা","calculated from your demo transactions"):tr("নকল ঠিকানা, সংখ্যাটা উদাহরণ মাত্র","pretend address, the number is only an example")}</small></div>`; }; }
+function pageUnit(){ app.innerHTML=`<h1>Tools</h1>${toolTabs("unit")}<div><h1 style="font-size:16px">${tr("ইউনিট কনভার্টার","Unit Converter")}</h1><p class="sub">${tr("১ tBNB = ১০০ কোটি Gwei = ১০^১৮ Wei। গ্যাসের দাম Gwei-তে লেখা হয়।","1 tBNB = 1,000,000,000 Gwei = 10^18 Wei. Gas prices are quoted in Gwei.")}</p></div>
+   <div class="card"><div class="form"><label>Wei<input id="u0" inputmode="decimal"></label><label>Gwei<input id="u9" inputmode="decimal"></label><label>tBNB<input id="u18" inputmode="decimal" value="1"></label></div></div>`;
+  const P={u0:0,u9:9,u18:18}, set=from=>{ const v=parseFloat($("#"+from).value); Object.keys(P).forEach(k=>{ if(k!==from) $("#"+k).value=isFinite(v)?(v*Math.pow(10,P[from]-P[k])).toLocaleString("en-US",{useGrouping:false,maximumFractionDigits:18}):""; }); };
+  Object.keys(P).forEach(k=>$("#"+k).oninput=()=>set(k)); set("u18"); }
+function pageGas(){ const g=gasNow(), c=(gw,gl)=>(gw*gl/1e9).toFixed(6);
+  app.innerHTML=`<h1>Tools</h1>${toolTabs("gas")}<div><h1 style="font-size:16px">${tr("গ্যাস ট্র্যাকার","Gas Tracker")} <span class="badge">DEMO</span></h1><p class="sub">${tr("গ্যাস ফি = গ্যাস দাম × ব্যবহৃত গ্যাস। নেটওয়ার্ক ব্যস্ত হলে দাম বাড়ে।","Gas fee = gas price × gas used. The price rises when the network is busy.")}</p></div>
+   <div class="card"><div class="gas"><div><span>🐢 Low</span><b style="color:var(--up)">${g.lo}</b><span>Gwei</span></div><div><span>🚗 Average</span><b style="color:var(--pri)">${g.av}</b><span>Gwei</span></div><div><span>🚀 High</span><b style="color:var(--down)">${g.hi}</b><span>Gwei</span></div></div>
+   <div class="tw"><table><thead><tr><th>${tr("কাজ","Action")}</th><th>Gas</th><th>Low</th><th>Average</th><th>High</th></tr></thead><tbody>${[["tBNB Transfer",21000],["Token Transfer",60000],["Swap",150000],["NFT Mint",120000]].map(([n,gl])=>`<tr><td>${n}</td><td>${num(gl,0)}</td><td>${c(g.lo,gl)} tBNB</td><td>${c(g.av,gl)} tBNB</td><td>${c(g.hi,gl)} tBNB</td></tr>`).join("")}</tbody></table></div></div>`; }
+function route(keep){ const p=location.hash.replace(/^#\/?/,"").split("/"); if(keep!==true) window.scrollTo(0,0); HOME=null; $("#mn").classList.remove("open");
+  if(p[0]==="tx") pageTx(p[1]); else if(p[0]==="block") pageBlock(p[1]); else if(p[0]==="blocks") pageBlocks(p[1]); else if(p[0]==="txs") pageTxs(p[1]); else if(p[0]==="address") pageAddr(p.slice(1).join("/"));
+  else if(p[0]==="tokens") pageTokens(); else if(p[0]==="token") pageToken(p[1]||""); else if(p[0]==="nfts") pageNfts(); else if(p[0]==="validators") pageVals();
+  else if(p[0]==="tools") (p[1]==="unit"?pageUnit:p[1]==="gas"?pageGas:()=>pageBalance(p.slice(2).join("/")))(); else pageHome(); }
+$("#sf").onsubmit=e=>{ e.preventDefault(); const v=$("#q").value.trim(); if(!v) return; const tk=TOK.find(t=>t.s.toLowerCase()===v.toLowerCase()&&!t.fake);
+  location.hash=/^\d+$/.test(v)?"#/block/"+v:/^0x[0-9a-f]{64}$/i.test(v)?"#/tx/"+v:tk?"#/token/"+tk.s:"#/address/"+encodeURIComponent(v); $("#q").value=""; };
+document.addEventListener("click",e=>{ const c=e.target.closest("[data-cp]"); if(c){ try{ navigator.clipboard.writeText(c.dataset.cp); }catch(x){} c.textContent="✓"; setTimeout(()=>c.textContent="⧉",1200); }
+  const d=e.target.closest(".dd>button"); document.querySelectorAll(".dd").forEach(x=>x.classList.toggle("open",!!d&&x===d.parentNode&&!x.classList.contains("open"))); });
+$("#mb").onclick=()=>$("#mn").classList.toggle("open");
+$("#thB").onclick=()=>{ const t=document.documentElement.dataset.t==="dark"?"light":"dark"; document.documentElement.dataset.t=t; try{ localStorage.setItem("scan_theme",t); }catch(e){} };
 document.documentElement.lang=LANG;
-$("#h1").textContent=tr("BEWON ডেমো ব্লকচেইন এক্সপ্লোরার","BEWON demo blockchain explorer");
-$("#q").placeholder=tr("Hash / ব্লক নম্বর / ঠিকানা দিয়ে খুঁজুন","Search by hash / block number / address"); $("#sb").textContent=tr("খুঁজুন","Search");
-$("#nHome").textContent=tr("হোম","Home"); $("#nWallet").textContent=tr("ডেমো ওয়ালেট","Demo wallet"); $("#nSite").textContent="BEWON Signals";
-$("#warn").textContent=tr("⚠️ এটা শেখার জন্য বানানো নকল এক্সপ্লোরার। এখানকার ব্লক, Hash, ঠিকানা আর ব্যালান্স কোনো আসল ব্লকচেইনে নেই এবং এগুলোর কোনো আর্থিক মূল্য নেই।","⚠️ This is a pretend explorer for learning. The blocks, hashes, addresses and balances here do not exist on any real blockchain and have no monetary value.");
-$("#ft").textContent="BEWON TestScan · DEMO · "+tr("আপনার লেনদেন শুধু আপনার এই ব্রাউজারেই দেখা যায়।","Your transactions are visible only in this browser.");
+const T={q:["Hash / ব্লক / ঠিকানা / টোকেন দিয়ে খুঁজুন","Search by Address / Txn Hash / Block / Token"],tag:["ডেমো টেস্টনেট এক্সপ্লোরার","Demo testnet explorer"],nHome:["হোম","Home"],nBc:["ব্লকচেইন ▾","Blockchain ▾"],nTx:["লেনদেন","Transactions"],nBl:["ব্লক","Blocks"],nVa:["যাচাইকারী","Validators"],nTk:["টোকেন ▾","Tokens ▾"],nTl:["টোকেন তালিকা","Token list"],nNf:["NFT","NFTs"],nTo:["টুলস ▾","Tools ▾"],nT1:["ব্যালান্স চেকার","Balance Checker"],nT2:["ইউনিট কনভার্টার","Unit Converter"],nT3:["গ্যাস ট্র্যাকার","Gas Tracker"],nT4:["Faucet (Web3 ওয়ালেট)","Faucet (Web3 wallet)"],nWa:["ডেমো ওয়ালেট","Demo wallet"]};
+Object.entries(T).forEach(([k,v])=>{ const e=$("#"+k); if(!e) return; if(k==="q") e.placeholder=tr(v[0],v[1]); else e.textContent=tr(v[0],v[1]); });
+$("#warn").textContent=tr("⚠️ এটা শেখার জন্য বানানো নকল টেস্টনেট এক্সপ্লোরার। এখানকার ব্লক, Hash, ঠিকানা, টোকেন আর ব্যালান্স কোনো আসল ব্লকচেইনে নেই এবং এগুলোর কোনো আর্থিক মূল্য নেই।","⚠️ This is a pretend testnet explorer for learning. The blocks, hashes, addresses, tokens and balances here do not exist on any real blockchain and have no monetary value.");
+$("#ft").innerHTML="BEWON TestScan · DEMO · "+tr("আপনার লেনদেন শুধু আপনার এই ব্রাউজারেই দেখা যায়।","Your transactions are visible only in this browser.")+` · <a href="../">BEWON Signals</a>`;
+const gp=()=>{ $("#gasP").textContent="⛽ "+gasNow().av+" Gwei"; }; gp(); setInterval(gp,15000);
 window.addEventListener("hashchange",route); route();
-setInterval(()=>{ const p=location.hash.replace(/^#\/?/,"").split("/")[0]; if(!p||p==="tx"&&document.querySelector(".pend")) route(); },3000);
+setInterval(tickHome,250);
+setInterval(()=>{ if(document.querySelector(".tag.pend")) route(true); },3000);
 </script>
 </body>
 </html>
