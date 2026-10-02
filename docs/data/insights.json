@@ -1,0 +1,447 @@
+{
+ "dominance": {
+  "btc": 58.74,
+  "eth": 11.4,
+  "mcap": 2946282226264,
+  "mcap_ch": -0.14,
+  "ch_1d": null,
+  "ch_7d": null,
+  "history": [
+   {
+    "d": "2026-10-02",
+    "v": 58.74
+   }
+  ]
+ },
+ "walls": [
+  {
+   "coin": "BTC",
+   "price": 86276.535,
+   "support": {
+    "price": 86276.535,
+    "usd": 7424456
+   },
+   "resistance": {
+    "price": 86276.535,
+    "usd": 11365097
+   },
+   "buy_pct": 35
+  },
+  {
+   "coin": "ETH",
+   "price": 2755.205,
+   "support": {
+    "price": 2755.205,
+    "usd": 3737051
+   },
+   "resistance": {
+    "price": 2755.205,
+    "usd": 4321111
+   },
+   "buy_pct": 38
+  },
+  {
+   "coin": "BNB",
+   "price": 777.785,
+   "support": {
+    "price": 775.8405375,
+    "usd": 958253
+   },
+   "resistance": {
+    "price": 785.56285,
+    "usd": 4519646
+   },
+   "buy_pct": 33
+  },
+  {
+   "coin": "SOL",
+   "price": 122.11500000000001,
+   "support": {
+    "price": 116.92511250000001,
+    "usd": 1938947
+   },
+   "resistance": {
+    "price": 122.42028750000001,
+    "usd": 2399373
+   },
+   "buy_pct": 40
+  },
+  {
+   "coin": "XRP",
+   "price": 1.53795,
+   "support": {
+    "price": 1.480276875,
+    "usd": 740224
+   },
+   "resistance": {
+    "price": 1.541794875,
+    "usd": 994848
+   },
+   "buy_pct": 37
+  },
+  {
+   "coin": "ADA",
+   "price": 0.25465,
+   "support": {
+    "price": 0.254013375,
+    "usd": 234973
+   },
+   "resistance": {
+    "price": 0.25974299999999995,
+    "usd": 224945
+   },
+   "buy_pct": 55
+  },
+  {
+   "coin": "DOGE",
+   "price": 0.09717500000000001,
+   "support": {
+    "price": 0.09693206250000001,
+    "usd": 525180
+   },
+   "resistance": {
+    "price": 0.10009025000000002,
+    "usd": 760825
+   },
+   "buy_pct": 41
+  },
+  {
+   "coin": "AVAX",
+   "price": 11.1055,
+   "support": {
+    "price": 10.66128,
+    "usd": 222615
+   },
+   "resistance": {
+    "price": 11.13326375,
+    "usd": 221950
+   },
+   "buy_pct": 40
+  },
+  {
+   "coin": "LINK",
+   "price": 14.3885,
+   "support": {
+    "price": 14.244615000000001,
+    "usd": 283936
+   },
+   "resistance": {
+    "price": 14.784183750000002,
+    "usd": 240036
+   },
+   "buy_pct": 67
+  },
+  {
+   "coin": "DOT",
+   "price": 1.2295,
+   "support": {
+    "price": 1.22642625,
+    "usd": 99580
+   },
+   "resistance": {
+    "price": 1.23257375,
+    "usd": 99433
+   },
+   "buy_pct": 47
+  }
+ ],
+ "topics": {
+  "airdrop": [],
+  "unlock": [],
+  "listing": []
+ },
+ "listings": [
+  {
+   "ex": "KuCoin",
+   "title": "World Premiere: Concrete (CT) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-world-premiere-concrete-ct-listed-on-kucoin?lang=en_US",
+   "token": "CT",
+   "announced": "2026-09-30T06:03:00+00:00",
+   "trade": "2026-09-30T10:00:00+00:00"
+  },
+  {
+   "ex": "KuCoin",
+   "title": "World Premiere: Doppler Finance (XDP) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-world-premiere-doppler-finance-xdp-listed-on-kucoin?lang=en_US",
+   "token": "XDP",
+   "announced": "2026-09-25T03:00:00+00:00",
+   "trade": "2026-09-28T13:00:00+00:00"
+  },
+  {
+   "ex": "KuCoin",
+   "title": "KuCoin Spot to List Tokenized Stocks: AAPLX, HOODX, MSTRX and SPCXX",
+   "url": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplx-hoodx-mstrx-and-spcxx?lang=en_US",
+   "token": "",
+   "announced": "2026-09-23T02:34:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "Orochi Network (ON)  Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-orochi-network-on-listed-on-kucoin?lang=en_US",
+   "token": "ON",
+   "announced": "2026-09-17T03:04:00+00:00",
+   "trade": "2026-09-17T10:00:00+00:00"
+  },
+  {
+   "ex": "KuCoin",
+   "title": "World Premiere: MAGNE.AI (MHA) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-world-premiere-magne-ai-mha-listed-on-kucoin?lang=en_US",
+   "token": "MHA",
+   "announced": "2026-09-16T12:55:00+00:00",
+   "trade": "2026-09-17T12:00:00+00:00"
+  },
+  {
+   "ex": "KuCoin",
+   "title": "World Premiere: TINA (TINA) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-world-premiere-tina-tina-listed-on-kucoin?lang=en_US",
+   "token": "TINA",
+   "announced": "2026-09-16T10:35:00+00:00",
+   "trade": "2026-09-17T10:00:00+00:00"
+  },
+  {
+   "ex": "KuCoin",
+   "title": "Trusta.AI (TA) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-trusta-ai-ta-listed-on-kucoin?lang=en_US",
+   "token": "TA",
+   "announced": "2026-09-16T03:01:00+00:00",
+   "trade": "2026-09-16T10:00:00+00:00"
+  },
+  {
+   "ex": "KuCoin",
+   "title": "World Premiere: Gno.land (GNOT) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-world-premiere-gnoland-gnot-listed-on-kucoin?lang=en_US",
+   "token": "GNOT",
+   "announced": "2026-09-14T14:28:00+00:00",
+   "trade": "2026-09-16T14:00:00+00:00"
+  },
+  {
+   "ex": "KuCoin",
+   "title": "World Premiere: MarsCat (MCAT) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-world-premiere-marscat-mcat-listed-on-kucoin?lang=en_US",
+   "token": "MCAT",
+   "announced": "2026-09-09T13:09:00+00:00",
+   "trade": "2026-09-10T12:00:00+00:00"
+  },
+  {
+   "ex": "KuCoin",
+   "title": "World Premiere: Hunter Biden's Laptop (LAPTOP) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-world-premiere-hunter-biden-s-laptop-laptop-listed-on-kucoin-0909?lang=en_US",
+   "token": "LAPTOP",
+   "announced": "2026-09-09T12:19:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "4Stock (4STOCK) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-4stock-4stock-listed-on-kucoin?lang=en_US",
+   "token": "4STOCK",
+   "announced": "2026-09-09T02:06:00+00:00",
+   "trade": "2026-09-09T08:00:00+00:00"
+  },
+  {
+   "ex": "KuCoin",
+   "title": "MarsCoin (MARSCOIN) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-marscoin-marscoin-listed-on-kucoin?lang=en_US",
+   "token": "MARSCOIN",
+   "announced": "2026-09-05T01:57:00+00:00",
+   "trade": "2026-09-05T07:00:00+00:00"
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch GRVT/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-grvt-usd-for-spot-trading",
+   "token": "GRVT",
+   "announced": "2026-07-30T03:00:09+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch AEON/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-aeon-usd-for-spot-trading",
+   "token": "AEON",
+   "announced": "2026-07-27T03:00:10+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch CARDS/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-cards-usd-for-spot-trading",
+   "token": "CARDS",
+   "announced": "2026-06-25T02:00:09+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX to list CARDS/USDT (Collector Crypt) for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-to-list-cards-usdt-collector-crypt-for-spot-trading",
+   "token": "CARDS",
+   "announced": "2026-06-25T02:00:06+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch RE/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-re-usd-for-spot-trading",
+   "token": "RE",
+   "announced": "2026-06-18T02:00:10+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX completed TON token migration",
+   "url": "https://www.okx.com/en-us/help/okx-completed-ton-token-migration",
+   "token": "",
+   "announced": "2026-06-17T07:30:05+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch GRAM/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-gram-usd-for-spot-trading",
+   "token": "GRAM",
+   "announced": "2026-06-17T07:30:05+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX to list IRYS/USDT (Irys) for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-to-list-irys-usdt-irys-for-spot-trading",
+   "token": "IRYS",
+   "announced": "2026-05-27T05:00:13+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch IRYS/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-irys-usd-for-spot-trading",
+   "token": "IRYS",
+   "announced": "2026-05-26T14:15:18+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX to list AI/USDT (Gensyn) for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-to-list-ai-usdt-gensyn-for-spot-trading",
+   "token": "AI",
+   "announced": "2026-05-22T07:30:09+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch AI/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-ai-usd-for-spot-trading",
+   "token": "AI",
+   "announced": "2026-05-22T07:30:09+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch PROS/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-pros-usd-for-spot-trading",
+   "token": "PROS",
+   "announced": "2026-05-13T04:00:15+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX to list PROS/USDT (Pharos) for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-to-list-pros-usdt-pharos-for-spot-trading",
+   "token": "PROS",
+   "announced": "2026-05-13T04:00:10+00:00",
+   "trade": ""
+  }
+ ],
+ "earn": [
+  {
+   "ex": "KuCoin",
+   "title": "Earn Friday Week 135: Earn up to 9% APR with USDT, BTC, DOT",
+   "url": "https://www.kucoin.com/announcement/en-earn-friday-week-135-earn-up-to-9-apr-with-usdt-btc-dot?lang=en_US",
+   "token": "",
+   "announced": "2026-10-02T08:00:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "KuMining October Trading Challenge: Compete for 9,000+ USDT in Rewards!",
+   "url": "https://www.kucoin.com/announcement/en-kumining-october-trading-challenge-compete-for-9000-usdt-in-rewards?lang=en_US",
+   "token": "",
+   "announced": "2026-10-01T11:00:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "Deposit to Share 100,000 USDT — KuCoin Earn Boost Season",
+   "url": "https://www.kucoin.com/announcement/en-deposit-to-share-100000-usdt-kucoin-earn-boost-season?lang=en_US",
+   "token": "",
+   "announced": "2026-09-30T12:00:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "Concrete (CT) Listing Campaign — 220,000 CT Giveaway",
+   "url": "https://www.kucoin.com/announcement/en-concrete-ct-listing-campaign-220000-ct-giveaway?lang=en_US",
+   "token": "CT",
+   "announced": "2026-09-30T09:27:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "Spin to Win from a $100,000 Prize Pool on 161 TradFi Perpetual Pairs!",
+   "url": "https://www.kucoin.com/announcement/TradFiFuturesSpin?lang=en_US",
+   "token": "",
+   "announced": "2026-09-29T09:58:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "KuCoin Content Mining Rewards Distribution Notice (September 21 - September 27)",
+   "url": "https://www.kucoin.com/announcement/en-kucoin-content-mining-rewards-distribution-notice-september-21-september-27?lang=en_US",
+   "token": "",
+   "announced": "2026-09-29T04:08:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "Ultra (UOS) Trade and Learn Campaign — 7,638,586 UOS Prize Pool Up For Grabs",
+   "url": "https://www.kucoin.com/announcement/en-ultra-uos-trade-and-learn-campaign-7638586-uos-prize-pool-up-for-grabs?lang=en_US",
+   "token": "UOS",
+   "announced": "2026-09-28T04:30:01+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "Doppler Finance (XDP) Listing Campaign — 4,400,000 XDP Giveaway",
+   "url": "https://www.kucoin.com/announcement/en-doppler-finance-xdp-listing-campaign-4400000-xdp-giveaway?lang=en_US",
+   "token": "XDP",
+   "announced": "2026-09-28T04:30:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "Earn Friday Week 134: Earn up to 7% APR with USDT, BTC, ETH",
+   "url": "https://www.kucoin.com/announcement/en-earn-friday-week-134-earn-up-to-7-apr-with-usdt-btc-eth?lang=en_US",
+   "token": "",
+   "announced": "2026-09-25T08:00:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "KuMining 1st Anniversary: Mine, Earn & Celebrate With 100,000+ USDT in Rewards",
+   "url": "https://www.kucoin.com/announcement/en-kumining-1st-anniversary-mine-earn-celebrate-with-100000-usdt-in-rewards?lang=en_US",
+   "token": "",
+   "announced": "2026-09-22T11:00:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "KuCoin",
+   "title": "KuCoin Content Mining Rewards Distribution Notice (September 14 - September 20)",
+   "url": "https://www.kucoin.com/announcement/en-kucoin-content-mining-rewards-distribution-notice-september-14-september-20?lang=en_US",
+   "token": "",
+   "announced": "2026-09-22T09:15:00+00:00",
+   "trade": ""
+  }
+ ],
+ "tip": "সামনে বড় টোকেন আনলক আছে কিনা দেখে নিন। সরবরাহ বাড়লে দামে চাপ পড়তে পারে।",
+ "updated": "2026-10-02T08:57:43+00:00"
+}
