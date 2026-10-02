@@ -600,6 +600,10 @@ body:not(.is-home) #bgWorld{display:none}
 .rc-card p{margin:0;font-size:11.5px;color:var(--muted);text-align:center;line-height:1.5}
 .fa-code{font:700 30px "Inter","Hind Siliguri",sans-serif;letter-spacing:.18em;text-align:center}
 .fa-bar{height:5px;border-radius:9px;background:var(--sunk);overflow:hidden}.fa-bar i{display:block;height:100%;background:var(--p1)}
+.bx-c{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}.bx-c button{border:1px solid var(--line);background:var(--sunk);color:var(--muted);border-radius:8px;padding:5px 10px;font:600 12px "Inter",sans-serif;cursor:pointer}.bx-c button.on{border-color:var(--up);color:var(--up)}
+.wh-l{display:grid;gap:0}.wh-r{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:13px}
+.wh-r:first-child{border-top:0}.wh-r small{display:block;color:var(--muted);font-size:11.5px}.wh-r b{font-weight:600}
+.wh-s{width:44px;text-align:center;padding:4px 0;border-radius:6px;font:600 11px "Inter",sans-serif;color:#fff}.wh-s.b{background:var(--up)}.wh-s.s{background:var(--down)}
 .dx-head{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:12px 16px;border-radius:16px}
 .dx-pair select{appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:10px;padding:9px 30px 9px 12px;font:700 16px "Inter","Hind Siliguri",sans-serif;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 15px) 55%,calc(100% - 10px) 55%;background-size:5px 5px;background-repeat:no-repeat}
 .dx-px{display:flex;align-items:center;gap:10px}
@@ -737,7 +741,7 @@ h1,h2,h3{letter-spacing:-.015em}
   .top .wrap{padding-block:8px}
   main{padding-block:14px 30px;gap:22px}
   .wrap{padding-inline:14px}
-  .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--surface);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
+  .tabbar{display:grid;grid-template-columns:repeat(6,1fr);position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--surface);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
   .tabbar a,.tabbar button{display:grid;justify-items:center;gap:3px;border:0;background:none;text-decoration:none;color:var(--muted);font:600 10.5px "Inter","Hind Siliguri",sans-serif;padding:4px 0;cursor:pointer}
   .tabbar svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
   .tabbar .on{color:var(--accent)}
@@ -864,6 +868,7 @@ h1,h2,h3{letter-spacing:-.015em}
   .note{font-size:12px}.prose{font-size:13.5px}.prose h1{font-size:22px!important}
   .cn-bs .btn{min-height:40px}.coin-head h2{font-size:17px!important}.coin-head .px{font-size:24px!important}
 }
+@media (max-width:860px){.tabbar a,.tabbar button{font-size:9.5px!important;white-space:nowrap;overflow:hidden}.dm-grid[style]{grid-template-columns:minmax(0,1fr)!important}}
 </style>
 </head>
 <body>
@@ -895,7 +900,8 @@ h1,h2,h3{letter-spacing:-.015em}
 <nav class="tabbar" id="tabbar" aria-label="App">
   <a href="#/" data-r="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span data-bn="হোম" data-en="Home">হোম</span></a>
   <a href="#/market" data-r="market"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span data-bn="মার্কেট" data-en="Markets">মার্কেট</span></a>
-  <a href="#/demo/trade" data-r="trade" class="mid"><i><svg viewBox="0 0 24 24"><path d="M7 4v16M7 20l-3-3M7 20l3-3M17 20V4M17 4l-3 3M17 4l3 3"/></svg></i><span data-bn="ট্রেড" data-en="Trade">ট্রেড</span></a>
+  <a href="#/demo/trade" data-r="trade"><svg viewBox="0 0 24 24"><path d="M7 4v16M7 20l-3-3M7 20l3-3M17 20V4M17 4l-3 3M17 4l3 3"/></svg><span data-bn="ট্রেড" data-en="Trade">ট্রেড</span></a>
+  <a href="#/demo/bot" data-r="auto"><svg viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V4M9 13h.01M15 13h.01M9 16h6M2 13v3M22 13v3"/></svg><span data-bn="অটো ট্রেড" data-en="Auto">অটো ট্রেড</span></a>
   <a href="#/signals" data-r="signals"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg><span data-bn="সিগনাল" data-en="Signals">সিগনাল</span></a>
   <a href="#/demo/wallet" data-r="assets"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="3"/><path d="M3 10h18M16 15h2"/></svg><span data-bn="অ্যাসেট" data-en="Assets">অ্যাসেট</span></a>
 </nav>
@@ -1024,6 +1030,10 @@ function liveStream(streams,onMsg){ let ws=null, dead=false, last=0, rt=null;
   open(); const stop=()=>{ dead=true; clearTimeout(rt); try{ if(ws) ws.close(); }catch(e){} }; LIVE.push(stop);
   return {stop, live:()=>Date.now()-last<8000}; }
 function every(ms, fn){ timers.push(setInterval(fn, ms)); }
+/* result of one closed signal in %, by the bot's own rules: half is closed at TP1 and the stop moves to entry */
+function sigPct(t){ const e=+t.entry; if(!e||!t.result) return null; const m1=Math.abs(t.tp1-e)/e*100, m2=Math.abs(t.tp2-e)/e*100, ms=Math.abs(e-t.sl)/e*100;
+  return t.result==="TP2"?(m1+m2)/2:t.result==="TP1"?m1/2:t.result==="SL"?-ms:null; }
+function pctCell(t){ const v=sigPct(t); return v==null?`<span class="muted">—</span>`:`<b class="${v>=0?"up":"down"}">${v>=0?"+":""}${v.toFixed(2)}%</b>`; }
 function pillResult(r){ const m={TP2:["p-tp2","🎯 TP2"],TP1:["p-tp1","✅ TP1"],SL:["p-sl","❌ SL"],EXPIRED:["p-exp","⌛ Expired"]}[r]||["p-flat",r];
   return `<span class="pill ${m[0]}">${m[1]}</span>`; }
 function isFx(t){ return t.market==="forex"; }
@@ -1593,8 +1603,9 @@ async function pageSignals(){
     <p class="muted" style="font-size:14px">${tr("জয় = TP1 বা TP2 ছুঁয়েছে। হার = TP1 ছোঁয়ার আগেই Stop Loss। TP1-এর পর Stop Loss নিজে থেকেই Entry-তে সরে যায়।","Win = reached TP1 or TP2. Loss = hit Stop Loss before TP1. After TP1 the Stop Loss moves to Entry automatically.")}</p></section>`;
   const draw=()=>{ const fc=$("#fc").value, fr=$("#fr").value, fm=$("#fm").value;
     const h=s.history.filter(t=>(!fc||t.coin===fc)&&(!fr||t.result===fr)&&(!fm||(t.market||"crypto")===fm));
-    $("#hist").innerHTML=h.length?`<table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">TP2</th><th class="r hide-sm">SL</th><th>${tr("ফলাফল","Result")}</th><th class="r">Conf.</th><th class="hide-sm">${tr("শুরু","Opened")}</th><th class="hide-sm">${tr("শেষ","Closed")}</th></tr></thead><tbody>
-      ${h.map(t=>`<tr class="link" data-go="${goOf(t)}"><td><span class="sym">${logoOf(t)}${isFx(t)?t.name||t.coin:t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${px(t,t.entry)}</td><td class="r num hide-sm">${px(t,t.tp1)}</td><td class="r num hide-sm">${px(t,t.tp2)}</td><td class="r num hide-sm">${px(t,t.sl)}</td><td>${pillResult(t.result)}</td><td class="r">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td><td class="muted hide-sm">${when(t.closed)}</td></tr>`).join("")}</tbody></table>`
+    $("#hist").innerHTML=h.length?`<table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">TP2</th><th class="r hide-sm">SL</th><th>${tr("ফলাফল","Result")}</th><th class="r">${tr("লাভ/ক্ষতি","P/L")}</th><th class="r">Conf.</th><th class="hide-sm">${tr("শুরু","Opened")}</th><th class="hide-sm">${tr("শেষ","Closed")}</th></tr></thead><tbody>
+      ${h.map(t=>`<tr class="link" data-go="${goOf(t)}"><td><span class="sym">${logoOf(t)}${isFx(t)?t.name||t.coin:t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${px(t,t.entry)}</td><td class="r num hide-sm">${px(t,t.tp1)}</td><td class="r num hide-sm">${px(t,t.tp2)}</td><td class="r num hide-sm">${px(t,t.sl)}</td><td>${pillResult(t.result)}</td><td class="r">${pctCell(t)}</td><td class="r">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td><td class="muted hide-sm">${when(t.closed)}</td></tr>`).join("")}</tbody></table>
+      <p class="note" style="margin:10px 12px">${(()=>{ const v=h.map(sigPct).filter(x=>x!=null), sum=v.reduce((a,x)=>a+x,0); return tr(`এই তালিকার ${v.length}টা শেষ হওয়া সিগনালের মোট ফলাফল: <b class="${sum>=0?"up":"down"}">${sum>=0?"+":""}${sum.toFixed(2)}%</b> (জয় আর হার দুটোই ধরে, ফি বাদে)। হিসাব: অর্ধেক TP1-এ বন্ধ, বাকিটা TP2 বা Entry-তে। এটা অতীতের ফলাফল, ভবিষ্যতের নিশ্চয়তা নয়।`,`Combined result of the ${v.length} closed signals listed: <b class="${sum>=0?"up":"down"}">${sum>=0?"+":""}${sum.toFixed(2)}%</b> (wins and losses both counted, before fees). Method: half closed at TP1, the rest at TP2 or entry. Past results, not a promise.`); })()}</p>`
       :`<div class="empty">${s.history.length?tr("এই ফিল্টারে কিছু নেই","Nothing matches this filter"):tr("এখনো কোনো সিগনাল শেষ হয়নি।","No signal has closed yet.")}</div>`; };
   $("#fc").onchange=draw; $("#fr").onchange=draw; $("#fm").onchange=draw; draw();
   const cr=s.open.filter(t=>!isFx(t));
@@ -1912,7 +1923,7 @@ function demoLoad(){ let d=null; try{ d=JSON.parse(localStorage.getItem(DEMO_KEY
   if(!d||typeof d!=="object"){ d={uid:"BW"+Math.random().toString(36).slice(2,8).toUpperCase(),name:"",since:new Date().toISOString(),cash:DEMO_START,hold:{},tx:[{t:new Date().toISOString(),type:"start",usdt:DEMO_START}],jr:[]}; demoSave(d); }
   d.hold=d.hold||{}; d.tx=d.tx||[]; d.jr=d.jr||[]; d.orders=d.orders||[]; d.wtx=d.wtx||[]; d.p2p=d.p2p||[]; d.kyc=d.kyc||{lvl:0,at:0}; d.fut=d.fut||[]; d.futH=d.futH||[]; d.earn=d.earn||[]; d.alerts=d.alerts||[]; d.sec=d.sec||{};
   d.w3=Object.assign({on:false,seed:[],addr:"",net:W3_NETS[0],bal:{},tokens:["tBNB"],nfts:[],claimed:{},faucet:0},d.w3||{});
-  d.bot=Object.assign({on:false,amt:200,min:70,max:5,taken:{}},d.bot||{}); d.bot.taken=d.bot.taken||{}; return d; }
+  d.bot=Object.assign({on:false,amt:200,min:70,max:5,tp:"tp2",coins:[],taken:{}},d.bot||{}); if(!Array.isArray(d.bot.coins)) d.bot.coins=[]; d.bot.taken=d.bot.taken||{}; return d; }
 function demoSave(d){ try{ localStorage.setItem(DEMO_KEY,JSON.stringify(d)); }catch(e){} }
 const usd=x=>(+x).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
 const qtyF=x=>{ x=+x; return x>=100?x.toFixed(2):x>=1?x.toFixed(4):x.toPrecision(4); };
@@ -1942,10 +1953,10 @@ function demoTick(d,PX,sig){ let n=0;
       if(opp){ dmSell(d,c,h.qty,PX[c],{bot:true,why:"SELL signal"}); n++; }
       else if(h.sig&&!still){ dmSell(d,c,h.qty,PX[c],{bot:true,why:"signal closed"}); n++; } });
     open.forEach(t=>{ const k=key(t), p=PX[t.coin]; if(t.side!=="BUY"||d.bot.taken[k]||!p) return;
-      if((t.conf??0)<d.bot.min) return;
+      if((t.conf??0)<d.bot.min) return; if(d.bot.coins.length&&!d.bot.coins.includes(t.coin)) return;
       if(!(p>t.sl&&p<t.tp1)){ d.bot.taken[k]="skip"; n++; return; }
       const nb=Object.values(d.hold).filter(h=>h.bot).length; if(nb>=d.bot.max||d.cash<d.bot.amt||d.hold[t.coin]) return;
-      dmBuy(d,t.coin,d.bot.amt,p,{bot:true}); const h=d.hold[t.coin]; h.tp=t.tp2; h.sl=t.sl; h.bot=true; h.sig=k; d.bot.taken[k]="buy"; n++; });
+      dmBuy(d,t.coin,d.bot.amt,p,{bot:true}); const h=d.hold[t.coin]; h.tp=d.bot.tp==="tp1"?t.tp1:t.tp2; h.sl=t.sl; h.bot=true; h.sig=k; d.bot.taken[k]="buy"; n++; });
     const ks=Object.keys(d.bot.taken); if(ks.length>150) ks.slice(0,ks.length-150).forEach(k=>delete d.bot.taken[k]); }
   return n; }
 async function demoPrices(list,PX){ list=[...new Set(list)].filter(c=>/^[A-Z0-9]{2,12}$/.test(c)); if(!list.length) return;
@@ -1988,7 +1999,7 @@ async function pageDemo(){
   const DT=["trade","fut","conv","earn","wallet","p2p","web3","kyc","bot","tools","journal"];
   if(hp[2]&&DT.includes(hp[2])){ DEMO_TAB=hp[2]; try{ history.replaceState(null,"","#/demo"); }catch(e){} }
   else if(hp[2]){ const hc=clean(hp[2]); if(hc){ DEMO_COIN=hc; DEMO_TAB="trade"; if(hp[3]==="sell") side="SELL"; } try{ history.replaceState(null,"","#/demo"); }catch(e){} }
-  document.querySelectorAll("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(DEMO_TAB==="wallet"?"assets":["web3","kyc","tools","journal"].includes(DEMO_TAB)?"":"trade")));
+  document.querySelectorAll("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(DEMO_TAB==="wallet"?"assets":DEMO_TAB==="bot"?"auto":["web3","kyc","tools","journal"].includes(DEMO_TAB)?"":"trade")));
   document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.r==="demo"));
   const s=await loadSignals(), d=demoLoad(), PX={}, coins=[...new Set([...(s.coins||SITE.botCoins),DEMO_COIN,...Object.keys(d.hold)])].filter(c=>/^[A-Z0-9]{2,12}$/.test(c));
   const sigs=s.open.filter(t=>!isFx(t));
@@ -2391,10 +2402,13 @@ async function pageDemo(){
       const hs=Object.entries(d.hold).filter(([c,h])=>h.bot);
       body.innerHTML=`<div class="dm-grid">
         <div class="dm-panel card"><h3>🤖 ${tr("ডেমো অটো-ট্রেড বট","Demo auto-trade bot")}</h3>
+          <div class="dx-qk">${[["trade","⇅",tr("স্পট","Spot")],["fut","📈",tr("ফিউচার","Futures")],["conv","🔄",tr("কনভার্ট","Convert")],["earn","🌱","Earn"],["p2p","🤝","P2P"],["wallet","👛",tr("ওয়ালেট","Wallet")]].map(x=>`<button type="button" data-qk="${x[0]}"><i>${x[1]}</i>${x[2]}</button>`).join("")}</div>
           <div class="dx-sw ${b.on?"on":""}"><div><b>${b.on?tr("বট চালু আছে","Bot is ON"):tr("বট বন্ধ আছে","Bot is OFF")}</b><span>${b.on?tr("নতুন BUY সিগনাল এলে নিজে ডেমো টাকায় কিনবে","Buys new BUY signals with demo money by itself"):tr("চালু করলে বট নিজে ডেমো ট্রেড করবে","Turn on and the bot will place demo trades")}</span></div><button id="bxT" aria-pressed="${b.on}">${b.on?"ON":"OFF"}</button></div>
           <label class="dm-f">${tr("প্রতি ট্রেডে কত ডেমো USDT","Demo USDT per trade")}<input id="bxA" type="number" min="10" max="5000" step="10" value="${b.amt}"></label>
           <label class="dm-f">${tr("কমপক্ষে কত Confidence হলে কিনবে","Minimum confidence to buy")}<select id="bxM">${[[60,"60%+ (C)"],[70,"70%+ (B)"],[78,"78%+ (A)"],[85,"85%+ (A+)"]].map(([v,l])=>`<option value="${v}"${b.min==v?" selected":""}>${l}</option>`).join("")}</select></label>
           <label class="dm-f">${tr("একসাথে সর্বোচ্চ কয়টা ট্রেড","Max open trades at once")}<select id="bxX">${[1,2,3,5,8].map(v=>`<option${b.max==v?" selected":""}>${v}</option>`).join("")}</select></label>
+          <label class="dm-f">${tr("কোথায় লাভ নিয়ে বেচবে","Where to take profit")}<select id="bxP"><option value="tp1"${b.tp==="tp1"?" selected":""}>TP1 (${tr("কাছের লক্ষ্য, কম ঝুঁকি","nearer target, safer")})</option><option value="tp2"${b.tp!=="tp1"?" selected":""}>TP2 (${tr("দূরের লক্ষ্য, বেশি লাভ","further target, more profit")})</option></select></label>
+          <div class="dm-f">${tr("কোন কোন কয়েনে ট্রেড করবে (কিছু না বাছলে সব)","Which coins to trade (none selected = all)")}<div class="bx-c">${(s.coins||SITE.botCoins).map(c=>`<button type="button" data-bc="${c}" class="${b.coins.includes(c)?"on":""}">${c}</button>`).join("")}</div></div>
           <p class="muted" style="margin:0;font-size:12.5px">${tr("বট শুধু নকল টাকায় কাজ করে, আর শুধু তখন যখন এই সাইট আপনার ব্রাউজারে খোলা থাকে। আসল টাকার অটো-ট্রেডিং আমরা দিই না।","The bot uses play money only and works only while this site is open in your browser. We do not offer real-money auto-trading.")}</p></div>
         <div style="display:grid;gap:16px">
           <div class="dm-row3 dx-st"><div><span>${tr("বটের ট্রেড","Bot trades")}</span><b>${sells.length}</b></div><div><span>${tr("জয়","Wins")}</span><b>${sells.length?Math.round(win*100/sells.length)+"%":"—"}</b></div><div><span>${tr("লাভ/ক্ষতি","Realised P/L")}</span><b class="${pl>=0?"up":"down"}">${pl>=0?"+":""}${usd(pl)}</b></div></div>
@@ -2404,9 +2418,14 @@ async function pageDemo(){
             ${sells.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("কেনা দাম","Entry")}</th><th class="r">${tr("বেচা দাম","Exit")}</th><th class="r">P/L</th><th>${tr("কারণ","Reason")}</th><th class="r">${tr("কখন","When")}</th></tr></thead><tbody>${sells.slice(0,50).map(x=>{ const pc=x.avg?(x.price*(1-DEMO_FEE)/x.avg-1)*100:null; return `<tr><td>${logo(x.coin)} <b>${esc(x.coin)}</b><div class="muted" style="font-size:12px">${qtyF(x.qty)}</div></td><td class="r">${x.avg?fmtPx(x.avg):"—"}</td><td class="r">${fmtPx(x.price)}</td><td class="r ${x.pl>=0?"up":"down"}">${x.pl>=0?"+":""}${usd(x.pl)}${pc!=null?`<div style="font-size:11.5px">${pc>=0?"+":""}${pc.toFixed(2)}%</div>`:""}</td><td><span class="pill ${x.why==="TP"?"p-tp2":x.why==="SL"?"p-sl":"p-flat"}">${esc(x.why||"—")}</span></td><td class="r muted" style="font-size:12.5px">${when(x.t)}<div><button class="xs" data-rc="${sells.indexOf(x)}">🧾 ${tr("রসিদ","Receipt")}</button></div></td></tr>`; }).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("বট এখনো কোনো ট্রেড শেষ করেনি।","The bot has not closed a trade yet.")}</div>`}</div>
           <div class="dm-panel card"><h3>🧾 ${tr("বটের কাজের তালিকা","Bot activity")}</h3>
             ${bt.length?`<div class="tbl-wrap dm"><table><tbody>${bt.slice(0,25).map(x=>`<tr><td><b>${x.type==="buy"?tr("কিনেছে","Bought"):tr("বেচেছে","Sold")}</b> · ${esc(x.coin)}${x.why?` <span class="pill p-flat">${esc(x.why)}</span>`:""}<div class="muted" style="font-size:12px">${ago(x.t)}</div></td><td class="r">${qtyF(x.qty)} @ ${fmtPx(x.price)}</td><td class="r ${x.type==="sell"?(x.pl>=0?"up":"down"):""}">${x.type==="sell"?(x.pl>=0?"+":"")+usd(x.pl):"−"+usd(x.usdt)}</td></tr>`).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("বট এখনো কোনো ট্রেড করেনি। চালু রাখলে নতুন সিগনাল এলে করবে।","No bot trades yet. Leave it on and it will act on the next signal.")}</div>`}</div>
+          <div class="dm-panel card"><h3>🎯 ${tr("সিগনালের ফলাফল (বট এগুলোই অনুসরণ করে)","Signal results (what the bot follows)")}</h3>
+            ${(()=>{ const hh=s.history.filter(t=>!isFx(t)).slice(0,12), v=hh.map(sigPct).filter(x=>x!=null), sum=v.reduce((a2,x)=>a2+x,0); return hh.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("ফলাফল","Result")}</th><th class="r">${tr("লাভ/ক্ষতি","P/L")}</th><th class="r">${tr("কখন","When")}</th></tr></thead><tbody>${hh.map(t=>`<tr><td>${logo(t.coin)} <b>${esc(t.coin)}</b> ${pillSide(t.side)}</td><td>${pillResult(t.result)}</td><td class="r">${pctCell(t)}</td><td class="r muted" style="font-size:12px">${ago(t.closed)}</td></tr>`).join("")}</tbody></table></div><p class="muted" style="margin:0;font-size:12px">${tr(`শেষ ${v.length}টার মোট: `,`Last ${v.length} combined: `)}<b class="${sum>=0?"up":"down"}">${sum>=0?"+":""}${sum.toFixed(2)}%</b> · ${tr("জয় আর হার দুটোই ধরা। অতীতের ফল, ভবিষ্যতের নিশ্চয়তা নয়।","wins and losses both counted. Past results, not a promise.")} <a href="#/signals">${tr("সব দেখুন →","See all →")}</a></p>`:`<div class="dm-empty">${tr("এখনো কোনো সিগনাল শেষ হয়নি।","No signal has closed yet.")}</div>`; })()}</div>
           <div class="dm-panel card"><h3>${tr("বট কীভাবে কাজ করে","How the bot works")}</h3><ol class="dx-how"><li>${tr("নতুন BUY সিগনাল এলে, আর Confidence আপনার সীমার ওপরে হলে, ডেমো টাকায় কেনে।","When a new BUY signal arrives with confidence above your limit, it buys with demo money.")}</li><li>${tr("সিগনালের TP2 আর Stop Loss নিজে বসায়।","It sets the signal's TP2 and stop loss by itself.")}</li><li>${tr("দাম TP বা SL ছুঁলে, বা সিগনাল বন্ধ হলে, নিজে বেচে দেয়।","It sells when price hits TP or SL, or when the signal closes.")}</li><li>${tr("এটা স্পট ডেমো, তাই SELL সিগনালে নতুন ট্রেড নেয় না।","This is spot demo, so it does not open trades on SELL signals.")}</li></ol></div>
         </div></div>`;
       body.querySelectorAll("[data-rc]").forEach(b2=>b2.onclick=()=>showReceipt(sells[+b2.dataset.rc],d));
+      body.querySelectorAll(".dx-qk [data-qk]").forEach(b2=>b2.onclick=()=>{ DEMO_TAB=b2.dataset.qk; pageDemo(); });
+      body.querySelectorAll("[data-bc]").forEach(b2=>b2.onclick=()=>{ const c=b2.dataset.bc; d.bot.coins=d.bot.coins.includes(c)?d.bot.coins.filter(x=>x!==c):[...d.bot.coins,c]; demoSave(d); draw(); });
+      $("#bxP").onchange=e=>{ d.bot.tp=e.target.value; demoSave(d); };
       $("#bxT").onclick=()=>{ d.bot.on=!d.bot.on; demoSave(d); draw(); if(d.bot.on) tick(); };
       $("#bxA").onchange=e=>{ d.bot.amt=Math.max(10,Math.min(5000,+e.target.value||200)); demoSave(d); };
       $("#bxM").onchange=e=>{ d.bot.min=+e.target.value; demoSave(d); }; $("#bxX").onchange=e=>{ d.bot.max=+e.target.value; demoSave(d); }; };
@@ -2554,6 +2573,27 @@ async function pageDemo(){
   startLive(); every(8000,tick); every(6000,()=>{ if(!LS||!LS.live()) loadBook(); }); every(3000,pollK); every(60000,loadK);
 }
 
+/* ---------- whale watch: big executed trades and big resting orders (live public market data) ---------- */
+let WH_COIN="BTC";
+async function pageWhales(){ const s=await loadSignals(), coins=[...new Set([...(s.coins||SITE.botCoins)])];
+  app.innerHTML=`<section class="sec-head"><div><span class="eyebrow">${tr("বড় টাকার নড়াচড়া","Big money moves")}</span><h2>${tr("বড় ট্রেড আর বড় অর্ডার","Big trades & big orders")}</h2><p>${tr("বাজারে এইমাত্র কোন বড় ট্রেড হয়েছে, আর কোন দামে বড় অর্ডার অপেক্ষা করছে। তথ্য Binance-এর লাইভ পাবলিক ডেটা।","Which big trades just happened, and at which prices big orders are waiting. Live public data from Binance.")}</p></div></section>
+    <div class="sq-f" id="whC">${coins.map(c=>`<button data-c="${c}" class="${c===WH_COIN?"on":""}">${c}</button>`).join("")}</div>
+    <div class="dm-grid" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+      <div class="dm-panel card"><h3>✅ ${tr("হয়ে যাওয়া বড় ট্রেড","Big trades done")}</h3><p class="muted" style="margin:0;font-size:12.5px">${tr("শেষ ১,০০০ ট্রেডের মধ্যে সবচেয়ে বড়গুলো। সবুজ = কেউ কিনেছে, লাল = কেউ বেচেছে।","The largest of the last 1,000 trades. Green = someone bought, red = someone sold.")}</p><div class="wh-l" id="whT"><div class="dm-empty">${tr("লোড হচ্ছে…","Loading…")}</div></div></div>
+      <div class="dm-panel card"><h3>⏳ ${tr("অপেক্ষায় থাকা বড় অর্ডার","Big orders waiting")}</h3><p class="muted" style="margin:0;font-size:12.5px">${tr("অর্ডার বুকে বসে থাকা সবচেয়ে বড় অর্ডার। দাম সেখানে গেলে এগুলো ভরবে।","The largest orders resting in the order book. They fill if price reaches them.")}</p><div class="wh-l" id="whB"><div class="dm-empty">${tr("লোড হচ্ছে…","Loading…")}</div></div></div>
+    </div>
+    <p class="note">⚠️ ${tr("বড় অর্ডার নকলও হতে পারে (spoofing): দাম কাছে এলে তুলে নেওয়া হয়। শুধু এটা দেখে ট্রেড নেবেন না। এটা আর্থিক পরামর্শ নয়।","Big orders can be fake (spoofing): they get pulled when price comes close. Never trade on this alone. Not financial advice.")}</p>`;
+  const k=x=>x>=1e6?(x/1e6).toFixed(2)+"M":x>=1e3?(x/1e3).toFixed(1)+"K":x.toFixed(0);
+  const load=async()=>{ const c=WH_COIN; try{ const [tr_,dp]=await Promise.all([bget(`/api/v3/aggTrades?symbol=${c}USDT&limit=1000`),bget(`/api/v3/depth?symbol=${c}USDT&limit=1000`)]); if(c!==WH_COIN||!$("#whT")) return;
+      const tt=tr_.map(x=>({p:+x.p,q:+x.q,v:x.p*x.q,s:x.m?"s":"b",t:x.T})).sort((a,b)=>b.v-a.v).slice(0,12);
+      $("#whT").innerHTML=tt.map(x=>`<div class="wh-r"><span class="wh-s ${x.s}">${x.s==="b"?"BUY":"SELL"}</span><span><b>$${k(x.v)}</b><small>${qtyF(x.q)} ${c} @ ${fmtPx(x.p)}</small></span><span class="muted" style="font-size:11.5px">${new Date(x.t).toLocaleTimeString("en-GB")}</span></div>`).join("");
+      const mid=(+dp.bids[0][0]+ +dp.asks[0][0])/2, ob=dp.bids.map(r=>({p:+r[0],q:+r[1],s:"b"})).concat(dp.asks.map(r=>({p:+r[0],q:+r[1],s:"s"}))).map(x=>({...x,v:x.p*x.q,d:(x.p/mid-1)*100})).sort((a,b)=>b.v-a.v).slice(0,12);
+      $("#whB").innerHTML=ob.map(x=>`<div class="wh-r"><span class="wh-s ${x.s}">${x.s==="b"?"BUY":"SELL"}</span><span><b>$${k(x.v)}</b><small>${qtyF(x.q)} ${c} @ ${fmtPx(x.p)}</small></span><span class="${x.d>=0?"up":"down"}" style="font-size:12px;text-align:right">${x.d>=0?"+":""}${x.d.toFixed(2)}%<small>${tr("এখনকার দাম থেকে","from price")}</small></span></div>`).join("");
+    }catch(e){ if($("#whT")&&c===WH_COIN){ const m=`<div class="dm-empty">${tr("তথ্য আনা যায়নি। একটু পরে আবার চেষ্টা করুন।","Could not load data. Try again shortly.")}</div>`; $("#whT").innerHTML=m; $("#whB").innerHTML=m; } } };
+  $("#whC").querySelectorAll("button").forEach(b=>b.onclick=()=>{ WH_COIN=b.dataset.c; $("#whC").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b)); $("#whT").innerHTML=$("#whB").innerHTML=`<div class="dm-empty">…</div>`; load(); });
+  load(); every(12000,load);
+}
+
 /* ---------- square: learning articles ---------- */
 const SQ_BASE=[
  {id:"s1",tag:"basics",d:"2026-10-02",bn:["ট্রেড নেওয়ার আগে ৫টা প্রশ্ন","ট্রেন্ড কোন দিকে? আমার Entry কোথায়? ভুল হলে কোথায় বের হব (Stop Loss)? লাভ কোথায় নেব (Take Profit)? এই ট্রেডে হারলে আমার টাকার কত শতাংশ যাবে? এই পাঁচটার উত্তর লিখতে না পারলে ট্রেডটা নেবেন না। ডেমো এক্সচেঞ্জে আগে অনুশীলন করুন।"],en:["Five questions before any trade","Which way is the trend? Where is my entry? Where do I exit if I am wrong (stop loss)? Where do I take profit? What percent of my money do I lose if it fails? If you cannot write down all five answers, skip the trade. Practise on the demo exchange first."]},
@@ -2624,9 +2664,10 @@ async function pageLearn(){
   } else if(LEARN_TAB==="listings"){
     const ls=ins.listings||[], er=ins.earn||[], now=Date.now();
     const st=x=>{ if(!x.trade) return `<span class="pill p-flat">${tr("ঘোষিত","Announced")}</span>`; return new Date(x.trade)>now?`<span class="pill p-open">⏳ ${tr("অপেক্ষায়","Upcoming")}</span>`:`<span class="pill p-tp1">✓ ${tr("চালু","Live")}</span>`; };
-    const exb=x=>`<span class="cpill" style="color:${x.ex==="OKX"?"var(--ink)":"var(--up)"}">${esc(x.ex)}</span>`;
-    const up=ls.filter(x=>x.trade&&new Date(x.trade)>now).length;
+    const exb=x=>`<span class="cpill" style="color:var(--ink)">${esc(x.ex)}</span>`;
+    const up=ls.filter(x=>x.trade&&new Date(x.trade)>now).length, src=Object.entries(ins.sources||{});
     body.innerHTML=`<div class="ln">
+      ${src.length?`<p class="muted" style="margin:0;font-size:12.5px">${tr("উৎস","Sources")}: ${src.map(([n,v])=>`<span class="cpill" style="margin:2px;color:${v<0?"var(--down)":"var(--up)"}">${esc(n)} ${v<0?"✕":"✓"}</span>`).join("")}</p>`:""}
       <div class="ln-k" style="margin:0"><div><span>${tr("লিস্টিংয়ের ঘোষণা","Listing announcements")}</span><b>${ls.length}</b></div><div><span>${tr("এখনো অপেক্ষায়","Still upcoming")}</span><b>${up}</b></div><div><span>${tr("ফ্রি ইনকামের সুযোগ","Free-earning offers")}</span><b>${er.length}</b></div></div>
       <div class="card dm-panel"><h3>🆕 ${tr("নতুন ও আসন্ন লিস্টিং","New & upcoming listings")}</h3>
         <p class="muted" style="margin:0;font-size:13.5px">${tr("এক্সচেঞ্জের অফিসিয়াল ঘোষণা থেকে সরাসরি (OKX, KuCoin)। প্রতি ঘণ্টায় আপডেট হয়। নতুন ঘোষণা Telegram-এও যায়।","Straight from the exchanges' official announcements (OKX, KuCoin). Updated hourly; new ones also go to Telegram.")}</p>
@@ -2741,13 +2782,13 @@ async function addBacktest(){
 }
 
 /* ---------- app shell ---------- */
-const AICON={"home": `<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>`, "market": `<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>`, "signals": `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>`, "learn": `<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 3 9 3 12 0v-5"/>`, "square": `<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9h8M8 13h8M8 17h4"/>`, "more": `<circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>`, "forex": `<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>`, "engine": `<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>`, "demo": `<rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11v3M5.5 12.5h3M15.5 12h.01M18 13.5h.01"/>`, "news": `<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/>`, "about": `<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/>`, "pdf": `<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M12 11v6M9 14l3 3 3-3"/>`, "tg": `<path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/>`};
+const AICON={"home": `<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>`, "market": `<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>`, "signals": `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>`, "learn": `<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 3 9 3 12 0v-5"/>`, "whale": `<path d="M3 13c0-4 4-7 9-7 4 0 7 2 9 5-1 4-5 7-10 7-4 0-8-2-8-5z"/><path d="M21 11l1-4M16 11h.01"/>`, "square": `<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9h8M8 13h8M8 17h4"/>`, "more": `<circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>`, "forex": `<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>`, "engine": `<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>`, "demo": `<rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11v3M5.5 12.5h3M15.5 12h.01M18 13.5h.01"/>`, "news": `<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/>`, "about": `<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/>`, "pdf": `<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M12 11v6M9 14l3 3 3-3"/>`, "tg": `<path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/>`};
 const asv=k=>`<svg viewBox="0 0 24 24">${AICON[k]}</svg>`;
-function quickActions(){ const a=[["signals","#/signals",tr("সিগনাল","Signals")],["market","#/market",tr("মার্কেট","Markets")],["forex","#/forex","Forex"],["demo","#/demo",tr("ডেমো","Demo")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["engine","#/engine",tr("ইঞ্জিন","Engine")],["tg",SITE.telegram,"Telegram"]];
+function quickActions(){ const a=[["signals","#/signals",tr("সিগনাল","Signals")],["market","#/market",tr("মার্কেট","Markets")],["forex","#/forex","Forex"],["whale","#/whales",tr("বড় ট্রেড","Big trades")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["engine","#/engine",tr("ইঞ্জিন","Engine")],["tg",SITE.telegram,"Telegram"]];
   return a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':""}><i>${asv(k)}</i>${n}</a>`).join(""); }
-function drawFoot(){ const el=$("#footNav"); if(!el) return; const a=[["home","#/",tr("হোম","Home")],["market","#/market",tr("মার্কেট","Market")],["signals","#/signals",tr("সিগনাল","Signals")],["forex","#/forex","Forex"],["engine","#/engine","Engine"],["demo","#/demo",tr("ডেমো","Demo")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["square","#/square","Square"],["about","#/about",tr("সম্পর্কে","About")],["pdf","BEWON_Guide.pdf",tr("গাইড PDF","Guide PDF")],["tg",SITE.telegram,"Telegram"]];
+function drawFoot(){ const el=$("#footNav"); if(!el) return; const a=[["home","#/",tr("হোম","Home")],["market","#/market",tr("মার্কেট","Market")],["signals","#/signals",tr("সিগনাল","Signals")],["forex","#/forex","Forex"],["engine","#/engine","Engine"],["demo","#/demo",tr("ডেমো","Demo")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["whale","#/whales",tr("বড় ট্রেড","Big trades")],["square","#/square","Square"],["about","#/about",tr("সম্পর্কে","About")],["pdf","BEWON_Guide.pdf",tr("গাইড PDF","Guide PDF")],["tg",SITE.telegram,"Telegram"]];
   el.innerHTML=a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':k==="pdf"?' download="BEWON_Guide.pdf"':""}>${asv(k)}${n}</a>`).join(""); }
-function drawSheet(){ const el=$("#sheetQa"); if(el) el.innerHTML=quickActions()+`<a href="#/about"><i>${asv("about")}</i>${tr("সম্পর্কে","About")}</a><a href="#/square"><i>${asv("square")}</i>Square</a><a href="BEWON_Guide.pdf" download="BEWON_Guide.pdf"><i>${asv("pdf")}</i>${tr("গাইড PDF","Guide PDF")}</a>`; }
+function drawSheet(){ const el=$("#sheetQa"); if(el) el.innerHTML=quickActions()+`<a href="#/about"><i>${asv("about")}</i>${tr("সম্পর্কে","About")}</a><a href="#/square"><i>${asv("square")}</i>Square</a><a href="#/demo"><i>${asv("demo")}</i>${tr("ডেমো","Demo")}</a><a href="BEWON_Guide.pdf" download="BEWON_Guide.pdf"><i>${asv("pdf")}</i>${tr("গাইড PDF","Guide PDF")}</a>`; }
 (function(){ const sh=$("#sheet"), bg=$("#sheetBg"), open=o=>{ sh.classList.toggle("open",o); bg.classList.toggle("open",o); };
   $("#moreBtn").onclick=()=>{ drawSheet(); open(!sh.classList.contains("open")); };
   bg.onclick=()=>open(false); sh.addEventListener("click",e=>{ if(e.target.closest("a")) open(false); });
@@ -2762,7 +2803,7 @@ async function route(){
   timers.forEach(clearInterval); timers=[]; liveStop(); if(chart){ chart.remove(); chart=null; } stopHero3D();
   const parts=(location.hash.replace(/^#\/?/,"")||"").split("/"), r=parts[0]||"home";
   document.querySelectorAll("#nav a,#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
-  $("#moreBtn").classList.toggle("on",["forex","engine","news","about","square","learn"].includes(r));
+  $("#moreBtn").classList.toggle("on",["forex","engine","news","about","square","learn","whales"].includes(r));
   document.title=`${SITE.name} — ${tr("ফ্রি ক্রিপ্টো সিগনাল","Free crypto signals")}`;
   window.scrollTo(0,0); document.body.classList.toggle("is-home",r==="home"); if(r==="home"){ if(!BGW) startBgWorld(); } else stopBgWorld();
   if(r==="market") await pageMarket();
@@ -2774,6 +2815,7 @@ async function route(){
   else if(r==="demo") await pageDemo();
   else if(r==="learn") await pageLearn();
   else if(r==="square") await pageSquare();
+  else if(r==="whales") await pageWhales();
   else if(r==="about") await pageAbout();
   else await pageHome();
 }

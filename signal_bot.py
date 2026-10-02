@@ -801,6 +801,51 @@ def topic_news():
     return out
 
 
+FEED_STATUS = {}   # কোন উৎস থেকে কয়টা ঘোষণা এলো (-1 = আনা যায়নি)
+AIRDROP_FEEDS = [
+    ("Airdrops.io", "https://airdrops.io/feed/"),
+    ("AirdropAlert", "https://airdropalert.com/feed/"),
+    ("CoinGecko", "https://www.coingecko.com/en/news/rss"),
+    ("Bitcoin.com", "https://news.bitcoin.com/feed/"),
+    ("CryptoPotato", "https://cryptopotato.com/feed/"),
+    ("BeInCrypto", "https://beincrypto.com/feed/"),
+    ("U.Today", "https://u.today/rss"),
+    ("NewsBTC", "https://www.newsbtc.com/feed/"),
+]
+
+
+def airdrop_news():
+    """এয়ারড্রপের খবরের বাড়তি উৎস (RSS)। কোনোটা না চললে বাদ পড়ে, বাকিগুলো চলে।"""
+    out, seen = [], set()
+    for source, url in AIRDROP_FEEDS:
+        try:
+            r = HTTP.get(url, timeout=12, headers={"User-Agent": "Mozilla/5.0 (compatible; SignalBot/1.0)"})
+            r.raise_for_status()
+            n = 0
+            for it in ET.fromstring(r.content).iter("item"):
+                title = _clean_text(it.findtext("title"), 200)
+                link = (it.findtext("link") or "").strip()
+                text = title + " " + (_clean_text(it.findtext("description")) or "")
+                always = source in ("Airdrops.io", "AirdropAlert")
+                if not title or not link.startswith("https://") or link in seen:
+                    continue
+                if not always and not re.search(r"airdrop", text, re.I):
+                    continue
+                try:
+                    pub = parsedate_to_datetime(it.findtext("pubDate")).astimezone(timezone.utc).isoformat()
+                except Exception:
+                    pub = ""
+                seen.add(link)
+                out.append({"title": title, "link": link, "source": source, "published": pub})
+                n += 1
+            FEED_STATUS[source] = n
+        except Exception as e:
+            FEED_STATUS[source] = -1
+            print(f"airdrop {source}: {str(e)[:80]}")
+    out.sort(key=lambda x: x["published"], reverse=True)
+    return out[:25]
+
+
 EARN_RE = r"airdrop|gempool|launchpool|learn (and|&) earn|earn |reward|giveaway|prize pool|campaign|bonus|share \$?[\d,]+|candy|free "
 SKIP_RE = r"futures|perpetual|delist|margin|leverag|maintenance|convert|trading bot|options|suspend"
 MONTHS = {m: i + 1 for i, m in enumerate(["january", "february", "march", "april", "may", "june", "july", "august",
@@ -857,6 +902,72 @@ def fetch_exchange_feed():
         except Exception as e:
             print("kucoin feed:", str(e)[:80])
 
+    FEED_STATUS["OKX"] = sum(1 for x in listings if x["ex"] == "OKX")
+    FEED_STATUS["KuCoin"] = sum(1 for x in listings + earn if x["ex"] == "KuCoin")
+
+    def add(ex, title, url, ms, kind="auto"):
+        """একটা ঘোষণা ঠিক তালিকায় বসায় (লিস্টিং নাকি ফ্রি ইনকাম)"""
+        if not title or not str(url).startswith("https://"):
+            return 0
+        item = {"ex": ex, "title": title, "url": url, "token": _ticker(title), "announced": iso(ms or 0), "trade": ""}
+        if re.search(EARN_RE, title, re.I) and not re.search(r"delist|maintenance|suspend", title, re.I):
+            earn.append(item)
+        elif kind == "listing" and not re.search(SKIP_RE, title, re.I):
+            listings.append(item)
+        else:
+            return 0
+        return 1
+
+    def source(ex, fn):
+        try:
+            FEED_STATUS[ex] = fn()
+        except Exception as e:
+            FEED_STATUS[ex] = -1
+            print(f"{ex} feed:", str(e)[:80])
+
+    def bybit():
+        n = 0
+        for typ, kind in (("new_crypto", "listing"), ("latest_activities", "auto")):
+            r = HTTP.get("https://api.bybit.com/v5/announcements/index",
+                         params={"locale": "en-US", "type": typ, "limit": 30}, timeout=15)
+            r.raise_for_status()
+            for a in (r.json().get("result") or {}).get("list", []):
+                n += add("Bybit", a.get("title", ""), a.get("url", ""), a.get("dateTimestamp"), kind)
+        return n
+
+    def bitget():
+        r = HTTP.get("https://api.bitget.com/api/v2/public/annoucements",
+                     params={"annType": "coin_listings", "language": "en_US"}, timeout=15)
+        r.raise_for_status()
+        return sum(add("Bitget", a.get("annTitle", ""), a.get("annUrl", ""), a.get("cTime"), "listing")
+                   for a in (r.json().get("data") or []))
+
+    def binance():
+        n = 0
+        for cat, kind in ((48, "listing"), (93, "auto")):
+            r = HTTP.get("https://www.binance.com/bapi/composite/v1/public/cms/article/list/query",
+                         params={"type": 1, "catalogId": cat, "pageNo": 1, "pageSize": 20}, timeout=15,
+                         headers={"User-Agent": "Mozilla/5.0 (compatible; SignalBot/1.0)"})
+            r.raise_for_status()
+            for c in ((r.json().get("data") or {}).get("catalogs") or []):
+                for a in c.get("articles", []):
+                    n += add("Binance", a.get("title", ""),
+                             "https://www.binance.com/en/support/announcement/" + str(a.get("code", "")),
+                             a.get("releaseDate"), kind)
+        return n
+
+    def mexc():
+        r = HTTP.get("https://www.mexc.com/help/announce/api/en-US/section/15425930840735/articles",
+                     params={"page": 1, "perPage": 20}, timeout=15,
+                     headers={"User-Agent": "Mozilla/5.0 (compatible; SignalBot/1.0)"})
+        r.raise_for_status()
+        return sum(add("MEXC", a.get("title", ""), "https://www.mexc.com/support/articles/" + str(a.get("id", "")),
+                       a.get("createdAt") if isinstance(a.get("createdAt"), (int, float)) else 0, "listing")
+                   for a in ((r.json().get("data") or {}).get("results") or []))
+
+    for ex, fn in (("Binance", binance), ("Bybit", bybit), ("Bitget", bitget), ("MEXC", mexc)):
+        source(ex, fn)
+
     def uniq(rows):
         seen, out = set(), []
         for x in sorted(rows, key=lambda x: x["announced"], reverse=True):
@@ -864,7 +975,7 @@ def fetch_exchange_feed():
                 seen.add(x["url"])
                 out.append(x)
         return out
-    return uniq(listings)[:25], uniq(earn)[:20]
+    return uniq(listings)[:40], uniq(earn)[:30]
 
 
 def feed_message(x, kind):
@@ -935,6 +1046,15 @@ def update_insights(state):
         ins["walls"] = walls
     ins["topics"] = topic_news()
     try:
+        extra = airdrop_news()
+        if extra:
+            have = {x.get("link") for x in ins["topics"].get("airdrop", [])}
+            ins["topics"]["airdrop"] = (ins["topics"].get("airdrop", []) + [x for x in extra if x["link"] not in have])
+            ins["topics"]["airdrop"].sort(key=lambda x: x.get("published") or "", reverse=True)
+            ins["topics"]["airdrop"] = ins["topics"]["airdrop"][:25]
+    except Exception as e:
+        print("airdrop feeds:", str(e)[:80])
+    try:
         listings, earn = fetch_exchange_feed()
         if listings or earn:
             ins["listings"], ins["earn"] = listings, earn
@@ -943,6 +1063,7 @@ def update_insights(state):
         print("feed error:", str(e)[:80])
     day = int(now.timestamp() // 86400)
     ins["tip"] = LESSONS[day % len(LESSONS)]
+    ins["sources"] = dict(FEED_STATUS)
     ins["updated"] = now.isoformat(timespec="seconds")
     state["insights"] = ins
     state["insights_time"] = ins["updated"]
@@ -1089,6 +1210,14 @@ def run_once(force_digest=False):
         update_insights(state)
     except Exception as e:
         print("insights error:", e)
+    # উৎস পরীক্ষা: নতুন সংস্করণ এলে একবার নিজে থেকে চলে, ফল docs/data/probe.json-এ থাকে
+    try:
+        import probe
+        if state.get("probe_v") != probe.PROBE_VERSION:
+            probe.run()
+            state["probe_v"] = probe.PROBE_VERSION
+    except Exception as e:
+        print("probe error:", str(e)[:80])
     save_state(state)   # কিছু বদলালে তবেই GitHub এ নতুন commit হবে
     print(f"done: {len(frames)}/{len(COINS)} coins ok, open={len(state['open'])}")
     for f in fails:
@@ -1123,6 +1252,9 @@ if __name__ == "__main__":
     elif mode == "backtest":
         import backtest
         backtest.run()
+    elif mode == "probe":
+        import probe
+        probe.run()
     elif mode == "loop":
         print("Bot চালু... বন্ধ করতে Ctrl+C")
         while True:

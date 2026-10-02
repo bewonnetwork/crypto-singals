@@ -7,9 +7,9 @@ on:
   workflow_dispatch:                  # হাতে চালানোর জন্য "Run workflow" বাটন
     inputs:
       mode:
-        description: "test = টেস্ট মেসেজ, once = সিগনাল চেক, digest = দৈনিক সারাংশ, backtest = ২ বছরের পরীক্ষা"
+        description: "test = টেস্ট মেসেজ, once = সিগনাল চেক, digest = দৈনিক সারাংশ, backtest = ২ বছরের পরীক্ষা, probe = উৎস পরীক্ষা"
         type: choice
-        options: [test, once, digest, backtest]
+        options: [test, once, digest, backtest, probe]
         default: test
 
 permissions:
@@ -39,6 +39,7 @@ jobs:
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           TG_NEWS_CHAT_ID: ${{ secrets.TG_NEWS_CHAT_ID }}
           TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY }}
+          CMC_KEY: ${{ secrets.CMC_KEY }}
         run: python signal_bot.py --${{ github.event.inputs.mode || 'once' }}
 
       - name: Save memory (state.json)
