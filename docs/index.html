@@ -442,6 +442,78 @@ body{top:0!important}
 @media (max-width:980px){.eg-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.eg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.eg-hero,.eg-free{grid-template-columns:minmax(0,1fr)}.eg-grid,.eg-steps{grid-template-columns:minmax(0,1fr)}.eg-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
   .eg-lane,.eg-axis{grid-template-columns:minmax(0,1fr)}.eg-axis>span{display:none}.eg-cols{gap:3px}.eg-dates{gap:3px;font-size:9px}.eg-free{padding:22px 16px}}
+/* ---------- demo trading ---------- */
+.dm{display:grid;gap:22px}
+.dm-banner{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:14px;border:1px dashed var(--accent);background:var(--accent-soft);font-size:14.5px}
+.dm-banner b{color:var(--accent)}
+.dm-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.dm-tabs button{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:9px 16px;border-radius:999px;font:600 14px "Inter","Hind Siliguri",sans-serif;cursor:pointer}
+.dm-tabs button.on{background:var(--grad);color:var(--btn-ink,#07090d);border-color:transparent}
+.dm-top{display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px}
+.dm-prof{padding:20px;border-radius:16px;display:grid;gap:10px;align-content:start}
+.dm-av{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 22px "Space Grotesk",sans-serif}
+.dm-prof .nm{display:flex;gap:6px;align-items:center;font:700 18px "Inter","Hind Siliguri",sans-serif}
+.dm-prof .nm button{border:0;background:none;color:var(--muted);cursor:pointer;font-size:14px}
+.dm-kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:13.5px}
+.dm-kv span{color:var(--muted)}
+.dm-kv b{font:600 13px "IBM Plex Mono",monospace;text-align:right}
+.dm-bal{padding:22px;border-radius:16px;display:grid;gap:14px;background:radial-gradient(circle at 90% 0%,rgba(var(--r1),.14),transparent 55%),var(--surface)}
+.dm-bal .big{font:700 clamp(30px,4.6vw,44px)/1 "Space Grotesk",sans-serif}
+.dm-bal .big small{font-size:15px;color:var(--muted);font-weight:500}
+.dm-row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.dm-row3 div{padding:12px;border-radius:12px;background:var(--sunk)}
+.dm-row3 span{display:block;color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.dm-row3 b{font:600 15px "IBM Plex Mono",monospace}
+.dm-act{display:flex;gap:8px;flex-wrap:wrap}
+.dm-act .btn{min-height:40px;padding:8px 16px;font-size:14px}
+.dm-grid{display:grid;grid-template-columns:360px minmax(0,1fr);gap:16px;align-items:start}
+.dm-panel{padding:18px;border-radius:16px;display:grid;gap:12px}
+.dm-panel h3{margin:0;font:700 16px "Inter","Hind Siliguri",sans-serif}
+.dm-side{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--sunk);padding:4px;border-radius:12px}
+.dm-side button{border:0;padding:9px;border-radius:9px;font:700 14px "Inter",sans-serif;cursor:pointer;background:transparent;color:var(--muted)}
+.dm-side button.on.b{background:var(--up);color:#fff}.dm-side button.on.s{background:var(--down);color:#fff}
+.dm-f{display:grid;gap:5px;font-size:13px;color:var(--muted)}
+.dm-f input,.dm-f select,.dm-f textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--sunk);color:var(--ink);font:500 15px "IBM Plex Mono","Hind Siliguri",monospace}
+.dm-f textarea{font-family:"Inter","Hind Siliguri",sans-serif;font-size:14px;min-height:60px;resize:vertical}
+.dm-pct{display:flex;gap:6px}.dm-pct button{flex:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px;font:600 12.5px "IBM Plex Mono",monospace;cursor:pointer}
+.dm-est{font:500 13px "IBM Plex Mono",monospace;color:var(--muted);display:flex;justify-content:space-between}
+.dm-msg{font-size:13.5px;min-height:18px}
+.dm-msg.ok{color:var(--up)}.dm-msg.err{color:var(--down)}
+.dm-sig{display:grid;gap:8px}
+.dm-sig .it{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;background:var(--sunk);font-size:13.5px}
+.dm-sig .it button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 10px;font:600 12.5px "Inter","Hind Siliguri",sans-serif;cursor:pointer;white-space:nowrap}
+.dm-empty{padding:26px;text-align:center;color:var(--muted)}
+.dm td .xs{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:4px 10px;font:600 12px "Inter","Hind Siliguri",sans-serif;cursor:pointer}
+@media (max-width:900px){.dm-top,.dm-grid{grid-template-columns:minmax(0,1fr)}.dm-row3{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+/* ---------- learn / insights ---------- */
+.ln{display:grid;gap:22px}
+.ln-dom{display:grid;grid-template-columns:260px minmax(0,1fr);gap:18px;align-items:center;padding:22px;border-radius:16px}
+.ln-ring{width:220px;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;margin:auto;background:conic-gradient(var(--p2) calc(var(--v)*1%),var(--sunk) 0)}
+.ln-ring>div{width:76%;aspect-ratio:1;border-radius:50%;background:var(--surface);display:grid;place-items:center;text-align:center}
+.ln-ring b{font:700 38px "Space Grotesk",sans-serif;display:block}
+.ln-ring span{font-size:12.5px;color:var(--muted)}
+.ln-k{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}
+.ln-k div{padding:12px;border-radius:12px;background:var(--sunk)}
+.ln-k span{display:block;color:var(--muted);font-size:12px}
+.ln-k b{font:600 16px "IBM Plex Mono",monospace}
+.ln-mood{padding:10px 14px;border-radius:12px;background:var(--accent-soft);border:1px solid var(--line);font-size:14.5px}
+.ln-wall{display:grid;grid-template-columns:76px minmax(0,1fr) 54px;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font:500 13px "IBM Plex Mono",monospace}
+.ln-wall .bar{position:relative;height:26px;border-radius:7px;background:var(--sunk);overflow:hidden}
+.ln-wall .bar i{position:absolute;top:0;bottom:0;background:var(--up-soft);left:0}
+.ln-wall .bar em{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:center;padding:0 8px;font-style:normal;font-size:12px}
+.ln-links{display:flex;flex-wrap:wrap;gap:8px}
+.ln-links a{display:inline-flex;gap:6px;align-items:center;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink)}
+.ln-links a:hover{border-color:var(--blue)}
+.ln-news{display:grid;gap:8px}
+.ln-news a{display:block;padding:12px 14px;border-radius:12px;background:var(--sunk);text-decoration:none;color:var(--ink);font-size:14.5px}
+.ln-news a small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.ln-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.ln-les{padding:20px;border-radius:16px}
+.ln-les h3{margin:0 0 10px;font:700 18px "Inter","Hind Siliguri",sans-serif}
+.ln-les ol,.ln-les ul{margin:0;padding-left:20px;display:grid;gap:7px;color:var(--muted);font-size:14.5px}
+.ln-les li b{color:var(--ink)}
+.ln-tip{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border-radius:14px;border:1px dashed var(--accent);background:var(--accent-soft)}
+@media (max-width:820px){.ln-dom,.ln-g{grid-template-columns:minmax(0,1fr)}.ln-k{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -457,8 +529,9 @@ body{top:0!important}
       <a href="#/signals" data-r="signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a>
       <a href="#/forex" data-r="forex" data-bn="Forex" data-en="Forex">Forex</a>
       <a href="#/engine" data-r="engine" data-bn="ইঞ্জিন" data-en="Engine">ইঞ্জিন</a>
+      <a href="#/demo" data-r="demo" data-bn="ডেমো" data-en="Demo">ডেমো</a>
       <a href="#/news" data-r="news" data-bn="নিউজ" data-en="News">নিউজ</a>
-      <a href="#/about" data-r="about" data-bn="সম্পর্কে" data-en="About">সম্পর্কে</a>
+      <a href="#/learn" data-r="learn" data-bn="শেখা" data-en="Learn">শেখা</a>
     </nav>
     <span class="sp"></span>
     <select class="langbtn notranslate" id="langSel" aria-label="Language / ভাষা" translate="no"></select>
@@ -471,7 +544,7 @@ body{top:0!important}
 
 <footer>
   <div class="wrap">
-    <nav><a href="#/" data-bn="হোম" data-en="Home">হোম</a><a href="#/market" data-bn="মার্কেট" data-en="Market">মার্কেট</a><a href="#/signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a><a href="#/forex">Forex</a><a href="#/engine" data-bn="BEWON Engine" data-en="BEWON Engine">BEWON Engine</a><a href="#/news" data-bn="নিউজ" data-en="News">নিউজ</a><a href="#/about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
+    <nav><a href="#/" data-bn="হোম" data-en="Home">হোম</a><a href="#/market" data-bn="মার্কেট" data-en="Market">মার্কেট</a><a href="#/signals" data-bn="সিগনাল" data-en="Signals">সিগনাল</a><a href="#/forex">Forex</a><a href="#/engine" data-bn="BEWON Engine" data-en="BEWON Engine">BEWON Engine</a><a href="#/demo" data-bn="ডেমো ট্রেড" data-en="Demo trading">ডেমো ট্রেড</a><a href="#/learn" data-bn="শেখা ও ইনসাইট" data-en="Learn &amp; insights">শেখা ও ইনসাইট</a><a href="#/news" data-bn="নিউজ" data-en="News">নিউজ</a><a href="#/about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a><a id="tgFoot" target="_blank" rel="noopener">Telegram</a></nav>
     <p data-bn="⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।" data-en="⚠️ Signals on this site are for information only, not financial advice. Crypto carries a real risk of loss. Do your own research.">⚠️ এখানে দেওয়া সিগনাল শুধু তথ্যের জন্য, আর্থিক পরামর্শ নয়। ক্রিপ্টোতে টাকা হারানোর ঝুঁকি আছে। নিজে যাচাই করে সিদ্ধান্ত নিন।</p>
     <p><span data-bn="দাম" data-en="Prices">দাম</span>: Binance public API · Fear &amp; Greed Index: <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">alternative.me</a> · <span data-bn="কয়েন আইকন" data-en="Coin icons">কয়েন আইকন</span>: cryptocurrency-icons</p>
     <p>© <span id="yr"></span> <span class="bn"></span></p>
@@ -586,10 +659,11 @@ function fxLogo(sym){ const g=sym.startsWith("XAU"); return `<span class="logo" 
 function logoOf(t){ return isFx(t) ? fxLogo(t.coin) : logo(t.coin); }
 function pipsOf(t,v){ if(!isFx(t)) return ""; const ps=t.coin.includes("JPY")?0.01:t.coin.startsWith("XAU")?0.1:0.0001; return ` <span class="muted" style="font-size:11.5px">${Math.round(Math.abs(v-t.entry)/ps)}p</span>`; }
 function pillOpen(){ return `<span class="pill p-open">● ${tr("চলছে","Active")}</span>`; }
+function gradeOf(c){ return c==null?"—":c>=85?"A+":c>=78?"A":c>=70?"B":c>=60?"C":"D"; }
 function confColor(c){ return c>=75?"var(--up)":c>=60?"var(--accent)":"var(--down)"; }
 function confBlock(t){ if(t.conf==null) return "";
   const why=(t.why||[]).map(w=>w.startsWith("⚠")?`<li class="warn">${esc(whyText(w.replace(/^⚠\s*/,"")))}</li>`:`<li>${esc(whyText(w))}</li>`).join("");
-  return `<div class="conf"><div class="top"><span class="muted">Confidence</span><b style="color:${confColor(t.conf)}">${t.conf}%</b></div>
+  return `<div class="conf"><div class="top"><span class="muted">Confidence · ${tr("গ্রেড","Grade")} <b class="grade" style="color:${confColor(t.conf)}">${gradeOf(t.conf)}</b></span><b style="color:${confColor(t.conf)}">${t.conf}%</b></div>
     <div class="cbar"><i style="width:${t.conf}%;background:${confColor(t.conf)}"></i></div>${why?`<ul class="why">${why}</ul>`:""}</div>`; }
 function pillSide(s){ return `<span class="pill ${s==="BUY"?"p-buy":"p-sell"}">${s==="BUY"?"▲ BUY":"▼ SELL"}</span>`; }
 
@@ -869,7 +943,7 @@ async function pageHome(){
       <h1>${tr(`ফ্রি ও স্মার্ট<br>ক্রিপ্টো<br><span class="grad-text">ট্রেডিং সিগনাল</span>`,`Free &amp; Smart<br>Crypto<br><span class="grad-text">Trading Signals</span>`)}</h1>
       <p class="lede">${tr(`${SITE.name} প্রতি ১৫ মিনিটে ${nCoins}টা বড় কয়েনের চার্ট বিশ্লেষণ করে। Entry, Take Profit, Stop Loss আর Confidence % সহ সিগনাল পাঠায় Telegram-এ। আর প্রতিটা সিগনালের ফলাফল, জয় হোক বা হার, এখানে প্রকাশ করে।`,
         `${SITE.name} analyses the charts of ${nCoins} major coins every 15 minutes and sends signals with Entry, Take Profit, Stop Loss and a Confidence % to Telegram — then publishes every result here, wins and losses alike.`)}</p>
-      <div class="cta"><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">${tr("ফ্রি সিগনাল পান →","Get free signals →")}</a><a class="btn btn-ghost" href="#/market">${tr("মার্কেট দেখুন","Explore markets")}</a></div>
+      <div class="cta"><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">${tr("ফ্রি সিগনাল পান →","Get free signals →")}</a><a class="btn btn-ghost" href="#/market">${tr("মার্কেট দেখুন","Explore markets")}</a><a class="btn btn-ghost" href="#/learn">🎓 ${tr("শিখুন ও ইনসাইট","Learn & insights")}</a></div>
       <div class="trust"><span>${tr("শুধু সিগনাল, অটো-ট্রেডিং নয়","Signals, not auto-trading")}</span><span>${tr("কোনো টাকা জমা লাগে না","No deposit needed")}</span><span>${tr("সব ফলাফল প্রকাশ্য","Every result public")}</span></div>
     </div>
     <div class="hx-visual">
@@ -976,7 +1050,7 @@ function recentTable(s){
   return `<div class="card tbl-wrap"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">SL</th><th>${tr("অবস্থা","Status")}</th><th class="r hide-sm">Conf.</th><th class="hide-sm">${tr("সময়","Time")}</th></tr></thead><tbody>
   ${rows.map(t=>`<tr class="link" data-go="${goOf(t)}"><td><span class="sym">${logoOf(t)}${isFx(t)?t.name||t.coin:t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${px(t,t.entry)}</td><td class="r num hide-sm">${px(t,t.tp1)}</td><td class="r num hide-sm">${px(t,t.sl)}</td><td>${t.live?pillOpen():pillResult(t.result)}</td><td class="r hide-sm">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td></tr>`).join("")}
   </tbody></table></div>`; }
-function confPill(t){ return t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${t.conf}%</span>`:'<span class="muted">—</span>'; }
+function confPill(t){ return t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${gradeOf(t.conf)} · ${t.conf}%</span>`:'<span class="muted">—</span>'; }
 
 async function fearGreed(s){
   let v=null,l="";
@@ -1244,7 +1318,7 @@ async function pageAbout(){
   </section>`; }
 
 /* ---------- engine page ---------- */
-const ENGINE_VER="1.4";
+const ENGINE_VER="1.5";
 const FXN={EURUSD:"EUR/USD",GBPUSD:"GBP/USD",USDJPY:"USD/JPY",XAUUSD:"XAU/USD"};
 async function pageEngine(){
   const s=await loadSignals(), coins=s.coins||SITE.botCoins, mc=s.min_conf??60;
@@ -1298,7 +1372,7 @@ async function pageEngine(){
       ${card("📊",tr("দৈনিক মার্কেট সারাংশ","Daily market digest"),tr("প্রতিদিন সকাল ৮টায় (বাংলাদেশ সময়) একটা সারাংশ: প্রতিটা কয়েনের দাম ও পরিবর্তন, Fear & Greed, চলমান সিগনাল আর Win rate।","Every day at 8 AM Bangladesh time: price and change for every coin, Fear & Greed, open signals and the win rate."))}
       ${card("📰",tr("ক্রিপ্টো নিউজ, Telegram-এ","Crypto news to Telegram"),tr("৫টা বড় নিউজ সাইট থেকে খবর নিজে থেকে আসে। সাইটের নিউজ পেজে দেখা যায়, আর নতুন খবর প্রতি ১৫ মিনিটে সর্বোচ্চ ২টা করে Telegram-এ যায়।","Headlines from 5 major news sites arrive automatically. They appear on the News page, and up to 2 new stories go to Telegram every 15 minutes."))}
       ${card("🎯",tr("প্রতিটা সিগনালের হিসাব","Every signal tracked"),tr("TP1 ছুঁলে Stop Loss Entry-তে সরে যায়। TP2, SL বা ৪৮ ক্যান্ডেলে Expired হলে ফলাফল Telegram-এ যায়, আর সাইটে চিরকাল থেকে যায়।","When TP1 hits, the stop moves to entry. TP2, SL or expiry after 48 candles is reported to Telegram and stays on the site for good."))}
-      ${card("🌐",tr("লাইভ ওয়েবসাইট","Live website"),tr("লাইভ দাম, চার্ট, সিগনালের পুরো ইতিহাস আর Win rate। ২০টা ভাষা আর ৮টা রঙে দেখা যায়।","Live prices, charts, the full signal history and win rate — in 20 languages and 8 color themes."))}
+      ${card("⚡",tr("হঠাৎ ওঠানামার অ্যালার্ট","Volatility alerts"),tr("প্রতি ১৫ মিনিটে সব কয়েন দেখা হয়। ৩০ মিনিটের মধ্যে কোনো কয়েন ৩% বা বেশি উঠলে বা নামলে সাথে সাথে Telegram-এ সতর্কতা যায়। এটা ট্রেড সিগনাল নয়, শুধু খবর।","Every coin is checked every 15 minutes. A move of 3% or more within 30 minutes sends an instant Telegram warning. It is a heads-up, not a trade signal."))}
     </div>
   </section>
 
@@ -1318,6 +1392,7 @@ async function pageEngine(){
     <div class="eg-day card">
       <div class="eg-lane"><div>${tr("সিগনাল স্ক্যান","Signal scan")}<small>${tr("প্রতি ১৫ মিনিটে","every 15 min")}</small></div><div class="eg-rail">${scanMarks}</div></div>
       <div class="eg-lane"><div>${tr("নিউজ চেক","News check")}<small>${tr("প্রতি ১৫ মিনিটে","every 15 min")}</small></div><div class="eg-rail">${scanMarks}</div></div>
+      <div class="eg-lane"><div>${tr("ওঠানামা চেক (৩%)","Volatility check (3%)")}<small>${tr("প্রতি ১৫ মিনিটে","every 15 min")}</small></div><div class="eg-rail">${scanMarks}</div></div>
       <div class="eg-lane"><div>${tr("দৈনিক সারাংশ","Daily digest")}<small>${tr("দিনে ১ বার","once a day")}</small></div><div class="eg-rail"><i class="g" style="left:${8/24*100}%"></i></div></div>
       <div class="eg-axis"><span></span><div><span>0h</span><span>6h</span><span>12h</span><span>18h</span><span>24h</span></div></div>
       <p class="muted" style="font-size:13px;margin:0">${tr("সময় বাংলাদেশ অনুযায়ী। প্রতিটা দাগ একটা নির্ধারিত রান। GitHub মাঝে মাঝে কয়েক মিনিট দেরিতে চালায়।","Times are Bangladesh time. Each mark is one scheduled run; GitHub sometimes starts a run a few minutes late.")}</p>
@@ -1339,6 +1414,12 @@ async function pageEngine(){
       <details><summary>${tr("টেবিল আকারে দেখুন","View as table")}</summary><table><tr><th>${tr("দিন","Day")}</th><th>${tr("ক্রিপ্টো","Crypto")}</th><th>Forex</th><th>${tr("মোট","Total")}</th></tr>${days.map(d=>`<tr><td>${fmtD(d)}</td><td>${per[d].c}</td><td>${per[d].f}</td><td>${per[d].c+per[d].f}</td></tr>`).join("")}</table></details>
       <p class="muted" style="font-size:13px;margin:12px 0 0">${tr(`সাইটে থাকা সিগনাল ইতিহাস থেকে গোনা। কোনো দিন ০ মানে নিয়ম মেনে ভালো সেটআপ পাওয়া যায়নি, বট ইচ্ছে করে চুপ ছিল। সিগনালের সংখ্যা দিয়ে নির্ভুলতা মাপা যায় না। ফলাফল দেখতে <a href="#/signals">সিগনাল পেজ</a> দেখুন।`,`Counted from the signal history published on this site. A zero day means no setup cleared the rules, so the engine stayed quiet on purpose. The number of signals says nothing about accuracy; see the <a href="#/signals">Signals page</a> for results.`)}</p>
     </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><span class="kicker">⚡ ${tr("হঠাৎ ওঠানামা","Volatility")}</span><h2>${tr("সাম্প্রতিক অ্যালার্ট","Recent alerts")}</h2><p class="sub">${tr("৩০ মিনিটে ৩% বা বেশি নড়লে বট যে সতর্কতা পাঠিয়েছে।","Warnings the engine sent when a coin moved 3% or more within 30 minutes.")}</p></div></div>
+    ${(s.alerts||[]).length?`<div class="card tbl-wrap"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("পরিবর্তন","Move")}</th><th class="r">${tr("দাম","Price")}</th><th class="r">${tr("কখন","When")}</th></tr></thead><tbody>${s.alerts.slice(0,10).map(a=>`<tr data-go="#/coin/${esc(a.coin)}"><td>${logo(a.coin)} <b>${esc(a.coin)}</b></td><td class="r ${a.ch>=0?"up":"down"}">${a.ch>=0?"🚀 +":"🔻 "}${(+a.ch).toFixed(2)}% <span class="muted">/ ${a.mins||30}m</span></td><td class="r">${fmtPx(a.price)}</td><td class="r muted">${ago(a.time)}</td></tr>`).join("")}</tbody></table></div>`
+      :`<div class="card dm-empty">${tr("এখনো কোনো অ্যালার্ট নেই। মার্কেট শান্ত থাকলে অ্যালার্ট আসে না।","No alerts yet. A calm market sends none.")}</div>`}
   </section>
 
   <section>
@@ -1369,6 +1450,8 @@ async function pageEngine(){
       <li>${tr("ক্রিপ্টো নিউজ, Telegram-এ","Crypto news on Telegram")}</li>
       <li>${tr("TP/SL ফলাফলের আপডেট","TP/SL result updates")}</li>
       <li>${tr("পুরো ইতিহাস আর Win rate, সবার জন্য খোলা","Full public history and win rate")}</li>
+      <li>${tr("৩% হঠাৎ ওঠানামার অ্যালার্ট","3% volatility alerts")}</li>
+      <li>${tr("ডেমো ট্রেডিং আর ট্রেড খাতা","Demo trading and trade journal")}</li>
       <li>${tr("২০টা ভাষা, ৮টা রং","20 languages, 8 color themes")}</li>
     </ul>
   </section>
@@ -1381,6 +1464,8 @@ async function pageEngine(){
       ${faq(tr("সত্যিই কি পুরো ফ্রি?","Is it really free?"),tr("হ্যাঁ। কোনো পেমেন্ট, ডিপোজিট বা লগইন নেই। কেউ টাকা চাইলে বুঝবেন সেটা BEWON নয়।","Yes. No payment, deposit or login. If anyone asks you for money, it isn't BEWON."))}
       ${faq(tr("এটা কি 'আসল AI'?","Is it 'real AI'?"),tr("না, কোনো গোপন মডেল নেই। পরিষ্কার নিয়ম (EMA, RSI, MACD, ADX) আসল মার্কেট ডেটায় চলে, তাই প্রতিটা সিগনালের কারণ দেখা যায়।","No black box. Clear rules (EMA, RSI, MACD, ADX) run on real market data, so every signal shows its reasons."))}
       ${faq(tr("আমার এক্সচেঞ্জ অ্যাকাউন্ট লাগবে?","Does it need my exchange account?"),tr("না। কোনো API key বা ওয়ালেট লাগে না। বট শুধু পাবলিক ডেটা পড়ে আর নোটিফিকেশন পাঠায়।","No. No API keys or wallet. It only reads public data and sends notifications."))}
+      ${faq(tr("গ্রেড (A+ থেকে D) মানে কী?","What does the grade (A+ to D) mean?"),tr(`Confidence % থেকে সহজ গ্রেড: A+ = ৮৫%+, A = ৭৮–৮৪%, B = ৭০–৭৭%, C = ৬০–৬৯%। ${mc}%-এর কম (D) হলে সিগনাল পাঠানোই হয় না। গ্রেড মানে জেতার সম্ভাবনা নয়, শুধু কতগুলো শর্ত মিলেছে।`,`A simple grade from the Confidence %: A+ = 85%+, A = 78–84%, B = 70–77%, C = 60–69%. Below ${mc}% (D) nothing is sent. A grade is not a win probability, only how many conditions lined up.`))}
+      ${faq(tr("ডেমো ট্রেডিং কী?","What is demo trading?"),tr("<a href='#/demo'>ডেমো</a> পেজে নকল ১০,০০০ USDT দিয়ে লাইভ দামে কেনা-বেচা প্র্যাকটিস করা যায়। আসল টাকা লাগে না, আর সব তথ্য শুধু আপনার ব্রাউজারে থাকে।","On the <a href='#/demo'>Demo</a> page you can practise buying and selling at live prices with 10,000 pretend USDT. No real money, and everything stays in your browser."))}
       ${faq(tr("দিনে কয়টা সিগনাল আসে?","How many signals per day?"),tr(`ঠিক নেই। নিয়ম মিললে আর Confidence ${mc}%-এর বেশি হলে তবেই আসে। সাধারণত দিনে কয়েকটা, কোনো দিন একটাও না।`,`It varies. A signal only goes out when the rules line up and confidence is above ${mc}%. Usually a few a day, some days none.`))}
       ${faq(tr("বট কি লাভের গ্যারান্টি দিতে পারে?","Can it guarantee profit?"),tr("না, আর যারা গ্যারান্টি দেয় তাদের থেকে সাবধান। মার্কেটের ঝুঁকি পুরোপুরি আপনার।","No — and be wary of anyone who claims to. The market risk is entirely yours."))}
     </div>
@@ -1389,7 +1474,8 @@ async function pageEngine(){
   <section>
     <div class="sec-head"><div><span class="kicker">${tr("পরিবর্তনের তালিকা","Changelog")}</span><h2>${tr("BEWON-এ নতুন কী","What's new in BEWON")}</h2><p class="sub">${tr("শুধু যা সত্যিই চালু হয়েছে। 'শীঘ্রই আসছে' জিনিস এখানে লেখা হয় না।","Only what has actually shipped — never a 'coming soon' item.")}</p></div></div>
     <div class="eg-log">
-      ${[["1.4",tr("অক্টোবর ২০২৬","October 2026"),[[0,tr("3D রোবট আর ধীরে ঘোরা 3D পৃথিবী, ঢাকা থেকে বিশ্বের বাজারে আলোর লাইন","3D robot mascot and a slowly turning 3D world with lines from Dhaka to world markets")],[0,tr("৮টা রঙের থিম: কালো + সাদা, সাদা + নীল ইত্যাদি","8 color themes: Black + White, White + Blue and more")],[0,tr("২০টা ভাষা","20 languages")],[0,tr("এই Engine পেজ","This Engine page")]]],
+      ${[["1.5",tr("অক্টোবর ২০২৬","October 2026"),[[0,tr("হঠাৎ ওঠানামার অ্যালার্ট: ৩০ মিনিটে ৩% নড়লে Telegram-এ সতর্কতা","Volatility alerts: a Telegram warning on any 3% move within 30 minutes")],[0,tr("প্রতিটা সিগনালে A+ থেকে C গ্রেড","A+ to C grade on every signal")],[0,tr("ডেমো ট্রেডিং: নকল টাকায় লাইভ দামে প্র্যাকটিস","Demo trading: practise at live prices with pretend money")],[0,tr("আমার ট্রেড খাতা: নিজের ট্রেড লিখে লাইভ লাভ-ক্ষতি দেখা","My trade journal: log your own trades and follow live P/L")]]],
+         ["1.4",tr("অক্টোবর ২০২৬","October 2026"),[[0,tr("3D রোবট আর ধীরে ঘোরা 3D পৃথিবী, ঢাকা থেকে বিশ্বের বাজারে আলোর লাইন","3D robot mascot and a slowly turning 3D world with lines from Dhaka to world markets")],[0,tr("৮টা রঙের থিম: কালো + সাদা, সাদা + নীল ইত্যাদি","8 color themes: Black + White, White + Blue and more")],[0,tr("২০টা ভাষা","20 languages")],[0,tr("এই Engine পেজ","This Engine page")]]],
          ["1.3",tr("সেপ্টেম্বর ২০২৬","September 2026"),[[0,tr("Forex ও Gold সিগনাল: EUR/USD, GBP/USD, USD/JPY, XAU/USD","Forex & Gold signals: EUR/USD, GBP/USD, USD/JPY, XAU/USD")],[0,tr("প্রতিটা সিগনালে Confidence % আর কারণ","Confidence % and reasons on every signal")],[1,tr(`${mc}%-এর কম Confidence হলে সিগনাল বাদ, তাই কম কিন্তু ভালো সিগনাল`,`Signals under ${mc}% confidence are dropped — fewer, better signals`)]]],
          ["1.2",tr("সেপ্টেম্বর ২০২৬","September 2026"),[[0,tr("ক্রিপ্টো নিউজ পোর্টাল, ৫টা সূত্র থেকে নিজে থেকে আপডেট","Crypto news portal, auto-updated from 5 sources")],[0,tr("নতুন খবরের লিংক Telegram-এ","New headlines posted to Telegram")],[0,tr("বাংলা / English বদলানোর বোতাম","Bangla / English switch")]]],
          ["1.1",tr("সেপ্টেম্বর ২০২৬","September 2026"),[[0,tr("ওয়েবসাইট: লাইভ মার্কেট, চার্ট, সিগনালের পুরো ইতিহাস আর Win rate","Website: live market, charts, full signal history and win rate")]]],
@@ -1414,6 +1500,294 @@ async function pageEngine(){
   drawPairs(); every(60000,drawPairs);
 }
 
+/* ---------- demo trading + trade journal (saved only in this browser) ---------- */
+const DEMO_KEY="bewon_demo_v1", DEMO_START=10000, DEMO_TOPUP=1000, DEMO_MAX_CASH=100000, DEMO_FEE=0.001;
+function demoLoad(){ let d=null; try{ d=JSON.parse(localStorage.getItem(DEMO_KEY)||"null"); }catch(e){}
+  if(!d||typeof d!=="object"){ d={uid:"BW"+Math.random().toString(36).slice(2,8).toUpperCase(),name:"",since:new Date().toISOString(),cash:DEMO_START,hold:{},tx:[{t:new Date().toISOString(),type:"start",usdt:DEMO_START}],jr:[]}; demoSave(d); }
+  d.hold=d.hold||{}; d.tx=d.tx||[]; d.jr=d.jr||[]; return d; }
+function demoSave(d){ try{ localStorage.setItem(DEMO_KEY,JSON.stringify(d)); }catch(e){} }
+const usd=x=>(+x).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+const qtyF=x=>{ x=+x; return x>=100?x.toFixed(2):x>=1?x.toFixed(4):x.toPrecision(4); };
+let DEMO_TAB="trade";
+async function pageDemo(){
+  const s=await loadSignals(), coins=s.coins||SITE.botCoins; let d=demoLoad(), side="BUY", PX={};
+  const sigs=s.open.filter(t=>!isFx(t));
+  app.innerHTML=`<div class="dm">
+    <section class="sec-head"><div><span class="eyebrow">${tr("প্র্যাকটিস · টেস্ট","Practice · Test")}</span><h2>${tr("ডেমো ট্রেডিং ও ট্রেড খাতা","Demo trading & trade journal")}</h2>
+      <p>${tr("নকল টাকা দিয়ে লাইভ দামে কেনা-বেচা করে দেখুন BEWON সিগনাল কেমন কাজ করে।","Buy and sell at live prices with play money to see how BEWON signals behave.")}</p></div></section>
+    <div class="dm-banner"><span style="font-size:22px">🧪</span><div><b>${tr("ডেমো অ্যাকাউন্ট — সব টাকা নকল।","Demo account — all money is pretend.")}</b> ${tr("এখানে আসল টাকা জমা দেওয়া, তোলা বা পাঠানো যায় না। সব তথ্য শুধু আপনার এই ব্রাউজারে থাকে, আমাদের কাছে আসে না। ব্রাউজারের ডেটা মুছলে ডেমো অ্যাকাউন্টও মুছে যাবে।","No real money can be deposited, withdrawn or sent. Everything stays in this browser only and never reaches us. Clearing browser data clears the demo account too.")}</div></div>
+    <div class="dm-tabs" role="tablist"><button data-tab="trade" class="${DEMO_TAB==="trade"?"on":""}">🎮 ${tr("ডেমো ট্রেড","Demo trade")}</button><button data-tab="journal" class="${DEMO_TAB==="journal"?"on":""}">📒 ${tr("আমার ট্রেড খাতা","My trade journal")}</button></div>
+    <div id="dmBody"></div></div>`;
+  app.querySelectorAll(".dm-tabs button").forEach(b=>b.onclick=()=>{ DEMO_TAB=b.dataset.tab; pageDemo(); });
+  const body=$("#dmBody");
+  const need=()=>[...new Set([...coins,...Object.keys(d.hold),...d.jr.filter(j=>!j.exit).map(j=>j.coin)])].filter(c=>/^[A-Z0-9]{2,12}$/.test(c));
+  const fetchPx=async()=>{ try{ const r=await bget(`/api/v3/ticker/price?symbols=${encodeURIComponent(JSON.stringify(need().map(c=>c+"USDT")))}`);
+      r.forEach(x=>PX[x.symbol.slice(0,-4)]=+x.price); }catch(e){ try{ for(const c of need()){ const x=await bget(`/api/v3/ticker/price?symbol=${c}USDT`); PX[c]=+x.price; } }catch(e2){} } };
+
+  if(DEMO_TAB==="journal"){ // ---------------- trade journal ----------------
+    const draw=()=>{ const open=d.jr.filter(j=>!j.exit), closed=d.jr.filter(j=>j.exit);
+      const pl=j=>{ const ex=j.exit||PX[j.coin]; if(!ex) return null; return (j.side==="BUY"?ex-j.entry:j.entry-ex)*j.qty; };
+      const tot=d.jr.reduce((a,j)=>a+(pl(j)||0),0);
+      body.innerHTML=`<div class="dm-grid">
+        <form class="dm-panel card" id="jrF"><h3>📒 ${tr("নতুন ট্রেড লিখুন","Log a trade")}</h3>
+          <p class="muted" style="margin:0;font-size:13px">${tr("নিজের এক্সচেঞ্জ বা ওয়ালেটে যে ট্রেড করেছেন, এখানে লিখে রাখুন। লাইভ লাভ-ক্ষতি দেখাবে।","Log trades you placed on your own exchange or wallet and follow live profit and loss.")}</p>
+          <div class="dm-side"><button type="button" class="b on" data-s="BUY">BUY</button><button type="button" class="s" data-s="SELL">SELL</button></div>
+          <label class="dm-f">${tr("কয়েন","Coin")}<select name="coin">${coins.map(c=>`<option>${c}</option>`).join("")}</select></label>
+          <label class="dm-f">${tr("Entry দাম (USDT)","Entry price (USDT)")}<input name="entry" type="number" step="any" min="0" required></label>
+          <label class="dm-f">${tr("পরিমাণ (কয়টা কয়েন)","Quantity (coins)")}<input name="qty" type="number" step="any" min="0" required></label>
+          <label class="dm-f">${tr("নোট (ঐচ্ছিক)","Note (optional)")}<textarea name="note" maxlength="200"></textarea></label>
+          <button class="btn btn-primary">${tr("খাতায় যোগ করুন","Add to journal")}</button></form>
+        <div class="dm-panel card"><h3>${tr("খোলা ট্রেড","Open trades")} <span class="muted" style="font-weight:500">(${open.length})</span> · ${tr("মোট লাভ/ক্ষতি","Total P/L")}: <span class="${tot>=0?"up":"down"}">${tot>=0?"+":""}${usd(tot)} USDT</span></h3>
+          ${open.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r">${tr("এখন","Now")}</th><th class="r">P/L</th><th></th></tr></thead><tbody>
+            ${open.map(j=>{ const p=pl(j); return `<tr><td>${logo(j.coin)} <b>${esc(j.coin)}</b><div class="muted" style="font-size:12px;white-space:normal;max-width:220px">${esc(j.note||"")}</div></td><td>${pillSide(j.side)}</td><td class="r">${fmtPx(j.entry)}</td><td class="r">${PX[j.coin]?fmtPx(PX[j.coin]):"…"}</td><td class="r ${p>=0?"up":"down"}">${p==null?"—":(p>=0?"+":"")+usd(p)}</td><td class="r"><button class="xs" data-close="${j.id}">${tr("বন্ধ","Close")}</button> <button class="xs" data-del="${j.id}">🗑</button></td></tr>`; }).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("এখনো কোনো খোলা ট্রেড নেই।","No open trades yet.")}</div>`}
+          ${closed.length?`<h3 style="margin-top:8px">${tr("বন্ধ ট্রেড","Closed trades")}</h3><div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r">Exit</th><th class="r">P/L</th><th></th></tr></thead><tbody>
+            ${closed.slice(0,30).map(j=>{ const p=pl(j); return `<tr><td><b>${esc(j.coin)}</b></td><td>${pillSide(j.side)}</td><td class="r">${fmtPx(j.entry)}</td><td class="r">${fmtPx(j.exit)}</td><td class="r ${p>=0?"up":"down"}">${(p>=0?"+":"")+usd(p)}</td><td class="r"><button class="xs" data-del="${j.id}">🗑</button></td></tr>`; }).join("")}</tbody></table></div>`:""}
+        </div></div>`;
+      let js="BUY"; const f=$("#jrF");
+      f.querySelectorAll(".dm-side button").forEach(b=>b.onclick=()=>{ js=b.dataset.s; f.querySelectorAll(".dm-side button").forEach(x=>x.classList.toggle("on",x===b)); });
+      f.onsubmit=e=>{ e.preventDefault(); const fd=new FormData(f), entry=+fd.get("entry"), qty=+fd.get("qty"); if(!(entry>0&&qty>0)) return;
+        d.jr.unshift({id:Date.now().toString(36),coin:clean(fd.get("coin")),side:js,entry,qty,note:String(fd.get("note")||"").slice(0,200),t:new Date().toISOString()}); demoSave(d); fetchPx().then(draw); };
+      body.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{ if(!confirm(tr("এই ট্রেডটা মুছবেন?","Delete this trade?"))) return; d.jr=d.jr.filter(j=>j.id!==b.dataset.del); demoSave(d); draw(); });
+      body.querySelectorAll("[data-close]").forEach(b=>b.onclick=()=>{ const j=d.jr.find(x=>x.id===b.dataset.close); const v=prompt(tr("কত দামে বন্ধ করলেন? (USDT)","Exit price (USDT)?"),PX[j.coin]||""); if(v&&+v>0){ j.exit=+v; j.closed=new Date().toISOString(); demoSave(d); draw(); } });
+    };
+    draw(); await fetchPx(); draw(); every(15000,async()=>{ await fetchPx(); if(!document.activeElement||!document.activeElement.closest||!document.activeElement.closest("#jrF")) draw(); }); return;
+  }
+
+  // ---------------- demo trading ----------------
+  const val=()=>Object.entries(d.hold).reduce((a,[c,h])=>a+(PX[c]?h.qty*PX[c]:h.cost),0);
+  const cost=()=>Object.values(d.hold).reduce((a,h)=>a+h.cost,0);
+  body.innerHTML=`
+    <div class="dm-top">
+      <div class="dm-prof card"><div class="dm-av" id="dmAv"></div><div class="nm"><span id="dmName"></span><button id="dmRen" aria-label="${tr("নাম বদলান","Rename")}">✏️</button></div>
+        <div class="dm-kv"><span>${tr("ডেমো আইডি","Demo ID")}</span><b>${esc(d.uid)}</b><span>${tr("শুরু","Since")}</span><b>${new Date(d.since).toLocaleDateString(LANG==="en"?"en-GB":"bn-BD")}</b><span>${tr("মোট ট্রেড","Trades")}</span><b id="dmN"></b><span>${tr("অ্যাকাউন্টের ধরন","Account type")}</span><b style="color:var(--accent)">DEMO</b></div></div>
+      <div class="dm-bal card">
+        <div><span class="muted" style="font-size:13px">${tr("মোট ডেমো ব্যালান্স","Total demo balance")}</span><div class="big"><span id="dmTot">—</span> <small>USDT</small></div><div id="dmPL" style="font:600 14px 'IBM Plex Mono',monospace;margin-top:6px"></div></div>
+        <div class="dm-row3"><div><span>${tr("নগদ","Cash")}</span><b id="dmCash"></b></div><div><span>${tr("কয়েনে","In coins")}</span><b id="dmVal"></b></div><div><span>${tr("কেনা দাম","Cost basis")}</span><b id="dmCost"></b></div></div>
+        <div class="dm-act"><button class="btn btn-primary" id="dmTop">＋ ${tr(`${DEMO_TOPUP.toLocaleString("en-US")} ডেমো USDT নিন`,`Add ${DEMO_TOPUP.toLocaleString("en-US")} demo USDT`)}</button><button class="btn btn-ghost" id="dmReset">↺ ${tr("রিসেট","Reset")}</button><a class="btn btn-ghost" href="#/signals">📈 ${tr("সিগনাল","Signals")}</a></div>
+      </div>
+    </div>
+    <div class="dm-grid">
+      <div style="display:grid;gap:16px">
+        <form class="dm-panel card" id="dmF"><h3>🎮 ${tr("ডেমো অর্ডার","Demo order")}</h3>
+          <div class="dm-side"><button type="button" class="b on" data-s="BUY">${tr("কিনুন","Buy")}</button><button type="button" class="s" data-s="SELL">${tr("বেচুন","Sell")}</button></div>
+          <label class="dm-f">${tr("কয়েন","Coin")}<select id="dmCoin">${coins.map(c=>`<option>${c}</option>`).join("")}</select></label>
+          <div class="dm-est"><span>${tr("লাইভ দাম","Live price")}</span><b id="dmPx">…</b></div>
+          <label class="dm-f"><span id="dmAmtL"></span><input id="dmAmt" type="number" step="any" min="0" inputmode="decimal"></label>
+          <div class="dm-pct">${[25,50,75,100].map(p=>`<button type="button" data-p="${p}">${p}%</button>`).join("")}</div>
+          <div class="dm-est"><span id="dmEstL"></span><b id="dmEst">—</b></div>
+          <button class="btn btn-primary" id="dmGo"></button>
+          <div class="dm-msg" id="dmMsg" role="status"></div>
+          <p class="muted" style="margin:0;font-size:12.5px">${tr("আসল এক্সচেঞ্জের মতো ০.১% ফি কাটা হয়। শুধু স্পট, ধার বা লিভারেজ নেই।","A 0.1% fee is charged like a real exchange. Spot only — no margin or leverage.")}</p>
+        </form>
+        <div class="dm-panel card"><h3>📡 ${tr("চলমান সিগনাল, ডেমোতে ট্রাই করুন","Try an active signal in demo")}</h3>
+          <div class="dm-sig">${sigs.length?sigs.map(t=>`<div class="it"><span>${pillSide(t.side)} <b>${esc(t.coin)}</b> · ${tr("Entry","Entry")} ${fmtPx(t.entry)}${t.conf!=null?` · ${gradeOf(t.conf)}`:""}</span>${t.side==="BUY"?`<button data-try="${esc(t.coin)}">${tr("ডেমোতে কিনুন","Buy in demo")}</button>`:`<span class="muted" style="font-size:12px">${tr("SELL: ডেমোতে শুধু কেনা কয়েন বেচা যায়","SELL: demo can only sell coins you hold")}</span>`}</div>`).join(""):`<div class="dm-empty" style="padding:12px">${tr("এই মুহূর্তে কোনো চলমান ক্রিপ্টো সিগনাল নেই।","No active crypto signal right now.")}</div>`}</div></div>
+      </div>
+      <div style="display:grid;gap:16px">
+        <div class="dm-panel card"><h3>💼 ${tr("আমার ডেমো কয়েন","My demo coins")}</h3><div id="dmHold"></div></div>
+        <div class="dm-panel card"><h3>🧾 ${tr("সাম্প্রতিক কাজ","Recent activity")}</h3><div id="dmTx"></div></div>
+      </div>
+    </div>`;
+  const msg=(t,ok)=>{ const m=$("#dmMsg"); m.textContent=t; m.className="dm-msg "+(ok?"ok":"err"); };
+  const name=()=>d.name||tr("ডেমো ট্রেডার","Demo trader");
+  const draw=()=>{ if(!$("#dmTot")) return;
+    const v=val(), c=cost(), tot=d.cash+v, pl=v-c, pp=c?pl/c*100:0, start=d.tx.filter(x=>x.type==="start"||x.type==="topup").reduce((a,x)=>a+x.usdt,0), all=tot-start;
+    $("#dmAv").textContent=name().slice(0,1).toUpperCase(); $("#dmName").textContent=name(); $("#dmN").textContent=d.tx.filter(x=>x.type==="buy"||x.type==="sell").length;
+    $("#dmTot").textContent=usd(tot); $("#dmCash").textContent=usd(d.cash); $("#dmVal").textContent=usd(v); $("#dmCost").textContent=usd(c);
+    $("#dmPL").innerHTML=`<span class="${pl>=0?"up":"down"}">${pl>=0?"+":""}${usd(pl)} (${pp>=0?"+":""}${pp.toFixed(2)}%)</span> <span class="muted">${tr("খোলা কয়েনে","on open coins")}</span> · <span class="${all>=0?"up":"down"}">${all>=0?"+":""}${usd(all)}</span> <span class="muted">${tr("শুরু থেকে","since start")}</span>`;
+    const hs=Object.entries(d.hold);
+    $("#dmHold").innerHTML=hs.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("পরিমাণ","Qty")}</th><th class="r">${tr("গড় দাম","Avg")}</th><th class="r">${tr("এখন","Now")}</th><th class="r">${tr("মূল্য","Value")}</th><th class="r">P/L</th><th></th></tr></thead><tbody>${hs.map(([k,h])=>{ const p=PX[k], vv=p?h.qty*p:h.cost, l=vv-h.cost; return `<tr><td>${logo(k)} <b>${esc(k)}</b>${h.tp?`<div class="muted" style="font-size:11.5px">TP ${fmtPx(h.tp)} · SL ${fmtPx(h.sl)}</div>`:""}</td><td class="r">${qtyF(h.qty)}</td><td class="r">${fmtPx(h.cost/h.qty)}</td><td class="r">${p?fmtPx(p):"…"}</td><td class="r">${usd(vv)}</td><td class="r ${l>=0?"up":"down"}">${l>=0?"+":""}${usd(l)}<div style="font-size:11.5px">${(l/h.cost*100).toFixed(2)}%</div></td><td class="r"><button class="xs" data-sellall="${esc(k)}">${tr("সব বেচুন","Sell all")}</button></td></tr>`; }).join("")}</tbody></table></div>`
+      :`<div class="dm-empty">${tr("এখনো কোনো কয়েন নেই। বাঁ পাশ থেকে একটা ডেমো অর্ডার দিন।","No coins yet. Place a demo order on the left.")}</div>`;
+    const lbl={start:tr("ডেমো শুরু","Demo start"),topup:tr("ডেমো টাকা যোগ","Demo top-up"),buy:tr("কেনা","Buy"),sell:tr("বেচা","Sell"),reset:tr("রিসেট","Reset")};
+    $("#dmTx").innerHTML=d.tx.length?`<div class="tbl-wrap dm"><table><tbody>${d.tx.slice(0,15).map(x=>`<tr><td><b>${lbl[x.type]||x.type}</b>${x.coin?` · ${esc(x.coin)}`:""}<div class="muted" style="font-size:12px">${ago(x.t)}</div></td><td class="r">${x.qty?`${qtyF(x.qty)} @ ${fmtPx(x.price)}`:""}</td><td class="r ${x.type==="buy"?"down":"up"}">${x.type==="buy"?"−":"+"}${usd(x.usdt)}</td></tr>`).join("")}</tbody></table></div>`:"";
+    body.querySelectorAll("[data-sellall]").forEach(b=>b.onclick=()=>{ const k=b.dataset.sellall; side="SELL"; setSide(); $("#dmCoin").value=k; upd(); $("#dmAmt").value=d.hold[k].qty; upd(); });
+    upd(); };
+  const setSide=()=>{ $("#dmF").querySelectorAll(".dm-side button").forEach(x=>x.classList.toggle("on",x.dataset.s===side));
+    $("#dmAmtL").textContent=side==="BUY"?tr("কত USDT দিয়ে কিনবেন","Spend (USDT)"):tr("কয়টা কয়েন বেচবেন","Sell quantity (coins)");
+    $("#dmEstL").textContent=side==="BUY"?tr("আনুমানিক পাবেন","You get ≈"):tr("আনুমানিক পাবেন (USDT)","You get ≈ (USDT)");
+    $("#dmGo").textContent=side==="BUY"?tr("ডেমো কিনুন","Demo buy"):tr("ডেমো বেচুন","Demo sell"); $("#dmGo").style.background=side==="BUY"?"var(--up)":"var(--down)"; $("#dmGo").style.color="#fff"; upd(); };
+  function upd(){ const c=$("#dmCoin").value, p=PX[c], a=+$("#dmAmt").value||0; $("#dmPx").textContent=p?fmtPx(p)+" USDT":"…";
+    $("#dmEst").textContent=!p||!a?"—":side==="BUY"?`${qtyF(a*(1-DEMO_FEE)/p)} ${c}`:`${usd(a*p*(1-DEMO_FEE))}`; }
+  $("#dmF").querySelectorAll(".dm-side button").forEach(b=>b.onclick=()=>{ side=b.dataset.s; setSide(); });
+  $("#dmCoin").onchange=upd; $("#dmAmt").oninput=upd;
+  $("#dmF").querySelectorAll(".dm-pct button").forEach(b=>b.onclick=()=>{ const c=$("#dmCoin").value, f=+b.dataset.p/100;
+    $("#dmAmt").value=side==="BUY"?Math.floor(d.cash*f*100)/100:d.hold[c]?+(d.hold[c].qty*f).toPrecision(8):0; upd(); });
+  $("#dmF").onsubmit=e=>{ e.preventDefault(); const c=$("#dmCoin").value, p=PX[c], a=+$("#dmAmt").value;
+    if(!p) return msg(tr("দাম এখনো আসেনি, একটু পরে চেষ্টা করুন।","Price not loaded yet, try again."),false);
+    if(!(a>0)) return msg(tr("পরিমাণ লিখুন।","Enter an amount."),false);
+    if(side==="BUY"){ if(a>d.cash+1e-9) return msg(tr("ডেমো নগদ যথেষ্ট নেই।","Not enough demo cash."),false);
+      const q=a*(1-DEMO_FEE)/p, h=d.hold[c]||{qty:0,cost:0}; h.qty+=q; h.cost+=a; d.hold[c]=h; d.cash-=a;
+      const sg=sigs.find(t=>t.coin===c&&t.side==="BUY"); if(sg){ h.tp=sg.tp2; h.sl=sg.sl; }
+      d.tx.unshift({t:new Date().toISOString(),type:"buy",coin:c,qty:q,price:p,usdt:a}); msg(tr(`✅ ${qtyF(q)} ${c} কেনা হলো (ডেমো)।`,`✅ Bought ${qtyF(q)} ${c} (demo).`),true); }
+    else { const h=d.hold[c]; if(!h||a>h.qty*(1+1e-9)) return msg(tr("এত কয়েন আপনার ডেমো অ্যাকাউন্টে নেই।","You don't hold that many coins in demo."),false);
+      const q=Math.min(a,h.qty), got=q*p*(1-DEMO_FEE), part=q/h.qty; h.cost-=h.cost*part; h.qty-=q; if(h.qty<1e-12) delete d.hold[c]; d.cash+=got;
+      d.tx.unshift({t:new Date().toISOString(),type:"sell",coin:c,qty:q,price:p,usdt:got}); msg(tr(`✅ ${qtyF(q)} ${c} বেচে ${usd(got)} USDT পেলেন (ডেমো)।`,`✅ Sold ${qtyF(q)} ${c} for ${usd(got)} USDT (demo).`),true); }
+    d.tx=d.tx.slice(0,200); demoSave(d); $("#dmAmt").value=""; draw(); };
+  $("#dmTop").onclick=()=>{ if(d.cash+DEMO_TOPUP>DEMO_MAX_CASH) return msg(tr(`ডেমো নগদ ${DEMO_MAX_CASH.toLocaleString("en-US")}-এর বেশি রাখা যায় না।`,`Demo cash is capped at ${DEMO_MAX_CASH.toLocaleString("en-US")}.`),false);
+    d.cash+=DEMO_TOPUP; d.tx.unshift({t:new Date().toISOString(),type:"topup",usdt:DEMO_TOPUP}); demoSave(d); draw(); };
+  $("#dmReset").onclick=()=>{ if(!confirm(tr("ডেমো অ্যাকাউন্ট নতুন করে শুরু হবে। সব ডেমো কয়েন আর ইতিহাস মুছে যাবে (ট্রেড খাতা থাকবে)। নিশ্চিত?","Restart the demo account? All demo coins and history will be cleared (your journal stays).")))return;
+    d.cash=DEMO_START; d.hold={}; d.since=new Date().toISOString(); d.tx=[{t:d.since,type:"start",usdt:DEMO_START}]; demoSave(d); draw(); };
+  $("#dmRen").onclick=()=>{ const v=prompt(tr("আপনার নাম (শুধু এই ব্রাউজারে থাকবে)","Your name (stays in this browser only)"),d.name||""); if(v!==null){ d.name=v.trim().slice(0,30); demoSave(d); draw(); } };
+  body.querySelectorAll("[data-try]").forEach(b=>b.onclick=()=>{ side="BUY"; setSide(); $("#dmCoin").value=b.dataset.try; $("#dmAmt").value=Math.min(1000,Math.floor(d.cash)); upd(); $("#dmF").scrollIntoView({behavior:"smooth",block:"center"}); });
+  setSide(); draw(); await fetchPx(); draw(); every(10000,async()=>{ await fetchPx(); draw(); });
+}
+
+/* ---------- learn: live insights + training guide ---------- */
+let LEARN_TAB="insights";
+const TIPS_EN=["Check the FDV before buying. If it is far above the market cap, a lot of new tokens are still coming.","Check for a big token unlock ahead. More supply can pressure the price.","No trade without a stop loss. Decide where you are wrong first, then enter.","Never risk more than 1–2% of your money on one trade.","Skip the trade if the target is not at least 1.5–2× the risk.","Do not trade against the 4h and daily trend.","When BTC dominance rises, altcoins are usually weak; when it falls, money moves into altcoins.","A price that turned the market 2–3 times before is a strong support or resistance.","Big order-book orders can be fake (spoofing). Never decide on them alone.","Anyone asking for your seed phrase or private key is a scam — airdrop or 'support'.","'Send money first to receive the airdrop' is always a scam.","Use a separate empty wallet for airdrops, not your main one.","Low daily volume means easy to enter, hard to exit.","No leverage for beginners. High leverage wipes you out on small moves.","Do not trade angry or out of FOMO after a loss. Take a break.","Write down every trade. Without a journal you cannot see your mistakes.","Always verify the contract address on the project's official site. Fakes are everywhere.","When most tokens sit with the team or investors, risk is higher.","Be careful opening new trades right before big news or a big unlock.","Practise in demo before using real money. The Demo page is free.","Confidence or grade is not a win probability — only how many conditions lined up."];
+async function pageLearn(){
+  let ins={}; try{ ins=await (await fetch("data/insights.json?t="+Math.floor(Date.now()/300000))).json(); }catch(e){}
+  const tabs=[["insights","🧭",tr("লাইভ ইনসাইট","Live insights")],["listings","🆕",tr("লিস্টিং ও ফ্রি ইনকাম","Listings & free earning")],["drops","🎁",tr("এয়ারড্রপ ও আনলক","Airdrops & unlocks")],["guide","🎓",tr("ট্রেনিং গাইড","Training guide")]];
+  const day=Math.floor(Date.now()/864e5), tip=LANG==="en"?TIPS_EN[day%TIPS_EN.length]:(ins.tip||"");
+  app.innerHTML=`<div class="ln">
+    <section class="sec-head"><div><span class="eyebrow">${tr("শেখা · তথ্য","Learn · Insights")}</span><h2>${tr("মার্কেট ইনসাইট ও ট্রেনিং","Market insights & training")}</h2><p>${tr("BTC Dominance, বড় অর্ডারের দেয়াল, এয়ারড্রপ ও আনলকের খবর, আর ধাপে ধাপে গাইড। নিজে থেকে আপডেট হয়।","BTC dominance, order-book walls, airdrop and unlock news, and step-by-step guides. Updates by itself.")}</p></div></section>
+    ${tip?`<div class="ln-tip"><span style="font-size:22px">🎓</span><div><b>${tr("আজকের টিপ","Tip of the day")}</b><div>${esc(tip)}</div></div></div>`:""}
+    <div class="dm-tabs">${tabs.map(([k,i,n])=>`<button data-tab="${k}" class="${LEARN_TAB===k?"on":""}">${i} ${n}</button>`).join("")}</div>
+    <div id="lnBody"></div>
+    <p class="note red" style="margin:0">${tr("⚠️ এই পেজের সব কিছু শুধু তথ্য ও শেখার জন্য, আর্থিক পরামর্শ নয়। কোনো লাভের নিশ্চয়তা নেই।","⚠️ Everything on this page is for information and education only, not financial advice. No profit is guaranteed.")}</p></div>`;
+  app.querySelectorAll(".dm-tabs button").forEach(b=>b.onclick=()=>{ LEARN_TAB=b.dataset.tab; pageLearn(); });
+  const body=$("#lnBody"), ext=(u,t)=>`<a href="${u}" target="_blank" rel="noopener">${t} ↗</a>`;
+  const newsList=a=>a&&a.length?`<div class="ln-news">${a.map(n=>`<a href="${safeUrl(n.link)}" target="_blank" rel="noopener">${esc(n.title)}<small>${esc(n.source||"")} · ${ago(n.published)}</small></a>`).join("")}</div>`:`<div class="dm-empty">${tr("এই মুহূর্তে এ বিষয়ে নতুন খবর নেই।","No recent headlines on this right now.")}</div>`;
+  if(LEARN_TAB==="insights"){
+    const drawDom=d=>{ const el=$("#lnDom"); if(!el||!d) return;
+      const mood=d.btc>=55?tr("Bitcoin season: টাকা BTC-তে, অল্টকয়েন সাধারণত দুর্বল থাকে।","Bitcoin season: money sits in BTC and altcoins are usually weak."):d.btc<50?tr("Dominance ৫০%-এর নিচে: টাকা অল্টকয়েনে যাচ্ছে।","Dominance under 50%: money is rotating into altcoins."):tr("মাঝামাঝি অবস্থা: দিক পরিষ্কার নয়।","In between: no clear direction.");
+      el.innerHTML=`<div class="ln-ring" style="--v:${d.btc}"><div><div><b>${(+d.btc).toFixed(1)}%</b><span>BTC Dominance</span></div></div></div>
+        <div><h3 style="margin:0 0 4px">${tr("BTC বনাম সব অল্টকয়েন","BTC vs. all altcoins")}</h3><p class="muted" style="margin:0;font-size:14px">${tr("পুরো ক্রিপ্টো মার্কেটের কত শতাংশ টাকা Bitcoin-এ আছে।","The share of the whole crypto market that sits in Bitcoin.")}</p>
+        <div class="ln-k"><div><span>BTC</span><b>${(+d.btc).toFixed(2)}%</b></div><div><span>ETH</span><b>${(+d.eth).toFixed(2)}%</b></div><div><span>${tr("বাকি সব","Everything else")}</span><b>${(100-d.btc-d.eth).toFixed(2)}%</b></div>
+        <div><span>${tr("মোট মার্কেট","Total market")}</span><b>$${(d.mcap/1e12).toFixed(2)}T</b></div><div><span>${tr("২৪ ঘণ্টা","24h")}</span><b class="${d.mcap_ch>=0?"up":"down"}">${pct(d.mcap_ch)}</b></div><div><span>${tr("গতকাল থেকে","vs. yesterday")}</span><b>${d.ch_1d==null?"—":(d.ch_1d>=0?"+":"")+d.ch_1d}</b></div></div>
+        <div class="ln-mood">➜ ${mood}</div></div>`; };
+    const walls=ins.walls||[], mx=Math.max(1,...walls.map(w=>Math.max(w.support.usd,w.resistance.usd)));
+    body.innerHTML=`<div class="ln">
+      <div class="card ln-dom" id="lnDom"><div class="dm-empty">${tr("লোড হচ্ছে…","Loading…")}</div></div>
+      <div class="card dm-panel"><h3>🧱 ${tr("বড় অর্ডারের দেয়াল — সাপোর্ট ও রেজিস্ট্যান্স","Order-book walls — support & resistance")}</h3>
+        <p class="muted" style="margin:0;font-size:13.5px">${tr("Binance order book-এ এখনকার দামের ৫%-এর মধ্যে সবচেয়ে বড় কেনার দেয়াল (সাপোর্ট) আর বিক্রির দেয়াল (রেজিস্ট্যান্স)। প্রতি ঘণ্টায় আপডেট হয়।","The largest buy wall (support) and sell wall (resistance) within 5% of the price on the Binance order book. Updated hourly.")}</p>
+        ${walls.length?walls.map(w=>`<a class="ln-wall" href="#/coin/${esc(w.coin)}" style="text-decoration:none;color:var(--ink)"><span>${logo(w.coin)} <b>${esc(w.coin)}</b></span>
+          <span class="bar"><i style="width:${w.buy_pct}%"></i><em><span class="up">▲ ${fmtPx(w.support.price)} · $${fmtBig(w.support.usd)}</span><span class="down">$${fmtBig(w.resistance.usd)} · ${fmtPx(w.resistance.price)} ▼</span></em></span>
+          <span class="${w.buy_pct>=50?"up":"down"}" style="text-align:right">${w.buy_pct}%</span></a>`).join("")+`<p class="muted" style="margin:6px 0 0;font-size:12.5px">${tr("ডান পাশের % = দামের ২%-এর মধ্যে কেনার অর্ডারের ভাগ। বড় অর্ডার নকলও হতে পারে আর যেকোনো সময় সরে যেতে পারে।","The % on the right is the share of buy orders within 2% of the price. Big orders can be fake and can vanish at any moment.")}</p>`
+        :`<div class="dm-empty">${tr("ডেটা এখনো আসেনি। বট পরের বার চললে দেখা যাবে।","No data yet. It will appear after the bot's next run.")}</div>`}</div>
+      <div class="ln-links">${ext("https://www.coingecko.com/en/charts/bitcoin-dominance","CoinGecko BTC.D")}${ext("https://www.tradingview.com/symbols/BTC.D/","TradingView BTC.D")}${ext("https://www.coinglass.com/","CoinGlass")}${ext("https://whale-alert.io/","Whale Alert")}</div>
+      <p class="muted" style="margin:0;font-size:12.5px">${ins.updated?tr("বটের শেষ আপডেট: ","Bot last updated: ")+ago(ins.updated):""}</p></div>`;
+    drawDom(ins.dominance);
+    try{ const g=(await (await fetch("https://api.coingecko.com/api/v3/global")).json()).data;
+      drawDom({btc:g.market_cap_percentage.btc,eth:g.market_cap_percentage.eth||0,mcap:g.total_market_cap.usd,mcap_ch:g.market_cap_change_percentage_24h_usd||0,ch_1d:ins.dominance?ins.dominance.ch_1d:null}); }
+    catch(e){ if(!ins.dominance){ const el=$("#lnDom"); if(el) el.innerHTML=`<div class="dm-empty">${tr("Dominance ডেটা এখন পাওয়া যাচ্ছে না।","Dominance data is unavailable right now.")}</div>`; } }
+  } else if(LEARN_TAB==="listings"){
+    const ls=ins.listings||[], er=ins.earn||[], now=Date.now();
+    const st=x=>{ if(!x.trade) return `<span class="pill p-flat">${tr("ঘোষিত","Announced")}</span>`; return new Date(x.trade)>now?`<span class="pill p-open">⏳ ${tr("অপেক্ষায়","Upcoming")}</span>`:`<span class="pill p-tp1">✓ ${tr("চালু","Live")}</span>`; };
+    const exb=x=>`<span class="cpill" style="color:${x.ex==="OKX"?"var(--ink)":"var(--up)"}">${esc(x.ex)}</span>`;
+    const up=ls.filter(x=>x.trade&&new Date(x.trade)>now).length;
+    body.innerHTML=`<div class="ln">
+      <div class="ln-k" style="margin:0"><div><span>${tr("লিস্টিংয়ের ঘোষণা","Listing announcements")}</span><b>${ls.length}</b></div><div><span>${tr("এখনো অপেক্ষায়","Still upcoming")}</span><b>${up}</b></div><div><span>${tr("ফ্রি ইনকামের সুযোগ","Free-earning offers")}</span><b>${er.length}</b></div></div>
+      <div class="card dm-panel"><h3>🆕 ${tr("নতুন ও আসন্ন লিস্টিং","New & upcoming listings")}</h3>
+        <p class="muted" style="margin:0;font-size:13.5px">${tr("এক্সচেঞ্জের অফিসিয়াল ঘোষণা থেকে সরাসরি (OKX, KuCoin)। প্রতি ঘণ্টায় আপডেট হয়। নতুন ঘোষণা Telegram-এও যায়।","Straight from the exchanges' official announcements (OKX, KuCoin). Updated hourly; new ones also go to Telegram.")}</p>
+        ${ls.length?`<div class="tbl-wrap"><table><thead><tr><th>${tr("এক্সচেঞ্জ","Exchange")}</th><th>${tr("টোকেন","Token")}</th><th>${tr("ঘোষণা","Announcement")}</th><th>${tr("ট্রেডিং শুরু","Trading starts")}</th><th>${tr("অবস্থা","Status")}</th></tr></thead><tbody>${ls.map(x=>`<tr><td>${exb(x)}</td><td><b>${esc(x.token||"—")}</b></td><td style="white-space:normal;min-width:240px"><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><div class="muted" style="font-size:12px">${ago(x.announced)}</div></td><td>${x.trade?when(x.trade):"—"}</td><td>${st(x)}</td></tr>`).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("ডেটা এখনো আসেনি। বট পরের বার চললে দেখা যাবে।","No data yet. It will appear after the bot's next run.")}</div>`}</div>
+      <div class="card dm-panel"><h3>🎁 ${tr("ফ্রি ইনকামের সুযোগ","Free-earning opportunities")}</h3>
+        <p class="muted" style="margin:0;font-size:13.5px">${tr("এয়ারড্রপ, GemPool/Launchpool, Learn & Earn আর পুরস্কারের ক্যাম্পেইন — এক্সচেঞ্জের অফিসিয়াল ঘোষণা থেকে।","Airdrops, GemPool/Launchpool, Learn & Earn and reward campaigns — from official exchange announcements.")}</p>
+        ${er.length?`<div class="ln-news">${er.map(x=>`<a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${exb(x)} ${esc(x.title)}<small>${ago(x.announced)}</small></a>`).join("")}</div>`:`<div class="dm-empty">${tr("এই মুহূর্তে নতুন কোনো সুযোগ নেই।","No new offers right now.")}</div>`}
+        ${(ins.topics&&ins.topics.airdrop&&ins.topics.airdrop.length)?`<h3 style="margin-top:8px">📰 ${tr("এয়ারড্রপের খবর","Airdrop headlines")}</h3>${newsList(ins.topics.airdrop)}`:""}</div>
+      <div class="ln-g">
+        <div class="card ln-les"><h3>💡 ${tr("ফ্রি ইনকামের ৫টা পথ","5 ways to earn for free")}</h3><ul>
+          <li>${tr("<b>এয়ারড্রপ:</b> নতুন প্রজেক্ট শুরুর ব্যবহারকারীদের ফ্রি টোকেন দেয়।","<b>Airdrops:</b> new projects give free tokens to early users.")}</li>
+          <li>${tr("<b>Launchpool / GemPool:</b> এক্সচেঞ্জে কয়েন জমা রেখে নতুন টোকেন পাওয়া। জমা রাখা কয়েনের দাম ওঠানামা করে।","<b>Launchpool / GemPool:</b> stake coins on the exchange to receive a new token. The staked coin's price still moves.")}</li>
+          <li>${tr("<b>Learn & Earn:</b> ছোট ভিডিও দেখে কুইজ দিলে অল্প টোকেন।","<b>Learn & Earn:</b> watch a short lesson, pass a quiz, get a few tokens.")}</li>
+          <li>${tr("<b>টেস্টনেট ও কাজ:</b> নতুন নেটওয়ার্ক পরীক্ষা করা, কমিউনিটির কাজ।","<b>Testnets & tasks:</b> trying new networks, community tasks.")}</li>
+          <li>${tr("<b>ক্যাম্পেইন:</b> এক্সচেঞ্জের পুরস্কার ইভেন্ট; অনেকগুলোতে ট্রেড করতে হয়, তাই ঝুঁকি আছে।","<b>Campaigns:</b> exchange reward events; many require trading, which carries risk.")}</li></ul></div>
+        <div class="card ln-les"><h3>⚠️ ${tr("মনে রাখবেন","Keep in mind")}</h3><ul>
+          <li>${tr("'ফ্রি' মানে সবসময় ঝুঁকিহীন নয়। শর্ত পুরোটা পড়ুন।","'Free' is not always risk-free. Read the full terms.")}</li>
+          <li>${tr("নতুন লিস্টিংয়ের প্রথম ঘণ্টায় দাম খুব দ্রুত ওঠে আর পড়ে।","In the first hours of a listing the price swings wildly.")}</li>
+          <li>${tr("আপনার দেশে এক্সচেঞ্জ বা প্রোগ্রাম চালু আছে কিনা দেখে নিন।","Check that the exchange or programme is available in your country.")}</li>
+          <li>${tr("কেউ আগে টাকা, পাসওয়ার্ড বা seed phrase চাইলে সেটা প্রতারণা।","Anyone asking for money, a password or a seed phrase first is a scam.")}</li>
+          <li>${tr("এই তালিকা তথ্য মাত্র, কেনার সুপারিশ নয়।","This list is information, not a recommendation to buy.")}</li></ul></div>
+      </div>
+      <div class="ln-links">${ext("https://www.binance.com/en/support/announcement",tr("Binance ঘোষণা","Binance announcements"))}${ext("https://www.okx.com/help/section/announcements-new-listings","OKX")}${ext("https://www.kucoin.com/announcement/new-listings","KuCoin")}${ext("https://announcements.bybit.com/","Bybit")}${ext("https://www.gate.com/announcements","Gate")}</div></div>`;
+  } else if(LEARN_TAB==="drops"){
+    const tp=ins.topics||{};
+    body.innerHTML=`<div class="ln"><div class="ln-g">
+      <div class="card dm-panel"><h3>🎁 ${tr("এয়ারড্রপের খবর","Airdrop headlines")}</h3>${newsList(tp.airdrop)}</div>
+      <div class="card dm-panel"><h3>🔓 ${tr("টোকেন আনলকের খবর","Token unlock headlines")}</h3>${newsList(tp.unlock)}</div></div>
+      <div class="card dm-panel"><h3>🆕 ${tr("নতুন লিস্টিং ও Launchpool","New listings & Launchpool")}</h3>${newsList(tp.listing)}</div>
+      <div class="card dm-panel"><h3>🔗 ${tr("আসল উৎস — এখান থেকে মিলিয়ে নিন","Official sources — verify here")}</h3>
+        <div class="ln-links">${ext("https://www.binance.com/en/support/announcement",tr("Binance ঘোষণা","Binance announcements"))}${ext("https://tokenomist.ai/",tr("আনলক ক্যালেন্ডার (Tokenomist)","Unlock calendar (Tokenomist)"))}${ext("https://www.gate.com/crypto-calendar/token-unlock",tr("আনলক ক্যালেন্ডার (Gate)","Unlock calendar (Gate)"))}${ext("https://coinmarketcap.com/airdrop/","CoinMarketCap Airdrops")}${ext("https://airdrops.io/","airdrops.io")}</div></div>
+      <div class="ln-g">
+        <div class="card ln-les"><h3>🎁 ${tr("এয়ারড্রপ কীভাবে পাওয়া যায়","How airdrops are earned")}</h3><ul>
+          <li>${tr("<b>Binance HODLer Airdrops:</b> BNB Simple Earn-এ রাখা, KYC করা আর দেশ অনুমোদিত হলে নতুন টোকেন পাওয়া যায়।","<b>Binance HODLer Airdrops:</b> hold BNB in Simple Earn, with KYC and an eligible country.")}</li>
+          <li>${tr("<b>Binance Alpha Points:</b> ১৫ দিনের চলমান হিসাব; ব্যালান্স আর Alpha টোকেন কেনা থেকে পয়েন্ট। ক্লেইম ২৪ ঘণ্টার মধ্যে।","<b>Binance Alpha Points:</b> a 15-day rolling score from balance and Alpha purchases; claims open for about 24 hours.")}</li>
+          <li>${tr("<b>নতুন প্রজেক্ট:</b> টেস্টনেট ব্যবহার, আসল লেনদেন, কমিউনিটির কাজ।","<b>New projects:</b> testnet use, real on-chain activity, community tasks.")}</li>
+          <li>${tr("আপনার দেশে প্রোগ্রাম চালু আছে কিনা নিজের অ্যাকাউন্টে দেখে নিন।","Check in your own account whether the programme is available in your country.")}</li></ul></div>
+        <div class="card ln-les"><h3>🚨 ${tr("ভুয়া এয়ারড্রপ চেনার নিয়ম","How to spot a fake airdrop")}</h3><ul>
+          <li>${tr("<b>Seed phrase বা private key</b> চাইলে শতভাগ প্রতারণা।","Asking for your <b>seed phrase or private key</b> is always a scam.")}</li>
+          <li>${tr("<b>'আগে টাকা বা গ্যাস ফি পাঠান'</b> বললে প্রতারণা।","<b>'Send money or gas first'</b> is a scam.")}</li>
+          <li>${tr("লিংক শুধু অফিসিয়াল সাইট বা যাচাই করা অ্যাকাউন্ট থেকে নিন, ইনবক্স মেসেজ থেকে নয়।","Take links only from the official site or a verified account, never from a DM.")}</li>
+          <li>${tr("এয়ারড্রপের জন্য আলাদা খালি ওয়ালেট ব্যবহার করুন।","Use a separate, empty wallet for airdrops.")}</li>
+          <li>${tr("BEWON কখনো এয়ারড্রপের নামে টাকা চায় না।","BEWON never asks for money in the name of an airdrop.")}</li></ul></div>
+        <div class="card ln-les" style="grid-column:1/-1"><h3>🔓 ${tr("টোকেন আনলক কী আর কেন দেখবেন","What a token unlock is and why it matters")}</h3><ul>
+          <li>${tr("আনলক মানে টিম বা বিনিয়োগকারীদের আটকে রাখা টোকেন বাজারে ছাড়া হয়। সরবরাহ বাড়ে, তাই দামে চাপ পড়তে পারে।","An unlock releases tokens held by the team or investors. Supply rises, which can pressure the price.")}</li>
+          <li>${tr("ডলারের অঙ্কের চেয়ে <b>সরবরাহের কত শতাংশ</b> আনলক হচ্ছে সেটা বেশি জরুরি।","The <b>share of supply</b> being unlocked matters more than the dollar value.")}</li>
+          <li>${tr("কেনার আগে উপরের ক্যালেন্ডারে কয়েনের পরের আনলকের তারিখ দেখে নিন।","Before buying, check the coin's next unlock date in the calendars above.")}</li></ul></div>
+      </div></div>`;
+  } else {
+    const L=(h,items,ol)=>`<div class="card ln-les"><h3>${h}</h3><${ol?"ol":"ul"}>${items.map(x=>`<li>${x}</li>`).join("")}</${ol?"ol":"ul"}></div>`;
+    body.innerHTML=`<div class="ln-g">
+      ${L("🛒 "+tr("কয়েন কেনার আগে ৮টা জিনিস","8 checks before buying a coin"),[
+        tr("<b>Market cap আর FDV:</b> FDV অনেক বেশি হলে সামনে প্রচুর টোকেন বাজারে আসবে।","<b>Market cap vs FDV:</b> a much higher FDV means lots of tokens are still to come."),
+        tr("<b>আনলকের সময়সূচি:</b> সামনে বড় আনলক আছে কিনা।","<b>Unlock schedule:</b> is a large unlock coming?"),
+        tr("<b>টোকেন কার হাতে:</b> টিম আর বিনিয়োগকারীদের ভাগ বেশি হলে ঝুঁকি বেশি।","<b>Who holds it:</b> a big team/investor share means more risk."),
+        tr("<b>লিকুইডিটি:</b> দৈনিক ভলিউম কম হলে বিক্রি করা কঠিন।","<b>Liquidity:</b> low daily volume makes it hard to sell."),
+        tr("<b>কোথায় লিস্টেড:</b> বড় এক্সচেঞ্জে থাকলে ঝুঁকি তুলনামূলক কম।","<b>Where it is listed:</b> major exchanges mean relatively lower risk."),
+        tr("<b>প্রজেক্ট কী করে:</b> আসল ব্যবহারকারী আছে, নাকি শুধু প্রচার।","<b>What it does:</b> real users, or only hype?"),
+        tr("<b>BTC আর dominance:</b> BTC পড়লে প্রায় সব অল্টকয়েন পড়ে।","<b>BTC and dominance:</b> when BTC falls, almost every altcoin falls."),
+        tr("<b>কন্ট্রাক্ট ঠিকানা:</b> অফিসিয়াল সাইট থেকে মিলিয়ে নিন।","<b>Contract address:</b> verify it on the official site.")],1)}
+      ${L("🎯 "+tr("ট্রেড নেওয়ার আগের চেকলিস্ট","Checklist before taking a trade"),[
+        tr("<b>বড় ট্রেন্ড:</b> ৪ ঘণ্টা আর দৈনিক চার্ট কোন দিকে।","<b>Higher trend:</b> where are the 4h and daily charts heading?"),
+        tr("<b>লেভেল:</b> দাম সাপোর্ট বা রেজিস্ট্যান্সের কাছে কিনা।","<b>Level:</b> is price near support or resistance?"),
+        tr("<b>Entry-র কারণ:</b> অন্তত ২–৩টা শর্ত মিলেছে কিনা (EMA, RSI, ভলিউম)।","<b>Reason to enter:</b> at least 2–3 conditions agree (EMA, RSI, volume)."),
+        tr("<b>Stop Loss আগে:</b> কোথায় ভুল প্রমাণ হবেন।","<b>Stop loss first:</b> where are you proven wrong?"),
+        tr("<b>Risk/Reward:</b> লাভের লক্ষ্য ক্ষতির অন্তত ১.৫–২ গুণ।","<b>Risk/reward:</b> target at least 1.5–2× the risk."),
+        tr("<b>পরিমাণ:</b> এক ট্রেডে মোট টাকার ১–২%-এর বেশি ঝুঁকি নয়।","<b>Size:</b> risk no more than 1–2% per trade."),
+        tr("<b>খবর:</b> বড় আনলক বা বড় খবরের ঠিক আগে সাবধান।","<b>News:</b> be careful right before big unlocks or news."),
+        tr("<b>লিভারেজ:</b> নতুনদের জন্য না।","<b>Leverage:</b> not for beginners."),
+        tr("<b>আবেগ:</b> রাগে বা FOMO-তে ট্রেড নয়।","<b>Emotion:</b> no angry or FOMO trades."),
+        tr("<b>খাতা:</b> প্রতিটা ট্রেড <a href='#/demo'>ট্রেড খাতায়</a> লিখুন।","<b>Journal:</b> log every trade in the <a href='#/demo'>trade journal</a>.")],1)}
+      ${L("👑 "+tr("BTC Dominance কীভাবে পড়বেন","How to read BTC dominance"),[
+        tr("Dominance <b>বাড়ছে</b>: টাকা অল্টকয়েন থেকে BTC-তে যাচ্ছে।","Dominance <b>rising</b>: money is moving from altcoins into BTC."),
+        tr("Dominance <b>কমছে</b>: টাকা অল্টকয়েনে যাচ্ছে।","Dominance <b>falling</b>: money is moving into altcoins."),
+        tr("আগের altseason শুরু হয়েছিল dominance ৫০%-এর নিচে নামার পর।","Past altseasons began after dominance fell below 50%."),
+        tr("কোনো জাদুর সংখ্যা নেই; এটা একটা ইঙ্গিত মাত্র।","There is no magic number; it is only a hint.")])}
+      ${L("🧱 "+tr("সাপোর্ট, রেজিস্ট্যান্স আর বড় অর্ডার","Support, resistance and big orders"),[
+        tr("যে দামে আগে ২–৩ বার দাম ফিরেছে, সেটা শক্ত লেভেল।","A price that turned the market 2–3 times is a strong level."),
+        tr("দৈনিক বা সাপ্তাহিক চার্টের লেভেল ১ ঘণ্টার চেয়ে শক্ত।","Daily and weekly levels are stronger than 1h levels."),
+        tr("গোল সংখ্যা আর EMA 200 প্রায়ই লেভেল হিসেবে কাজ করে।","Round numbers and the EMA 200 often act as levels."),
+        tr("Order book-এ বড় কেনার দেয়াল = সাপোর্ট, বড় বিক্রির দেয়াল = রেজিস্ট্যান্স।","A big buy wall is support; a big sell wall is resistance."),
+        tr("বড় অর্ডার নকল হতে পারে (spoofing)। শুধু এটা দেখে সিদ্ধান্ত নয়।","Big orders can be fake (spoofing). Never rely on them alone.")])}
+    </div>`;
+  }
+}
+
+
+/* ---------- backtest section (signals page) ---------- */
+async function addBacktest(){
+  let bt; try{ const r=await fetch("data/backtest.json?t="+Math.floor(Date.now()/3600000)); if(!r.ok) return; bt=await r.json(); }catch(e){ return; }
+  if(!bt||!bt.all||!bt.all.n||location.hash.indexOf("signals")<0) return;
+  const R=x=>x==null?"—":(x>0?"+":"")+x+"R", cls=x=>x>0?"up":x<0?"down":"";
+  const row=(n,s)=>s&&s.n?`<tr><td><b>${n}</b></td><td class="r">${s.n}</td><td class="r">${s.win_rate==null?"—":s.win_rate+"%"}</td><td class="r ${cls(s.total_r)}">${R(s.total_r)}</td><td class="r ${cls(s.avg_r)}">${R(s.avg_r)}</td><td class="r">${s.profit_factor??"—"}</td><td class="r">${s.max_dd_r}R</td></tr>`:`<tr><td><b>${n}</b></td><td class="r">0</td><td colspan="5" class="muted">—</td></tr>`;
+  const head=`<thead><tr><th></th><th class="r">${tr("ট্রেড","Trades")}</th><th class="r">Win rate</th><th class="r">${tr("মোট","Total")}</th><th class="r">${tr("গড়","Avg")}</th><th class="r">PF</th><th class="r">${tr("সর্বোচ্চ পতন","Max drawdown")}</th></tr></thead>`;
+  const m=bt.monthly||[], mx=Math.max(1,...m.map(x=>Math.abs(x.eq)));
+  const sec=document.createElement("section");
+  sec.innerHTML=`<div class="sec-head"><div><span class="eyebrow">${tr("অতীতের পরীক্ষা","Backtest")}</span><h2>${tr(`গত ${bt.years} বছরের দামে একই নিয়ম`,`The same rules on the last ${bt.years} years`)}</h2>
+    <p>${tr(`${bt.from.slice(0,10)} থেকে ${bt.to.slice(0,10)} · ${bt.coins.length}টা কয়েন · ১ ঘণ্টার চার্ট · প্রতি দিকে ${bt.fee_pct}% ফি ধরে · Confidence ${bt.min_conf}%+`,`${bt.from.slice(0,10)} to ${bt.to.slice(0,10)} · ${bt.coins.length} coins · 1h candles · ${bt.fee_pct}% fee per side · confidence ${bt.min_conf}%+`)}</p></div></div>
+    <div class="stats">
+      <div class="card stat"><span class="k">${tr("মোট সিগনাল","Signals")}</span><span class="v">${bt.all.n}</span></div>
+      <div class="card stat"><span class="k">Win rate</span><span class="v">${bt.all.win_rate}%</span></div>
+      <div class="card stat"><span class="k">${tr("মোট ফল","Total result")}</span><span class="v ${cls(bt.all.total_r)}">${R(bt.all.total_r)}</span></div>
+      <div class="card stat"><span class="k">${tr("গড়, প্রতি ট্রেড","Average per trade")}</span><span class="v ${cls(bt.all.avg_r)}">${R(bt.all.avg_r)}</span></div>
+      <div class="card stat"><span class="k">${tr("সর্বোচ্চ পতন","Max drawdown")}</span><span class="v down">${bt.all.max_dd_r}R</span></div>
+    </div>
+    ${m.length?`<div class="card dm-panel" style="margin-top:12px"><h3>${tr("মাস অনুযায়ী জমা ফল (R)","Cumulative result by month (R)")}</h3><div style="display:flex;align-items:center;gap:3px;height:160px">${m.map(x=>`<div title="${x.m}: ${R(x.eq)}" style="flex:1;height:100%;display:flex;flex-direction:column;justify-content:center"><div style="height:50%;display:flex;align-items:flex-end">${x.eq>0?`<i style="display:block;width:100%;height:${Math.abs(x.eq)/mx*100}%;background:var(--up);border-radius:3px 3px 0 0"></i>`:""}</div><div style="height:50%">${x.eq<0?`<i style="display:block;width:100%;height:${Math.abs(x.eq)/mx*100}%;background:var(--down);border-radius:0 0 3px 3px"></i>`:""}</div></div>`).join("")}</div><div class="muted" style="display:flex;justify-content:space-between;font:500 11.5px 'IBM Plex Mono',monospace"><span>${m[0].m}</span><span>${m[m.length-1].m}</span></div></div>`:""}
+    <div class="card tbl-wrap" style="margin-top:12px"><table>${head}<tbody>${row(tr("সব সিগনাল","All signals"),bt.all)}${row("BUY",bt.buy)}${row("SELL",bt.sell)}${row(tr("ফিল্টার ছাড়া (সব সেটআপ)","Unfiltered (every setup)"),bt.unfiltered)}</tbody></table></div>
+    <div class="card tbl-wrap" style="margin-top:12px"><table>${head.replace("<th></th>",`<th>Confidence</th>`)}<tbody>${(bt.by_conf||[]).map(x=>row(x.bucket+"%",x)).join("")}</tbody></table></div>
+    <div class="card tbl-wrap" style="margin-top:12px"><table>${head.replace("<th></th>",`<th>${tr("কয়েন","Coin")}</th>`)}<tbody>${(bt.by_coin||[]).map(x=>row(x.coin,x)).join("")}</tbody></table></div>
+    <p class="note" style="margin-top:12px">${tr(`<b>কীভাবে পড়বেন:</b> 1R = একটা ট্রেডে Stop Loss পর্যন্ত ঝুঁকি। ধরা হয়েছে TP1-এ অর্ধেক বন্ধ, বাকিটা TP2 বা Entry-তে। PF = মোট লাভ ÷ মোট ক্ষতি (১-এর বেশি হলে লাভজনক)। <b>অতীতের ফল ভবিষ্যতের নিশ্চয়তা নয়</b>, আর আসল বাজারে দাম পিছলে যাওয়ায় ফল এর চেয়ে খারাপ হতে পারে।`,`<b>How to read this:</b> 1R is the risk to the stop loss on one trade. Half the position is assumed closed at TP1, the rest at TP2 or entry. PF = gross profit ÷ gross loss (above 1 is profitable). <b>Past results do not guarantee future results</b>, and real-market slippage can make results worse.`)}</p>`;
+  app.appendChild(sec);
+}
 /* ---------- router ---------- */
 async function route(){
   timers.forEach(clearInterval); timers=[]; if(chart){ chart.remove(); chart=null; } stopHero3D();
@@ -1423,10 +1797,12 @@ async function route(){
   window.scrollTo(0,0);
   if(r==="market") await pageMarket();
   else if(r==="coin") await pageCoin(parts[1]);
-  else if(r==="signals") await pageSignals();
+  else if(r==="signals"){ await pageSignals(); addBacktest(); }
   else if(r==="news") await pageNews();
   else if(r==="forex") await pageForex();
   else if(r==="engine") await pageEngine();
+  else if(r==="demo") await pageDemo();
+  else if(r==="learn") await pageLearn();
   else if(r==="about") await pageAbout();
   else await pageHome();
 }

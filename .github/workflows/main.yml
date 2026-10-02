@@ -7,9 +7,9 @@ on:
   workflow_dispatch:                  # হাতে চালানোর জন্য "Run workflow" বাটন
     inputs:
       mode:
-        description: "test = টেস্ট মেসেজ, once = সিগনাল চেক, digest = দৈনিক সারাংশ"
+        description: "test = টেস্ট মেসেজ, once = সিগনাল চেক, digest = দৈনিক সারাংশ, backtest = ২ বছরের পরীক্ষা"
         type: choice
-        options: [test, once, digest]
+        options: [test, once, digest, backtest]
         default: test
 
 permissions:
@@ -22,7 +22,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v5
 

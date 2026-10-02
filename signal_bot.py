@@ -66,6 +66,12 @@ INTERVAL = "1h"             # 15m / 1h / 4h
 TREND_INTERVAL = "4h"       # বড় ট্রেন্ড দেখার টাইমফ্রেম
 MIN_CONFIDENCE = 60         # এর কম Confidence হলে সিগনাল পাঠাবে না
 
+# ---- হঠাৎ ওঠানামার অ্যালার্ট ----
+VOL_ALERTS = True           # False করলে বন্ধ
+VOL_PCT = 3.0               # কত % নড়লে অ্যালার্ট
+VOL_WINDOW_MIN = 30         # কত মিনিটের মধ্যে (৫ মিনিটের ক্যান্ডেল দিয়ে মাপা)
+VOL_COOLDOWN_MIN = 60       # একই কয়েনে একই দিকে আবার অ্যালার্টের আগে বিরতি
+
 # ---- Forex ও Gold ----
 FOREX_ENABLED = True        # False করলে Forex সিগনাল বন্ধ
 # নিজের নাম: (Yahoo Finance-এর চিহ্ন, Twelve Data-র চিহ্ন, দেখানোর নাম)
@@ -80,6 +86,13 @@ EMA_FAST, EMA_SLOW = 9, 21
 RSI_LEN, ATR_LEN = 14, 14
 SL_ATR, TP1_ATR, TP2_ATR = 1.5, 1.5, 3.0   # Stop Loss / Target দূরত্ব (ATR এর গুণ)
 MAX_TRADE_CANDLES = 48      # এতগুলো ক্যান্ডেলে TP/SL না হলে "Expired"
+# ---- মার্কেট ইনসাইট + শেখার টিপস ----
+INSIGHTS_ENABLED = True     # False করলে বন্ধ
+INSIGHT_HOUR_UTC = 8        # 8 UTC = দুপুর ২টা বাংলাদেশ: দিনে একবার ইনসাইট + আজকের টিপ Telegram-এ
+INSIGHT_REFRESH_MIN = 60    # ওয়েবসাইটের ইনসাইট ডেটা কত মিনিট পর পর নতুন হবে
+LISTINGS_TO_TELEGRAM = True  # নতুন লিস্টিং আর ফ্রি ইনকামের সুযোগ Telegram-এ যাবে
+LISTINGS_PER_RUN = 3        # একবারে সর্বোচ্চ কয়টা
+WALL_RANGE_PCT = 5.0        # এখনকার দামের কত % এর মধ্যে বড় অর্ডার খোঁজা হবে
 DIGEST_HOUR_UTC = 2         # 2 UTC = সকাল ৮টা বাংলাদেশ
 LOOP_EVERY_SEC = 300        # --loop মোডে কত সেকেন্ড পর পর
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
@@ -108,7 +121,7 @@ def from_binance(coin, interval=None, limit=300):
 
 
 def from_okx(coin, interval=None, limit=300):
-    bar = {"15m": "15m", "1h": "1H", "4h": "4H"}[interval or INTERVAL]
+    bar = {"5m": "5m", "15m": "15m", "1h": "1H", "4h": "4H"}[interval or INTERVAL]
     r = HTTP.get("https://www.okx.com/api/v5/market/candles",
                  params={"instId": f"{coin}-USDT", "bar": bar, "limit": min(limit, 300)}, timeout=15)
     r.raise_for_status()
@@ -120,7 +133,7 @@ def from_okx(coin, interval=None, limit=300):
 
 
 def from_kucoin(coin, interval=None, limit=300):
-    typ = {"15m": "15min", "1h": "1hour", "4h": "4hour"}[interval or INTERVAL]
+    typ = {"5m": "5min", "15m": "15min", "1h": "1hour", "4h": "4hour"}[interval or INTERVAL]
     r = HTTP.get("https://api.kucoin.com/api/v1/market/candles",
                  params={"type": typ, "symbol": f"{coin}-USDT"}, timeout=15)
     r.raise_for_status()
@@ -134,7 +147,7 @@ def from_kucoin(coin, interval=None, limit=300):
 
 def from_kraken(coin, interval=None, limit=300):
     base = {"BTC": "XBT", "DOGE": "XDG"}.get(coin, coin)
-    minutes = {"15m": 15, "1h": 60, "4h": 240}[interval or INTERVAL]
+    minutes = {"5m": 5, "15m": 15, "1h": 60, "4h": 240}[interval or INTERVAL]
     r = HTTP.get("https://api.kraken.com/0/public/OHLC",
                  params={"pair": f"{base}USD", "interval": minutes}, timeout=15)
     r.raise_for_status()
@@ -162,6 +175,59 @@ def get_candles(coin, interval=None):
         except Exception as e:
             errors.append(f"{name}: {str(e)[:80]}")
     raise RuntimeError(" | ".join(errors))
+
+
+def get_recent(coin, interval="5m", limit=12):
+    """অ্যালার্টের জন্য অল্প কয়েকটা ছোট ক্যান্ডেল"""
+    for name, fn in SOURCES:
+        try:
+            df = fn(coin, interval, limit)
+            if len(df) >= 7:
+                return df.tail(limit).reset_index(drop=True)
+        except Exception:
+            pass
+    return None
+
+
+def grade(conf):
+    """Confidence % থেকে সহজ গ্রেড"""
+    if conf is None:
+        return "—"
+    return "A+" if conf >= 85 else "A" if conf >= 78 else "B" if conf >= 70 else "C" if conf >= 60 else "D"
+
+
+def check_volatility(state):
+    """৩০ মিনিটে ৩% বা বেশি নড়লে অ্যালার্ট মেসেজ বানায়"""
+    if not VOL_ALERTS:
+        return []
+    msgs, now = [], datetime.now(timezone.utc)
+    last = state.setdefault("vol_last", {})
+    n = max(1, VOL_WINDOW_MIN // 5)
+    for coin in COINS:
+        df = get_recent(coin, "5m", n + 6)
+        if df is None or len(df) <= n:
+            continue
+        ref, cur = float(df["close"].iloc[-1 - n]), float(df["close"].iloc[-1])
+        ch = (cur / ref - 1) * 100
+        if abs(ch) < VOL_PCT:
+            continue
+        side = "up" if ch > 0 else "down"
+        prev = last.get(coin)
+        if prev and prev.get("side") == side and \
+                (now - datetime.fromisoformat(prev["time"])).total_seconds() < VOL_COOLDOWN_MIN * 60:
+            continue
+        last[coin] = {"side": side, "time": now.isoformat(timespec="seconds")}
+        state.setdefault("alerts", []).insert(0, {"coin": coin, "ch": round(ch, 2), "price": cur, "ref": ref,
+                                                  "mins": VOL_WINDOW_MIN, "time": now.isoformat(timespec="seconds")})
+        del state["alerts"][50:]
+        arrow = "🚀 ▲" if ch > 0 else "🔻 ▼"
+        msgs.append(f"⚡ <b>হঠাৎ ওঠানামা — {coin}/USDT</b>\n\n"
+                    f"{arrow} <b>{ch:+.2f}%</b> গত {VOL_WINDOW_MIN} মিনিটে\n"
+                    f"দাম: <code>{fmt(cur)}</code>  (আগে <code>{fmt(ref)}</code>)\n\n"
+                    f"ℹ️ এটা ট্রেড সিগনাল নয়, শুধু সতর্কতা। দাম দ্রুত নড়ছে, সাবধানে সিদ্ধান্ত নিন।\n"
+                    f"📊 <a href=\"{SITE_URL}#/coin/{coin}\">লাইভ চার্ট দেখুন</a>")
+        time.sleep(0.2)
+    return msgs
 
 
 def get_fear_greed():
@@ -443,7 +509,7 @@ def signal_message(coin, s, source):
             f"TP2: <code>{fmt(s['tp2'], coin)}</code>{pips(s['tp2'])}\n"
             f"Stop Loss: <code>{fmt(s['sl'], coin)}</code>{pips(s['sl'])}\n"
             f"RSI: {s['rsi']}  |  Data: {source}\n\n"
-            f"🎯 <b>Confidence: {s['conf']}%</b>  {'🟩' * (s['conf'] // 20)}{'⬜' * (5 - s['conf'] // 20)}\n"
+            f"🎯 <b>Confidence: {s['conf']}% · Grade {grade(s['conf'])}</b>  {'🟩' * (s['conf'] // 20)}{'⬜' * (5 - s['conf'] // 20)}\n"
             + "".join(f"• {w}\n" for w in s["why"]) + "\n"
             f"📊 <a href=\"{link}\">চার্ট ও সব সিগনাল দেখুন</a>\n\n"
             f"⚠️ Free signal, not financial advice. Use Stop Loss. DYOR.")
@@ -502,6 +568,7 @@ def export_site(state):
         "interval": INTERVAL, "coins": COINS, "stats": state["stats"], "min_conf": MIN_CONFIDENCE,
         "open": [{k: t.get(k) for k in keep} for t in state["open"]],
         "history": state.get("history", [])[:200],
+        "alerts": state.get("alerts", [])[:20],
         "fear_greed": state.get("fear_greed"),
         "forex": {"enabled": FOREX_ENABLED, "pairs": [{"sym": k, "name": v[2]} for k, v in FX_PAIRS.items()],
                   "quotes": state.get("fx_quotes", {})},
@@ -650,6 +717,270 @@ def update_news(state=None):
     print(f"news: {len(items)} items")
 
 
+# ----------------------------- ৭.৫ মার্কেট ইনসাইট -----------------------------
+INSIGHTS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "data", "insights.json")
+LESSONS = [
+    "কেনার আগে FDV দেখুন। Market cap-এর চেয়ে FDV অনেক বেশি হলে সামনে প্রচুর নতুন টোকেন বাজারে আসবে।",
+    "সামনে বড় টোকেন আনলক আছে কিনা দেখে নিন। সরবরাহ বাড়লে দামে চাপ পড়তে পারে।",
+    "Stop Loss ছাড়া কোনো ট্রেড নয়। আগে ঠিক করুন কোথায় ভুল প্রমাণ হবেন, তারপর Entry।",
+    "এক ট্রেডে মোট টাকার ১–২%-এর বেশি ঝুঁকি নেবেন না।",
+    "লাভের লক্ষ্য ক্ষতির অন্তত ১.৫–২ গুণ না হলে ট্রেডটা বাদ দিন।",
+    "৪ ঘণ্টা আর দৈনিক চার্টের ট্রেন্ডের উল্টো দিকে ট্রেড করবেন না।",
+    "BTC Dominance বাড়লে অল্টকয়েন সাধারণত দুর্বল থাকে; কমলে টাকা অল্টকয়েনে যায়।",
+    "যে দামে আগে ২–৩ বার দাম ফিরে গেছে, সেটাই শক্ত সাপোর্ট বা রেজিস্ট্যান্স।",
+    "Order book-এর বড় অর্ডার নকলও হতে পারে (spoofing)। শুধু ওটা দেখে সিদ্ধান্ত নয়।",
+    "কেউ seed phrase বা private key চাইলে সেটা শতভাগ প্রতারণা — এয়ারড্রপ হোক বা সাপোর্ট।",
+    "'আগে টাকা পাঠান, তারপর এয়ারড্রপ পাবেন' — এটা সবসময় প্রতারণা।",
+    "এয়ারড্রপের জন্য আলাদা খালি ওয়ালেট ব্যবহার করুন, মূল টাকার ওয়ালেট নয়।",
+    "দৈনিক ভলিউম কম এমন কয়েনে ঢোকা সহজ, বের হওয়া কঠিন।",
+    "নতুনদের জন্য লিভারেজ নয়। বেশি লিভারেজে ছোট নড়াচড়াতেই টাকা শেষ।",
+    "হারের পর রাগে বা FOMO-তে ট্রেড করবেন না। একটু বিরতি নিন।",
+    "প্রতিটা ট্রেড লিখে রাখুন। খাতা না রাখলে নিজের ভুল ধরা যায় না।",
+    "কন্ট্রাক্ট ঠিকানা সবসময় প্রজেক্টের অফিসিয়াল সাইট থেকে মিলিয়ে নিন। নকল টোকেন অনেক।",
+    "টোকেনের বেশিরভাগ টিম বা বিনিয়োগকারীদের হাতে থাকলে ঝুঁকি বেশি।",
+    "বড় খবর বা বড় আনলকের ঠিক আগে নতুন ট্রেডে সাবধান।",
+    "আসল টাকার আগে ডেমোতে প্র্যাকটিস করুন। ওয়েবসাইটের ডেমো পেজ ফ্রি।",
+    "Confidence বা গ্রেড মানে জেতার সম্ভাবনা নয় — শুধু কতগুলো শর্ত মিলেছে।",
+]
+TOPICS = {"airdrop": r"airdrop", "unlock": r"\bunlock|vesting", "listing": r"\blist(s|ed|ing)?\b|launchpool|launchpad"}
+
+
+def get_dominance():
+    """CoinGecko থেকে BTC/ETH dominance আর মোট মার্কেট ক্যাপ"""
+    r = HTTP.get("https://api.coingecko.com/api/v3/global", timeout=15)
+    r.raise_for_status()
+    d = r.json()["data"]
+    return {"btc": round(d["market_cap_percentage"]["btc"], 2), "eth": round(d["market_cap_percentage"].get("eth", 0), 2),
+            "mcap": round(d["total_market_cap"]["usd"]), "mcap_ch": round(d.get("market_cap_change_percentage_24h_usd", 0), 2)}
+
+
+def get_walls(coin):
+    """Order book থেকে দামের কাছাকাছি সবচেয়ে বড় কেনা/বেচার দেয়াল (সাপোর্ট/রেজিস্ট্যান্স)"""
+    r = HTTP.get("https://data-api.binance.vision/api/v3/depth", params={"symbol": f"{coin}USDT", "limit": 1000}, timeout=15)
+    r.raise_for_status()
+    j = r.json()
+    bids = [(float(p), float(q)) for p, q in j["bids"]]
+    asks = [(float(p), float(q)) for p, q in j["asks"]]
+    if not bids or not asks:
+        return None
+    mid = (bids[0][0] + asks[0][0]) / 2
+    step = mid * 0.0025                     # 0.25% চওড়া ঘর
+
+    def biggest(rows, lo, hi):
+        buckets = {}
+        for p, q in rows:
+            if lo <= p <= hi:
+                k = round(p / step)
+                buckets[k] = buckets.get(k, 0) + p * q
+        if not buckets:
+            return None
+        k = max(buckets, key=buckets.get)
+        return {"price": k * step, "usd": round(buckets[k])}
+
+    sup = biggest(bids, mid * (1 - WALL_RANGE_PCT / 100), mid)
+    res = biggest(asks, mid, mid * (1 + WALL_RANGE_PCT / 100))
+    if not sup or not res:
+        return None
+    tb = sum(p * q for p, q in bids if p >= mid * 0.98)
+    ta = sum(p * q for p, q in asks if p <= mid * 1.02)
+    return {"coin": coin, "price": mid, "support": sup, "resistance": res,
+            "buy_pct": round(tb * 100 / (tb + ta)) if tb + ta else 50}
+
+
+def topic_news():
+    """নিউজ থেকে এয়ারড্রপ / আনলক / লিস্টিং-এর খবর আলাদা করে"""
+    try:
+        with open(NEWS_FILE, encoding="utf-8") as f:
+            items = json.load(f).get("items", [])
+    except (FileNotFoundError, json.JSONDecodeError):
+        items = []
+    out = {}
+    for name, pat in TOPICS.items():
+        out[name] = [{k: n.get(k) for k in ("title", "link", "source", "published")}
+                     for n in items if re.search(pat, n.get("title", "") + " " + (n.get("summary") or ""), re.I)][:8]
+    return out
+
+
+EARN_RE = r"airdrop|gempool|launchpool|learn (and|&) earn|earn |reward|giveaway|prize pool|campaign|bonus|share \$?[\d,]+|candy|free "
+SKIP_RE = r"futures|perpetual|delist|margin|leverag|maintenance|convert|trading bot|options|suspend"
+MONTHS = {m: i + 1 for i, m in enumerate(["january", "february", "march", "april", "may", "june", "july", "august",
+                                           "september", "october", "november", "december"])}
+
+
+def _ticker(title):
+    m = re.search(r"\(([A-Z0-9]{2,10})\)", title) or re.search(r"\b([A-Z0-9]{2,10})/(?:USDT|USD|USDC)\b", title)
+    return m.group(1) if m else ""
+
+
+def _trade_time(desc):
+    """'Trading: 13:00 on September 28, 2026 (UTC)' → ISO সময়"""
+    m = re.search(r"(\d{1,2}):(\d{2}) on (\w+) (\d{1,2}), (\d{4})", desc or "")
+    if not m or m.group(3).lower() not in MONTHS:
+        return ""
+    return datetime(int(m.group(5)), MONTHS[m.group(3).lower()], int(m.group(4)), int(m.group(1)), int(m.group(2)),
+                    tzinfo=timezone.utc).isoformat()
+
+
+def fetch_exchange_feed():
+    """এক্সচেঞ্জের অফিসিয়াল ঘোষণা থেকে নতুন লিস্টিং আর ফ্রি ইনকামের সুযোগ"""
+    listings, earn = [], []
+    iso = lambda ms: datetime.fromtimestamp(int(ms) / 1000, timezone.utc).isoformat(timespec="seconds")
+    try:
+        r = HTTP.get("https://www.okx.com/api/v5/support/announcements",
+                     params={"annType": "announcements-new-listings"}, timeout=15)
+        r.raise_for_status()
+        for blk in r.json().get("data", []):
+            for a in blk.get("details", [blk]) if isinstance(blk, dict) else []:
+                title, url = a.get("title", ""), a.get("url", "")
+                if not title or not url.startswith("https://") or re.search(SKIP_RE, title, re.I):
+                    continue
+                listings.append({"ex": "OKX", "title": title, "url": url, "token": _ticker(title),
+                                 "announced": iso(a.get("pTime", 0)), "trade": ""})
+    except Exception as e:
+        print("okx feed:", str(e)[:80])
+    for ann_type, size in (("new-listings", 30), ("latest-announcements", 50)):
+        try:
+            r = HTTP.get("https://api.kucoin.com/api/v3/announcements",
+                         params={"annType": ann_type, "lang": "en_US", "pageSize": size}, timeout=15)
+            r.raise_for_status()
+            for a in (r.json().get("data") or {}).get("items", []):
+                title, url = a.get("annTitle", ""), a.get("annUrl", "")
+                if not title or not url.startswith("https://"):
+                    continue
+                item = {"ex": "KuCoin", "title": title, "url": url, "token": _ticker(title),
+                        "announced": iso(a.get("cTime", 0)), "trade": _trade_time(a.get("annDesc"))}
+                types = a.get("annType") or []
+                if re.search(EARN_RE, title, re.I) and not re.search(r"delist|maintenance|suspend", title, re.I):
+                    earn.append(item)
+                elif "new-listings" in types and not re.search(SKIP_RE, title, re.I):
+                    listings.append(item)
+        except Exception as e:
+            print("kucoin feed:", str(e)[:80])
+
+    def uniq(rows):
+        seen, out = set(), []
+        for x in sorted(rows, key=lambda x: x["announced"], reverse=True):
+            if x["url"] not in seen:
+                seen.add(x["url"])
+                out.append(x)
+        return out
+    return uniq(listings)[:25], uniq(earn)[:20]
+
+
+def feed_message(x, kind):
+    e = html.escape
+    if kind == "listing":
+        head = f"🆕 <b>নতুন লিস্টিং — {e(x['ex'])}</b>" + (f"  <code>{e(x['token'])}</code>" if x["token"] else "")
+        when = f"\n⏰ ট্রেডিং শুরু: {x['trade'][:16].replace('T', ' ')} UTC" if x.get("trade") else ""
+        tail = "ℹ️ নতুন লিস্টিংয়ে দাম খুব দ্রুত ওঠানামা করে। এটা কেনার সুপারিশ নয়।"
+    else:
+        head, when = f"🎁 <b>ফ্রি ইনকামের সুযোগ — {e(x['ex'])}</b>", ""
+        tail = "ℹ️ শর্ত আর যোগ্যতা অফিসিয়াল পেজে পড়ে নিন। কেউ আগে টাকা বা seed phrase চাইলে সেটা প্রতারণা।"
+    return (f"{head}\n\n{e(x['title'])}{when}\n\n"
+            f"🔗 <a href=\"{e(x['url'])}\">অফিসিয়াল ঘোষণা পড়ুন</a>\n"
+            f"📚 <a href=\"{SITE_URL}#/learn\">সব লিস্টিং ও সুযোগ ওয়েবসাইটে</a>\n\n{tail}")
+
+
+def post_feed(listings, earn, state):
+    """নতুন আইটেম Telegram-এ পাঠায়। প্রথমবার শুধু মনে রাখে।"""
+    posted = state.setdefault("feed_posted", [])
+    allx = [(x, "listing") for x in listings] + [(x, "earn") for x in earn]
+    if not state.get("feed_seeded"):
+        state["feed_seeded"] = True
+        state["feed_posted"] = [x["url"] for x, _ in allx][:400]
+        return
+    seen = set(posted)
+    new = sorted([(x, k) for x, k in allx if x["url"] not in seen], key=lambda p: p[0]["announced"])
+    if LISTINGS_TO_TELEGRAM:
+        for x, k in new[-LISTINGS_PER_RUN:]:
+            send_telegram(feed_message(x, k))
+            time.sleep(1)
+    state["feed_posted"] = ([x["url"] for x, _ in new] + posted)[:400]
+
+
+def update_insights(state):
+    if not INSIGHTS_ENABLED:
+        return
+    now = datetime.now(timezone.utc)
+    last = state.get("insights_time")
+    fresh = last and (now - datetime.fromisoformat(last)).total_seconds() < INSIGHT_REFRESH_MIN * 60
+    today = now.strftime("%Y-%m-%d")
+    due_post = now.hour >= INSIGHT_HOUR_UTC and state.get("last_insight") != today
+    if fresh and not due_post:
+        return
+    ins = state.get("insights", {})
+    try:
+        dom = get_dominance()
+        hist = state.setdefault("dom_hist", {})
+        hist[today] = dom["btc"]
+        for k in sorted(hist)[:-30]:
+            hist.pop(k)
+        prev = [hist[k] for k in sorted(hist) if k < today]
+        dom["ch_1d"] = round(dom["btc"] - prev[-1], 2) if prev else None
+        dom["ch_7d"] = round(dom["btc"] - prev[-7], 2) if len(prev) >= 7 else None
+        dom["history"] = [{"d": k, "v": hist[k]} for k in sorted(hist)]
+        ins["dominance"] = dom
+    except Exception as e:
+        print("dominance error:", str(e)[:80])
+    walls = []
+    for coin in COINS:
+        try:
+            w = get_walls(coin)
+            if w:
+                walls.append(w)
+        except Exception as e:
+            print(f"walls {coin}:", str(e)[:60])
+        time.sleep(0.2)
+    if walls:
+        ins["walls"] = walls
+    ins["topics"] = topic_news()
+    try:
+        listings, earn = fetch_exchange_feed()
+        if listings or earn:
+            ins["listings"], ins["earn"] = listings, earn
+            post_feed(listings, earn, state)
+    except Exception as e:
+        print("feed error:", str(e)[:80])
+    day = int(now.timestamp() // 86400)
+    ins["tip"] = LESSONS[day % len(LESSONS)]
+    ins["updated"] = now.isoformat(timespec="seconds")
+    state["insights"] = ins
+    state["insights_time"] = ins["updated"]
+    os.makedirs(os.path.dirname(INSIGHTS_FILE), exist_ok=True)
+    with open(INSIGHTS_FILE, "w", encoding="utf-8") as f:
+        json.dump(ins, f, ensure_ascii=False, indent=1)
+    if due_post and send_telegram(insight_message(ins)):
+        state["last_insight"] = today
+
+
+def insight_message(ins):
+    e = html.escape
+    lines = ["🧭 <b>আজকের মার্কেট ইনসাইট</b>\n"]
+    d = ins.get("dominance")
+    if d:
+        ch = f" ({d['ch_1d']:+.2f} গতকাল থেকে)" if d.get("ch_1d") is not None else ""
+        mood = "অল্টকয়েন দুর্বল থাকতে পারে" if d["btc"] >= 55 else "টাকা অল্টকয়েনে যাচ্ছে" if d["btc"] < 50 else "মাঝামাঝি অবস্থা"
+        lines.append(f"👑 <b>BTC Dominance: {d['btc']}%</b>{ch}\n   ETH: {d['eth']}% · মোট মার্কেট: ${d['mcap'] / 1e12:.2f}T ({d['mcap_ch']:+.2f}%)\n   ➜ {mood}\n")
+    walls = ins.get("walls") or []
+    if walls:
+        lines.append("🧱 <b>বড় অর্ডারের দেয়াল (Order book)</b>")
+        for w in walls[:5]:
+            lines.append(f"• {w['coin']}: সাপোর্ট <code>{fmt(w['support']['price'])}</code> (${w['support']['usd'] / 1e6:.1f}M) · "
+                         f"রেজিস্ট্যান্স <code>{fmt(w['resistance']['price'])}</code> (${w['resistance']['usd'] / 1e6:.1f}M)")
+        lines.append("")
+    tp = ins.get("topics") or {}
+    for key, label in (("airdrop", "🎁 এয়ারড্রপের খবর"), ("unlock", "🔓 টোকেন আনলকের খবর")):
+        if tp.get(key):
+            lines.append(f"<b>{label}</b>")
+            for n in tp[key][:2]:
+                lines.append(f"• <a href=\"{e(n['link'])}\">{e(n['title'][:90])}</a>")
+            lines.append("")
+    lines.append(f"🎓 <b>আজকের টিপ:</b> {ins.get('tip', '')}\n")
+    lines.append(f"📚 <a href=\"{SITE_URL}#/learn\">লাইভ ইনসাইট ও পুরো গাইড ওয়েবসাইটে</a>")
+    lines.append("\n⚠️ শুধু তথ্য, আর্থিক পরামর্শ নয়। বড় অর্ডার যেকোনো সময় সরে যেতে পারে।")
+    return "\n".join(lines)
+
+
 # ----------------------------- ৮. মূল কাজ -----------------------------
 def try_new_signal(sym, df, source, state, htf_fn, btc_trend=0, is_btc=True, market="crypto"):
     """একটা কয়েন বা Forex পেয়ারে নতুন সিগনাল আছে কিনা দেখে, থাকলে পাঠায়"""
@@ -731,6 +1062,15 @@ def run_once(force_digest=False):
     except Exception as e:
         print("forex error:", e)
 
+    # (খ৩) হঠাৎ ওঠানামার অ্যালার্ট
+    try:
+        outbox_vol = check_volatility(state)
+    except Exception as e:
+        print("volatility error:", e)
+        outbox_vol = []
+    for m in outbox_vol:
+        send_telegram(m)
+
     for m in outbox:
         send_telegram(m + f"\n🌐 <a href=\"{SITE_URL}#/signals\">সব ফলাফল ওয়েবসাইটে</a>")
 
@@ -745,6 +1085,10 @@ def run_once(force_digest=False):
         update_news(state)
     except Exception as e:
         print("news error:", e)
+    try:
+        update_insights(state)
+    except Exception as e:
+        print("insights error:", e)
     save_state(state)   # কিছু বদলালে তবেই GitHub এ নতুন commit হবে
     print(f"done: {len(frames)}/{len(COINS)} coins ok, open={len(state['open'])}")
     for f in fails:
@@ -776,6 +1120,9 @@ if __name__ == "__main__":
         run_test()
     elif mode == "digest":
         run_once(force_digest=True)
+    elif mode == "backtest":
+        import backtest
+        backtest.run()
     elif mode == "loop":
         print("Bot চালু... বন্ধ করতে Ctrl+C")
         while True:
