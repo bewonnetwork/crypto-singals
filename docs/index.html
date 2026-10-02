@@ -527,7 +527,11 @@ body{top:0!important}
 .p2-st li::before{content:counter(s);flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);font:700 12px "IBM Plex Mono",monospace}
 .p2-st li.ok{color:var(--ink)}.p2-st li.ok::before{content:"✓";background:var(--up);border-color:var(--up);color:#fff}
 .p2-st li.now{color:var(--ink);font-weight:600}.p2-st li.now::before{border-color:var(--p1);color:var(--p1)}
-.dm-tabs{overflow-x:auto;flex-wrap:nowrap!important;scrollbar-width:none}.dm-tabs button{white-space:nowrap;flex:none}
+.dx-qk{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.dx-qk button{display:grid;justify-items:center;gap:5px;border:0;background:none;color:var(--ink);font:600 12px "Inter","Hind Siliguri",sans-serif;cursor:pointer;padding:4px 0}
+.dx-qk i{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--sunk);border:1px solid var(--line);font-style:normal;font-size:17px}
+.dx-r .tm{color:var(--muted);font-size:11px}div.dx-r{cursor:default}
+@media (max-width:860px){.dm-tabs{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.dm-tabs button{padding:8px 4px;border-radius:12px;font-size:12px;white-space:normal;line-height:1.25}.dx-qk{grid-template-columns:repeat(6,minmax(0,1fr))}.dx-qk i{width:36px;height:36px}}
 body:not(.is-home) #bgWorld{display:none}
 @media (max-width:900px){.p2-first{order:-1}}
 .cn-bs .cn-b,.cn-bs .cn-s{color:#fff;border:0;min-width:120px;justify-content:center}.cn-b{background:var(--up)}.cn-s{background:var(--down)}
@@ -862,6 +866,15 @@ function clean(sym){ return String(sym||"").toUpperCase().replace(/[^A-Z0-9]/g,"
 async function bget(path){ let err;
   for(const b of API){ try{ const r=await fetch(b+path); if(r.ok) return await r.json(); err=new Error(r.status);}catch(e){err=e;} }
   throw err; }
+let LIVE=[];
+function liveStop(){ LIVE.forEach(f=>{ try{ f(); }catch(e){} }); LIVE=[]; }
+/* real-time market stream (public Binance market data). Reconnects by itself. */
+function liveStream(streams,onMsg){ let ws=null, dead=false, last=0, rt=null;
+  const open=()=>{ if(dead) return; try{ ws=new WebSocket("wss://data-stream.binance.vision/stream?streams="+streams.join("/")); }catch(e){ return; }
+    ws.onmessage=e=>{ last=Date.now(); try{ const m=JSON.parse(e.data); if(m&&m.data) onMsg(m.stream||"",m.data); }catch(x){} };
+    ws.onclose=()=>{ if(!dead) rt=setTimeout(open,4000); }; ws.onerror=()=>{ try{ ws.close(); }catch(e){} }; };
+  open(); const stop=()=>{ dead=true; clearTimeout(rt); try{ if(ws) ws.close(); }catch(e){} }; LIVE.push(stop);
+  return {stop, live:()=>Date.now()-last<8000}; }
 function every(ms, fn){ timers.push(setInterval(fn, ms)); }
 function pillResult(r){ const m={TP2:["p-tp2","🎯 TP2"],TP1:["p-tp1","✅ TP1"],SL:["p-sl","❌ SL"],EXPIRED:["p-exp","⌛ Expired"]}[r]||["p-flat",r];
   return `<span class="pill ${m[0]}">${m[1]}</span>`; }
@@ -1375,7 +1388,10 @@ async function pageCoin(sym){
   const tick=async()=>{ try{ const t=await bget(`/api/v3/ticker/24hr?symbol=${sym}USDT`);
       $("#cpx").textContent=fmtPx(t.lastPrice); $("#cch").innerHTML=`<span class="pill ${+t.priceChangePercent>=0?"p-up":"p-down"}">${pct(t.priceChangePercent)} (${tr("২৪ঘ","24h")})</span>`;
       document.title=`${sym} ${fmtPx(t.lastPrice)} — ${SITE.name}`; }catch(e){ const p=$("#cpx"); if(p) p.textContent=tr("পাওয়া যায়নি","Unavailable"); } };
-  $("#tf").querySelectorAll("button").forEach(b=>b.onclick=()=>{tf=b.dataset.i;$("#tf").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));draw();});
+  let cls=null; const goLive=()=>{ if(cls) cls.stop(); const f=tf; cls=liveStream([sym.toLowerCase()+"usdt@kline_"+f],(st,m)=>{ if(m.e!=="kline"||f!==tf||!chart||!candles) return; const k=m.k;
+      try{ candles.update({time:Math.floor(k.t/1000),open:+k.o,high:+k.h,low:+k.l,close:+k.c}); }catch(e){} const e=$("#cpx"); if(e) e.textContent=fmtPx(k.c); }); };
+  goLive(); every(4000,async()=>{ if(cls&&cls.live()||!chart||!candles) return; try{ const k=await bget(`/api/v3/klines?symbol=${sym}USDT&interval=${tf}&limit=2`); k.forEach(r=>{ try{ candles.update({time:Math.floor(r[0]/1000),open:+r[1],high:+r[2],low:+r[3],close:+r[4]}); }catch(e){} }); const e=$("#cpx"); if(e&&k.length) e.textContent=fmtPx(k[k.length-1][4]); }catch(e){} });
+  $("#tf").querySelectorAll("button").forEach(b=>b.onclick=()=>{tf=b.dataset.i;$("#tf").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));draw();goLive();});
   draw(); tick(); every(15000,tick); every(60000,draw);
 }
 
@@ -1790,7 +1806,7 @@ function demoWallet(d){ let n=0; d.wtx.forEach(x=>{ if(x.done||!["dep","wd"].inc
 function demoFunded(d){ return d.tx.reduce((a,x)=>a+(["start","topup","deposit"].includes(x.type)?x.usdt:x.type==="withdraw"?-x.usdt:0),0); }
 let DEMO_SEL=null, W3_TAB="wallet", DEMO_GEN=0, DEMO_TAB="trade", DEMO_COIN="BTC", DEMO_LT="orders", DEMO_TF="15m";
 async function pageDemo(){
-  timers.forEach(clearInterval); timers=[]; if(chart){ chart.remove(); chart=null; }
+  timers.forEach(clearInterval); timers=[]; liveStop(); if(chart){ chart.remove(); chart=null; }
   const gen=++DEMO_GEN, alive=()=>gen===DEMO_GEN&&location.hash.startsWith("#/demo");
   const hp=location.hash.split("/"); let side="BUY";
   if(hp[2]){ const hc=clean(hp[2]); if(hc){ DEMO_COIN=hc; DEMO_TAB="trade"; if(hp[3]==="sell") side="SELL"; } try{ history.replaceState(null,"","#/demo"); }catch(e){} }
@@ -2203,6 +2219,7 @@ async function pageDemo(){
         <div><span class="muted" style="font-size:13px">${tr("মোট ডেমো ব্যালান্স","Total demo balance")}</span><div class="big"><span id="dmTot">—</span> <small>USDT</small></div><div id="dmPL" style="font:600 14px 'IBM Plex Mono',monospace;margin-top:6px"></div></div>
         <div class="dm-row3"><div><span>${tr("নগদ","Cash")}</span><b id="dmCash"></b></div><div><span>${tr("কয়েনে","In coins")}</span><b id="dmVal"></b></div><div><span>${tr("অর্ডার, Earn, ফিউচার","Orders, Earn, futures")}</span><b id="dmCost"></b></div></div>
         <div class="dm-act"><button class="btn btn-primary" id="dmTop">＋ ${tr(`${DEMO_TOPUP.toLocaleString("en-US")} ডেমো USDT নিন`,`Add ${DEMO_TOPUP.toLocaleString("en-US")} demo USDT`)}</button><button class="btn btn-ghost" id="dmReset">↺ ${tr("রিসেট","Reset")}</button><button class="btn btn-ghost" id="dmBot">🤖 ${tr("অটো বট","Auto bot")}</button></div>
+        <div class="dx-qk">${[["wallet","↓",tr("ডিপোজিট","Deposit")],["wallet","↑",tr("উইথড্র","Withdraw")],["p2p","🤝","P2P"],["conv","🔄",tr("কনভার্ট","Convert")],["earn","🌱","Earn"],["fut","📈",tr("ফিউচার","Futures")]].map(x=>`<button type="button" data-qk="${x[0]}"><i>${x[1]}</i>${x[2]}</button>`).join("")}</div>
       </div>
     </div>
     <div class="dx-head card"><label class="dx-pair"><select id="dmCoin" aria-label="${tr("কয়েন","Coin")}">${coins.map(c=>`<option value="${c}"${c===DEMO_COIN?" selected":""}>${c}/USDT</option>`).join("")}</select></label>
@@ -2210,7 +2227,7 @@ async function pageDemo(){
       <div class="dx-kv"><div><span>${tr("২৪ঘ সর্বোচ্চ","24h high")}</span><b id="dxH">—</b></div><div><span>${tr("২৪ঘ সর্বনিম্ন","24h low")}</span><b id="dxL">—</b></div><div><span>${tr("২৪ঘ লেনদেন","24h volume")}</span><b id="dxV">—</b></div></div></div>
     <div class="dx-main">
       <div class="card dx-chart"><div class="tabs" id="dxTf">${["1m","5m","15m","1h","4h","1d"].map(i=>`<button data-i="${i}" class="${i===DEMO_TF?"on":""}">${i==="1d"?"1D":i}</button>`).join("")}</div><div id="dxChart"></div></div>
-      <div class="card dx-book"><h3>${tr("অর্ডার বুক","Order book")}</h3><div class="dx-bh"><span>${tr("দাম","Price")}</span><span>${tr("পরিমাণ","Amount")}</span></div><div id="dxAsk"></div><div class="dx-mid" id="dxMid">…</div><div id="dxBid"></div></div>
+      <div class="card dx-book"><h3>${tr("অর্ডার বুক","Order book")}</h3><div class="dx-bh"><span>${tr("দাম","Price")}</span><span>${tr("পরিমাণ","Amount")}</span></div><div id="dxAsk"></div><div class="dx-mid" id="dxMid">…</div><div id="dxBid"></div><div id="dxTrW" hidden><h3 style="margin-top:12px">${tr("এইমাত্র হওয়া ট্রেড (লাইভ)","Market trades (live)")}</h3><div id="dxTr"></div></div></div>
       <form class="dm-panel card dx-form" id="dmF">
         <div class="dm-side"><button type="button" class="b on" data-s="BUY">${tr("কিনুন","Buy")}</button><button type="button" class="s" data-s="SELL">${tr("বেচুন","Sell")}</button></div>
         <div class="dx-ot"><button type="button" data-o="market" class="on">Market</button><button type="button" data-o="limit">Limit</button></div>
@@ -2239,11 +2256,23 @@ async function pageDemo(){
   else el.innerHTML=`<div class="empty">${tr("চার্ট লোড হয়নি","Chart failed to load")}</div>`;
   const loadK=async()=>{ if(!cs||!alive()) return; const c=coin(); try{ const k=await bget(`/api/v3/klines?symbol=${c}USDT&interval=${DEMO_TF}&limit=200`); if(c!==coin()||!chart||!alive()) return;
       cs.setData(k.map(r=>({time:Math.floor(r[0]/1000),open:+r[1],high:+r[2],low:+r[3],close:+r[4]}))); if(lastK!==c+DEMO_TF){ chart.timeScale().fitContent(); lastK=c+DEMO_TF; } }catch(e){} };
-  const loadBook=async()=>{ if(!alive()) return; const c=coin(); try{ const b=await bget(`/api/v3/depth?symbol=${c}USDT&limit=10`); if(c!==coin()||!$("#dxAsk")) return;
+  let LS=null, trades=[], tPx=0, tTr=0;
+  const drawBook=b=>{ if(!$("#dxAsk")||!b||!b.asks||!b.bids) return; const a=document.activeElement; if(a&&a.classList&&a.classList.contains("dx-r")) return;
       const asks=b.asks.slice(0,7).reverse(), bids=b.bids.slice(0,7), mx=Math.max(...asks.concat(bids).map(r=>+r[1]))||1;
       const row=(r,k)=>`<button type="button" class="dx-r ${k}" data-px="${+r[0]}"><i style="width:${Math.min(100,+r[1]/mx*100).toFixed(0)}%"></i><span>${fmtPx(r[0])}</span><span>${qtyF(r[1])}</span></button>`;
       $("#dxAsk").innerHTML=asks.map(r=>row(r,"a")).join(""); $("#dxBid").innerHTML=bids.map(r=>row(r,"b")).join("");
-      body.querySelectorAll(".dx-r").forEach(x=>x.onclick=()=>{ setType("limit"); $("#dxPr").value=x.dataset.px; upd(); });
+      body.querySelectorAll(".dx-r").forEach(x=>x.onclick=()=>{ setType("limit"); $("#dxPr").value=x.dataset.px; upd(); }); };
+  const livePx=()=>{ const now=Date.now(); if(now-tPx<300||!$("#dmPx")) return; tPx=now; const p=PX[coin()]; if(!p) return; $("#dmPx").textContent=fmtPx(p); $("#dxMid").textContent=fmtPx(p)+" USDT"; upd(); };
+  const drawTrades=()=>{ const now=Date.now(), el2=$("#dxTr"); if(now-tTr<500||!el2) return; tTr=now;
+    el2.innerHTML=trades.map(t=>`<div class="dx-r ${t.s==="b"?"b":"a"}"><span>${fmtPx(t.p)}</span><span>${qtyF(t.q)}</span><span class="tm">${new Date(t.t).toLocaleTimeString("en-GB")}</span></div>`).join(""); $("#dxTrW").hidden=!trades.length; };
+  const startLive=()=>{ if(LS) LS.stop(); trades=[]; const c=coin(), sy=c.toLowerCase()+"usdt", f=DEMO_TF;
+    LS=liveStream([sy+"@kline_"+f,sy+"@depth10@1000ms",sy+"@aggTrade"],(st,m)=>{ if(!alive()||c!==coin()||f!==DEMO_TF) return;
+      if(m.e==="kline"){ const k=m.k; if(cs) try{ cs.update({time:Math.floor(k.t/1000),open:+k.o,high:+k.h,low:+k.l,close:+k.c}); }catch(e){} PX[c]=+k.c; livePx(); }
+      else if(m.e==="aggTrade"){ PX[c]=+m.p; trades.unshift({p:+m.p,q:+m.q,s:m.m?"s":"b",t:m.T}); if(trades.length>12) trades.length=12; drawTrades(); livePx(); }
+      else if(m.bids&&m.asks) drawBook(m); }); };
+  const pollK=async()=>{ if(!alive()||!cs||(LS&&LS.live())) return; const c=coin(); try{ const k=await bget(`/api/v3/klines?symbol=${c}USDT&interval=${DEMO_TF}&limit=2`); if(c!==coin()||!chart) return;
+      k.forEach(r=>{ try{ cs.update({time:Math.floor(r[0]/1000),open:+r[1],high:+r[2],low:+r[3],close:+r[4]}); }catch(e){} }); if(k.length){ PX[c]=+k[k.length-1][4]; livePx(); } }catch(e){} };
+  const loadBook=async()=>{ if(!alive()) return; const c=coin(); try{ const b=await bget(`/api/v3/depth?symbol=${c}USDT&limit=10`); if(c!==coin()||!$("#dxAsk")) return; drawBook(b);
     }catch(e){ if($("#dxAsk")&&!$("#dxAsk").innerHTML) $("#dxAsk").innerHTML=`<div class="dm-empty" style="padding:10px;font-size:12.5px">${tr("অর্ডার বুক আনা যায়নি","Order book unavailable")}</div>`; } };
   const loadT=async()=>{ const c=coin(); try{ const t=await bget(`/api/v3/ticker/24hr?symbol=${c}USDT`); if(c!==coin()) return; T24=t; PX[c]=+t.lastPrice; }catch(e){} };
   const draw=()=>{ if(!alive()||!$("#dmTot")) return;
@@ -2284,10 +2313,10 @@ async function pageDemo(){
     const a=+A.value||0;
     $("#dxAv").textContent=side==="BUY"?usd(d.cash)+" USDT":(d.hold[c]?qtyF(d.hold[c].qty):"0")+" "+c;
     $("#dmEst").textContent=!p||!a?"—":side==="BUY"?`${qtyF(a*(1-DEMO_FEE)/p)} ${c}`:`${usd(a*p*(1-DEMO_FEE))}`; }
-  const switchCoin=async()=>{ DEMO_COIN=coin(); T24=null; $("#dxPr").value=""; $("#dxAsk").innerHTML=""; $("#dxBid").innerHTML=""; $("#dxCh").innerHTML=""; draw(); await Promise.all([loadT(),loadK(),loadBook()]); if(otype==="limit"&&PX[coin()]) $("#dxPr").value=PX[coin()]; draw(); };
+  const switchCoin=async()=>{ DEMO_COIN=coin(); T24=null; $("#dxPr").value=""; $("#dxAsk").innerHTML=""; $("#dxBid").innerHTML=""; $("#dxCh").innerHTML=""; draw(); startLive(); await Promise.all([loadT(),loadK(),loadBook()]); if(otype==="limit"&&PX[coin()]) $("#dxPr").value=PX[coin()]; draw(); };
   $("#dmF").querySelectorAll(".dm-side button").forEach(b=>b.onclick=()=>{ side=b.dataset.s; setSide(); });
   $("#dmF").querySelectorAll(".dx-ot button").forEach(b=>b.onclick=()=>setType(b.dataset.o));
-  $("#dxTf").querySelectorAll("button").forEach(b=>b.onclick=()=>{ DEMO_TF=b.dataset.i; $("#dxTf").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b)); loadK(); });
+  $("#dxTf").querySelectorAll("button").forEach(b=>b.onclick=()=>{ DEMO_TF=b.dataset.i; $("#dxTf").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b)); loadK(); startLive(); });
   $("#dmCoin").onchange=()=>{ switchCoin(); setSide(); }; $("#dmAmt").oninput=()=>upd("amt"); $("#dmAlt").oninput=()=>upd("alt"); $("#dxPr").oninput=()=>upd("amt");
   $("#dmF").querySelectorAll(".dm-pct button").forEach(b=>b.onclick=()=>{ const c=coin(), f=+b.dataset.p/100;
     $("#dmAmt").value=side==="BUY"?Math.floor(d.cash*f*100)/100:d.hold[c]?+(d.hold[c].qty*f).toPrecision(8):0; upd(); });
@@ -2308,11 +2337,12 @@ async function pageDemo(){
   $("#dmReset").onclick=()=>{ if(!confirm(tr("ডেমো অ্যাকাউন্ট নতুন করে শুরু হবে। সব ডেমো কয়েন, অর্ডার আর ইতিহাস মুছে যাবে (ট্রেড খাতা থাকবে)। নিশ্চিত?","Restart the demo account? All demo coins, orders and history will be cleared (your journal stays).")))return;
     d.cash=DEMO_START; d.hold={}; d.orders=[]; d.fut=[]; d.futH=[]; d.earn=[]; d.bot.taken={}; d.since=new Date().toISOString(); d.tx=[{t:d.since,type:"start",usdt:DEMO_START}]; demoSave(d); draw(); };
   $("#dmBot").onclick=()=>{ DEMO_TAB="bot"; pageDemo(); };
+  body.querySelectorAll(".dx-qk [data-qk]").forEach(b=>b.onclick=()=>{ DEMO_TAB=b.dataset.qk; pageDemo(); });
   $("#dmRen").onclick=()=>{ const v=prompt(tr("আপনার নাম (শুধু এই ব্রাউজারে থাকবে)","Your name (stays in this browser only)"),d.name||""); if(v!==null){ d.name=v.trim().slice(0,30); demoSave(d); draw(); } };
   body.querySelectorAll("[data-try]").forEach(b=>b.onclick=async()=>{ side="BUY"; setType("market"); if(coins.includes(b.dataset.try)){ $("#dmCoin").value=b.dataset.try; await switchCoin(); } $("#dmAmt").value=Math.min(1000,Math.floor(d.cash)); upd(); $("#dmF").scrollIntoView({behavior:"smooth",block:"center"}); });
   const tick=async()=>{ if(!alive()) return; const sg=d.bot.on?await demoSignalsFresh():null; await demoPrices([...need(),...d.orders.map(o=>o.coin),...(sg?sg.open.filter(t=>!isFx(t)).map(t=>t.coin):[])],PX); await loadT(); if(!alive()) return; if(demoTick(d,PX,sg)+demoWallet(d)) demoSave(d); draw(); };
   setSide(); draw(); await Promise.all([tick(),loadK(),loadBook()]); draw();
-  every(8000,tick); every(6000,loadBook); every(30000,loadK);
+  startLive(); every(8000,tick); every(6000,()=>{ if(!LS||!LS.live()) loadBook(); }); every(3000,pollK); every(60000,loadK);
 }
 
 /* ---------- square: learning articles ---------- */
@@ -2520,7 +2550,7 @@ function drawSheet(){ const el=$("#sheetQa"); if(el) el.innerHTML=quickActions()
 let MK_TAB=0;
 /* ---------- router ---------- */
 async function route(){
-  timers.forEach(clearInterval); timers=[]; if(chart){ chart.remove(); chart=null; } stopHero3D();
+  timers.forEach(clearInterval); timers=[]; liveStop(); if(chart){ chart.remove(); chart=null; } stopHero3D();
   const parts=(location.hash.replace(/^#\/?/,"")||"").split("/"), r=parts[0]||"home";
   document.querySelectorAll("#nav a,#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
   $("#moreBtn").classList.toggle("on",["forex","engine","demo","news","about","square"].includes(r));
