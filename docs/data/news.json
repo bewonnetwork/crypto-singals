@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T08:57:43+00:00",
+ "updated": "2026-10-02T15:42:14+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -9,6 +9,254 @@
  ],
  "items": [
   {
+   "title": "Unpatched Eclair Bitcoin Lightning nodes could crash again every time they restart",
+   "link": "https://cryptoslate.com/unpatched-eclair-bitcoin-lightning-nodes-could-crash-again-every-time-they-restart/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T15:40:12+00:00",
+   "summary": "New disclosures show how saved unfunded channels could overwhelm older nodes again on restart, despite a fix shipping in July. The post Unpatched Eclair Bitcoin Lightning nodes could crash again every time they restart appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/eclair-lightning-crash-loop.webp"
+  },
+  {
+   "title": "Bitcoin briefly hits $87K as weak US jobs data sends bond yields lower",
+   "link": "https://cointelegraph.com/markets/bitcoin-briefly-taps-87k-as-bond-yields-drop-on-low-us-nonfarm-payrolls-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T15:27:31+00:00",
+   "summary": "Bitcoin climbed after weaker-than-expected payrolls pushed Treasury yields lower, but order-book resistance kept BTC from reaching new macro highs.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3YJCPAEGNQQMRKZHXC717XH/hi-bitcoins-hidden-messages-bitcoin-price-960x640.webp"
+  },
+  {
+   "title": "Why an $88 billion bank reserve drop doesn’t prove a Bitcoin liquidity squeeze – yet",
+   "link": "https://cryptoslate.com/why-an-88-billion-bank-reserve-drop-doesnt-prove-a-bitcoin-liquidity-squeeze-yet/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T14:40:37+00:00",
+   "summary": "Wednesday reserves fell $88.236 billion while their weekly average rose $17.897 billion, exposing the limits of reserve-based Bitcoin liquidity signals. The post Why an $88 billion bank reserve drop doesn’t prove a Bitcoin liquidity…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-liquidity-crossroads-v2.webp"
+  },
+  {
+   "title": "‘Euro stablecoin isn’t enough’: EU issuers make case for USD tokens",
+   "link": "https://cointelegraph.com/news/euro-stablecoin-not-enough-eu-case-usd-tokens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T14:12:48+00:00",
+   "summary": "European issuers say Europe cannot ignore demand for dollar stablecoins as businesses seek USD liquidity for global payments and settlement.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3YC9K50TRYWAJRWVJW83TNN/euro-and-dollar-characters-1.png"
+  },
+  {
+   "title": "Cardano’s DeFi has shrunk by more than half and RealFi is betting credit can revive it",
+   "link": "https://cryptoslate.com/cardanos-defi-has-shrunk-by-more-than-half-and-realfi-is-betting-credit-can-revive-it/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T13:40:24+00:00",
+   "summary": "Eligible retail holders rely on market liquidity, while verified institutions can request issuer redemption and stakers absorb losses after protocol reserves. The post Cardano’s DeFi has shrunk by more than half and RealFi is betting…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/realfi-market-institution-split.webp"
+  },
+  {
+   "title": "Bitcoin nears highest level since January as $85,000 sell wall clears, US jobs data disappoints",
+   "link": "https://www.theblock.co/news/markets/2026-10-02-bitcoin-nears-highest-level-january-85000-sell-wall-clears-us-jobs-data-disappoints-417570",
+   "source": "The Block",
+   "published": "2026-10-02T13:34:40+00:00",
+   "summary": "Bitcoin climbed back toward $87,000 on Friday as sellers cleared out around $85,000, according to Glassnode.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin-green.png"
+  },
+  {
+   "title": "Furious debate about THORChain vs NEAR shows idealism has limits",
+   "link": "https://cointelegraph.com/magazine/furious-debate-about-thorchain-vs-near-shows-idealism-has-limits?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T13:30:00+00:00",
+   "summary": "The furious debate over Bitget’s $387.7M of hacked funds comes down to whether ideals around “permissionless and decentralized” tech means never intervening — even if you could.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3V8TZXTY569YW4G499PZ1BJ/magazine-bi-weekly-cybersecurity2.jpg"
+  },
+  {
+   "title": "America at a crossroads: Commissioner Peirce’s parting challenge",
+   "link": "https://www.coindesk.com/opinion/2026/10/01/america-at-a-crossroads-commissioner-peirce-s-parting-challenge",
+   "source": "CoinDesk",
+   "published": "2026-10-02T13:22:19+00:00",
+   "summary": "It is incumbent upon us to continue Commissioner Peirce’s mission, writes Will Schwartz, policy associate at the Blockchain Association.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/d74fff0a557caad0b099c56a8e403b375c1441b3-8192x5464.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T13:00:00+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "title": "'Uptober' Off With a Bang as Bitcoin Surges to $86K",
+   "link": "https://decrypt.co/379932/uptober-off-with-a-bang-as-bitcoin-surges-to-86k",
+   "source": "Decrypt",
+   "published": "2026-10-02T12:58:25+00:00",
+   "summary": "Cooler inflation and two dovish Fed speakers have shifted the odds toward a rate hold, with payrolls due and CPI landing on October 14.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/Bitcoin-B1-decrypt-style-gID_7.png"
+  },
+  {
+   "title": "U.S. added just 29,000 jobs in September, with unemployment rate rising to 4.2%",
+   "link": "https://www.coindesk.com/markets/2026/10/02/u-s-added-just-29-000-jobs-in-september-with-unemployment-rate-rising-to-4-2",
+   "source": "CoinDesk",
+   "published": "2026-10-02T12:31:53+00:00",
+   "summary": "Bitcoin held earlier gains following the report, up more than 2% over the past 24 hours and just below $87,000.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/59dd9a8001cc0c11ecbde288ea682dea99b4da1e-1920x1080.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "title": "BitGo CEO says Clarity’s failure left capital markets exposed to risk potentially worse than Lehman",
+   "link": "https://www.theblock.co/news/regulation/2026-10-02-mike-belshe-bitgo-interview-clarity-417560",
+   "source": "The Block",
+   "published": "2026-10-02T12:28:54+00:00",
+   "summary": "BitGo CEO Mike Belshe warned that Clarity's failure left systemic risks arising from one firm holding exchange, brokerage, and custody functions.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/photo_2026-10-02-21.04.25.jpeg"
+  },
+  {
+   "title": "Circle urges EU to revise stablecoin reserve rules in MiCA review",
+   "link": "https://cointelegraph.com/news/circle-eu-stablecoin-reserve-rules-mica-review?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T12:25:56+00:00",
+   "summary": "Circle wants the EU to replace mandatory bank-deposit minimums with more flexible liquidity rules and preserve cross-border stablecoin issuance.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3Y90SKJ0JH2780Z7C0JS7NK/hi-money-or-assets-how-different-gvnts-define-stablecoin-eu.jpg"
+  },
+  {
+   "title": "Bitcoin survived 5% yields but crypto’s cheap-money era did not",
+   "link": "https://cryptoslate.com/bitcoin-survived-5-yields-but-cryptos-cheap-money-era-did-not/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T12:20:47+00:00",
+   "summary": "The US 10-year Treasury yield touched 5.34% on Oct. 1, its highest since 2002, capping a third quarter in which it climbed almost 90 basis points, the largest quarterly rise this century. Bitcoin gained about 43% over the same three months…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-yield-resilience-2.webp"
+  },
+  {
+   "title": "Morning Minute: NEAR Intents Hacked for $3.8M - Was It A Bullish Hack?",
+   "link": "https://decrypt.co/379929/morning-minute-near-intents-hacked-for-3-8m-was-it-a-bullish-hack",
+   "source": "Decrypt",
+   "published": "2026-10-02T12:19:00+00:00",
+   "summary": "Hacks are never good, but a rapid response, user compensation and 1-hour bug fixing seems to top the spectrum of team reactions.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/crime_hacker-gID_7.png"
+  },
+  {
+   "title": "BNB Chain crosses $1B in tokenized stocks, ETFs as market hits $3.7B",
+   "link": "https://cointelegraph.com/markets/bnb-chain-1-billion-tokenized-assets-market-3-7-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T11:40:21+00:00",
+   "summary": "Tokenized stocks and ETFs on BNB Chain reached $1.1 billion as the broader market climbed to $3.7 billion, putting the network’s share at roughly 30%.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3Y404AJBW7P5AXPAFDB86VV/sponsor-screen-traid-bnb-chain.jpg"
+  },
+  {
+   "title": "Bitcoin sees big overnight rally as ETF demand returns before the next US jobs test",
+   "link": "https://cryptoslate.com/bitcoin-sees-big-overnight-rally-as-etf-demand-returns-before-the-next-us-jobs-test/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T11:30:01+00:00",
+   "summary": "Fund inflows support the rebound, while reported short liquidations suggest an accelerator and inflation still clouds its durability. The post Bitcoin sees big overnight rally as ETF demand returns before the next US jobs test appeared…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-jobs-report-alarm.webp"
+  },
+  {
+   "title": "Cboe wants to turn VIX into a never-ending trade",
+   "link": "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover",
+   "source": "CoinDesk",
+   "published": "2026-10-02T11:30:00+00:00",
+   "summary": "Your day-ahead look for Oct. 2, 2026",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/981f113099a5d95dd101524386439043bf2a255f-6000x4000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "title": "US Designates Russia's A7 Network as Transnational Criminal Organization",
+   "link": "https://decrypt.co/379921/us-designates-russias-a7-network-as-transnational-criminal-organization",
+   "source": "Decrypt",
+   "published": "2026-10-02T11:28:41+00:00",
+   "summary": "Treasury's proposed rule aims to cut A7's front companies off from U.S. finance—including crypto, where its ruble token moved $179 billion.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/09/Treasury-Department1-gID_7.jpg"
+  },
+  {
+   "title": "Live updates: Bitcoin trading near $86,000 after big miss on U.S. jobs",
+   "link": "https://www.coindesk.com/tech/2026/10/02/live-updates-bitcoin-gold-and-tech-futures-edge-higher-as-markets-await-u-s-jobs-report",
+   "source": "CoinDesk",
+   "published": "2026-10-02T11:22:40+00:00",
+   "summary": "U.S. stocks were also gaining as oil fell more than 3% and yields continued to ease from recent highs.",
+   "image": ""
+  },
+  {
+   "title": "US targets $17 billion Russia-linked crypto payment network using USDT as an escape route",
+   "link": "https://cryptoslate.com/us-targets-17-billion-russia-linked-crypto-payment-network-using-usdt-as-an-escape-route/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T11:00:15+00:00",
+   "summary": "OFAC’s October 1 designation expands blocking sanctions to the broader network, while FinCEN’s separate sub-agent transfer restriction remains proposed. The post US targets $17 billion Russia-linked crypto payment network using USDT as an…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/a7-sanctions-container-route.webp"
+  },
+  {
+   "title": "Bitcoin treasuries may struggle to match Strategy, says Ammous",
+   "link": "https://cointelegraph.com/news/bitcoin-treasuries-struggle-strategy-says-ammous?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T10:54:33+00:00",
+   "summary": "Strategy’s scale and cash reserves give it an edge over treasury rivals, according to Saifedean Ammous, author of “The Bitcoin Standard.”",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3Y0CB1X2FGXJEE6QVA6ZCTS/saifedean-ammous.png"
+  },
+  {
+   "title": "Crypto traders are in risk-on mode as bitcoin dominance nears return to 60%",
+   "link": "https://www.coindesk.com/markets/2026/10/02/crypto-traders-are-in-risk-on-mode-as-bitcoin-dominance-nears-return-to-60",
+   "source": "CoinDesk",
+   "published": "2026-10-02T10:31:16+00:00",
+   "summary": "Bitcoin dominance is closing in on 60% while USDT's has slipped to 6.3%, pointing to a market growing more comfortable with risk.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/1f7db8efec882b601432e8971478c5f4bf5e2436-1864x1022.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "title": "CONNECT recap: Arthur Hayes on money printing, Wall Street moves onchain",
+   "link": "https://cointelegraph.com/news/connect-recap-arthur-hayes-money-printing-wall-street-onchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T10:29:35+00:00",
+   "summary": "Arthur Hayes said money printing could lift crypto prices, while CONNECT Seoul speakers examined Wall Street’s competitive edge onchain.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XMMJ91ZBREX0A7R5A5AHXT/connect-text-on-seoul-1.png"
+  },
+  {
+   "title": "ECB outlines three models for putting central bank money onchain",
+   "link": "https://www.theblock.co/news/regulation/2026-10-02-ecb-outlines-three-models-for-putting-central-bank-money-onchain-417552",
+   "source": "The Block",
+   "published": "2026-10-02T10:17:39+00:00",
+   "summary": "The ECB outlined three models for bringing central bank money onchain as financial institutions explore settlement infrastructure.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/ecb.png"
+  },
+  {
+   "title": "Coinbase completes Deribit switch, ending International Exchange trading",
+   "link": "https://cryptoslate.com/coinbase-completes-deribit-switch-ending-international-exchange-trading/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T09:50:28+00:00",
+   "summary": "The October 1 cutover leaves the old venue read-only and changes trading access, settlement and records for affected institutions. The post Coinbase completes Deribit switch, ending International Exchange trading appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-deribit-container-transfer.webp"
+  },
+  {
+   "title": "Bitcoin reaches for $87K as short liquidations top $120M",
+   "link": "https://cointelegraph.com/markets/bitcoin-87k-order-book-liquidity-wall-shifts-higher?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T09:37:06+00:00",
+   "summary": "Bitcoin buyers broke through a wall of ask liquidity to reach new October BTC price highs near $87,800, with the area immediately above now a new resistance hurdle.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XVAAGW8Q0D84XWS8J7794K/behind-bitcoins-1k-bounce-1-1280x853.webp"
+  },
+  {
+   "title": "Aave founder says V3 unaffected after third-party adapter exploit drains $305K",
+   "link": "https://cointelegraph.com/news/aave-v3-third-party-adapter-exploit-305k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T09:30:49+00:00",
+   "summary": "Aave founder Stani Kulechov said Aave v3 was unaffected after an attacker exploited a third-party adapter to drain about $305,000 from two Safe multisig wallets.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XYM1RT4V2Q0J03C0V6CV76/305k.png"
+  },
+  {
+   "title": "Porsche’s ‘long haul’ Web3 project ends in less than four years",
+   "link": "https://cointelegraph.com/news/porsche-shuts-down-web3-project-911-nft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T09:18:52+00:00",
+   "summary": "Porsche is winding down its Web3 project and Pioneers Circle community as trading activity in its 911 NFT collection falls sharply from early levels.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XVQ90NXXBKZTRCV3S58R4J/porsche-panamera.jpg"
+  },
+  {
+   "title": "Bitcoin open interest jumps $2.3 billion as traders pay more for bullish positions",
+   "link": "https://www.coindesk.com/markets/2026/10/02/why-rising-perpetual-funding-rates-signal-growing-bullish-leverage-as-bitcoin-crosses-usd86-500",
+   "source": "CoinDesk",
+   "published": "2026-10-02T09:14:21+00:00",
+   "summary": "Rising open interest and funding rates signal renewed demand for bullish bitcoin exposure.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/26c6dd7dda161d93ae92859dbd66ad026ff0ee53-2752x978.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "title": "Spanish Police Arrest 16-Year-Old Accused of Running KillSec Ransomware Group",
+   "link": "https://decrypt.co/379913/spanish-police-arrest-16-year-old-accused-of-running-killsec-ransomware-group",
+   "source": "Decrypt",
+   "published": "2026-10-02T09:12:54+00:00",
+   "summary": "A second suspect faces extradition to Puerto Rico, while Investigators are tracing the proceeds of ransoms the group demanded in crypto.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/crime_jail-handcuffs-gID_7.png"
+  },
+  {
    "title": "Bitcoin’s $113,000 case strengthens as US regulators push 9 crypto actions",
    "link": "https://cryptoslate.com/bitcoins-113000-case-strengthens-as-us-regulators-push-9-crypto-actions/",
    "source": "CryptoSlate",
@@ -17,7 +265,7 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-sec-cftc-bridge.webp"
   },
   {
-   "title": "Tether's USDT is 'coming home' to Bitcoin this month over a decade after debut there",
+   "title": "Tether's USDT is 'coming home' to Bitcoin after more than a decade",
    "link": "https://www.coindesk.com/tech/2026/09/29/tether-s-usdt-is-coming-home-to-bitcoin-this-month-after-more-than-a-decade",
    "source": "CoinDesk",
    "published": "2026-10-02T08:28:19+00:00",
@@ -47,14 +295,6 @@
    "published": "2026-10-02T07:20:39+00:00",
    "summary": "Roughrider enters production with VersaBank USA issuance and institutional access, while actual payment volume remains undisclosed. The post Solana enters US banking with 90 North Dakota banks leading it appeared first on CryptoSlate .",
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/north-dakota-token-route-standard.jpg"
-  },
-  {
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-02T06:00:00+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
   },
   {
    "title": "South Korea crypto exchange profits fall 78% in H1 amid trading slump",
@@ -113,28 +353,12 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XCTY0H5CWTX6KGY7GT99ER/lightning-network.jpg"
   },
   {
-   "title": "PropAMMs lower Solana trade costs, and public pool returns crash",
-   "link": "https://cryptoslate.com/propamms-lower-solana-trade-costs-and-public-pool-returns-crash/",
-   "source": "CryptoSlate",
-   "published": "2026-10-02T03:50:54+00:00",
-   "summary": "A September preprint finds cheaper quiet-market SOL/USDC execution at professional pools, while passive depositor returns require separate accounting. The post PropAMMs lower Solana trade costs, and public pool returns crash appeared first…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-trader-risk-chasm.webp"
-  },
-  {
    "title": "Ethereum’s zkAPI brings privacy-preserving API payments to mainnet",
    "link": "https://cointelegraph.com/news/ethereum-zkapi-private-api-payments-mainnet?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
    "published": "2026-10-02T03:34:25+00:00",
    "summary": "Ethereum’s zkAPI is now live on mainnet, turning an earlier zero-knowledge API payment proposal into a working implementation for private, prepaid access.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3X972EWX5K7AHE6FH5F9MX3/privacy-ai.png"
-  },
-  {
-   "title": "Bitget restores $300M fund after absorbing $388M security breach",
-   "link": "https://cryptoslate.com/bitget-restores-300m-fund-after-absorbing-388m-security-breach/",
-   "source": "CryptoSlate",
-   "published": "2026-10-02T02:10:34+00:00",
-   "summary": "The restored backstop is separate from customer reserves, and claims remain subject to Bitget's assessment as withdrawals reopen in phases. The post Bitget restores $300M fund after absorbing $388M security breach appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitget-after-breach-standard.jpg"
   },
   {
    "title": "NEAR Intents says it’s identified the hacker, gives 48-hour ultimatum",
@@ -161,14 +385,6 @@
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/image-1790891524107.png"
   },
   {
-   "title": "Crypto hackers have taken $2.7 billion in 2026 and the losses are alarmingly concentrated",
-   "link": "https://cryptoslate.com/crypto-hackers-have-taken-2-7-billion-in-2026-and-the-losses-are-alarmingly-concentrated/",
-   "source": "CryptoSlate",
-   "published": "2026-10-02T00:20:05+00:00",
-   "summary": "Crypto firms and users have lost nearly $2.7 billion to security incidents this year, with North Korea-linked thefts exceeding $1 billion. Blockchain security firm CertiK recorded 658 incidents through September, with about $420.4 million…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/crypto-breach-losses.webp"
-  },
-  {
    "title": "China warns foreign spies about crypto, Singapore dominates Asia: Asia Express",
    "link": "https://cointelegraph.com/magazine/china-claims-crypto-used-by-spies-singapore-dominates-asian-crypto-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
@@ -177,28 +393,12 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3WVGY0BWCZXBWJ212RM1CMX/magazineasia-expresshighway.jpg"
   },
   {
-   "title": "US factory costs spike, threatening Bitcoin’s rally above $85,000",
-   "link": "https://cryptoslate.com/us-factory-costs-spike-threatening-bitcoins-rally-above-85000/",
-   "source": "CryptoSlate",
-   "published": "2026-10-01T22:40:07+00:00",
-   "summary": "More manufacturers reported rising input prices as orders and employment expanded, adding evidence to the rates debate before Friday’s payrolls. The post US factory costs spike, threatening Bitcoin’s rally above $85,000 appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-macro-gears.webp"
-  },
-  {
    "title": "Zcash Drops 21% From Recent High—Here’s Why the Rally May Not Be Over",
    "link": "https://decrypt.co/379901/zcash-price-drops-etf-flows-rally",
    "source": "Decrypt",
    "published": "2026-10-01T21:31:03+00:00",
    "summary": "ZEC is 21% off its $1,698 peak after ETF outflows and a suspected North Korean heist routed money through its shielded pool. Is the run over, or will traders buy the dip?",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/zcash-decrypt-style-03-gID_7.jpg"
-  },
-  {
-   "title": "Wall Street arrived in NEAR just as a $4 billion-a-month app got hacked",
-   "link": "https://cryptoslate.com/wall-street-arrived-in-near-just-as-a-4-billion-a-month-app-got-hacked/",
-   "source": "CryptoSlate",
-   "published": "2026-10-01T21:30:20+00:00",
-   "summary": "NEAR’s new US ETF is facing its first stress test days after launch as a $3.8 million ecosystem exploit hit the token. NEAR fell about 10% to $4.86 after NEAR Intents disclosed a security incident involving its Omni deposit-and-withdrawal…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/near-etf-risk-tightrope.webp"
   },
   {
    "title": "Evernorth clears shareholder vote ahead of Nasdaq debut with 473M XRP treasury",
@@ -241,14 +441,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/reddit-decrypt-style-01-gID_7.jpg"
   },
   {
-   "title": "XRP is becoming collateral for real loans and the first market is already dominated by whales",
-   "link": "https://cryptoslate.com/xrp-is-becoming-collateral-for-real-loans-and-the-first-market-is-already-dominated-by-whales/",
-   "source": "CryptoSlate",
-   "published": "2026-10-01T20:20:56+00:00",
-   "summary": "Morpho's October 1 snapshot shows live FXRP collateral use, but concentrated debt leaves the broader XRP demand signal unresolved. The post XRP is becoming collateral for real loans and the first market is already dominated by whales…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-whale-concentration.webp"
-  },
-  {
    "title": "SEC proposes new crypto custody rules for investment advisers and funds",
    "link": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
    "source": "CoinDesk",
@@ -279,14 +471,6 @@
    "published": "2026-10-01T19:10:36+00:00",
    "summary": "Hyperliquid's policy group wants perps under MiFID II, while Circle targets MiCA's bank deposit floor in filings to the European Commission's MiCA review.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/image-1790881325706.png"
-  },
-  {
-   "title": "Bitcoin ETFs are $5 billion away from a new flow record after a brutal 11-month reset",
-   "link": "https://cryptoslate.com/bitcoin-etfs-are-5-billion-from-a-new-flow-record-after-a-brutal-11-month-reset/",
-   "source": "CryptoSlate",
-   "published": "2026-10-01T19:00:39+00:00",
-   "summary": "September 30’s concentrated withdrawal leaves subsequent fund flows and spot prices to test whether redemptions persist. The post Bitcoin ETFs are $5 billion away from a new flow record after a brutal 11-month reset appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-etf-domino-reversal.webp"
   },
   {
    "title": "The 'Largest Pure-Play' XRP Treasury Is About to Go Public",
@@ -463,190 +647,6 @@
    "published": "2026-10-01T12:29:00+00:00",
    "summary": "Plus, a major MetaMask security event has crypto natives on edge as details trickle out.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/us-capitol-decrypt-style-02-gID_7.jpg"
-  },
-  {
-   "title": "Citi Lifts 12-Month Bitcoin Target to $113K, Ethereum to $3K",
-   "link": "https://decrypt.co/379808/citi-lifts-12-month-bitcoin-target-to-113k-ethereum-to-3k",
-   "source": "Decrypt",
-   "published": "2026-10-01T12:23:15+00:00",
-   "summary": "The bank has revised its 12-month target for BTC up from $82K, though it remains about 10% below Bitcoin's October 2025 record.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-Ethereum-decrypt-style-02-gID_7.png"
-  },
-  {
-   "title": "Bitcoin ETFs’ 9-day, $3 billion inflow streak comes to an end as $149 million exits the funds",
-   "link": "https://www.theblock.co/news/markets/2026-10-01-bitcoin-etfs-9-day-3-billion-inflow-streak-comes-to-an-end-as-149-million-exits-the-funds-417384",
-   "source": "The Block",
-   "published": "2026-10-01T12:17:06+00:00",
-   "summary": "Meanwhile, U.S. spot Ethereum ETFs saw $59.6 million in net outflows on Wednesday, led by $26.6 million exiting Fidelity's FETH fund.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin.png"
-  },
-  {
-   "title": "Live updates: Bitcoin posts tentative gains as rates drop ahead of Friday's jobs report",
-   "link": "https://www.coindesk.com/tech/2026/10/01/live-updates-bitcoin-flat-near-usd84-000-after-best-quarter-since-2024",
-   "source": "CoinDesk",
-   "published": "2026-10-01T11:59:17+00:00",
-   "summary": "The euro is losing ground versus the greenback as spiking French bond yields revive memories of the European sovereign debt crisis.",
-   "image": ""
-  },
-  {
-   "title": "Illinois agrees to six-month delay of crypto tax as industry continues court battle",
-   "link": "https://www.coindesk.com/policy/2026/09/30/illinois-agrees-to-six-month-delay-of-crypto-tax-as-industry-continues-court-battle",
-   "source": "CoinDesk",
-   "published": "2026-10-01T11:58:00+00:00",
-   "summary": "Both sides agreed the 0.2% tax should be put off until July 1, if the court approves the deal, which will let the state and industry focus on the legal dispute.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/edd10316fa7620a12d0bce0492520092d00802b5-4752x3168.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Crypto lost $1.26 billion in hacks while bitcoin bulls enjoyed a monster quarter",
-   "link": "https://www.coindesk.com/daybook-us/2026/10/01/crypto-lost-usd1-26-billion-in-hacks-while-bitcoin-bulls-enjoyed-a-monster-quarter",
-   "source": "CoinDesk",
-   "published": "2026-10-01T11:30:38+00:00",
-   "summary": "Your day-ahead look for Oct. 1, 2026",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/46896a614298dcf705810c12a113e9dab6ce84fb-4416x2488.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Lloyds, Visa settle $750,000 using USDC in live cross-border pilot",
-   "link": "https://www.theblock.co/news/business/2026-10-01-lloyds-visa-settle-750000-using-usdc-in-live-cross-border-pilot-417378",
-   "source": "The Block",
-   "published": "2026-10-01T11:13:46+00:00",
-   "summary": "Lloyds used USDC to settle $750,000 of payment obligations with Visa during a seven-day live cross-border pilot.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/lloyds.png"
-  },
-  {
-   "title": "Synthetic tokenized stocks are bad for American investors",
-   "link": "https://www.coindesk.com/opinion/2026/10/01/synthetic-tokenized-stocks-are-bad-for-american-investors",
-   "source": "CoinDesk",
-   "published": "2026-10-01T11:00:00+00:00",
-   "summary": "U.S. markets are the envy of the world because investors trust that whoever owns a share owns it fully, writes Aaron Kaplan, founder of Promethum. The synthetic models cheapens that trust, shortchanges U.S. investors, and undercuts the…",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/a4c0d4fa0c8a1705ed3379cd5ac19747d3eba29c-6000x4000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Tokenized assets don’t always mirror traditional markets, Dune finds",
-   "link": "https://cointelegraph.com/news/tokenized-assets-traditional-markets-dune-rwa-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T10:50:24+00:00",
-   "summary": "Dune found that tokenized markets show different trading patterns from traditional markets, with RWA value reaching $34.5 billion.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3VD85750C29V6G9ST49T6ZH/hi-tokenization-will-bring-desirable-stability-to-emerging-markets.jpg"
-  },
-  {
-   "title": "Bitcoin kicks off new quarter in the old $82,000-$85,000 price range",
-   "link": "https://www.coindesk.com/markets/2026/10/01/bitcoin-kicks-off-new-quarter-in-the-old-usd82-000-usd85-000-price-range",
-   "source": "CoinDesk",
-   "published": "2026-10-01T10:38:04+00:00",
-   "summary": "Prices briefly topped $85,000 on Wednesday after weaker-than-expected U.S. inflation cooled bets on Fed rate hikes, But bulls couldn’t hold the move and spot ETFs didn’t help.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/bb51e416cc3b9516e4d1e13657783b557d7f17c7-2806x1018.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Bitcoin trapped below $86K as PCE changes cloud inflation reading",
-   "link": "https://cointelegraph.com/markets/bitcoin-rally-lower-us-inflation-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T10:30:18+00:00",
-   "summary": "Bitcoin erased its post-PCE gains as analysts cautioned that methodology changes complicated the lower-than-expected inflation reading.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3VDHKSR470RG70DY6MAWY1T/money-dollar-calculator-inflation-1280x854.webp"
-  },
-  {
-   "title": "Binance’s EU services face scrutiny over licensing exemption: Report",
-   "link": "https://cointelegraph.com/news/europe-binance-questions-esma-tighter-mica-oversight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T10:07:18+00:00",
-   "summary": "EU regulators are reportedly examining Binance’s use of a MiCA exemption to serve customers as ESMA seeks stronger enforcement powers.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3V9TMRARDGQZKSXNKGYHXXW/hi-digitized-europe-the-shift-to-a-cashless-world2-2.jpg"
-  },
-  {
-   "title": "Citigroup raises 12-month bitcoin target to $113,000 as ETF inflows resume",
-   "link": "https://www.coindesk.com/markets/2026/10/01/citigroup-raises-12-month-bitcoin-target-to-usd113-000-as-etf-inflows-resume",
-   "source": "CoinDesk",
-   "published": "2026-10-01T09:59:30+00:00",
-   "summary": "Citi also raised its 12-month target for ether from from $2,240 to $3,028.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/9a0bc0c257509cbf3765bdb9b9028b2b1bec9a96-5621x3848.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "MetaMask Exits Lido Validators Amid Infrastructure ‘Security Incident’",
-   "link": "https://decrypt.co/379800/metamask-exits-lido-validators-amid-infrastructure-security-incident",
-   "source": "Decrypt",
-   "published": "2026-10-01T09:38:06+00:00",
-   "summary": "The wallet says it has found no immediate threat to user wallets, but the ETH it is pulling out of Lido could take 45 days to return.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/06/decrypt-style-metamask-fox-gID_7.jpg"
-  },
-  {
-   "title": "Chainalysis beats most Celsius claims, but ‘audit’ lawsuit survives",
-   "link": "https://cointelegraph.com/news/celsius-chainalysis-lawsuit-audit-claim-survives?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T09:09:46+00:00",
-   "summary": "Chainalysis still faces an aiding-and-abetting claim over Celsius’ disputed $3.3 billion audit after a judge dismissed 15 other claims.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3V8HCJJXEVRWZE2XE1FHZ45/hi-the-cftcs-action-against-is-bad-news-for-bitcoin-etfs-1.jpg"
-  },
-  {
-   "title": "EU Presses Binance Over ‘Reverse Solicitation’ Exemption for Users: Report",
-   "link": "https://decrypt.co/379792/eu-presses-binance-over-reverse-solicitation-exemption-for-users-report",
-   "source": "Decrypt",
-   "published": "2026-10-01T08:56:02+00:00",
-   "summary": "Regulators are probing how the exchange keeps serving EU customers from Abu Dhabi, months after it lost its MiCA registrations.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/binance-decrypt-syle-01-gID_7.png"
-  },
-  {
-   "title": "Bitcoin ETFs draw $6.3B in Q3 as BTC price rises nearly 43%",
-   "link": "https://cointelegraph.com/markets/bitcoin-etf-6-3-billion-inflows-q3-btc-rise-43?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T07:27:00+00:00",
-   "summary": "Bitcoin gained 42.71% in Q3, its best third-quarter performance since 2017, as US spot ETFs attracted $6.34 billion in net inflows.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3V3AAFNW5YNB2QD9324SBKH/bitcoin-price-market-2.jpg"
-  },
-  {
-   "title": "MetaMask security incident forces Ethereum staking exits, no funds at risk",
-   "link": "https://www.coindesk.com/tech/2026/10/01/metamask-security-incident-forces-ethereum-staking-exits-with-lido-warning-of-lost-rewards",
-   "source": "CoinDesk",
-   "published": "2026-10-01T07:06:30+00:00",
-   "summary": "An Ethereum security researcher estimates about 0.36 ETH in rewards was diverted, while precautionary exits cover validators holding roughly 523,000 ETH.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/6ef086b18446966ac8edf22c629a6b92f11c0549-1024x683.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Bitcoin think tank questions MSCI’s ‘invisible committee’ over Strategy, Metaplanet rule",
-   "link": "https://cointelegraph.com/news/msci-strategy-metaplanet-index-rule-bpi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T06:05:51+00:00",
-   "summary": "A Bitcoin Policy Institute paper says MSCI’s proposed “non-operating company” rule could remove Strategy and Metaplanet from its indexes and may have roots in an earlier crypto treasury review.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3V0V4DAMBZA0R7RFXS3ES6D/hi-why-low-latency-is-important-for-cryptocurrency-exchanges-explained-strategy.jpg"
-  },
-  {
-   "title": "Dogecoin gets DeFi testnet as DogeOS bets miners will eventually secure its apps",
-   "link": "https://www.coindesk.com/tech/2026/10/01/dogecoin-gets-defi-testnet-as-dogeos-bets-miners-will-eventually-secure-its-apps",
-   "source": "CoinDesk",
-   "published": "2026-10-01T04:58:52+00:00",
-   "summary": "DogeOS wants to turn DOGE into more than a payments and speculation asset, but its applications still rely on selected operators rather than Dogecoin miners.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/2af70fa2f5209029fd0a8f7ac7524c5b60b2ba81-1920x1080.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "Crypto hacks top $768M in September, worst month of 2026",
-   "link": "https://cointelegraph.com/news/crypto-hacks-total-766m-in-september-peckshield?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T04:44:33+00:00",
-   "summary": "The $388 million Bitget breach and $320 million Liquid Network exploit accounted for most of September’s losses, though more than $270 million from the latter was later returned.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3TW968PTRQR89Y2C0JV54QA/hacks.jpg"
-  },
-  {
-   "title": "Bitcoin's soft-inflation pop to $85,500 fades as bond yields refuse to fall",
-   "link": "https://www.coindesk.com/markets/2026/10/01/bitcoin-s-soft-inflation-pop-to-usd85-500-fades-as-bond-yields-refuse-to-fall",
-   "source": "CoinDesk",
-   "published": "2026-10-01T04:15:20+00:00",
-   "summary": "A cooler-than-expected PCE report sent bitcoin briefly above $85,000 on Wednesday. Treasury yields held near their highest since 2002 and the gains drained away.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/94f48d276e428bad0dfea5c268db4eb0eb1b6b27-1508x866.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "title": "CFTC seeks to define event contracts as swaps amid prediction market fight",
-   "link": "https://cointelegraph.com/news/cftc-seeks-to-define-event-contracts-as-swaps-amid-prediction-market-fight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T01:07:46+00:00",
-   "summary": "The classification could assist the CFTC’s claim that it has exclusive federal jurisdiction over event contracts offered on regulated prediction markets.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3TG0M8S1BAV7KN2AJ34JJE9/prediction-market.jpg"
-  },
-  {
-   "title": "MetaMask exits Ethereum validators amid undisclosed security incident",
-   "link": "https://cointelegraph.com/news/metamask-exits-lido-validators-as-it-investigates-security-incident?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T00:15:55+00:00",
-   "summary": "MetaMask said it is investigating the threat internally and said it has found no immediate threat to its wallets.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3TCYHE02RXXGBF3G4Q42FE7/metamask.jpg"
   }
  ]
 }

@@ -5,7 +5,9 @@
   "DOT": "2026-09-28T04:00:00+00:00",
   "SOL": "2026-09-30T10:00:00+00:00",
   "XAUUSD": "2026-10-02T01:00:00+00:00",
-  "XRP": "2026-10-02T01:00:00+00:00"
+  "XRP": "2026-10-02T01:00:00+00:00",
+  "LINK": "2026-10-02T14:00:00+00:00",
+  "EURUSD": "2026-10-02T14:00:00+00:00"
  },
  "open": [],
  "last_digest": "2026-10-02",
@@ -77,6 +79,36 @@
   }
  ],
  "news_posted": [
+  "https://cryptoslate.com/unpatched-eclair-bitcoin-lightning-nodes-could-crash-again-every-time-they-restart/",
+  "https://cointelegraph.com/markets/bitcoin-briefly-taps-87k-as-bond-yields-drop-on-low-us-nonfarm-payrolls-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/why-an-88-billion-bank-reserve-drop-doesnt-prove-a-bitcoin-liquidity-squeeze-yet/",
+  "https://cointelegraph.com/news/euro-stablecoin-not-enough-eu-case-usd-tokens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/cardanos-defi-has-shrunk-by-more-than-half-and-realfi-is-betting-credit-can-revive-it/",
+  "https://www.theblock.co/news/markets/2026-10-02-bitcoin-nears-highest-level-january-85000-sell-wall-clears-us-jobs-data-disappoints-417570",
+  "https://cointelegraph.com/magazine/furious-debate-about-thorchain-vs-near-shows-idealism-has-limits?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://www.coindesk.com/opinion/2026/10/01/america-at-a-crossroads-commissioner-peirce-s-parting-challenge",
+  "https://decrypt.co/379932/uptober-off-with-a-bang-as-bitcoin-surges-to-86k",
+  "https://www.coindesk.com/markets/2026/10/02/u-s-added-just-29-000-jobs-in-september-with-unemployment-rate-rising-to-4-2",
+  "https://www.theblock.co/news/regulation/2026-10-02-mike-belshe-bitgo-interview-clarity-417560",
+  "https://cointelegraph.com/news/circle-eu-stablecoin-reserve-rules-mica-review?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/bitcoin-survived-5-yields-but-cryptos-cheap-money-era-did-not/",
+  "https://decrypt.co/379929/morning-minute-near-intents-hacked-for-3-8m-was-it-a-bullish-hack",
+  "https://cointelegraph.com/markets/bnb-chain-1-billion-tokenized-assets-market-3-7-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/bitcoin-sees-big-overnight-rally-as-etf-demand-returns-before-the-next-us-jobs-test/",
+  "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover",
+  "https://decrypt.co/379921/us-designates-russias-a7-network-as-transnational-criminal-organization",
+  "https://www.coindesk.com/tech/2026/10/02/live-updates-bitcoin-gold-and-tech-futures-edge-higher-as-markets-await-u-s-jobs-report",
+  "https://cryptoslate.com/us-targets-17-billion-russia-linked-crypto-payment-network-using-usdt-as-an-escape-route/",
+  "https://cointelegraph.com/news/bitcoin-treasuries-struggle-strategy-says-ammous?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://www.coindesk.com/markets/2026/10/02/crypto-traders-are-in-risk-on-mode-as-bitcoin-dominance-nears-return-to-60",
+  "https://cointelegraph.com/news/connect-recap-arthur-hayes-money-printing-wall-street-onchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://www.theblock.co/news/regulation/2026-10-02-ecb-outlines-three-models-for-putting-central-bank-money-onchain-417552",
+  "https://cryptoslate.com/coinbase-completes-deribit-switch-ending-international-exchange-trading/",
+  "https://cointelegraph.com/markets/bitcoin-87k-order-book-liquidity-wall-shifts-higher?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cointelegraph.com/news/aave-v3-third-party-adapter-exploit-305k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cointelegraph.com/news/porsche-shuts-down-web3-project-911-nft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://www.coindesk.com/markets/2026/10/02/why-rising-perpetual-funding-rates-signal-growing-bullish-leverage-as-bitcoin-crosses-usd86-500",
+  "https://decrypt.co/379913/spanish-police-arrest-16-year-old-accused-of-running-killsec-ransomware-group",
   "https://cryptoslate.com/bitcoins-113000-case-strengthens-as-us-regulators-push-9-crypto-actions/",
   "https://www.coindesk.com/tech/2026/09/29/tether-s-usdt-is-coming-home-to-bitcoin-this-month-after-more-than-a-decade",
   "https://cointelegraph.com/markets/bitcoin-etf-meet-uptober-103-million-inflow-btc-up?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -471,31 +503,32 @@
  "news_seeded": true,
  "fx_quotes": {
   "EURUSD": {
-   "price": 1.12651,
-   "ch": -0.37,
-   "time": "2026-10-02T07:00:00+00:00"
+   "price": 1.12829,
+   "ch": 0.12,
+   "time": "2026-10-02T14:00:00+00:00"
   },
   "GBPUSD": {
-   "price": 1.3216,
-   "ch": -0.14,
-   "time": "2026-10-02T07:00:00+00:00"
+   "price": 1.32498,
+   "ch": 0.29,
+   "time": "2026-10-02T14:00:00+00:00"
   },
   "USDJPY": {
-   "price": 157.58099,
-   "ch": -0.51,
-   "time": "2026-10-02T07:00:00+00:00"
+   "price": 157.658,
+   "ch": -0.05,
+   "time": "2026-10-02T14:00:00+00:00"
   },
   "XAUUSD": {
-   "price": 4217.2998,
-   "ch": 0.14,
-   "time": "2026-10-02T07:00:00+00:00"
+   "price": 4188.2998,
+   "ch": -0.16,
+   "time": "2026-10-02T14:00:00+00:00"
   }
  },
  "vol_last": {},
  "dom_hist": {
-  "2026-10-02": 58.74
+  "2026-10-02": 58.76
  },
  "feed_posted": [
+  "https://www.kucoin.com/announcement/en-world-premiere-pheasant-network-pnt-listed-on-kucoin?lang=en_US",
   "https://www.kucoin.com/announcement/en-world-premiere-concrete-ct-listed-on-kucoin?lang=en_US",
   "https://www.kucoin.com/announcement/en-world-premiere-doppler-finance-xdp-listed-on-kucoin?lang=en_US",
   "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplx-hoodx-mstrx-and-spcxx?lang=en_US",
@@ -536,149 +569,149 @@
  "feed_seeded": true,
  "insights": {
   "dominance": {
-   "btc": 58.74,
-   "eth": 11.4,
-   "mcap": 2946282226264,
-   "mcap_ch": -0.14,
+   "btc": 58.76,
+   "eth": 11.28,
+   "mcap": 2915196111469,
+   "mcap_ch": -1.42,
    "ch_1d": null,
    "ch_7d": null,
    "history": [
     {
      "d": "2026-10-02",
-     "v": 58.74
+     "v": 58.76
     }
    ]
   },
   "walls": [
    {
     "coin": "BTC",
-    "price": 86276.535,
+    "price": 85352.89499999999,
     "support": {
-     "price": 86276.535,
-     "usd": 7424456
+     "price": 85352.89499999999,
+     "usd": 8374084
     },
     "resistance": {
-     "price": 86276.535,
-     "usd": 11365097
+     "price": 85352.89499999999,
+     "usd": 8074804
     },
     "buy_pct": 35
    },
    {
     "coin": "ETH",
-    "price": 2755.205,
+    "price": 2695.2650000000003,
     "support": {
-     "price": 2755.205,
-     "usd": 3737051
+     "price": 2688.5268375000005,
+     "usd": 4746270
     },
     "resistance": {
-     "price": 2755.205,
-     "usd": 4321111
+     "price": 2695.2650000000003,
+     "usd": 3614938
+    },
+    "buy_pct": 62
+   },
+   {
+    "coin": "BNB",
+    "price": 773.075,
+    "support": {
+     "price": 769.2096250000001,
+     "usd": 1147221
+    },
+    "resistance": {
+     "price": 784.6711250000001,
+     "usd": 4040387
     },
     "buy_pct": 38
    },
    {
-    "coin": "BNB",
-    "price": 777.785,
-    "support": {
-     "price": 775.8405375,
-     "usd": 958253
-    },
-    "resistance": {
-     "price": 785.56285,
-     "usd": 4519646
-    },
-    "buy_pct": 33
-   },
-   {
     "coin": "SOL",
-    "price": 122.11500000000001,
+    "price": 119.845,
     "support": {
-     "price": 116.92511250000001,
-     "usd": 1938947
+     "price": 115.95003750000001,
+     "usd": 2344088
     },
     "resistance": {
-     "price": 122.42028750000001,
-     "usd": 2399373
+     "price": 124.9384125,
+     "usd": 2598783
     },
-    "buy_pct": 40
+    "buy_pct": 63
    },
    {
     "coin": "XRP",
-    "price": 1.53795,
+    "price": 1.50605,
     "support": {
-     "price": 1.480276875,
-     "usd": 740224
+     "price": 1.5022848750000002,
+     "usd": 1155933
     },
     "resistance": {
-     "price": 1.541794875,
-     "usd": 994848
+     "price": 1.554996625,
+     "usd": 705325
     },
-    "buy_pct": 37
+    "buy_pct": 73
    },
    {
     "coin": "ADA",
-    "price": 0.25465,
+    "price": 0.25155,
     "support": {
-     "price": 0.254013375,
-     "usd": 234973
+     "price": 0.25029225,
+     "usd": 299053
     },
     "resistance": {
-     "price": 0.25974299999999995,
-     "usd": 224945
+     "price": 0.259725375,
+     "usd": 208674
     },
-    "buy_pct": 55
+    "buy_pct": 62
    },
    {
     "coin": "DOGE",
-    "price": 0.09717500000000001,
+    "price": 0.09503500000000001,
     "support": {
-     "price": 0.09693206250000001,
-     "usd": 525180
+     "price": 0.09479741250000001,
+     "usd": 1288124
     },
     "resistance": {
-     "price": 0.10009025000000002,
-     "usd": 760825
+     "price": 0.0952725875,
+     "usd": 573808
     },
-    "buy_pct": 41
+    "buy_pct": 70
    },
    {
     "coin": "AVAX",
-    "price": 11.1055,
+    "price": 11.119499999999999,
     "support": {
-     "price": 10.66128,
-     "usd": 222615
+     "price": 10.646921249999998,
+     "usd": 217412
     },
     "resistance": {
-     "price": 11.13326375,
-     "usd": 221950
+     "price": 11.14729875,
+     "usd": 160930
     },
-    "buy_pct": 40
+    "buy_pct": 49
    },
    {
     "coin": "LINK",
-    "price": 14.3885,
+    "price": 14.2285,
     "support": {
-     "price": 14.244615000000001,
-     "usd": 283936
+     "price": 14.19292875,
+     "usd": 315077
     },
     "resistance": {
-     "price": 14.784183750000002,
-     "usd": 240036
+     "price": 14.76206875,
+     "usd": 239817
     },
-    "buy_pct": 67
+    "buy_pct": 62
    },
    {
     "coin": "DOT",
-    "price": 1.2295,
+    "price": 1.2125,
     "support": {
-     "price": 1.22642625,
-     "usd": 99580
+     "price": 1.2094687499999999,
+     "usd": 109547
     },
     "resistance": {
-     "price": 1.23257375,
-     "usd": 99433
+     "price": 1.21553125,
+     "usd": 59710
     },
-    "buy_pct": 47
+    "buy_pct": 60
    }
   ],
   "topics": {
@@ -687,6 +720,14 @@
    "listing": []
   },
   "listings": [
+   {
+    "ex": "KuCoin",
+    "title": "World Premiere: Pheasant Network (PNT) Listed on KuCoin",
+    "url": "https://www.kucoin.com/announcement/en-world-premiere-pheasant-network-pnt-listed-on-kucoin?lang=en_US",
+    "token": "PNT",
+    "announced": "2026-10-02T10:01:00+00:00",
+    "trade": "2026-10-05T12:00:00+00:00"
+   },
    {
     "ex": "KuCoin",
     "title": "World Premiere: Concrete (CT) Listed on KuCoin",
@@ -878,14 +919,6 @@
     "token": "PROS",
     "announced": "2026-05-13T04:00:15+00:00",
     "trade": ""
-   },
-   {
-    "ex": "OKX",
-    "title": "OKX to list PROS/USDT (Pharos) for spot trading",
-    "url": "https://www.okx.com/en-us/help/okx-to-list-pros-usdt-pharos-for-spot-trading",
-    "token": "PROS",
-    "announced": "2026-05-13T04:00:10+00:00",
-    "trade": ""
    }
   ],
   "earn": [
@@ -979,8 +1012,8 @@
    }
   ],
   "tip": "সামনে বড় টোকেন আনলক আছে কিনা দেখে নিন। সরবরাহ বাড়লে দামে চাপ পড়তে পারে।",
-  "updated": "2026-10-02T08:57:43+00:00"
+  "updated": "2026-10-02T15:42:14+00:00"
  },
- "insights_time": "2026-10-02T08:57:43+00:00",
+ "insights_time": "2026-10-02T15:42:14+00:00",
  "last_insight": "2026-10-02"
 }

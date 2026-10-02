@@ -1,148 +1,148 @@
 {
  "dominance": {
-  "btc": 58.74,
-  "eth": 11.4,
-  "mcap": 2946282226264,
-  "mcap_ch": -0.14,
+  "btc": 58.76,
+  "eth": 11.28,
+  "mcap": 2915196111469,
+  "mcap_ch": -1.42,
   "ch_1d": null,
   "ch_7d": null,
   "history": [
    {
     "d": "2026-10-02",
-    "v": 58.74
+    "v": 58.76
    }
   ]
  },
  "walls": [
   {
    "coin": "BTC",
-   "price": 86276.535,
+   "price": 85352.89499999999,
    "support": {
-    "price": 86276.535,
-    "usd": 7424456
+    "price": 85352.89499999999,
+    "usd": 8374084
    },
    "resistance": {
-    "price": 86276.535,
-    "usd": 11365097
+    "price": 85352.89499999999,
+    "usd": 8074804
    },
    "buy_pct": 35
   },
   {
    "coin": "ETH",
-   "price": 2755.205,
+   "price": 2695.2650000000003,
    "support": {
-    "price": 2755.205,
-    "usd": 3737051
+    "price": 2688.5268375000005,
+    "usd": 4746270
    },
    "resistance": {
-    "price": 2755.205,
-    "usd": 4321111
+    "price": 2695.2650000000003,
+    "usd": 3614938
+   },
+   "buy_pct": 62
+  },
+  {
+   "coin": "BNB",
+   "price": 773.075,
+   "support": {
+    "price": 769.2096250000001,
+    "usd": 1147221
+   },
+   "resistance": {
+    "price": 784.6711250000001,
+    "usd": 4040387
    },
    "buy_pct": 38
   },
   {
-   "coin": "BNB",
-   "price": 777.785,
-   "support": {
-    "price": 775.8405375,
-    "usd": 958253
-   },
-   "resistance": {
-    "price": 785.56285,
-    "usd": 4519646
-   },
-   "buy_pct": 33
-  },
-  {
    "coin": "SOL",
-   "price": 122.11500000000001,
+   "price": 119.845,
    "support": {
-    "price": 116.92511250000001,
-    "usd": 1938947
+    "price": 115.95003750000001,
+    "usd": 2344088
    },
    "resistance": {
-    "price": 122.42028750000001,
-    "usd": 2399373
+    "price": 124.9384125,
+    "usd": 2598783
    },
-   "buy_pct": 40
+   "buy_pct": 63
   },
   {
    "coin": "XRP",
-   "price": 1.53795,
+   "price": 1.50605,
    "support": {
-    "price": 1.480276875,
-    "usd": 740224
+    "price": 1.5022848750000002,
+    "usd": 1155933
    },
    "resistance": {
-    "price": 1.541794875,
-    "usd": 994848
+    "price": 1.554996625,
+    "usd": 705325
    },
-   "buy_pct": 37
+   "buy_pct": 73
   },
   {
    "coin": "ADA",
-   "price": 0.25465,
+   "price": 0.25155,
    "support": {
-    "price": 0.254013375,
-    "usd": 234973
+    "price": 0.25029225,
+    "usd": 299053
    },
    "resistance": {
-    "price": 0.25974299999999995,
-    "usd": 224945
+    "price": 0.259725375,
+    "usd": 208674
    },
-   "buy_pct": 55
+   "buy_pct": 62
   },
   {
    "coin": "DOGE",
-   "price": 0.09717500000000001,
+   "price": 0.09503500000000001,
    "support": {
-    "price": 0.09693206250000001,
-    "usd": 525180
+    "price": 0.09479741250000001,
+    "usd": 1288124
    },
    "resistance": {
-    "price": 0.10009025000000002,
-    "usd": 760825
+    "price": 0.0952725875,
+    "usd": 573808
    },
-   "buy_pct": 41
+   "buy_pct": 70
   },
   {
    "coin": "AVAX",
-   "price": 11.1055,
+   "price": 11.119499999999999,
    "support": {
-    "price": 10.66128,
-    "usd": 222615
+    "price": 10.646921249999998,
+    "usd": 217412
    },
    "resistance": {
-    "price": 11.13326375,
-    "usd": 221950
+    "price": 11.14729875,
+    "usd": 160930
    },
-   "buy_pct": 40
+   "buy_pct": 49
   },
   {
    "coin": "LINK",
-   "price": 14.3885,
+   "price": 14.2285,
    "support": {
-    "price": 14.244615000000001,
-    "usd": 283936
+    "price": 14.19292875,
+    "usd": 315077
    },
    "resistance": {
-    "price": 14.784183750000002,
-    "usd": 240036
+    "price": 14.76206875,
+    "usd": 239817
    },
-   "buy_pct": 67
+   "buy_pct": 62
   },
   {
    "coin": "DOT",
-   "price": 1.2295,
+   "price": 1.2125,
    "support": {
-    "price": 1.22642625,
-    "usd": 99580
+    "price": 1.2094687499999999,
+    "usd": 109547
    },
    "resistance": {
-    "price": 1.23257375,
-    "usd": 99433
+    "price": 1.21553125,
+    "usd": 59710
    },
-   "buy_pct": 47
+   "buy_pct": 60
   }
  ],
  "topics": {
@@ -151,6 +151,14 @@
   "listing": []
  },
  "listings": [
+  {
+   "ex": "KuCoin",
+   "title": "World Premiere: Pheasant Network (PNT) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-world-premiere-pheasant-network-pnt-listed-on-kucoin?lang=en_US",
+   "token": "PNT",
+   "announced": "2026-10-02T10:01:00+00:00",
+   "trade": "2026-10-05T12:00:00+00:00"
+  },
   {
    "ex": "KuCoin",
    "title": "World Premiere: Concrete (CT) Listed on KuCoin",
@@ -342,14 +350,6 @@
    "token": "PROS",
    "announced": "2026-05-13T04:00:15+00:00",
    "trade": ""
-  },
-  {
-   "ex": "OKX",
-   "title": "OKX to list PROS/USDT (Pharos) for spot trading",
-   "url": "https://www.okx.com/en-us/help/okx-to-list-pros-usdt-pharos-for-spot-trading",
-   "token": "PROS",
-   "announced": "2026-05-13T04:00:10+00:00",
-   "trade": ""
   }
  ],
  "earn": [
@@ -443,5 +443,5 @@
   }
  ],
  "tip": "সামনে বড় টোকেন আনলক আছে কিনা দেখে নিন। সরবরাহ বাড়লে দামে চাপ পড়তে পারে।",
- "updated": "2026-10-02T08:57:43+00:00"
+ "updated": "2026-10-02T15:42:14+00:00"
 }
