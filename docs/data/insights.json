@@ -1,152 +1,273 @@
 {
  "dominance": {
-  "btc": 58.76,
-  "eth": 11.28,
-  "mcap": 2915196111469,
-  "mcap_ch": -1.42,
+  "btc": 58.77,
+  "eth": 11.29,
+  "mcap": 2881476085157,
+  "mcap_ch": -3.3,
   "ch_1d": null,
   "ch_7d": null,
   "history": [
    {
     "d": "2026-10-02",
-    "v": 58.76
+    "v": 58.77
    }
   ]
  },
  "walls": [
   {
    "coin": "BTC",
-   "price": 85352.89499999999,
+   "price": 84356.005,
    "support": {
-    "price": 85352.89499999999,
-    "usd": 8374084
+    "price": 84356.005,
+    "usd": 6203828
    },
    "resistance": {
-    "price": 85352.89499999999,
-    "usd": 8074804
+    "price": 84356.005,
+    "usd": 8899057
    },
-   "buy_pct": 35
+   "buy_pct": 52
   },
   {
    "coin": "ETH",
-   "price": 2695.2650000000003,
+   "price": 2666.785,
    "support": {
-    "price": 2688.5268375000005,
-    "usd": 4746270
+    "price": 2660.1180375,
+    "usd": 3174973
    },
    "resistance": {
-    "price": 2695.2650000000003,
-    "usd": 3614938
+    "price": 2666.785,
+    "usd": 3349590
    },
-   "buy_pct": 62
+   "buy_pct": 61
   },
   {
    "coin": "BNB",
-   "price": 773.075,
+   "price": 765.515,
    "support": {
-    "price": 769.2096250000001,
-    "usd": 1147221
+    "price": 759.7736375,
+    "usd": 1306130
    },
    "resistance": {
-    "price": 784.6711250000001,
-    "usd": 4040387
+    "price": 767.4287875,
+    "usd": 897929
    },
-   "buy_pct": 38
+   "buy_pct": 60
   },
   {
    "coin": "SOL",
-   "price": 119.845,
+   "price": 118.015,
    "support": {
-    "price": 115.95003750000001,
-    "usd": 2344088
+    "price": 117.12988750000001,
+    "usd": 2976528
    },
    "resistance": {
-    "price": 124.9384125,
-    "usd": 2598783
-   },
-   "buy_pct": 63
-  },
-  {
-   "coin": "XRP",
-   "price": 1.50605,
-   "support": {
-    "price": 1.5022848750000002,
-    "usd": 1155933
-   },
-   "resistance": {
-    "price": 1.554996625,
-    "usd": 705325
-   },
-   "buy_pct": 73
-  },
-  {
-   "coin": "ADA",
-   "price": 0.25155,
-   "support": {
-    "price": 0.25029225,
-    "usd": 299053
-   },
-   "resistance": {
-    "price": 0.259725375,
-    "usd": 208674
-   },
-   "buy_pct": 62
-  },
-  {
-   "coin": "DOGE",
-   "price": 0.09503500000000001,
-   "support": {
-    "price": 0.09479741250000001,
-    "usd": 1288124
-   },
-   "resistance": {
-    "price": 0.0952725875,
-    "usd": 573808
+    "price": 118.9001125,
+    "usd": 1243490
    },
    "buy_pct": 70
   },
   {
-   "coin": "AVAX",
-   "price": 11.119499999999999,
+   "coin": "XRP",
+   "price": 1.4726499999999998,
    "support": {
-    "price": 10.646921249999998,
-    "usd": 217412
+    "price": 1.3990174999999998,
+    "usd": 856478
    },
    "resistance": {
-    "price": 11.14729875,
-    "usd": 160930
+    "price": 1.4800132499999998,
+    "usd": 566741
+   },
+   "buy_pct": 57
+  },
+  {
+   "coin": "ADA",
+   "price": 0.23975000000000002,
+   "support": {
+    "price": 0.23915062500000003,
+    "usd": 227934
+   },
+   "resistance": {
+    "price": 0.24514437500000003,
+    "usd": 177322
+   },
+   "buy_pct": 64
+  },
+  {
+   "coin": "DOGE",
+   "price": 0.091445,
+   "support": {
+    "price": 0.09007332500000001,
+    "usd": 780264
+   },
+   "resistance": {
+    "price": 0.0916736125,
+    "usd": 532403
+   },
+   "buy_pct": 64
+  },
+  {
+   "coin": "AVAX",
+   "price": 10.601500000000001,
+   "support": {
+    "price": 10.574996250000002,
+    "usd": 297974
+   },
+   "resistance": {
+    "price": 10.628003750000001,
+    "usd": 185348
+   },
+   "buy_pct": 60
+  },
+  {
+   "coin": "LINK",
+   "price": 13.6035,
+   "support": {
+    "price": 12.991342500000002,
+    "usd": 151793
+   },
+   "resistance": {
+    "price": 14.249666250000002,
+    "usd": 149291
    },
    "buy_pct": 49
   },
   {
-   "coin": "LINK",
-   "price": 14.2285,
-   "support": {
-    "price": 14.19292875,
-    "usd": 315077
-   },
-   "resistance": {
-    "price": 14.76206875,
-    "usd": 239817
-   },
-   "buy_pct": 62
-  },
-  {
    "coin": "DOT",
-   "price": 1.2125,
+   "price": 1.1515,
    "support": {
-    "price": 1.2094687499999999,
-    "usd": 109547
+    "price": 1.14862125,
+    "usd": 104911
    },
    "resistance": {
-    "price": 1.21553125,
-    "usd": 59710
+    "price": 1.15437875,
+    "usd": 97912
    },
-   "buy_pct": 60
+   "buy_pct": 58
   }
  ],
  "topics": {
-  "airdrop": [],
+  "airdrop": [
+   {
+    "title": "Blast Shutdown: Withdraw Your Funds Before October 26",
+    "link": "https://airdropalert.com/blogs/blast-shutdown/",
+    "source": "AirdropAlert",
+    "published": "2026-10-02T19:07:10+00:00"
+   },
+   {
+    "title": "Jobs Report Lifts Solana to $122: Why I’m Still Short SOL",
+    "link": "https://airdropalert.com/blogs/jobs-report-solana/",
+    "source": "AirdropAlert",
+    "published": "2026-10-02T15:47:45+00:00"
+   },
+   {
+    "title": "Trading Fundamentals Part 35: Buy the Dip Strategy for Pullbacks in an Uptrend",
+    "link": "https://airdropalert.com/blogs/buy-the-dip-strategy/",
+    "source": "AirdropAlert",
+    "published": "2026-10-02T06:27:00+00:00"
+   },
+   {
+    "title": "Best Stablecoins in 2026: The Top 5 Ranked and Compared",
+    "link": "https://airdropalert.com/blogs/best-stablecoins/",
+    "source": "AirdropAlert",
+    "published": "2026-10-02T04:13:00+00:00"
+   },
+   {
+    "title": "How to Buy Cardano (ADA) for the First Time",
+    "link": "https://airdropalert.com/blogs/buy-cardano-first-time/",
+    "source": "AirdropAlert",
+    "published": "2026-10-02T02:04:00+00:00"
+   },
+   {
+    "title": "FOMO vs Dexscreener: Which Meme Coin Trading Tool Wins?",
+    "link": "https://airdropalert.com/blogs/fomo-vs-dexscreener/",
+    "source": "AirdropAlert",
+    "published": "2026-10-02T01:01:00+00:00"
+   },
+   {
+    "title": "NEAR Intents Exploit: $3.8M Drained, Full Refund Promised",
+    "link": "https://airdropalert.com/blogs/near-intents-exploit/",
+    "source": "AirdropAlert",
+    "published": "2026-10-01T15:52:35+00:00"
+   },
+   {
+    "title": "Third Trump Dinner Announced: Gala in DC on November 22",
+    "link": "https://airdropalert.com/blogs/third-trump-dinner/",
+    "source": "AirdropAlert",
+    "published": "2026-10-01T13:13:46+00:00"
+   },
+   {
+    "title": "What Is the MetaMask Security Incident?",
+    "link": "https://airdropalert.com/blogs/metamask-security-incident/",
+    "source": "AirdropAlert",
+    "published": "2026-10-01T12:11:29+00:00"
+   },
+   {
+    "title": "Who Is FaZe Banks? From FaZe Clan to Crypto’s Most Controversial Celebrity",
+    "link": "https://airdropalert.com/blogs/who-is-faze-banks-guide/",
+    "source": "AirdropAlert",
+    "published": "2026-10-01T04:02:00+00:00"
+   },
+   {
+    "title": "Best crypto airdrops to farm right now",
+    "link": "https://airdrops.io/blog/best-crypto-airdrops/",
+    "source": "Airdrops.io",
+    "published": "2026-09-21T17:48:23+00:00"
+   },
+   {
+    "title": "Crypto airdrops explained: types, qualifying and safety",
+    "link": "https://airdrops.io/blog/crypto-airdrops-explained-types-qualifying-and-safety/",
+    "source": "Airdrops.io",
+    "published": "2026-09-19T09:04:28+00:00"
+   },
+   {
+    "title": "xStocks Points Farming: The Pendle YT Strategy",
+    "link": "https://airdrops.io/blog/xstocks-yt-farm-strategy/",
+    "source": "Airdrops.io",
+    "published": "2026-09-04T15:30:58+00:00"
+   },
+   {
+    "title": "Perp DEX Farming 2026: 4 Proven Strategies",
+    "link": "https://airdrops.io/blog/perp-dex-farming-strategies-2026/",
+    "source": "Airdrops.io",
+    "published": "2026-08-06T14:03:46+00:00"
+   },
+   {
+    "title": "Ondo Points: what will one point be worth?",
+    "link": "https://airdrops.io/blog/ondo-points-value-analysis/",
+    "source": "Airdrops.io",
+    "published": "2026-07-29T11:04:03+00:00"
+   },
+   {
+    "title": "The 15 biggest airdrops ever: HYPE eclipsed the next five combined",
+    "link": "https://airdrops.io/blog/biggest-airdrops-ever/",
+    "source": "Airdrops.io",
+    "published": "2026-07-29T09:11:01+00:00"
+   },
+   {
+    "title": "Top 5 passive airdrop farms: deposit once and let it work",
+    "link": "https://airdrops.io/blog/passive-airdrop-farms-2026/",
+    "source": "Airdrops.io",
+    "published": "2026-07-24T15:51:17+00:00"
+   },
+   {
+    "title": "Best crypto testnets to farm right now: 6 free airdrop plays",
+    "link": "https://airdrops.io/blog/best-testnets-to-farm-airdrops/",
+    "source": "Airdrops.io",
+    "published": "2026-07-21T14:18:20+00:00"
+   },
+   {
+    "title": "Nado x xStocks: one deposit, two potential airdrops",
+    "link": "https://airdrops.io/blog/nado-xstocks-double-dip-airdrop/",
+    "source": "Airdrops.io",
+    "published": "2026-07-15T17:04:52+00:00"
+   },
+   {
+    "title": "Crypto Casino Airdrops: Why Withdrawals Matter Before Farming Rewards",
+    "link": "https://airdrops.io/blog/casino-airdrops-farming-withdrawal-risk/",
+    "source": "Airdrops.io",
+    "published": "2026-07-10T16:58:25+00:00"
+   }
+  ],
   "unlock": [],
   "listing": []
  },
@@ -160,12 +281,44 @@
    "trade": "2026-10-05T12:00:00+00:00"
   },
   {
+   "ex": "Bitget",
+   "title": "Bitget listed TWSTUSDT, CVNAUSDT, RUMUSDT, CRMLUSDT, BWETUSDT, ACNSTOCKUSDT, KODUSDT and AKAMUSDT hot stock perps",
+   "url": "https://www.bitget.com/en/support/articles/12560603896414",
+   "token": "",
+   "announced": "2026-09-30T11:21:33+00:00",
+   "trade": ""
+  },
+  {
    "ex": "KuCoin",
    "title": "World Premiere: Concrete (CT) Listed on KuCoin",
    "url": "https://www.kucoin.com/announcement/en-world-premiere-concrete-ct-listed-on-kucoin?lang=en_US",
    "token": "CT",
    "announced": "2026-09-30T06:03:00+00:00",
    "trade": "2026-09-30T10:00:00+00:00"
+  },
+  {
+   "ex": "Bitget",
+   "title": "[Initial listing] Bitget to list Concrete (CT)",
+   "url": "https://www.bitget.com/en/support/articles/12560603896301",
+   "token": "CT",
+   "announced": "2026-09-30T06:00:08+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Will Add 7 bStocks Tokenized Securities as Collateral Asset - 2026-09-30",
+   "url": "https://www.binance.com/en/support/announcement/1a94597986cf476f939609c02b87ee79",
+   "token": "",
+   "announced": "2026-09-30T03:30:01+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Adds 5 Stocks on Binance Stock Trading - 2026-09-28",
+   "url": "https://www.binance.com/en/support/announcement/d3a2cc0c1b5f42a2aee9a8bda2bd8e94",
+   "token": "",
+   "announced": "2026-09-28T10:00:13+00:00",
+   "trade": ""
   },
   {
    "ex": "KuCoin",
@@ -176,11 +329,99 @@
    "trade": "2026-09-28T13:00:00+00:00"
   },
   {
+   "ex": "Binance",
+   "title": "Binance Will List Hyperliquid (HYPE) with Seed Tag Applied",
+   "url": "https://www.binance.com/en/support/announcement/d49de208bb6d4a26b02677d7c3d89b5d",
+   "token": "HYPE",
+   "announced": "2026-09-24T07:30:38+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Bitget",
+   "title": "Bitget listed URNMUSDT and WBDUSDT hot stock perps",
+   "url": "https://www.bitget.com/en/support/articles/12560603895947",
+   "token": "",
+   "announced": "2026-09-23T14:05:58+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Bitget",
+   "title": "Bitget Has Listed POLYMARKET Pre-IPO Perps",
+   "url": "https://www.bitget.com/en/support/articles/12560603895946",
+   "token": "",
+   "announced": "2026-09-23T13:39:45+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Bitget",
+   "title": "Bitget lists 462 spot stock assets, including rGPRO, rHSAI, rBRZE, rALRM, and rLCLN",
+   "url": "https://www.bitget.com/en/support/articles/12560603895945",
+   "token": "",
+   "announced": "2026-09-23T12:22:22+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Will Add 3 bStocks Tokenized Securities as Collateral Asset - 2026-09-23",
+   "url": "https://www.binance.com/en/support/announcement/c61f3c18a3004f968b53fb09841f7bc7",
+   "token": "",
+   "announced": "2026-09-23T05:30:02+00:00",
+   "trade": ""
+  },
+  {
    "ex": "KuCoin",
    "title": "KuCoin Spot to List Tokenized Stocks: AAPLX, HOODX, MSTRX and SPCXX",
    "url": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplx-hoodx-mstrx-and-spcxx?lang=en_US",
    "token": "",
    "announced": "2026-09-23T02:34:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Bitget",
+   "title": "Bitget Has Listed OURA (Oura Ring) Pre-IPO Perps",
+   "url": "https://www.bitget.com/en/support/articles/12560603895865",
+   "token": "",
+   "announced": "2026-09-22T12:49:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Bitget",
+   "title": "Bitget Announcement on the Launch of USDBRLUSDT FX Perps",
+   "url": "https://www.bitget.com/en/support/articles/12560603895782",
+   "token": "",
+   "announced": "2026-09-21T14:30:27+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Bitget",
+   "title": "Bitget Announcement on the Listing of TLTUSDT, JEPQUSDT, CORZUSDT, BLSHUSDT, and SECZUSDT Stock Perps",
+   "url": "https://www.bitget.com/en/support/articles/12560603895779",
+   "token": "",
+   "announced": "2026-09-21T13:31:42+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Bitget",
+   "title": "Bitget lists multiple spot stock and ETF assets, including rFDVV, rGDXU, rBITX, rJPIE, and rCWB",
+   "url": "https://www.bitget.com/en/support/articles/12560603895774",
+   "token": "",
+   "announced": "2026-09-21T11:04:12+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Adds 25 Stocks on Binance Stock Trading - 2026-09-21",
+   "url": "https://www.binance.com/en/support/announcement/a0adb246c4a24f108fd0d1f51dfd3d1d",
+   "token": "",
+   "announced": "2026-09-21T07:00:01+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Will Support the Broadcom (AVGO), Invesco QQQ Trust (QQQ), Meta (META), and Seagate (STX) Cash Dividend Distribution via bStocks",
+   "url": "https://www.binance.com/en/support/announcement/7df43402f0094e79b293bd7fbb574474",
+   "token": "AVGO",
+   "announced": "2026-09-18T05:00:10+00:00",
    "trade": ""
   },
   {
@@ -206,6 +447,14 @@
    "token": "TINA",
    "announced": "2026-09-16T10:35:00+00:00",
    "trade": "2026-09-17T10:00:00+00:00"
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Will Add 2 bStocks Tokenized Securities as Collateral Asset - 2026-09-16",
+   "url": "https://www.binance.com/en/support/announcement/a5bf03abedaa4430b1fd04aa760e491b",
+   "token": "",
+   "announced": "2026-09-16T04:30:09+00:00",
+   "trade": ""
   },
   {
    "ex": "KuCoin",
@@ -342,23 +591,39 @@
    "token": "AI",
    "announced": "2026-05-22T07:30:09+00:00",
    "trade": ""
-  },
-  {
-   "ex": "OKX",
-   "title": "OKX will launch PROS/USD for spot trading",
-   "url": "https://www.okx.com/en-us/help/okx-will-launch-pros-usd-for-spot-trading",
-   "token": "PROS",
-   "announced": "2026-05-13T04:00:15+00:00",
-   "trade": ""
   }
  ],
  "earn": [
+  {
+   "ex": "Binance",
+   "title": "Binance Lifestyle Venezuela Cashback Campaign: Spend 5 USDT, Get 2 USDT Back",
+   "url": "https://www.binance.com/en/support/announcement/271b588ed6e64723a3e05399310d61b2",
+   "token": "",
+   "announced": "2026-10-02T10:00:02+00:00",
+   "trade": ""
+  },
   {
    "ex": "KuCoin",
    "title": "Earn Friday Week 135: Earn up to 9% APR with USDT, BTC, DOT",
    "url": "https://www.kucoin.com/announcement/en-earn-friday-week-135-earn-up-to-9-apr-with-usdt-btc-dot?lang=en_US",
    "token": "",
    "announced": "2026-10-02T08:00:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "PK Exclusive: Trading Rush - Trade, Invite and Unlock Rewards",
+   "url": "https://www.binance.com/en/support/announcement/e0b21949852e4888949d009effcabda5",
+   "token": "",
+   "announced": "2026-10-01T13:00:07+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Alpha Trading Competition: Trade Concrete (CT) and Share $200K Worth of Rewards (2026-10-01)",
+   "url": "https://www.binance.com/en/support/announcement/a9a21d0533bf40158b3ec8a011f96ad3",
+   "token": "CT",
+   "announced": "2026-10-01T11:30:13+00:00",
    "trade": ""
   },
   {
@@ -370,6 +635,38 @@
    "trade": ""
   },
   {
+   "ex": "Binance",
+   "title": "Extension to the USD1 Airdrop Campaign (2026-10-02)",
+   "url": "https://www.binance.com/en/support/announcement/9745ace0eb7a42d396e22a711f907616",
+   "token": "",
+   "announced": "2026-10-01T09:30:10+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Academy Bitcoin Page: Complete Quiz to Earn BTC Rewards This October 2026!",
+   "url": "https://www.binance.com/en/support/announcement/5fc0f803346b4b5085b0e1c5d16d8b2c",
+   "token": "",
+   "announced": "2026-10-01T09:00:09+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Stocks Welcome Rewards: Transfer-In for Up to 12,000 USDC and Share from a $200,000-Valued NVDAB, MUB or QQQB Prize Pool",
+   "url": "https://www.binance.com/en/support/announcement/4f85bc2331274dea97ac2a4f660e554c",
+   "token": "",
+   "announced": "2026-10-01T08:00:09+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Join the Binance P2P Beginner-Merchant Handshake Campaign with 100% Maker Fee Rebate",
+   "url": "https://www.binance.com/en/support/announcement/d3d40f07ad7d46d696b125ab9cbd4e84",
+   "token": "",
+   "announced": "2026-10-01T04:00:05+00:00",
+   "trade": ""
+  },
+  {
    "ex": "KuCoin",
    "title": "Deposit to Share 100,000 USDT — KuCoin Earn Boost Season",
    "url": "https://www.kucoin.com/announcement/en-deposit-to-share-100000-usdt-kucoin-earn-boost-season?lang=en_US",
@@ -378,11 +675,51 @@
    "trade": ""
   },
   {
+   "ex": "Binance",
+   "title": "Binance Alpha Trading Competition: Trade o1.exchange (O) and Share $200K Worth of Rewards (2026-09-30)",
+   "url": "https://www.binance.com/en/support/announcement/4a08577b7adc43a69b0728ace18e72bb",
+   "token": "",
+   "announced": "2026-09-30T11:30:05+00:00",
+   "trade": ""
+  },
+  {
    "ex": "KuCoin",
    "title": "Concrete (CT) Listing Campaign — 220,000 CT Giveaway",
    "url": "https://www.kucoin.com/announcement/en-concrete-ct-listing-campaign-220000-ct-giveaway?lang=en_US",
    "token": "CT",
    "announced": "2026-09-30T09:27:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "October Referral Tournament: Invite Friends, Climb the Leaderboard and Earn Up to 1,000 USDC in Token Vouchers",
+   "url": "https://www.binance.com/en/support/announcement/143edb7fd3204d1696b37ef752a6b032",
+   "token": "",
+   "announced": "2026-09-30T08:00:01+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Brazil New User Exclusive: Subscribe to USDC Simple Earn to Enjoy 15% APR!",
+   "url": "https://www.binance.com/en/support/announcement/6a10e05242c843089e20ea7ba24ef33b",
+   "token": "",
+   "announced": "2026-09-29T12:15:08+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "LATAM New User Exclusive: Subscribe to USDC Simple Earn to Enjoy 30% APR During the Promotion Period!",
+   "url": "https://www.binance.com/en/support/announcement/c3296b46009f4cb5bdcdde8e2f60b38a",
+   "token": "",
+   "announced": "2026-09-29T12:00:09+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Alpha Trading Competition: Trade Doppler Finance (XDP) and Share $200K Worth of Rewards (2026-09-29)",
+   "url": "https://www.binance.com/en/support/announcement/d3ca65acb7f341c0a8f33ed21f44924c",
+   "token": "XDP",
+   "announced": "2026-09-29T11:30:06+00:00",
    "trade": ""
   },
   {
@@ -402,6 +739,14 @@
    "trade": ""
   },
   {
+   "ex": "Binance",
+   "title": "Binance Earn October Monthly Leaderboard: Earn Up to 5,888 USDC Rewards on Dual Investment",
+   "url": "https://www.binance.com/en/support/announcement/29e6788e0ec64a1eab2ed4bf6e3d9e2e",
+   "token": "",
+   "announced": "2026-09-29T02:00:00+00:00",
+   "trade": ""
+  },
+  {
    "ex": "KuCoin",
    "title": "Ultra (UOS) Trade and Learn Campaign — 7,638,586 UOS Prize Pool Up For Grabs",
    "url": "https://www.kucoin.com/announcement/en-ultra-uos-trade-and-learn-campaign-7638586-uos-prize-pool-up-for-grabs?lang=en_US",
@@ -418,11 +763,27 @@
    "trade": ""
   },
   {
+   "ex": "Binance",
+   "title": "Word of the Day: Test Your Knowledge on “IPOs Are Moving On-Chain” to Unlock USDC Rewards!",
+   "url": "https://www.binance.com/en/support/announcement/3bbe837e24a64b93811116d366954e0a",
+   "token": "",
+   "announced": "2026-09-28T02:00:04+00:00",
+   "trade": ""
+  },
+  {
    "ex": "KuCoin",
    "title": "Earn Friday Week 134: Earn up to 7% APR with USDT, BTC, ETH",
    "url": "https://www.kucoin.com/announcement/en-earn-friday-week-134-earn-up-to-7-apr-with-usdt-btc-eth?lang=en_US",
    "token": "",
    "announced": "2026-09-25T08:00:00+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Binance",
+   "title": "Binance Alpha Trading Competition: Trade ChainOpera AI (COAI) and Share $200K Worth of Rewards (2026-09-24)",
+   "url": "https://www.binance.com/en/support/announcement/df0f5afc43aa4ef1b344eb92b75c2716",
+   "token": "COAI",
+   "announced": "2026-09-24T11:30:07+00:00",
    "trade": ""
   },
   {
@@ -443,5 +804,21 @@
   }
  ],
  "tip": "সামনে বড় টোকেন আনলক আছে কিনা দেখে নিন। সরবরাহ বাড়লে দামে চাপ পড়তে পারে।",
- "updated": "2026-10-02T15:42:14+00:00"
+ "updated": "2026-10-02T20:10:25+00:00",
+ "sources": {
+  "Airdrops.io": 10,
+  "AirdropAlert": 10,
+  "CoinGecko": -1,
+  "Bitcoin.com": 0,
+  "CryptoPotato": 0,
+  "BeInCrypto": 0,
+  "U.Today": 0,
+  "NewsBTC": 0,
+  "OKX": 19,
+  "KuCoin": 28,
+  "Binance": 22,
+  "Bybit": -1,
+  "Bitget": 9,
+  "MEXC": 0
+ }
 }
