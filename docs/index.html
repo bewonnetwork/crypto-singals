@@ -496,6 +496,40 @@ body{top:0!important}
 .dm-sig .it button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 10px;font:600 12.5px "Inter","Hind Siliguri",sans-serif;cursor:pointer;white-space:nowrap}
 .dm-empty{padding:26px;text-align:center;color:var(--muted)}
 .dm-panel{grid-template-columns:minmax(0,1fr)}
+.wl-tot{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.wl-tot span{color:var(--muted);font-size:13px}.wl-tot b{font:700 26px "Space Grotesk",sans-serif}.wl-tot small{font-size:13px;color:var(--muted);font-weight:500}
+.wl-as{display:grid;gap:2px}
+.wl-as>div{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line);font:600 14px "IBM Plex Mono",monospace}
+.wl-as>div span:first-child{display:flex;align-items:center;gap:8px;font-family:"Inter",sans-serif}
+.wl-as>div span:last-child{text-align:right}.wl-as small{display:block;font-size:11.5px;color:var(--muted);font-weight:500}
+.wl-net{display:grid;gap:8px;margin-top:2px}
+.wl-net button{text-align:left;border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:12px;padding:10px 12px;cursor:pointer;display:grid;gap:2px}
+.wl-net button.on{border-color:var(--p1);box-shadow:0 0 0 1px var(--p1) inset}
+.wl-net b{font:700 14px "IBM Plex Mono",monospace}.wl-net small{font-size:12px;color:var(--muted)}
+.wl-addr{display:grid;gap:6px;padding:12px;border-radius:12px;border:1px dashed var(--accent);background:var(--accent-soft)}
+.wl-addr span{font-size:12.5px;color:var(--muted)}.wl-addr code{font:600 12.5px "IBM Plex Mono",monospace;word-break:break-all}.wl-addr small{font-size:12px;color:var(--accent)}
+.wl-tx{position:relative;display:grid;gap:0;overflow:hidden}
+.wl-tx>div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:10px 0;border-top:1px solid var(--line);font-size:13.5px;align-items:center}
+.wl-tx>div>span{color:var(--muted);font-size:12.5px}
+.wl-tx code{font:500 12px "IBM Plex Mono",monospace;word-break:break-all}
+.wl-tx .xs{justify-self:start;margin-top:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;font:600 12.5px "Inter","Hind Siliguri",sans-serif;cursor:pointer}
+.wl-wm{position:absolute!important;inset:0;display:grid!important;place-items:center;grid-template-columns:1fr!important;border:0!important;font:800 64px "Space Grotesk",sans-serif!important;color:var(--ink);opacity:.05;transform:rotate(-18deg);pointer-events:none;letter-spacing:.1em}
+.p2-ads{display:grid;gap:10px}
+.p2-ad{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 12px;align-items:center;padding:12px;border-radius:14px;background:var(--sunk)}
+.p2-m{display:flex;gap:10px;align-items:center;min-width:0}
+.p2-m i{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:var(--btn-ink,#07090d);font:700 14px "Space Grotesk",sans-serif;font-style:normal}
+.p2-m b{display:block;font-size:14px}.p2-m small,.p2-l small{display:block;font-size:12px;color:var(--muted)}
+.p2-p{text-align:right}.p2-p b{font:700 19px "IBM Plex Mono",monospace}.p2-p small{color:var(--muted);font-size:12px}
+.p2-ad .btn{min-height:36px;padding:6px 18px;font-size:13.5px;color:#fff;border:0}
+.p2-b{background:var(--up)}.p2-s{background:var(--down)}
+.p2-st{margin:0;padding:0;list-style:none;display:grid;gap:8px;counter-reset:s}
+.p2-st li{counter-increment:s;display:flex;gap:10px;align-items:center;font-size:13.5px;color:var(--muted)}
+.p2-st li::before{content:counter(s);flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);font:700 12px "IBM Plex Mono",monospace}
+.p2-st li.ok{color:var(--ink)}.p2-st li.ok::before{content:"✓";background:var(--up);border-color:var(--up);color:#fff}
+.p2-st li.now{color:var(--ink);font-weight:600}.p2-st li.now::before{border-color:var(--p1);color:var(--p1)}
+.dm-tabs{overflow-x:auto;flex-wrap:nowrap!important;scrollbar-width:none}.dm-tabs button{white-space:nowrap;flex:none}
+body:not(.is-home) #bgWorld{display:none}
+@media (max-width:900px){.p2-first{order:-1}}
 .dx-head{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:12px 16px;border-radius:16px}
 .dx-pair select{appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:10px;padding:9px 30px 9px 12px;font:700 16px "Space Grotesk","Inter",sans-serif;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 15px) 55%,calc(100% - 10px) 55%;background-size:5px 5px;background-repeat:no-repeat}
 .dx-px{display:flex;align-items:center;gap:10px}
@@ -1657,7 +1691,7 @@ async function pageEngine(){
 const DEMO_KEY="bewon_demo_v1", DEMO_START=10000, DEMO_TOPUP=1000, DEMO_MAX_CASH=100000, DEMO_FEE=0.001;
 function demoLoad(){ let d=null; try{ d=JSON.parse(localStorage.getItem(DEMO_KEY)||"null"); }catch(e){}
   if(!d||typeof d!=="object"){ d={uid:"BW"+Math.random().toString(36).slice(2,8).toUpperCase(),name:"",since:new Date().toISOString(),cash:DEMO_START,hold:{},tx:[{t:new Date().toISOString(),type:"start",usdt:DEMO_START}],jr:[]}; demoSave(d); }
-  d.hold=d.hold||{}; d.tx=d.tx||[]; d.jr=d.jr||[]; d.orders=d.orders||[];
+  d.hold=d.hold||{}; d.tx=d.tx||[]; d.jr=d.jr||[]; d.orders=d.orders||[]; d.wtx=d.wtx||[]; d.p2p=d.p2p||[];
   d.bot=Object.assign({on:false,amt:200,min:70,max:5,taken:{}},d.bot||{}); d.bot.taken=d.bot.taken||{}; return d; }
 function demoSave(d){ try{ localStorage.setItem(DEMO_KEY,JSON.stringify(d)); }catch(e){} }
 const usd=x=>(+x).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -1667,7 +1701,7 @@ function dmBuy(d,c,usdt,p,m){ m=m||{}; const q=usdt*(1-DEMO_FEE)/p, h=d.hold[c]|
   dmTx(d,{type:"buy",coin:c,qty:q,price:p,usdt,bot:!!m.bot,ot:m.ot||"market"}); return q; }
 function dmSell(d,c,q,p,m){ m=m||{}; const h=d.hold[c]; if(!h) return 0; q=Math.min(q,h.qty); const part=q/h.qty, cost=h.cost*part, got=q*p*(1-DEMO_FEE);
   h.cost-=cost; h.qty-=q; if(h.qty<1e-12) delete d.hold[c]; d.cash+=got;
-  dmTx(d,{type:"sell",coin:c,qty:q,price:p,usdt:got,pl:got-cost,bot:!!m.bot,ot:m.ot||"market",why:m.why||""}); return got; }
+  dmTx(d,{type:"sell",coin:c,qty:q,price:p,usdt:got,pl:got-cost,avg:cost/q,bot:!!m.bot,ot:m.ot||"market",why:m.why||""}); return got; }
 function dmCancel(d,id){ const o=d.orders.find(x=>x.id===id); if(!o) return; d.orders=d.orders.filter(x=>x.id!==id);
   if(o.side==="BUY") d.cash+=o.usdt; else { const h=d.hold[o.coin]||{qty:0,cost:0}; h.qty+=o.qty; h.cost+=o.cost; d.hold[o.coin]=h; } }
 /* one engine step: fills limit orders, runs TP/SL, runs the demo bot. Returns number of things that happened. */
@@ -1699,8 +1733,15 @@ async function demoSignalsFresh(){ try{ const r=await fetch("data/signals.json?t
 /* background engine: keeps limit orders, TP/SL and the demo bot working on every page while the site is open */
 setInterval(async()=>{ if(location.hash.startsWith("#/demo")) return; let d; try{ if(!localStorage.getItem(DEMO_KEY)) return; d=demoLoad(); }catch(e){ return; }
   const watch=[...d.orders.map(o=>o.coin),...Object.entries(d.hold).filter(([c,h])=>h.tp||h.sl||h.bot).map(([c])=>c)];
+  if(demoWallet(d)) demoSave(d);
   if(!watch.length&&!d.bot.on) return; let sig=null; if(d.bot.on){ sig=await demoSignalsFresh(); if(sig) (sig.open||[]).forEach(t=>{ if(!isFx(t)) watch.push(t.coin); }); }
   const PX={}; await demoPrices(watch,PX); const d2=demoLoad(); if(demoTick(d2,PX,sig)) demoSave(d2); },30000);
+const DEMO_NETS=[{k:"BEP20",n:"BNB Smart Chain",fee:0.3,conf:15},{k:"TRC20",n:"TRON",fee:1,conf:20},{k:"ERC20",n:"Ethereum",fee:5,conf:6}];
+const DEMO_P2P=[["BUY","Demo Merchant A",1240,99.1,124.10,500,20000,["bKash","Nagad"]],["BUY","Demo Merchant B",612,98.4,124.35,1000,50000,["Bank transfer"]],["BUY","Demo Merchant C",2890,99.6,124.60,300,15000,["Nagad","Rocket"]],["BUY","Demo Merchant D",95,96.0,123.90,2000,30000,["bKash"]],
+  ["SELL","Demo Merchant E",1750,99.3,122.80,500,25000,["bKash","Nagad"]],["SELL","Demo Merchant F",430,97.9,122.55,1000,40000,["Bank transfer"]],["SELL","Demo Merchant G",3120,99.7,122.30,300,20000,["Nagad"]],["SELL","Demo Merchant H",58,95.2,123.00,2000,30000,["Rocket","bKash"]]].map(a=>({side:a[0],m:a[1],n:a[2],r:a[3],price:a[4],min:a[5],max:a[6],pay:a[7]}));
+function demoConf(x){ return Math.floor((Date.now()-new Date(x.t))/1000); }
+function demoWallet(d){ let n=0; d.wtx.forEach(x=>{ if(x.done) return; const N=DEMO_NETS.find(k=>k.k===x.net); if(demoConf(x)>=(N?N.conf:10)){ x.done=true; n++; if(x.type==="dep"){ d.cash+=x.amt; dmTx(d,{type:"deposit",usdt:x.amt}); } } }); return n; }
+function demoFunded(d){ return d.tx.reduce((a,x)=>a+(["start","topup","deposit"].includes(x.type)?x.usdt:x.type==="withdraw"?-x.usdt:0),0); }
 let DEMO_GEN=0, DEMO_TAB="trade", DEMO_COIN="BTC", DEMO_LT="orders", DEMO_TF="15m";
 async function pageDemo(){
   timers.forEach(clearInterval); timers=[]; if(chart){ chart.remove(); chart=null; }
@@ -1711,7 +1752,7 @@ async function pageDemo(){
     <section class="sec-head"><div><span class="eyebrow">${tr("প্র্যাকটিস · টেস্ট","Practice · Test")}</span><h2>${tr("ডেমো এক্সচেঞ্জ","Demo exchange")}</h2>
       <p>${tr("নকল টাকায় আসল এক্সচেঞ্জের মতো ট্রেড শিখুন: চার্ট, অর্ডার বুক, Market ও Limit অর্ডার, TP/SL আর অটো বট।","Learn to trade like on a real exchange with play money: chart, order book, market and limit orders, TP/SL and an auto bot.")}</p></div></section>
     <div class="dm-banner"><span style="font-size:22px">🧪</span><div><b>${tr("ডেমো অ্যাকাউন্ট — সব টাকা নকল।","Demo account — all money is pretend.")}</b> ${tr("এখানে আসল টাকা জমা দেওয়া, তোলা বা পাঠানো যায় না। সব তথ্য শুধু আপনার এই ব্রাউজারে থাকে, আমাদের কাছে আসে না। ব্রাউজারের ডেটা মুছলে ডেমো অ্যাকাউন্টও মুছে যাবে।","No real money can be deposited, withdrawn or sent. Everything stays in this browser only and never reaches us. Clearing browser data clears the demo account too.")}</div></div>
-    <div class="dm-tabs" role="tablist"><button data-tab="trade" class="${DEMO_TAB==="trade"?"on":""}">🎮 ${tr("ডেমো ট্রেড","Demo trade")}</button><button data-tab="bot" class="${DEMO_TAB==="bot"?"on":""}">🤖 ${tr("অটো বট","Auto bot")}</button><button data-tab="journal" class="${DEMO_TAB==="journal"?"on":""}">📒 ${tr("আমার ট্রেড খাতা","My trade journal")}</button></div>
+    <div class="dm-tabs" role="tablist"><button data-tab="trade" class="${DEMO_TAB==="trade"?"on":""}">🎮 ${tr("ডেমো ট্রেড","Demo trade")}</button><button data-tab="wallet" class="${DEMO_TAB==="wallet"?"on":""}">👛 ${tr("ওয়ালেট","Wallet")}</button><button data-tab="p2p" class="${DEMO_TAB==="p2p"?"on":""}">🤝 P2P</button><button data-tab="bot" class="${DEMO_TAB==="bot"?"on":""}">🤖 ${tr("অটো বট","Auto bot")}</button><button data-tab="journal" class="${DEMO_TAB==="journal"?"on":""}">📒 ${tr("আমার ট্রেড খাতা","My trade journal")}</button></div>
     <div id="dmBody"></div></div>`;
   app.querySelectorAll(".dm-tabs button").forEach(b=>b.onclick=()=>{ DEMO_TAB=b.dataset.tab; pageDemo(); });
   const body=$("#dmBody");
@@ -1748,6 +1789,111 @@ async function pageDemo(){
     draw(); await fetchPx(); draw(); every(15000,async()=>{ await fetchPx(); if(!document.activeElement||!document.activeElement.closest||!document.activeElement.closest("#jrF")) draw(); }); return;
   }
 
+  if(DEMO_TAB==="wallet"){ // ---------------- demo wallet + demo explorer ----------------
+    let mode="dep", net=DEMO_NETS[0].k, sel=null;
+    const fake=tr("ডেমো","DEMO");
+    const draw=()=>{ if(!alive()) return; const N=DEMO_NETS.find(n=>n.k===net), hs=Object.entries(d.hold), v=hs.reduce((a,[c,h])=>a+(PX[c]?h.qty*PX[c]:h.cost),0);
+      const addr=`DEMO-${N.k}-${d.uid}-NOT-A-REAL-ADDRESS`;
+      const st=x=>{ const c=demoConf(x), nn=DEMO_NETS.find(n=>n.k===x.net)||N; return x.done?`<span class="pill p-tp2">✔ ${tr("সম্পন্ন","Completed")}</span>`:`<span class="pill p-open">⏳ ${Math.min(c,nn.conf)}/${nn.conf}</span>`; };
+      const X=sel&&d.wtx.find(x=>x.id===sel);
+      body.innerHTML=`<div class="dm-grid">
+        <div style="display:grid;gap:16px">
+          <div class="dm-panel card"><h3>👛 ${tr("ডেমো ওয়ালেট","Demo wallet")}</h3>
+            <div class="wl-tot"><span>${tr("মোট মূল্য","Total value")}</span><b>${usd(d.cash+v)} <small>USDT</small></b></div>
+            <div class="wl-as"><div><span>${logo("USDT")}<b>USDT</b></span><span>${usd(d.cash)}</span></div>${hs.map(([c,h])=>`<div><span>${logo(c)}<b>${esc(c)}</b></span><span>${qtyF(h.qty)}<small>≈ ${usd(PX[c]?h.qty*PX[c]:h.cost)} USDT</small></span></div>`).join("")}</div></div>
+          <form class="dm-panel card" id="wlF">
+            <div class="dm-side"><button type="button" class="b ${mode==="dep"?"on":""}" data-m="dep">↓ ${tr("ডিপোজিট","Deposit")}</button><button type="button" class="s ${mode==="wd"?"on":""}" data-m="wd">↑ ${tr("উইথড্র","Withdraw")}</button></div>
+            <label class="dm-f">${tr("কয়েন","Coin")}<select disabled><option>USDT (${fake})</option></select></label>
+            <div class="dm-f">${tr("নেটওয়ার্ক বাছুন","Choose network")}<div class="wl-net">${DEMO_NETS.map(n=>`<button type="button" data-n="${n.k}" class="${n.k===net?"on":""}"><b>${n.k}</b><small>${n.n}</small><small>${tr("ফি","Fee")} ${n.fee} USDT · ${n.conf} ${tr("কনফার্মেশন","confirmations")}</small></button>`).join("")}</div></div>
+            ${mode==="dep"?`<div class="wl-addr"><span>${tr("ডেমো ডিপোজিট ঠিকানা","Demo deposit address")}</span><code>${addr}</code><small>⚠️ ${tr("এটা আসল ঠিকানা নয়। এখানে আসল কয়েন পাঠানো যায় না, পাঠানোর চেষ্টা করবেন না।","This is not a real address. Real coins cannot be sent here — do not try.")}</small></div>
+              <label class="dm-f">${tr("কত ডেমো USDT ডিপোজিট করবেন","Demo USDT to deposit")}<input id="wlA" type="number" min="1" step="any" inputmode="decimal" value="500"></label>
+              <button class="btn btn-primary">${tr("ডেমো ডিপোজিট পাঠান","Send demo deposit")}</button>`
+            :`<label class="dm-f">${tr("যে ঠিকানায় পাঠাবেন (অনুশীলনের জন্য, কিছুই পাঠানো হয় না)","Destination address (practice only, nothing is sent)")}<input id="wlTo" type="text" maxlength="80" placeholder="DEMO-${N.k}-FRIEND"></label>
+              <label class="dm-f">${tr("কত ডেমো USDT তুলবেন","Demo USDT to withdraw")}<input id="wlA" type="number" min="1" step="any" inputmode="decimal"></label>
+              <div class="dm-est"><span>${tr("আছে","Available")}</span><b>${usd(d.cash)} USDT</b></div>
+              <div class="dm-est"><span>${tr("নেটওয়ার্ক ফি","Network fee")}</span><b>${N.fee} USDT</b></div>
+              <button class="btn btn-primary">${tr("ডেমো উইথড্র করুন","Demo withdraw")}</button>`}
+            <div class="dm-msg" id="wlMsg" role="status"></div>
+          </form>
+          <div class="dm-panel card"><h3>🎓 ${tr("আসল ওয়ালেটে যা মনে রাখবেন","What to remember with a real wallet")}</h3><ol class="dx-how"><li>${tr("পাঠানো আর নেওয়ার নেটওয়ার্ক এক হতে হবে। ভুল নেটওয়ার্কে পাঠালে কয়েন হারিয়ে যেতে পারে।","Sender and receiver must use the same network. The wrong network can lose the coins.")}</li><li>${tr("ঠিকানার প্রথম আর শেষ ৪–৬ অক্ষর মিলিয়ে নিন।","Check the first and last 4–6 characters of the address.")}</li><li>${tr("বড় অঙ্কের আগে ছোট একটা পরীক্ষা পাঠান।","Send a small test before a large amount.")}</li><li>${tr("কিছু কয়েনে Memo/Tag লাগে, না দিলে টাকা আটকে যায়।","Some coins need a memo/tag; without it funds get stuck.")}</li><li>${tr("লেনদেন শেষ হলে Hash দিয়ে এক্সপ্লোরারে যাচাই করা যায়।","After sending, verify the transaction on an explorer using its hash.")}</li></ol></div>
+        </div>
+        <div style="display:grid;gap:16px">
+          <div class="dm-panel card"><h3>🔎 BEWON TestScan <span class="pill p-open">${fake}</span></h3>
+            <p class="muted" style="margin:0;font-size:12.5px">${tr("এটা শেখার জন্য বানানো নকল এক্সপ্লোরার। এখানকার Hash কোনো আসল ব্লকচেইনে নেই।","A pretend explorer for learning. These hashes do not exist on any real blockchain.")}</p>
+            ${X?`<div class="wl-tx"><div class="wl-wm">${fake}</div>
+              <div><span>Transaction Hash</span><code>${X.hash}</code></div><div><span>Status</span><b>${st(X)}</b></div>
+              <div><span>Block</span><b>${X.block}</b></div><div><span>${tr("সময়","Time")}</span><b>${when(X.t)}</b></div>
+              <div><span>From</span><code>${esc(X.from)}</code></div><div><span>To</span><code>${esc(X.to)}</code></div>
+              <div><span>${tr("পরিমাণ","Value")}</span><b>${usd(X.amt)} USDT (${fake})</b></div><div><span>${tr("নেটওয়ার্ক","Network")}</span><b>${esc(X.net)}</b></div><div><span>${tr("ফি","Fee")}</span><b>${X.fee} USDT</b></div>
+              <button type="button" class="xs" id="wlBack">← ${tr("সব লেনদেন","All transactions")}</button></div>`
+            :d.wtx.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("ধরন","Type")}</th><th class="r">USDT</th><th>${tr("নেটওয়ার্ক","Network")}</th><th>Status</th><th>Hash</th></tr></thead><tbody>${d.wtx.slice(0,30).map(x=>`<tr><td><b>${x.type==="dep"?"↓ "+tr("ডিপোজিট","Deposit"):"↑ "+tr("উইথড্র","Withdraw")}</b><div class="muted" style="font-size:12px">${ago(x.t)}</div></td><td class="r ${x.type==="dep"?"up":"down"}">${x.type==="dep"?"+":"−"}${usd(x.amt)}</td><td>${esc(x.net)}</td><td>${st(x)}</td><td><button type="button" class="xs" data-tx="${x.id}">${x.hash.slice(0,8)}…${x.hash.slice(-4)}</button></td></tr>`).join("")}</tbody></table></div>`
+            :`<div class="dm-empty">${tr("এখনো কোনো ডেমো লেনদেন নেই। বাঁ পাশ থেকে একটা ডেমো ডিপোজিট করে দেখুন।","No demo transactions yet. Try a demo deposit on the left.")}</div>`}</div>
+        </div></div>`;
+      const m=(t,ok)=>{ const e=$("#wlMsg"); e.textContent=t; e.className="dm-msg "+(ok?"ok":"err"); };
+      body.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{ mode=b.dataset.m; draw(); });
+      body.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{ net=b.dataset.n; draw(); });
+      body.querySelectorAll("[data-tx]").forEach(b=>b.onclick=()=>{ sel=b.dataset.tx; draw(); });
+      if($("#wlBack")) $("#wlBack").onclick=()=>{ sel=null; draw(); };
+      $("#wlF").onsubmit=e=>{ e.preventDefault(); const a=+$("#wlA").value; if(!(a>0)) return m(tr("পরিমাণ লিখুন।","Enter an amount."),false);
+        const hx=n=>Array.from({length:n},()=>Math.floor(Math.random()*16).toString(16)).join(""), base={id:Date.now().toString(36),hash:"0x"+hx(64),net:N.k,fee:N.fee,t:new Date().toISOString(),block:40000000+Math.floor(Math.random()*9e6),done:false};
+        if(mode==="dep"){ if(a>5000) return m(tr("একবারে সর্বোচ্চ ৫,০০০ ডেমো USDT।","Maximum 5,000 demo USDT at a time."),false);
+          if(d.cash+a>DEMO_MAX_CASH) return m(tr(`ডেমো নগদ ${DEMO_MAX_CASH.toLocaleString("en-US")}-এর বেশি রাখা যায় না।`,`Demo cash is capped at ${DEMO_MAX_CASH.toLocaleString("en-US")}.`),false);
+          d.wtx.unshift(Object.assign(base,{type:"dep",amt:a,from:`DEMO-${N.k}-FAUCET`,to:addr})); m(tr(`⏳ ডেমো ডিপোজিট পাঠানো হলো। ${N.conf}টা কনফার্মেশন হলে ব্যালান্সে যোগ হবে।`,`⏳ Demo deposit sent. It is credited after ${N.conf} confirmations.`),true); }
+        else { const to=String($("#wlTo").value||"").trim().slice(0,80); if(to.length<6) return m(tr("ঠিকানা লিখুন (যেকোনো অনুশীলনের ঠিকানা)।","Enter an address (any practice address)."),false);
+          if(a<=N.fee) return m(tr("পরিমাণ ফি-র চেয়ে বেশি হতে হবে।","Amount must be more than the fee."),false); if(a>d.cash+1e-9) return m(tr("ডেমো নগদ যথেষ্ট নেই।","Not enough demo cash."),false);
+          d.cash-=a; dmTx(d,{type:"withdraw",usdt:a}); d.wtx.unshift(Object.assign(base,{type:"wd",amt:a-N.fee,from:addr,to})); }
+        d.wtx=d.wtx.slice(0,60); sel=d.wtx[0].id; demoSave(d); draw(); }; };
+    const tick=async()=>{ if(!alive()) return; if(demoWallet(d)) demoSave(d); const a=document.activeElement; if(!a||!["INPUT","SELECT"].includes(a.tagName)) draw(); };
+    draw(); await demoPrices(need(),PX); draw(); every(1500,tick); every(20000,()=>demoPrices(need(),PX)); return;
+  }
+
+  if(DEMO_TAB==="p2p"){ // ---------------- demo P2P ----------------
+    let ps="BUY", cur=null;
+    const stepsB=[tr("অর্ডার তৈরি, বিক্রেতার USDT এসক্রোতে আটকানো","Order created, seller's USDT locked in escrow"),tr("আপনি টাকা পাঠিয়ে \"পাঠিয়েছি\" চাপবেন","You pay and tap \"I have paid\""),tr("বিক্রেতা টাকা পেয়ে USDT ছাড়বে","Seller confirms and releases USDT")];
+    const stepsS=[tr("অর্ডার তৈরি, আপনার USDT এসক্রোতে আটকানো","Order created, your USDT locked in escrow"),tr("ক্রেতা আপনাকে টাকা পাঠাবে","Buyer sends you the money"),tr("নিজের অ্যাকাউন্টে টাকা দেখে তবেই USDT ছাড়বেন","Release USDT only after you see the money in your own account")];
+    const draw=()=>{ if(!alive()) return; const ads=DEMO_P2P.filter(a=>a.side===ps), O=cur&&d.p2p.find(x=>x.id===cur);
+      body.innerHTML=`<div class="dm-grid">
+        <div style="display:grid;gap:16px">
+          ${O?`<div class="dm-panel card"><h3>🤝 ${tr("ডেমো P2P অর্ডার","Demo P2P order")} <span class="pill p-open">${tr("ডেমো","DEMO")}</span></h3>
+            <div class="wl-tx"><div><span>${tr("দিক","Side")}</span><b>${pillSide(O.side)}</b></div><div><span>${tr("মার্চেন্ট","Merchant")}</span><b>${esc(O.m)}</b></div><div><span>${tr("দাম","Price")}</span><b>${O.price.toFixed(2)} BDT</b></div><div><span>USDT</span><b>${usd(O.usdt)}</b></div><div><span>${tr("মোট টাকা","Total")}</span><b>${usd(O.bdt)} BDT (${tr("নকল","pretend")})</b></div><div><span>${tr("পেমেন্ট","Payment")}</span><b>${esc(O.pay)}</b></div></div>
+            <ol class="p2-st">${(O.side==="BUY"?stepsB:stepsS).map((s2,i)=>`<li class="${O.st>i?"ok":O.st===i?"now":""}">${s2}</li>`).join("")}</ol>
+            ${O.st===3?`<div class="dm-msg ok">✅ ${O.side==="BUY"?tr(`${usd(O.usdt)} ডেমো USDT আপনার ওয়ালেটে এসেছে।`,`${usd(O.usdt)} demo USDT arrived in your wallet.`):tr(`${usd(O.usdt)} ডেমো USDT ছাড়া হয়েছে।`,`${usd(O.usdt)} demo USDT released.`)}</div><button class="btn btn-ghost" id="p2New">${tr("নতুন অর্ডার","New order")}</button>`
+             :O.st===-1?`<div class="dm-msg err">${tr("অর্ডার বাতিল হয়েছে।","Order cancelled.")}</div><button class="btn btn-ghost" id="p2New">${tr("নতুন অর্ডার","New order")}</button>`
+             :O.side==="BUY"?(O.st===1?`<button class="btn btn-primary" id="p2Paid">${tr("আমি টাকা পাঠিয়েছি (ডেমো)","I have paid (demo)")}</button><button class="btn btn-ghost" id="p2Can">${tr("বাতিল","Cancel")}</button>`:`<div class="dm-msg ok">⏳ ${tr("বিক্রেতা টাকা যাচাই করছে…","Seller is checking the payment…")}</div>`)
+             :(O.st===2?`<div class="dm-msg ok">💬 ${tr("ক্রেতা বলছে টাকা পাঠিয়েছে। আসল জীবনে আগে নিজের অ্যাকাউন্ট খুলে টাকা দেখে নিন।","The buyer says the money was sent. In real life, open your own account and check first.")}</div><button class="btn btn-primary" id="p2Rel">${tr("টাকা পেয়েছি, USDT ছাড়ুন (ডেমো)","Money received, release USDT (demo)")}</button>`:`<div class="dm-msg ok">⏳ ${tr("ক্রেতা টাকা পাঠাচ্ছে…","Buyer is sending the money…")}</div><button class="btn btn-ghost" id="p2Can">${tr("বাতিল","Cancel")}</button>`)}
+          </div>`:""}
+          <div class="dm-panel card"><h3>🛡️ ${tr("P2P-তে ঠকা থেকে বাঁচার নিয়ম","P2P safety rules")}</h3><ol class="dx-how"><li>${tr("নিজের ব্যাংক বা মোবাইল অ্যাকাউন্টে টাকা না দেখে কখনো USDT ছাড়বেন না। SMS বা স্ক্রিনশট নকল হতে পারে।","Never release USDT before you see the money in your own account. SMS and screenshots can be faked.")}</li><li>${tr("অর্ডারে যার নাম, শুধু তার অ্যাকাউন্ট থেকে টাকা নিন। অন্য কারো নামে এলে নেবেন না।","Accept money only from the account name on the order, never from a third person.")}</li><li>${tr("এক্সচেঞ্জের বাইরে (WhatsApp, Telegram) লেনদেন করবেন না। এসক্রো শুধু এক্সচেঞ্জের ভেতরে কাজ করে।","Never deal outside the exchange (WhatsApp, Telegram). Escrow only protects you inside it.")}</li><li>${tr("বেশি অর্ডার আর বেশি সফলতার হার আছে এমন মার্চেন্ট বাছুন।","Choose merchants with many orders and a high completion rate.")}</li><li>${tr("সমস্যা হলে অর্ডার বাতিল না করে Appeal করুন।","If something goes wrong, open an appeal instead of cancelling.")}</li></ol></div>
+          ${d.p2p.length?`<div class="dm-panel card"><h3>🧾 ${tr("আমার P2P ইতিহাস","My P2P history")}</h3><div class="tbl-wrap dm"><table><tbody>${d.p2p.slice(0,20).map(x=>`<tr><td>${pillSide(x.side)} <b>${usd(x.usdt)} USDT</b><div class="muted" style="font-size:12px">${esc(x.m)} · ${ago(x.t)}</div></td><td class="r">${usd(x.bdt)} BDT</td><td class="r">${x.st===3?`<span class="pill p-tp2">✔</span>`:x.st===-1?`<span class="pill p-sl">✕</span>`:`<button class="xs" data-po="${x.id}">${tr("খুলুন","Open")}</button>`}</td></tr>`).join("")}</tbody></table></div></div>`:""}
+        </div>
+        <div class="dm-panel card ${O&&O.st>=0&&O.st<3?"":"p2-first"}"><h3>🤝 ${tr("ডেমো P2P মার্কেট","Demo P2P market")} · USDT/BDT</h3>
+          <div class="dm-side"><button type="button" class="b ${ps==="BUY"?"on":""}" data-ps="BUY">${tr("USDT কিনুন","Buy USDT")}</button><button type="button" class="s ${ps==="SELL"?"on":""}" data-ps="SELL">${tr("USDT বেচুন","Sell USDT")}</button></div>
+          <p class="muted" style="margin:0;font-size:12.5px">${tr("এরা নকল মার্চেন্ট আর দামও নকল (আসল বাজারদর নয়)। কোনো আসল টাকা লেনদেন হয় না।","These merchants and prices are pretend (not the real market rate). No real money moves.")}</p>
+          <div class="p2-ads">${ads.map((a,i)=>`<div class="p2-ad"><div class="p2-m"><i>${a.m.slice(-1)}</i><div><b>${a.m}</b><small>${a.n} ${tr("অর্ডার","orders")} · ${a.r}%</small></div></div>
+            <div class="p2-p"><b>${a.price.toFixed(2)}</b> <small>BDT</small></div>
+            <div class="p2-l"><small>${tr("সীমা","Limit")}: ${a.min.toLocaleString("en-US")} – ${a.max.toLocaleString("en-US")} BDT</small><small>${a.pay.join(" · ")}</small></div>
+            <button class="btn ${ps==="BUY"?"p2-b":"p2-s"}" data-ad="${DEMO_P2P.indexOf(a)}">${ps==="BUY"?tr("কিনুন","Buy"):tr("বেচুন","Sell")}</button></div>`).join("")}</div></div>
+      </div>`;
+      body.querySelectorAll("[data-ps]").forEach(b=>b.onclick=()=>{ ps=b.dataset.ps; draw(); });
+      body.querySelectorAll("[data-po]").forEach(b=>b.onclick=()=>{ cur=b.dataset.po; draw(); });
+      body.querySelectorAll("[data-ad]").forEach(b=>b.onclick=()=>{ const a=DEMO_P2P[+b.dataset.ad];
+        if(d.p2p.some(x=>x.st>=0&&x.st<3)){ alert(tr("আগের ডেমো অর্ডারটা আগে শেষ করুন।","Finish your open demo order first.")); return; }
+        const v=prompt(tr(`কত টাকার (BDT)? সীমা ${a.min} – ${a.max}`,`How much BDT? Limit ${a.min} – ${a.max}`),a.min); if(v===null) return; const bdt=+v;
+        if(!(bdt>=a.min&&bdt<=a.max)){ alert(tr("পরিমাণ সীমার মধ্যে হতে হবে।","Amount must be within the limit.")); return; }
+        const u=bdt/a.price; if(a.side==="SELL"&&u>d.cash){ alert(tr("এত ডেমো USDT নেই।","Not enough demo USDT.")); return; }
+        if(a.side==="BUY"&&d.cash+u>DEMO_MAX_CASH){ alert(tr("ডেমো নগদের সীমা পার হবে।","That would pass the demo cash cap.")); return; }
+        if(a.side==="SELL") d.cash-=u;
+        const o={id:Date.now().toString(36),side:a.side,m:a.m,price:a.price,usdt:u,bdt,pay:a.pay[0],t:new Date().toISOString(),st:1,at:Date.now()}; d.p2p.unshift(o); d.p2p=d.p2p.slice(0,40); cur=o.id; demoSave(d); draw(); });
+      const O2=cur&&d.p2p.find(x=>x.id===cur);
+      if($("#p2New")) $("#p2New").onclick=()=>{ cur=null; draw(); };
+      if($("#p2Paid")) $("#p2Paid").onclick=()=>{ O2.st=2; O2.at=Date.now(); demoSave(d); draw(); };
+      if($("#p2Rel")) $("#p2Rel").onclick=()=>{ O2.st=3; dmTx(d,{type:"withdraw",usdt:O2.usdt}); demoSave(d); draw(); };
+      if($("#p2Can")) $("#p2Can").onclick=()=>{ if(O2.side==="SELL") d.cash+=O2.usdt; O2.st=-1; demoSave(d); draw(); }; };
+    const tick=()=>{ if(!alive()) return; let ch=false; d.p2p.forEach(o=>{ if(o.side==="BUY"&&o.st===2&&Date.now()-o.at>5000){ o.st=3; d.cash+=o.usdt; dmTx(d,{type:"deposit",usdt:o.usdt}); ch=true; }
+        if(o.side==="SELL"&&o.st===1&&Date.now()-o.at>5000){ o.st=2; ch=true; } }); if(ch){ demoSave(d); draw(); } };
+    const op=d.p2p.find(x=>x.st>=0&&x.st<3); if(op) cur=op.id;
+    draw(); every(1000,tick); return;
+  }
+
   if(DEMO_TAB==="bot"){ // ---------------- demo auto-trade bot ----------------
     const draw=()=>{ if(!alive()) return; const b=d.bot, bt=d.tx.filter(x=>x.bot), sells=bt.filter(x=>x.type==="sell"), pl=sells.reduce((a,x)=>a+(x.pl||0),0), win=sells.filter(x=>x.pl>0).length;
       const hs=Object.entries(d.hold).filter(([c,h])=>h.bot);
@@ -1762,6 +1908,8 @@ async function pageDemo(){
           <div class="dm-row3 dx-st"><div><span>${tr("বটের ট্রেড","Bot trades")}</span><b>${sells.length}</b></div><div><span>${tr("জয়","Wins")}</span><b>${sells.length?Math.round(win*100/sells.length)+"%":"—"}</b></div><div><span>${tr("লাভ/ক্ষতি","Realised P/L")}</span><b class="${pl>=0?"up":"down"}">${pl>=0?"+":""}${usd(pl)}</b></div></div>
           <div class="dm-panel card"><h3>${tr("বটের খোলা ট্রেড","Bot open trades")} <span class="muted" style="font-weight:500">(${hs.length})</span></h3>
             ${hs.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("গড় দাম","Avg")}</th><th class="r">${tr("এখন","Now")}</th><th class="r">TP / SL</th><th class="r">P/L</th></tr></thead><tbody>${hs.map(([k,h])=>{ const p=PX[k], l=p?h.qty*p-h.cost:0; return `<tr><td>${logo(k)} <b>${esc(k)}</b></td><td class="r">${fmtPx(h.cost/h.qty)}</td><td class="r">${p?fmtPx(p):"…"}</td><td class="r">${fmtPx(h.tp)} / ${fmtPx(h.sl)}</td><td class="r ${l>=0?"up":"down"}">${l>=0?"+":""}${usd(l)}</td></tr>`; }).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("বটের কোনো খোলা ট্রেড নেই।","The bot has no open trade.")}</div>`}</div>
+          <div class="dm-panel card"><h3>📜 ${tr("বটের শেষ হওয়া ট্রেড","Bot trade history")} <span class="muted" style="font-weight:500">(${sells.length})</span></h3>
+            ${sells.length?`<div class="tbl-wrap dm"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("কেনা দাম","Entry")}</th><th class="r">${tr("বেচা দাম","Exit")}</th><th class="r">P/L</th><th>${tr("কারণ","Reason")}</th><th class="r">${tr("কখন","When")}</th></tr></thead><tbody>${sells.slice(0,50).map(x=>{ const pc=x.avg?(x.price*(1-DEMO_FEE)/x.avg-1)*100:null; return `<tr><td>${logo(x.coin)} <b>${esc(x.coin)}</b><div class="muted" style="font-size:12px">${qtyF(x.qty)}</div></td><td class="r">${x.avg?fmtPx(x.avg):"—"}</td><td class="r">${fmtPx(x.price)}</td><td class="r ${x.pl>=0?"up":"down"}">${x.pl>=0?"+":""}${usd(x.pl)}${pc!=null?`<div style="font-size:11.5px">${pc>=0?"+":""}${pc.toFixed(2)}%</div>`:""}</td><td><span class="pill ${x.why==="TP"?"p-tp2":x.why==="SL"?"p-sl":"p-flat"}">${esc(x.why||"—")}</span></td><td class="r muted" style="font-size:12.5px">${when(x.t)}</td></tr>`; }).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("বট এখনো কোনো ট্রেড শেষ করেনি।","The bot has not closed a trade yet.")}</div>`}</div>
           <div class="dm-panel card"><h3>🧾 ${tr("বটের কাজের তালিকা","Bot activity")}</h3>
             ${bt.length?`<div class="tbl-wrap dm"><table><tbody>${bt.slice(0,25).map(x=>`<tr><td><b>${x.type==="buy"?tr("কিনেছে","Bought"):tr("বেচেছে","Sold")}</b> · ${esc(x.coin)}${x.why?` <span class="pill p-flat">${esc(x.why)}</span>`:""}<div class="muted" style="font-size:12px">${ago(x.t)}</div></td><td class="r">${qtyF(x.qty)} @ ${fmtPx(x.price)}</td><td class="r ${x.type==="sell"?(x.pl>=0?"up":"down"):""}">${x.type==="sell"?(x.pl>=0?"+":"")+usd(x.pl):"−"+usd(x.usdt)}</td></tr>`).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("বট এখনো কোনো ট্রেড করেনি। চালু রাখলে নতুন সিগনাল এলে করবে।","No bot trades yet. Leave it on and it will act on the next signal.")}</div>`}</div>
           <div class="dm-panel card"><h3>${tr("বট কীভাবে কাজ করে","How the bot works")}</h3><ol class="dx-how"><li>${tr("নতুন BUY সিগনাল এলে, আর Confidence আপনার সীমার ওপরে হলে, ডেমো টাকায় কেনে।","When a new BUY signal arrives with confidence above your limit, it buys with demo money.")}</li><li>${tr("সিগনালের TP2 আর Stop Loss নিজে বসায়।","It sets the signal's TP2 and stop loss by itself.")}</li><li>${tr("দাম TP বা SL ছুঁলে, বা সিগনাল বন্ধ হলে, নিজে বেচে দেয়।","It sells when price hits TP or SL, or when the signal closes.")}</li><li>${tr("এটা স্পট ডেমো, তাই SELL সিগনালে নতুন ট্রেড নেয় না।","This is spot demo, so it does not open trades on SELL signals.")}</li></ol></div>
@@ -1831,7 +1979,7 @@ async function pageDemo(){
     }catch(e){ if($("#dxAsk")&&!$("#dxAsk").innerHTML) $("#dxAsk").innerHTML=`<div class="dm-empty" style="padding:10px;font-size:12.5px">${tr("অর্ডার বুক আনা যায়নি","Order book unavailable")}</div>`; } };
   const loadT=async()=>{ const c=coin(); try{ const t=await bget(`/api/v3/ticker/24hr?symbol=${c}USDT`); if(c!==coin()) return; T24=t; PX[c]=+t.lastPrice; }catch(e){} };
   const draw=()=>{ if(!alive()||!$("#dmTot")) return;
-    const v=val(), c=cost(), rs=resv(), tot=d.cash+v+rs, pl=v-c, pp=c?pl/c*100:0, start=d.tx.filter(x=>x.type==="start"||x.type==="topup").reduce((a,x)=>a+x.usdt,0), all=tot-start;
+    const v=val(), c=cost(), rs=resv(), tot=d.cash+v+rs, pl=v-c, pp=c?pl/c*100:0, pend=d.p2p.filter(x=>x.side==="SELL"&&x.st>=0&&x.st<3).reduce((a,x)=>a+x.usdt,0), all=tot+pend-demoFunded(d);
     $("#dmAv").textContent=name().slice(0,1).toUpperCase(); $("#dmName").textContent=name(); $("#dmN").textContent=d.tx.filter(x=>x.type==="buy"||x.type==="sell").length;
     $("#dmTot").textContent=usd(tot); $("#dmCash").textContent=usd(d.cash); $("#dmVal").textContent=usd(v); $("#dmCost").textContent=usd(rs);
     $("#dmPL").innerHTML=`<span class="${pl>=0?"up":"down"}">${pl>=0?"+":""}${usd(pl)} (${pp>=0?"+":""}${pp.toFixed(2)}%)</span> <span class="muted">${tr("খোলা কয়েনে","on open coins")}</span> · <span class="${all>=0?"up":"down"}">${all>=0?"+":""}${usd(all)}</span> <span class="muted">${tr("শুরু থেকে","since start")}</span>`;
@@ -1890,7 +2038,7 @@ async function pageDemo(){
   $("#dmBot").onclick=()=>{ DEMO_TAB="bot"; pageDemo(); };
   $("#dmRen").onclick=()=>{ const v=prompt(tr("আপনার নাম (শুধু এই ব্রাউজারে থাকবে)","Your name (stays in this browser only)"),d.name||""); if(v!==null){ d.name=v.trim().slice(0,30); demoSave(d); draw(); } };
   body.querySelectorAll("[data-try]").forEach(b=>b.onclick=async()=>{ side="BUY"; setType("market"); if(coins.includes(b.dataset.try)){ $("#dmCoin").value=b.dataset.try; await switchCoin(); } $("#dmAmt").value=Math.min(1000,Math.floor(d.cash)); upd(); $("#dmF").scrollIntoView({behavior:"smooth",block:"center"}); });
-  const tick=async()=>{ if(!alive()) return; const sg=d.bot.on?await demoSignalsFresh():null; await demoPrices([...need(),...d.orders.map(o=>o.coin),...(sg?sg.open.filter(t=>!isFx(t)).map(t=>t.coin):[])],PX); await loadT(); if(!alive()) return; if(demoTick(d,PX,sg)) demoSave(d); draw(); };
+  const tick=async()=>{ if(!alive()) return; const sg=d.bot.on?await demoSignalsFresh():null; await demoPrices([...need(),...d.orders.map(o=>o.coin),...(sg?sg.open.filter(t=>!isFx(t)).map(t=>t.coin):[])],PX); await loadT(); if(!alive()) return; if(demoTick(d,PX,sg)+demoWallet(d)) demoSave(d); draw(); };
   setSide(); draw(); await Promise.all([tick(),loadK(),loadBook()]); draw();
   every(8000,tick); every(6000,loadBook); every(30000,loadK);
 }
@@ -2077,7 +2225,7 @@ async function route(){
   document.querySelectorAll("#nav a,#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
   $("#moreBtn").classList.toggle("on",["forex","engine","demo","news","about"].includes(r));
   document.title=`${SITE.name} — ${tr("ফ্রি ক্রিপ্টো সিগনাল","Free crypto signals")}`;
-  window.scrollTo(0,0);
+  window.scrollTo(0,0); document.body.classList.toggle("is-home",r==="home"); if(r==="home"){ if(!BGW) startBgWorld(); } else stopBgWorld();
   if(r==="market") await pageMarket();
   else if(r==="coin") await pageCoin(parts[1]);
   else if(r==="signals"){ await pageSignals(); addBacktest(); }
@@ -2118,7 +2266,7 @@ function drawSkinMenu(){ $("#palMenu").innerHTML=`<b>🎨 ${tr("সাইটে�
     setSkin(k); drawSkinMenu(); startBgWorld(); const y=scrollY; Promise.resolve(route()).then(()=>scrollTo(0,y)); };
 })();
 applyStatic();
-startBgWorld();
+if(/^#?\/?$/.test(location.hash)) startBgWorld();
 route();
 </script>
 </body>
