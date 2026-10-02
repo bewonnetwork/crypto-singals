@@ -79,6 +79,13 @@
   }
  ],
  "news_posted": [
+  "https://cryptoslate.com/blast-shuts-down-20m-layer-2-network-forcing-oct-26-exit-deadline/",
+  "https://cryptoslate.com/stablecoin-issuers-have-replaced-40-of-chinas-lost-us-treasury-demand/",
+  "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
+  "https://decrypt.co/379998/california-subpoena-openai-ai-models-hack",
+  "https://cointelegraph.com/news/mica-strengthened-retail-trust-regulated-crypto-exchanges-bitpanda-ceo-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/bitcoins-85000-sell-wall-is-gone-and-traders-are-now-betting-on-100000/",
+  "https://decrypt.co/379991/ethereum-now-pay-for-ai-without-revealing-identity",
   "https://decrypt.co/379984/circle-pushes-back-on-micas-bank-deposit-mandate-for-stablecoins",
   "https://cryptoslate.com/crypto-hackers-exploit-third-party-aave-tool-to-steal-114-eth/",
   "https://decrypt.co/379975/tavus-griffin-ai-fools-people-video-thinking-human",
@@ -542,7 +549,7 @@
  },
  "vol_last": {},
  "dom_hist": {
-  "2026-10-02": 58.77
+  "2026-10-02": 58.74
  },
  "feed_posted": [
   "https://www.binance.com/en/support/announcement/a5bf03abedaa4430b1fd04aa760e491b",
@@ -617,149 +624,149 @@
  "feed_seeded": true,
  "insights": {
   "dominance": {
-   "btc": 58.77,
-   "eth": 11.29,
-   "mcap": 2881476085157,
-   "mcap_ch": -3.3,
+   "btc": 58.74,
+   "eth": 11.27,
+   "mcap": 2887345983825,
+   "mcap_ch": -3.06,
    "ch_1d": null,
    "ch_7d": null,
    "history": [
     {
      "d": "2026-10-02",
-     "v": 58.77
+     "v": 58.74
     }
    ]
   },
   "walls": [
    {
     "coin": "BTC",
-    "price": 84356.005,
+    "price": 84580.10500000001,
     "support": {
-     "price": 84356.005,
-     "usd": 6203828
+     "price": 84580.10500000001,
+     "usd": 8942742
     },
     "resistance": {
-     "price": 84356.005,
-     "usd": 8899057
+     "price": 84580.10500000001,
+     "usd": 5117460
+    },
+    "buy_pct": 74
+   },
+   {
+    "coin": "ETH",
+    "price": 2669.995,
+    "support": {
+     "price": 2669.995,
+     "usd": 4202388
+    },
+    "resistance": {
+     "price": 2669.995,
+     "usd": 3843102
+    },
+    "buy_pct": 63
+   },
+   {
+    "coin": "BNB",
+    "price": 768.495,
+    "support": {
+     "price": 762.7312875,
+     "usd": 1115117
+    },
+    "resistance": {
+     "price": 770.4162375000001,
+     "usd": 1146550
+    },
+    "buy_pct": 55
+   },
+   {
+    "coin": "SOL",
+    "price": 118.705,
+    "support": {
+     "price": 116.924425,
+     "usd": 3700933
+    },
+    "resistance": {
+     "price": 119.0017625,
+     "usd": 1523535
+    },
+    "buy_pct": 68
+   },
+   {
+    "coin": "XRP",
+    "price": 1.48625,
+    "support": {
+     "price": 1.4825343750000002,
+     "usd": 840054
+    },
+    "resistance": {
+     "price": 1.48625,
+     "usd": 758643
     },
     "buy_pct": 52
    },
    {
-    "coin": "ETH",
-    "price": 2666.785,
-    "support": {
-     "price": 2660.1180375,
-     "usd": 3174973
-    },
-    "resistance": {
-     "price": 2666.785,
-     "usd": 3349590
-    },
-    "buy_pct": 61
-   },
-   {
-    "coin": "BNB",
-    "price": 765.515,
-    "support": {
-     "price": 759.7736375,
-     "usd": 1306130
-    },
-    "resistance": {
-     "price": 767.4287875,
-     "usd": 897929
-    },
-    "buy_pct": 60
-   },
-   {
-    "coin": "SOL",
-    "price": 118.015,
-    "support": {
-     "price": 117.12988750000001,
-     "usd": 2976528
-    },
-    "resistance": {
-     "price": 118.9001125,
-     "usd": 1243490
-    },
-    "buy_pct": 70
-   },
-   {
-    "coin": "XRP",
-    "price": 1.4726499999999998,
-    "support": {
-     "price": 1.3990174999999998,
-     "usd": 856478
-    },
-    "resistance": {
-     "price": 1.4800132499999998,
-     "usd": 566741
-    },
-    "buy_pct": 57
-   },
-   {
     "coin": "ADA",
-    "price": 0.23975000000000002,
+    "price": 0.24445,
     "support": {
-     "price": 0.23915062500000003,
-     "usd": 227934
+     "price": 0.243838875,
+     "usd": 262980
     },
     "resistance": {
-     "price": 0.24514437500000003,
-     "usd": 177322
-    },
-    "buy_pct": 64
-   },
-   {
-    "coin": "DOGE",
-    "price": 0.091445,
-    "support": {
-     "price": 0.09007332500000001,
-     "usd": 780264
-    },
-    "resistance": {
-     "price": 0.0916736125,
-     "usd": 532403
-    },
-    "buy_pct": 64
-   },
-   {
-    "coin": "AVAX",
-    "price": 10.601500000000001,
-    "support": {
-     "price": 10.574996250000002,
-     "usd": 297974
-    },
-    "resistance": {
-     "price": 10.628003750000001,
-     "usd": 185348
-    },
-    "buy_pct": 60
-   },
-   {
-    "coin": "LINK",
-    "price": 13.6035,
-    "support": {
-     "price": 12.991342500000002,
-     "usd": 151793
-    },
-    "resistance": {
-     "price": 14.249666250000002,
-     "usd": 149291
+     "price": 0.24506112500000002,
+     "usd": 393792
     },
     "buy_pct": 49
    },
    {
-    "coin": "DOT",
-    "price": 1.1515,
+    "coin": "DOGE",
+    "price": 0.092995,
     "support": {
-     "price": 1.14862125,
-     "usd": 104911
+     "price": 0.09276251249999999,
+     "usd": 724627
     },
     "resistance": {
-     "price": 1.15437875,
-     "usd": 97912
+     "price": 0.0932274875,
+     "usd": 493864
     },
-    "buy_pct": 58
+    "buy_pct": 52
+   },
+   {
+    "coin": "AVAX",
+    "price": 10.8185,
+    "support": {
+     "price": 10.79145375,
+     "usd": 216381
+    },
+    "resistance": {
+     "price": 10.84554625,
+     "usd": 150745
+    },
+    "buy_pct": 59
+   },
+   {
+    "coin": "LINK",
+    "price": 13.805499999999999,
+    "support": {
+     "price": 13.770986249999998,
+     "usd": 156175
+    },
+    "resistance": {
+     "price": 14.426747499999998,
+     "usd": 177569
+    },
+    "buy_pct": 52
+   },
+   {
+    "coin": "DOT",
+    "price": 1.1555,
+    "support": {
+     "price": 1.1526112499999999,
+     "usd": 93130
+    },
+    "resistance": {
+     "price": 1.1959425,
+     "usd": 126788
+    },
+    "buy_pct": 56
    }
   ],
   "topics": {
@@ -1421,7 +1428,7 @@
    }
   ],
   "tip": "সামনে বড় টোকেন আনলক আছে কিনা দেখে নিন। সরবরাহ বাড়লে দামে চাপ পড়তে পারে।",
-  "updated": "2026-10-02T20:10:25+00:00",
+  "updated": "2026-10-02T23:50:13+00:00",
   "sources": {
    "Airdrops.io": 10,
    "AirdropAlert": 10,
@@ -1439,7 +1446,7 @@
    "MEXC": 0
   }
  },
- "insights_time": "2026-10-02T20:10:25+00:00",
+ "insights_time": "2026-10-02T23:50:13+00:00",
  "last_insight": "2026-10-02",
  "probe_v": 1
 }

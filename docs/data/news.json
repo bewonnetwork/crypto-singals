@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T20:10:25+00:00",
+ "updated": "2026-10-02T23:50:13+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,70 @@
   "The Block"
  ],
  "items": [
+  {
+   "title": "Blast shuts down $20M layer-2 network, forcing Oct. 26 exit deadline",
+   "link": "https://cryptoslate.com/blast-shuts-down-20m-layer-2-network-forcing-oct-26-exit-deadline/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T23:10:14+00:00",
+   "summary": "Users face a temporary withdrawal pause before an Oct. 26 deadline to exit through Blast’s normal interface. The post Blast shuts down $20M layer-2 network, forcing Oct. 26 exit deadline appeared first on CryptoSlate .",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/blast-ethereum-exodus.webp"
+  },
+  {
+   "title": "Stablecoin issuers have replaced 40% of China’s lost US Treasury demand",
+   "link": "https://cryptoslate.com/stablecoin-issuers-have-replaced-40-of-chinas-lost-us-treasury-demand/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T21:50:39+00:00",
+   "summary": "Stablecoin issuers are emerging as a new source of demand for US government debt as foreign official holdings lose ground. Tether and Circle have increased their Treasury securities and repurchase-agreement holdings by about $200 billion…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-treasury-buyers-standard.jpg"
+  },
+  {
+   "title": "Bank group sues U.S. regulator over granting crypto trust charters",
+   "link": "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
+   "source": "CoinDesk",
+   "published": "2026-10-02T21:23:20+00:00",
+   "summary": "The Independent Community Bankers of America sued the Office of the Comptroller of the Currency, accusing the regulator of overstepping its legal authority.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/26bc7ac9cd7444c2c14bec14b2e397a0fb35c8aa-6000x3376.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "title": "California Subpoenas OpenAI Over AI Models That Hacked Their Way Out of a Test",
+   "link": "https://decrypt.co/379998/california-subpoena-openai-ai-models-hack",
+   "source": "Decrypt",
+   "published": "2026-10-02T21:16:04+00:00",
+   "summary": "California's attorney general wants answers from OpenAI about AI models that escaped a locked test environment and hacked Hugging Face—and whether the company can be held legally accountable.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/justice-decrypt-style-gID_7.png"
+  },
+  {
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T20:46:58+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "title": "European crypto users have ‘more faith’ in regulated firms under MiCA: Bitpanda co-CEO",
+   "link": "https://cointelegraph.com/news/mica-strengthened-retail-trust-regulated-crypto-exchanges-bitpanda-ceo-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-02T20:40:47+00:00",
+   "summary": "Speaking on Cointelegraph’s Chain Reaction, Christian Trummer said MiCA has increased trust in regulated platforms and called for stricter enforcement against noncompliant firms.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3Z204Z5E8HCQ1YYBGG9YAK4/hi-self-custody-of-cryptocurrencies-is-your-own-wallet-really-safer-for-private-investors.png"
+  },
+  {
+   "title": "Bitcoin’s $85,000 sell wall is gone and traders are now betting on $100,000",
+   "link": "https://cryptoslate.com/bitcoins-85000-sell-wall-is-gone-and-traders-are-now-betting-on-100000/",
+   "source": "CryptoSlate",
+   "published": "2026-10-02T20:30:33+00:00",
+   "summary": "Bitcoin’s rally is approaching a $90,000 test as a rare accumulation pattern reappears and sell-side liquidity thins. On Oct. 2, Bitcoin registered an intraday high at $87,000 after buyers broke through a sell wall around $85,000 that had…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-green-signal.webp"
+  },
+  {
+   "title": "Ethereum Now Lets You Pay for AI Without Revealing Who You Are",
+   "link": "https://decrypt.co/379991/ethereum-now-pay-for-ai-without-revealing-identity",
+   "source": "Decrypt",
+   "published": "2026-10-02T20:16:04+00:00",
+   "summary": "Ethereum's zkAPI lets users prepay in USDC and query AI models through cryptographic proofs, so no single party sees both who they are and what they ask.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/ethereum-decrypt-style-07-gID_7.jpg"
+  },
   {
    "title": "Circle Pushes Back on MiCA's Bank-Deposit Mandate for Stablecoins",
    "link": "https://decrypt.co/379984/circle-pushes-back-on-micas-bank-deposit-mandate-for-stablecoins",
@@ -25,7 +89,7 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-adapter-breach.webp"
   },
   {
-   "title": "This AI Is Already Fooling People on Video Calls Into Thinking Its Human, Company Says",
+   "title": "This AI Is Already Fooling People on Video Calls Into Thinking It's Human, Company Says",
    "link": "https://decrypt.co/379975/tavus-griffin-ai-fools-people-video-thinking-human",
    "source": "Decrypt",
    "published": "2026-10-02T19:05:35+00:00",
@@ -209,14 +273,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/d74fff0a557caad0b099c56a8e403b375c1441b3-8192x5464.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
   },
   {
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-02T13:00:00+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
    "title": "'Uptober' Off With a Bang as Bitcoin Surges to $86K",
    "link": "https://decrypt.co/379932/uptober-off-with-a-bang-as-bitcoin-surges-to-86k",
    "source": "Decrypt",
@@ -273,14 +329,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3Y404AJBW7P5AXPAFDB86VV/sponsor-screen-traid-bnb-chain.jpg"
   },
   {
-   "title": "Bitcoin sees big overnight rally as ETF demand returns before the next US jobs test",
-   "link": "https://cryptoslate.com/bitcoin-sees-big-overnight-rally-as-etf-demand-returns-before-the-next-us-jobs-test/",
-   "source": "CryptoSlate",
-   "published": "2026-10-02T11:30:01+00:00",
-   "summary": "Fund inflows support the rebound, while reported short liquidations suggest an accelerator and inflation still clouds its durability. The post Bitcoin sees big overnight rally as ETF demand returns before the next US jobs test appeared…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-jobs-report-alarm.webp"
-  },
-  {
    "title": "Cboe wants to turn VIX into a never-ending trade",
    "link": "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover",
    "source": "CoinDesk",
@@ -303,14 +351,6 @@
    "published": "2026-10-02T11:22:40+00:00",
    "summary": "Bond yields also suffered a major whipsaw, turning higher by the afternoon after early declines.",
    "image": ""
-  },
-  {
-   "title": "US targets $17 billion Russia-linked crypto payment network using USDT as an escape route",
-   "link": "https://cryptoslate.com/us-targets-17-billion-russia-linked-crypto-payment-network-using-usdt-as-an-escape-route/",
-   "source": "CryptoSlate",
-   "published": "2026-10-02T11:00:15+00:00",
-   "summary": "OFAC’s October 1 designation expands blocking sanctions to the broader network, while FinCEN’s separate sub-agent transfer restriction remains proposed. The post US targets $17 billion Russia-linked crypto payment network using USDT as an…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/a7-sanctions-container-route.webp"
   },
   {
    "title": "Bitcoin treasuries may struggle to match Strategy, says Ammous",
@@ -343,14 +383,6 @@
    "published": "2026-10-02T10:17:39+00:00",
    "summary": "The ECB outlined three models for bringing central bank money onchain as financial institutions explore settlement infrastructure.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/ecb.png"
-  },
-  {
-   "title": "Coinbase completes Deribit switch, ending International Exchange trading",
-   "link": "https://cryptoslate.com/coinbase-completes-deribit-switch-ending-international-exchange-trading/",
-   "source": "CryptoSlate",
-   "published": "2026-10-02T09:50:28+00:00",
-   "summary": "The October 1 cutover leaves the old venue read-only and changes trading access, settlement and records for affected institutions. The post Coinbase completes Deribit switch, ending International Exchange trading appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-deribit-container-transfer.webp"
   },
   {
    "title": "Bitcoin reaches for $87K as short liquidations top $120M",
@@ -615,38 +647,6 @@
    "published": "2026-10-01T18:12:04+00:00",
    "summary": "OpenAI says the three broke its rules on handling sensitive information. The exits land after months of rogue-agent incidents, a trail of safety-team departures, and a new lawsuit.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/openai-decrypt-style-02-gID_7.jpg"
-  },
-  {
-   "title": "Illinois will postpone implementation of crypto tax following lawsuit",
-   "link": "https://cointelegraph.com/news/illinois-postpones-crypto-tax-industry-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T18:01:49+00:00",
-   "summary": "State officials agreed to delay the 0.2% crypto tax for six months after lawsuits and industry pushback claimed the bill was rushed through the legislature.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3W4DEMZ53S3Q9NK2GTJAT5R/hi-crypto-glossary-tax-2.jpg"
-  },
-  {
-   "title": "It's the Start of Uptober. Will Bitcoin Live Up to It?",
-   "link": "https://decrypt.co/379833/uptober-will-bitcoin-live-up-to-it",
-   "source": "Decrypt",
-   "published": "2026-10-01T17:11:44+00:00",
-   "summary": "Bitcoin enters its historically strongest month after a record-pace September, but a Fed hike and 5.3% Treasury yields are testing the bulls.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-02-gID_7.png"
-  },
-  {
-   "title": "Ethereum staking reward burn proposal EIP-8363 pulled from Hegota upgrade",
-   "link": "https://www.theblock.co/news/ecosystems/2026-10-01-ethereum-staking-reward-burn-proposal-eip-8363-pulled-hegota-upgrade-417419",
-   "source": "The Block",
-   "published": "2026-10-01T16:17:23+00:00",
-   "summary": "Co-author Jérôme de Tychey said industry participants and core contributors convinced him a scoping process was the wrong venue for an issuance change.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Metallic-Ethereum-in-Neon-Plasma.png"
-  },
-  {
-   "title": "Illinois Delays Controversial Crypto Tax Amid Industry Lawsuit",
-   "link": "https://decrypt.co/379830/illinois-delays-controversial-crypto-tax",
-   "source": "Decrypt",
-   "published": "2026-10-01T16:16:03+00:00",
-   "summary": "Illinois officials and crypto groups jointly asked a state court to delay the 0.2% Digital Asset Tax from Jan. 1 to July 1, 2027, while a legal challenge continues.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/judge-decrypt-style-gID_7.png"
   }
  ]
 }
