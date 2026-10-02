@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BEWON TestScan — Demo Explorer</title>
+<meta name="description" content="BEWON TestScan: a pretend blockchain explorer for learning. Nothing here exists on a real blockchain.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--ink:#12161c;--muted:#66707f;--line:#e3e8ef;--pri:#2f7fd1;--pri-soft:#e8f2fc;--up:#0ea66b;--warn:#b7791f;--warn-soft:#fff6e0;--down:#d9364f}
+@media (prefers-color-scheme:dark){:root{--bg:#07090d;--card:#0e131b;--ink:#e6e9ee;--muted:#8b94a3;--line:rgba(255,255,255,.09);--pri:#5aa9f0;--pri-soft:rgba(90,169,240,.12);--warn:#f2b33d;--warn-soft:rgba(242,179,61,.1)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,"Hind Siliguri",system-ui,sans-serif}
+a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header{background:var(--card);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:12px;padding-block:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--ink)}
+.brand img{width:34px;height:34px;border-radius:50%}
+.badge{font:700 11px/1 ui-monospace,monospace;letter-spacing:.08em;padding:5px 8px;border-radius:6px;background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn)}
+header nav{margin-left:auto;display:flex;gap:14px;font-size:14px}
+.warn{background:var(--warn-soft);color:var(--warn);border-bottom:1px solid var(--line);font-size:13px}
+.warn .wrap{padding-block:8px}
+.hero{padding:22px 0 6px}
+.hero h1{margin:0 0 10px;font-size:20px}
+form.s{display:flex;gap:8px}
+form.s input{flex:1;min-width:0;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:14px ui-monospace,monospace}
+form.s button,.btn{padding:11px 18px;border-radius:10px;border:0;background:var(--pri);color:#fff;font-weight:700;cursor:pointer;font-size:14px}
+main{display:grid;gap:16px;padding:14px 0 40px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.stats span{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.stats b{font:700 18px ui-monospace,monospace}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card h2{margin:0;padding:14px 16px;font-size:15px;border-bottom:1px solid var(--line)}
+.row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);font-size:13.5px}
+.row:last-child{border-bottom:0}
+.ic{width:38px;height:38px;border-radius:10px;background:var(--pri-soft);color:var(--pri);display:grid;place-items:center;font:700 12px ui-monospace,monospace}
+.row small{display:block;color:var(--muted);font-size:12px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.el{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block}
+.val{font:600 12.5px ui-monospace,monospace;padding:4px 8px;border:1px solid var(--line);border-radius:6px;white-space:nowrap}
+.kv{display:grid}
+.kv>div{display:grid;grid-template-columns:190px minmax(0,1fr);gap:12px;padding:13px 16px;border-bottom:1px solid var(--line);font-size:14px}
+.kv>div:last-child{border-bottom:0}
+.kv>div>span:first-child{color:var(--muted)}
+.kv .mono{word-break:break-all;font-size:13px}
+.ok{display:inline-block;padding:3px 9px;border-radius:6px;font:700 12px ui-monospace,monospace;background:rgba(14,166,107,.12);color:var(--up);border:1px solid var(--up)}
+.pend{background:var(--warn-soft);color:var(--warn);border-color:var(--warn)}
+.mine{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:5px;font:700 10.5px ui-monospace,monospace;background:var(--pri-soft);color:var(--pri)}
+.empty{padding:26px 16px;color:var(--muted);text-align:center}
+.wm{position:relative}.wm::after{content:"DEMO";position:absolute;inset:0;display:grid;place-items:center;font:800 90px Inter,sans-serif;letter-spacing:.12em;color:var(--ink);opacity:.045;transform:rotate(-16deg);pointer-events:none}
+footer{color:var(--muted);font-size:12.5px;padding:0 0 30px;text-align:center}
+@media (max-width:800px){.cols{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.kv>div{grid-template-columns:minmax(0,1fr);gap:2px}header nav{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="#/"><img src="../logo.png" alt="">BEWON TestScan</a><span class="badge">DEMO</span>
+  <nav><a href="#/" id="nHome"></a><a href="../#/demo/wallet" id="nWallet"></a><a href="../" id="nSite"></a></nav></div></header>
+<div class="warn"><div class="wrap" id="warn"></div></div>
+<div class="wrap">
+  <div class="hero"><h1 id="h1"></h1><form class="s" id="sf"><input id="q" autocomplete="off" spellcheck="false"><button id="sb"></button></form></div>
+  <main id="app"></main>
+  <footer id="ft"></footer>
+</div>
+<script>
+"use strict";
+/* BEWON TestScan — a pretend explorer for learning. It reads the visitor's own demo activity from this browser
+   and fills the rest of the chain with clearly pretend blocks. Nothing here is on a real blockchain. */
+let LANG="bn"; try{ const l=localStorage.getItem("lang"); if(l&&l!=="bn") LANG="en"; }catch(e){}
+const tr=(bn,en)=>LANG==="en"?en:bn, $=s=>document.querySelector(s), app=$("#app");
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const BT=3000, EPOCH=Date.UTC(2026,0,1), height=()=>40000000+Math.floor((Date.now()-EPOCH)/BT), btime=n=>EPOCH+(n-40000000)*BT;
+function rng(a){ return ()=>{ a|=0; a=a+0x6D2B79F5|0; let t=Math.imul(a^a>>>15,1|a); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+const hexR=(r,n)=>Array.from({length:n},()=>Math.floor(r()*16).toString(16)).join("");
+const addrR=r=>"0xDEMO"+hexR(r,34).toUpperCase();
+function simBlock(n){ const r=rng(n*2654435761%4294967296), cnt=2+Math.floor(r()*5), txs=[];
+  for(let i=0;i<cnt;i++){ const tail=hexR(r,54), kind=r(); txs.push({sim:true,hash:"0x"+n.toString(16).padStart(8,"0")+i.toString(16).padStart(2,"0")+tail,block:n,t:btime(n),from:addrR(r),to:addrR(r),
+    amt:+(r()*(kind<.7?5:900)).toFixed(4),coin:kind<.7?"tBNB":"dUSDT",fee:0.0005,feeCoin:"tBNB",net:"BNB Testnet (demo)",label:kind<.7?"Transfer":"Token transfer",done:true}); }
+  return {n,t:btime(n),val:"Demo Validator "+(1+n%21),txs}; }
+function mine(){ let d=null; try{ d=JSON.parse(localStorage.getItem("bewon_demo_v1")||"null"); }catch(e){} if(!d||!Array.isArray(d.wtx)) return {d:null,txs:[]};
+  const H=height(), need={BEP20:15,TRC20:20,ERC20:6};
+  const txs=d.wtx.map(x=>{ const conf=Math.max(0,Math.floor((Date.now()-new Date(x.t))/1000)), nd=need[x.net]||1, done=x.done||!["dep","wd"].includes(x.type)||conf>=nd;
+    return {mine:true,hash:x.hash,block:Math.min(x.block||H,H),t:+new Date(x.t),from:x.from||"—",to:x.to||"—",amt:x.amt||0,coin:x.coin||"USDT",fee:x.fee||0,feeCoin:x.type==="w3"?"tBNB":"USDT",net:x.net||"—",
+      label:x.type==="dep"?"Deposit":x.type==="wd"?"Withdraw":x.type==="p2p"?"P2P "+(x.label||""):(x.label||"Web3"),done,conf:Math.min(conf,nd),need:nd}; });
+  return {d,txs}; }
+function ago(t){ const s=Math.max(0,Math.round((Date.now()-t)/1000)); if(s<60) return tr(`${s} সেকেন্ড আগে`,`${s} secs ago`); const m=Math.round(s/60); if(m<60) return tr(`${m} মিনিট আগে`,`${m} mins ago`); const h=Math.round(m/60); if(h<48) return tr(`${h} ঘণ্টা আগে`,`${h} hrs ago`); return tr(`${Math.round(h/24)} দিন আগে`,`${Math.round(h/24)} days ago`); }
+const sh=(h,a=10,b=6)=>h.length>a+b+3?h.slice(0,a)+"…"+h.slice(-b):h;
+const num=x=>(+x).toLocaleString("en-US",{maximumFractionDigits:6});
+const aLink=a=>`<a class="mono" href="#/address/${encodeURIComponent(a)}">${esc(a)}</a>`;
+function findTx(h){ h=String(h||"").trim(); const m=mine().txs.find(x=>x.hash.toLowerCase()===h.toLowerCase()); if(m) return m;
+  if(/^0x[0-9a-f]{64}$/i.test(h)){ const n=parseInt(h.slice(2,10),16), i=parseInt(h.slice(10,12),16); if(n>=40000000&&n<=height()){ const t=simBlock(n).txs[i]; if(t&&t.hash===h.toLowerCase()) return t; } } return null; }
+function txRow(x){ return `<div class="row"><div class="ic">Tx</div><div><a class="mono el" href="#/tx/${x.hash}">${sh(x.hash,14,8)}</a>${x.mine?`<span class="mine">${tr("আপনার","YOURS")}</span>`:""}<small class="el">${esc(x.label)} · ${tr("থেকে","From")} ${esc(sh(x.from,10,4))} → ${esc(sh(x.to,10,4))}</small></div><div style="text-align:right"><span class="val">${num(x.amt)} ${esc(x.coin)}</span><small>${ago(x.t)}</small></div></div>`; }
+function pageHome(){ const H=height(), my=mine().txs, blocks=[]; for(let i=0;i<8;i++) blocks.push(simBlock(H-i));
+  const sim=blocks.slice(0,3).flatMap(b=>b.txs).slice(0,8-Math.min(my.length,4)), list=my.slice(0,4).concat(sim);
+  app.innerHTML=`<div class="stats"><div><span>${tr("সর্বশেষ ব্লক","Latest block")}</span><b>${H.toLocaleString("en-US")}</b></div><div><span>${tr("ব্লকের সময়","Block time")}</span><b>3.0 s</b></div><div><span>${tr("আপনার লেনদেন","Your transactions")}</span><b>${my.length}</b></div><div><span>${tr("নেটওয়ার্ক","Network")}</span><b>DEMO</b></div></div>
+   <div class="cols"><div class="card"><h2>${tr("সর্বশেষ ব্লক","Latest blocks")}</h2>${blocks.map(b=>`<div class="row"><div class="ic">Bk</div><div><a class="mono" href="#/block/${b.n}">${b.n}</a><small>${ago(b.t)}</small></div><div style="text-align:right"><span class="el">${b.val}</span><small>${b.txs.length} txns</small></div></div>`).join("")}</div>
+   <div class="card"><h2>${tr("সর্বশেষ লেনদেন","Latest transactions")}</h2>${list.map(txRow).join("")}</div></div>
+   ${my.length?`<div class="card"><h2>${tr("আপনার ডেমো লেনদেন","Your demo transactions")} (${my.length})</h2>${my.slice(0,40).map(txRow).join("")}</div>`:`<div class="card"><div class="empty">${tr("আপনার এখনো কোনো ডেমো লেনদেন নেই। BEWON-এর ডেমো ওয়ালেটে একটা ডিপোজিট করুন, তারপর Hash দিয়ে এখানে খুঁজুন।","You have no demo transactions yet. Make a deposit in the BEWON demo wallet, then search its hash here.")} <a href="../#/demo/wallet">${tr("ডেমো ওয়ালেট খুলুন →","Open demo wallet →")}</a></div></div>`}`; }
+function pageTx(h){ const x=findTx(h); if(!x){ app.innerHTML=`<div class="card"><div class="empty">${tr("এই Hash পাওয়া যায়নি। Hash পুরোটা ঠিকমতো কপি হয়েছে কিনা দেখুন।","Transaction not found. Check that the whole hash was copied correctly.")}</div></div>`; return; }
+  const H=height(), conf=x.mine&&!x.done?x.conf:Math.max(1,H-x.block+1);
+  app.innerHTML=`<div class="card wm"><h2>${tr("লেনদেনের বিবরণ","Transaction details")}${x.mine?`<span class="mine">${tr("আপনার","YOURS")}</span>`:""}</h2><div class="kv">
+    <div><span>Transaction Hash</span><span class="mono">${x.hash}</span></div>
+    <div><span>Status</span><span>${x.done?`<span class="ok">✔ Success</span>`:`<span class="ok pend">⏳ Pending ${x.conf}/${x.need}</span>`}</span></div>
+    <div><span>Block</span><span><a class="mono" href="#/block/${x.block}">${x.block}</a> <small style="color:var(--muted)">${x.done?num(conf)+" "+tr("কনফার্মেশন","block confirmations"):""}</small></span></div>
+    <div><span>Timestamp</span><span>${ago(x.t)} (${new Date(x.t).toUTCString()})</span></div>
+    <div><span>${tr("ধরন","Method")}</span><span><span class="val">${esc(x.label)}</span></span></div>
+    <div><span>From</span><span>${aLink(x.from)}</span></div>
+    <div><span>To</span><span>${aLink(x.to)}</span></div>
+    <div><span>Value</span><span><b>${num(x.amt)} ${esc(x.coin)}</b> <span class="badge">DEMO</span></span></div>
+    <div><span>Transaction Fee</span><span>${num(x.fee)} ${esc(x.feeCoin)}</span></div>
+    <div><span>Network</span><span>${esc(x.net)}</span></div></div></div>
+   <div class="card"><div class="empty" style="text-align:left">💡 ${tr("আসল এক্সপ্লোরারেও (যেমন BscScan, Etherscan, Tronscan) ঠিক এই তথ্যগুলো দেখা যায়। টাকা পাঠানোর পর Hash দিয়ে খুঁজে Status \"Success\" আর To ঠিকানা মিলিয়ে নিন।","Real explorers (BscScan, Etherscan, Tronscan) show these same fields. After sending money, search the hash and check that Status is \"Success\" and the To address matches.")}</div></div>`; }
+function pageBlock(n){ n=+n; const H=height(); if(!(n>=40000000&&n<=H)){ app.innerHTML=`<div class="card"><div class="empty">${tr("এই ব্লক পাওয়া যায়নি।","Block not found.")}</div></div>`; return; }
+  const b=simBlock(n), my=mine().txs.filter(x=>x.block===n), all=my.concat(b.txs);
+  app.innerHTML=`<div class="card wm"><h2>${tr("ব্লক","Block")} #${n}</h2><div class="kv"><div><span>Block Height</span><span class="mono">${n} &nbsp; ${n>40000000?`<a href="#/block/${n-1}">‹ ${tr("আগের","Prev")}</a>`:""} ${n<H?` · <a href="#/block/${n+1}">${tr("পরের","Next")} ›</a>`:""}</span></div>
+    <div><span>Timestamp</span><span>${ago(b.t)} (${new Date(b.t).toUTCString()})</span></div><div><span>Transactions</span><span>${all.length}</span></div><div><span>Validated by</span><span>${b.val}</span></div>
+    <div><span>Block Hash</span><span class="mono">0x${hexR(rng(n+7),64)}</span></div><div><span>Parent Hash</span><span class="mono">0x${hexR(rng(n+6),64)}</span></div><div><span>Confirmations</span><span>${num(H-n+1)}</span></div></div></div>
+   <div class="card"><h2>${tr("এই ব্লকের লেনদেন","Transactions in this block")}</h2>${all.map(txRow).join("")}</div>`; }
+function pageAddr(a){ a=decodeURIComponent(a||""); const {d,txs}=mine(), list=txs.filter(x=>x.from===a||x.to===a), w=d&&d.w3&&d.w3.addr===a?d.w3:null;
+  app.innerHTML=`<div class="card wm"><h2>${tr("ঠিকানা","Address")}${w?`<span class="mine">${tr("আপনার ওয়ালেট","YOUR WALLET")}</span>`:""}</h2><div class="kv"><div><span>Address</span><span class="mono">${esc(a)}</span></div>
+     ${w?Object.entries(w.bal||{}).map(([k,v])=>`<div><span>${esc(k)} Balance</span><span><b>${num(v)}</b> <span class="badge">DEMO</span></span></div>`).join("")+`<div><span>NFT</span><span>${(w.nfts||[]).length}</span></div>`:""}
+     <div><span>Transactions</span><span>${list.length}</span></div></div></div>
+   <div class="card"><h2>${tr("লেনদেন","Transactions")}</h2>${list.length?list.map(txRow).join(""):`<div class="empty">${tr("এই ঠিকানায় আপনার কোনো ডেমো লেনদেন নেই।","No demo transactions of yours for this address.")}</div>`}</div>`; }
+function route(){ const p=location.hash.replace(/^#\/?/,"").split("/"); window.scrollTo(0,0);
+  if(p[0]==="tx") pageTx(p[1]); else if(p[0]==="block") pageBlock(p[1]); else if(p[0]==="address") pageAddr(p.slice(1).join("/")); else pageHome(); }
+$("#sf").onsubmit=e=>{ e.preventDefault(); const v=$("#q").value.trim(); if(!v) return; location.hash=/^\d+$/.test(v)?"#/block/"+v:/^0x[0-9a-f]{64}$/i.test(v)?"#/tx/"+v:"#/address/"+encodeURIComponent(v); $("#q").value=""; };
+document.documentElement.lang=LANG;
+$("#h1").textContent=tr("BEWON ডেমো ব্লকচেইন এক্সপ্লোরার","BEWON demo blockchain explorer");
+$("#q").placeholder=tr("Hash / ব্লক নম্বর / ঠিকানা দিয়ে খুঁজুন","Search by hash / block number / address"); $("#sb").textContent=tr("খুঁজুন","Search");
+$("#nHome").textContent=tr("হোম","Home"); $("#nWallet").textContent=tr("ডেমো ওয়ালেট","Demo wallet"); $("#nSite").textContent="BEWON Signals";
+$("#warn").textContent=tr("⚠️ এটা শেখার জন্য বানানো নকল এক্সপ্লোরার। এখানকার ব্লক, Hash, ঠিকানা আর ব্যালান্স কোনো আসল ব্লকচেইনে নেই এবং এগুলোর কোনো আর্থিক মূল্য নেই।","⚠️ This is a pretend explorer for learning. The blocks, hashes, addresses and balances here do not exist on any real blockchain and have no monetary value.");
+$("#ft").textContent="BEWON TestScan · DEMO · "+tr("আপনার লেনদেন শুধু আপনার এই ব্রাউজারেই দেখা যায়।","Your transactions are visible only in this browser.");
+window.addEventListener("hashchange",route); route();
+setInterval(()=>{ const p=location.hash.replace(/^#\/?/,"").split("/")[0]; if(!p||p==="tx"&&document.querySelector(".pend")) route(); },3000);
+</script>
+</body>
+</html>
