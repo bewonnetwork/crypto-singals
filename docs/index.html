@@ -972,6 +972,14 @@ const WHY_EN = [
   [/^EMA 9\/21 ক্রস \+ RSI ঠিক সীমায় \+ ভলিউম বেশি$/, "EMA 9/21 cross + RSI in range + above-average volume"],
   [/^EMA 9\/21 ক্রস \+ RSI ঠিক সীমায়$/, "EMA 9/21 cross + RSI in range"],
   [/^(\S+) বড় ট্রেন্ড একই দিকে$/, "$1 higher-timeframe trend agrees"],
+  [/^(\S+) বড় ট্রেন্ড একই দিকে নয়$/, "$1 higher-timeframe trend does not agree"],
+  [/^(\S+) EMA 9\/21 পক্ষে$/, "$1 EMA 9/21 in favour"],
+  [/^(\S+) EMA 9\/21 বিপক্ষে$/, "$1 EMA 9/21 against"],
+  [/^MACD মোমেন্টাম পক্ষে$/, "MACD momentum in favour"],
+  [/^MACD মোমেন্টাম বিপক্ষে$/, "MACD momentum against"],
+  [/^ট্রেন্ডের শক্তি ADX (\d+)$/, "Trend strength ADX $1"],
+  [/^BTC একই দিকে$/, "BTC moving the same way"],
+  [/^BTC উল্টো দিকে$/, "BTC moving the other way"],
   [/^(\S+) বড় ট্রেন্ড উল্টো দিকে$/, "$1 higher-timeframe trend is opposite"],
   [/^দাম EMA 200-এর ওপরে$/, "Price above EMA 200"],
   [/^দাম EMA 200-এর নিচে$/, "Price below EMA 200"],
@@ -1032,9 +1040,10 @@ function liveStream(streams,onMsg){ let ws=null, dead=false, last=0, rt=null;
 function every(ms, fn){ timers.push(setInterval(fn, ms)); }
 /* result of one closed signal in %, by the bot's own rules: half is closed at TP1 and the stop moves to entry */
 function sigPct(t){ const e=+t.entry; if(!e||!t.result) return null; const m1=Math.abs(t.tp1-e)/e*100, m2=Math.abs(t.tp2-e)/e*100, ms=Math.abs(e-t.sl)/e*100;
+  if(t.result==="CLOSED") return t.exit?(t.exit/e-1)*100*(t.side==="BUY"?1:-1):null;
   return t.result==="TP2"?(m1+m2)/2:t.result==="TP1"?m1/2:t.result==="SL"?-ms:null; }
 function pctCell(t){ const v=sigPct(t); return v==null?`<span class="muted">—</span>`:`<b class="${v>=0?"up":"down"}">${v>=0?"+":""}${v.toFixed(2)}%</b>`; }
-function pillResult(r){ const m={TP2:["p-tp2","🎯 TP2"],TP1:["p-tp1","✅ TP1"],SL:["p-sl","❌ SL"],EXPIRED:["p-exp","⌛ Expired"]}[r]||["p-flat",r];
+function pillResult(r){ const m={TP2:["p-tp2","🎯 TP2"],TP1:["p-tp1","✅ TP1"],SL:["p-sl","❌ SL"],EXPIRED:["p-exp","⌛ Expired"],CLOSED:["p-flat","🔒 "+tr("হাতে বন্ধ","Closed")]}[r]||["p-flat",r];
   return `<span class="pill ${m[0]}">${m[1]}</span>`; }
 function isFx(t){ return t.market==="forex"; }
 function nameOf(t){ return isFx(t) ? (t.name||t.coin) : `${t.coin}/USDT`; }
@@ -1047,8 +1056,10 @@ function pipsOf(t,v){ if(!isFx(t)) return ""; const ps=t.coin.includes("JPY")?0.
 function pillOpen(){ return `<span class="pill p-open">● ${tr("চলছে","Active")}</span>`; }
 function gradeOf(c){ return c==null?"—":c>=85?"A+":c>=78?"A":c>=70?"B":c>=60?"C":"D"; }
 function confColor(c){ return c>=75?"var(--up)":c>=60?"var(--accent)":"var(--down)"; }
-function confBlock(t){ if(t.conf==null) return "";
+function isMine(t){ return t.src==="manual"; }
+function confBlock(t){ if(t.conf==null&&!isMine(t)) return "";
   const why=(t.why||[]).map(w=>w.startsWith("⚠")?`<li class="warn">${esc(whyText(w.replace(/^⚠\s*/,"")))}</li>`:`<li>${esc(whyText(w))}</li>`).join("");
+  if(isMine(t)) return `<div class="conf"><div class="top"><span class="muted">👤 ${tr("অ্যাডমিনের নিজের সিগনাল · ইঞ্জিন মিলিয়ে দেখেছে","Admin's own signal · engine check")}</span><b style="color:var(--accent)">${esc(t.chk||"")}</b></div>${why?`<ul class="why">${why}</ul>`:""}${t.note?`<p class="muted" style="margin:0;font-size:12.5px">📝 ${esc(t.note)}</p>`:""}</div>`;
   return `<div class="conf"><div class="top"><span class="muted">Confidence · ${tr("গ্রেড","Grade")} <b class="grade" style="color:${confColor(t.conf)}">${gradeOf(t.conf)}</b></span><b style="color:${confColor(t.conf)}">${t.conf}%</b></div>
     <div class="cbar"><i style="width:${t.conf}%;background:${confColor(t.conf)}"></i></div>${why?`<ul class="why">${why}</ul>`:""}</div>`; }
 function pillSide(s){ return `<span class="pill ${s==="BUY"?"p-buy":"p-sell"}">${s==="BUY"?"▲ BUY":"▼ SELL"}</span>`; }
@@ -1463,7 +1474,11 @@ function recentTable(s){
   return `<div class="card tbl-wrap"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th>${tr("দিক","Side")}</th><th class="r">Entry</th><th class="r hide-sm">TP1</th><th class="r hide-sm">SL</th><th>${tr("অবস্থা","Status")}</th><th class="r hide-sm">Conf.</th><th class="hide-sm">${tr("সময়","Time")}</th></tr></thead><tbody>
   ${rows.map(t=>`<tr class="link" data-go="${goOf(t)}"><td><span class="sym">${logoOf(t)}${isFx(t)?t.name||t.coin:t.coin}</span></td><td>${pillSide(t.side)}</td><td class="r num">${px(t,t.entry)}</td><td class="r num hide-sm">${px(t,t.tp1)}</td><td class="r num hide-sm">${px(t,t.sl)}</td><td>${t.live?pillOpen():pillResult(t.result)}</td><td class="r hide-sm">${confPill(t)}</td><td class="muted hide-sm">${when(t.opened)}</td></tr>`).join("")}
   </tbody></table></div>`; }
-function confPill(t){ return t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${gradeOf(t.conf)} · ${t.conf}%</span>`:'<span class="muted">—</span>'; }
+function watchBlock(s){ const w=(s.watch||[]).slice(0,6); if(!w.length) return "";
+  return `<div class="card" style="padding:14px 16px;margin-bottom:14px"><h3 style="margin:0 0 4px;font-size:15px">👀 Market Watch</h3><p class="muted" style="margin:0 0 10px;font-size:12.5px">${tr("সেটআপ তৈরি হচ্ছে কিন্তু পাকা নয় — এগুলো ট্রেড সিগনাল নয়, তাই Entry/TP/SL নেই।","Setups forming but not confirmed — these are not trade signals, so no Entry/TP/SL.")}</p>
+  ${w.map(t=>{ const miss=(t.why||[]).filter(x=>x.startsWith("⚠")).length, ok=(t.why||[]).length-miss;
+    return `<a href="${goOf(t)}" style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line);color:inherit;text-decoration:none"><span class="sym">${logoOf(t)}<span><b>${esc(isFx(t)?t.name||t.coin:t.coin)}</b> ${pillSide(t.side)}<div class="muted" style="font-size:12px">✓ ${ok} · ⚠ ${miss} · ${ago(t.time)}</div></span></span><span class="cpill" style="color:${confColor(t.score)}">${gradeOf(t.score)} · ${t.score}/100</span></a>`; }).join("")}</div>`; }
+function confPill(t){ return isMine(t)?`<span class="cpill" style="color:var(--accent)">👤 ${esc(t.chk||"Admin")}</span>`:t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${gradeOf(t.conf)} · ${t.conf}%</span>`:'<span class="muted">—</span>'; }
 
 async function fearGreed(s){
   let v=null,l="";
@@ -1593,6 +1608,7 @@ async function pageSignals(){
       <div class="card stat"><span class="k">${tr("সময় শেষ","Expired")}</span><span class="v">${st.expired}</span></div>
     </div></section>
   ${bandStats(s)}
+  ${(s.watch||[]).length?`<section>${watchBlock(s)}</section>`:""}
   <section><div class="sec-head"><h2>${tr("চলমান সিগনাল","Active signals")} <span class="muted" style="font-weight:500">(${s.open.length})</span></h2></div>
     ${s.open.length?`<div class="tickets" id="openT">${s.open.map(t=>ticket(t)).join("")}</div>`:`<div class="card empty">${tr("এখন কোনো সিগনাল চলছে না।","No signal is active right now.")}</div>`}</section>
   <section><div class="toolbar"><h2>${tr("ইতিহাস","History")}</h2><div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -1835,6 +1851,7 @@ async function pageEngine(){
 
   <section>
     <div class="sec-head"><div><span class="kicker">⚡ ${tr("হঠাৎ ওঠানামা","Volatility")}</span><h2>${tr("সাম্প্রতিক অ্যালার্ট","Recent alerts")}</h2><p class="sub">${tr("৩০ মিনিটে ৩% বা বেশি নড়লে বট যে সতর্কতা পাঠিয়েছে।","Warnings the engine sent when a coin moved 3% or more within 30 minutes.")}</p></div></div>
+    ${watchBlock(s)}
     ${(s.alerts||[]).length?`<div class="card tbl-wrap"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("পরিবর্তন","Move")}</th><th class="r">${tr("দাম","Price")}</th><th class="r">${tr("কখন","When")}</th></tr></thead><tbody>${s.alerts.slice(0,10).map(a=>`<tr data-go="#/coin/${esc(a.coin)}"><td>${logo(a.coin)} <b>${esc(a.coin)}</b></td><td class="r ${a.ch>=0?"up":"down"}">${a.ch>=0?"🚀 +":"🔻 "}${(+a.ch).toFixed(2)}% <span class="muted">/ ${a.mins||30}m</span></td><td class="r">${fmtPx(a.price)}</td><td class="r muted">${ago(a.time)}</td></tr>`).join("")}</tbody></table></div>`
       :`<div class="card dm-empty">${tr("এখনো কোনো অ্যালার্ট নেই। মার্কেট শান্ত থাকলে অ্যালার্ট আসে না।","No alerts yet. A calm market sends none.")}</div>`}
   </section>
@@ -1923,7 +1940,7 @@ function demoLoad(){ let d=null; try{ d=JSON.parse(localStorage.getItem(DEMO_KEY
   if(!d||typeof d!=="object"){ d={uid:"BW"+Math.random().toString(36).slice(2,8).toUpperCase(),name:"",since:new Date().toISOString(),cash:DEMO_START,hold:{},tx:[{t:new Date().toISOString(),type:"start",usdt:DEMO_START}],jr:[]}; demoSave(d); }
   d.hold=d.hold||{}; d.tx=d.tx||[]; d.jr=d.jr||[]; d.orders=d.orders||[]; d.wtx=d.wtx||[]; d.p2p=d.p2p||[]; d.kyc=d.kyc||{lvl:0,at:0}; d.fut=d.fut||[]; d.futH=d.futH||[]; d.earn=d.earn||[]; d.alerts=d.alerts||[]; d.sec=d.sec||{};
   d.w3=Object.assign({on:false,seed:[],addr:"",net:W3_NETS[0],bal:{},tokens:["tBNB"],nfts:[],claimed:{},faucet:0},d.w3||{});
-  d.bot=Object.assign({on:false,amt:200,min:70,max:5,tp:"tp2",coins:[],taken:{}},d.bot||{}); if(!Array.isArray(d.bot.coins)) d.bot.coins=[]; d.bot.taken=d.bot.taken||{}; return d; }
+  d.bot=Object.assign({on:false,amt:200,min:70,max:5,tp:"tp2",coins:[],taken:{},mine:true},d.bot||{}); if(!Array.isArray(d.bot.coins)) d.bot.coins=[]; d.bot.taken=d.bot.taken||{}; return d; }
 function demoSave(d){ try{ localStorage.setItem(DEMO_KEY,JSON.stringify(d)); }catch(e){} }
 const usd=x=>(+x).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
 const qtyF=x=>{ x=+x; return x>=100?x.toFixed(2):x>=1?x.toFixed(4):x.toPrecision(4); };
@@ -1953,7 +1970,7 @@ function demoTick(d,PX,sig){ let n=0;
       if(opp){ dmSell(d,c,h.qty,PX[c],{bot:true,why:"SELL signal"}); n++; }
       else if(h.sig&&!still){ dmSell(d,c,h.qty,PX[c],{bot:true,why:"signal closed"}); n++; } });
     open.forEach(t=>{ const k=key(t), p=PX[t.coin]; if(t.side!=="BUY"||d.bot.taken[k]||!p) return;
-      if((t.conf??0)<d.bot.min) return; if(d.bot.coins.length&&!d.bot.coins.includes(t.coin)) return;
+      if(t.src==="manual"?!d.bot.mine:(t.conf??0)<d.bot.min) return; if(d.bot.coins.length&&!d.bot.coins.includes(t.coin)) return;
       if(!(p>t.sl&&p<t.tp1)){ d.bot.taken[k]="skip"; n++; return; }
       const nb=Object.values(d.hold).filter(h=>h.bot).length; if(nb>=d.bot.max||d.cash<d.bot.amt||d.hold[t.coin]) return;
       dmBuy(d,t.coin,d.bot.amt,p,{bot:true}); const h=d.hold[t.coin]; h.tp=d.bot.tp==="tp1"?t.tp1:t.tp2; h.sl=t.sl; h.bot=true; h.sig=k; d.bot.taken[k]="buy"; n++; });
@@ -2406,6 +2423,7 @@ async function pageDemo(){
           <div class="dx-sw ${b.on?"on":""}"><div><b>${b.on?tr("বট চালু আছে","Bot is ON"):tr("বট বন্ধ আছে","Bot is OFF")}</b><span>${b.on?tr("নতুন BUY সিগনাল এলে নিজে ডেমো টাকায় কিনবে","Buys new BUY signals with demo money by itself"):tr("চালু করলে বট নিজে ডেমো ট্রেড করবে","Turn on and the bot will place demo trades")}</span></div><button id="bxT" aria-pressed="${b.on}">${b.on?"ON":"OFF"}</button></div>
           <label class="dm-f">${tr("প্রতি ট্রেডে কত ডেমো USDT","Demo USDT per trade")}<input id="bxA" type="number" min="10" max="5000" step="10" value="${b.amt}"></label>
           <label class="dm-f">${tr("কমপক্ষে কত Confidence হলে কিনবে","Minimum confidence to buy")}<select id="bxM">${[[60,"60%+ (C)"],[70,"70%+ (B)"],[78,"78%+ (A)"],[85,"85%+ (A+)"]].map(([v,l])=>`<option value="${v}"${b.min==v?" selected":""}>${l}</option>`).join("")}</select></label>
+          <label class="dm-f">${tr("অ্যাডমিনের নিজের সিগনাল (👤) ফলো করবে","Follow admin's own signals (👤)")}<select id="bxN"><option value="1"${b.mine?" selected":""}>${tr("হ্যাঁ, সবসময়","Yes, always")}</option><option value="0"${b.mine?"":" selected"}>${tr("না, শুধু ইঞ্জিনের সিগনাল","No, engine signals only")}</option></select></label>
           <label class="dm-f">${tr("একসাথে সর্বোচ্চ কয়টা ট্রেড","Max open trades at once")}<select id="bxX">${[1,2,3,5,8].map(v=>`<option${b.max==v?" selected":""}>${v}</option>`).join("")}</select></label>
           <label class="dm-f">${tr("কোথায় লাভ নিয়ে বেচবে","Where to take profit")}<select id="bxP"><option value="tp1"${b.tp==="tp1"?" selected":""}>TP1 (${tr("কাছের লক্ষ্য, কম ঝুঁকি","nearer target, safer")})</option><option value="tp2"${b.tp!=="tp1"?" selected":""}>TP2 (${tr("দূরের লক্ষ্য, বেশি লাভ","further target, more profit")})</option></select></label>
           <div class="dm-f">${tr("কোন কোন কয়েনে ট্রেড করবে (কিছু না বাছলে সব)","Which coins to trade (none selected = all)")}<div class="bx-c">${(s.coins||SITE.botCoins).map(c=>`<button type="button" data-bc="${c}" class="${b.coins.includes(c)?"on":""}">${c}</button>`).join("")}</div></div>
@@ -2428,7 +2446,7 @@ async function pageDemo(){
       $("#bxP").onchange=e=>{ d.bot.tp=e.target.value; demoSave(d); };
       $("#bxT").onclick=()=>{ d.bot.on=!d.bot.on; demoSave(d); draw(); if(d.bot.on) tick(); };
       $("#bxA").onchange=e=>{ d.bot.amt=Math.max(10,Math.min(5000,+e.target.value||200)); demoSave(d); };
-      $("#bxM").onchange=e=>{ d.bot.min=+e.target.value; demoSave(d); }; $("#bxX").onchange=e=>{ d.bot.max=+e.target.value; demoSave(d); }; };
+      $("#bxM").onchange=e=>{ d.bot.min=+e.target.value; demoSave(d); }; $("#bxX").onchange=e=>{ d.bot.max=+e.target.value; demoSave(d); }; $("#bxN").onchange=e=>{ d.bot.mine=e.target.value==="1"; demoSave(d); }; };
     const tick=async()=>{ if(!alive()) return; const sg=d.bot.on?await demoSignalsFresh():null; await demoPrices([...need(),...(sg?sg.open.filter(t=>!isFx(t)).map(t=>t.coin):[])],PX); if(!alive()) return; if(demoTick(d,PX,sg)) demoSave(d);
       if(!document.activeElement||!["INPUT","SELECT"].includes(document.activeElement.tagName)) draw(); };
     draw(); await tick(); every(15000,tick); return;
