@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-3-2026",
+   "type": "trending",
+   "date": "2026-10-03T14:50:09+00:00",
+   "title": "Trending in Crypto — October 3, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (M87, PONS, QNT…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "M87",
+      "name": "MESSIER",
+      "rank": 914,
+      "price": 2.1524848654858138e-05,
+      "ch": 3.55
+     },
+     {
+      "sym": "PONS",
+      "name": "Pons",
+      "rank": 160,
+      "price": 0.41933970200656434,
+      "ch": -18.74
+     },
+     {
+      "sym": "QNT",
+      "name": "Quant",
+      "rank": 34,
+      "price": 249.0725419210893,
+      "ch": -0.46
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 108,
+      "price": 0.009266520423611715,
+      "ch": -5.41
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 22,
+      "price": 4.642120804417823,
+      "ch": -5.34
+     },
+     {
+      "sym": "SAND",
+      "name": "The Sandbox",
+      "rank": 183,
+      "price": 0.07430118197100664,
+      "ch": 15.84
+     },
+     {
+      "sym": "ZRO",
+      "name": "LayerZero",
+      "rank": 94,
+      "price": 2.0721070779568658,
+      "ch": 5.16
+     },
+     {
+      "sym": "LINK",
+      "name": "Chainlink",
+      "rank": 13,
+      "price": 13.903834099781589,
+      "ch": -2.77
+     },
+     {
+      "sym": "TAO",
+      "name": "Bittensor",
+      "rank": 37,
+      "price": 292.33777590300986,
+      "ch": -5.98
+     },
+     {
+      "sym": "AAVE",
+      "name": "Aave",
+      "rank": 41,
+      "price": 179.93253241083227,
+      "ch": -1.92
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 84812,
+      "ch": -1.37,
+      "vol": 25379355611,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2682.7,
+      "ch": -1.62,
+      "vol": 11049373623,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 119.59,
+      "ch": -1.53,
+      "vol": 2517473990,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.49,
+      "ch": -2.5,
+      "vol": 2315641301,
+      "rank": 5
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 88.76,
+      "ch": -1.57,
+      "vol": 798990476,
+      "rank": 11
+     },
+     {
+      "sym": "SUI",
+      "name": "Sui",
+      "price": 1.18,
+      "ch": -0.21,
+      "vol": 753589490,
+      "rank": 27
+     },
+     {
+      "sym": "DOGE",
+      "name": "Dogecoin",
+      "price": 0.093356,
+      "ch": -2.9,
+      "vol": 741125645,
+      "rank": 12
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1302.82,
+      "ch": -5.7,
+      "vol": 692385174,
+      "rank": 10
+     }
+    ]
+   }
+  },
+  {
    "slug": "what-is-a-stop-loss",
    "type": "learn",
    "date": "2026-10-03T10:27:35+00:00",
@@ -26,5 +174,5 @@
    }
   }
  ],
- "updated": "2026-10-03T10:27:35+00:00"
+ "updated": "2026-10-03T14:50:09+00:00"
 }
