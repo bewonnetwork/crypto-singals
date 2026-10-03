@@ -21,6 +21,7 @@ FREE Crypto Signal Bot  —  সম্পূর্ণ ফ্রি, শুধু
 Telegram token না দিলে মেসেজ পাঠাবে না, শুধু স্ক্রিনে দেখাবে (নিরাপদ টেস্ট)।
 """
 
+import hashlib
 import html
 import json
 import os
@@ -669,7 +670,8 @@ def fetch_news():
                     pub = parsedate_to_datetime(it.findtext("pubDate")).astimezone(timezone.utc).isoformat()
                 except Exception:
                     pub = ""
-                items.append({"title": title, "link": link, "source": source, "published": pub,
+                items.append({"id": hashlib.md5(link.encode()).hexdigest()[:10],
+                              "title": title, "link": link, "source": source, "published": pub,
                               "summary": _clean_text(it.findtext("description")), "image": _image(it)})
         except Exception as e:
             print(f"news {source}: {str(e)[:80]}")
@@ -681,8 +683,7 @@ def news_message(n):
     e = html.escape
     return (f"📰 <b>{e(n['title'])}</b>\n\n"
             + (f"{e(n['summary'])}\n\n" if n.get("summary") else "")
-            + f"🔗 <a href=\"{e(n['link'])}\">পুরো খবর পড়ুন — {e(n['source'])}</a>\n"
-            f"🌐 <a href=\"{SITE_URL}#/news\">আরও খবর আমাদের ওয়েবসাইটে</a>\n\n#CryptoNews")
+            + f"🔗 {SITE_URL}#/news/{n.get('id') or ''}\n\n<i>Source: {e(n['source'])}</i>  #CryptoNews")
 
 
 def post_news_to_telegram(items, state):
@@ -1512,6 +1513,30 @@ def read_owner_commands(state, frames, btc_trend):
     return out
 
 
+# ----------------------------- ব্লগ পোস্ট: Telegram-এ ছোট লেখা + সাইটের লিংক -----------------------------
+BLOG_ENABLED = True
+LESSON_HOUR_UTC = 6         # 6 UTC = দুপুর ১২টা বাংলাদেশ: রোজ একটা শেখার পোস্ট
+
+
+def blog_message(p):
+    e = html.escape
+    title = e(p["title"]) + (f"\n{e(p['title_bn'])}" if p.get("title_bn") else "")
+    return f"📰 <b>{title}</b>\n\n{e(p['sum_bn'])}\n\n🔗 {SITE_URL}#/blog/{p['slug']}"
+
+
+def blog_digest(frames, state):
+    import blog
+    fg, fg_txt = get_fear_greed()
+    if fg is not None:
+        state["fear_greed"] = {"value": fg, "label": fg_txt}
+    majors = [{"sym": c, "name": c, "price": float(df["close"].iloc[-1]),
+               "ch": round(float((df["close"].iloc[-1] / df["close"].iloc[-25] - 1) * 100), 2)}
+              for c, df in frames.items() if len(df) > 24]
+    fx = [{"sym": k, "name": label(k), "price": q["price"], "ch": q["ch"]} for k, q in state.get("fx_quotes", {}).items()]
+    return blog.digest(HTTP, BROWSER_UA, majors, {"fear_greed": state.get("fear_greed"), "fx": fx,
+                                                  "stats": state["stats"], "open": len(state["open"])})
+
+
 # ----------------------------- Trending কয়েন (দিনে একবার) -----------------------------
 TRENDING_ENABLED = True
 TRENDING_HOUR_UTC = 14      # 14 UTC = রাত ৮টা বাংলাদেশ
@@ -1762,16 +1787,41 @@ def run_once(force_digest=False):
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
     if force_digest or (now.hour >= DIGEST_HOUR_UTC and state["last_digest"] != today):
-        if frames and send_telegram(daily_digest(frames, state)):
+        msg = None
+        if BLOG_ENABLED and frames:
+            try:
+                post = blog_digest(frames, state)
+                msg = blog_message(post) if post else None
+            except Exception as e:
+                print("blog digest error:", str(e)[:80])
+        if frames and send_telegram(msg or daily_digest(frames, state), preview=bool(msg)):
             state["last_digest"] = today
 
     if TRENDING_ENABLED and now.hour >= TRENDING_HOUR_UTC and state.get("last_trending") != today:
         try:
-            tm = trending_message()
-            if tm and send_telegram(tm):
+            tm = None
+            if BLOG_ENABLED:
+                try:
+                    import blog
+                    post = blog.trending(HTTP, BROWSER_UA)
+                    tm = blog_message(post) if post else None
+                except Exception as e:
+                    print("blog trending error:", str(e)[:80])
+            tm = tm or trending_message()
+            if tm and send_telegram(tm, preview=True):
                 state["last_trending"] = today
         except Exception as e:
             print("trending error:", str(e)[:80])
+
+    if BLOG_ENABLED and now.hour >= LESSON_HOUR_UTC and state.get("last_lesson") != today:
+        try:
+            import blog
+            post = blog.lesson(state.get("lesson_n", 0))
+            if send_telegram(blog_message(post), preview=True):
+                state["last_lesson"] = today
+                state["lesson_n"] = state.get("lesson_n", 0) + 1
+        except Exception as e:
+            print("lesson error:", str(e)[:80])
 
     try:
         update_news(state)

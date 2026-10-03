@@ -1683,10 +1683,43 @@ async function pageForex(){
 }
 
 let nf={src:"",q:"",n:25};
-async function pageNews(){
+async function loadBlog(){ try{ const r=await fetch("data/blog.json?t="+Math.floor(Date.now()/300000)); const d=await r.json(); return Array.isArray(d.posts)?d:{posts:[]}; }catch(e){ return {posts:[]}; } }
+const BLOG_T={digest:["📊",()=>tr("মার্কেট সারাংশ","Market digest")],trending:["🔥",()=>"Trending"],learn:["🎓",()=>tr("শেখা","Learn")]};
+function blogSum(p){ return LANG==="en"?(p.sum_en||p.sum_bn||""):(p.sum_bn||p.sum_en||""); }
+function blogTitle(p){ return LANG!=="en"&&p.title_bn?p.title_bn:p.title; }
+function blogRows(list,vol){ return `<div class="card tbl-wrap"><table><thead><tr><th>${tr("কয়েন","Coin")}</th><th class="r">${tr("দাম","Price")}</th><th class="r">${vol?tr("২৪ঘ লেনদেন","24h volume"):"24h"}</th></tr></thead><tbody>${list.map(c=>`<tr class="link" data-go="#/coin/${esc(clean(c.sym))}"><td><span class="sym">${logo(clean(c.sym))}<span><b>${esc(c.sym)}</b><div class="muted" style="font-size:12px">${esc(c.name||"")}${c.rank?` · #${c.rank}`:""}</div></span></span></td><td class="r num">${c.price!=null?"$"+fmtPx(c.price):"—"}</td><td class="r num">${vol?"$"+fmtBig(c.vol||0):c.ch==null?"—":`<b class="${c.ch>=0?"up":"down"}">${c.ch>=0?"+":""}${(+c.ch).toFixed(2)}%</b>`}</td></tr>`).join("")}</tbody></table></div>`; }
+function blogBody(p){ const b=p.body||{}, h=t=>`<h3 style="margin:18px 0 8px;font-size:15px">${t}</h3>`;
+  if(p.type==="digest") return `${b.total?`<p class="muted">${tr(`${b.total}টা কয়েনের মধ্যে ${b.up}টা বেড়েছে, ${b.total-b.up}টা কমেছে (২৪ ঘণ্টায়)।`,`${b.up} of ${b.total} coins are up and ${b.total-b.up} are down over 24 hours.`)}</p>`:""}
+    ${h("🚀 "+tr("সবচেয়ে বেশি বেড়েছে","Top gainers"))}${blogRows(b.gainers||[])}${h("🔻 "+tr("সবচেয়ে বেশি কমেছে","Top losers"))}${blogRows(b.losers||[])}
+    ${(b.majors||[]).length?h("💎 "+tr("প্রধান কয়েন","Major coins"))+blogRows(b.majors):""}${(b.fx||[]).length?h("💱 Forex & Gold")+`<div class="card tbl-wrap"><table><tbody>${b.fx.map(c=>`<tr><td><b>${esc(c.name)}</b></td><td class="r num">${c.price}</td><td class="r num"><b class="${c.ch>=0?"up":"down"}">${c.ch>=0?"+":""}${(+c.ch).toFixed(2)}%</b></td></tr>`).join("")}</tbody></table></div>`:""}
+    ${b.fear_greed?`<p style="margin-top:14px">😨→🤑 Fear &amp; Greed: <b>${esc(b.fear_greed.value)}</b> (${esc(b.fear_greed.label||"")}) <span class="muted">· alternative.me</span></p>`:""}
+    ${b.stats?`<p class="muted">${tr("বটের রেকর্ড","Bot record")}: Win ${b.stats.win} · Loss ${b.stats.loss} · ${tr("খোলা সিগনাল","Open signals")} ${b.open||0} — <a href="#/signals">${tr("সব ফলাফল","all results")}</a></p>`:""}`;
+  if(p.type==="trending") return `${h("🔥 "+tr("সবচেয়ে বেশি খোঁজা হচ্ছে","Most searched"))}${blogRows(b.hot||[])}${(b.volume||[]).length?h("📊 "+tr("সবচেয়ে বেশি লেনদেন","Volume leaders"))+blogRows(b.volume,true):""}
+    <p class="muted" style="margin-top:12px">${tr("Trending মানে মানুষ বেশি খুঁজছে — কেনার পরামর্শ নয়। বেশি খোঁজা কয়েনে দাম দ্রুত ওঠে, দ্রুত পড়েও।","Trending means people are searching for it — not advice to buy. Heavily searched coins rise fast and fall fast.")} <i>Source: CoinGecko</i></p>`;
+  const pts=LANG==="en"?(b.pts_en||b.pts_bn||[]):(b.pts_bn||b.pts_en||[]);
+  return `<div class="card" style="padding:6px 18px">${pts.map((x,i)=>`<p style="display:flex;gap:10px;margin:14px 0;line-height:1.65"><b style="color:var(--accent)">${i+1}</b><span>${esc(x)}</span></p>`).join("")}</div>
+    <p style="margin-top:14px"><a class="btn" href="#/demo">${tr("ডেমোতে প্র্যাকটিস করুন","Practise on the demo")}</a> <a class="btn btn-ghost" href="#/learn">${tr("পুরো গাইড","Full guide")}</a></p>`; }
+async function pageBlog(slug){
+  const d=await loadBlog(), p=slug&&d.posts.find(x=>x.slug===slug);
+  const card=x=>{ const t=BLOG_T[x.type]||["📰",()=>"Blog"]; return `<a class="card" href="#/blog/${esc(x.slug)}" style="display:block;padding:14px 16px;color:inherit;text-decoration:none"><div class="muted" style="font-size:12px;margin-bottom:4px">${t[0]} ${t[1]()} · ${ago(x.date)}</div><h3 style="margin:0 0 6px;font-size:15.5px">${esc(blogTitle(x))}</h3><p class="muted" style="margin:0;font-size:13.5px">${esc(blogSum(x))}</p></a>`; };
+  if(p){ const t=BLOG_T[p.type]||["📰",()=>"Blog"]; document.title=`${p.title} — ${SITE.name}`;
+    app.innerHTML=`<section><a href="#/blog" class="muted" style="font-size:13px">← ${tr("সব পোস্ট","All posts")}</a>
+      <div class="sec-head" style="margin-top:8px"><div><span class="eyebrow">${t[0]} ${t[1]()} · ${ago(p.date)}</span><h2>${esc(blogTitle(p))}</h2></div></div>
+      <p style="font-size:15px;line-height:1.65">${esc(blogSum(p))}</p>${blogBody(p)}
+      <p class="muted" style="font-size:12.5px;margin-top:16px">⚠️ ${tr("শুধু তথ্য ও শেখার জন্য, আর্থিক পরামর্শ নয়। লাভের কোনো নিশ্চয়তা নেই।","For information and learning only, not financial advice. No profit is guaranteed.")}</p>
+      <p style="margin-top:6px"><a class="btn btn-ghost" href="${SITE.telegram}" target="_blank" rel="noopener">Telegram</a></p></section>
+      <section><div class="sec-head"><h2>${tr("আরও পোস্ট","More posts")}</h2></div><div style="display:grid;gap:10px">${d.posts.filter(x=>x!==p).slice(0,6).map(card).join("")}</div></section>`; return; }
+  let f="";
+  const draw=()=>{ const it=d.posts.filter(x=>!f||x.type===f); $("#bl").innerHTML=it.length?it.slice(0,60).map(card).join(""):`<div class="card empty">${slug?tr("এই পোস্টটা আর নেই। নিচে নতুন পোস্ট দেখুন।","This post is no longer available."):tr("এখনো কোনো পোস্ট নেই। বট পরের বার চললে এখানে আসবে।","No posts yet. They will appear after the next bot run.")}</div>`; };
+  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">${tr("ব্লগ · নিজে থেকে আপডেট হয়","Blog · updates automatically")}</span><h2>${tr("মার্কেট সারাংশ, Trending ও শেখা","Market digest, trending and lessons")}</h2></div></div>
+    <div class="toolbar"><div class="chipbar" id="bf"><button class="on" data-f="">${tr("সব","All")}</button>${Object.entries(BLOG_T).map(([k,t])=>`<button data-f="${k}">${t[0]} ${t[1]()}</button>`).join("")}</div></div>
+    <div id="bl" style="display:grid;gap:10px"></div></section>`;
+  $("#bf").querySelectorAll("button").forEach(b=>b.onclick=()=>{ f=b.dataset.f; $("#bf").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b)); draw(); }); draw(); }
+async function pageNews(id){
   const n=await loadNews(); nf={src:"",q:"",n:25};
+  const one=id&&n.items.find(x=>x.id===id);
   const sources=[...new Set(n.items.map(x=>x.source))];
-  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">${tr("নিউজ পোর্টাল · নিজে থেকে আপডেট হয়","News portal · updates automatically")}</span><h2>${tr("বিশ্বজুড়ে ক্রিপ্টো খবর","Crypto news from around the world")}</h2></div><p>${tr("শেষ আপডেট","Last update")}: ${ago(n.updated)}</p></div>
+  app.innerHTML=`${one?`<section><div class="card" style="padding:16px 18px"><div class="muted" style="font-size:12px">📰 ${esc(one.source)} · ${ago(one.published)}</div><h2 style="margin:6px 0 10px;font-size:19px;line-height:1.35">${esc(one.title)}</h2>${safeUrl(one.image)?`<img src="${safeUrl(one.image)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()" style="width:100%;max-height:300px;object-fit:cover;border-radius:10px;margin-bottom:10px">`:""}<p style="line-height:1.65">${esc(one.summary||"")}</p><a class="btn" href="${safeUrl(one.link)}" target="_blank" rel="noopener">${tr("পুরো খবর পড়ুন","Read the full story")} — ${esc(one.source)} ↗</a><p class="muted" style="font-size:12px;margin:10px 0 0">${tr("খবরের স্বত্ব মূল প্রকাশকের। এখানে শুধু শিরোনাম ও সারাংশ।","Rights belong to the original publisher. Only the headline and summary are shown here.")}</p></div></section>`:""}<section><div class="sec-head"><div><span class="eyebrow">${tr("নিউজ পোর্টাল · নিজে থেকে আপডেট হয়","News portal · updates automatically")}</span><h2>${tr("বিশ্বজুড়ে ক্রিপ্টো খবর","Crypto news from around the world")}</h2></div><p>${tr("শেষ আপডেট","Last update")}: ${ago(n.updated)}</p></div>
     <div class="toolbar"><div class="chipbar" id="srcs"><button class="on" data-s="">${tr("সব","All")}</button>${sources.map(x=>`<button data-s="${esc(x)}">${esc(x)}</button>`).join("")}</div>
       <input id="nq" type="search" placeholder="${tr("খবর খুঁজুন… যেমন ETF","Search news… e.g. ETF")}" aria-label="${tr("খবর খুঁজুন","Search news")}"></div>
     <div class="news-grid" id="ng"></div>
@@ -2818,7 +2851,7 @@ async function addBacktest(){
 /* ---------- app shell ---------- */
 const AICON={"home": `<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>`, "market": `<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>`, "signals": `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>`, "learn": `<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 3 9 3 12 0v-5"/>`, "whale": `<path d="M3 13c0-4 4-7 9-7 4 0 7 2 9 5-1 4-5 7-10 7-4 0-8-2-8-5z"/><path d="M21 11l1-4M16 11h.01"/>`, "square": `<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9h8M8 13h8M8 17h4"/>`, "more": `<circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>`, "forex": `<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>`, "engine": `<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>`, "demo": `<rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11v3M5.5 12.5h3M15.5 12h.01M18 13.5h.01"/>`, "news": `<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/>`, "about": `<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/>`, "pdf": `<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M12 11v6M9 14l3 3 3-3"/>`, "tg": `<path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/>`};
 const asv=k=>`<svg viewBox="0 0 24 24">${AICON[k]}</svg>`;
-function quickActions(){ const a=[["signals","#/signals",tr("সিগনাল","Signals")],["market","#/market",tr("মার্কেট","Markets")],["forex","#/forex","Forex"],["whale","#/whales",tr("বড় ট্রেড","Big trades")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["engine","#/engine",tr("ইঞ্জিন","Engine")],["tg",SITE.telegram,"Telegram"]];
+function quickActions(){ const a=[["signals","#/signals",tr("সিগনাল","Signals")],["market","#/market",tr("মার্কেট","Markets")],["forex","#/forex","Forex"],["whale","#/whales",tr("বড় ট্রেড","Big trades")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["news","#/blog",tr("ব্লগ","Blog")],["engine","#/engine",tr("ইঞ্জিন","Engine")],["tg",SITE.telegram,"Telegram"]];
   return a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':""}><i>${asv(k)}</i>${n}</a>`).join(""); }
 function drawFoot(){ const el=$("#footNav"); if(!el) return; const a=[["home","#/",tr("হোম","Home")],["market","#/market",tr("মার্কেট","Market")],["signals","#/signals",tr("সিগনাল","Signals")],["forex","#/forex","Forex"],["engine","#/engine","Engine"],["demo","#/demo",tr("ডেমো","Demo")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["whale","#/whales",tr("বড় ট্রেড","Big trades")],["square","#/square","Square"],["about","#/about",tr("সম্পর্কে","About")],["pdf","BEWON_Guide.pdf",tr("গাইড PDF","Guide PDF")],["tg",SITE.telegram,"Telegram"]];
   el.innerHTML=a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':k==="pdf"?' download="BEWON_Guide.pdf"':""}>${asv(k)}${n}</a>`).join(""); }
@@ -2839,13 +2872,14 @@ async function route(){
   timers.forEach(clearInterval); timers=[]; liveStop(); if(chart){ chart.remove(); chart=null; } stopHero3D();
   const parts=(location.hash.replace(/^#\/?/,"")||"").split("/"), r=parts[0]||"home";
   document.querySelectorAll("#nav a,#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
-  $("#moreBtn").classList.toggle("on",["forex","engine","news","about","square","learn","whales"].includes(r));
+  $("#moreBtn").classList.toggle("on",["forex","engine","news","blog","about","square","learn","whales"].includes(r));
   document.title=`${SITE.name} — ${tr("ফ্রি ক্রিপ্টো সিগনাল","Free crypto signals")}`;
   window.scrollTo(0,0); document.body.classList.toggle("is-home",r==="home"); if(r==="home"){ if(!BGW) startBgWorld(); } else stopBgWorld();
   if(r==="market") await pageMarket();
   else if(r==="coin") await pageCoin(parts[1]);
   else if(r==="signals"){ await pageSignals(); addBacktest(); }
-  else if(r==="news") await pageNews();
+  else if(r==="news") await pageNews(parts[1]);
+  else if(r==="blog") await pageBlog(parts[1]);
   else if(r==="forex") await pageForex();
   else if(r==="engine") await pageEngine();
   else if(r==="demo") await pageDemo();
