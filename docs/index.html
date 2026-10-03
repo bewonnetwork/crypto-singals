@@ -1975,7 +1975,7 @@ function demoLoad(){ let d=null; try{ d=JSON.parse(localStorage.getItem(DEMO_KEY
   d.hold=d.hold||{}; d.tx=d.tx||[]; d.jr=d.jr||[]; d.orders=d.orders||[]; d.wtx=d.wtx||[]; d.p2p=d.p2p||[]; d.kyc=d.kyc||{lvl:0,at:0}; d.fut=d.fut||[]; d.futH=d.futH||[]; d.earn=d.earn||[]; d.alerts=d.alerts||[]; d.sec=d.sec||{};
   d.w3=Object.assign({on:false,seed:[],addr:"",net:W3_NETS[0],bal:{},tokens:["tBNB"],nfts:[],claimed:{},faucet:0},d.w3||{});
   d.bot=Object.assign({on:false,amt:200,min:70,max:5,tp:"tp2",coins:[],taken:{},mine:true},d.bot||{}); if(!Array.isArray(d.bot.coins)) d.bot.coins=[]; d.bot.taken=d.bot.taken||{}; return d; }
-function demoSave(d){ try{ localStorage.setItem(DEMO_KEY,JSON.stringify(d)); }catch(e){} }
+function demoSave(d){ try{ localStorage.setItem(DEMO_KEY,JSON.stringify(d)); }catch(e){} try{ fbTouch(); }catch(e){} }
 const usd=x=>(+x).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
 const qtyF=x=>{ x=+x; return x>=100?x.toFixed(2):x>=1?x.toFixed(4):x.toPrecision(4); };
 function dmTx(d,x){ d.tx.unshift(Object.assign({t:new Date().toISOString()},x)); d.tx=d.tx.slice(0,300); }
@@ -2665,12 +2665,12 @@ async function pageSquare(){
       ${list.map(p=>{ const t=LANG==="en"?p.en:p.bn; return `<article class="card sq-post"><div class="sq-h"><i>B</i><div><b>${esc(p.by||"BEWON Signals")}</b><small>${esc(p.d||"")}</small></div><a class="btn btn-ghost" style="min-height:34px;padding:5px 14px;font-size:13px" href="${SITE.telegram}" target="_blank" rel="noopener">+ ${tr("ফলো","Follow")}</a></div>
         <h3>${esc(t[0])}</h3><p>${esc(t[1])}</p><div class="sq-tags"><span>#${esc((SQ_TAGS[p.tag]||["",p.tag||""])[LANG==="en"?1:0])}</span></div>
         <div class="sq-act"><button data-like="${esc(p.id)}" class="${likes[p.id]?"on":""}">${likes[p.id]?"♥":"♡"} ${tr("ভালো লেগেছে","Like")}</button><button data-share="${esc(p.id)}">↗ ${tr("শেয়ার","Share")}</button><a class="btn btn-ghost" style="margin-left:auto;min-height:32px;padding:4px 12px;font-size:13px" href="#/demo">${tr("ডেমোতে চেষ্টা করুন","Try in demo")}</a></div></article>`; }).join("")}
-      <div class="card sq-post"><h3>✍️ ${tr("আপনিও লিখতে চান?","Want to write too?")}</h3><p>${tr("এখন লেখাগুলো BEWON টিম প্রকাশ করে, যাতে ভুল বা প্রতারণামূলক কিছু না আসে। আপনার লেখা আমাদের Telegram-এ পাঠান, যাচাই করে আপনার নামে এখানে প্রকাশ করা হবে।","For now posts are published by the BEWON team so nothing wrong or fraudulent gets in. Send your article on our Telegram; after review it is published here under your name.")}</p><a class="btn btn-primary" href="${SITE.telegram}" target="_blank" rel="noopener">${tr("Telegram-এ পাঠান","Send on Telegram")}</a></div>
+      <div id="sqCom"></div>
       <p class="note">⚠️ ${tr("এই লেখাগুলো শেখার জন্য, আর্থিক পরামর্শ নয়।","These posts are for learning, not financial advice.")}</p></div>`;
     app.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{ SQ_TAG=b.dataset.t; draw(); });
     app.querySelectorAll("[data-like]").forEach(b=>b.onclick=()=>{ const k=b.dataset.like; if(likes[k]) delete likes[k]; else likes[k]=1; try{ localStorage.setItem("bewon_sq_likes",JSON.stringify(likes)); }catch(e){} draw(); });
     app.querySelectorAll("[data-share]").forEach(b=>b.onclick=()=>{ const p=posts.find(x=>x.id===b.dataset.share), t=LANG==="en"?p.en:p.bn, url=location.origin+location.pathname+"#/square";
-      if(navigator.share) navigator.share({title:t[0],text:t[0],url}).catch(()=>{}); else { try{ navigator.clipboard.writeText(t[0]+" — "+url); }catch(e){} b.textContent="✓ "+tr("কপি হয়েছে","Copied"); } }); };
+      if(navigator.share) navigator.share({title:t[0],text:t[0],url}).catch(()=>{}); else { try{ navigator.clipboard.writeText(t[0]+" — "+url); }catch(e){} b.textContent="✓ "+tr("কপি হয়েছে","Copied"); } }); fbSquareDraw(); };
   draw();
 }
 
@@ -2855,7 +2855,7 @@ function quickActions(){ const a=[["signals","#/signals",tr("সিগনাল"
   return a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':""}><i>${asv(k)}</i>${n}</a>`).join(""); }
 function drawFoot(){ const el=$("#footNav"); if(!el) return; const a=[["home","#/",tr("হোম","Home")],["market","#/market",tr("মার্কেট","Market")],["signals","#/signals",tr("সিগনাল","Signals")],["forex","#/forex","Forex"],["engine","#/engine","Engine"],["demo","#/demo",tr("ডেমো","Demo")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["whale","#/whales",tr("বড় ট্রেড","Big trades")],["square","#/square","Square"],["about","#/about",tr("সম্পর্কে","About")],["pdf","BEWON_Guide.pdf",tr("গাইড PDF","Guide PDF")],["tg",SITE.telegram,"Telegram"]];
   el.innerHTML=a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':k==="pdf"?' download="BEWON_Guide.pdf"':""}>${asv(k)}${n}</a>`).join(""); }
-function drawSheet(){ const el=$("#sheetQa"); if(el) el.innerHTML=quickActions()+`<a href="#/about"><i>${asv("about")}</i>${tr("সম্পর্কে","About")}</a><a href="#/square"><i>${asv("square")}</i>Square</a><a href="#/demo"><i>${asv("demo")}</i>${tr("ডেমো","Demo")}</a><a href="BEWON_Guide.pdf" download="BEWON_Guide.pdf"><i>${asv("pdf")}</i>${tr("গাইড PDF","Guide PDF")}</a>`; }
+function drawSheet(){ const el=$("#sheetQa"); if(el) el.innerHTML=accLink()+quickActions()+`<a href="#/about"><i>${asv("about")}</i>${tr("সম্পর্কে","About")}</a><a href="#/square"><i>${asv("square")}</i>Square</a><a href="#/demo"><i>${asv("demo")}</i>${tr("ডেমো","Demo")}</a><a href="BEWON_Guide.pdf" download="BEWON_Guide.pdf"><i>${asv("pdf")}</i>${tr("গাইড PDF","Guide PDF")}</a>`; }
 (function(){ const sh=$("#sheet"), bg=$("#sheetBg"), open=o=>{ sh.classList.toggle("open",o); bg.classList.toggle("open",o); };
   $("#moreBtn").onclick=()=>{ drawSheet(); open(!sh.classList.contains("open")); };
   bg.onclick=()=>open(false); sh.addEventListener("click",e=>{ if(e.target.closest("a")) open(false); });
@@ -2872,7 +2872,7 @@ async function route(){
   timers.forEach(clearInterval); timers=[]; liveStop(); if(chart){ chart.remove(); chart=null; } stopHero3D();
   const parts=(location.hash.replace(/^#\/?/,"")||"").split("/"), r=parts[0]||"home";
   document.querySelectorAll("#nav a,#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
-  $("#moreBtn").classList.toggle("on",["forex","engine","news","blog","about","square","learn","whales"].includes(r));
+  $("#moreBtn").classList.toggle("on",["forex","engine","news","blog","about","square","learn","whales","account"].includes(r));
   document.title=`${SITE.name} — ${tr("ফ্রি ক্রিপ্টো সিগনাল","Free crypto signals")}`;
   window.scrollTo(0,0); document.body.classList.toggle("is-home",r==="home"); if(r==="home"){ if(!BGW) startBgWorld(); } else stopBgWorld();
   if(r==="market") await pageMarket();
@@ -2880,6 +2880,7 @@ async function route(){
   else if(r==="signals"){ await pageSignals(); addBacktest(); }
   else if(r==="news") await pageNews(parts[1]);
   else if(r==="blog") await pageBlog(parts[1]);
+  else if(r==="account") await pageAccount();
   else if(r==="forex") await pageForex();
   else if(r==="engine") await pageEngine();
   else if(r==="demo") await pageDemo();
@@ -2961,9 +2962,156 @@ function drawSkinMenu(){ $("#palMenu").innerHTML=`<b>🎨 ${tr("সাইটে�
   menu.onclick=e=>{ const b=e.target.closest("button[data-k]"); if(!b) return; const k=b.dataset.k; try{ localStorage.setItem("skin",k); }catch(err){}
     setSkin(k); drawSkinMenu(); startBgWorld(); const y=scrollY; Promise.resolve(route()).then(()=>scrollTo(0,y)); };
 })();
+/* ================= Firebase: login, demo sync, referral count, Square community =================
+   The site works fully without it; if Firebase cannot load, everything stays in the browser as before. */
+const FB_CFG={apiKey:"AIzaSyCkpsvwT14zEbI0pOHmBElB4RupQUdqB3A",authDomain:"bewon-signals.firebaseapp.com",projectId:"bewon-signals",storageBucket:"bewon-signals.firebasestorage.app",messagingSenderId:"56608611398",appId:"1:56608611398:web:aaefa5bdfaf05bab2a3e47"};
+const FB_VER="10.14.1", FB={ready:false,failed:false,user:null,prof:null,admin:false,auth:null,db:null,refs:null,fol:null,following:{},saved:0,msg:""};
+let FB_P=null, ACC_TAB="in", fbSaveT=null, fbLastSave=0, SQC={posts:null,mine:[],pend:[],msg:""};
+try{ const m=/[?&]ref=([A-Za-z0-9]{6,12})/.exec(location.search+location.hash); if(m) localStorage.setItem("bewon_ref",m[1].toUpperCase()); }catch(e){}
+function fbScript(src){ return new Promise((ok,no)=>{ const s=document.createElement("script"); s.src=src; s.onload=ok; s.onerror=()=>no(new Error("load")); document.head.appendChild(s); }); }
+function fbInit(){ if(FB_P) return FB_P;
+  FB_P=(async()=>{ try{ const b=`https://www.gstatic.com/firebasejs/${FB_VER}/firebase-`;
+      await fbScript(b+"app-compat.js"); await Promise.all([fbScript(b+"auth-compat.js"),fbScript(b+"firestore-compat.js")]);
+      firebase.initializeApp(FB_CFG); FB.auth=firebase.auth(); FB.db=firebase.firestore(); FB.ready=true;
+      FB.auth.onAuthStateChanged(u=>fbOnUser(u).catch(e=>console.warn("fb user",e)));
+    }catch(e){ FB.failed=true; console.warn("Firebase not loaded",e); if(location.hash.startsWith("#/account")) route(); } })();
+  return FB_P; }
+function fbErr(e){ const c=(e&&e.code)||""; const m={
+  "auth/invalid-email":["ইমেইল ঠিক নয়।","That email is not valid."],"auth/missing-password":["পাসওয়ার্ড দিন।","Enter a password."],
+  "auth/weak-password":["পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে।","Password must be at least 6 characters."],
+  "auth/email-already-in-use":["এই ইমেইলে আগে থেকেই অ্যাকাউন্ট আছে। লগইন করুন।","An account already exists with this email. Log in instead."],
+  "auth/invalid-credential":["ইমেইল বা পাসওয়ার্ড ভুল।","Wrong email or password."],"auth/wrong-password":["ইমেইল বা পাসওয়ার্ড ভুল।","Wrong email or password."],
+  "auth/user-not-found":["এই ইমেইলে কোনো অ্যাকাউন্ট নেই।","No account with this email."],
+  "auth/too-many-requests":["অনেকবার চেষ্টা হয়েছে। একটু পরে আবার করুন।","Too many attempts. Try again a little later."],
+  "auth/popup-closed-by-user":["Google লগইন বন্ধ করা হয়েছে।","Google sign-in was closed."],"auth/popup-blocked":["ব্রাউজার পপ-আপ আটকে দিয়েছে। পপ-আপ চালু করে আবার চাপুন।","The browser blocked the pop-up. Allow pop-ups and try again."],
+  "auth/unauthorized-domain":["এই সাইটের ঠিকানা Firebase-এ যোগ করা হয়নি (Authorized domains)।","This site address is not added in Firebase (Authorized domains)."],
+  "auth/operation-not-allowed":["এই লগইন পদ্ধতি Firebase-এ চালু করা হয়নি।","This sign-in method is not enabled in Firebase."],
+  "auth/network-request-failed":["ইন্টারনেট সংযোগ দেখুন।","Check your internet connection."],
+  "permission-denied":["অনুমতি নেই। Firestore-এর Rules বসানো হয়েছে কিনা দেখুন।","Permission denied. Check that the Firestore rules are published."]}[c];
+  return m?tr(m[0],m[1]):tr("কাজটা করা যায়নি","That did not work")+(c?` (${c})`:""); }
+function fbCode(){ const A="ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; let s=""; const r=crypto.getRandomValues(new Uint8Array(7)); r.forEach(x=>s+=A[x%A.length]); return s; }
+function fbMeta(){ try{ return JSON.parse(localStorage.getItem("bewon_sync")||"{}"); }catch(e){ return {}; } }
+function fbSetMeta(m){ try{ localStorage.setItem("bewon_sync",JSON.stringify(m)); }catch(e){} }
+function fbTouch(){ const m=fbMeta(); m.ms=Date.now(); fbSetMeta(m); if(!FB.user) return; clearTimeout(fbSaveT); fbSaveT=setTimeout(fbPush,Math.max(15000,120000-(Date.now()-fbLastSave))); }
+async function fbPush(){ if(!FB.user||!FB.db) return false; clearTimeout(fbSaveT);
+  try{ let raw=localStorage.getItem(DEMO_KEY); if(!raw) return false;
+    if(raw.length>800000){ const d=JSON.parse(raw); ["tx","jr","wtx","futH"].forEach(k=>{ if(Array.isArray(d[k])) d[k]=d[k].slice(0,200); }); raw=JSON.stringify(d); }
+    const ms=fbMeta().ms||Date.now(); fbLastSave=Date.now();
+    await FB.db.collection("demo").doc(FB.user.uid).set({json:raw,ms,at:firebase.firestore.FieldValue.serverTimestamp()});
+    FB.saved=Date.now(); fbSetMeta({uid:FB.user.uid,ms}); return true; }catch(e){ console.warn("fb save",e); FB.msg=fbErr(e); return false; } }
+async function fbPull(){ const u=FB.user, m=fbMeta(); let snap; try{ snap=await FB.db.collection("demo").doc(u.uid).get(); }catch(e){ FB.msg=fbErr(e); return; }
+  if(snap.exists){ const c=snap.data();
+    if(m.uid!==u.uid||(c.ms||0)>(m.ms||0)){ try{ JSON.parse(c.json); localStorage.setItem(DEMO_KEY,c.json); fbSetMeta({uid:u.uid,ms:c.ms||Date.now()}); FB.saved=Date.now();
+        FB.msg=tr("✅ আপনার অ্যাকাউন্টের ডেমো ডেটা এই ডিভাইসে আনা হয়েছে।","✅ Your account's demo data was loaded on this device."); if(location.hash.startsWith("#/demo")) route(); }catch(e){} }
+    else if((m.ms||0)>(c.ms||0)) await fbPush(); else FB.saved=Date.now(); }
+  else { fbSetMeta({uid:u.uid,ms:m.ms||Date.now()}); if(localStorage.getItem(DEMO_KEY)) await fbPush(); } }
+async function fbProfile(){ const u=FB.user, ref=FB.db.collection("users").doc(u.uid); let s=await ref.get();
+  if(!s.exists){ let code=""; for(let i=0;i<4&&!code;i++){ const c=fbCode(); try{ await FB.db.collection("codes").doc(c).set({uid:u.uid}); code=c; }catch(e){} }
+    const name=(FB.pendName||u.displayName||(u.email||"Member").split("@")[0]).slice(0,40); FB.pendName="";
+    await ref.set({name,code,at:firebase.firestore.FieldValue.serverTimestamp()}); FB.prof={name,code};
+    let by=""; try{ by=localStorage.getItem("bewon_ref")||""; }catch(e){}
+    if(by&&by!==code){ try{ const cs=await FB.db.collection("codes").doc(by).get(); if(cs.exists&&cs.data().uid!==u.uid) await FB.db.collection("referrals").doc(u.uid).set({to:cs.data().uid,at:firebase.firestore.FieldValue.serverTimestamp()}); }catch(e){ console.warn("ref",e); } }
+    try{ localStorage.removeItem("bewon_ref"); }catch(e){} }
+  else FB.prof=s.data(); }
+async function fbOnUser(u){ FB.user=u; FB.prof=null; FB.admin=false; FB.refs=null; FB.fol=null; FB.following={}; SQC.posts=null; drawSheet();
+  if(u){ try{ await fbProfile(); }catch(e){ FB.msg=fbErr(e); }
+    await fbPull();
+    try{ FB.admin=(await FB.db.collection("admins").doc(u.uid).get()).exists; }catch(e){}
+    try{ (await FB.db.collection("follows").where("from","==",u.uid).limit(300).get()).forEach(x=>FB.following[x.data().to]=x.id); }catch(e){} }
+  drawSheet(); const h=location.hash; if(h.startsWith("#/account")||h.startsWith("#/square")) route(); }
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="hidden"&&FB.user&&(fbMeta().ms||0)>FB.saved) fbPush(); });
+function accLink(){ return `<a href="#/account"><i style="font-style:normal;font-size:19px">👤</i>${FB.user?esc((FB.prof&&FB.prof.name)||tr("অ্যাকাউন্ট","Account")):tr("লগইন","Log in")}</a>`; }
+async function pageAccount(){ fbInit();
+  const head=`<section class="sec-head"><div><span class="eyebrow">${tr("অ্যাকাউন্ট","Account")}</span><h2>${FB.user?tr("আমার অ্যাকাউন্ট","My account"):tr("লগইন বা রেজিস্ট্রেশন","Log in or register")}</h2><p>${tr("অ্যাকাউন্ট ফ্রি। লগইন করলে আপনার ডেমো ব্যালেন্স ও ইতিহাস সেভ থাকে, ফোন বদলালেও হারায় না।","Accounts are free. When logged in, your demo balance and history are saved and follow you to any device.")}</p></div></section>`;
+  const box=h=>{ app.innerHTML=`<div style="max-width:520px;margin:0 auto;display:grid;gap:14px">${head}${h}</div>`; };
+  if(FB.failed){ box(`<div class="card empty">${tr("লগইন সার্ভিস এখন খোলা যাচ্ছে না। ইন্টারনেট দেখে পাতাটা আবার খুলুন। সাইটের বাকি সব আগের মতো চলবে।","The login service could not be loaded. Check your connection and reload. The rest of the site works as before.")}</div>`); return; }
+  if(!FB.ready||(FB.user&&!FB.prof&&!FB.msg)){ box(`<div class="card empty">${tr("লোড হচ্ছে…","Loading…")}</div>`); return; }
+  const u=FB.user, msg=FB.msg; FB.msg="";
+  if(!u){ const reg=ACC_TAB==="up"; let rc=""; try{ rc=localStorage.getItem("bewon_ref")||""; }catch(e){}
+    box(`<div class="card" style="padding:18px;display:grid;gap:12px">
+      <div class="dm-tabs"><button data-at="in" class="${reg?"":"on"}">${tr("লগইন","Log in")}</button><button data-at="up" class="${reg?"on":""}">${tr("নতুন অ্যাকাউন্ট","Register")}</button></div>
+      <form id="acF" style="display:grid;gap:10px">
+        ${reg?`<label class="dm-f">${tr("আপনার নাম","Your name")}<input name="n" required maxlength="40" autocomplete="name"></label>`:""}
+        <label class="dm-f">${tr("ইমেইল","Email")}<input name="e" type="email" required autocomplete="email"></label>
+        <label class="dm-f">${tr("পাসওয়ার্ড","Password")}${reg?` (${tr("কমপক্ষে ৬ অক্ষর","at least 6 characters")})`:""}<input name="p" type="password" required minlength="6" autocomplete="${reg?"new-password":"current-password"}"></label>
+        ${reg&&rc?`<p class="muted" style="margin:0;font-size:12.5px">🤝 ${tr("রেফার কোড","Referral code")}: <b>${esc(rc)}</b></p>`:""}
+        <button class="btn btn-primary" type="submit">${reg?tr("অ্যাকাউন্ট খুলুন","Create account"):tr("লগইন করুন","Log in")}</button>
+      </form>
+      <button class="btn btn-ghost" id="acG" type="button">${tr("Google দিয়ে চালিয়ে যান","Continue with Google")}</button>
+      ${reg?"":`<button type="button" id="acR" class="muted" style="background:none;border:0;cursor:pointer;font-size:13px;text-decoration:underline">${tr("পাসওয়ার্ড ভুলে গেছেন?","Forgot password?")}</button>`}
+      <div class="dm-msg" id="acM">${esc(msg)}</div>
+      <p class="muted" style="margin:0;font-size:12px">${tr("আমরা শুধু আপনার নাম, ইমেইল আর ডেমো (নকল টাকার) ডেটা রাখি। কোনো আসল টাকা, কার্ড বা পরিচয়পত্র চাওয়া হয় না।","We keep only your name, email and demo (play-money) data. No real money, card or ID document is ever asked for.")}</p></div>`);
+    const M=t=>{ $("#acM").textContent=t; };
+    app.querySelectorAll("[data-at]").forEach(b=>b.onclick=()=>{ ACC_TAB=b.dataset.at; pageAccount(); });
+    $("#acF").onsubmit=async e=>{ e.preventDefault(); const f=new FormData(e.target), em=String(f.get("e")).trim(), pw=String(f.get("p")); M(tr("একটু অপেক্ষা করুন…","Please wait…"));
+      try{ if(reg){ FB.pendName=String(f.get("n")).trim().slice(0,40); const c=await FB.auth.createUserWithEmailAndPassword(em,pw); try{ await c.user.updateProfile({displayName:FB.pendName||c.user.displayName}); await c.user.sendEmailVerification(); }catch(x){} }
+        else await FB.auth.signInWithEmailAndPassword(em,pw); }catch(err){ M(fbErr(err)); } };
+    $("#acG").onclick=async()=>{ M(""); try{ await FB.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()); }catch(err){ M(fbErr(err)); } };
+    if($("#acR")) $("#acR").onclick=async()=>{ const em=String(new FormData($("#acF")).get("e")).trim(); if(!em){ M(tr("আগে ওপরে ইমেইল লিখুন।","Type your email above first.")); return; }
+      try{ await FB.auth.sendPasswordResetEmail(em); M(tr("✅ পাসওয়ার্ড বদলানোর লিংক ইমেইলে পাঠানো হয়েছে।","✅ A password reset link was sent to your email.")); }catch(err){ M(fbErr(err)); } };
+    return; }
+  const p=FB.prof||{}, link=location.origin+location.pathname+"?ref="+(p.code||"");
+  box(`<div class="card" style="padding:18px;display:grid;gap:10px">
+      <div style="display:flex;gap:12px;align-items:center"><span class="logo" style="width:44px;height:44px;font-size:18px">${esc((p.name||"?")[0].toUpperCase())}</span><div><b style="font-size:16px">${esc(p.name||"")}</b>${FB.admin?` <span class="pill p-open">Admin</span>`:""}<div class="muted" style="font-size:13px">${esc(u.email||"")}${u.emailVerified?" ✓":""}</div></div></div>
+      ${u.emailVerified||!u.email?"":`<p class="muted" style="margin:0;font-size:12.5px">${tr("ইমেইলে একটা যাচাই লিংক পাঠানো হয়েছে। সেটায় চাপলে ইমেইল যাচাই হবে।","A verification link was sent to your email. Tap it to verify your address.")}</p>`}
+      <div class="dm-msg">${esc(msg)}</div></div>
+    <div class="card" style="padding:18px;display:grid;gap:10px"><h3 style="margin:0">☁️ ${tr("ডেমো ডেটা সেভ","Demo data backup")}</h3>
+      <p class="muted" style="margin:0;font-size:13px" id="acS">${FB.saved?tr("শেষ সেভ: ","Last saved: ")+ago(new Date(FB.saved).toISOString()):tr("এখনো সেভ হয়নি।","Not saved yet.")}</p>
+      <p class="muted" style="margin:0;font-size:12.5px">${tr("ডেমো ট্রেড করলে কিছুক্ষণ পর নিজে থেকে সেভ হয়। এখনই সেভ করতে নিচের বাটন চাপুন।","Demo trades are saved by themselves after a short while. Use the button to save right now.")}</p>
+      <div class="dm-act"><button class="btn btn-primary" id="acSv">${tr("এখনই সেভ করুন","Save now")}</button><a class="btn btn-ghost" href="#/demo">${tr("ডেমোতে যান","Go to demo")}</a></div></div>
+    <div class="card" style="padding:18px;display:grid;gap:10px"><h3 style="margin:0">📣 ${tr("আমার রেফার লিংক","My referral link")}</h3>
+      <div class="wl-addr"><code>${esc(link)}</code></div>
+      <p style="margin:0"><b id="acRc">…</b> ${tr("জন এই লিংক দিয়ে অ্যাকাউন্ট খুলেছে","people registered with this link")} · <b id="acFc">…</b> ${tr("জন ফলোয়ার","followers")}</p>
+      <p class="muted" style="margin:0;font-size:12.5px">${tr("এটা শুধু গণনা। এতে কোনো টাকা, কমিশন বা পুরস্কার নেই।","This is only a count. There is no money, commission or reward in it.")}</p>
+      <div class="dm-act"><button class="btn btn-primary" id="acSh">${tr("শেয়ার করুন","Share")}</button><button class="btn btn-ghost" id="acCp">${tr("লিংক কপি","Copy link")}</button></div></div>
+    <div class="dm-act"><a class="btn btn-ghost" href="#/square">✍️ Square</a><button class="btn btn-ghost" id="acO">${tr("লগআউট","Log out")}</button></div>`);
+  $("#acSv").onclick=async()=>{ const ok=await fbPush(); $("#acS").textContent=ok?tr("✅ এইমাত্র সেভ হয়েছে।","✅ Saved just now."):(FB.msg||tr("সেভ করার মতো ডেমো ডেটা নেই।","There is no demo data to save.")); FB.msg=""; };
+  $("#acSh").onclick=()=>{ if(navigator.share) navigator.share({title:SITE.name,text:tr("ফ্রি ক্রিপ্টো সিগনাল আর ডেমো ট্রেডিং শিখুন","Free crypto signals and demo trading practice"),url:link}).catch(()=>{}); else $("#acCp").click(); };
+  $("#acCp").onclick=e=>{ try{ navigator.clipboard.writeText(link); }catch(x){} e.target.textContent="✓ "+tr("কপি হয়েছে","Copied"); };
+  $("#acO").onclick=async()=>{ if((fbMeta().ms||0)>FB.saved) await fbPush(); await FB.auth.signOut(); };
+  const cnt=async(col,el)=>{ try{ if(FB[el]==null){ const s=await FB.db.collection(col).where("to","==",u.uid).limit(300).get(); FB[el]=s.size>=300?"300+":s.size; } }catch(e){ FB[el]="—"; } const x=$(el==="refs"?"#acRc":"#acFc"); if(x) x.textContent=FB[el]; };
+  cnt("referrals","refs"); cnt("follows","fol"); }
+/* ---- Square community: posts by logged-in users, shown to everyone only after an admin approves them ---- */
+const SQ_LINK=/(https?:\/\/|www\.|t\.me\/|wa\.me\/|@[A-Za-z0-9_]{4,}|\+?\d[\d\s-]{8,}\d)/i;
+async function sqLoad(){ if(!FB.ready) return; const P=FB.db.collection("posts"), rows=s=>{ const a=[]; s.forEach(x=>a.push(Object.assign({id:x.id},x.data()))); return a; };
+  try{ SQC.posts=rows(await P.where("ok","==",true).limit(40).get()); }catch(e){ SQC.posts=[]; }
+  SQC.mine=[]; SQC.pend=[];
+  if(FB.user){ try{ SQC.mine=rows(await P.where("uid","==",FB.user.uid).limit(20).get()).filter(x=>!x.ok); }catch(e){}
+    if(FB.admin){ try{ SQC.pend=rows(await P.where("ok","==",false).limit(40).get()); }catch(e){} } } }
+function sqCard(p,mode){ const me=FB.user&&FB.user.uid===p.uid, fol=FB.following[p.uid], when=p.at&&p.at.toDate?ago(p.at.toDate().toISOString()):"";
+  return `<article class="card sq-post"><div class="sq-h"><i>${esc((p.name||"?")[0].toUpperCase())}</i><div><b>${esc(p.name||"")}</b><small>${when}${mode==="pend"||(!p.ok&&me)?` · ⏳ ${tr("যাচাইয়ের অপেক্ষায়","waiting for review")}`:""}</small></div>
+      ${FB.user&&!me&&p.ok?`<button class="btn btn-ghost" data-fol="${esc(p.uid)}" style="min-height:34px;padding:5px 14px;font-size:13px">${fol?"✓ "+tr("ফলো করছেন","Following"):"+ "+tr("ফলো","Follow")}</button>`:""}</div>
+    <h3>${esc(p.title)}</h3><p style="white-space:pre-wrap">${esc(p.body)}</p>
+    <div class="sq-act">${mode==="pend"?`<button data-ok="${esc(p.id)}">✅ ${tr("প্রকাশ করুন","Approve")}</button>`:""}${me||FB.admin?`<button data-del="${esc(p.id)}">🗑 ${tr("মুছুন","Delete")}</button>`:""}${!me&&p.ok?`<a href="${SITE.telegram}" target="_blank" rel="noopener" style="margin-left:auto;font-size:12.5px" class="muted">⚑ ${tr("রিপোর্ট","Report")}</a>`:""}</div></article>`; }
+async function fbSquareDraw(){ const el=$("#sqCom"); if(!el) return; fbInit(); await FB_P; if(!$("#sqCom")||FB.failed) return;
+  if(SQC.posts===null) await sqLoad(); const box=$("#sqCom"); if(!box) return;
+  const sortd=a=>a.slice().sort((x,y)=>x.id<y.id?-1:1), msg=SQC.msg; SQC.msg="";
+  box.innerHTML=`<div class="card sq-post"><h3>✍️ ${tr("আপনার লেখা দিন","Write a post")}</h3>
+    ${FB.user?`<form id="sqF" style="display:grid;gap:8px"><label class="dm-f">${tr("শিরোনাম","Title")}<input name="t" required minlength="5" maxlength="120"></label>
+      <label class="dm-f">${tr("লেখা","Text")}<textarea name="b" required minlength="20" maxlength="5000" rows="5"></textarea></label>
+      <p class="muted" style="margin:0;font-size:12.5px">${tr("নিয়ম: শুধু শেখার লেখা। কোনো লিংক, ফোন নম্বর, Telegram/WhatsApp আইডি, টাকা চাওয়া বা লাভের নিশ্চয়তা নয়। অ্যাডমিন যাচাই করার পর সবাই দেখতে পাবে।","Rules: educational posts only. No links, phone numbers, Telegram/WhatsApp IDs, requests for money or promises of profit. Everyone sees it after an admin reviews it.")}</p>
+      <button class="btn btn-primary" type="submit">${tr("জমা দিন","Submit")}</button><div class="dm-msg" id="sqM">${esc(msg)}</div></form>`
+    :`<p>${tr("লেখা দিতে আগে লগইন করুন।","Log in to write a post.")}</p><a class="btn btn-primary" href="#/account">${tr("লগইন / রেজিস্ট্রেশন","Log in / Register")}</a>`}</div>
+    ${SQC.pend.length?`<h3 style="margin:6px 0">🛡 ${tr("যাচাইয়ের অপেক্ষায় (অ্যাডমিন)","Waiting for review (admin)")} · ${SQC.pend.length}</h3>${sortd(SQC.pend).map(p=>sqCard(p,"pend")).join("")}`:""}
+    ${!FB.admin&&SQC.mine.length?sortd(SQC.mine).map(p=>sqCard(p,"mine")).join(""):""}
+    ${SQC.posts.length?`<h3 style="margin:6px 0">👥 ${tr("সদস্যদের লেখা","Community posts")}</h3>${sortd(SQC.posts).map(p=>sqCard(p,"pub")).join("")}`:""}`;
+  const P=FB.db.collection("posts"), redo=async m=>{ SQC.msg=m||""; await sqLoad(); fbSquareDraw(); };
+  if($("#sqF")) $("#sqF").onsubmit=async e=>{ e.preventDefault(); const f=new FormData(e.target), t=String(f.get("t")).trim(), b=String(f.get("b")).trim(), M=x=>{ $("#sqM").textContent=x; };
+    if(t.length<5||b.length<20){ M(tr("শিরোনাম বা লেখা খুব ছোট।","The title or text is too short.")); return; }
+    if(SQ_LINK.test(t+" "+b)){ M(tr("লেখায় লিংক, ফোন নম্বর বা আইডি রাখা যাবে না।","Links, phone numbers and IDs are not allowed in posts.")); return; }
+    if(SQC.mine.length>=3){ M(tr("আপনার ৩টা লেখা এখনো যাচাইয়ের অপেক্ষায় আছে। সেগুলো প্রকাশ হলে আবার দিন।","You already have 3 posts waiting for review.")); return; }
+    try{ const id=String(9e15-Date.now()).padStart(16,"0")+"-"+fbCode();
+      await P.doc(id).set({uid:FB.user.uid,name:(FB.prof&&FB.prof.name)||"Member",title:t,body:b,ok:false,at:firebase.firestore.FieldValue.serverTimestamp()});
+      redo(tr("✅ জমা হয়েছে। অ্যাডমিন যাচাই করলে সবাই দেখতে পাবে।","✅ Submitted. Everyone will see it once an admin approves it.")); }catch(err){ M(fbErr(err)); } };
+  box.querySelectorAll("[data-ok]").forEach(x=>x.onclick=async()=>{ try{ await P.doc(x.dataset.ok).update({ok:true}); }catch(e){ SQC.msg=fbErr(e); } redo(SQC.msg); });
+  box.querySelectorAll("[data-del]").forEach(x=>x.onclick=async()=>{ if(!confirm(tr("লেখাটা মুছে ফেলবেন?","Delete this post?"))) return; try{ await P.doc(x.dataset.del).delete(); }catch(e){ SQC.msg=fbErr(e); } redo(SQC.msg); });
+  box.querySelectorAll("[data-fol]").forEach(x=>x.onclick=async()=>{ const to=x.dataset.fol, id=FB.user.uid+"_"+to, F=FB.db.collection("follows").doc(id);
+    try{ if(FB.following[to]){ await F.delete(); delete FB.following[to]; } else { await F.set({from:FB.user.uid,to,at:firebase.firestore.FieldValue.serverTimestamp()}); FB.following[to]=id; } }catch(e){ SQC.msg=fbErr(e); } fbSquareDraw(); }); }
+
 applyStatic();
 if(/^#?\/?$/.test(location.hash)) startBgWorld();
 route();
+setTimeout(fbInit,2500);
 </script>
 </body>
 </html>
