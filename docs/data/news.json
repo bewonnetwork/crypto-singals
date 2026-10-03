@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T14:50:12+00:00",
+ "updated": "2026-10-03T18:38:59+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,69 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "b3898e2d6f",
+   "title": "Chainalysis Used AI to Trace the $387M Bitget Hack Back to North Korea",
+   "link": "https://decrypt.co/380005/chainalysis-ai-87m-bitget-hack-north-korea",
+   "source": "Decrypt",
+   "published": "2026-10-03T17:01:03+00:00",
+   "summary": "The firm says the Sept. 24 breach pushed North Korea's 2026 crypto haul past $1 billion, and detailed how it used in-house AI to trace the stolen funds across four blockchains in a race against the attackers.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/north-korea-missiles-dprk-decrypt-style-gID_7.jpg"
+  },
+  {
+   "id": "c97ddfd170",
+   "title": "OpenAI Banned PewDiePie Twice While He Built Ajax, an Uncensored AI That Will Run on Your PC",
+   "link": "https://decrypt.co/380001/openai-banned-pewdiepie-twice-ajax-uncensored-ai",
+   "source": "Decrypt",
+   "published": "2026-10-03T16:01:03+00:00",
+   "summary": "The YouTuber says OpenAI suspended his account twice while he trained a small, uncensored model built to run on your own computer.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2020/05/Screenshot-2020-05-06-at-12-gID_4.jpg"
+  },
+  {
+   "id": "30e4ed4c16",
+   "title": "ESMA proposes ending EU custody and transfer services for non-compliant stablecoins",
+   "link": "https://cryptoslate.com/esma-proposes-ending-eu-custody-and-transfer-services-for-non-compliant-stablecoins/",
+   "source": "CryptoSlate",
+   "published": "2026-10-03T16:00:54+00:00",
+   "summary": "Non-compliant tokens could lose licensed custody and transfer access if the proposal becomes law, with exit rules still unresolved. The post ESMA proposes ending EU custody and transfer services for non-compliant stablecoins appeared first…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/eu-stablecoin-compliance-split.webp"
+  },
+  {
+   "id": "478a2512d7",
+   "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
+   "link": "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
+   "source": "CoinDesk",
+   "published": "2026-10-03T16:00:00+00:00",
+   "summary": "CEO Iana Dimitrova said OpenPayd aims to launch in the U.S. by April 2027 and is eyeing deals to add licenses and technology.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/26685777b02289720baed417998ab31c5110fd17-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "bc87ef3f0d",
+   "title": "Crypto job postings triple to over 1,200 in September, but applications fall",
+   "link": "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
+   "source": "CoinDesk",
+   "published": "2026-10-03T16:00:00+00:00",
+   "summary": "Finance, engineering and trading led hiring demand, while Bitcoin, Ethereum and Solana were the most frequently requested blockchain skills.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/0bd7d25adab19bae569a11ac843bb6b058835c49-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "a668bf44e3",
+   "title": "Trump Is Hosting Yet Another Meme Coin Dinner: Here Are the Details",
+   "link": "https://decrypt.co/380002/trump-third-meme-coin-dinner-details",
+   "source": "Decrypt",
+   "published": "2026-10-03T15:01:03+00:00",
+   "summary": "The TRUMP meme coin project is inviting its top 185 holders to a Nov. 22 gala dinner with President Trump two weeks after ethics disputes over his crypto interests helped stall the Clarity Act in the Senate.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Trump-decrypt-style-10-gID_7.png"
+  },
+  {
+   "id": "0b3b675a4e",
+   "title": "Cathie Wood says smart investors need to start watching where AI agents spend money",
+   "link": "https://www.coindesk.com/markets/2026/10/01/cathie-wood-says-smart-investors-need-to-start-watching-where-ai-agents-spend-money",
+   "source": "CoinDesk",
+   "published": "2026-10-03T15:00:00+00:00",
+   "summary": "As AI agents evolve from answering questions to spending real money, investors and tech giants are scrambling to control the financial networks powering machine-driven commerce.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/cb41936ab0c9767ce6de085eb8b95a680f9dc9ac-6000x4161.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
   {
    "id": "832d4e6061",
    "title": "Six US banks have failed in 2026 but the numbers look nothing like 2023",
@@ -196,15 +259,6 @@
    "published": "2026-10-02T19:46:03+00:00",
    "summary": "The USDC issuer told the European Commission that MiCA's reserve mandates and concentration caps keep the largest global stablecoins outside Europe's perimeter—siding with the ECB in calling for more flexible rules.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/circle-logo-decrypt-style-01-gID_7.png"
-  },
-  {
-   "id": "bf15faf98e",
-   "title": "Crypto hackers exploit third-party Aave tool to steal 114 ETH",
-   "link": "https://cryptoslate.com/crypto-hackers-exploit-third-party-aave-tool-to-steal-114-eth/",
-   "source": "CryptoSlate",
-   "published": "2026-10-02T19:10:35+00:00",
-   "summary": "A third-party lending adapter built on Aave was exploited to steal about 114 ETH, worth over $300,000, while the protocol itself remained unaffected. On Oct. 2, blockchain security firm SlowMist said the attacker compromised two Safe…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-adapter-breach.webp"
   },
   {
    "id": "1c9b3dd8a0",
@@ -673,60 +727,6 @@
    "published": "2026-10-01T21:07:45+00:00",
    "summary": "Evernorth expects to begin trading on Nasdaq under the ticker XRPN after its SPAC merger closes, with an XRP treasury worth roughly $710 million at current prices.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3WJGXZ9FFQTSYAEBHHG5A8X/hi-types-of-consensus-mechanisms-in-blockchain.png"
-  },
-  {
-   "id": "baed58a83e",
-   "title": "SEC proposes framework allowing investment advisers, funds to self-custody crypto",
-   "link": "https://www.theblock.co/news/regulation/2026-10-01-sec-proposes-crypto-custody-rule-investment-advisers-funds-417498",
-   "source": "The Block",
-   "published": "2026-10-01T21:00:53+00:00",
-   "summary": "SEC proposed a crypto framework for investment advisers & funds, allowing self-custody in some cases & state trust companies as custodians.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/09/20230814_TheSEC_News2.jpg"
-  },
-  {
-   "id": "d9762be804",
-   "title": "Trump to host 3rd ‘exclusive’ memecoin event amid corruption claims",
-   "link": "https://cointelegraph.com/news/donald-trump-memecoin-dinner-corruption-claims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T21:00:11+00:00",
-   "summary": "The president is scheduled to appear at his golf club in Washington, DC, at a Nov. 22 dinner for his top 185 memecoin holders, following similar events in May 2025 and April 2026.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3WEDVQV08N86T96EE7QKVBP/trump-and-memecoin.jpg"
-  },
-  {
-   "id": "771ea77c96",
-   "title": "SEC Proposes Rules to Clear Up How Advisers and Funds Can Hold Crypto",
-   "link": "https://decrypt.co/379899/sec-proposes-rules-advisers-funds-hold-crypto",
-   "source": "Decrypt",
-   "published": "2026-10-01T20:46:03+00:00",
-   "summary": "The proposal would let advisers and funds use state trust companies as custodians and permit self-custody under certain conditions, aiming to replace years of ambiguity with a clear compliance path.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/paul-atkins-decrypt-style-01-gID_7.jpg"
-  },
-  {
-   "id": "c5e1465c8c",
-   "title": "Reddit Is Killing RSS Feeds and Public API Access to Fight AI Scrapers",
-   "link": "https://decrypt.co/379892/reddit-killing-rss-feeds-public-api-access-ai-scrapers",
-   "source": "Decrypt",
-   "published": "2026-10-01T20:31:03+00:00",
-   "summary": "Reddit RSS dies November 13 and outside apps lose their data pipeline by March 2027. Reddit blames scraping bots, though it licenses its own content to AI companies.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/reddit-decrypt-style-01-gID_7.jpg"
-  },
-  {
-   "id": "13d7260448",
-   "title": "SEC proposes new crypto custody rules for investment advisers and funds",
-   "link": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
-   "source": "CoinDesk",
-   "published": "2026-10-01T20:20:04+00:00",
-   "summary": "The regulator issued a proposed rule for custody, marking a swan song for its inaugural Crypto Task Force chief, Commissioner Hester Peirce, who exits this week.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/333db2ac6429c13170ebdacdfd4cae413b017a08-4922x2769.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "6c322690e8",
-   "title": "OpenAI Says People Linked to China's Moonshot Tried to Copy Its AI's Hidden Reasoning",
-   "link": "https://decrypt.co/379890/openai-china-moonshot-copy-ai-hidden-reasoning",
-   "source": "Decrypt",
-   "published": "2026-10-01T19:46:03+00:00",
-   "summary": "OpenAI says it disrupted a campaign involving 15,000+ users and ties a core cluster to people associated with Moonshot, the startup behind Kimi.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/04/decrypt-style-sam-altman-3-gID_7.png"
   }
  ]
 }
