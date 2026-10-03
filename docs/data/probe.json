@@ -1,8 +1,8 @@
 {
- "version": 1,
- "generated": "2026-10-02T20:10:43+00:00",
- "ok": 43,
- "total": 72,
+ "version": 2,
+ "generated": "2026-10-03T05:07:18+00:00",
+ "ok": 45,
+ "total": 78,
  "results": [
   {
    "group": "listing",
@@ -101,7 +101,7 @@
    "shape": {
     "code": "00000",
     "msg": "success",
-    "requestTime": "1790971838277",
+    "requestTime": "1791004034663",
     "data": [
      "len=10",
      {
@@ -137,7 +137,7 @@
    "url": "https://www.gate.io/articlelist/ann/0",
    "status": 403,
    "ctype": "text/html",
-   "size": 390,
+   "size": 388,
    "kind": "html",
    "anchors": 0,
    "sample": [],
@@ -150,7 +150,7 @@
    "url": "https://www.mexc.com/help/announce/api/en-US/section/15425930840735/articles?page=1&perPage=8",
    "status": 403,
    "ctype": "text/html",
-   "size": 452,
+   "size": 454,
    "kind": "html",
    "anchors": 0,
    "sample": [],
@@ -163,7 +163,7 @@
    "url": "https://support.mexc.com/api/v2/help_center/en-us/articles.json?per_page=8&sort_by=created_at&sort_order=desc",
    "status": 403,
    "ctype": "text/html",
-   "size": 367,
+   "size": 369,
    "kind": "html",
    "anchors": 0,
    "sample": [],
@@ -207,7 +207,7 @@
    "url": "https://api-manager.upbit.com/api/v1/announcements?os=web&page=1&per_page=8&category=trade",
    "status": 403,
    "ctype": "text/html; charset=UTF-8",
-   "size": 4544,
+   "size": 4543,
    "kind": "html",
    "anchors": 1,
    "sample": [
@@ -225,7 +225,7 @@
    "url": "https://feed.bithumb.com/notice",
    "status": 403,
    "ctype": "text/html; charset=UTF-8",
-   "size": 5484,
+   "size": 5483,
    "kind": "html",
    "anchors": 1,
    "sample": [
@@ -243,7 +243,7 @@
    "url": "https://blog.coinbase.com/feed",
    "status": 200,
    "ctype": "text/html; charset=utf-8",
-   "size": 607668,
+   "size": 607714,
    "kind": "html",
    "anchors": 112,
    "sample": [
@@ -512,7 +512,7 @@
     "code": "100003",
     "msg": "Your device's time is incorrect, please adjust it.",
     "success": "False",
-    "timestamp": "1790971839237"
+    "timestamp": "1791004035501"
    },
    "ok": false
   },
@@ -529,12 +529,12 @@
     "title": "Error 1034: Edge IP Restricted",
     "status": "403",
     "detail": "The host resolved to an IP address that the site owner does not have access to.",
-    "instance": "a4465a069fabeae2",
+    "instance": "a4496c120c4850ba",
     "error_code": "1034",
     "error_name": "edge_ip_restricted",
     "error_category": "dns",
-    "ray_id": "a4465a069fabeae2",
-    "timestamp": "2026-10-02T20:10:38Z",
+    "ray_id": "a4496c120c4850ba",
+    "timestamp": "2026-10-03T05:07:14Z",
     "zone": "support.lbank.site",
     "cloudflare_error": "True",
     "retryable": "False",
@@ -568,11 +568,11 @@
       "draft": "False",
       "promoted": "False",
       "position": "0",
-      "vote_sum": "-14",
-      "vote_count": "22",
+      "vote_sum": "-15",
+      "vote_count": "23",
       "section_id": "39162120325403",
       "created_at": "2026-09-30T16:29:15Z",
-      "updated_at": "2026-10-02T17:54:16Z",
+      "updated_at": "2026-10-03T02:14:52Z",
       "name": "Announcement on BitMart's Initial Indicative Proposal and Roadmap"
      }
     ],
@@ -587,7 +587,7 @@
    "url": "https://phemex.com/announcements/rss",
    "status": 404,
    "ctype": "text/html; charset=utf-8",
-   "size": 569,
+   "size": 549,
    "kind": "html",
    "anchors": 0,
    "sample": [],
@@ -814,9 +814,9 @@
       "publication_timestamp": "1790943473032"
      }
     ],
-    "usIn": "1790971838899739",
-    "usOut": "1790971838902758",
-    "usDiff": "3019",
+    "usIn": "1791004035441058",
+    "usOut": "1791004035443042",
+    "usDiff": "1984",
     "testnet": "False"
    },
    "ok": true
@@ -847,12 +847,12 @@
    "url": "https://api.coinone.co.kr/public/v2/markets/KRW",
    "status": 200,
    "ctype": "application/json; charset=UTF-8",
-   "size": 137623,
+   "size": 137625,
    "kind": "json",
    "shape": {
     "result": "success",
     "error_code": "0",
-    "server_time": "1790971839572",
+    "server_time": "1791004035879",
     "markets": [
      "len=362",
      {
@@ -1050,16 +1050,16 @@
    "url": "https://defillama-datasets.llama.fi/emissionsBreakdown",
    "status": 200,
    "ctype": "application/json",
-   "size": 98159,
+   "size": 98021,
    "kind": "json",
    "shape": {
-    "humidifi": {
-     "name": "HumidiFi",
-     "defillamaId": "6554",
+    "re": {
+     "name": "Re",
+     "defillamaId": "7182",
      "linked": [
       "len=0"
      ],
-     "category": "Dexs",
+     "category": "RWA",
      "chain": "",
      "emission24h": "0",
      "emission7d": "0",
@@ -1069,9 +1069,25 @@
      "emissionsAverage1y": "0",
      "emissionsMonthlyAverage1y": "None"
     },
-    "billions-network": {
-     "name": "Billions Network",
-     "defillamaId": "8370",
+    "altlayer": {
+     "name": "AltLayer",
+     "defillamaId": "4641",
+     "linked": [
+      "len=0"
+     ],
+     "category": "Developer Tools",
+     "chain": "",
+     "emission24h": "0",
+     "emission7d": "0",
+     "emission30d": "0",
+     "emissions1y": "0",
+     "emissionsAllTime": "0",
+     "emissionsAverage1y": "0",
+     "emissionsMonthlyAverage1y": "None"
+    },
+    "connex": {
+     "name": "Connex",
+     "defillamaId": "6144",
      "linked": [
       "len=0"
      ],
@@ -1085,64 +1101,30 @@
      "emissionsAverage1y": "0",
      "emissionsMonthlyAverage1y": "None"
     },
-    "doublezero": {
-     "name": "DoubleZero",
-     "defillamaId": "6939",
-     "linked": [
-      "len=2",
-      "6976"
-     ],
-     "category": "Developer Tools",
-     "chain": "",
-     "emission24h": "0",
-     "emission7d": "0",
-     "emission30d": "0",
-     "emissions1y": "0",
-     "emissionsAllTime": "0",
-     "emissionsAverage1y": "0",
-     "emissionsMonthlyAverage1y": "None"
-    },
-    "smardex-ecosystem": {
-     "name": "SMARDEX Ecosystem",
-     "defillamaId": "2695",
+    "godl-protocol": {
+     "name": "GODL protocol",
+     "defillamaId": "7024",
      "linked": [
       "len=0"
      ],
-     "category": "Dexs",
+     "category": "Gamified Mining",
      "chain": "",
-     "emission24h": "0",
-     "emission7d": "0",
-     "emission30d": "0",
-     "emissions1y": "0",
-     "emissionsAllTime": "0",
-     "emissionsAverage1y": "0",
-     "emissionsMonthlyAverage1y": "None"
+     "emission24h": "None",
+     "emission7d": "74568.67429311151",
+     "emission30d": "304164.31777007395",
+     "emissions1y": "10942819.45395987",
+     "emissionsAllTime": "10942819.45395987",
+     "emissionsAverage1y": "911901.6211633225",
+     "emissionsMonthlyAverage1y": "1044198.8218762961"
     },
-    "aster": {
-     "name": "Aster",
-     "defillamaId": "1772",
-     "linked": [
-      "len=7",
-      "4847"
-     ],
-     "category": "Bridge",
-     "chain": "",
-     "emission24h": "0",
-     "emission7d": "0",
-     "emission30d": "0",
-     "emissions1y": "0",
-     "emissionsAllTime": "0",
-     "emissionsAverage1y": "0",
-     "emissionsMonthlyAverage1y": "None"
-    },
-    "aptos": {
-     "name": "Aptos",
-     "defillamaId": "2725",
+    "flashstake": {
+     "name": "Flashstake",
+     "defillamaId": "2115",
      "linked": [
       "len=0"
      ],
-     "category": "Canonical Bridge",
-     "chain": "Aptos",
+     "category": "Yield",
+     "chain": "",
      "emission24h": "0",
      "emission7d": "0",
      "emission30d": "0",
@@ -1151,26 +1133,9 @@
      "emissionsAverage1y": "0",
      "emissionsMonthlyAverage1y": "None"
     },
-    "sky": {
-     "name": "Sky",
-     "defillamaId": "118",
-     "linked": [
-      "len=2",
-      "3665"
-     ],
-     "category": "CDP",
-     "chain": "",
-     "emission24h": "0",
-     "emission7d": "0",
-     "emission30d": "0",
-     "emissions1y": "0",
-     "emissionsAllTime": "0",
-     "emissionsAverage1y": "0",
-     "emissionsMonthlyAverage1y": "0"
-    },
-    "exactly": {
-     "name": "Exactly",
-     "defillamaId": "2385",
+    "benqi": {
+     "name": "Benqi",
+     "defillamaId": "467",
      "linked": [
       "len=0"
      ],
@@ -1184,13 +1149,13 @@
      "emissionsAverage1y": "0",
      "emissionsMonthlyAverage1y": "None"
     },
-    "dune-protocol": {
-     "name": "Dune Protocol",
-     "defillamaId": "7780",
+    "ankr": {
+     "name": "Ankr",
+     "defillamaId": "278",
      "linked": [
       "len=0"
      ],
-     "category": "Gamified Mining",
+     "category": "Liquid Staking",
      "chain": "",
      "emission24h": "0",
      "emission7d": "0",
@@ -1200,13 +1165,13 @@
      "emissionsAverage1y": "0",
      "emissionsMonthlyAverage1y": "None"
     },
-    "heyelsa": {
-     "name": "HeyElsa",
-     "defillamaId": "8170",
+    "arcium": {
+     "name": "Arcium",
+     "defillamaId": "8276",
      "linked": [
       "len=0"
      ],
-     "category": "AI Agents",
+     "category": "Privacy",
      "chain": "",
      "emission24h": "0",
      "emission7d": "0",
@@ -1216,26 +1181,41 @@
      "emissionsAverage1y": "0",
      "emissionsMonthlyAverage1y": "None"
     },
-    "hyperswap": {
-     "name": "HyperSwap",
-     "defillamaId": "5836",
+    "ribbon-finance": {
+     "name": "Ribbon Finance",
+     "defillamaId": "281",
      "linked": [
-      "len=2",
-      "5837"
+      "len=0"
      ],
-     "category": "Dexs",
+     "category": "Options Vault",
      "chain": "",
-     "emission24h": "None",
-     "emission7d": "1671.0328304423774",
-     "emission30d": "17730.045370974025",
-     "emissions1y": "84537.31515697933",
-     "emissionsAllTime": "84537.31515697933",
-     "emissionsAverage1y": "7044.7762630816105",
-     "emissionsMonthlyAverage1y": "7774.368197517978"
+     "emission24h": "0",
+     "emission7d": "0",
+     "emission30d": "0",
+     "emissions1y": "0",
+     "emissionsAllTime": "0",
+     "emissionsAverage1y": "0",
+     "emissionsMonthlyAverage1y": "None"
     },
-    "golem-network": {
-     "name": "Golem Network",
-     "defillamaId": "3224",
+    "eigencloud": {
+     "name": "EigenCloud",
+     "defillamaId": "3107",
+     "linked": [
+      "len=0"
+     ],
+     "category": "Restaking",
+     "chain": "",
+     "emission24h": "19.63568640778133",
+     "emission7d": "39090.7131861089",
+     "emission30d": "171290.1935504864",
+     "emissions1y": "28210041.845811542",
+     "emissionsAllTime": "162537887.1807286",
+     "emissionsAverage1y": "2350836.820484295",
+     "emissionsMonthlyAverage1y": "2359103.4994134707"
+    },
+    "basic-attention": {
+     "name": "Basic Attention",
+     "defillamaId": "3490",
      "linked": [
       "len=0"
      ],
@@ -1249,31 +1229,47 @@
      "emissionsAverage1y": "0",
      "emissionsMonthlyAverage1y": "None"
     },
-    "abracadabra": {
-     "name": "Abracadabra",
-     "defillamaId": "347",
+    "beam": {
+     "name": "Beam",
+     "defillamaId": "4522",
      "linked": [
-      "len=1",
-      "4502"
+      "len=0"
      ],
-     "category": "CDP",
+     "category": "Chain",
      "chain": "",
      "emission24h": "0",
      "emission7d": "0",
      "emission30d": "0",
-     "emissions1y": "3459015.8979396466",
-     "emissionsAllTime": "293996892.5828604",
-     "emissionsAverage1y": "288251.3248283039",
-     "emissionsMonthlyAverage1y": "3290388.872915089"
+     "emissions1y": "0",
+     "emissionsAllTime": "0",
+     "emissionsAverage1y": "0",
+     "emissionsMonthlyAverage1y": "None"
     },
-    "babylon-protocol": {
-     "name": "Babylon Protocol",
-     "defillamaId": "5258",
+    "flowx-finance": {
+     "name": "FlowX Finance",
+     "defillamaId": "3196",
+     "linked": [
+      "len=3",
+      "4582"
+     ],
+     "category": "Dexs",
+     "chain": "",
+     "emission24h": "0",
+     "emission7d": "0",
+     "emission30d": "0",
+     "emissions1y": "0",
+     "emissionsAllTime": "0",
+     "emissionsAverage1y": "0",
+     "emissionsMonthlyAverage1y": "None"
+    },
+    "gunz": {
+     "name": "Gunz",
+     "defillamaId": "6030",
      "linked": [
       "len=0"
      ],
-     "category": "Restaking",
-     "chain": "",
+     "category": "Chain",
+     "chain": "Gunz",
      "emission24h": "0",
      "emission7d": "0",
      "emission30d": "0",
@@ -1291,36 +1287,67 @@
    "url": "https://api.coinmarketcap.com/data-api/v3/token-unlock/listing?start=1&limit=20",
    "status": 200,
    "ctype": "application/json",
-   "size": 26769,
+   "size": 26837,
    "kind": "json",
    "shape": {
     "data": {
      "tokenUnlockList": [
       "len=20",
       {
-       "cryptoId": "3035",
-       "symbol": "BST",
-       "slug": "blocksquare-token",
-       "name": "Blocksquare Token",
+       "cryptoId": "39089",
+       "symbol": "BTX",
+       "slug": "beatswap",
+       "name": "BeatSwap",
        "isActive": "1",
-       "cmcRank": "2119",
-       "selfReportedCirculatingSupply": "31871446.27",
-       "totalSupply": "63637996.57594436",
-       "circulatingSupply": "61474323.87899891",
-       "maxSupply": "100000000.0",
-       "totalUnlockedPercentage": "69.78",
-       "tokenUnlockedAmount": "69776727.81280445",
-       "tokenLockedAmount": "30223272.187195558",
-       "tokenUntrackedAmount": "0"
+       "cmcRank": "1031",
+       "selfReportedCirculatingSupply": "224755243.0",
+       "totalSupply": "1500000000.0",
+       "circulatingSupply": "382070559.0",
+       "maxSupply": "1500000000.0",
+       "totalUnlockedPercentage": "29.44",
+       "tokenUnlockedAmount": "441617921.0526305",
+       "tokenLockedAmount": "1058382078.9473696",
+       "tokenUntrackedAmount": "0",
+       "nextUnlocked": {
+        "tokenAmount": "128906.28947368",
+        "tokenAmountUsd": "2975.204573054481",
+        "tokenAmountPercentage": "0.01",
+        "date": "1791007200000"
+       },
+       "nextUnlockedDetail": [
+        "len=1",
+        {
+         "tokenAmount": "128906.28947368",
+         "tokenAmountUsd": "2975.204573054481",
+         "allocationName": "Treasury Vault",
+         "vestingType": "linear"
+        }
+       ],
+       "quotes": [
+        "len=1",
+        {
+         "name": "USD",
+         "price": "0.02308036780208429",
+         "volume24h": "295558.0801089",
+         "marketCap": "8818329.03",
+         "selfReportedMarketCap": "5187433.673886831",
+         "percentChange1h": "-0.11691181",
+         "percentChange24h": "0.06850604",
+         "percentChange7d": "0.28838022",
+         "lastUpdated": "2026-10-03T05:05:00.000Z",
+         "fullyDilluttedMarketCap": "34620551.7"
+        }
+       ],
+       "selfReported": "True"
       }
      ],
      "totalCount": "1315"
     },
     "status": {
-     "timestamp": "2026-10-02T20:10:39.398Z",
+     "timestamp": "2026-10-03T05:07:15.722Z",
      "error_code": "0",
      "error_message": "SUCCESS",
-     "elapsed": "13",
+     "elapsed": "12",
      "credit_count": "0"
     }
    },
@@ -1332,7 +1359,7 @@
    "url": "https://api.cryptorank.io/v0/coins/vesting?limit=20",
    "status": 403,
    "ctype": "text/html; charset=UTF-8",
-   "size": 5847,
+   "size": 5846,
    "kind": "html",
    "anchors": 1,
    "sample": [
@@ -1359,6 +1386,559 @@
     "detail": "No endpoint GET /portfolio/api/vesting/upcoming.",
     "instance": "/portfolio/api/vesting/upcoming"
    },
+   "ok": false
+  },
+  {
+   "group": "unlock",
+   "name": "CMC-unlocks-next",
+   "url": "https://api.coinmarketcap.com/data-api/v3/token-unlock/listing?start=1&limit=20&sort=next_unlocked_date&direction=asc&enableSmallUnlocks=false",
+   "status": 200,
+   "ctype": "application/json",
+   "size": 23422,
+   "kind": "json",
+   "shape": {
+    "data": {
+     "tokenUnlockList": [
+      "len=20",
+      {
+       "cryptoId": "29210",
+       "symbol": "JUP",
+       "slug": "jupiter-ag",
+       "name": "Jupiter",
+       "isActive": "1",
+       "cmcRank": "64",
+       "selfReportedCirculatingSupply": "3319369204.37",
+       "totalSupply": "6862435229.582892",
+       "circulatingSupply": "3319369204.37",
+       "maxSupply": "6862435229.582892",
+       "totalUnlockedPercentage": "49.39",
+       "tokenUnlockedAmount": "3457074114.36",
+       "tokenLockedAmount": "3542925885.7",
+       "tokenUntrackedAmount": "0",
+       "nextUnlocked": {
+        "tokenAmount": "1632700000.0",
+        "tokenAmountUsd": "512198310.4894912",
+        "tokenAmountPercentage": "23.32",
+        "date": "4828219200000"
+       },
+       "nextUnlockedDetail": [
+        "len=2",
+        {
+         "tokenAmount": "300000000.0",
+         "tokenAmountUsd": "94113733.78259777",
+         "allocationName": "Community Reserve",
+         "vestingType": "cliff"
+        }
+       ],
+       "quotes": [
+        "len=1",
+        {
+         "name": "USD",
+         "price": "0.31371244594199255",
+         "volume24h": "45622456.42709402",
+         "marketCap": "1041327432.09",
+         "selfReportedMarketCap": "1041327432.0874385",
+         "percentChange1h": "-0.79064284",
+         "percentChange24h": "-7.40930954",
+         "percentChange7d": "-9.15978766",
+         "lastUpdated": "2026-10-03T05:06:00.000Z",
+         "fullyDilluttedMarketCap": "2152831340.99"
+        }
+       ],
+       "selfReported": "True"
+      }
+     ],
+     "totalCount": "411"
+    },
+    "status": {
+     "timestamp": "2026-10-03T05:07:15.774Z",
+     "error_code": "0",
+     "error_message": "SUCCESS",
+     "elapsed": "13",
+     "credit_count": "0"
+    }
+   },
+   "ok": true
+  },
+  {
+   "group": "unlock",
+   "name": "CMC-unlock-detail",
+   "url": "https://api.coinmarketcap.com/data-api/v3/token-unlock/detail?slug=arbitrum",
+   "status": 404,
+   "ctype": "text/html",
+   "size": 751,
+   "kind": "html",
+   "anchors": 0,
+   "sample": [],
+   "title": "coinmarketcap.com",
+   "ok": false
+  },
+  {
+   "group": "listing",
+   "name": "HTX-article",
+   "url": "https://www.htx.com/support/55045085577698",
+   "status": 200,
+   "ctype": "text/html; charset=utf-8",
+   "size": 72728,
+   "kind": "html",
+   "anchors": 31,
+   "sample": [
+    [
+     "/en-us/support/",
+     "Announcement"
+    ],
+    [
+     "https://www.htx.com/tokens/ct/",
+     "About the token &gt;&gt;&gt;"
+    ],
+    [
+     "https://www.htx.com/support/en-us/detail/900003573146",
+     "More about TradingBot &gt;&gt;&gt;"
+    ],
+    [
+     "/en-us/v/register-99?id=10027&amp;lang=en-us&amp;inviter_id=11353030&amp;invite_code=ymcx6223",
+     "Sign up for an HTX account to get special rewards!"
+    ],
+    [
+     "/microapps/en-us/double-invite-retail/checkin",
+     "Refer friends to win up to 1,500 USDT and 30% of their trading fees"
+    ],
+    [
+     "https://www.htx.com/en-us/grid-exchange/",
+     "Enable Trading Bots to Start Earning Automatically"
+    ],
+    [
+     "https://x.com/htx_global",
+     "https://x.com/htx_global"
+    ],
+    [
+     "https://twitter.com/htxfutures",
+     "https://twitter.com/htxfutures"
+    ],
+    [
+     "https://x.com/HTXCommunity",
+     "https://x.com/HTXCommunity"
+    ],
+    [
+     "https://www.facebook.com/htxglobalofficial/",
+     "https://www.facebook.com/htxglobalofficial/"
+    ],
+    [
+     "https://www.instagram.com/htxglobalofficial/",
+     "https://www.instagram.com/htxglobalofficial/"
+    ],
+    [
+     "https://www.reddit.com/r/HuobiGlobal/",
+     "https://www.reddit.com/r/HuobiGlobal/"
+    ],
+    [
+     "https://htxofficial.medium.com/",
+     "https://htxofficial.medium.com/"
+    ],
+    [
+     "https://t.me/htxglobalofficial",
+     "https://t.me/htxglobalofficial"
+    ],
+    [
+     "https://t.me/htxglobalofficial_2",
+     "https://t.me/htxglobalofficial_2"
+    ],
+    [
+     "https://t.me/HTXGlobalAnnouncementChannel",
+     "https://t.me/HTXGlobalAnnouncementChannel"
+    ],
+    [
+     "https://t.me/HTXFutures_en",
+     "https://t.me/HTXFutures_en"
+    ],
+    [
+     "https://discord.gg/htx-official",
+     "https://discord.gg/htx-official"
+    ],
+    [
+     "/support/en-us/detail/54878651035953",
+     "Risk Reminder"
+    ],
+    [
+     "/en-us/support/65043865687610/",
+     "Fold into the Future: Claim Up to 126 Lucky Draw Entries to Win 4 Flagship Foldable Phones!"
+    ],
+    [
+     "/en-us/support/75045021445778/",
+     "HTX to Settle Cash Dividend for the JPMUSDT Stock Perpetual"
+    ],
+    [
+     "/en-us/support/35045020043809/",
+     "HTX to Settle Cash Dividend for the GEUSDT Stock Perpetual"
+    ],
+    [
+     "/en-us/support/65045061940023/",
+     "[HTX Spot Slippage Protection Program #6] $50,000 Helps Users Enjoy Spot Trading"
+    ],
+    [
+     "/en-us/support/25045083451204/",
+     "HTX Will List CT (Concrete) on September 30, 2026"
+    ],
+    [
+     "/en-us/",
+     "Website"
+    ],
+    [
+     "/en-us/verification/",
+     "Authenticator"
+    ],
+    [
+     "/en-us/grid-exchange/",
+     "Trading Bot"
+    ],
+    [
+     "/en-us/download",
+     "Download for Desktop"
+    ],
+    [
+     "/microapps/en-us/double-invite-retail/h5",
+     "Rebate"
+    ],
+    [
+     "/en-us/welfare/",
+     "Rewards Hub"
+    ],
+    [
+     "/en-us/tradingbot/h5",
+     "Trading Bot"
+    ]
+   ],
+   "title": "HTX to Open Trading for CT (Concrete) at 12:00 (UTC)  on September 30, 2026 | HTX",
+   "ok": true
+  },
+  {
+   "group": "airdrop",
+   "name": "CMC-airdrops-up",
+   "url": "https://api.coinmarketcap.com/data-api/v3/airdrop/query?status=UPCOMING&limit=20",
+   "status": 200,
+   "ctype": "application/json",
+   "size": 174,
+   "kind": "json",
+   "shape": {
+    "data": {
+     "count": {
+      "UPCOMING": "0"
+     },
+     "projects": [
+      "len=0"
+     ]
+    },
+    "status": {
+     "timestamp": "2026-10-03T05:07:15.821Z",
+     "error_code": "0",
+     "error_message": "SUCCESS",
+     "elapsed": "10",
+     "credit_count": "0"
+    }
+   },
+   "ok": false
+  },
+  {
+   "group": "newcoin",
+   "name": "ICODrops-upcoming",
+   "url": "https://icodrops.com/category/upcoming-ico/",
+   "status": 200,
+   "ctype": "text/html; charset=utf-8",
+   "size": 233521,
+   "kind": "html",
+   "anchors": 69,
+   "sample": [
+    [
+     "/",
+     "All projects"
+    ],
+    [
+     "/category/active-ico/",
+     "Active"
+    ],
+    [
+     "/ico-stats/",
+     "ICO stats"
+    ],
+    [
+     "/points-farming/",
+     "Points Farming"
+    ],
+    [
+     "https://dropstab.com",
+     "DropsTab"
+    ],
+    [
+     "https://dropsearn.com",
+     "DropsEarn"
+    ],
+    [
+     "https://dropscapital.com/",
+     "DropsCapital (RU)"
+    ],
+    [
+     "/advertising/",
+     "Advertising"
+    ],
+    [
+     "/clix/",
+     "CLIX CLIX"
+    ],
+    [
+     "/spaceway-token/",
+     "Spaceway Token SPWAY"
+    ],
+    [
+     "/gno-land/",
+     "Gno.land GNOT"
+    ],
+    [
+     "/credible/",
+     "Credible CRED"
+    ],
+    [
+     "/opendelta/",
+     "OpenDelta USDO"
+    ],
+    [
+     "/ateg-capital/",
+     "ATEG Capital ATEG"
+    ],
+    [
+     "/worldx/",
+     "WorldX WLDX"
+    ],
+    [
+     "/mendel/",
+     "Mendel MENDEL"
+    ],
+    [
+     "/chatllat/",
+     "Chatllat CLAT"
+    ],
+    [
+     "/konnex/",
+     "Konnex"
+    ],
+    [
+     "/antdrop/",
+     "AntDrop ANT"
+    ],
+    [
+     "/chimpx-ai/",
+     "ChimpX AI CHIMP"
+    ],
+    [
+     "/probable/",
+     "Probable"
+    ],
+    [
+     "/penxchain/",
+     "PENXCHAIN PENX"
+    ],
+    [
+     "/hypersignals/",
+     "HyperSignals"
+    ],
+    [
+     "/solstice/",
+     "Solstice SLX"
+    ],
+    [
+     "/sonami/",
+     "SONAMI SNMI"
+    ],
+    [
+     "/chainers/",
+     "Chainers CHU"
+    ],
+    [
+     "/secantx-ai/",
+     "SecantX AI SECA"
+    ],
+    [
+     "/talisman/",
+     "Talisman SEEK"
+    ],
+    [
+     "/mira-2/",
+     "MiRA CAML"
+    ],
+    [
+     "/fightercat/",
+     "FighterCat FIGHTERC"
+    ],
+    [
+     "/monorail/",
+     "Monorail"
+    ],
+    [
+     "/bytedance-rttok/",
+     "ByteDance rTTOK rTTOK"
+    ],
+    [
+     "/blabla-protocol/",
+     "BlaBla Protocol BLA"
+    ],
+    [
+     "/taunt-ai/",
+     "Taunt AI TNT"
+    ],
+    [
+     "/seedli-capital/",
+     "Seedli Capital SEEDLI"
+    ],
+    [
+     "/lern360/",
+     "Lern360 LERN"
+    ],
+    [
+     "/moseiki/",
+     "Moseiki"
+    ],
+    [
+     "/aidefi/",
+     "AIDEFI AIDEFI"
+    ],
+    [
+     "/ratexai/",
+     "RateX.AI"
+    ],
+    [
+     "/gambit/",
+     "Gambit GAMBIT"
+    ],
+    [
+     "/phron-ai/",
+     "Phron AI ZPHR"
+    ],
+    [
+     "/betura/",
+     "Betura BETURA"
+    ],
+    [
+     "/lendr-fi/",
+     "Lendr.fi RWAL"
+    ],
+    [
+     "/dynamo-protocol/",
+     "Dynamo Protocol DYNAMO"
+    ],
+    [
+     "/rise-chain/",
+     "RISE Chain"
+    ],
+    [
+     "/xorionchain/",
+     "XorionChain XOR"
+    ],
+    [
+     "/pin-ai/",
+     "PIN AI"
+    ],
+    [
+     "/africred/",
+     "AfriCred IFT"
+    ],
+    [
+     "/vox/",
+     "VOX VOX"
+    ],
+    [
+     "/8x-capital/",
+     "8x Capital 8x"
+    ],
+    [
+     "/bitcoin-hyper/",
+     "Bitcoin Hyper HYPER"
+    ],
+    [
+     "/cogni-ai-agents/",
+     "Cogni AI Agents COGNI"
+    ],
+    [
+     "/eternalmoon/",
+     "EternalMoon ETM"
+    ],
+    [
+     "/rank-trading/",
+     "Rank Trading RAN"
+    ],
+    [
+     "/inference-labs/",
+     "Inference Labs"
+    ],
+    [
+     "/category/upcoming-ico/",
+     "Upcoming ICO"
+    ],
+    [
+     "/category/ended-ico/",
+     "Ended ICO"
+    ],
+    [
+     "/vc/list/",
+     "Investors & VC’s"
+    ],
+    [
+     "/vc/funding-rounds/",
+     "Funding Rounds"
+    ],
+    [
+     "https://twitter.com/ICODrops",
+     "Twitter"
+    ],
+    [
+     "https://t.me/icodrops",
+     "Telegram News"
+    ],
+    [
+     "https://t.me/joinchat/FoisO0k4-XXBkPEikfdgow",
+     "Telegram Chat (EN)"
+    ],
+    [
+     "https://t.me/joinchat/FoisO0R8kn58iNNlqnNjlg",
+     "Telegram Chat (RU)"
+    ],
+    [
+     "https://t.me/joinchat/FoisO1Ge70JnvvyaFMdBsQ",
+     "Cryptonarnia Chat (RU)"
+    ],
+    [
+     "https://t.me/joinchat/FoisO1OCo4g1o6vyBNnJaw",
+     "DropsEarn Chat (RU)"
+    ],
+    [
+     "https://t.me/Jerrys2",
+     "Marketing Issues"
+    ],
+    [
+     "https://forms.gle/7RuDz1nEcMnRkKpb7",
+     "Submit ICO"
+    ],
+    [
+     "/calendar/",
+     "ICO Calendar"
+    ],
+    [
+     "/legal/",
+     "Learn&nbsp;more"
+    ]
+   ],
+   "title": "ICO Drops - Calendar of active and upcoming ICO & IEO. Complete list with Token Sales",
+   "ok": true
+  },
+  {
+   "group": "newcoin",
+   "name": "CMC-upcoming2",
+   "url": "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listings/upcoming?limit=30",
+   "status": 404,
+   "ctype": "text/html",
+   "size": 751,
+   "kind": "html",
+   "anchors": 0,
+   "sample": [],
+   "title": "coinmarketcap.com",
    "ok": false
   },
   {
@@ -1510,6 +2090,78 @@
     [
      "/visit/0fb3/?k=8896c5467e",
      "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/7fb3/?k=ab63fe302b",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/nfb3/?k=b787b7afb2",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/xeb3/?k=c6a95c0745",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/eeb3/?k=84e204c9ca",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/5eb3/?k=3336935d44",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/odb3/?k=09ee79516c",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/sdb3/?k=2cc9f0a298",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/vdb3/?k=32490d0551",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/jdb3/?k=3820f01bcf",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "https://airdrops.io/stay-safe/",
+     "safety guide"
+    ],
+    [
+     "https://airdrops.io/speculative/",
+     "Retroactive DeFi Airdrops"
+    ],
+    [
+     "https://airdrops.io/confirmed/",
+     "Confirmed Airdrops"
+    ],
+    [
+     "https://airdrops.io/calendar/",
+     "Calendar"
+    ],
+    [
+     "https://airdrops.io/airdrop-alert/",
+     "Airdrop Alert"
+    ],
+    [
+     "https://airdrops.io/contact/",
+     "Contact us / Submit Airdrop"
+    ],
+    [
+     "https://t.me/airdrops_io",
+     "Telegram"
+    ],
+    [
+     "https://twitter.com/airdrops_io",
+     "Twitter"
+    ],
+    [
+     "https://www.facebook.com/airdrops.io/",
+     "Facebook"
     ]
    ],
    "title": "Latest Crypto Airdrops October 2026: Earn Free Tokens",
@@ -1664,6 +2316,106 @@
     [
      "/visit/sga3/?k=ecedf6f12f",
      "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/5773/?k=29371e7849",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/b783/?k=d29aa02068",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/9253/?k=ed036974c0",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/fta3/?k=f731d02de1",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/53a3/?k=33671fd860",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/sw93/?k=b38bfc8767",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/sox2/?k=22d897a7ca",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/n9a3/?k=108335d05f",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/2aa3/?k=0500ba632f",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/6s93/?k=6e55540123",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/n553/?k=fa2d0fd97a",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/h7p2/?k=80bd60d22b",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/udm2/?k=e2cb5a3258",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/xi73/?k=19fbb71511",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "/visit/mq93/?k=8a0321a8c0",
+     "CLAIM AIRDROP"
+    ],
+    [
+     "https://airdrops.io/claims/page/2/",
+     "Older posts"
+    ],
+    [
+     "https://airdrops.io/stay-safe/",
+     "safety guide"
+    ],
+    [
+     "https://airdrops.io/speculative/",
+     "Retroactive DeFi Airdrops"
+    ],
+    [
+     "https://airdrops.io/confirmed/",
+     "Confirmed Airdrops"
+    ],
+    [
+     "https://airdrops.io/calendar/",
+     "Calendar"
+    ],
+    [
+     "https://airdrops.io/airdrop-alert/",
+     "Airdrop Alert"
+    ],
+    [
+     "https://airdrops.io/contact/",
+     "Contact us / Submit Airdrop"
+    ],
+    [
+     "https://t.me/airdrops_io",
+     "Telegram"
+    ],
+    [
+     "https://twitter.com/airdrops_io",
+     "Twitter"
+    ],
+    [
+     "https://www.facebook.com/airdrops.io/",
+     "Facebook"
     ]
    ],
    "title": "Airdrop Claims 2026 » Live Claim List",
@@ -1725,28 +2477,28 @@
    "url": "https://airdropalert.com/feed/",
    "status": 200,
    "ctype": "application/rss+xml; charset=UTF-8",
-   "size": 140912,
+   "size": 135747,
    "kind": "rss",
    "items": 10,
    "sample": [
     [
+     "BC.Game Review 2026: Big Library, Bigger Questions",
+     "https://airdropalert.com/blogs/bc-game-review/",
+     ""
+    ],
+    [
+     "Bitget Post Mortem: How $387.5M Left the Exchange in Three Hours",
+     "https://airdropalert.com/blogs/bitget-post-mortem/",
+     ""
+    ],
+    [
+     "Lighter Review: The Zero-Fee Perp DEX After the Airdrop",
+     "https://airdropalert.com/blogs/lighter-review/",
+     ""
+    ],
+    [
      "Blast Shutdown: Withdraw Your Funds Before October 26",
      "https://airdropalert.com/blogs/blast-shutdown/",
-     ""
-    ],
-    [
-     "Jobs Report Lifts Solana to $122: Why I&#8217;m Still Short SOL",
-     "https://airdropalert.com/blogs/jobs-report-solana/",
-     ""
-    ],
-    [
-     "Trading Fundamentals Part 35: Buy the Dip Strategy for Pullbacks in an Uptrend",
-     "https://airdropalert.com/blogs/buy-the-dip-strategy/",
-     ""
-    ],
-    [
-     "Best Stablecoins in 2026: The Top 5 Ranked and Compared",
-     "https://airdropalert.com/blogs/best-stablecoins/",
      ""
     ]
    ],
@@ -1756,155 +2508,14 @@
    "group": "airdrop",
    "name": "AirdropAlert-farm",
    "url": "https://airdropalert.com/farm/",
-   "status": 200,
-   "ctype": "text/html; charset=UTF-8",
-   "size": 305415,
+   "status": 429,
+   "ctype": "text/html",
+   "size": 1168,
    "kind": "html",
-   "anchors": 45,
-   "sample": [
-    [
-     "https://airdropalert.com/currencies/bitcoin",
-     "BTC $84,371 -0.46%"
-    ],
-    [
-     "https://airdropalert.com/currencies/ethereum",
-     "ETH $2,667 -1.28%"
-    ],
-    [
-     "https://airdropalert.com/currencies/bnb",
-     "BNB $766 -0.50%"
-    ],
-    [
-     "https://airdropalert.com/currencies/solana",
-     "SOL $118 -0.30%"
-    ],
-    [
-     "https://airdropalert.com/currencies/xrp",
-     "XRP $1.47 -2.00%"
-    ],
-    [
-     "https://airdropalert.com/currencies/dogecoin",
-     "DOGE $0.091427 -3.62%"
-    ],
-    [
-     "https://airdropalert.com/currencies/pepe",
-     "PEPE $0.000004 -6.23%"
-    ],
-    [
-     "https://airdropalert.com/currencies/sui",
-     "SUI $1.12 -5.11%"
-    ],
-    [
-     "https://airdropalert.com/currencies/fart",
-     "FARTCOIN $0.172209 -3.53%"
-    ],
-    [
-     "/browse-airdrops/",
-     "Airdrops"
-    ],
-    [
-     "https://airdropalert.com/browse-airdrops/?category=featured",
-     "Featured Airdrops"
-    ],
-    [
-     "https://airdropalert.com/browse-airdrops/?category=new",
-     "New Airdrops"
-    ],
-    [
-     "https://airdropalert.com/browse-airdrops/?category=nft",
-     "NFT Airdrops"
-    ],
-    [
-     "https://airdropalert.com/browse-airdrops/?category=defi",
-     "DeFi Airdrops"
-    ],
-    [
-     "https://airdropalert.com/browse-airdrops/?category=potential-airdrops",
-     "Potential Airdrops"
-    ],
-    [
-     "https://airdropalert.com/browse-airdrops/?blockchain=solana",
-     "Solana Airdrops"
-    ],
-    [
-     "https://airdropalert.com/airdrop-eligibility-checker/",
-     "Airdrop Eligibility Checker"
-    ],
-    [
-     "https://airdropalert.com/blogs/category/news/trading-crypto/",
-     "Trading"
-    ],
-    [
-     "https://airdropalert.com/blogs/category/news/airdrops/",
-     "Airdrop Content"
-    ],
-    [
-     "https://airdropalert.com/blogs/category/guides/",
-     "Guides"
-    ],
-    [
-     "https://airdropalert.com/blogs/category/meme-coins/",
-     "Meme Coins"
-    ],
-    [
-     "https://airdropalert.com/blogs/airdrop-farming-guide-strategy-for-beginners-experts/",
-     "Airdrop Farming"
-    ],
-    [
-     "https://airdropalert.com/cointracker/",
-     "Cointracker"
-    ],
-    [
-     "https://airdropalert.com/crypto-airdrops/",
-     "A crypto airdrop is a free token distribution"
-    ],
-    [
-     "https://airdropalert.com/blogs/how-to-join-your-first-airdrop-real-example/",
-     "how to join your first crypto airdrop"
-    ],
-    [
-     "https://airdropalert.com/browse-airdrops/?category=gaming",
-     "Show More Gaming Airdrops"
-    ],
-    [
-     "https://airdropalert.com/browse-airdrops/?category=trade",
-     "Show More Trading Airdrops"
-    ],
-    [
-     "/crypto-resources/crypto-casinos",
-     "Crypto Casinos"
-    ],
-    [
-     "/crypto-resources/blockchain-bridges",
-     "Blockchain Bridges"
-    ],
-    [
-     "/crypto-resources/gaming-platforms",
-     "Gaming Platforms"
-    ],
-    [
-     "/crypto-resources/staking-restaking",
-     "Staking &amp; Restaking"
-    ],
-    [
-     "/crypto-resources/dex-token-swapping",
-     "DEX Token Swapping"
-    ],
-    [
-     "/crypto-resources/crypto-wallets",
-     "Crypto Wallets"
-    ],
-    [
-     "https://airdropalert.com/authors/",
-     "editorial team"
-    ],
-    [
-     "/exchanges",
-     "Learn about exchanges"
-    ]
-   ],
-   "title": "New Crypto Airdrops Oct 2026 – Live Verified List",
-   "ok": true
+   "anchors": 0,
+   "sample": [],
+   "title": "429 Too Many Requests",
+   "ok": false
   },
   {
    "group": "airdrop",
@@ -1925,10 +2536,170 @@
    "url": "https://dappradar.com/rewards/airdrops",
    "status": 200,
    "ctype": "text/html; charset=UTF-8",
-   "size": 242173,
+   "size": 242691,
    "kind": "html",
    "anchors": 141,
    "sample": [
+    [
+     "https://dappradar.com/",
+     ".cls-1{fill:#fff;stroke-width:0}"
+    ],
+    [
+     "https://dappradar.com/token/midnight-3",
+     "NIGHT $0.0468 +24.70%"
+    ],
+    [
+     "https://dappradar.com/blog/offer/betwhale-usa-casino",
+     "SPX $0.0822 -21.95%"
+    ],
+    [
+     "https://dappradar.com/token/velvet",
+     "VELVET $0.0698 +18.49%"
+    ],
+    [
+     "https://dappradar.com/token/quant-network",
+     "QNT $234.55 -10.48%"
+    ],
+    [
+     "https://dappradar.com/?attachment_id=38476",
+     "PONS $0.4661 -10.09%"
+    ],
+    [
+     "https://dappradar.com/token/worldcoin-wld",
+     "WLD $0.5416 +9.50%"
+    ],
+    [
+     "https://dappradar.com/?p=37949",
+     "LIT $3.58 -8.64%"
+    ],
+    [
+     "https://dappradar.com/token/sky",
+     "SKY $0.0902 +7.96%"
+    ],
+    [
+     "https://dappradar.com/token/rain",
+     "RAIN $0.0112 -7.92%"
+    ],
+    [
+     "https://dappradar.com/token/aave",
+     "AAVE $180.54 +7.66%"
+    ],
+    [
+     "https://dappradar.com/token/pudgy-penguins",
+     "PENGU $0.0₂878 -7.55%"
+    ],
+    [
+     "https://dappradar.com/token/hash-2",
+     "HASH $0.0₂608 +6.97%"
+    ],
+    [
+     "https://dappradar.com/token/unibase",
+     "UB $0.1339 -6.92%"
+    ],
+    [
+     "https://dappradar.com/token/pump-fun",
+     "PUMP $0.0₂535 -6.68%"
+    ],
+    [
+     "https://dappradar.com/blog/brand/trixino-fr",
+     "ETHFI $0.6868 -6.33%"
+    ],
+    [
+     "https://dappradar.com/token/pepe",
+     "PEPE $0.0₅417 -6.05%"
+    ],
+    [
+     "https://dappradar.com/token/venice-token",
+     "VVV $28.97 +5.67%"
+    ],
+    [
+     "https://dappradar.com/token/jupiter-exchange-solana",
+     "JUP $0.3102 -5.52%"
+    ],
+    [
+     "https://dappradar.com/dex",
+     "DEX Screener"
+    ],
+    [
+     "https://dappradar.com/rankings",
+     "Rankings"
+    ],
+    [
+     "https://dappradar.com/rankings/category/collectibles",
+     "Collectibles"
+    ],
+    [
+     "https://dappradar.com/rankings/tokens",
+     "Tokens"
+    ],
+    [
+     "https://dappradar.com/rankings/tokens/price-predictions",
+     "Price Predictions"
+    ],
+    [
+     "https://dappradar.com/rewards",
+     "Overview"
+    ],
+    [
+     "https://dappradar.com/airdrops",
+     "Airdrops"
+    ],
+    [
+     "https://dappradar.com/narratives/icos",
+     "Best ICOs"
+    ],
+    [
+     "https://dappradar.com/narratives/presales",
+     "Best Presales"
+    ],
+    [
+     "https://dappradar.com/rankings/category/games",
+     "Gaming"
+    ],
+    [
+     "https://dappradar.com/narratives/ai",
+     "AI x Crypto"
+    ],
+    [
+     "https://dappradar.com/narratives/gambling",
+     "Gambling"
+    ],
+    [
+     "https://dappradar.com/narratives/meme",
+     "Memecoins"
+    ],
+    [
+     "https://dappradar.com/narratives",
+     "Narratives"
+    ],
+    [
+     "https://dappradar.com/rankings/chains",
+     "Chains"
+    ],
+    [
+     "https://dappradar.com/rankings/category/marketplaces",
+     "Marketplaces"
+    ],
+    [
+     "https://dappradar.com/heatmap",
+     "Heatmap"
+    ],
+    [
+     "https://dappradar.com/blog",
+     "Reports"
+    ],
+    [
+     "https://dappradar.com/advertise",
+     "Advertise"
+    ],
+    [
+     "https://community.alignedlayer.com/",
+     "Claim ↗"
+    ],
+    [
+     "https://kiichain.io/airdrop",
+     "Claim ↗"
+    ],
     [
      "https://grvt.io/exchange/reward-portal",
      "Claim ↗"
@@ -2068,6 +2839,270 @@
     [
      "https://app.marginfi.com",
      "marginfi Lending"
+    ],
+    [
+     "https://arrakis.finance/",
+     "Arrakis Modular"
+    ],
+    [
+     "https://solv.finance",
+     "SolvBTC LSTs"
+    ],
+    [
+     "https://www.echo-protocol.xyz",
+     "Echo Lending"
+    ],
+    [
+     "https://app.doppler.finance",
+     "Doppler Finance"
+    ],
+    [
+     "https://omni.apex.exchange",
+     "Apex Omni"
+    ],
+    [
+     "https://clearstar.xyz",
+     "Clearstar"
+    ],
+    [
+     "https://www.hyperithm.com",
+     "Hyperithm"
+    ],
+    [
+     "https://wemix.fi",
+     "WEMIX.FI Staking"
+    ],
+    [
+     "https://native.org",
+     "Native Credit Pool"
+    ],
+    [
+     "https://www.bitu.io",
+     "BitU Protocol"
+    ],
+    [
+     "https://app.avantprotocol.com/rewards?ref=defillama",
+     "Avant avUSD"
+    ],
+    [
+     "https://ts.finance/termmax/",
+     "TermMax"
+    ],
+    [
+     "https://vfat.io/yield",
+     "vfat.io"
+    ],
+    [
+     "https://cedefi.manta.network",
+     "Manta CeDeFi"
+    ],
+    [
+     "https://farm.bucketprotocol.io",
+     "Bucket Farm"
+    ],
+    [
+     "https://xrpl.org/",
+     "XRPL DEX"
+    ],
+    [
+     "https://app.ipor.io/fusion",
+     "Fusion by IPOR"
+    ],
+    [
+     "https://reti.nodely.io/",
+     "Reti Pooling"
+    ],
+    [
+     "https://www.abs.xyz/",
+     "Abstract"
+    ],
+    [
+     "https://mainstreet.finance/",
+     "Mainstreet"
+    ],
+    [
+     "https://loop.sl",
+     "Loopscale"
+    ],
+    [
+     "https://lorenzo-protocol.xyz/home",
+     "Lorenzo sUSD1+"
+    ],
+    [
+     "https://agni.finance/",
+     "Agni Finance"
+    ],
+    [
+     "https://rockawayx.com/",
+     "RockawayX"
+    ],
+    [
+     "https://www.methprotocol.xyz/",
+     "Mantle Restaking"
+    ],
+    [
+     "https://mellow.finance/",
+     "Mellow Restaking"
+    ],
+    [
+     "https://app.reservoir.xyz",
+     "Reservoir Protocol"
+    ],
+    [
+     "https://telosc.com/",
+     "Telos Consilium"
+    ],
+    [
+     "https://app.multipli.fi",
+     "Multipli.fi"
+    ],
+    [
+     "https://dashboard.internetcomputer.org/chain-fusion",
+     "Chain Fusion"
+    ],
+    [
+     "https://www.re7labs.xyz",
+     "Re7 Labs"
+    ],
+    [
+     "https://afiprotocol.xyz/",
+     "AFI Protocol"
+    ],
+    [
+     "https://predict.fun",
+     "Predict Fun"
+    ],
+    [
+     "https://app.steer.finance",
+     "Steer Protocol"
+    ],
+    [
+     "https://infinifi.xyz",
+     "infiniFi"
+    ],
+    [
+     "https://dano.finance/",
+     "Dano Finance"
+    ],
+    [
+     "https://bucketprotocol.io",
+     "Bucket CDP"
+    ],
+    [
+     "https://www.usefelix.xyz?ref=4BF702FF",
+     "Felix CDP"
+    ],
+    [
+     "https://www.3jane.xyz/",
+     "3Jane Lending"
+    ],
+    [
+     "https://www.nucleusearn.io",
+     "Nucleus"
+    ],
+    [
+     "https://www.agglayer.dev/",
+     "Vault Bridge"
+    ],
+    [
+     "https://app.saturn.credit/",
+     "Saturn"
+    ],
+    [
+     "https://evaa.finance",
+     "EVAA Protocol"
+    ],
+    [
+     "https://pando.im",
+     "Pando Leaf"
+    ],
+    [
+     "https://swap.deepsea.monster/swap",
+     "RocketSwap Anubis"
+    ],
+    [
+     "https://app.aegis.im",
+     "Aegis YUSD"
+    ],
+    [
+     "https://zoofi.io",
+     "Zoo Finance"
+    ],
+    [
+     "https://mevcapital.com",
+     "MEV Capital"
+    ],
+    [
+     "https://www.tulipa.capital",
+     "Tulipa Capital"
+    ],
+    [
+     "https://blockanalitica.com/",
+     "Block Analitica"
+    ],
+    [
+     "https://near.com/",
+     "NEAR Intents"
+    ],
+    [
+     "https://www.kava.io/",
+     "Kava Mint"
+    ],
+    [
+     "https://app.huma.finance",
+     "Huma Finance V2"
+    ],
+    [
+     "https://manifest.trade/",
+     "Manifest Trade"
+    ],
+    [
+     "https://app.reya.xyz",
+     "Reya Perps"
+    ],
+    [
+     "https://www.prjx.com",
+     "Project X"
+    ],
+    [
+     "https://www.royco.org",
+     "Royco V1"
+    ],
+    [
+     "https://www.figure.com/crypto-backed-loan/",
+     "Figure Markets Democratized Prime"
+    ],
+    [
+     "https://app.rysk.finance",
+     "Rysk V12"
+    ],
+    [
+     "https://app.curvance.com",
+     "Curvance"
+    ],
+    [
+     "https://www.40acres.finance/",
+     "40 Acres"
+    ],
+    [
+     "https://www.instagram.com/DappRadar",
+     "instagram"
+    ],
+    [
+     "https://dappradar.com/about",
+     "About Us"
+    ],
+    [
+     "https://dappradar.com/disclaimer",
+     "Disclaimer"
+    ],
+    [
+     "https://dappradar.com/privacy-policy",
+     "Privacy Policy"
+    ],
+    [
+     "https://dappradar.com/terms",
+     "Terms of Use"
     ]
    ],
    "title": "Crypto Airdrops, Rewards &amp; Staking — Best Presales 2026 | DappRadar",
@@ -2091,7 +3126,7 @@
      ]
     },
     "status": {
-     "timestamp": "2026-10-02T20:10:39.562Z",
+     "timestamp": "2026-10-03T05:07:16.042Z",
      "error_code": "0",
      "error_message": "SUCCESS",
      "elapsed": "3",
@@ -2119,7 +3154,7 @@
    "url": "https://coinmarketcap.com/new/",
    "status": 200,
    "ctype": "text/html; charset=utf-8",
-   "size": 619383,
+   "size": 619417,
    "kind": "html",
    "next_data": {
     "data": {
@@ -2131,26 +3166,26 @@
         "name": "Dolphin",
         "symbol": "POD",
         "slug": "dolphin",
-        "rank": "405",
+        "rank": "335",
         "priceChange": "{…7 keys}",
         "platforms": [
          "len=1",
          "{…4 keys}"
         ],
         "addedDate": "2026-10-02T05:05:29.000Z",
-        "marketCap": "46044894.66",
-        "selfReportedMarketCap": "45714620.56353858",
-        "fullyDilutedMarketCap": "275333570.24",
+        "marketCap": "65191879.67",
+        "selfReportedMarketCap": "64729821.23097958",
+        "fullyDilutedMarketCap": "389859798.92",
         "isActive": "1"
        }
       ],
       "upcoming": {}
      },
      "status": {
-      "timestamp": "2026-10-02T20:06:23.276Z",
+      "timestamp": "2026-10-03T05:00:39.826Z",
       "error_code": "0",
       "error_message": "SUCCESS",
-      "elapsed": "34",
+      "elapsed": "32",
       "credit_count": "0"
      }
     },
@@ -2162,19 +3197,19 @@
     "reqLang": "en",
     "globalMetrics": {
      "numCryptocurrencies": "39777",
-     "totalCryptos": "62627907",
-     "numMarkets": "112779",
+     "totalCryptos": "62739867",
+     "numMarkets": "112777",
      "activeExchanges": "978",
-     "marketCap": "2866397131284.3174",
-     "marketCapChange": "-0.761483",
-     "totalVol": "117292579489.27",
-     "stablecoinVol": "123565280126.74979",
-     "stablecoinChange": "24.324848654628",
-     "totalVolChange": "26.225289",
-     "defiVol": "14807274412.393877",
-     "defiChange": "7.118127375363",
-     "defiMarketCap": "90194087875.92128",
-     "derivativesVol": "956222044053.0388"
+     "marketCap": "2877611986198.8716",
+     "marketCapChange": "-2.221562",
+     "totalVol": "106874592647.32",
+     "stablecoinVol": "111401458654.35",
+     "stablecoinChange": "3.081294709148",
+     "totalVolChange": "6.17045",
+     "defiVol": "14066502981.35",
+     "defiChange": "-0.472618897049",
+     "defiMarketCap": "91815069323.68733",
+     "derivativesVol": "884103216115.4949"
     },
     "pageSharedData": {
      "topCategories": [
@@ -2189,7 +3224,7 @@
        "score": "67",
        "maxScore": "100",
        "name": "Greed",
-       "updateTime": "2026-10-02T19:53:10.031Z"
+       "updateTime": "2026-10-03T04:53:10.027Z"
       },
       "dialConfig": [
        "len=5",
@@ -2201,40 +3236,40 @@
       ]
      },
      "cmc100": {
-      "value": "168.31",
-      "percent": "-0.88"
+      "value": "169.04",
+      "percent": "-2.45"
      },
      "cmc20": {
-      "value": "176.14",
-      "percent": "-0.8"
+      "value": "176.6",
+      "percent": "-2.53"
      },
      "liquidation": {
-      "total": "564921736.615516009753231528",
-      "totalChange24h": "199.34626280879600",
-      "longs": "331556681.266877735110662466",
-      "shorts": "233365055.348638274642569062",
+      "total": "434636195.050651743375024004",
+      "totalChange24h": "37.08561577725500",
+      "longs": "326560096.306922659326492438",
+      "shorts": "108076098.743729084048531566",
       "chartData": [
        "len=31",
        {
-        "timestamp": "1788307200",
-        "totalLongs": "153777699.582970703086285626",
-        "totalShorts": "120961588.816838202676491180"
+        "timestamp": "1788393600",
+        "totalLongs": "259522231.439784390238408301",
+        "totalShorts": "438372491.021125630565492527"
        }
       ]
      },
      "openInterest": {
-      "total": "426636948792.59",
-      "totalChange24h": "16.14"
+      "total": "424171242673.53",
+      "totalChange24h": "9.26"
      },
      "derivativesVolume": {
-      "total": "984332376695.86",
-      "totalChange24h": "23.54"
+      "total": "930571899357.73",
+      "totalChange24h": "4.74"
      },
      "etfNetFlow": {
       "current": {
-       "timestamp": "1790812800",
-       "value": "48265458",
-       "percentage": "-121.682595687332"
+       "timestamp": "1790899200",
+       "value": "13839992",
+       "percentage": "-71.325265368869"
       }
      },
      "faqData": {
@@ -2248,7 +3283,7 @@
        }
       ]
      },
-     "altcoinIndex": "50",
+     "altcoinIndex": "55",
      "halvingInfo": {
       "dateOfHalving": "1713571767",
       "halvingTimeStamp": "0"
@@ -2414,7 +3449,7 @@
    "url": "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/spotlight?dataType=8&limit=30",
    "status": 200,
    "ctype": "application/json",
-   "size": 16790,
+   "size": 16793,
    "kind": "json",
    "shape": {
     "data": {
@@ -2425,34 +3460,34 @@
        "name": "Dolphin",
        "symbol": "POD",
        "slug": "dolphin",
-       "rank": "407",
+       "rank": "335",
        "priceChange": {
-        "price": "0.552255503217002",
-        "priceChange1h": "0.41719945",
-        "priceChange24h": "-22.78935757",
-        "priceChange7d": "-22.78935757",
-        "priceChange30d": "-22.78935757",
-        "volume24h": "88415468.42837034",
-        "lastUpdate": "2026-10-02T20:08:00.000Z"
+        "price": "0.7791447516118206",
+        "priceChange1h": "0.95134281",
+        "priceChange24h": "4.28147358",
+        "priceChange7d": "131.52944336",
+        "priceChange30d": "139.88077066",
+        "volume24h": "148130902.78381494",
+        "lastUpdate": "2026-10-03T05:03:00.000Z"
        },
        "platforms": [
         "len=1",
         "{…4 keys}"
        ],
        "addedDate": "2026-10-02T05:05:29.000Z",
-       "marketCap": "46177708.1",
-       "selfReportedMarketCap": "45846481.34593219",
-       "fullyDilutedMarketCap": "276127751.61",
+       "marketCap": "65143817.13",
+       "selfReportedMarketCap": "64682099.34073968",
+       "fullyDilutedMarketCap": "389572375.81",
        "isActive": "1"
       }
      ],
      "upcoming": {}
     },
     "status": {
-     "timestamp": "2026-10-02T20:10:04.020Z",
+     "timestamp": "2026-10-03T05:05:02.079Z",
      "error_code": "0",
      "error_message": "SUCCESS",
-     "elapsed": "17",
+     "elapsed": "14",
      "credit_count": "0"
     }
    },
@@ -2477,33 +3512,33 @@
    "url": "https://api.coingecko.com/api/v3/search/trending",
    "status": 200,
    "ctype": "application/json; charset=utf-8",
-   "size": 73911,
+   "size": 73461,
    "kind": "json",
    "shape": {
     "coins": [
      "len=15",
      {
       "item": {
-       "id": "astronaut-2",
-       "coin_id": "102176942",
-       "name": "astronaut",
-       "symbol": "ASTRO",
-       "market_cap_rank": "708",
-       "thumb": "https://coin-images.coingecko.com/coins/images/102176942/standard/astro-logo.png?1789066915",
-       "small": "https://coin-images.coingecko.com/coins/images/102176942/small/astro-logo.png?1789066915",
-       "large": "https://coin-images.coingecko.com/coins/images/102176942/large/astro-logo.png?1789066915",
-       "slug": "astronaut-2",
-       "price_btc": "3.91627655619207e-07",
+       "id": "super-cat",
+       "coin_id": "102179005",
+       "name": "Super Cat",
+       "symbol": "SC",
+       "market_cap_rank": "1008",
+       "thumb": "https://coin-images.coingecko.com/coins/images/102179005/standard/logo.jpg?1790854951",
+       "small": "https://coin-images.coingecko.com/coins/images/102179005/small/logo.jpg?1790854951",
+       "large": "https://coin-images.coingecko.com/coins/images/102179005/large/logo.jpg?1790854951",
+       "slug": "super-cat",
+       "price_btc": "2.0023615225960323e-07",
        "score": "0",
        "data": {
-        "price": "0.03303940205218577",
-        "price_btc": "0.000000391627655619207",
+        "price": "0.016951674285471712",
+        "price_btc": "0.0000002002361522596032",
         "price_change_percentage_24h": "{…63 keys}",
-        "market_cap": "$33,039,402",
-        "market_cap_btc": "391.627655619207",
-        "total_volume": "$78,067,200",
-        "total_volume_btc": "925.3579846558087",
-        "sparkline": "https://data.coingecko.com/coins/102176942/sparkline.svg",
+        "market_cap": "$16,950,693",
+        "market_cap_btc": "200.2364244646194",
+        "total_volume": "$14,542,220",
+        "total_volume_btc": "171.7752550994299",
+        "sparkline": "https://data.coingecko.com/coins/102179005/sparkline.svg",
         "content": "None"
        }
       }
@@ -2518,13 +3553,13 @@
       "thumb": "https://coin-images.coingecko.com/nft_contracts/images/1326/standard/creepz-genesis.png?1707287782",
       "nft_contract_id": "1326",
       "native_currency_symbol": "eth",
-      "floor_price_in_native_currency": "0.1698",
-      "floor_price_24h_percentage_change": "92.98820560498832",
+      "floor_price_in_native_currency": "0.18499",
+      "floor_price_24h_percentage_change": "107.7115795442127",
       "data": {
-       "floor_price": "0.17 ETH",
-       "floor_price_in_usd_24h_percentage_change": "92.98820560498832",
-       "h24_volume": "6.59 ETH",
-       "h24_average_sale_price": "0.15 ETH",
+       "floor_price": "0.18 ETH",
+       "floor_price_in_usd_24h_percentage_change": "107.7115795442127",
+       "h24_volume": "11.57 ETH",
+       "h24_average_sale_price": "0.14 ETH",
        "sparkline": "https://data.coingecko.com/nft/1326/sparkline.svg",
        "content": "None"
       }
@@ -2533,37 +3568,37 @@
     "categories": [
      "len=6",
      {
-      "id": "102120914",
-      "name": "Robinhood Chain Meme",
+      "id": "322",
+      "name": "Simulation Games",
       "top_3_coins_images": [
        "len=3",
-       "https://assets.coingecko.com/coins/images/102176942/small/astro-logo.png?1789066915"
+       "https://assets.coingecko.com/coins/images/12129/small/sandbox_logo.jpg?1696511971"
       ],
-      "market_cap_1h_change": "1.0533899939817593",
-      "slug": "robinhood-chain-meme",
-      "coins_count": "356",
+      "market_cap_1h_change": "0.5314586376823482",
+      "slug": "simulation-games",
+      "coins_count": "9",
       "data": {
-       "market_cap": "738816504.6560479",
-       "market_cap_btc": "8765.699778724294",
-       "total_volume": "212238449.57449216",
-       "total_volume_btc": "2516.8469999872345",
+       "market_cap": "474919938.30699784",
+       "market_cap_btc": "5616.211399730968",
+       "total_volume": "791581731.304821",
+       "total_volume_btc": "9360.547015099186",
        "market_cap_change_percentage_24h": {
-        "aed": "-4.44658551954548",
-        "afn": "-4.446585519545476",
-        "all": "-3.992194328050912",
-        "amd": "-4.539718363405558",
-        "ang": "-4.4465855195454855",
-        "aoa": "-4.4465855195454855",
-        "ars": "-4.445545569477933",
-        "aud": "-4.844109168738149",
-        "awg": "-4.31387244387819",
-        "azn": "-4.4465855195454855",
-        "bam": "-4.034630957018705",
-        "bbd": "-4.446585519545483",
-        "bdt": "-4.548823539862533",
-        "bgn": "-4.569287414941748"
+        "aed": "41.80958286839926",
+        "afn": "41.7902785418449",
+        "all": "41.66900017611784",
+        "amd": "40.24356117174533",
+        "ang": "41.7902785418449",
+        "aoa": "41.635822900731775",
+        "ars": "41.76416842579188",
+        "aud": "41.63235202837024",
+        "awg": "41.987209484264106",
+        "azn": "41.79027854184488",
+        "bam": "41.79027854184491",
+        "bbd": "41.79027854184489",
+        "bdt": "41.63856907696453",
+        "bgn": "41.7926442801159"
        },
-       "sparkline": "https://data.coingecko.com/categories/102120914/sparkline.svg"
+       "sparkline": "https://data.coingecko.com/categories/322/sparkline.svg"
       }
      }
     ]
@@ -2580,7 +3615,7 @@
    "kind": "json",
    "shape": {
     "status": {
-     "timestamp": "2026-10-02T20:10:39.736+00:00",
+     "timestamp": "2026-10-03T05:07:16.208+00:00",
      "error_code": "10005",
      "error_message": "This request is limited to PRO API subscribers. Please visit https://www.coingecko.com/en/api/pricing to subscribe to ou…"
     }
@@ -2593,33 +3628,33 @@
    "url": "https://api.geckoterminal.com/api/v2/networks/new_pools?include=base_token",
    "status": 200,
    "ctype": "application/json; charset=utf-8",
-   "size": 36459,
+   "size": 35981,
    "kind": "json",
    "shape": {
     "data": [
      "len=20",
      {
-      "id": "robinhood_0xb53993255203de4436a6e3828e4952e6c603c07e",
+      "id": "solana_HKa13LhqeoTKLeYctsNcQKS5dqYSKzyMsFit4kYEggHv",
       "type": "pool",
       "attributes": {
-       "base_token_price_usd": "0.0000204670355409054",
-       "base_token_price_native_currency": "0.00000000757697794237653",
-       "quote_token_price_usd": "2668.65",
+       "base_token_price_usd": "0.0000447156119008502183275765692824564213708760225973764675124848504",
+       "base_token_price_native_currency": "0.000000374909277533093",
+       "quote_token_price_usd": "119.022062441645823025272614864750387087804845531",
        "quote_token_price_native_currency": "1.0",
-       "base_token_price_quote_token": "0.000000007576977942",
-       "quote_token_price_base_token": "131978739.75681",
-       "address": "0xb53993255203de4436a6e3828e4952e6c603c07e",
-       "name": "BlastBack / WETH",
-       "pool_created_at": "2026-10-02T20:08:28Z",
-       "fdv_usd": "20467.03554",
+       "base_token_price_quote_token": "0.0000003749092775",
+       "quote_token_price_base_token": "2667311.9603228",
+       "address": "HKa13LhqeoTKLeYctsNcQKS5dqYSKzyMsFit4kYEggHv",
+       "name": "AI / SOL",
+       "pool_created_at": "2026-10-03T05:07:02Z",
+       "fdv_usd": "44607.22126",
        "market_cap_usd": "None",
        "price_change_percentage": {
-        "m5": "184.657",
-        "m15": "184.657",
-        "m30": "184.657",
-        "h1": "184.657",
-        "h6": "184.657",
-        "h24": "184.657"
+        "m5": "0.125",
+        "m15": "0.125",
+        "m30": "0.125",
+        "h1": "0.125",
+        "h6": "0.125",
+        "h24": "0.125"
        },
        "transactions": {
         "m5": "{…4 keys}",
@@ -2630,12 +3665,12 @@
         "h24": "{…4 keys}"
        },
        "volume_usd": {
-        "m5": "23805.6606025439",
-        "m15": "23805.6606025439",
-        "m30": "23805.6606025439",
-        "h1": "23805.6606025439",
-        "h6": "23805.6606025439",
-        "h24": "23805.6606025439"
+        "m5": "7.7148244452",
+        "m15": "7.7148244452",
+        "m30": "7.7148244452",
+        "h1": "7.7148244452",
+        "h6": "7.7148244452",
+        "h24": "7.7148244452"
        }
       },
       "relationships": {
@@ -2655,16 +3690,16 @@
      }
     ],
     "included": [
-     "len=20",
+     "len=18",
      {
-      "id": "robinhood_0x0254207ea6658a8f9daf1eae0c120796b317ded6",
+      "id": "solana_GDUJL2BunvZhToJ4EbbBf9y1Ursp2PNPagkFQEk7zyfG",
       "type": "token",
       "attributes": {
-       "address": "0x0254207ea6658a8f9daf1eae0c120796b317ded6",
-       "name": "Blast Back",
-       "symbol": "BlastBack",
-       "decimals": "18",
-       "image_url": "https://assets.geckoterminal.com/8gcwleac0aawotqv6jkzzok2wo1v",
+       "address": "GDUJL2BunvZhToJ4EbbBf9y1Ursp2PNPagkFQEk7zyfG",
+       "name": "Artificial Influencer",
+       "symbol": "AI",
+       "decimals": "6",
+       "image_url": "https://assets.geckoterminal.com/jzzdkgj8skiiuqzql25ybbkik13t",
        "coingecko_coin_id": "None"
       }
      }
@@ -2678,23 +3713,23 @@
    "url": "https://api.dexscreener.com/token-profiles/latest/v1",
    "status": 200,
    "ctype": "application/json; charset=utf-8",
-   "size": 24670,
+   "size": 22664,
    "kind": "json",
    "shape": [
     "len=30",
     {
-     "url": "https://dexscreener.com/solana/67gwfqcbdqhg7t61ntwhvbnenqccau6i3yzgje1urkg",
-     "chainId": "solana",
-     "tokenAddress": "67gwfQCBDQhG7t61NTwHVbnenqCcaU6i3yZGJE1uRKG",
-     "icon": "https://cdn.dexscreener.com/cms/images/dXQjQmRwEh7KKVe1?width=64&height=64&fit=crop&quality=95&format=auto",
-     "header": "https://cdn.dexscreener.com/cms/images/3Aq58ABXqBEcar8_?width=600&height=200&fit=crop&quality=95&format=auto",
-     "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/67gwfQCBDQhG7t61NTwHVbnenqCcaU6i3yZGJE1uRKG?timestamp=1790971800000",
-     "description": "This is Jax, a small dog that ran into the road to stop a patrolling officer He led the officer half a block to his hous…",
+     "url": "https://dexscreener.com/arc/0x091f0c7e675a787a4018eb47c30bed3fa2013b65",
+     "chainId": "arc",
+     "tokenAddress": "0x091F0c7e675A787A4018eb47c30BeD3FA2013B65",
+     "icon": "https://cdn.dexscreener.com/cms/images/ATOj0QiPHvFg_KIM?width=64&height=64&fit=crop&quality=95&format=auto",
+     "header": "https://cdn.dexscreener.com/cms/images/iWSHCqzzjWWV9mhY?width=600&height=200&fit=crop&quality=95&format=auto",
+     "openGraph": "https://cdn.dexscreener.com/token-images/og/arc/0x091f0c7e675a787a4018eb47c30bed3fa2013b65?timestamp=1791003900000",
+     "description": "Mint. Stake. Share.\n\nMSS2 on Arc: mint with USDC on a curve that rises 25% per million tokens. Mint payments automatically build permanently locked Topaz liquidity.\n\nPermanently stake MSS2 to collect …",
      "links": [
-      "len=3",
+      "len=4",
       {
        "label": "Website",
-       "url": "https://pump.fun/coin/67gwfQCBDQhG7t61NTwHVbnenqCcaU6i3yZGJE1uRKG"
+       "url": "https://www.mintstakeshare.com"
       }
      ],
      "cto": "False"
@@ -2708,7 +3743,7 @@
    "url": "https://api.coinpaprika.com/v1/coins",
    "status": 200,
    "ctype": "application/json",
-   "size": 7507314,
+   "size": 7506709,
    "kind": "json",
    "shape": [
     "len=61952",
@@ -2873,6 +3908,154 @@
     [
      "/worldx/",
      "WorldX WLDX Exchange Token Launch Upcoming No Data"
+    ],
+    [
+     "/mendel/",
+     "Mendel MENDEL Blockchain Token Launch Upcoming No Data"
+    ],
+    [
+     "/chatllat/",
+     "Chatllat CLAT Blockchain Service IDO on Kommunitas Upcoming No Data"
+    ],
+    [
+     "/konnex/",
+     "Konnex Blockchain Service Token Launch Upcoming $15 M +2"
+    ],
+    [
+     "/antdrop/",
+     "AntDrop ANT Blockchain Service IDO on Spores Upcoming No Data"
+    ],
+    [
+     "/chimpx-ai/",
+     "ChimpX AI CHIMP DeFi IDO on Eesee Upcoming No Data"
+    ],
+    [
+     "/penxchain/",
+     "PENXCHAIN PENX Blockchain Service Token Launch Upcoming No Data"
+    ],
+    [
+     "/sonami/",
+     "SONAMI SNMI Layer2 Token Launch Upcoming $13 K"
+    ],
+    [
+     "/chainers/",
+     "Chainers CHU GameFi Presale Upcoming No Data"
+    ],
+    [
+     "/secantx-ai/",
+     "SecantX AI SECA Analytics Token Launch Upcoming $300 K"
+    ],
+    [
+     "/category/ended-ico/",
+     "Ended 2290"
+    ],
+    [
+     "/jumper/",
+     "Jumper JUMP DEX ICM on Legion Oct 2, 2026 $3 M"
+    ],
+    [
+     "/watt2trade/",
+     "Watt2Trade WATTOIN RWA IDO on Fjord Foundry Sep 16, 2026 $1.62 M"
+    ],
+    [
+     "/teqoin/",
+     "TeQoin TEQOIN Blockchain Service Strategic Round on AlphaMind Sep 14, 2026 No Data"
+    ],
+    [
+     "/ethos-network/",
+     "Ethos Network WHUF Social ICM on Sonar Sep 4, 2026 $1.75 M +5"
+    ],
+    [
+     "/multipli/",
+     "Multipli MULT DeFi ICM on Sonar Aug 21, 2026 $5 M"
+    ],
+    [
+     "/stripchain/",
+     "StripChain STRIP Infrastructure Token Sale Aug 15, 2026 $10 M +6"
+    ],
+    [
+     "/shiftrwa/",
+     "Shift SHFT DeFi IDO on Poolz Aug 10, 2026 --"
+    ],
+    [
+     "/me3/",
+     "Gacha Galaxy GG Play to Earn IDO on Spores Aug 5, 2026 $3 M +3"
+    ],
+    [
+     "/cerebree/",
+     "CereBree CRX IDO on Poolz Jul 8, 2026 No Data"
+    ],
+    [
+     "/squid/",
+     "Squid QUID Blockchain Service ICM on Legion Jul 3, 2026 $13.5 M +27"
+    ],
+    [
+     "/cap-3/",
+     "CAP CAP DeFi Auction Jun 17, 2026 $14.12 M +36"
+    ],
+    [
+     "/bitfi/",
+     "BitFi BFI DeFi ICM on Sonar Jun 12, 2026 -- +2"
+    ],
+    [
+     "/strato/",
+     "STRATO STRATO RWA Community &amp; Public sale Jun 10, 2026 $50.3 M +9"
+    ],
+    [
+     "/earnpark/",
+     "EarnPark PARK Finance Token Sale Tier 6 Jun 10, 2026 $3.61 M"
+    ],
+    [
+     "/anthropic/",
+     "Anthropic TradFi ICM on Buidlpad May 20, 2026 $117.5 B +26"
+    ],
+    [
+     "/vc/list/",
+     "Investors & VC’s"
+    ],
+    [
+     "/vc/funding-rounds/",
+     "Funding Rounds"
+    ],
+    [
+     "https://twitter.com/ICODrops",
+     "Twitter"
+    ],
+    [
+     "https://t.me/icodrops",
+     "Telegram News"
+    ],
+    [
+     "https://t.me/joinchat/FoisO0k4-XXBkPEikfdgow",
+     "Telegram Chat (EN)"
+    ],
+    [
+     "https://t.me/joinchat/FoisO0R8kn58iNNlqnNjlg",
+     "Telegram Chat (RU)"
+    ],
+    [
+     "https://t.me/joinchat/FoisO1Ge70JnvvyaFMdBsQ",
+     "Cryptonarnia Chat (RU)"
+    ],
+    [
+     "https://t.me/joinchat/FoisO1OCo4g1o6vyBNnJaw",
+     "DropsEarn Chat (RU)"
+    ],
+    [
+     "https://t.me/Jerrys2",
+     "Marketing Issues"
+    ],
+    [
+     "https://forms.gle/7RuDz1nEcMnRkKpb7",
+     "Submit ICO"
+    ],
+    [
+     "/calendar/",
+     "ICO Calendar"
+    ],
+    [
+     "/legal/",
+     "Learn&nbsp;more"
     ]
    ],
    "title": "ICO Drops - Calendar of active and upcoming ICO & IEO. Complete list with Token Sales",
@@ -2884,7 +4067,7 @@
    "url": "https://api.cryptorank.io/v0/round/upcoming?limit=20",
    "status": 403,
    "ctype": "text/html; charset=UTF-8",
-   "size": 5847,
+   "size": 5846,
    "kind": "html",
    "anchors": 1,
    "sample": [
@@ -2902,7 +4085,7 @@
    "url": "https://www.coingecko.com/en/news/rss",
    "status": 404,
    "ctype": "text/html; charset=utf-8",
-   "size": 406107,
+   "size": 406744,
    "kind": "html",
    "anchors": 87,
    "sample": [
@@ -3056,28 +4239,28 @@
    "url": "https://news.bitcoin.com/feed/",
    "status": 200,
    "ctype": "application/rss+xml; charset=UTF-8",
-   "size": 28701,
+   "size": 28924,
    "kind": "rss",
    "items": 10,
    "sample": [
     [
-     "US Midterms: Stand With Crypto Backs Bipartisan Slate After Senate Bill Fails",
-     "https://news.bitcoin.com/regulation-and-legal/us-midterms-stand-crypto-backs-bipartisan-slate-senate-bill-fails/",
+     "4 Crypto Sectors Gained From CLARITY Act Failure, Bitwise Says",
+     "https://news.bitcoin.com/featured/4-crypto-sectors-gained-from-clarity-act-failure-bitwise-says/",
      ""
     ],
     [
-     "Meet the New Bitcoin Treasury Firm That Already Plans to Sell BTC",
-     "https://news.bitcoin.com/crypto-news/meet-new-bitcoin-treasury-firm-already-plans-sell-btc/",
+     "Arthur Hayes Sees AI Bubble Ending in a Trillion-Dollar Rescue",
+     "https://news.bitcoin.com/featured/arthur-hayes-sees-ai-bubble-ending-in-a-trillion-dollar-rescue/",
      ""
     ],
     [
-     "Ethereum Layer 2 Network Blast to Shut Down After Revenue Collapse",
-     "https://news.bitcoin.com/blockchain/ethereum-layer-2-network-blast-shut-down-revenue-collapse/",
+     "Bitcoin Pays No Coupon: Saylor Details Where Strategy Gets the Dollars",
+     "https://news.bitcoin.com/featured/bitcoin-pays-no-coupon-saylor-details-where-strategy-gets-the-dollars/",
      ""
     ],
     [
-     "Solana ETFs Overtake XRP Funds With $1.91 Billion in Assets",
-     "https://news.bitcoin.com/market-updates/solana-etfs-overtake-xrp-funds-1-91-billion-assets/",
+     "&#8216;Casino Secrets&#8217; Leak Ties UK Bookmakers to Offshore Mystake Operator",
+     "https://news.bitcoin.com/igaming/casino-secrets-leak-ties-uk-bookmakers-offshore-mystake-operator/",
      ""
     ]
    ],
@@ -3089,28 +4272,28 @@
    "url": "https://cryptopotato.com/feed/",
    "status": 200,
    "ctype": "application/rss+xml; charset=UTF-8",
-   "size": 225197,
+   "size": 225561,
    "kind": "rss",
    "items": 36,
    "sample": [
     [
+     "October Could Be Wild for Bitcoin: 5 Events Every Crypto Trader Should Watch",
+     "https://cryptopotato.com/october-could-be-wild-for-bitcoin-5-events-every-crypto-trader-should-watch/",
+     ""
+    ],
+    [
+     "North Dakota&#8217;s Roughrider Coin Goes Live on Fiserv and Solana",
+     "https://cryptopotato.com/north-dakotas-roughrider-coin-goes-live-on-fiserv-and-solana/",
+     ""
+    ],
+    [
+     "Ethereum Foundation and OA Launch zkAPI for Private AI Payment",
+     "https://cryptopotato.com/ethereum-foundation-and-oa-launch-zkapi-for-private-ai-payment/",
+     ""
+    ],
+    [
      "Bitcoin Crashes Below $84K as Crypto Liquidations Near $600M",
      "https://cryptopotato.com/bitcoin-crashes-below-84k-as-crypto-liquidations-near-600m/",
-     ""
-    ],
-    [
-     "SEC Proposes Rules That Could Change How Funds Custody Crypto",
-     "https://cryptopotato.com/sec-proposes-rules-that-could-change-how-funds-custody-crypto/",
-     ""
-    ],
-    [
-     "Pi Network (PI) in October: 3 AIs Speculate What Will Happen With the Price",
-     "https://cryptopotato.com/pi-network-pi-in-october-3-ais-speculate-what-will-happen-with-the-price/",
-     ""
-    ],
-    [
-     "NEAR Intents Identifies $3.8M Hacker, Gives Them 48 Hours to Return Funds",
-     "https://cryptopotato.com/near-intents-identifies-3-8m-hacker-gives-them-48-hours-to-return-funds/",
      ""
     ]
    ],
@@ -3122,28 +4305,28 @@
    "url": "https://beincrypto.com/feed/",
    "status": 200,
    "ctype": "application/rss+xml; charset=UTF-8",
-   "size": 92889,
+   "size": 96220,
    "kind": "rss",
    "items": 12,
    "sample": [
     [
-     "How Man City’s Premier League Verdict Could Damage the UK Economy",
-     "https://beincrypto.com/man-city-verdict-uk-uae-investment/",
+     "Crypto&#039;s Layoff List Grows as Anchorage Digital Reportedly Trims 17% of Its Workforce",
+     "https://beincrypto.com/anchorage-digital-layoffs-17-percent-staff/",
      ""
     ],
     [
-     "Ethereum Network Blast Is Shutting Down: Who Controls Users&#039; Last $51 Million?",
-     "https://beincrypto.com/blast-shutting-down-ethereum-layer-2/",
+     "Citadel Says Wall Street’s Biggest Buyers Are Ready to Reload Stocks in Q4",
+     "https://beincrypto.com/citadel-buyers-reload-stocks-q4/",
      ""
     ],
     [
-     "Tesla Stock Jumps 6% on Delivery Beat: Will Earnings Back It Up?",
-     "https://beincrypto.com/tesla-stock-jumps-q3-deliveries-beat/",
+     "Nvidia Hits Record High, Wall Street Still Sees Up to 99% Upside",
+     "https://beincrypto.com/nvidia-stock-record-high-wall-street-price-targets/",
      ""
     ],
     [
-     "USDT Is Returning to Bitcoin After 10 Years. Should Users Care?",
-     "https://beincrypto.com/usdt-returning-bitcoin-rgb-utexo/",
+     "Netflix Stock Lost Nearly 50% of Its Value in a Year. Will It Keep Falling?",
+     "https://beincrypto.com/netflix-stock-price-drop-analysis/",
      ""
     ]
    ],
@@ -3155,28 +4338,28 @@
    "url": "https://u.today/rss",
    "status": 200,
    "ctype": "application/rss+xml; charset=utf-8",
-   "size": 53475,
+   "size": 53730,
    "kind": "rss",
    "items": 92,
    "sample": [
     [
-     "Satoshi's Missing Feature? Direct Bitcoin to Zcash Swaps Finally Go Live",
-     "https://u.today/satoshis-missing-feature-direct-bitcoin-to-zcash-swaps-finally-go-live",
+     "XRP to $2? Analyzing How Nasdaq Listing Could Impact Token Price",
+     "https://u.today/xrp-to-2-analyzing-how-nasdaq-listing-could-impact-token-price",
      ""
     ],
     [
-     "Former SEC Boss Who Sued Ripple to Be Named AI Czar",
-     "https://u.today/former-sec-boss-who-sued-ripple-to-be-named-ai-czar",
+     "'Only' 20 Billion Shiba Inu (SHIB) Burned in 24 Hours: Main Implications for the Market",
+     "https://u.today/only-20-billion-shiba-inu-shib-burned-in-24-hours-main-implications-for-the-market",
      ""
     ],
     [
-     "Evernorth's XRP ETF Nasdaq Listing Scheduled for October Date",
-     "https://u.today/evernorths-xrp-etf-nasdaq-listing-scheduled-for-october-date",
+     "Dogecoin (DOGE), Cardano (ADA), Aave (AAVE) and Bonk (BONK) Price Analysis for October 3: Can Market Recapture Volatilit",
+     "https://u.today/price-analysis/dogecoin-doge-cardano-ada-aave-aave-and-bonk-bonk-price-analysis-for-october-3-can-market-recapture",
      ""
     ],
     [
-     "Ripple Adds $765 Million to Stablecoin Market Cap in Q3, Trailing Only Circle",
-     "https://u.today/ripple-adds-765-million-to-stablecoin-market-cap-in-q3-trailing-only-circle",
+     "Novogratz Says Bitcoin May End 2026 Near $100K",
+     "https://u.today/novogratz-says-bitcoin-may-end-2026-near-100k",
      ""
     ]
    ],
@@ -3221,28 +4404,28 @@
    "url": "https://ambcrypto.com/feed/",
    "status": 200,
    "ctype": "application/rss+xml; charset=UTF-8",
-   "size": 18188,
+   "size": 18167,
    "kind": "rss",
    "items": 16,
    "sample": [
     [
+     "How SKY crypto’s 10x revenue surge could extend its 11% rally",
+     "https://ambcrypto.com/how-sky-cryptos-10x-revenue-surge-could-extend-its-11-rally/",
+     ""
+    ],
+    [
+     "‘Privacy working as intended’: Zano details 1-month rollback after $250M exploit",
+     "https://ambcrypto.com/privacy-working-as-intended-zano-details-1-month-rollback-after-250m-exploit/",
+     ""
+    ],
+    [
+     "Bitcoin ETFs record $102M inflows &#8211; Why $85K matters for BTC now",
+     "https://ambcrypto.com/bitcoin-etfs-record-102m-inflows-why-85k-matters-for-btc-now/",
+     ""
+    ],
+    [
      "Ethereum: Why ETH faces October reversal risk after 70% Q3 rally",
      "https://ambcrypto.com/ethereum-why-eth-faces-october-reversal-risk-after-70-q3-rally/",
-     ""
-    ],
-    [
-     "Can NEAR crypto rebound? THESE metrics could decide what’s next",
-     "https://ambcrypto.com/can-near-crypto-rebound-these-metrics-could-decide-whats-next/",
-     ""
-    ],
-    [
-     "LayerZero surges 12% &#8211; Will $9.07M in selling threaten ZRO’s rally?",
-     "https://ambcrypto.com/layerzero-surges-12-will-9-07m-in-selling-threaten-zros-rally/",
-     ""
-    ],
-    [
-     "&#8216;A bygone era’ &#8211; SEC proposes crypto self-custody framework for institutional investors",
-     "https://ambcrypto.com/a-bygone-era-sec-proposes-crypto-self-custody-framework-for-institutional-investors/",
      ""
     ]
    ],

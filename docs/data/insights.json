@@ -1,146 +1,150 @@
 {
  "dominance": {
-  "btc": 58.74,
-  "eth": 11.27,
-  "mcap": 2887345983825,
-  "mcap_ch": -3.06,
-  "ch_1d": null,
+  "btc": 58.73,
+  "eth": 11.29,
+  "mcap": 2886829862482,
+  "mcap_ch": -4.9,
+  "ch_1d": -0.01,
   "ch_7d": null,
   "history": [
    {
     "d": "2026-10-02",
     "v": 58.74
+   },
+   {
+    "d": "2026-10-03",
+    "v": 58.73
    }
   ]
  },
  "walls": [
   {
    "coin": "BTC",
-   "price": 84580.10500000001,
+   "price": 84568.875,
    "support": {
-    "price": 84580.10500000001,
-    "usd": 8942742
+    "price": 84568.875,
+    "usd": 9552106
    },
    "resistance": {
-    "price": 84580.10500000001,
-    "usd": 5117460
+    "price": 84568.875,
+    "usd": 11454720
    },
-   "buy_pct": 74
+   "buy_pct": 48
   },
   {
    "coin": "ETH",
-   "price": 2669.995,
+   "price": 2674.645,
    "support": {
-    "price": 2669.995,
-    "usd": 4202388
+    "price": 2674.645,
+    "usd": 3061551
    },
    "resistance": {
-    "price": 2669.995,
-    "usd": 3843102
-   },
-   "buy_pct": 63
-  },
-  {
-   "coin": "BNB",
-   "price": 768.495,
-   "support": {
-    "price": 762.7312875,
-    "usd": 1115117
-   },
-   "resistance": {
-    "price": 770.4162375000001,
-    "usd": 1146550
-   },
-   "buy_pct": 55
-  },
-  {
-   "coin": "SOL",
-   "price": 118.705,
-   "support": {
-    "price": 116.924425,
-    "usd": 3700933
-   },
-   "resistance": {
-    "price": 119.0017625,
-    "usd": 1523535
-   },
-   "buy_pct": 68
-  },
-  {
-   "coin": "XRP",
-   "price": 1.48625,
-   "support": {
-    "price": 1.4825343750000002,
-    "usd": 840054
-   },
-   "resistance": {
-    "price": 1.48625,
-    "usd": 758643
-   },
-   "buy_pct": 52
-  },
-  {
-   "coin": "ADA",
-   "price": 0.24445,
-   "support": {
-    "price": 0.243838875,
-    "usd": 262980
-   },
-   "resistance": {
-    "price": 0.24506112500000002,
-    "usd": 393792
+    "price": 2674.645,
+    "usd": 3598436
    },
    "buy_pct": 49
   },
   {
-   "coin": "DOGE",
-   "price": 0.092995,
+   "coin": "BNB",
+   "price": 766.915,
    "support": {
-    "price": 0.09276251249999999,
-    "usd": 724627
+    "price": 761.1631375000001,
+    "usd": 1179509
    },
    "resistance": {
-    "price": 0.0932274875,
-    "usd": 493864
+    "price": 768.8322875,
+    "usd": 1035753
    },
-   "buy_pct": 52
+   "buy_pct": 57
+  },
+  {
+   "coin": "SOL",
+   "price": 119.08500000000001,
+   "support": {
+    "price": 117.00101250000002,
+    "usd": 3296944
+   },
+   "resistance": {
+    "price": 119.38271250000003,
+    "usd": 2085720
+   },
+   "buy_pct": 60
+  },
+  {
+   "coin": "XRP",
+   "price": 1.4859499999999999,
+   "support": {
+    "price": 1.4822351249999999,
+    "usd": 697211
+   },
+   "resistance": {
+    "price": 1.549102875,
+    "usd": 1176013
+   },
+   "buy_pct": 56
+  },
+  {
+   "coin": "ADA",
+   "price": 0.24525,
+   "support": {
+    "price": 0.24463687499999998,
+    "usd": 266180
+   },
+   "resistance": {
+    "price": 0.245863125,
+    "usd": 246189
+   },
+   "buy_pct": 50
+  },
+  {
+   "coin": "DOGE",
+   "price": 0.09292500000000001,
+   "support": {
+    "price": 0.0899049375,
+    "usd": 768268
+   },
+   "resistance": {
+    "price": 0.0931573125,
+    "usd": 599002
+   },
+   "buy_pct": 55
   },
   {
    "coin": "AVAX",
-   "price": 10.8185,
+   "price": 10.880500000000001,
    "support": {
-    "price": 10.79145375,
-    "usd": 216381
+    "price": 10.85329875,
+    "usd": 213609
    },
    "resistance": {
-    "price": 10.84554625,
-    "usd": 150745
+    "price": 10.90770125,
+    "usd": 180925
    },
-   "buy_pct": 59
+   "buy_pct": 54
   },
   {
    "coin": "LINK",
-   "price": 13.805499999999999,
+   "price": 13.9485,
    "support": {
-    "price": 13.770986249999998,
-    "usd": 156175
+    "price": 13.878757499999999,
+    "usd": 188182
    },
    "resistance": {
-    "price": 14.426747499999998,
-    "usd": 177569
+    "price": 14.50644,
+    "usd": 200335
    },
-   "buy_pct": 52
+   "buy_pct": 60
   },
   {
    "coin": "DOT",
-   "price": 1.1555,
+   "price": 1.1484999999999999,
    "support": {
-    "price": 1.1526112499999999,
-    "usd": 93130
+    "price": 1.14562875,
+    "usd": 98364
    },
    "resistance": {
-    "price": 1.1959425,
-    "usd": 126788
+    "price": 1.15137125,
+    "usd": 133384
    },
    "buy_pct": 56
   }
@@ -148,64 +152,10 @@
  "topics": {
   "airdrop": [
    {
-    "title": "Blast Shutdown: Withdraw Your Funds Before October 26",
-    "link": "https://airdropalert.com/blogs/blast-shutdown/",
+    "title": "Lighter Review: The Zero-Fee Perp DEX After the Airdrop",
+    "link": "https://airdropalert.com/blogs/lighter-review/",
     "source": "AirdropAlert",
-    "published": "2026-10-02T19:07:10+00:00"
-   },
-   {
-    "title": "Jobs Report Lifts Solana to $122: Why I’m Still Short SOL",
-    "link": "https://airdropalert.com/blogs/jobs-report-solana/",
-    "source": "AirdropAlert",
-    "published": "2026-10-02T15:47:45+00:00"
-   },
-   {
-    "title": "Trading Fundamentals Part 35: Buy the Dip Strategy for Pullbacks in an Uptrend",
-    "link": "https://airdropalert.com/blogs/buy-the-dip-strategy/",
-    "source": "AirdropAlert",
-    "published": "2026-10-02T06:27:00+00:00"
-   },
-   {
-    "title": "Best Stablecoins in 2026: The Top 5 Ranked and Compared",
-    "link": "https://airdropalert.com/blogs/best-stablecoins/",
-    "source": "AirdropAlert",
-    "published": "2026-10-02T04:13:00+00:00"
-   },
-   {
-    "title": "How to Buy Cardano (ADA) for the First Time",
-    "link": "https://airdropalert.com/blogs/buy-cardano-first-time/",
-    "source": "AirdropAlert",
-    "published": "2026-10-02T02:04:00+00:00"
-   },
-   {
-    "title": "FOMO vs Dexscreener: Which Meme Coin Trading Tool Wins?",
-    "link": "https://airdropalert.com/blogs/fomo-vs-dexscreener/",
-    "source": "AirdropAlert",
-    "published": "2026-10-02T01:01:00+00:00"
-   },
-   {
-    "title": "NEAR Intents Exploit: $3.8M Drained, Full Refund Promised",
-    "link": "https://airdropalert.com/blogs/near-intents-exploit/",
-    "source": "AirdropAlert",
-    "published": "2026-10-01T15:52:35+00:00"
-   },
-   {
-    "title": "Third Trump Dinner Announced: Gala in DC on November 22",
-    "link": "https://airdropalert.com/blogs/third-trump-dinner/",
-    "source": "AirdropAlert",
-    "published": "2026-10-01T13:13:46+00:00"
-   },
-   {
-    "title": "What Is the MetaMask Security Incident?",
-    "link": "https://airdropalert.com/blogs/metamask-security-incident/",
-    "source": "AirdropAlert",
-    "published": "2026-10-01T12:11:29+00:00"
-   },
-   {
-    "title": "Who Is FaZe Banks? From FaZe Clan to Crypto’s Most Controversial Celebrity",
-    "link": "https://airdropalert.com/blogs/who-is-faze-banks-guide/",
-    "source": "AirdropAlert",
-    "published": "2026-10-01T04:02:00+00:00"
+    "published": "2026-10-03T01:13:00+00:00"
    },
    {
     "title": "Best crypto airdrops to farm right now",
@@ -273,6 +223,46 @@
  },
  "listings": [
   {
+   "ex": "Kraken",
+   "title": "DEBIT is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/debit-is-available-for-trading",
+   "token": "",
+   "announced": "2026-10-02T15:42:33+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Kraken",
+   "title": "OUSD is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/ousd-is-available-for-trading",
+   "token": "",
+   "announced": "2026-10-02T15:37:04+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Kraken",
+   "title": "CT is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/ct-is-available-for-trading",
+   "token": "",
+   "announced": "2026-10-02T15:31:12+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Kraken",
+   "title": "WOJAK is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/wojak-is-available-for-trading",
+   "token": "",
+   "announced": "2026-10-02T15:21:18+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "XT",
+   "title": "XT Announcement on the Upcoming Listing of SANTACOIN (SANTAHOOD)",
+   "url": "https://xtsupport.zendesk.com/hc/en-us/articles/62843560750233-XT-Announcement-on-the-Upcoming-Listing-of-SANTACOIN-SANTAHOOD",
+   "token": "SANTAHOOD",
+   "announced": "2026-10-02T13:36:23+00:00",
+   "trade": ""
+  },
+  {
    "ex": "KuCoin",
    "title": "World Premiere: Pheasant Network (PNT) Listed on KuCoin",
    "url": "https://www.kucoin.com/announcement/en-world-premiere-pheasant-network-pnt-listed-on-kucoin?lang=en_US",
@@ -281,11 +271,19 @@
    "trade": "2026-10-05T12:00:00+00:00"
   },
   {
-   "ex": "Bitget",
-   "title": "Bitget listed TWSTUSDT, CVNAUSDT, RUMUSDT, CRMLUSDT, BWETUSDT, ACNSTOCKUSDT, KODUSDT and AKAMUSDT hot stock perps",
-   "url": "https://www.bitget.com/en/support/articles/12560603896414",
+   "ex": "HTX",
+   "title": "HTX to Open Trading for CT (Concrete) at 12:00 (UTC)  on September 30, 2026",
+   "url": "https://www.htx.com/support/55045085577698",
+   "token": "CT",
+   "announced": "2026-09-30T10:35:20+00:00",
+   "trade": "2026-09-30T12:00:00+00:00"
+  },
+  {
+   "ex": "HTX",
+   "title": "HTX Will List CT (Concrete) on September 30, 2026",
+   "url": "https://www.htx.com/support/25045083451204",
    "token": "",
-   "announced": "2026-09-30T11:21:33+00:00",
+   "announced": "2026-09-30T10:09:43+00:00",
    "trade": ""
   },
   {
@@ -305,19 +303,67 @@
    "trade": ""
   },
   {
-   "ex": "Binance",
-   "title": "Binance Will Add 7 bStocks Tokenized Securities as Collateral Asset - 2026-09-30",
-   "url": "https://www.binance.com/en/support/announcement/1a94597986cf476f939609c02b87ee79",
+   "ex": "Kraken",
+   "title": "XDP is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/xdp-is-available-for-trading",
    "token": "",
-   "announced": "2026-09-30T03:30:01+00:00",
+   "announced": "2026-09-28T20:31:02+00:00",
    "trade": ""
   },
   {
-   "ex": "Binance",
-   "title": "Binance Adds 5 Stocks on Binance Stock Trading - 2026-09-28",
-   "url": "https://www.binance.com/en/support/announcement/d3a2cc0c1b5f42a2aee9a8bda2bd8e94",
+   "ex": "Kraken",
+   "title": "PONS is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/pons-is-available-for-trading",
    "token": "",
-   "announced": "2026-09-28T10:00:13+00:00",
+   "announced": "2026-09-28T20:21:25+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "HTX",
+   "title": "HTX to Open Trading for JPYC (JPY Coin) at 13:00 (UTC)  on September 28, 2026",
+   "url": "https://www.htx.com/support/105044896998094",
+   "token": "JPYC",
+   "announced": "2026-09-28T06:18:50+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "HTX",
+   "title": "HTX Will List JPYC (JPY Coin) on September 28, 2026",
+   "url": "https://www.htx.com/support/55044896515131",
+   "token": "",
+   "announced": "2026-09-28T05:53:47+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "HTX",
+   "title": "HTX to Open Trading for XDP (Doppler Finance) at 14:00 (UTC)  on September 28, 2026",
+   "url": "https://www.htx.com/support/45044888287276",
+   "token": "",
+   "announced": "2026-09-28T04:45:06+00:00",
+   "trade": "2026-09-28T14:00:00+00:00"
+  },
+  {
+   "ex": "HTX",
+   "title": "HTX Will List XDP (Doppler Finance) on September 28, 2026",
+   "url": "https://www.htx.com/support/105044887092386",
+   "token": "",
+   "announced": "2026-09-28T03:16:44+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "HTX",
+   "title": "HTX to Open Trading for PAID (Paid) at 10:00 (UTC)  on September 27, 2026",
+   "url": "https://www.htx.com/support/35044806693179",
+   "token": "",
+   "announced": "2026-09-27T05:06:31+00:00",
+   "trade": "2026-09-27T10:00:00+00:00"
+  },
+  {
+   "ex": "HTX",
+   "title": "HTX Will List PAID (Paid) in the Innovation Zone on September 27, 2026",
+   "url": "https://www.htx.com/support/95044803680640",
+   "token": "",
+   "announced": "2026-09-27T04:09:53+00:00",
    "trade": ""
   },
   {
@@ -329,43 +375,11 @@
    "trade": "2026-09-28T13:00:00+00:00"
   },
   {
-   "ex": "Binance",
-   "title": "Binance Will List Hyperliquid (HYPE) with Seed Tag Applied",
-   "url": "https://www.binance.com/en/support/announcement/d49de208bb6d4a26b02677d7c3d89b5d",
-   "token": "HYPE",
-   "announced": "2026-09-24T07:30:38+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Bitget",
-   "title": "Bitget listed URNMUSDT and WBDUSDT hot stock perps",
-   "url": "https://www.bitget.com/en/support/articles/12560603895947",
-   "token": "",
-   "announced": "2026-09-23T14:05:58+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Bitget",
-   "title": "Bitget Has Listed POLYMARKET Pre-IPO Perps",
-   "url": "https://www.bitget.com/en/support/articles/12560603895946",
-   "token": "",
-   "announced": "2026-09-23T13:39:45+00:00",
-   "trade": ""
-  },
-  {
    "ex": "Bitget",
    "title": "Bitget lists 462 spot stock assets, including rGPRO, rHSAI, rBRZE, rALRM, and rLCLN",
    "url": "https://www.bitget.com/en/support/articles/12560603895945",
    "token": "",
    "announced": "2026-09-23T12:22:22+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Binance Will Add 3 bStocks Tokenized Securities as Collateral Asset - 2026-09-23",
-   "url": "https://www.binance.com/en/support/announcement/c61f3c18a3004f968b53fb09841f7bc7",
-   "token": "",
-   "announced": "2026-09-23T05:30:02+00:00",
    "trade": ""
   },
   {
@@ -378,50 +392,10 @@
   },
   {
    "ex": "Bitget",
-   "title": "Bitget Has Listed OURA (Oura Ring) Pre-IPO Perps",
-   "url": "https://www.bitget.com/en/support/articles/12560603895865",
-   "token": "",
-   "announced": "2026-09-22T12:49:00+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Bitget",
-   "title": "Bitget Announcement on the Launch of USDBRLUSDT FX Perps",
-   "url": "https://www.bitget.com/en/support/articles/12560603895782",
-   "token": "",
-   "announced": "2026-09-21T14:30:27+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Bitget",
-   "title": "Bitget Announcement on the Listing of TLTUSDT, JEPQUSDT, CORZUSDT, BLSHUSDT, and SECZUSDT Stock Perps",
-   "url": "https://www.bitget.com/en/support/articles/12560603895779",
-   "token": "",
-   "announced": "2026-09-21T13:31:42+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Bitget",
    "title": "Bitget lists multiple spot stock and ETF assets, including rFDVV, rGDXU, rBITX, rJPIE, and rCWB",
    "url": "https://www.bitget.com/en/support/articles/12560603895774",
    "token": "",
    "announced": "2026-09-21T11:04:12+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Binance Adds 25 Stocks on Binance Stock Trading - 2026-09-21",
-   "url": "https://www.binance.com/en/support/announcement/a0adb246c4a24f108fd0d1f51dfd3d1d",
-   "token": "",
-   "announced": "2026-09-21T07:00:01+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Binance Will Support the Broadcom (AVGO), Invesco QQQ Trust (QQQ), Meta (META), and Seagate (STX) Cash Dividend Distribution via bStocks",
-   "url": "https://www.binance.com/en/support/announcement/7df43402f0094e79b293bd7fbb574474",
-   "token": "AVGO",
-   "announced": "2026-09-18T05:00:10+00:00",
    "trade": ""
   },
   {
@@ -431,6 +405,22 @@
    "token": "ON",
    "announced": "2026-09-17T03:04:00+00:00",
    "trade": "2026-09-17T10:00:00+00:00"
+  },
+  {
+   "ex": "Kraken",
+   "title": "TREAD is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/tread-is-available-for-trading",
+   "token": "",
+   "announced": "2026-09-16T18:48:58+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Kraken",
+   "title": "GNOT is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/gnot-is-available-for-trading",
+   "token": "",
+   "announced": "2026-09-16T18:40:58+00:00",
+   "trade": ""
   },
   {
    "ex": "KuCoin",
@@ -449,14 +439,6 @@
    "trade": "2026-09-17T10:00:00+00:00"
   },
   {
-   "ex": "Binance",
-   "title": "Binance Will Add 2 bStocks Tokenized Securities as Collateral Asset - 2026-09-16",
-   "url": "https://www.binance.com/en/support/announcement/a5bf03abedaa4430b1fd04aa760e491b",
-   "token": "",
-   "announced": "2026-09-16T04:30:09+00:00",
-   "trade": ""
-  },
-  {
    "ex": "KuCoin",
    "title": "Trusta.AI (TA) Listed on KuCoin",
    "url": "https://www.kucoin.com/announcement/en-trusta-ai-ta-listed-on-kucoin?lang=en_US",
@@ -471,6 +453,22 @@
    "token": "GNOT",
    "announced": "2026-09-14T14:28:00+00:00",
    "trade": "2026-09-16T14:00:00+00:00"
+  },
+  {
+   "ex": "Kraken",
+   "title": "TCS is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/tcs-is-available-for-trading",
+   "token": "",
+   "announced": "2026-09-09T21:17:41+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "Kraken",
+   "title": "ONE is available for trading!",
+   "url": "https://blog.kraken.com/product/asset-listings/one-is-available-for-trading",
+   "token": "",
+   "announced": "2026-09-09T15:56:56+00:00",
+   "trade": ""
   },
   {
    "ex": "KuCoin",
@@ -518,6 +516,54 @@
    "url": "https://www.okx.com/en-us/help/okx-will-launch-aeon-usd-for-spot-trading",
    "token": "AEON",
    "announced": "2026-07-27T03:00:10+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "BitMart",
+   "title": "BitMart Will List ForTon (FRT)- 2026-7-27",
+   "url": "https://bitmart.zendesk.com/hc/en-us/articles/53501985515163-BitMart-Will-List-ForTon-FRT-2026-7-27",
+   "token": "FRT",
+   "announced": "2026-07-24T19:23:12+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "BitMart",
+   "title": "BitMart Will List SpaceWay Utility Token (SPWAY)- 2026-7-27",
+   "url": "https://bitmart.zendesk.com/hc/en-us/articles/53496979533467-BitMart-Will-List-SpaceWay-Utility-Token-SPWAY-2026-7-27",
+   "token": "SPWAY",
+   "announced": "2026-07-24T17:49:25+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "BitMart",
+   "title": "BitMart Will List My Identity(MYID)- 2026-08-04",
+   "url": "https://bitmart.zendesk.com/hc/en-us/articles/53471834000539-BitMart-Will-List-My-Identity-MYID-2026-08-04",
+   "token": "MYID",
+   "announced": "2026-07-24T05:58:23+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "BitMart",
+   "title": "[Primary Listing] BitMart Will List FONQ (FONQ) - 2026-7-27",
+   "url": "https://bitmart.zendesk.com/hc/en-us/articles/53469676253595--Primary-Listing-BitMart-Will-List-FONQ-FONQ-2026-7-27",
+   "token": "FONQ",
+   "announced": "2026-07-24T03:41:49+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "BitMart",
+   "title": "BitMart Will List Auxite Reserve (AUXR)- 2026-7-24",
+   "url": "https://bitmart.zendesk.com/hc/en-us/articles/53399626944283-BitMart-Will-List-Auxite-Reserve-AUXR-2026-7-24",
+   "token": "AUXR",
+   "announced": "2026-07-22T19:33:14+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "BitMart",
+   "title": "BitMart Will List NORMIE (NORMIE)- 2026-7-23",
+   "url": "https://bitmart.zendesk.com/hc/en-us/articles/53364926174747-BitMart-Will-List-NORMIE-NORMIE-2026-7-23",
+   "token": "NORMIE",
+   "announced": "2026-07-22T04:41:47+00:00",
    "trade": ""
   },
   {
@@ -591,39 +637,79 @@
    "token": "AI",
    "announced": "2026-05-22T07:30:09+00:00",
    "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch PROS/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-pros-usd-for-spot-trading",
+   "token": "PROS",
+   "announced": "2026-05-13T04:00:15+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX to list PROS/USDT (Pharos) for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-to-list-pros-usdt-pharos-for-spot-trading",
+   "token": "PROS",
+   "announced": "2026-05-13T04:00:10+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX to list Pi for Spot Trading",
+   "url": "https://www.okx.com/en-us/help/okx-to-list-pi-for-spot-trading",
+   "token": "",
+   "announced": "2026-05-07T04:40:11+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX to list EDGE/USDT (edgeX) for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-to-list-edge-edgex-for-spot-trading",
+   "token": "EDGE",
+   "announced": "2026-05-06T05:00:16+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch EDGE/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-edge-usd-for-spot-trading",
+   "token": "EDGE",
+   "announced": "2026-05-06T05:00:14+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX will launch MEGA/USD for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-will-launch-mega-usd-for-spot-trading",
+   "token": "MEGA",
+   "announced": "2026-04-30T10:15:09+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX to list MEGA (MegaETH) for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-to-list-mega-megaeth-for-spot-trading",
+   "token": "",
+   "announced": "2026-04-30T10:15:08+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "OKX",
+   "title": "OKX to list RLUSD (Ripple USD) for spot trading",
+   "url": "https://www.okx.com/en-us/help/okx-to-list-rlusd-ripple-usd-for-spot-trading",
+   "token": "",
+   "announced": "2026-04-29T11:00:10+00:00",
+   "trade": ""
   }
  ],
  "earn": [
-  {
-   "ex": "Binance",
-   "title": "Binance Lifestyle Venezuela Cashback Campaign: Spend 5 USDT, Get 2 USDT Back",
-   "url": "https://www.binance.com/en/support/announcement/271b588ed6e64723a3e05399310d61b2",
-   "token": "",
-   "announced": "2026-10-02T10:00:02+00:00",
-   "trade": ""
-  },
   {
    "ex": "KuCoin",
    "title": "Earn Friday Week 135: Earn up to 9% APR with USDT, BTC, DOT",
    "url": "https://www.kucoin.com/announcement/en-earn-friday-week-135-earn-up-to-9-apr-with-usdt-btc-dot?lang=en_US",
    "token": "",
    "announced": "2026-10-02T08:00:00+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "PK Exclusive: Trading Rush - Trade, Invite and Unlock Rewards",
-   "url": "https://www.binance.com/en/support/announcement/e0b21949852e4888949d009effcabda5",
-   "token": "",
-   "announced": "2026-10-01T13:00:07+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Binance Alpha Trading Competition: Trade Concrete (CT) and Share $200K Worth of Rewards (2026-10-01)",
-   "url": "https://www.binance.com/en/support/announcement/a9a21d0533bf40158b3ec8a011f96ad3",
-   "token": "CT",
-   "announced": "2026-10-01T11:30:13+00:00",
    "trade": ""
   },
   {
@@ -635,51 +721,11 @@
    "trade": ""
   },
   {
-   "ex": "Binance",
-   "title": "Extension to the USD1 Airdrop Campaign (2026-10-02)",
-   "url": "https://www.binance.com/en/support/announcement/9745ace0eb7a42d396e22a711f907616",
-   "token": "",
-   "announced": "2026-10-01T09:30:10+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Binance Academy Bitcoin Page: Complete Quiz to Earn BTC Rewards This October 2026!",
-   "url": "https://www.binance.com/en/support/announcement/5fc0f803346b4b5085b0e1c5d16d8b2c",
-   "token": "",
-   "announced": "2026-10-01T09:00:09+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Binance Stocks Welcome Rewards: Transfer-In for Up to 12,000 USDC and Share from a $200,000-Valued NVDAB, MUB or QQQB Prize Pool",
-   "url": "https://www.binance.com/en/support/announcement/4f85bc2331274dea97ac2a4f660e554c",
-   "token": "",
-   "announced": "2026-10-01T08:00:09+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Join the Binance P2P Beginner-Merchant Handshake Campaign with 100% Maker Fee Rebate",
-   "url": "https://www.binance.com/en/support/announcement/d3d40f07ad7d46d696b125ab9cbd4e84",
-   "token": "",
-   "announced": "2026-10-01T04:00:05+00:00",
-   "trade": ""
-  },
-  {
    "ex": "KuCoin",
    "title": "Deposit to Share 100,000 USDT — KuCoin Earn Boost Season",
    "url": "https://www.kucoin.com/announcement/en-deposit-to-share-100000-usdt-kucoin-earn-boost-season?lang=en_US",
    "token": "",
    "announced": "2026-09-30T12:00:00+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Binance Alpha Trading Competition: Trade o1.exchange (O) and Share $200K Worth of Rewards (2026-09-30)",
-   "url": "https://www.binance.com/en/support/announcement/4a08577b7adc43a69b0728ace18e72bb",
-   "token": "",
-   "announced": "2026-09-30T11:30:05+00:00",
    "trade": ""
   },
   {
@@ -691,35 +737,11 @@
    "trade": ""
   },
   {
-   "ex": "Binance",
-   "title": "October Referral Tournament: Invite Friends, Climb the Leaderboard and Earn Up to 1,000 USDC in Token Vouchers",
-   "url": "https://www.binance.com/en/support/announcement/143edb7fd3204d1696b37ef752a6b032",
+   "ex": "XT",
+   "title": "XT Crazy Wednesday (Phase 95): Earn Up to 100% APR on 7-Day Fixed-Term Savings Products",
+   "url": "https://xtsupport.zendesk.com/hc/en-us/articles/62748169346969-XT-Crazy-Wednesday-Phase-95-Earn-Up-to-100-APR-on-7-Day-Fixed-Term-Savings-Products",
    "token": "",
-   "announced": "2026-09-30T08:00:01+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Brazil New User Exclusive: Subscribe to USDC Simple Earn to Enjoy 15% APR!",
-   "url": "https://www.binance.com/en/support/announcement/6a10e05242c843089e20ea7ba24ef33b",
-   "token": "",
-   "announced": "2026-09-29T12:15:08+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "LATAM New User Exclusive: Subscribe to USDC Simple Earn to Enjoy 30% APR During the Promotion Period!",
-   "url": "https://www.binance.com/en/support/announcement/c3296b46009f4cb5bdcdde8e2f60b38a",
-   "token": "",
-   "announced": "2026-09-29T12:00:09+00:00",
-   "trade": ""
-  },
-  {
-   "ex": "Binance",
-   "title": "Binance Alpha Trading Competition: Trade Doppler Finance (XDP) and Share $200K Worth of Rewards (2026-09-29)",
-   "url": "https://www.binance.com/en/support/announcement/d3ca65acb7f341c0a8f33ed21f44924c",
-   "token": "XDP",
-   "announced": "2026-09-29T11:30:06+00:00",
+   "announced": "2026-09-30T03:30:21+00:00",
    "trade": ""
   },
   {
@@ -739,14 +761,6 @@
    "trade": ""
   },
   {
-   "ex": "Binance",
-   "title": "Binance Earn October Monthly Leaderboard: Earn Up to 5,888 USDC Rewards on Dual Investment",
-   "url": "https://www.binance.com/en/support/announcement/29e6788e0ec64a1eab2ed4bf6e3d9e2e",
-   "token": "",
-   "announced": "2026-09-29T02:00:00+00:00",
-   "trade": ""
-  },
-  {
    "ex": "KuCoin",
    "title": "Ultra (UOS) Trade and Learn Campaign — 7,638,586 UOS Prize Pool Up For Grabs",
    "url": "https://www.kucoin.com/announcement/en-ultra-uos-trade-and-learn-campaign-7638586-uos-prize-pool-up-for-grabs?lang=en_US",
@@ -763,14 +777,6 @@
    "trade": ""
   },
   {
-   "ex": "Binance",
-   "title": "Word of the Day: Test Your Knowledge on “IPOs Are Moving On-Chain” to Unlock USDC Rewards!",
-   "url": "https://www.binance.com/en/support/announcement/3bbe837e24a64b93811116d366954e0a",
-   "token": "",
-   "announced": "2026-09-28T02:00:04+00:00",
-   "trade": ""
-  },
-  {
    "ex": "KuCoin",
    "title": "Earn Friday Week 134: Earn up to 7% APR with USDT, BTC, ETH",
    "url": "https://www.kucoin.com/announcement/en-earn-friday-week-134-earn-up-to-7-apr-with-usdt-btc-eth?lang=en_US",
@@ -779,11 +785,11 @@
    "trade": ""
   },
   {
-   "ex": "Binance",
-   "title": "Binance Alpha Trading Competition: Trade ChainOpera AI (COAI) and Share $200K Worth of Rewards (2026-09-24)",
-   "url": "https://www.binance.com/en/support/announcement/df0f5afc43aa4ef1b344eb92b75c2716",
-   "token": "COAI",
-   "announced": "2026-09-24T11:30:07+00:00",
+   "ex": "DigiFinex",
+   "title": "【Important Announcement】Discontinuation of BTC SIP, Crypto Loans and Interest-free Loan",
+   "url": "https://support.digifinex.com/hc/en-us/articles/62531145035673--Important-Announcement-Discontinuation-of-BTC-SIP-Crypto-Loans-and-Interest-free-Loan",
+   "token": "",
+   "announced": "2026-09-23T03:02:02+00:00",
    "trade": ""
   },
   {
@@ -801,24 +807,856 @@
    "token": "",
    "announced": "2026-09-22T09:15:00+00:00",
    "trade": ""
+  },
+  {
+   "ex": "DigiFinex",
+   "title": "USDT High-Yield Wealth Management Promotion: Earn Up to 9.5% APR with 10 Million USDT in Limited-Time Quotas!",
+   "url": "https://support.digifinex.com/hc/en-us/articles/61262401406105-USDT-High-Yield-Wealth-Management-Promotion-Earn-Up-to-9-5-APR-with-10-Million-USDT-in-Limited-Time-Quotas",
+   "token": "",
+   "announced": "2026-08-18T01:53:49+00:00",
+   "trade": ""
+  },
+  {
+   "ex": "BitMart",
+   "title": "Futures King Round 14, 485,500 USDT Mega Prize Pool, Mid-Year Trading Championship · Claim Your Luxury Travel Privilege",
+   "url": "https://bitmart.zendesk.com/hc/en-us/articles/53418335752475-Futures-King-Round-14-485-500-USDT-Mega-Prize-Pool-Mid-Year-Trading-Championship-Claim-Your-Luxury-Travel-Privilege",
+   "token": "",
+   "announced": "2026-07-23T03:24:42+00:00",
+   "trade": ""
   }
  ],
- "tip": "সামনে বড় টোকেন আনলক আছে কিনা দেখে নিন। সরবরাহ বাড়লে দামে চাপ পড়তে পারে।",
- "updated": "2026-10-02T23:50:13+00:00",
+ "tip": "Stop Loss ছাড়া কোনো ট্রেড নয়। আগে ঠিক করুন কোথায় ভুল প্রমাণ হবেন, তারপর Entry।",
+ "updated": "2026-10-03T05:06:45+00:00",
  "sources": {
   "Airdrops.io": 10,
-  "AirdropAlert": 10,
-  "CoinGecko": -1,
+  "AirdropAlert": 1,
   "Bitcoin.com": 0,
   "CryptoPotato": 0,
   "BeInCrypto": 0,
   "U.Today": 0,
   "NewsBTC": 0,
+  "AMBCrypto": 0,
+  "CryptoNews": -1,
+  "Blockworks": 0,
+  "DailyHodl": 0,
+  "Bitcoinist": 0,
+  "CoinJournal": 0,
   "OKX": 19,
   "KuCoin": 28,
-  "Binance": 22,
-  "Bybit": -1,
-  "Bitget": 9,
-  "MEXC": 0
- }
+  "Bitget": 3,
+  "HTX": 8,
+  "Kraken": 10,
+  "Bitfinex": 0,
+  "BitMart": 7,
+  "XT": 2,
+  "DigiFinex": 2,
+  "DefiLlama unlocks": 59,
+  "CoinMarketCap new": 30
+ },
+ "unlocks": [
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-03T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-04T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-05T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Quai Network",
+   "slug": "quai-network",
+   "t": "2026-10-06T17:41:00+00:00",
+   "tokens": 16529755,
+   "pct": 0,
+   "cat": "noncirculating"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-06T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-07T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-08T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Movement",
+   "slug": "movement",
+   "t": "2026-10-09T14:39:06+00:00",
+   "tokens": 164583333,
+   "pct": 1.646,
+   "cat": "insiders"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-09T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-10T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-11T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Aptos",
+   "slug": "aptos",
+   "t": "2026-10-11T23:14:24+00:00",
+   "tokens": 11309783,
+   "pct": 0.538,
+   "cat": "noncirculating"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-12T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Sei",
+   "slug": "sei",
+   "t": "2026-10-13T14:23:54+00:00",
+   "tokens": 119861110,
+   "pct": 0,
+   "cat": "staking"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-13T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-14T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-15T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-16T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-17T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-18T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-19T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "LayerZero",
+   "slug": "layerzero",
+   "t": "2026-10-20T05:33:34+00:00",
+   "tokens": 23625000,
+   "pct": 2.362,
+   "cat": "insiders"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-20T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-21T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-22T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-23T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-24T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Avalanche",
+   "slug": "avalanche",
+   "t": "2026-10-24T20:20:39+00:00",
+   "tokens": 1667000,
+   "pct": 0.232,
+   "cat": "insiders"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-25T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "AltLayer",
+   "slug": "altlayer",
+   "t": "2026-10-26T09:58:39+00:00",
+   "tokens": 240096667,
+   "pct": 0,
+   "cat": "insiders"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-26T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-27T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-28T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "B2 Buzz",
+   "slug": "b2-buzz",
+   "t": "2026-10-28T20:42:54+00:00",
+   "tokens": 3175085,
+   "pct": 1.513,
+   "cat": "Uncategorized"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-29T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-30T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "EigenCloud",
+   "slug": "eigencloud",
+   "t": "2026-10-31T13:15:45+00:00",
+   "tokens": 36820227,
+   "pct": 0,
+   "cat": "privateSale"
+  },
+  {
+   "name": "Across",
+   "slug": "across",
+   "t": "2026-10-31T14:39:06+00:00",
+   "tokens": 3125000,
+   "pct": 0.312,
+   "cat": "insiders"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-10-31T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-01T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-02T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-03T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-04T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-05T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Quai Network",
+   "slug": "quai-network",
+   "t": "2026-11-06T04:10:03+00:00",
+   "tokens": 16529755,
+   "pct": 0,
+   "cat": "noncirculating"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-06T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-07T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-08T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Movement",
+   "slug": "movement",
+   "t": "2026-11-09T01:08:09+00:00",
+   "tokens": 164583333,
+   "pct": 1.646,
+   "cat": "insiders"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-09T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-10T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Aptos",
+   "slug": "aptos",
+   "t": "2026-11-11T09:43:27+00:00",
+   "tokens": 4543478,
+   "pct": 0.216,
+   "cat": "noncirculating"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-11T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-12T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Sei",
+   "slug": "sei",
+   "t": "2026-11-13T00:52:57+00:00",
+   "tokens": 119861110,
+   "pct": 0,
+   "cat": "staking"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-13T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-14T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-15T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  },
+  {
+   "name": "Celestia",
+   "slug": "celestia",
+   "t": "2026-11-16T19:48:46+00:00",
+   "tokens": 183562,
+   "pct": 0,
+   "cat": "ecosystem"
+  }
+ ],
+ "newcoins": [
+  {
+   "name": "Dolphin",
+   "sym": "POD",
+   "added": "2026-10-02T05:05:29.000Z",
+   "price": 0.7791447516118206,
+   "ch24": 4.28147358,
+   "vol": 148130902.78381494,
+   "mcap": 65143817.13,
+   "chain": "Base",
+   "url": "https://coinmarketcap.com/currencies/dolphin/"
+  },
+  {
+   "name": "HoodPork",
+   "sym": "PORKU",
+   "added": "2026-10-02T04:24:45.000Z",
+   "price": 0.011545141869911018,
+   "ch24": -63.08567333,
+   "vol": 9455282.40796446,
+   "mcap": 0.0,
+   "chain": "Robinhood",
+   "url": "https://coinmarketcap.com/currencies/hoodpork/"
+  },
+  {
+   "name": "FUSD",
+   "sym": "FUSD",
+   "added": "2026-10-01T19:12:34.000Z",
+   "price": 1.0000044271546291,
+   "ch24": 0.06567492,
+   "vol": 869.61590743,
+   "mcap": 0.0,
+   "chain": "TRON",
+   "url": "https://coinmarketcap.com/currencies/fun-united-dollar-cultura/"
+  },
+  {
+   "name": "H100 Group AB (Derivatives)",
+   "sym": "H100",
+   "added": "2026-10-01T05:31:28.000Z",
+   "price": 2.6463602646806903,
+   "ch24": -0.95726491,
+   "vol": 0.0,
+   "mcap": 0.0,
+   "chain": "",
+   "url": "https://coinmarketcap.com/currencies/h100-group-ab-derivatives/"
+  },
+  {
+   "name": "Open USD",
+   "sym": "OUSD",
+   "added": "2026-10-01T03:22:35.000Z",
+   "price": 0.9999417431515976,
+   "ch24": 0.07666518,
+   "vol": 6079.75161077,
+   "mcap": 668460634.62,
+   "chain": "Solana",
+   "url": "https://coinmarketcap.com/currencies/open-usd/"
+  },
+  {
+   "name": "Super Inu",
+   "sym": "SI",
+   "added": "2026-09-30T17:04:36.000Z",
+   "price": 0.04015419114769696,
+   "ch24": 19.50538364,
+   "vol": 20581390.20412714,
+   "mcap": 0.0,
+   "chain": "Solana",
+   "url": "https://coinmarketcap.com/currencies/super-inu-2/"
+  },
+  {
+   "name": "zipcoin",
+   "sym": "ZC",
+   "added": "2026-09-30T09:13:41.000Z",
+   "price": 0.01450585647438736,
+   "ch24": -6.18768668,
+   "vol": 5098148.41442948,
+   "mcap": 0.0,
+   "chain": "Ethereum",
+   "url": "https://coinmarketcap.com/currencies/zipcoin-cash/"
+  },
+  {
+   "name": "SharonAI Tokenized bStocks",
+   "sym": "SHAZB",
+   "added": "2026-09-29T10:59:43.000Z",
+   "price": 51.254000597365355,
+   "ch24": 1.10819749,
+   "vol": 115252.11375808,
+   "mcap": 385442.72,
+   "chain": "BNB",
+   "url": "https://coinmarketcap.com/currencies/sharonai-tokenized-bstocks/"
+  },
+  {
+   "name": "Zoom Tokenized bStocks",
+   "sym": "ZMB",
+   "added": "2026-09-29T10:53:42.000Z",
+   "price": 93.07186049607418,
+   "ch24": -0.80873342,
+   "vol": 42718.11487224,
+   "mcap": 376094.61,
+   "chain": "BNB",
+   "url": "https://coinmarketcap.com/currencies/zoom-tokenized-bstocks/"
+  },
+  {
+   "name": "Wendy's Tokenized bStocks",
+   "sym": "WENB",
+   "added": "2026-09-29T10:49:35.000Z",
+   "price": 6.163439095351163,
+   "ch24": -1.7231992,
+   "vol": 72319.55993468,
+   "mcap": 443812.13,
+   "chain": "BNB",
+   "url": "https://coinmarketcap.com/currencies/wendys-tokenized-bstocks/"
+  },
+  {
+   "name": "Forward Industries Tokenized bStocks",
+   "sym": "FWDIB",
+   "added": "2026-09-29T10:29:46.000Z",
+   "price": 8.147093589871705,
+   "ch24": -0.10592379,
+   "vol": 116824.41468921,
+   "mcap": 433958.82,
+   "chain": "BNB",
+   "url": "https://coinmarketcap.com/currencies/forward-industries-tokenized-bstocks/"
+  },
+  {
+   "name": "Hewlett Packard Tokenized bStocks",
+   "sym": "HPEB",
+   "added": "2026-09-29T10:26:25.000Z",
+   "price": 69.5765935680394,
+   "ch24": 6.47228942,
+   "vol": 303865.08976979,
+   "mcap": 533985.2,
+   "chain": "BNB",
+   "url": "https://coinmarketcap.com/currencies/hewlett-packard-tokenized-bstocks/"
+  },
+  {
+   "name": "Adobe Tokenized bStocks",
+   "sym": "ADBEB",
+   "added": "2026-09-29T10:23:13.000Z",
+   "price": 237.59852358045995,
+   "ch24": -1.85451404,
+   "vol": 110542.52867135,
+   "mcap": 1047913.69,
+   "chain": "BNB",
+   "url": "https://coinmarketcap.com/currencies/adobe-tokenized-bstocks/"
+  },
+  {
+   "name": "PDD Holdings Tokenized bStocks",
+   "sym": "PDDB",
+   "added": "2026-09-29T10:19:28.000Z",
+   "price": 75.5400644119438,
+   "ch24": -0.72863965,
+   "vol": 414354.85754625,
+   "mcap": 1978320.19,
+   "chain": "BNB",
+   "url": "https://coinmarketcap.com/currencies/pdd-holdings-tokenized-bstocks/"
+  },
+  {
+   "name": "Nike Inc (Derivatives)",
+   "sym": "NKE",
+   "added": "2026-09-29T05:20:39.000Z",
+   "price": 33.81346385936957,
+   "ch24": 4.75313827,
+   "vol": 0.0,
+   "mcap": 0.0,
+   "chain": "",
+   "url": "https://coinmarketcap.com/currencies/nike-inc-derivtaives/"
+  },
+  {
+   "name": "Securitize Corp (Derivatives)",
+   "sym": "SECZ",
+   "added": "2026-09-29T05:14:45.000Z",
+   "price": 13.016850881796158,
+   "ch24": -8.12398065,
+   "vol": 0.0,
+   "mcap": 0.0,
+   "chain": "",
+   "url": "https://coinmarketcap.com/currencies/securitize-corp-derivatives/"
+  },
+  {
+   "name": "MP Materials Corp (Derivatives)",
+   "sym": "MP",
+   "added": "2026-09-29T05:11:22.000Z",
+   "price": 47.23311187443981,
+   "ch24": 1.93289354,
+   "vol": 0.0,
+   "mcap": 0.0,
+   "chain": "",
+   "url": "https://coinmarketcap.com/currencies/mp-materials-corp-derivatives/"
+  },
+  {
+   "name": "Accenture plc Class A Ordinary Shares (D",
+   "sym": "ACN",
+   "added": "2026-09-29T05:08:01.000Z",
+   "price": 200.29621231614166,
+   "ch24": -5.72046734,
+   "vol": 0.0,
+   "mcap": 0.0,
+   "chain": "",
+   "url": "https://coinmarketcap.com/currencies/accenture-plc-class-a-ordinary-shares-derivatives/"
+  },
+  {
+   "name": "Breakwave Tanker Shipping ETF (Derivativ",
+   "sym": "BWET",
+   "added": "2026-09-29T05:02:16.000Z",
+   "price": 862.2139613745968,
+   "ch24": 4.78332396,
+   "vol": 0.0,
+   "mcap": 0.0,
+   "chain": "",
+   "url": "https://coinmarketcap.com/currencies/breakwave-tanker-shipping-etf-derivatives/"
+  },
+  {
+   "name": "Critical Metals Corp (Derivatives)",
+   "sym": "CRML",
+   "added": "2026-09-29T04:58:16.000Z",
+   "price": 7.126953126220005,
+   "ch24": -1.77012376,
+   "vol": 0.0,
+   "mcap": 0.0,
+   "chain": "",
+   "url": "https://coinmarketcap.com/currencies/critical-metals-corp-derivatives/"
+  },
+  {
+   "name": "Nokia Oyj (Backpack)",
+   "sym": "NOK",
+   "added": "2026-09-28T20:28:16.000Z",
+   "price": 10.49756601698466,
+   "ch24": 1.12313172,
+   "vol": 59076.05320608,
+   "mcap": 441286.6,
+   "chain": "Solana",
+   "url": "https://coinmarketcap.com/currencies/nokia-oyj-backpack/"
+  },
+  {
+   "name": "ishares MSCI South Korea tokenized ETF (",
+   "sym": "EWY",
+   "added": "2026-09-27T07:04:33.000Z",
+   "price": 189.58608019904656,
+   "ch24": 1.25060843,
+   "vol": 0.0,
+   "mcap": 94305.8,
+   "chain": "Solana",
+   "url": "https://coinmarketcap.com/currencies/ishares-msci-south-korea-tokenized-etf-backpack/"
+  },
+  {
+   "name": "Paid",
+   "sym": "PAID",
+   "added": "2026-09-26T16:10:38.000Z",
+   "price": 0.008088488296268122,
+   "ch24": -27.44561419,
+   "vol": 7477507.44882773,
+   "mcap": 7613505.53,
+   "chain": "Solana",
+   "url": "https://coinmarketcap.com/currencies/paid/"
+  },
+  {
+   "name": "PANDAAI",
+   "sym": "PANDA",
+   "added": "2026-09-25T08:18:12.000Z",
+   "price": 0.16787601357994397,
+   "ch24": 0.02027916,
+   "vol": 0.0,
+   "mcap": 0.0,
+   "chain": "Ethereum",
+   "url": "https://coinmarketcap.com/currencies/panda-a-panda/"
+  },
+  {
+   "name": "Catching Absolute Tops (catchingabsolute",
+   "sym": "CAT",
+   "added": "2026-09-25T08:03:03.000Z",
+   "price": 0.00027379858353662533,
+   "ch24": -6.92831637,
+   "vol": 5632.51449221,
+   "mcap": 0.0,
+   "chain": "Solana",
+   "url": "https://coinmarketcap.com/currencies/catching-absolute-tops/"
+  },
+  {
+   "name": "Agrippa",
+   "sym": "AGRIPPA",
+   "added": "2026-09-23T07:52:41.000Z",
+   "price": 1.4775272348414427e-05,
+   "ch24": -13.93594671,
+   "vol": 1012082.46359138,
+   "mcap": 1477527.23,
+   "chain": "Robinhood",
+   "url": "https://coinmarketcap.com/currencies/agrippa/"
+  },
+  {
+   "name": "Matrix (matrix.app)",
+   "sym": "MTX",
+   "added": "2026-09-23T07:09:03.000Z",
+   "price": 32.93243711630765,
+   "ch24": 0.29384287,
+   "vol": 10261.08393837,
+   "mcap": 0.0,
+   "chain": "Ethereum",
+   "url": "https://coinmarketcap.com/currencies/matrix-app/"
+  },
+  {
+   "name": "Snap Tokenized Stock (Robinhood)",
+   "sym": "SNAP",
+   "added": "2026-09-23T06:38:13.000Z",
+   "price": 5.615375407597707,
+   "ch24": -1.12757591,
+   "vol": 426806.85060779,
+   "mcap": 0.0,
+   "chain": "Robinhood",
+   "url": "https://coinmarketcap.com/currencies/snap-tokenized-stock-robinhood/"
+  },
+  {
+   "name": "IBM Tokenized Stock (Robinhood)",
+   "sym": "IBM",
+   "added": "2026-09-23T06:34:45.000Z",
+   "price": 222.71206470092454,
+   "ch24": -1.75424013,
+   "vol": 152428.16185257,
+   "mcap": 0.0,
+   "chain": "Robinhood",
+   "url": "https://coinmarketcap.com/currencies/ibm-tokenized-stock-robinhood/"
+  },
+  {
+   "name": "Galaxy Digital Tokenized Stock (Robinhoo",
+   "sym": "GLXY",
+   "added": "2026-09-23T06:29:45.000Z",
+   "price": 23.1763406679324,
+   "ch24": -0.72171525,
+   "vol": 229240.08891459,
+   "mcap": 0.0,
+   "chain": "Robinhood",
+   "url": "https://coinmarketcap.com/currencies/galaxy-digital-inc/"
+  }
+ ]
 }
