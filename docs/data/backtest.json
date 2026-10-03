@@ -1,0 +1,506 @@
+{
+ "generated": "2026-10-03T02:50:52+00:00",
+ "from": "2024-10-01T00:00:00+00:00",
+ "to": "2026-10-03T01:00:00+00:00",
+ "years": 2,
+ "coins": [
+  "BTC",
+  "ETH",
+  "BNB",
+  "SOL",
+  "XRP",
+  "ADA",
+  "DOGE",
+  "AVAX",
+  "LINK",
+  "DOT"
+ ],
+ "min_conf": 60,
+ "fee_pct": 0.1,
+ "rules": {
+  "sl_atr": 1.5,
+  "tp1_atr": 1.5,
+  "tp2_atr": 3.0,
+  "max_candles": 48
+ },
+ "all": {
+  "n": 1264,
+  "win_rate": 50.4,
+  "tp2": 318,
+  "sl": 624,
+  "expired": 7,
+  "total_r": -180.1,
+  "avg_r": -0.142,
+  "profit_factor": 0.75,
+  "max_dd_r": 187.7
+ },
+ "buy": {
+  "n": 577,
+  "win_rate": 52.8,
+  "tp2": 146,
+  "sl": 272,
+  "expired": 1,
+  "total_r": -65.2,
+  "avg_r": -0.113,
+  "profit_factor": 0.79,
+  "max_dd_r": 80.1
+ },
+ "sell": {
+  "n": 687,
+  "win_rate": 48.3,
+  "tp2": 172,
+  "sl": 352,
+  "expired": 6,
+  "total_r": -114.8,
+  "avg_r": -0.167,
+  "profit_factor": 0.72,
+  "max_dd_r": 117.6
+ },
+ "unfiltered": {
+  "n": 3264,
+  "win_rate": 50.4,
+  "tp2": 819,
+  "sl": 1610,
+  "expired": 16,
+  "total_r": -477.2,
+  "avg_r": -0.146,
+  "profit_factor": 0.74,
+  "max_dd_r": 483.1
+ },
+ "by_conf": [
+  {
+   "bucket": "85+",
+   "n": 157,
+   "win_rate": 47.1,
+   "tp2": 33,
+   "sl": 82,
+   "expired": 2,
+   "total_r": -33.8,
+   "avg_r": -0.216,
+   "profit_factor": 0.64,
+   "max_dd_r": 33.8
+  },
+  {
+   "bucket": "78-84",
+   "n": 220,
+   "win_rate": 49.5,
+   "tp2": 63,
+   "sl": 111,
+   "expired": 0,
+   "total_r": -27.6,
+   "avg_r": -0.125,
+   "profit_factor": 0.79,
+   "max_dd_r": 35.7
+  },
+  {
+   "bucket": "70-77",
+   "n": 391,
+   "win_rate": 52.7,
+   "tp2": 102,
+   "sl": 183,
+   "expired": 4,
+   "total_r": -39.9,
+   "avg_r": -0.102,
+   "profit_factor": 0.81,
+   "max_dd_r": 43.6
+  },
+  {
+   "bucket": "60-69",
+   "n": 496,
+   "win_rate": 49.9,
+   "tp2": 120,
+   "sl": 248,
+   "expired": 1,
+   "total_r": -78.8,
+   "avg_r": -0.159,
+   "profit_factor": 0.73,
+   "max_dd_r": 82.4
+  },
+  {
+   "bucket": "<60",
+   "n": 2000,
+   "win_rate": 50.5,
+   "tp2": 501,
+   "sl": 986,
+   "expired": 9,
+   "total_r": -297.1,
+   "avg_r": -0.149,
+   "profit_factor": 0.74,
+   "max_dd_r": 302.1
+  }
+ ],
+ "by_conf_buy": [
+  {
+   "bucket": "85+",
+   "n": 67,
+   "win_rate": 39.4,
+   "tp2": 8,
+   "sl": 40,
+   "expired": 1,
+   "total_r": -28.7,
+   "avg_r": -0.429,
+   "profit_factor": 0.37,
+   "max_dd_r": 28.7
+  },
+  {
+   "bucket": "78-84",
+   "n": 105,
+   "win_rate": 49.5,
+   "tp2": 31,
+   "sl": 53,
+   "expired": 0,
+   "total_r": -12.9,
+   "avg_r": -0.123,
+   "profit_factor": 0.79,
+   "max_dd_r": 24.8
+  },
+  {
+   "bucket": "70-77",
+   "n": 168,
+   "win_rate": 61.3,
+   "tp2": 48,
+   "sl": 65,
+   "expired": 0,
+   "total_r": 7.6,
+   "avg_r": 0.045,
+   "profit_factor": 1.1,
+   "max_dd_r": 7.9
+  },
+  {
+   "bucket": "60-69",
+   "n": 237,
+   "win_rate": 51.9,
+   "tp2": 59,
+   "sl": 114,
+   "expired": 0,
+   "total_r": -31.2,
+   "avg_r": -0.132,
+   "profit_factor": 0.76,
+   "max_dd_r": 41.7
+  },
+  {
+   "bucket": "<60",
+   "n": 1023,
+   "win_rate": 50.5,
+   "tp2": 251,
+   "sl": 504,
+   "expired": 4,
+   "total_r": -153.7,
+   "avg_r": -0.15,
+   "profit_factor": 0.73,
+   "max_dd_r": 174.4
+  }
+ ],
+ "by_conf_sell": [
+  {
+   "bucket": "85+",
+   "n": 90,
+   "win_rate": 52.8,
+   "tp2": 25,
+   "sl": 42,
+   "expired": 1,
+   "total_r": -5.1,
+   "avg_r": -0.057,
+   "profit_factor": 0.89,
+   "max_dd_r": 12.9
+  },
+  {
+   "bucket": "78-84",
+   "n": 115,
+   "win_rate": 49.6,
+   "tp2": 32,
+   "sl": 58,
+   "expired": 0,
+   "total_r": -14.6,
+   "avg_r": -0.127,
+   "profit_factor": 0.78,
+   "max_dd_r": 15.6
+  },
+  {
+   "bucket": "70-77",
+   "n": 223,
+   "win_rate": 46.1,
+   "tp2": 54,
+   "sl": 118,
+   "expired": 4,
+   "total_r": -47.5,
+   "avg_r": -0.213,
+   "profit_factor": 0.66,
+   "max_dd_r": 48.8
+  },
+  {
+   "bucket": "60-69",
+   "n": 259,
+   "win_rate": 48.1,
+   "tp2": 61,
+   "sl": 134,
+   "expired": 1,
+   "total_r": -47.6,
+   "avg_r": -0.184,
+   "profit_factor": 0.69,
+   "max_dd_r": 49.0
+  },
+  {
+   "bucket": "<60",
+   "n": 977,
+   "win_rate": 50.4,
+   "tp2": 250,
+   "sl": 482,
+   "expired": 5,
+   "total_r": -143.4,
+   "avg_r": -0.147,
+   "profit_factor": 0.75,
+   "max_dd_r": 151.1
+  }
+ ],
+ "by_coin": [
+  {
+   "coin": "BTC",
+   "n": 130,
+   "win_rate": 45.0,
+   "tp2": 25,
+   "sl": 71,
+   "expired": 1,
+   "total_r": -52.0,
+   "avg_r": -0.4,
+   "profit_factor": 0.43,
+   "max_dd_r": 52.0
+  },
+  {
+   "coin": "ETH",
+   "n": 158,
+   "win_rate": 53.2,
+   "tp2": 46,
+   "sl": 74,
+   "expired": 0,
+   "total_r": -11.8,
+   "avg_r": -0.075,
+   "profit_factor": 0.86,
+   "max_dd_r": 19.1
+  },
+  {
+   "coin": "BNB",
+   "n": 127,
+   "win_rate": 44.8,
+   "tp2": 26,
+   "sl": 69,
+   "expired": 2,
+   "total_r": -43.4,
+   "avg_r": -0.341,
+   "profit_factor": 0.49,
+   "max_dd_r": 44.5
+  },
+  {
+   "coin": "SOL",
+   "n": 118,
+   "win_rate": 55.7,
+   "tp2": 30,
+   "sl": 51,
+   "expired": 3,
+   "total_r": -4.6,
+   "avg_r": -0.039,
+   "profit_factor": 0.92,
+   "max_dd_r": 15.5
+  },
+  {
+   "coin": "XRP",
+   "n": 118,
+   "win_rate": 49.2,
+   "tp2": 28,
+   "sl": 60,
+   "expired": 0,
+   "total_r": -20.1,
+   "avg_r": -0.17,
+   "profit_factor": 0.71,
+   "max_dd_r": 22.2
+  },
+  {
+   "coin": "ADA",
+   "n": 132,
+   "win_rate": 52.3,
+   "tp2": 37,
+   "sl": 63,
+   "expired": 0,
+   "total_r": -5.6,
+   "avg_r": -0.043,
+   "profit_factor": 0.92,
+   "max_dd_r": 13.6
+  },
+  {
+   "coin": "DOGE",
+   "n": 121,
+   "win_rate": 61.2,
+   "tp2": 37,
+   "sl": 47,
+   "expired": 0,
+   "total_r": 11.3,
+   "avg_r": 0.093,
+   "profit_factor": 1.21,
+   "max_dd_r": 8.7
+  },
+  {
+   "coin": "AVAX",
+   "n": 126,
+   "win_rate": 53.2,
+   "tp2": 35,
+   "sl": 59,
+   "expired": 0,
+   "total_r": -4.1,
+   "avg_r": -0.033,
+   "profit_factor": 0.94,
+   "max_dd_r": 12.2
+  },
+  {
+   "coin": "LINK",
+   "n": 124,
+   "win_rate": 42.3,
+   "tp2": 27,
+   "sl": 71,
+   "expired": 1,
+   "total_r": -31.0,
+   "avg_r": -0.25,
+   "profit_factor": 0.61,
+   "max_dd_r": 35.7
+  },
+  {
+   "coin": "DOT",
+   "n": 110,
+   "win_rate": 46.4,
+   "tp2": 27,
+   "sl": 59,
+   "expired": 0,
+   "total_r": -18.7,
+   "avg_r": -0.17,
+   "profit_factor": 0.71,
+   "max_dd_r": 20.4
+  }
+ ],
+ "monthly": [
+  {
+   "m": "2024-10",
+   "r": -9.9,
+   "eq": -9.9
+  },
+  {
+   "m": "2024-11",
+   "r": -1.6,
+   "eq": -11.5
+  },
+  {
+   "m": "2024-12",
+   "r": -16.2,
+   "eq": -27.7
+  },
+  {
+   "m": "2025-01",
+   "r": -19.9,
+   "eq": -47.6
+  },
+  {
+   "m": "2025-02",
+   "r": -2.0,
+   "eq": -49.6
+  },
+  {
+   "m": "2025-03",
+   "r": -5.2,
+   "eq": -54.8
+  },
+  {
+   "m": "2025-04",
+   "r": -6.6,
+   "eq": -61.4
+  },
+  {
+   "m": "2025-05",
+   "r": 7.7,
+   "eq": -53.7
+  },
+  {
+   "m": "2025-06",
+   "r": -3.0,
+   "eq": -56.7
+  },
+  {
+   "m": "2025-07",
+   "r": -6.8,
+   "eq": -63.5
+  },
+  {
+   "m": "2025-08",
+   "r": 5.3,
+   "eq": -58.2
+  },
+  {
+   "m": "2025-09",
+   "r": -10.0,
+   "eq": -68.2
+  },
+  {
+   "m": "2025-10",
+   "r": 9.1,
+   "eq": -59.1
+  },
+  {
+   "m": "2025-11",
+   "r": -1.1,
+   "eq": -60.2
+  },
+  {
+   "m": "2025-12",
+   "r": -28.8,
+   "eq": -88.9
+  },
+  {
+   "m": "2026-01",
+   "r": -10.1,
+   "eq": -99.0
+  },
+  {
+   "m": "2026-02",
+   "r": -13.9,
+   "eq": -112.9
+  },
+  {
+   "m": "2026-03",
+   "r": -8.3,
+   "eq": -121.2
+  },
+  {
+   "m": "2026-04",
+   "r": 4.6,
+   "eq": -116.6
+  },
+  {
+   "m": "2026-05",
+   "r": -10.7,
+   "eq": -127.3
+  },
+  {
+   "m": "2026-06",
+   "r": -1.2,
+   "eq": -128.5
+  },
+  {
+   "m": "2026-07",
+   "r": -28.4,
+   "eq": -156.9
+  },
+  {
+   "m": "2026-08",
+   "r": -18.0,
+   "eq": -174.9
+  },
+  {
+   "m": "2026-09",
+   "r": -2.6,
+   "eq": -177.5
+  },
+  {
+   "m": "2026-10",
+   "r": -2.5,
+   "eq": -180.1
+  }
+ ],
+ "fails": []
+}
