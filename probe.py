@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 
 import requests
 
-PROBE_VERSION = 1
+PROBE_VERSION = 2
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "data", "probe.json")
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 ZD = "/api/v2/help_center/en-us/articles.json?per_page=8&sort_by=created_at&sort_order=desc"
@@ -64,6 +64,12 @@ SOURCES = [
     ("unlock", "CMC-unlocks", "https://api.coinmarketcap.com/data-api/v3/token-unlock/listing?start=1&limit=20"),
     ("unlock", "CryptoRank-vesting", "https://api.cryptorank.io/v0/coins/vesting?limit=20"),
     ("unlock", "DropsTab", "https://api2.dropstab.com/portfolio/api/vesting/upcoming"),
+    ("unlock", "CMC-unlocks-next", "https://api.coinmarketcap.com/data-api/v3/token-unlock/listing?start=1&limit=20&sort=next_unlocked_date&direction=asc&enableSmallUnlocks=false"),
+    ("unlock", "CMC-unlock-detail", "https://api.coinmarketcap.com/data-api/v3/token-unlock/detail?slug=arbitrum"),
+    ("listing", "HTX-article", "https://www.htx.com/support/55045085577698"),
+    ("airdrop", "CMC-airdrops-up", "https://api.coinmarketcap.com/data-api/v3/airdrop/query?status=UPCOMING&limit=20"),
+    ("newcoin", "ICODrops-upcoming", "https://icodrops.com/category/upcoming-ico/"),
+    ("newcoin", "CMC-upcoming2", "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listings/upcoming?limit=30"),
     # ---- এয়ারড্রপ ----
     ("airdrop", "Airdrops.io-latest", "https://airdrops.io/latest/"),
     ("airdrop", "Airdrops.io-claims", "https://airdrops.io/claims/"),
@@ -102,6 +108,20 @@ SOURCES = [
 ]
 
 
+FULL = {"CMC-unlocks", "CMC-unlocks-next", "CMC-unlock-detail", "CMC-airdrops", "CMC-airdrops-up", "Bitfinex", "DexScreener-profiles",
+        "Airdrops.io-latest", "Airdrops.io-claims", "DappRadar", "ICODrops", "ICODrops-upcoming", "CMC-upcoming2", "HTX-article"}
+
+
+def _first(v, depth=0):
+    """প্রথম আইটেমটা পুরো দেখায় (সব চাবি সহ), যাতে ঠিক নাম জানা যায়"""
+    if isinstance(v, dict):
+        return {k: _first(x, depth + 1) for k, x in list(v.items())[:60]} if depth < 7 else "{…}"
+    if isinstance(v, list):
+        return ["len=%d" % len(v)] + ([_first(v[0], depth + 1)] if v else [])
+    s = str(v)
+    return s if len(s) <= 200 else s[:200] + "…"
+
+
 def _shape(v, depth=0):
     """JSON-এর গঠন ছোট করে দেখায় (কোন চাবির ভেতরে কী আছে)"""
     if isinstance(v, dict):
@@ -136,7 +156,7 @@ def check(src):
         t = text.lstrip()
         if t[:1] in "{[":
             try:
-                row["kind"], row["shape"] = "json", _shape(r.json())
+                row["kind"], row["shape"] = "json", (_first if name in FULL else _shape)(r.json())
             except ValueError:
                 row["kind"], row["head"] = "text", t[:400]
         elif "<rss" in t[:600] or "<feed" in t[:600] or "<?xml" in t[:60]:
@@ -154,7 +174,7 @@ def check(src):
                     row["next_data"] = m.group(1)[:300]
             a = _anchors(t)
             row["anchors"] = len(a)
-            row["sample"] = a[40:75] if len(a) > 80 else a[:35]
+            row["sample"] = a[:160] if name in FULL else (a[40:75] if len(a) > 80 else a[:35])
             row["title"] = (re.search(r"<title[^>]*>(.*?)</title>", t, re.S | re.I) or [None, ""])[1].strip()[:120]
         row["ok"] = bool(r.status_code == 200 and len(text) > 200)
     except Exception as e:

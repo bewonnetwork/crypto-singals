@@ -805,13 +805,96 @@ FEED_STATUS = {}   # কোন উৎস থেকে কয়টা ঘোষ�
 AIRDROP_FEEDS = [
     ("Airdrops.io", "https://airdrops.io/feed/"),
     ("AirdropAlert", "https://airdropalert.com/feed/"),
-    ("CoinGecko", "https://www.coingecko.com/en/news/rss"),
     ("Bitcoin.com", "https://news.bitcoin.com/feed/"),
     ("CryptoPotato", "https://cryptopotato.com/feed/"),
     ("BeInCrypto", "https://beincrypto.com/feed/"),
     ("U.Today", "https://u.today/rss"),
     ("NewsBTC", "https://www.newsbtc.com/feed/"),
+    ("AMBCrypto", "https://ambcrypto.com/feed/"),
+    ("CryptoNews", "https://cryptonews.com/news/feed/"),
+    ("Blockworks", "https://blockworks.co/feed"),
+    ("DailyHodl", "https://dailyhodl.com/feed/"),
+    ("Bitcoinist", "https://bitcoinist.com/feed/"),
+    ("CoinJournal", "https://coinjournal.net/feed/"),
 ]
+UNLOCK_DAYS = 45            # সামনের কত দিনের টোকেন আনলক দেখাবে
+UNLOCK_MIN_PCT = 0.05       # মোট সরবরাহের এত শতাংশের কম আনলক বাদ
+UNLOCK_SLUGS = ["arbitrum", "optimism", "aptos", "sui", "celestia", "starknet", "sei", "dydx", "apecoin", "worldcoin",
+                "pyth-network", "jito", "ethena", "ondo-finance", "immutable", "the-sandbox", "axie-infinity", "blur",
+                "layerzero", "zksync", "eigenlayer", "wormhole", "jupiter", "altlayer", "manta", "pendle", "aevo",
+                "avalanche", "hyperliquid", "aster", "ether.fi", "kamino", "berachain", "movement", "linea", "polyhedra"]
+
+
+def fetch_unlocks():
+    """DefiLlama-র খোলা ডেটা থেকে সামনের টোকেন আনলকের তালিকা (কোন কয়েন, কবে, কত)"""
+    r = HTTP.get("https://defillama-datasets.llama.fi/emissionsBreakdown", timeout=20)
+    r.raise_for_status()
+    brk = r.json()
+
+    def num(v):
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return 0.0
+    top = sorted(brk, key=lambda k: num(brk[k].get("emission30d")), reverse=True)[:30]
+    slugs = list(dict.fromkeys([x for x in UNLOCK_SLUGS if x in brk] + top))[:55]
+    now, out = time.time(), []
+
+    def one(slug):
+        try:
+            d = HTTP.get(f"https://defillama-datasets.llama.fi/emissions/{slug}", timeout=20).json()
+            meta = d.get("metadata") or {}
+            total = num(meta.get("total"))
+            rows = []
+            for ev in meta.get("events") or []:
+                ts = num(ev.get("timestamp"))
+                tokens = sum(num(x) for x in (ev.get("noOfTokens") or []))
+                if not (now < ts < now + UNLOCK_DAYS * 86400) or tokens <= 0 or ev.get("unlockType") != "cliff":
+                    continue
+                pct = tokens / total * 100 if total else 0
+                if total and pct < UNLOCK_MIN_PCT:
+                    continue
+                rows.append({"name": d.get("name") or brk[slug].get("name") or slug, "slug": slug,
+                             "t": datetime.fromtimestamp(ts, timezone.utc).isoformat(timespec="seconds"),
+                             "tokens": round(tokens), "pct": round(pct, 3), "cat": str(ev.get("category") or "")[:30]})
+            return rows
+        except Exception as e:
+            print(f"unlock {slug}: {str(e)[:60]}")
+            return []
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for rows in ex.map(one, slugs):
+            out += rows
+    merged = {}
+    for x in out:                       # একই কয়েনের একই দিনের একাধিক ভাগ এক করে
+        k = (x["slug"], x["t"][:10])
+        if k in merged:
+            merged[k]["tokens"] += x["tokens"]
+            merged[k]["pct"] = round(merged[k]["pct"] + x["pct"], 3)
+        else:
+            merged[k] = dict(x)
+    FEED_STATUS["DefiLlama unlocks"] = len(merged)
+    return sorted(merged.values(), key=lambda x: x["t"])[:60]
+
+
+def fetch_newcoins():
+    """CoinMarketCap-এ সদ্য যোগ হওয়া কয়েন"""
+    r = HTTP.get("https://api.coinmarketcap.com/data-api/v3/cryptocurrency/spotlight",
+                 params={"dataType": 8, "limit": 30}, timeout=15,
+                 headers={"User-Agent": "Mozilla/5.0 (compatible; SignalBot/1.0)"})
+    r.raise_for_status()
+    out = []
+    for c in ((r.json().get("data") or {}).get("recentlyAddedList") or []):
+        pc = c.get("priceChange") or {}
+        chain = ((c.get("platforms") or [{}])[0] or {}).get("name", "")
+        if not c.get("slug") or not c.get("symbol"):
+            continue
+        out.append({"name": str(c.get("name", ""))[:40], "sym": str(c["symbol"])[:12], "added": c.get("addedDate", ""),
+                    "price": pc.get("price"), "ch24": pc.get("priceChange24h"), "vol": pc.get("volume24h"),
+                    "mcap": c.get("marketCap"), "chain": str(chain)[:20],
+                    "url": "https://coinmarketcap.com/currencies/" + str(c["slug"]) + "/"})
+    FEED_STATUS["CoinMarketCap new"] = len(out)
+    return out[:30]
 
 
 def airdrop_news():
@@ -826,10 +909,10 @@ def airdrop_news():
                 title = _clean_text(it.findtext("title"), 200)
                 link = (it.findtext("link") or "").strip()
                 text = title + " " + (_clean_text(it.findtext("description")) or "")
-                always = source in ("Airdrops.io", "AirdropAlert")
+                always = source == "Airdrops.io"
                 if not title or not link.startswith("https://") or link in seen:
                     continue
-                if not always and not re.search(r"airdrop", text, re.I):
+                if not always and not re.search(r"airdrop|retrodrop|points (farming|program)|claim (is )?live", text, re.I):
                     continue
                 try:
                     pub = parsedate_to_datetime(it.findtext("pubDate")).astimezone(timezone.utc).isoformat()
@@ -925,47 +1008,72 @@ def fetch_exchange_feed():
             FEED_STATUS[ex] = -1
             print(f"{ex} feed:", str(e)[:80])
 
-    def bybit():
-        n = 0
-        for typ, kind in (("new_crypto", "listing"), ("latest_activities", "auto")):
-            r = HTTP.get("https://api.bybit.com/v5/announcements/index",
-                         params={"locale": "en-US", "type": typ, "limit": 30}, timeout=15)
-            r.raise_for_status()
-            for a in (r.json().get("result") or {}).get("list", []):
-                n += add("Bybit", a.get("title", ""), a.get("url", ""), a.get("dateTimestamp"), kind)
-        return n
+    LIST_RE = r"\b(will list|lists?|listing|listed|new listing|initial listing|open trading|available for trading|launch(es|ed)? (spot|trading))\b"
+    isoms = lambda iso_s: int(datetime.fromisoformat(iso_s.replace("Z", "+00:00")).timestamp() * 1000) if iso_s else 0
 
     def bitget():
         r = HTTP.get("https://api.bitget.com/api/v2/public/annoucements",
                      params={"annType": "coin_listings", "language": "en_US"}, timeout=15)
         r.raise_for_status()
         return sum(add("Bitget", a.get("annTitle", ""), a.get("annUrl", ""), a.get("cTime"), "listing")
-                   for a in (r.json().get("data") or []))
+                   for a in (r.json().get("data") or []) if a.get("annSubType") != "futures")
 
-    def binance():
+    def htx():
+        r = HTTP.get("https://www.htx.com/-/x/support/public/getList/v2", timeout=15,
+                     params={"language": "en-us", "page": 1, "limit": 20, "oneLevelId": 360000031902, "twoLevelId": 360000039942})
+        r.raise_for_status()
         n = 0
-        for cat, kind in ((48, "listing"), (93, "auto")):
-            r = HTTP.get("https://www.binance.com/bapi/composite/v1/public/cms/article/list/query",
-                         params={"type": 1, "catalogId": cat, "pageNo": 1, "pageSize": 20}, timeout=15,
-                         headers={"User-Agent": "Mozilla/5.0 (compatible; SignalBot/1.0)"})
-            r.raise_for_status()
-            for c in ((r.json().get("data") or {}).get("catalogs") or []):
-                for a in c.get("articles", []):
-                    n += add("Binance", a.get("title", ""),
-                             "https://www.binance.com/en/support/announcement/" + str(a.get("code", "")),
-                             a.get("releaseDate"), kind)
+        for a in ((r.json().get("data") or {}).get("list") or []):
+            title = a.get("title", "")
+            if add("HTX", title, "https://www.htx.com/support/" + str(a.get("id", "")), a.get("showTime"), "listing"):
+                n += 1
+                if listings and listings[-1]["ex"] == "HTX":
+                    pair = re.search(r"_([A-Z0-9]{2,10})/", str(a.get("dealPair") or ""))
+                    listings[-1]["token"] = pair.group(1) if pair else ""
+                m = re.search(r"at (\d{1,2}):(\d{2}) \(UTC\)\s+on (\w+) (\d{1,2}), (\d{4})", title)
+                if m and m.group(3).lower() in MONTHS and listings and listings[-1]["ex"] == "HTX":
+                    listings[-1]["trade"] = datetime(int(m.group(5)), MONTHS[m.group(3).lower()], int(m.group(4)),
+                                                     int(m.group(1)), int(m.group(2)), tzinfo=timezone.utc).isoformat()
         return n
 
-    def mexc():
-        r = HTTP.get("https://www.mexc.com/help/announce/api/en-US/section/15425930840735/articles",
-                     params={"page": 1, "perPage": 20}, timeout=15,
+    def kraken():
+        r = HTTP.get("https://blog.kraken.com/category/product/asset-listings/feed", timeout=15,
                      headers={"User-Agent": "Mozilla/5.0 (compatible; SignalBot/1.0)"})
         r.raise_for_status()
-        return sum(add("MEXC", a.get("title", ""), "https://www.mexc.com/support/articles/" + str(a.get("id", "")),
-                       a.get("createdAt") if isinstance(a.get("createdAt"), (int, float)) else 0, "listing")
-                   for a in ((r.json().get("data") or {}).get("results") or []))
+        n = 0
+        for it in ET.fromstring(r.content).iter("item"):
+            try:
+                ms = int(parsedate_to_datetime(it.findtext("pubDate")).timestamp() * 1000)
+            except Exception:
+                ms = 0
+            n += add("Kraken", _clean_text(it.findtext("title"), 200), (it.findtext("link") or "").strip(), ms, "listing")
+        return n
 
-    for ex, fn in (("Binance", binance), ("Bybit", bybit), ("Bitget", bitget), ("MEXC", mexc)):
+    def zendesk(ex, host):
+        def run():
+            r = HTTP.get(f"https://{host}/api/v2/help_center/en-us/articles.json", timeout=15,
+                         params={"per_page": 40, "sort_by": "created_at", "sort_order": "desc"})
+            r.raise_for_status()
+            n = 0
+            for a in (r.json().get("articles") or []):
+                title = a.get("name") or a.get("title") or ""
+                if re.search(LIST_RE, title, re.I) or re.search(EARN_RE, title, re.I):
+                    n += add(ex, title, a.get("html_url", ""), isoms(a.get("created_at", "")), "listing")
+            return n
+        return run
+
+    def bitfinex():
+        r = HTTP.get("https://api-pub.bitfinex.com/v2/posts/hist", params={"limit": 20, "type": 1}, timeout=15)
+        r.raise_for_status()
+        n = 0
+        for a in r.json():
+            if isinstance(a, list) and len(a) > 3 and isinstance(a[3], str) and re.search(LIST_RE, a[3], re.I):
+                n += add("Bitfinex", a[3], "https://www.bitfinex.com/posts/" + str(a[0]), a[1] if isinstance(a[1], (int, float)) else 0, "listing")
+        return n
+
+    for ex, fn in (("Bitget", bitget), ("HTX", htx), ("Kraken", kraken), ("Bitfinex", bitfinex),
+                   ("BitMart", zendesk("BitMart", "bitmart.zendesk.com")), ("XT", zendesk("XT", "xtsupport.zendesk.com")),
+                   ("DigiFinex", zendesk("DigiFinex", "digifinex.zendesk.com"))):
         source(ex, fn)
 
     def uniq(rows):
@@ -975,7 +1083,7 @@ def fetch_exchange_feed():
                 seen.add(x["url"])
                 out.append(x)
         return out
-    return uniq(listings)[:40], uniq(earn)[:30]
+    return uniq(listings)[:60], uniq(earn)[:40]
 
 
 def feed_message(x, kind):
@@ -1063,7 +1171,19 @@ def update_insights(state):
         print("feed error:", str(e)[:80])
     day = int(now.timestamp() // 86400)
     ins["tip"] = LESSONS[day % len(LESSONS)]
-    ins["sources"] = dict(FEED_STATUS)
+    hr = int(now.timestamp() // 21600)                    # আনলক আর নতুন কয়েন: ৬ ঘণ্টায় একবার
+    if state.get("slow_hr") != hr:
+        for key, fn in (("unlocks", fetch_unlocks), ("newcoins", fetch_newcoins)):
+            try:
+                rows = fn()
+                if rows:
+                    ins[key] = rows
+            except Exception as e:
+                FEED_STATUS[key] = -1
+                print(f"{key} error:", str(e)[:80])
+        state["slow_hr"] = hr
+    ins["sources"] = dict(state.get("src_seen", {}), **FEED_STATUS)
+    state["src_seen"] = ins["sources"]
     ins["updated"] = now.isoformat(timespec="seconds")
     state["insights"] = ins
     state["insights_time"] = ins["updated"]
@@ -1096,6 +1216,12 @@ def insight_message(ins):
             for n in tp[key][:2]:
                 lines.append(f"• <a href=\"{e(n['link'])}\">{e(n['title'][:90])}</a>")
             lines.append("")
+    soon = [u for u in (ins.get("unlocks") or []) if u.get("pct", 0) >= 0.3][:4]
+    if soon:
+        lines.append("🔓 <b>সামনের বড় টোকেন আনলক</b>")
+        for u in soon:
+            lines.append(f"• {e(u['name'])}: {u['t'][:10]} · {u['tokens'] / 1e6:.1f}M টোকেন ({u['pct']:.2f}% সরবরাহ)")
+        lines.append("")
     lines.append(f"🎓 <b>আজকের টিপ:</b> {ins.get('tip', '')}\n")
     lines.append(f"📚 <a href=\"{SITE_URL}#/learn\">লাইভ ইনসাইট ও পুরো গাইড ওয়েবসাইটে</a>")
     lines.append("\n⚠️ শুধু তথ্য, আর্থিক পরামর্শ নয়। বড় অর্ডার যেকোনো সময় সরে যেতে পারে।")
