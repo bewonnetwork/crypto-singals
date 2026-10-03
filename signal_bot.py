@@ -512,7 +512,7 @@ def signal_message(coin, s, source):
             f"TP2: <code>{fmt(s['tp2'], coin)}</code>{pips(s['tp2'])}\n"
             f"Stop Loss: <code>{fmt(s['sl'], coin)}</code>{pips(s['sl'])}\n"
             f"RSI: {s['rsi']}  |  Data: {source}\n\n"
-            f"🎯 <b>Confidence: {s['conf']}% · Grade {grade(s['conf'])}</b>  {'🟩' * (s['conf'] // 20)}{'⬜' * (5 - s['conf'] // 20)}\n"
+            + (s["deep"] + "\n" if s.get("deep") else f"🎯 <b>Confidence: {s['conf']}% · Grade {grade(s['conf'])}</b>\n")
             + "".join(f"• {w}\n" for w in s["why"]) + "\n"
             f"📊 <a href=\"{link}\">চার্ট ও সব সিগনাল দেখুন</a>\n\n"
             f"⚠️ Free signal, not financial advice. Use Stop Loss. DYOR.")
@@ -1512,32 +1512,121 @@ def read_owner_commands(state, frames, btc_trend):
     return out
 
 
+# ----------------------------- Trending কয়েন (দিনে একবার) -----------------------------
+TRENDING_ENABLED = True
+TRENDING_HOUR_UTC = 14      # 14 UTC = রাত ৮টা বাংলাদেশ
+
+
+def trending_message():
+    r = HTTP.get("https://api.coingecko.com/api/v3/search/trending", headers=BROWSER_UA, timeout=20).json()
+    lines = ["🔥 <b>আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে</b> (Trending)\n"]
+    for i, c in enumerate((r.get("coins") or [])[:7], 1):
+        it = c.get("item", {})
+        d = it.get("data") or {}
+        ch = (d.get("price_change_percentage_24h") or {}).get("usd")
+        try:
+            price = f" · ${fmt(float(d.get('price')))}"
+        except (TypeError, ValueError):
+            price = ""
+        rank = f" · #{it['market_cap_rank']}" if it.get("market_cap_rank") else ""
+        chs = f" ({'🟢' if ch >= 0 else '🔴'} {ch:+.1f}%)" if isinstance(ch, (int, float)) else ""
+        lines.append(f"{i}. <b>{html.escape(str(it.get('symbol', '')).upper())}</b> — {html.escape(str(it.get('name', '')))}{rank}{price}{chs}")
+    if len(lines) < 4:
+        return None
+    lines.append("\nℹ️ Trending মানে মানুষ বেশি খুঁজছে — কেনার পরামর্শ নয়। বেশি খোঁজা কয়েনে দাম দ্রুত ওঠে, দ্রুত পড়েও।")
+    lines.append(f"🌐 <a href=\"{SITE_URL}#/market\">মার্কেট দেখুন</a>  ·  <i>source: CoinGecko</i>\n⚠️ Not financial advice. DYOR.")
+    return "\n".join(lines)
+
+
 # ----------------------------- Market Watch নোট (দুর্বল সেটআপ: Entry/TP/SL ছাড়া) -----------------------------
 WATCH_NOTES = True     # False করলে বন্ধ
 WATCH_MIN = 40         # এর কম স্কোর হলে নোটও যাবে না
 WATCH_PER_DAY = 4      # দিনে সর্বোচ্চ কয়টা নোট
 
 
-def watch_message(sym, sig, df, htf, btc_trend, is_btc, source):
+ENGINE_NAME = "BEWON Engine v2.0"
+NEED_CONFIRM = 3       # ৪টা নিশ্চয়তার মধ্যে কমপক্ষে এতগুলো মিললে তবেই পূর্ণ Trade Signal
+
+
+def deep_check(sym, sig, df, htf, btc_trend, is_btc):
+    """স্কোরের ভেতরের হিসাব: ট্রেন্ড, মোমেন্টাম, কয়েকটা টাইমফ্রেম, BTC, আর ৪টা নিশ্চয়তা"""
     c, d = df.iloc[-1], (1 if sig["side"] == "BUY" else -1)
     fx = sym in FX_PAIRS
-    word = {1: "ওপরের দিকে 📈", -1: "নিচের দিকে 📉", 0: "পাশাপাশি ↔"}
-    good = [w for w in sig["why"] if not w.startswith("⚠")]
-    miss = [w.lstrip("⚠ ") for w in sig["why"] if w.startswith("⚠")]
+    trend = 5 * ((c.ema_fast - c.ema_slow) * d > 0) + 5 * ((c.close - c.ema200) * d > 0) + (5 if c.adx >= 20 else 2 if c.adx >= 15 else 0)
+    mom = 4 * (c.macd_hist * d > 0) + 4 * ((c.macd_hist - df.iloc[-2].macd_hist) * d > 0) + 4 * ((c.rsi - 50) * d > 0)
+    tfs = [(TREND_INTERVAL.upper(), htf == d)]
+    for tf in ("15m", "5m"):
+        try:
+            tfs.append((tf.upper(), trend_of(add_indicators(_candles_for(sym, tf)[0])) == d))
+        except Exception:
+            pass
+    mtf = round(100 * sum(ok for _, ok in tfs) / len(tfs))
+    back = df.iloc[-4]
+    hi, lo = df["high"].iloc[-50:].max(), df["low"].iloc[-50:].min()
+    room = (hi - c.close) if d > 0 else (c.close - lo)
+    checks = [("run-up", bool((c.close - back.close) * d >= 0.5 * c.atr)),     # দাম সত্যিই ওই দিকে চলা শুরু করেছে
+              ("RSI", bool(((c.rsi - 50) * d > 0) and ((c.rsi - df.iloc[-2].rsi) * d > 0))),
+              ("extension", bool(abs(c.close - c.ema_slow) <= 1.5 * c.atr)),   # দাম গড় থেকে বেশি দূরে চলে যায়নি
+              ("range", bool(room >= 1.0 * c.atr or room <= 0))]               # সামনে চলার জায়গা আছে / নতুন হাই-লো ভেঙেছে
+    btc_day = None
+    if not fx:
+        try:
+            bd = get_candles("BTC", "1d")[0]
+            btc_day = bool(bd["close"].iloc[-1] > bd["close"].ewm(span=50, adjust=False).mean().iloc[-1])
+        except Exception:
+            pass
+    return {"h1": int(sig["conf"]), "mtf": mtf, "score": int(round(0.75 * sig["conf"] + 0.25 * mtf)),
+            "trend": int(trend), "mom": int(mom), "tfs": tfs, "checks": checks, "ok": sum(1 for _, v in checks if v),
+            "btc": 0 if (is_btc or fx) else btc_trend * d, "btc_dir": btc_trend, "btc_day": btc_day}
+
+
+def _grade_word(score):
+    return "Strong" if score >= 78 else "Moderate" if score >= 60 else "Weak"
+
+
+def deep_lines(sym, sig, dc):
+    d = 1 if sig["side"] == "BUY" else -1
+    side = "Bullish" if d > 0 else "Bearish"
+    yn = lambda v: "✅" if v else "❌"
+    tw = side if dc["trend"] >= 10 else "Mixed"
+    mw = ("Strong " + side) if dc["mom"] == 12 else side if dc["mom"] >= 8 else "Weak"
+    out = (f"Signal Grade: {grade(dc['score'])} / {_grade_word(dc['score'])}\n"
+           f"<b>Signal Score: {dc['score']}/100 (1H: {dc['h1']}, MTF: {dc['mtf']})</b>\n\n"
+           f"📊 Market\n"
+           f"Trend: {tw} ({dc['trend']}/15)\n"
+           f"Momentum: {mw} ({dc['mom']}/12)\n"
+           f"Timeframes: " + " ".join(f"{n} {yn(v)}" for n, v in dc["tfs"]) + "\n")
+    if sym not in FX_PAIRS:
+        if sym != "BTC" and dc["btc_dir"]:
+            out += f"BTC Regime: {'Bullish' if dc['btc_dir'] > 0 else 'Bearish'} {'✅' if dc['btc'] > 0 else '⚠️'}\n"
+        if dc["btc_day"] is not None:
+            out += f"BTC Daily: {'above' if dc['btc_day'] else 'below'} its 50-day EMA {yn(dc['btc_day'] == (d > 0))}\n"
+    out += f"Confirmations: {dc['ok']}/{len(dc['checks'])} (" + " ".join(f"{n} {yn(v)}" for n, v in dc["checks"]) + ")\n"
+    return out
+
+
+def watch_message(sym, sig, dc, source):
+    fx = sym in FX_PAIRS
+    name = label(sym) if fx else sym + "/USDT"
     link = f"{SITE_URL}#/forex" if fx else f"{SITE_URL}#/coin/{sym}"
-    return (f"👀 <b>MARKET WATCH — {label(sym) if fx else sym + '/USDT'}</b>  ({INTERVAL})\n"
-            f"{'🟢 ওঠার' if d > 0 else '🔴 নামার'} সেটআপ তৈরি হচ্ছে, কিন্তু এখনো পাকা নয়\n\n"
-            f"🏷 Signal Grade: <b>{grade(sig['conf'])}</b>  ·  Score: <b>{sig['conf']}/100</b>\n"
-            f"💵 দাম: <code>{fmt(sig['entry'], sym)}</code>\n"
-            f"📊 ট্রেন্ড ({TREND_INTERVAL}): {word[htf]}\n"
-            f"⚡ মোমেন্টাম: RSI {c.rsi:.0f} · MACD {'পক্ষে' if c.macd_hist * d > 0 else 'বিপক্ষে'} · ADX {c.adx:.0f}\n"
-            + ("" if is_btc or fx else f"₿ BTC-র অবস্থা: {word[btc_trend]}\n")
-            + f"\n✅ <b>যা মিলেছে ({len(good)})</b>\n" + "".join(f"• {w}\n" for w in good)
-            + (f"\n⚠️ <b>যা মেলেনি ({len(miss)})</b>\n" + "".join(f"• {w}\n" for w in miss) if miss else "")
-            + f"\n📝 এটা শুধু <b>নজরে রাখার নোট</b>, ট্রেড সিগনাল নয় — তাই Entry / TP / SL দেওয়া হলো না। "
-            f"Score {MIN_CONFIDENCE}+ হলে তবেই পূর্ণ সিগনাল আসবে।\n\n"
-            f"📊 <a href=\"{link}\">চার্ট দেখুন</a>  ·  Data: {source}\n"
-            f"⚠️ Not financial advice. DYOR.")
+    miss = ", ".join(n for n, v in dc["checks"] if not v)
+    if dc["score"] >= MIN_CONFIDENCE:
+        why = (f"The score cleared our bar ({dc['score']}/100), but only {dc['ok']} of {len(dc['checks'])} confirmation checks are in — "
+               f"the move isn't confirmed yet ({miss}). Entering before a move is underway usually ends worse, "
+               f"so this is a watch note, not a Trade Signal — no entry, target or stop-loss is given.")
+    else:
+        why = (f"A {'bullish' if sig['side'] == 'BUY' else 'bearish'} setup is forming, but the score ({dc['score']}/100) is below our bar "
+               f"({MIN_CONFIDENCE}). This is a watch note, not a Trade Signal — no entry, target or stop-loss is given.")
+    now = datetime.now(timezone.utc) + timedelta(hours=6)
+    return (f"👀 <b>{name} — Market Watch ({grade(dc['score'])})</b>\n\n"
+            + deep_lines(sym, sig, dc) + "\n"
+            + why + "\n\n"
+            f"🇧🇩 এটা শুধু নজরে রাখার নোট, ট্রেড সিগনাল নয়।\n\n"
+            f"This is a rule-based technical-analysis score, not a win probability — informational only, "
+            f"not financial advice, and no profit is guaranteed.\n\n"
+            f"🕐 Generated: {now:%d %b %Y, %H:%M} UTC+6\n\n"
+            f"🔗 View {name} chart: <a href=\"{link}\">{link.replace('https://', '')}</a>\n\n"
+            f"{ENGINE_NAME} · Data: {source}\nRule-based Technical Analysis\n\n— BEWON Signal Assistant")
 
 
 def try_new_signal(sym, df, source, state, htf_fn, btc_trend=0, is_btc=True, market="crypto"):
@@ -1551,19 +1640,29 @@ def try_new_signal(sym, df, source, state, htf_fn, btc_trend=0, is_btc=True, mar
     except Exception:
         htf = 0
     sig["conf"], sig["why"] = score_signal(df, sig["side"], htf, btc_trend, is_btc, fx=(market == "forex"))
-    if sig["conf"] < MIN_CONFIDENCE:
-        print(f"skip {sig['side']} {sym}: confidence {sig['conf']}% < {MIN_CONFIDENCE}%")
+    if sig["conf"] < WATCH_MIN:
+        print(f"skip {sig['side']} {sym}: score {sig['conf']} < {WATCH_MIN}")
+        state["last_signal"][sym] = sig["candle"]
+        return
+    dc = deep_check(sym, sig, df, htf, btc_trend, is_btc)
+    sig["conf"] = dc["score"]
+    sig["chk"] = f"{dc['ok']}/{len(dc['checks'])}"
+    sig["deep"] = deep_lines(sym, sig, dc)
+    if dc["score"] < MIN_CONFIDENCE or dc["ok"] < NEED_CONFIRM:
+        print(f"watch {sig['side']} {sym}: score {dc['score']}, confirmations {sig['chk']}")
         state["last_signal"][sym] = sig["candle"]
         today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         w = state.get("watch", {})
         if w.get("day") != today:
             w = {"day": today, "n": 0}
-        if WATCH_NOTES and sig["conf"] >= WATCH_MIN and w["n"] < WATCH_PER_DAY:
-            if send_telegram(watch_message(sym, sig, df, htf, btc_trend, is_btc, source)):
+        if WATCH_NOTES and w["n"] < WATCH_PER_DAY:
+            if send_telegram(watch_message(sym, sig, dc, source)):
                 w["n"] += 1
                 state.setdefault("watch_notes", []).insert(0, {
                     "coin": sym, "name": label(sym), "market": market, "side": sig["side"], "price": float(sig["entry"]),
-                    "score": sig["conf"], "why": sig["why"], "time": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+                    "score": dc["score"], "chk": sig["chk"],
+                    "why": [("" if v else "⚠ ") + n for n, v in dc["tfs"] + dc["checks"]],
+                    "time": datetime.now(timezone.utc).isoformat(timespec="seconds")})
                 del state["watch_notes"][20:]
         state["watch"] = w
         return
@@ -1665,6 +1764,14 @@ def run_once(force_digest=False):
     if force_digest or (now.hour >= DIGEST_HOUR_UTC and state["last_digest"] != today):
         if frames and send_telegram(daily_digest(frames, state)):
             state["last_digest"] = today
+
+    if TRENDING_ENABLED and now.hour >= TRENDING_HOUR_UTC and state.get("last_trending") != today:
+        try:
+            tm = trending_message()
+            if tm and send_telegram(tm):
+                state["last_trending"] = today
+        except Exception as e:
+            print("trending error:", str(e)[:80])
 
     try:
         update_news(state)
