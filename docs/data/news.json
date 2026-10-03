@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T18:38:59+00:00",
+ "updated": "2026-10-03T21:48:59+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,24 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "e1b0d0ed7e",
+   "title": "Bankers sue to overturn OCC trust-bank rule used by crypto firms",
+   "link": "https://cryptoslate.com/bankers-sue-to-overturn-occ-trust-bank-rule-used-by-crypto-firms/",
+   "source": "CryptoSlate",
+   "published": "2026-10-03T20:00:08+00:00",
+   "summary": "The Independent Community Bankers of America sued the OCC in federal court in Washington on Oct. 2, two weeks after the agency approved Agora National Trust Bank, Catena Trust Bank and Bastion Platforms. American Banker reported that the…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/occ-trust-bank-gateway.webp"
+  },
+  {
+   "id": "0fa234510d",
+   "title": "Hedge funds built a $1.2 trillion Treasury trade on money they have to keep borrowing",
+   "link": "https://cryptoslate.com/hedge-funds-built-a-1-2-trillion-treasury-trade-on-money-they-have-to-keep-borrowing/",
+   "source": "CryptoSlate",
+   "published": "2026-10-03T18:40:22+00:00",
+   "summary": "Companies can own a mountain of US government debt without betting that bond prices will rise. Hedge funds buy Treasury securities and sell futures against them to collect a small pricing gap, borrowing most of the purchase money to make…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/hedge-fund-treasury-basis-trade-standard.jpg"
+  },
   {
    "id": "b3898e2d6f",
    "title": "Chainalysis Used AI to Trace the $387M Bitget Hack Back to North Korea",
@@ -198,15 +216,6 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/blast-ethereum-exodus.webp"
   },
   {
-   "id": "69a3ddb280",
-   "title": "Stablecoin issuers have replaced 40% of China’s lost US Treasury demand",
-   "link": "https://cryptoslate.com/stablecoin-issuers-have-replaced-40-of-chinas-lost-us-treasury-demand/",
-   "source": "CryptoSlate",
-   "published": "2026-10-02T21:50:39+00:00",
-   "summary": "Stablecoin issuers are emerging as a new source of demand for US government debt as foreign official holdings lose ground. Tether and Circle have increased their Treasury securities and repurchase-agreement holdings by about $200 billion…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-treasury-buyers-standard.jpg"
-  },
-  {
    "id": "4cae606ac9",
    "title": "Bank group sues U.S. regulator over granting crypto trust charters",
    "link": "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
@@ -232,15 +241,6 @@
    "published": "2026-10-02T20:40:47+00:00",
    "summary": "Speaking on Cointelegraph’s Chain Reaction, Christian Trummer said MiCA has increased trust in regulated platforms and called for stricter enforcement against noncompliant firms.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3Z204Z5E8HCQ1YYBGG9YAK4/hi-self-custody-of-cryptocurrencies-is-your-own-wallet-really-safer-for-private-investors.png"
-  },
-  {
-   "id": "80d25b3dc3",
-   "title": "Bitcoin’s $85,000 sell wall is gone and traders are now betting on $100,000",
-   "link": "https://cryptoslate.com/bitcoins-85000-sell-wall-is-gone-and-traders-are-now-betting-on-100000/",
-   "source": "CryptoSlate",
-   "published": "2026-10-02T20:30:33+00:00",
-   "summary": "Bitcoin’s rally is approaching a $90,000 test as a rare accumulation pattern reappears and sell-side liquidity thins. On Oct. 2, Bitcoin registered an intraday high at $87,000 after buyers broke through a sell wall around $85,000 that had…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-green-signal.webp"
   },
   {
    "id": "89d7c006eb",

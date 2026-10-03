@@ -1,10 +1,10 @@
 {
  "dominance": {
-  "btc": 58.69,
-  "eth": 11.27,
-  "mcap": 2902639617707,
-  "mcap_ch": -2.66,
-  "ch_1d": -0.05,
+  "btc": 58.61,
+  "eth": 11.29,
+  "mcap": 2898547788357,
+  "mcap_ch": -2.04,
+  "ch_1d": -0.13,
   "ch_7d": null,
   "history": [
    {
@@ -13,140 +13,140 @@
    },
    {
     "d": "2026-10-03",
-    "v": 58.69
+    "v": 58.61
    }
   ]
  },
  "walls": [
   {
    "coin": "BTC",
-   "price": 84944.005,
+   "price": 84728.155,
    "support": {
-    "price": 84944.005,
-    "usd": 7056435
+    "price": 84728.155,
+    "usd": 8722990
    },
    "resistance": {
-    "price": 84944.005,
-    "usd": 9757786
+    "price": 84728.155,
+    "usd": 8057977
    },
-   "buy_pct": 53
+   "buy_pct": 55
   },
   {
    "coin": "ETH",
-   "price": 2685.6949999999997,
+   "price": 2686.1949999999997,
    "support": {
-    "price": 2685.6949999999997,
-    "usd": 3643398
+    "price": 2679.4795124999996,
+    "usd": 3500285
    },
    "resistance": {
-    "price": 2685.6949999999997,
-    "usd": 4032081
-   },
-   "buy_pct": 44
-  },
-  {
-   "coin": "BNB",
-   "price": 789.355,
-   "support": {
-    "price": 783.4348375000001,
-    "usd": 930904
-   },
-   "resistance": {
-    "price": 799.2219375000001,
-    "usd": 2440134
-   },
-   "buy_pct": 36
-  },
-  {
-   "coin": "SOL",
-   "price": 119.92500000000001,
-   "support": {
-    "price": 119.62518750000001,
-    "usd": 2808820
-   },
-   "resistance": {
-    "price": 122.02368750000001,
-    "usd": 2414032
+    "price": 2686.1949999999997,
+    "usd": 3449386
    },
    "buy_pct": 47
   },
   {
-   "coin": "XRP",
-   "price": 1.49295,
+   "coin": "BNB",
+   "price": 786.095,
    "support": {
-    "price": 1.4481615,
-    "usd": 664435
+    "price": 780.1992875000001,
+    "usd": 1275072
    },
    "resistance": {
-    "price": 1.548935625,
-    "usd": 1676183
+    "price": 788.0602375000001,
+    "usd": 975222
    },
-   "buy_pct": 46
+   "buy_pct": 47
   },
   {
-   "coin": "ADA",
-   "price": 0.24565,
+   "coin": "SOL",
+   "price": 119.695,
    "support": {
-    "price": 0.245035875,
-    "usd": 236521
+    "price": 116.10414999999999,
+    "usd": 2328463
    },
    "resistance": {
-    "price": 0.246264125,
-    "usd": 214385
+    "price": 122.0889,
+    "usd": 2742521
+   },
+   "buy_pct": 49
+  },
+  {
+   "coin": "XRP",
+   "price": 1.4880499999999999,
+   "support": {
+    "price": 1.484329875,
+    "usd": 653184
+   },
+   "resistance": {
+    "price": 1.5550122499999999,
+    "usd": 1545167
    },
    "buy_pct": 52
   },
   {
-   "coin": "DOGE",
-   "price": 0.09320500000000001,
+   "coin": "ADA",
+   "price": 0.24495,
    "support": {
-    "price": 0.08994282500000002,
-    "usd": 753549
+    "price": 0.24433762499999997,
+    "usd": 243477
    },
    "resistance": {
-    "price": 0.09693320000000001,
-    "usd": 643622
+    "price": 0.24556237499999997,
+    "usd": 188949
    },
-   "buy_pct": 48
+   "buy_pct": 55
+  },
+  {
+   "coin": "DOGE",
+   "price": 0.092945,
+   "support": {
+    "price": 0.0899242875,
+    "usd": 758810
+   },
+   "resistance": {
+    "price": 0.0968951625,
+    "usd": 658593
+   },
+   "buy_pct": 56
   },
   {
    "coin": "AVAX",
-   "price": 11.092500000000001,
+   "price": 11.086500000000001,
    "support": {
-    "price": 11.06476875,
-    "usd": 192549
+    "price": 11.05878375,
+    "usd": 194143
    },
    "resistance": {
-    "price": 11.120231250000002,
-    "usd": 168672
+    "price": 11.11421625,
+    "usd": 166987
    },
    "buy_pct": 47
   },
   {
    "coin": "LINK",
-   "price": 13.9195,
+   "price": 14.037500000000001,
    "support": {
-    "price": 13.884701249999999,
-    "usd": 149390
+    "price": 14.037500000000003,
+    "usd": 162262
    },
    "resistance": {
-    "price": 14.51107875,
-    "usd": 187685
+    "price": 14.493718750000003,
+    "usd": 191894
    },
-   "buy_pct": 52
+   "buy_pct": 51
   },
   {
    "coin": "DOT",
-   "price": 1.1965,
+   "price": 1.1855,
    "support": {
-    "price": 1.19350875,
-    "usd": 99944
+    "price": 1.18253625,
+    "usd": 103665
    },
    "resistance": {
-    "price": 1.19949125,
-    "usd": 76619
+    "price": 1.1884637500000002,
+    "usd": 70499
    },
-   "buy_pct": 62
+   "buy_pct": 64
   }
  ],
  "topics": {
@@ -959,7 +959,7 @@
   }
  ],
  "tip": "Stop Loss ছাড়া কোনো ট্রেড নয়। আগে ঠিক করুন কোথায় ভুল প্রমাণ হবেন, তারপর Entry।",
- "updated": "2026-10-03T18:38:59+00:00",
+ "updated": "2026-10-03T21:48:59+00:00",
  "sources": {
   "Airdrops.io": 10,
   "AirdropAlert": 2,
@@ -983,9 +983,7 @@
   "Bitfinex": 0,
   "BitMart": 7,
   "XT": 2,
-  "DigiFinex": 2,
-  "DefiLlama unlocks": 59,
-  "CoinMarketCap new": 30
+  "DigiFinex": 2
  },
  "unlocks": [
   {
