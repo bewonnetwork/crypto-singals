@@ -1,0 +1,30 @@
+{
+ "posts": [
+  {
+   "slug": "what-is-a-stop-loss",
+   "type": "learn",
+   "date": "2026-10-03T10:27:35+00:00",
+   "title": "What Is a Stop-Loss Order and How Does It Work?",
+   "title_bn": "Stop Loss কী এবং কীভাবে কাজ করে?",
+   "sum_en": "A stop-loss closes your trade by itself when price reaches the level where your idea is proven wrong. Here is how to place it and why it sometimes fills at a different price.",
+   "sum_bn": "দাম আপনার ঠিক করা জায়গায় পৌঁছালে Stop Loss নিজে থেকে ট্রেড বন্ধ করে দেয়। কোথায় বসাবেন আর কেন কখনো অন্য দামে বন্ধ হয়, জেনে নিন।",
+   "body": {
+    "pts_bn": [
+     "Stop Loss হলো আগে থেকে দেওয়া একটা অর্ডার: দাম ওই জায়গায় এলে ট্রেড নিজে বন্ধ হবে। এতে ছোট ক্ষতি বড় ক্ষতিতে গড়ায় না।",
+     "কোথায় বসাবেন: যে দামে গেলে আপনার ধারণা ভুল প্রমাণ হয়। BUY হলে শেষ সাপোর্টের একটু নিচে, SELL হলে শেষ রেজিস্ট্যান্সের একটু ওপরে।",
+     "Stop-market দাম ছুঁলেই বাজার দামে বেচে দেয় (নিশ্চিত বন্ধ, দাম একটু এদিক-ওদিক হতে পারে)। Stop-limit শুধু আপনার দামে বেচে (দাম ঠিক, কিন্তু বন্ধ নাও হতে পারে)।",
+     "দাম খুব দ্রুত নড়লে Stop Loss আপনার দামের চেয়ে খারাপ দামে বন্ধ হতে পারে। একে slippage বলে।",
+     "নিয়ম: Stop Loss ছাড়া কোনো ট্রেড নয়, আর ট্রেড চলার সময় Stop Loss দূরে সরাবেন না।"
+    ],
+    "pts_en": [
+     "A stop-loss is an order you place in advance: when price reaches that level the trade closes by itself, so a small loss cannot grow into a big one.",
+     "Where to put it: at the price that proves your idea wrong. For a BUY, a little below the last support; for a SELL, a little above the last resistance.",
+     "A stop-market order sells at the market price once triggered (it will close, but the price may differ slightly). A stop-limit sells only at your price (the price is fixed, but it may not fill).",
+     "When price moves very fast the stop can fill at a worse price than you set. This is called slippage.",
+     "Rule: no trade without a stop-loss, and never move the stop further away while the trade is running."
+    ]
+   }
+  }
+ ],
+ "updated": "2026-10-03T10:27:35+00:00"
+}

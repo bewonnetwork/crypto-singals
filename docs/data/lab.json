@@ -1,0 +1,5784 @@
+{
+ "version": 1,
+ "generated": "2026-10-03T10:28:55+00:00",
+ "from": "2024-09-20",
+ "to": "2026-10-03",
+ "split": "2026-01-28",
+ "coins": [
+  "BTC",
+  "ETH",
+  "BNB",
+  "SOL",
+  "XRP",
+  "ADA",
+  "DOGE",
+  "AVAX",
+  "LINK",
+  "DOT"
+ ],
+ "fee_pct": 0.1,
+ "tested": 128,
+ "passed": 0,
+ "results": [
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 290,
+    "avg_r": 0.073,
+    "total_r": 21.2,
+    "win": 29.0,
+    "pf": 1.1,
+    "dd": 44.0
+   },
+   "test": {
+    "n": 152,
+    "avg_r": 0.141,
+    "total_r": 21.5,
+    "win": 32.2,
+    "pf": 1.2,
+    "dd": 40.9
+   },
+   "all": {
+    "n": 442,
+    "avg_r": 0.096,
+    "total_r": 42.6,
+    "win": 30.1,
+    "pf": 1.13,
+    "dd": 44.0
+   },
+   "coins_plus": 6,
+   "per_coin": {
+    "BTC": 9.6,
+    "ETH": -6.0,
+    "BNB": 14.0,
+    "SOL": 17.6,
+    "XRP": 5.7,
+    "ADA": -2.8,
+    "DOGE": -1.9,
+    "AVAX": -8.6,
+    "LINK": 6.2,
+    "DOT": 8.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 141,
+    "avg_r": 0.314,
+    "total_r": 44.2,
+    "win": 34.0,
+    "pf": 1.45,
+    "dd": 27.0
+   },
+   "test": {
+    "n": 61,
+    "avg_r": 0.049,
+    "total_r": 3.0,
+    "win": 29.5,
+    "pf": 1.07,
+    "dd": 13.2
+   },
+   "all": {
+    "n": 202,
+    "avg_r": 0.234,
+    "total_r": 47.2,
+    "win": 32.7,
+    "pf": 1.33,
+    "dd": 27.0
+   },
+   "coins_plus": 8,
+   "per_coin": {
+    "BTC": 5.1,
+    "ETH": 2.3,
+    "BNB": 17.0,
+    "SOL": 7.1,
+    "XRP": 9.3,
+    "ADA": -7.6,
+    "DOGE": 1.2,
+    "AVAX": -7.7,
+    "LINK": 14.0,
+    "DOT": 6.5
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 344,
+    "avg_r": 0.174,
+    "total_r": 60.0,
+    "win": 33.1,
+    "pf": 1.25,
+    "dd": 52.9
+   },
+   "test": {
+    "n": 182,
+    "avg_r": 0.043,
+    "total_r": 7.8,
+    "win": 33.5,
+    "pf": 1.06,
+    "dd": 42.5
+   },
+   "all": {
+    "n": 526,
+    "avg_r": 0.129,
+    "total_r": 67.8,
+    "win": 33.3,
+    "pf": 1.19,
+    "dd": 52.9
+   },
+   "coins_plus": 9,
+   "per_coin": {
+    "BTC": 7.5,
+    "ETH": 8.8,
+    "BNB": 12.2,
+    "SOL": -3.8,
+    "XRP": 3.7,
+    "ADA": 1.9,
+    "DOGE": 5.1,
+    "AVAX": 14.3,
+    "LINK": 5.1,
+    "DOT": 13.1
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 1155,
+    "avg_r": 0.022,
+    "total_r": 25.8,
+    "win": 29.6,
+    "pf": 1.03,
+    "dd": 90.4
+   },
+   "test": {
+    "n": 578,
+    "avg_r": 0.028,
+    "total_r": 16.0,
+    "win": 29.9,
+    "pf": 1.04,
+    "dd": 111.6
+   },
+   "all": {
+    "n": 1733,
+    "avg_r": 0.024,
+    "total_r": 41.8,
+    "win": 29.7,
+    "pf": 1.03,
+    "dd": 153.4
+   },
+   "coins_plus": 6,
+   "per_coin": {
+    "BTC": 3.9,
+    "ETH": -2.6,
+    "BNB": -13.2,
+    "SOL": 26.9,
+    "XRP": 1.5,
+    "ADA": 4.7,
+    "DOGE": 35.6,
+    "AVAX": -16.6,
+    "LINK": -4.4,
+    "DOT": 6.1
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 422,
+    "avg_r": 0.022,
+    "total_r": 9.1,
+    "win": 28.9,
+    "pf": 1.03,
+    "dd": 61.7
+   },
+   "test": {
+    "n": 160,
+    "avg_r": 0.081,
+    "total_r": 13.0,
+    "win": 30.6,
+    "pf": 1.1,
+    "dd": 37.8
+   },
+   "all": {
+    "n": 582,
+    "avg_r": 0.038,
+    "total_r": 22.1,
+    "win": 29.4,
+    "pf": 1.05,
+    "dd": 61.7
+   },
+   "coins_plus": 6,
+   "per_coin": {
+    "BTC": -18.9,
+    "ETH": 2.7,
+    "BNB": -0.4,
+    "SOL": 22.0,
+    "XRP": 16.6,
+    "ADA": 4.6,
+    "DOGE": 5.0,
+    "AVAX": 2.1,
+    "LINK": -5.9,
+    "DOT": -5.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 508,
+    "avg_r": 0.022,
+    "total_r": 10.9,
+    "win": 28.0,
+    "pf": 1.03,
+    "dd": 51.4
+   },
+   "test": {
+    "n": 263,
+    "avg_r": 0.024,
+    "total_r": 6.2,
+    "win": 30.0,
+    "pf": 1.03,
+    "dd": 65.4
+   },
+   "all": {
+    "n": 771,
+    "avg_r": 0.022,
+    "total_r": 17.1,
+    "win": 28.7,
+    "pf": 1.03,
+    "dd": 65.4
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": 17.8,
+    "ETH": -7.1,
+    "BNB": -0.8,
+    "SOL": 16.6,
+    "XRP": 15.1,
+    "ADA": -2.8,
+    "DOGE": -8.7,
+    "AVAX": -7.3,
+    "LINK": -7.7,
+    "DOT": 2.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 430,
+    "avg_r": 0.037,
+    "total_r": 16.1,
+    "win": 44.2,
+    "pf": 1.07,
+    "dd": 61.3
+   },
+   "test": {
+    "n": 247,
+    "avg_r": 0.014,
+    "total_r": 3.4,
+    "win": 43.3,
+    "pf": 1.02,
+    "dd": 46.9
+   },
+   "all": {
+    "n": 677,
+    "avg_r": 0.029,
+    "total_r": 19.4,
+    "win": 43.9,
+    "pf": 1.05,
+    "dd": 61.3
+   },
+   "coins_plus": 7,
+   "per_coin": {
+    "BTC": -0.6,
+    "ETH": 9.7,
+    "BNB": 5.9,
+    "SOL": 3.7,
+    "XRP": 5.9,
+    "ADA": 0.9,
+    "DOGE": -7.0,
+    "AVAX": 5.8,
+    "LINK": -11.4,
+    "DOT": 6.5
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 306,
+    "avg_r": 0.014,
+    "total_r": 4.3,
+    "win": 36.3,
+    "pf": 1.02,
+    "dd": 50.5
+   },
+   "test": {
+    "n": 171,
+    "avg_r": 0.101,
+    "total_r": 17.3,
+    "win": 39.2,
+    "pf": 1.16,
+    "dd": 49.0
+   },
+   "all": {
+    "n": 477,
+    "avg_r": 0.045,
+    "total_r": 21.7,
+    "win": 37.3,
+    "pf": 1.07,
+    "dd": 50.5
+   },
+   "coins_plus": 7,
+   "per_coin": {
+    "BTC": -6.6,
+    "ETH": 8.5,
+    "BNB": 8.0,
+    "SOL": -4.7,
+    "XRP": 0.2,
+    "ADA": 2.7,
+    "DOGE": 5.8,
+    "AVAX": 3.6,
+    "LINK": -3.4,
+    "DOT": 7.5
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 491,
+    "avg_r": 0.009,
+    "total_r": 4.5,
+    "win": 36.0,
+    "pf": 1.01,
+    "dd": 71.1
+   },
+   "test": {
+    "n": 274,
+    "avg_r": 0.046,
+    "total_r": 12.6,
+    "win": 37.6,
+    "pf": 1.07,
+    "dd": 54.0
+   },
+   "all": {
+    "n": 765,
+    "avg_r": 0.022,
+    "total_r": 17.1,
+    "win": 36.6,
+    "pf": 1.03,
+    "dd": 71.1
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": -3.0,
+    "ETH": 12.0,
+    "BNB": 6.2,
+    "SOL": -0.9,
+    "XRP": -5.5,
+    "ADA": 4.3,
+    "DOGE": -0.7,
+    "AVAX": 18.7,
+    "LINK": -20.2,
+    "DOT": 6.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 918,
+    "avg_r": -0.013,
+    "total_r": -11.7,
+    "win": 28.4,
+    "pf": 0.98,
+    "dd": 74.0
+   },
+   "test": {
+    "n": 473,
+    "avg_r": 0.104,
+    "total_r": 49.0,
+    "win": 31.5,
+    "pf": 1.14,
+    "dd": 125.4
+   },
+   "all": {
+    "n": 1391,
+    "avg_r": 0.027,
+    "total_r": 37.3,
+    "win": 29.5,
+    "pf": 1.03,
+    "dd": 125.4
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": -27.1,
+    "ETH": 5.4,
+    "BNB": -11.1,
+    "SOL": 55.1,
+    "XRP": -1.3,
+    "ADA": 2.5,
+    "DOGE": 12.7,
+    "AVAX": 16.9,
+    "LINK": -8.5,
+    "DOT": -7.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 558,
+    "avg_r": -0.013,
+    "total_r": -7.1,
+    "win": 26.7,
+    "pf": 0.98,
+    "dd": 67.0
+   },
+   "test": {
+    "n": 303,
+    "avg_r": 0.111,
+    "total_r": 33.5,
+    "win": 30.0,
+    "pf": 1.24,
+    "dd": 33.4
+   },
+   "all": {
+    "n": 861,
+    "avg_r": 0.031,
+    "total_r": 26.4,
+    "win": 27.9,
+    "pf": 1.06,
+    "dd": 67.0
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": -2.5,
+    "ETH": 8.4,
+    "BNB": -0.3,
+    "SOL": -8.6,
+    "XRP": -1.4,
+    "ADA": 4.8,
+    "DOGE": 3.9,
+    "AVAX": 23.4,
+    "LINK": -16.1,
+    "DOT": 15.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 273,
+    "avg_r": 0.021,
+    "total_r": 5.8,
+    "win": 43.6,
+    "pf": 1.04,
+    "dd": 39.9
+   },
+   "test": {
+    "n": 159,
+    "avg_r": -0.016,
+    "total_r": -2.6,
+    "win": 42.1,
+    "pf": 0.97,
+    "dd": 47.0
+   },
+   "all": {
+    "n": 432,
+    "avg_r": 0.007,
+    "total_r": 3.2,
+    "win": 43.1,
+    "pf": 1.01,
+    "dd": 47.0
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -4.7,
+    "ETH": 6.4,
+    "BNB": 4.2,
+    "SOL": -1.9,
+    "XRP": 2.8,
+    "ADA": -2.2,
+    "DOGE": -0.6,
+    "AVAX": -2.9,
+    "LINK": -3.9,
+    "DOT": 6.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "both",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 429,
+    "avg_r": 0.032,
+    "total_r": 13.7,
+    "win": 44.1,
+    "pf": 1.05,
+    "dd": 33.9
+   },
+   "test": {
+    "n": 248,
+    "avg_r": -0.023,
+    "total_r": -5.7,
+    "win": 42.3,
+    "pf": 0.96,
+    "dd": 34.7
+   },
+   "all": {
+    "n": 677,
+    "avg_r": 0.012,
+    "total_r": 8.0,
+    "win": 43.4,
+    "pf": 1.02,
+    "dd": 53.4
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": -3.9,
+    "ETH": -3.7,
+    "BNB": 2.4,
+    "SOL": 5.5,
+    "XRP": 8.6,
+    "ADA": 13.9,
+    "DOGE": -4.0,
+    "AVAX": -6.4,
+    "LINK": -8.7,
+    "DOT": 4.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 417,
+    "avg_r": 0.053,
+    "total_r": 22.2,
+    "win": 28.8,
+    "pf": 1.11,
+    "dd": 36.8
+   },
+   "test": {
+    "n": 197,
+    "avg_r": -0.023,
+    "total_r": -4.6,
+    "win": 29.4,
+    "pf": 0.96,
+    "dd": 44.1
+   },
+   "all": {
+    "n": 614,
+    "avg_r": 0.029,
+    "total_r": 17.6,
+    "win": 29.0,
+    "pf": 1.05,
+    "dd": 54.4
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": -9.6,
+    "ETH": -3.1,
+    "BNB": -11.7,
+    "SOL": -1.3,
+    "XRP": 9.1,
+    "ADA": 14.6,
+    "DOGE": 8.5,
+    "AVAX": -1.9,
+    "LINK": 0.6,
+    "DOT": 12.4
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 679,
+    "avg_r": 0.041,
+    "total_r": 28.0,
+    "win": 44.3,
+    "pf": 1.07,
+    "dd": 38.3
+   },
+   "test": {
+    "n": 334,
+    "avg_r": -0.025,
+    "total_r": -8.3,
+    "win": 41.6,
+    "pf": 0.96,
+    "dd": 57.3
+   },
+   "all": {
+    "n": 1013,
+    "avg_r": 0.019,
+    "total_r": 19.7,
+    "win": 43.4,
+    "pf": 1.03,
+    "dd": 57.3
+   },
+   "coins_plus": 7,
+   "per_coin": {
+    "BTC": 2.8,
+    "ETH": 1.3,
+    "BNB": -19.3,
+    "SOL": 17.5,
+    "XRP": 11.6,
+    "ADA": 20.1,
+    "DOGE": 0.1,
+    "AVAX": -11.6,
+    "LINK": -13.9,
+    "DOT": 11.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 320,
+    "avg_r": -0.027,
+    "total_r": -8.7,
+    "win": 42.5,
+    "pf": 0.96,
+    "dd": 22.3
+   },
+   "test": {
+    "n": 144,
+    "avg_r": -0.026,
+    "total_r": -3.7,
+    "win": 44.4,
+    "pf": 0.96,
+    "dd": 24.4
+   },
+   "all": {
+    "n": 464,
+    "avg_r": -0.027,
+    "total_r": -12.4,
+    "win": 43.1,
+    "pf": 0.96,
+    "dd": 28.2
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -10.4,
+    "ETH": 14.5,
+    "BNB": 3.5,
+    "SOL": -4.6,
+    "XRP": -2.7,
+    "ADA": -6.1,
+    "DOGE": 4.1,
+    "AVAX": -4.0,
+    "LINK": -0.7,
+    "DOT": -5.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 348,
+    "avg_r": -0.028,
+    "total_r": -9.8,
+    "win": 25.6,
+    "pf": 0.95,
+    "dd": 55.1
+   },
+   "test": {
+    "n": 182,
+    "avg_r": 0.163,
+    "total_r": 29.6,
+    "win": 30.8,
+    "pf": 1.39,
+    "dd": 27.3
+   },
+   "all": {
+    "n": 530,
+    "avg_r": 0.037,
+    "total_r": 19.8,
+    "win": 27.4,
+    "pf": 1.08,
+    "dd": 55.1
+   },
+   "coins_plus": 6,
+   "per_coin": {
+    "BTC": -4.0,
+    "ETH": 6.1,
+    "BNB": 4.8,
+    "SOL": -10.5,
+    "XRP": 7.7,
+    "ADA": -0.8,
+    "DOGE": 5.7,
+    "AVAX": 7.3,
+    "LINK": -4.9,
+    "DOT": 8.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 302,
+    "avg_r": 0.03,
+    "total_r": 9.0,
+    "win": 29.5,
+    "pf": 1.04,
+    "dd": 45.7
+   },
+   "test": {
+    "n": 129,
+    "avg_r": -0.032,
+    "total_r": -4.2,
+    "win": 28.7,
+    "pf": 0.96,
+    "dd": 27.1
+   },
+   "all": {
+    "n": 431,
+    "avg_r": 0.011,
+    "total_r": 4.8,
+    "win": 29.2,
+    "pf": 1.01,
+    "dd": 45.7
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -3.2,
+    "ETH": 17.3,
+    "BNB": 26.2,
+    "SOL": -2.9,
+    "XRP": -14.6,
+    "ADA": -4.4,
+    "DOGE": -5.9,
+    "AVAX": -3.4,
+    "LINK": -3.2,
+    "DOT": -1.1
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 330,
+    "avg_r": -0.037,
+    "total_r": -12.3,
+    "win": 37.0,
+    "pf": 0.95,
+    "dd": 34.3
+   },
+   "test": {
+    "n": 147,
+    "avg_r": -0.014,
+    "total_r": -2.1,
+    "win": 39.5,
+    "pf": 0.98,
+    "dd": 25.5
+   },
+   "all": {
+    "n": 477,
+    "avg_r": -0.03,
+    "total_r": -14.4,
+    "win": 37.7,
+    "pf": 0.96,
+    "dd": 40.8
+   },
+   "coins_plus": 6,
+   "per_coin": {
+    "BTC": -12.8,
+    "ETH": 6.4,
+    "BNB": 0.1,
+    "SOL": 1.7,
+    "XRP": -8.1,
+    "ADA": -2.4,
+    "DOGE": 7.5,
+    "AVAX": 0.5,
+    "LINK": 1.4,
+    "DOT": -8.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 547,
+    "avg_r": -0.043,
+    "total_r": -23.7,
+    "win": 36.4,
+    "pf": 0.94,
+    "dd": 75.8
+   },
+   "test": {
+    "n": 205,
+    "avg_r": -0.043,
+    "total_r": -8.8,
+    "win": 37.6,
+    "pf": 0.94,
+    "dd": 30.2
+   },
+   "all": {
+    "n": 752,
+    "avg_r": -0.043,
+    "total_r": -32.4,
+    "win": 36.7,
+    "pf": 0.94,
+    "dd": 89.1
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -25.3,
+    "ETH": -7.2,
+    "BNB": -0.4,
+    "SOL": 16.2,
+    "XRP": 5.4,
+    "ADA": 4.8,
+    "DOGE": -3.5,
+    "AVAX": 7.5,
+    "LINK": -20.3,
+    "DOT": -9.5
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 366,
+    "avg_r": 0.043,
+    "total_r": 15.8,
+    "win": 43.7,
+    "pf": 1.08,
+    "dd": 31.1
+   },
+   "test": {
+    "n": 189,
+    "avg_r": -0.045,
+    "total_r": -8.4,
+    "win": 40.2,
+    "pf": 0.93,
+    "dd": 42.1
+   },
+   "all": {
+    "n": 555,
+    "avg_r": 0.013,
+    "total_r": 7.3,
+    "win": 42.5,
+    "pf": 1.02,
+    "dd": 42.1
+   },
+   "coins_plus": 6,
+   "per_coin": {
+    "BTC": 1.7,
+    "ETH": -9.4,
+    "BNB": -7.7,
+    "SOL": 8.9,
+    "XRP": 4.6,
+    "ADA": 6.9,
+    "DOGE": -0.3,
+    "AVAX": -5.3,
+    "LINK": 1.1,
+    "DOT": 6.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 321,
+    "avg_r": -0.051,
+    "total_r": -16.4,
+    "win": 26.2,
+    "pf": 0.91,
+    "dd": 44.8
+   },
+   "test": {
+    "n": 188,
+    "avg_r": -0.01,
+    "total_r": -2.0,
+    "win": 29.8,
+    "pf": 0.98,
+    "dd": 29.0
+   },
+   "all": {
+    "n": 509,
+    "avg_r": -0.036,
+    "total_r": -18.4,
+    "win": 27.5,
+    "pf": 0.94,
+    "dd": 62.1
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": 1.7,
+    "ETH": 9.1,
+    "BNB": -2.5,
+    "SOL": -16.5,
+    "XRP": -4.3,
+    "ADA": 12.0,
+    "DOGE": 1.5,
+    "AVAX": -13.1,
+    "LINK": -7.4,
+    "DOT": 1.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 2093,
+    "avg_r": 0.026,
+    "total_r": 55.5,
+    "win": 29.8,
+    "pf": 1.03,
+    "dd": 100.7
+   },
+   "test": {
+    "n": 1004,
+    "avg_r": -0.052,
+    "total_r": -52.4,
+    "win": 28.2,
+    "pf": 0.93,
+    "dd": 196.3
+   },
+   "all": {
+    "n": 3097,
+    "avg_r": 0.001,
+    "total_r": 3.0,
+    "win": 29.3,
+    "pf": 1.0,
+    "dd": 196.3
+   },
+   "coins_plus": 7,
+   "per_coin": {
+    "BTC": -12.9,
+    "ETH": 5.6,
+    "BNB": -68.3,
+    "SOL": 29.6,
+    "XRP": 4.6,
+    "ADA": 0.3,
+    "DOGE": 38.7,
+    "AVAX": -5.8,
+    "LINK": 1.3,
+    "DOT": 9.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 465,
+    "avg_r": 0.051,
+    "total_r": 23.5,
+    "win": 37.6,
+    "pf": 1.08,
+    "dd": 49.9
+   },
+   "test": {
+    "n": 276,
+    "avg_r": -0.053,
+    "total_r": -14.7,
+    "win": 34.8,
+    "pf": 0.92,
+    "dd": 45.4
+   },
+   "all": {
+    "n": 741,
+    "avg_r": 0.012,
+    "total_r": 8.8,
+    "win": 36.6,
+    "pf": 1.02,
+    "dd": 62.8
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": 1.1,
+    "ETH": -2.6,
+    "BNB": -3.9,
+    "SOL": 0.0,
+    "XRP": 13.7,
+    "ADA": 17.1,
+    "DOGE": -5.0,
+    "AVAX": -11.6,
+    "LINK": 1.6,
+    "DOT": -1.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 522,
+    "avg_r": -0.055,
+    "total_r": -28.5,
+    "win": 41.8,
+    "pf": 0.91,
+    "dd": 71.6
+   },
+   "test": {
+    "n": 195,
+    "avg_r": -0.014,
+    "total_r": -2.8,
+    "win": 44.1,
+    "pf": 0.98,
+    "dd": 30.5
+   },
+   "all": {
+    "n": 717,
+    "avg_r": -0.044,
+    "total_r": -31.2,
+    "win": 42.4,
+    "pf": 0.93,
+    "dd": 84.8
+   },
+   "coins_plus": 6,
+   "per_coin": {
+    "BTC": -22.4,
+    "ETH": 1.8,
+    "BNB": -9.4,
+    "SOL": 3.3,
+    "XRP": 4.7,
+    "ADA": 1.5,
+    "DOGE": -10.3,
+    "AVAX": 3.4,
+    "LINK": -4.9,
+    "DOT": 1.1
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 490,
+    "avg_r": 0.109,
+    "total_r": 53.4,
+    "win": 32.0,
+    "pf": 1.16,
+    "dd": 45.9
+   },
+   "test": {
+    "n": 243,
+    "avg_r": -0.057,
+    "total_r": -13.8,
+    "win": 28.4,
+    "pf": 0.92,
+    "dd": 56.6
+   },
+   "all": {
+    "n": 733,
+    "avg_r": 0.054,
+    "total_r": 39.5,
+    "win": 30.8,
+    "pf": 1.08,
+    "dd": 56.6
+   },
+   "coins_plus": 7,
+   "per_coin": {
+    "BTC": 7.9,
+    "ETH": 3.8,
+    "BNB": 25.3,
+    "SOL": -2.8,
+    "XRP": 1.0,
+    "ADA": -2.8,
+    "DOGE": -8.5,
+    "AVAX": 8.1,
+    "LINK": 3.7,
+    "DOT": 3.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 1471,
+    "avg_r": -0.058,
+    "total_r": -85.5,
+    "win": 36.2,
+    "pf": 0.92,
+    "dd": 138.9
+   },
+   "test": {
+    "n": 752,
+    "avg_r": -0.043,
+    "total_r": -32.4,
+    "win": 37.5,
+    "pf": 0.94,
+    "dd": 115.2
+   },
+   "all": {
+    "n": 2223,
+    "avg_r": -0.053,
+    "total_r": -117.9,
+    "win": 36.6,
+    "pf": 0.93,
+    "dd": 240.1
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -60.2,
+    "ETH": -31.0,
+    "BNB": -26.3,
+    "SOL": -2.8,
+    "XRP": 0.9,
+    "ADA": -4.1,
+    "DOGE": 15.9,
+    "AVAX": 3.2,
+    "LINK": -41.5,
+    "DOT": 28.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 421,
+    "avg_r": -0.058,
+    "total_r": -24.3,
+    "win": 25.9,
+    "pf": 0.9,
+    "dd": 37.4
+   },
+   "test": {
+    "n": 207,
+    "avg_r": -0.04,
+    "total_r": -8.2,
+    "win": 26.6,
+    "pf": 0.93,
+    "dd": 47.6
+   },
+   "all": {
+    "n": 628,
+    "avg_r": -0.052,
+    "total_r": -32.6,
+    "win": 26.1,
+    "pf": 0.91,
+    "dd": 47.6
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -2.5,
+    "ETH": -8.0,
+    "BNB": -9.4,
+    "SOL": -10.9,
+    "XRP": -1.7,
+    "ADA": 10.2,
+    "DOGE": -8.0,
+    "AVAX": -4.0,
+    "LINK": -3.4,
+    "DOT": 5.1
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 230,
+    "avg_r": -0.012,
+    "total_r": -2.8,
+    "win": 27.0,
+    "pf": 0.98,
+    "dd": 50.4
+   },
+   "test": {
+    "n": 99,
+    "avg_r": -0.058,
+    "total_r": -5.7,
+    "win": 27.3,
+    "pf": 0.92,
+    "dd": 21.9
+   },
+   "all": {
+    "n": 329,
+    "avg_r": -0.026,
+    "total_r": -8.5,
+    "win": 27.1,
+    "pf": 0.97,
+    "dd": 67.5
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 7.2,
+    "ETH": -1.8,
+    "BNB": 18.3,
+    "SOL": 1.1,
+    "XRP": -1.0,
+    "ADA": -10.8,
+    "DOGE": -11.2,
+    "AVAX": -5.8,
+    "LINK": -0.7,
+    "DOT": -3.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 305,
+    "avg_r": 0.219,
+    "total_r": 66.7,
+    "win": 32.5,
+    "pf": 1.31,
+    "dd": 37.1
+   },
+   "test": {
+    "n": 160,
+    "avg_r": -0.061,
+    "total_r": -9.8,
+    "win": 25.6,
+    "pf": 0.92,
+    "dd": 59.8
+   },
+   "all": {
+    "n": 465,
+    "avg_r": 0.122,
+    "total_r": 56.9,
+    "win": 30.1,
+    "pf": 1.17,
+    "dd": 83.1
+   },
+   "coins_plus": 9,
+   "per_coin": {
+    "BTC": 10.2,
+    "ETH": 1.2,
+    "BNB": 4.5,
+    "SOL": 3.1,
+    "XRP": 12.5,
+    "ADA": 3.9,
+    "DOGE": 2.8,
+    "AVAX": -5.6,
+    "LINK": 16.1,
+    "DOT": 7.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 1131,
+    "avg_r": -0.062,
+    "total_r": -69.8,
+    "win": 41.3,
+    "pf": 0.9,
+    "dd": 91.7
+   },
+   "test": {
+    "n": 594,
+    "avg_r": -0.048,
+    "total_r": -28.4,
+    "win": 43.1,
+    "pf": 0.92,
+    "dd": 131.0
+   },
+   "all": {
+    "n": 1725,
+    "avg_r": -0.057,
+    "total_r": -98.2,
+    "win": 41.9,
+    "pf": 0.91,
+    "dd": 144.6
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -28.3,
+    "ETH": -6.1,
+    "BNB": -14.9,
+    "SOL": 3.9,
+    "XRP": -23.7,
+    "ADA": -11.3,
+    "DOGE": -11.6,
+    "AVAX": 8.5,
+    "LINK": -11.8,
+    "DOT": -2.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 282,
+    "avg_r": -0.062,
+    "total_r": -17.5,
+    "win": 25.5,
+    "pf": 0.92,
+    "dd": 44.5
+   },
+   "test": {
+    "n": 158,
+    "avg_r": -0.024,
+    "total_r": -3.9,
+    "win": 29.1,
+    "pf": 0.97,
+    "dd": 41.2
+   },
+   "all": {
+    "n": 440,
+    "avg_r": -0.049,
+    "total_r": -21.3,
+    "win": 26.8,
+    "pf": 0.94,
+    "dd": 82.9
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -3.3,
+    "ETH": 5.5,
+    "BNB": 6.9,
+    "SOL": -9.3,
+    "XRP": 2.7,
+    "ADA": -2.6,
+    "DOGE": 10.7,
+    "AVAX": -9.0,
+    "LINK": -4.7,
+    "DOT": -18.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 772,
+    "avg_r": 0.006,
+    "total_r": 4.3,
+    "win": 27.8,
+    "pf": 1.01,
+    "dd": 39.0
+   },
+   "test": {
+    "n": 374,
+    "avg_r": -0.065,
+    "total_r": -24.4,
+    "win": 26.2,
+    "pf": 0.89,
+    "dd": 74.4
+   },
+   "all": {
+    "n": 1146,
+    "avg_r": -0.018,
+    "total_r": -20.2,
+    "win": 27.3,
+    "pf": 0.97,
+    "dd": 74.9
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -17.5,
+    "ETH": -0.5,
+    "BNB": -27.4,
+    "SOL": 2.4,
+    "XRP": 0.6,
+    "ADA": 22.3,
+    "DOGE": -4.8,
+    "AVAX": -1.3,
+    "LINK": -6.7,
+    "DOT": 12.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 1410,
+    "avg_r": -0.067,
+    "total_r": -94.1,
+    "win": 41.6,
+    "pf": 0.89,
+    "dd": 121.7
+   },
+   "test": {
+    "n": 718,
+    "avg_r": -0.029,
+    "total_r": -21.0,
+    "win": 44.2,
+    "pf": 0.95,
+    "dd": 94.0
+   },
+   "all": {
+    "n": 2128,
+    "avg_r": -0.054,
+    "total_r": -115.1,
+    "win": 42.4,
+    "pf": 0.91,
+    "dd": 200.1
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -43.9,
+    "ETH": -31.7,
+    "BNB": -20.8,
+    "SOL": -23.7,
+    "XRP": 3.7,
+    "ADA": 4.3,
+    "DOGE": 1.4,
+    "AVAX": -4.9,
+    "LINK": -18.0,
+    "DOT": 18.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 400,
+    "avg_r": 0.089,
+    "total_r": 35.6,
+    "win": 38.8,
+    "pf": 1.14,
+    "dd": 38.3
+   },
+   "test": {
+    "n": 193,
+    "avg_r": -0.068,
+    "total_r": -13.2,
+    "win": 33.7,
+    "pf": 0.9,
+    "dd": 49.5
+   },
+   "all": {
+    "n": 593,
+    "avg_r": 0.038,
+    "total_r": 22.4,
+    "win": 37.1,
+    "pf": 1.06,
+    "dd": 62.4
+   },
+   "coins_plus": 6,
+   "per_coin": {
+    "BTC": -1.3,
+    "ETH": 0.9,
+    "BNB": -14.3,
+    "SOL": 1.1,
+    "XRP": 12.2,
+    "ADA": 13.7,
+    "DOGE": 9.7,
+    "AVAX": -5.7,
+    "LINK": -7.4,
+    "DOT": 13.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 726,
+    "avg_r": 0.023,
+    "total_r": 16.5,
+    "win": 36.5,
+    "pf": 1.03,
+    "dd": 39.6
+   },
+   "test": {
+    "n": 356,
+    "avg_r": -0.07,
+    "total_r": -25.0,
+    "win": 33.4,
+    "pf": 0.9,
+    "dd": 78.0
+   },
+   "all": {
+    "n": 1082,
+    "avg_r": -0.008,
+    "total_r": -8.5,
+    "win": 35.5,
+    "pf": 0.99,
+    "dd": 78.0
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": 1.3,
+    "ETH": -4.4,
+    "BNB": -24.6,
+    "SOL": 1.8,
+    "XRP": 10.2,
+    "ADA": 21.9,
+    "DOGE": -1.1,
+    "AVAX": -9.1,
+    "LINK": -18.4,
+    "DOT": 14.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 377,
+    "avg_r": 0.103,
+    "total_r": 38.7,
+    "win": 46.7,
+    "pf": 1.19,
+    "dd": 32.9
+   },
+   "test": {
+    "n": 184,
+    "avg_r": -0.07,
+    "total_r": -13.0,
+    "win": 39.7,
+    "pf": 0.89,
+    "dd": 44.7
+   },
+   "all": {
+    "n": 561,
+    "avg_r": 0.046,
+    "total_r": 25.7,
+    "win": 44.4,
+    "pf": 1.08,
+    "dd": 62.4
+   },
+   "coins_plus": 6,
+   "per_coin": {
+    "BTC": -1.7,
+    "ETH": 6.8,
+    "BNB": -7.1,
+    "SOL": 3.6,
+    "XRP": 5.8,
+    "ADA": 14.6,
+    "DOGE": 5.6,
+    "AVAX": -4.3,
+    "LINK": -7.4,
+    "DOT": 10.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 870,
+    "avg_r": -0.037,
+    "total_r": -31.9,
+    "win": 27.6,
+    "pf": 0.94,
+    "dd": 85.3
+   },
+   "test": {
+    "n": 462,
+    "avg_r": -0.072,
+    "total_r": -33.3,
+    "win": 25.8,
+    "pf": 0.87,
+    "dd": 73.4
+   },
+   "all": {
+    "n": 1332,
+    "avg_r": -0.049,
+    "total_r": -65.2,
+    "win": 27.0,
+    "pf": 0.91,
+    "dd": 100.5
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -18.4,
+    "ETH": -22.4,
+    "BNB": 12.9,
+    "SOL": -21.1,
+    "XRP": 3.0,
+    "ADA": 4.7,
+    "DOGE": -7.2,
+    "AVAX": -1.9,
+    "LINK": -6.8,
+    "DOT": -7.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "both",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 731,
+    "avg_r": -0.069,
+    "total_r": -50.3,
+    "win": 27.4,
+    "pf": 0.91,
+    "dd": 82.7
+   },
+   "test": {
+    "n": 354,
+    "avg_r": -0.075,
+    "total_r": -26.5,
+    "win": 28.2,
+    "pf": 0.91,
+    "dd": 61.1
+   },
+   "all": {
+    "n": 1085,
+    "avg_r": -0.071,
+    "total_r": -76.8,
+    "win": 27.6,
+    "pf": 0.91,
+    "dd": 98.2
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -19.1,
+    "ETH": -12.0,
+    "BNB": 4.2,
+    "SOL": -1.6,
+    "XRP": -17.9,
+    "ADA": 1.1,
+    "DOGE": -10.2,
+    "AVAX": -7.7,
+    "LINK": -18.4,
+    "DOT": 4.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "both",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 824,
+    "avg_r": -0.075,
+    "total_r": -62.2,
+    "win": 41.0,
+    "pf": 0.88,
+    "dd": 73.6
+   },
+   "test": {
+    "n": 391,
+    "avg_r": -0.077,
+    "total_r": -30.0,
+    "win": 42.7,
+    "pf": 0.88,
+    "dd": 52.6
+   },
+   "all": {
+    "n": 1215,
+    "avg_r": -0.076,
+    "total_r": -92.1,
+    "win": 41.6,
+    "pf": 0.88,
+    "dd": 99.0
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -29.6,
+    "ETH": 4.8,
+    "BNB": -12.3,
+    "SOL": -5.3,
+    "XRP": -11.6,
+    "ADA": -14.6,
+    "DOGE": 18.3,
+    "AVAX": -0.6,
+    "LINK": -31.4,
+    "DOT": -9.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 570,
+    "avg_r": -0.077,
+    "total_r": -43.7,
+    "win": 27.2,
+    "pf": 0.87,
+    "dd": 79.2
+   },
+   "test": {
+    "n": 211,
+    "avg_r": 0.013,
+    "total_r": 2.8,
+    "win": 31.3,
+    "pf": 1.02,
+    "dd": 26.6
+   },
+   "all": {
+    "n": 781,
+    "avg_r": -0.052,
+    "total_r": -40.9,
+    "win": 28.3,
+    "pf": 0.91,
+    "dd": 98.0
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": -23.3,
+    "ETH": -11.7,
+    "BNB": -19.3,
+    "SOL": 3.5,
+    "XRP": 12.4,
+    "ADA": 5.6,
+    "DOGE": 2.1,
+    "AVAX": 8.2,
+    "LINK": -10.8,
+    "DOT": -7.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 1086,
+    "avg_r": -0.073,
+    "total_r": -79.2,
+    "win": 41.7,
+    "pf": 0.88,
+    "dd": 87.7
+   },
+   "test": {
+    "n": 617,
+    "avg_r": -0.078,
+    "total_r": -47.9,
+    "win": 42.5,
+    "pf": 0.88,
+    "dd": 88.9
+   },
+   "all": {
+    "n": 1703,
+    "avg_r": -0.075,
+    "total_r": -127.1,
+    "win": 42.0,
+    "pf": 0.88,
+    "dd": 145.2
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -3.5,
+    "ETH": -0.2,
+    "BNB": -3.3,
+    "SOL": -16.6,
+    "XRP": -22.0,
+    "ADA": 1.2,
+    "DOGE": -14.0,
+    "AVAX": 1.6,
+    "LINK": -27.4,
+    "DOT": -43.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 1198,
+    "avg_r": -0.073,
+    "total_r": -87.9,
+    "win": 35.1,
+    "pf": 0.9,
+    "dd": 119.6
+   },
+   "test": {
+    "n": 632,
+    "avg_r": -0.083,
+    "total_r": -52.8,
+    "win": 35.9,
+    "pf": 0.89,
+    "dd": 158.5
+   },
+   "all": {
+    "n": 1830,
+    "avg_r": -0.077,
+    "total_r": -140.6,
+    "win": 35.4,
+    "pf": 0.89,
+    "dd": 186.5
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -54.5,
+    "ETH": -19.1,
+    "BNB": -2.5,
+    "SOL": 20.5,
+    "XRP": -36.6,
+    "ADA": -0.8,
+    "DOGE": -3.3,
+    "AVAX": 3.3,
+    "LINK": -22.0,
+    "DOT": -25.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 1247,
+    "avg_r": -0.083,
+    "total_r": -104.1,
+    "win": 26.8,
+    "pf": 0.86,
+    "dd": 133.6
+   },
+   "test": {
+    "n": 652,
+    "avg_r": -0.057,
+    "total_r": -36.9,
+    "win": 28.5,
+    "pf": 0.9,
+    "dd": 148.1
+   },
+   "all": {
+    "n": 1899,
+    "avg_r": -0.074,
+    "total_r": -141.0,
+    "win": 27.4,
+    "pf": 0.87,
+    "dd": 189.7
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -54.0,
+    "ETH": -20.8,
+    "BNB": -15.5,
+    "SOL": 8.1,
+    "XRP": -32.5,
+    "ADA": -4.4,
+    "DOGE": 6.1,
+    "AVAX": 12.5,
+    "LINK": -20.1,
+    "DOT": -20.5
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "both",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 166,
+    "avg_r": -0.077,
+    "total_r": -12.8,
+    "win": 39.8,
+    "pf": 0.88,
+    "dd": 32.4
+   },
+   "test": {
+    "n": 87,
+    "avg_r": -0.084,
+    "total_r": -7.3,
+    "win": 40.2,
+    "pf": 0.87,
+    "dd": 23.1
+   },
+   "all": {
+    "n": 253,
+    "avg_r": -0.079,
+    "total_r": -20.0,
+    "win": 39.9,
+    "pf": 0.87,
+    "dd": 42.1
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": 1.9,
+    "ETH": -6.1,
+    "BNB": 0.4,
+    "SOL": -3.2,
+    "XRP": 1.8,
+    "ADA": -7.3,
+    "DOGE": 0.2,
+    "AVAX": -4.0,
+    "LINK": -6.4,
+    "DOT": 2.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 418,
+    "avg_r": -0.085,
+    "total_r": -35.6,
+    "win": 28.2,
+    "pf": 0.89,
+    "dd": 80.0
+   },
+   "test": {
+    "n": 162,
+    "avg_r": -0.057,
+    "total_r": -9.2,
+    "win": 30.9,
+    "pf": 0.92,
+    "dd": 39.8
+   },
+   "all": {
+    "n": 580,
+    "avg_r": -0.077,
+    "total_r": -44.8,
+    "win": 29.0,
+    "pf": 0.9,
+    "dd": 118.1
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -20.0,
+    "ETH": -10.9,
+    "BNB": -16.9,
+    "SOL": -7.4,
+    "XRP": -16.5,
+    "ADA": 8.6,
+    "DOGE": 4.8,
+    "AVAX": -4.7,
+    "LINK": 9.5,
+    "DOT": 8.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 1537,
+    "avg_r": -0.085,
+    "total_r": -131.0,
+    "win": 27.2,
+    "pf": 0.86,
+    "dd": 150.8
+   },
+   "test": {
+    "n": 789,
+    "avg_r": -0.075,
+    "total_r": -58.8,
+    "win": 28.5,
+    "pf": 0.88,
+    "dd": 135.9
+   },
+   "all": {
+    "n": 2326,
+    "avg_r": -0.082,
+    "total_r": -189.8,
+    "win": 27.6,
+    "pf": 0.86,
+    "dd": 274.1
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -57.1,
+    "ETH": -41.4,
+    "BNB": -53.7,
+    "SOL": -21.3,
+    "XRP": 0.6,
+    "ADA": -2.1,
+    "DOGE": 2.9,
+    "AVAX": -1.1,
+    "LINK": -32.5,
+    "DOT": 15.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 1003,
+    "avg_r": -0.075,
+    "total_r": -75.0,
+    "win": 27.6,
+    "pf": 0.91,
+    "dd": 117.4
+   },
+   "test": {
+    "n": 546,
+    "avg_r": -0.086,
+    "total_r": -46.8,
+    "win": 28.2,
+    "pf": 0.89,
+    "dd": 111.0
+   },
+   "all": {
+    "n": 1549,
+    "avg_r": -0.079,
+    "total_r": -121.7,
+    "win": 27.8,
+    "pf": 0.9,
+    "dd": 179.7
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -4.3,
+    "ETH": 13.6,
+    "BNB": 25.0,
+    "SOL": -6.1,
+    "XRP": -36.9,
+    "ADA": -2.4,
+    "DOGE": -18.6,
+    "AVAX": -27.6,
+    "LINK": -20.8,
+    "DOT": -43.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 299,
+    "avg_r": -0.087,
+    "total_r": -26.0,
+    "win": 38.8,
+    "pf": 0.86,
+    "dd": 51.1
+   },
+   "test": {
+    "n": 177,
+    "avg_r": 0.089,
+    "total_r": 15.7,
+    "win": 46.3,
+    "pf": 1.16,
+    "dd": 16.2
+   },
+   "all": {
+    "n": 476,
+    "avg_r": -0.022,
+    "total_r": -10.3,
+    "win": 41.6,
+    "pf": 0.96,
+    "dd": 57.4
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -2.7,
+    "ETH": 6.4,
+    "BNB": 2.4,
+    "SOL": -11.2,
+    "XRP": -3.4,
+    "ADA": 12.3,
+    "DOGE": 7.2,
+    "AVAX": -11.8,
+    "LINK": -3.7,
+    "DOT": -5.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 656,
+    "avg_r": -0.025,
+    "total_r": -16.6,
+    "win": 41.8,
+    "pf": 0.96,
+    "dd": 75.9
+   },
+   "test": {
+    "n": 343,
+    "avg_r": -0.087,
+    "total_r": -29.9,
+    "win": 37.6,
+    "pf": 0.86,
+    "dd": 58.8
+   },
+   "all": {
+    "n": 999,
+    "avg_r": -0.047,
+    "total_r": -46.5,
+    "win": 40.3,
+    "pf": 0.92,
+    "dd": 81.0
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -7.9,
+    "ETH": -9.0,
+    "BNB": 10.2,
+    "SOL": -13.4,
+    "XRP": -2.5,
+    "ADA": -6.9,
+    "DOGE": -8.5,
+    "AVAX": -2.7,
+    "LINK": 3.8,
+    "DOT": -9.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 391,
+    "avg_r": -0.067,
+    "total_r": -26.4,
+    "win": 26.3,
+    "pf": 0.88,
+    "dd": 55.9
+   },
+   "test": {
+    "n": 194,
+    "avg_r": -0.09,
+    "total_r": -17.5,
+    "win": 26.3,
+    "pf": 0.85,
+    "dd": 40.9
+   },
+   "all": {
+    "n": 585,
+    "avg_r": -0.075,
+    "total_r": -43.9,
+    "win": 26.3,
+    "pf": 0.87,
+    "dd": 85.2
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -6.9,
+    "ETH": -7.6,
+    "BNB": 4.6,
+    "SOL": -12.4,
+    "XRP": -1.3,
+    "ADA": -0.9,
+    "DOGE": -9.6,
+    "AVAX": -6.7,
+    "LINK": 4.2,
+    "DOT": -7.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 340,
+    "avg_r": -0.093,
+    "total_r": -31.5,
+    "win": 26.5,
+    "pf": 0.84,
+    "dd": 46.2
+   },
+   "test": {
+    "n": 149,
+    "avg_r": 0.097,
+    "total_r": 14.4,
+    "win": 34.2,
+    "pf": 1.19,
+    "dd": 15.1
+   },
+   "all": {
+    "n": 489,
+    "avg_r": -0.035,
+    "total_r": -17.1,
+    "win": 28.8,
+    "pf": 0.94,
+    "dd": 46.2
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -21.3,
+    "ETH": 12.0,
+    "BNB": 0.9,
+    "SOL": -2.3,
+    "XRP": -3.2,
+    "ADA": -1.5,
+    "DOGE": 5.2,
+    "AVAX": -2.5,
+    "LINK": 2.4,
+    "DOT": -6.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 282,
+    "avg_r": -0.096,
+    "total_r": -27.2,
+    "win": 37.9,
+    "pf": 0.85,
+    "dd": 57.6
+   },
+   "test": {
+    "n": 148,
+    "avg_r": -0.091,
+    "total_r": -13.5,
+    "win": 36.5,
+    "pf": 0.85,
+    "dd": 26.4
+   },
+   "all": {
+    "n": 430,
+    "avg_r": -0.095,
+    "total_r": -40.7,
+    "win": 37.4,
+    "pf": 0.85,
+    "dd": 82.1
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 2.6,
+    "ETH": -3.3,
+    "BNB": 1.9,
+    "SOL": -7.4,
+    "XRP": -5.5,
+    "ADA": -7.7,
+    "DOGE": -9.2,
+    "AVAX": -5.8,
+    "LINK": 2.9,
+    "DOT": -9.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 310,
+    "avg_r": -0.1,
+    "total_r": -30.9,
+    "win": 32.6,
+    "pf": 0.86,
+    "dd": 58.2
+   },
+   "test": {
+    "n": 185,
+    "avg_r": 0.054,
+    "total_r": 10.0,
+    "win": 37.8,
+    "pf": 1.08,
+    "dd": 22.1
+   },
+   "all": {
+    "n": 495,
+    "avg_r": -0.042,
+    "total_r": -20.9,
+    "win": 34.5,
+    "pf": 0.94,
+    "dd": 73.4
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -0.0,
+    "ETH": 9.0,
+    "BNB": -8.6,
+    "SOL": -11.7,
+    "XRP": -3.2,
+    "ADA": 14.1,
+    "DOGE": 5.5,
+    "AVAX": -14.8,
+    "LINK": -5.2,
+    "DOT": -5.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 399,
+    "avg_r": -0.035,
+    "total_r": -14.1,
+    "win": 34.3,
+    "pf": 0.95,
+    "dd": 38.2
+   },
+   "test": {
+    "n": 201,
+    "avg_r": -0.102,
+    "total_r": -20.5,
+    "win": 32.3,
+    "pf": 0.86,
+    "dd": 61.2
+   },
+   "all": {
+    "n": 600,
+    "avg_r": -0.058,
+    "total_r": -34.6,
+    "win": 33.7,
+    "pf": 0.92,
+    "dd": 61.2
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": 1.8,
+    "ETH": -12.0,
+    "BNB": -13.3,
+    "SOL": -8.6,
+    "XRP": 0.3,
+    "ADA": 9.7,
+    "DOGE": -8.9,
+    "AVAX": -2.1,
+    "LINK": -10.3,
+    "DOT": 8.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 166,
+    "avg_r": -0.103,
+    "total_r": -17.1,
+    "win": 32.5,
+    "pf": 0.86,
+    "dd": 36.2
+   },
+   "test": {
+    "n": 90,
+    "avg_r": -0.101,
+    "total_r": -9.1,
+    "win": 33.3,
+    "pf": 0.86,
+    "dd": 26.1
+   },
+   "all": {
+    "n": 256,
+    "avg_r": -0.102,
+    "total_r": -26.1,
+    "win": 32.8,
+    "pf": 0.86,
+    "dd": 47.8
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 2.9,
+    "ETH": -2.8,
+    "BNB": -2.3,
+    "SOL": -4.0,
+    "XRP": 5.9,
+    "ADA": -8.0,
+    "DOGE": -1.6,
+    "AVAX": -12.3,
+    "LINK": -6.7,
+    "DOT": 2.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 749,
+    "avg_r": -0.03,
+    "total_r": -22.2,
+    "win": 35.1,
+    "pf": 0.96,
+    "dd": 90.3
+   },
+   "test": {
+    "n": 404,
+    "avg_r": -0.107,
+    "total_r": -43.3,
+    "win": 32.7,
+    "pf": 0.85,
+    "dd": 81.7
+   },
+   "all": {
+    "n": 1153,
+    "avg_r": -0.057,
+    "total_r": -65.5,
+    "win": 34.3,
+    "pf": 0.92,
+    "dd": 103.3
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -13.2,
+    "ETH": -11.7,
+    "BNB": 11.0,
+    "SOL": -23.6,
+    "XRP": -1.6,
+    "ADA": -4.3,
+    "DOGE": -7.8,
+    "AVAX": -4.0,
+    "LINK": -0.7,
+    "DOT": -9.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 341,
+    "avg_r": -0.111,
+    "total_r": -37.7,
+    "win": 32.0,
+    "pf": 0.85,
+    "dd": 69.4
+   },
+   "test": {
+    "n": 166,
+    "avg_r": -0.091,
+    "total_r": -15.2,
+    "win": 33.1,
+    "pf": 0.87,
+    "dd": 34.1
+   },
+   "all": {
+    "n": 507,
+    "avg_r": -0.104,
+    "total_r": -52.9,
+    "win": 32.3,
+    "pf": 0.86,
+    "dd": 97.2
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 4.0,
+    "ETH": -8.0,
+    "BNB": 4.2,
+    "SOL": -11.6,
+    "XRP": -8.1,
+    "ADA": -6.7,
+    "DOGE": -8.2,
+    "AVAX": -8.5,
+    "LINK": 5.4,
+    "DOT": -15.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 512,
+    "avg_r": 0.034,
+    "total_r": 17.2,
+    "win": 28.7,
+    "pf": 1.06,
+    "dd": 48.2
+   },
+   "test": {
+    "n": 296,
+    "avg_r": -0.114,
+    "total_r": -33.6,
+    "win": 24.7,
+    "pf": 0.8,
+    "dd": 53.2
+   },
+   "all": {
+    "n": 808,
+    "avg_r": -0.02,
+    "total_r": -16.5,
+    "win": 27.2,
+    "pf": 0.96,
+    "dd": 77.5
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 9.1,
+    "ETH": -0.9,
+    "BNB": -2.0,
+    "SOL": -11.3,
+    "XRP": 8.5,
+    "ADA": 9.9,
+    "DOGE": -17.4,
+    "AVAX": -7.1,
+    "LINK": -2.0,
+    "DOT": -3.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 71,
+    "avg_r": -0.115,
+    "total_r": -8.2,
+    "win": 32.4,
+    "pf": 0.84,
+    "dd": 21.2
+   },
+   "test": {
+    "n": 32,
+    "avg_r": -0.029,
+    "total_r": -0.9,
+    "win": 34.4,
+    "pf": 0.96,
+    "dd": 5.4
+   },
+   "all": {
+    "n": 103,
+    "avg_r": -0.088,
+    "total_r": -9.1,
+    "win": 33.0,
+    "pf": 0.88,
+    "dd": 25.8
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 2.6,
+    "ETH": 0.4,
+    "BNB": -1.5,
+    "SOL": -3.0,
+    "XRP": -0.5,
+    "ADA": 2.7,
+    "DOGE": -1.5,
+    "AVAX": -4.5,
+    "LINK": -2.6,
+    "DOT": -1.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "both",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 1811,
+    "avg_r": -0.086,
+    "total_r": -156.4,
+    "win": 41.4,
+    "pf": 0.86,
+    "dd": 174.7
+   },
+   "test": {
+    "n": 922,
+    "avg_r": -0.12,
+    "total_r": -110.9,
+    "win": 40.8,
+    "pf": 0.81,
+    "dd": 114.3
+   },
+   "all": {
+    "n": 2733,
+    "avg_r": -0.098,
+    "total_r": -267.3,
+    "win": 41.2,
+    "pf": 0.85,
+    "dd": 280.8
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -31.0,
+    "ETH": -36.3,
+    "BNB": -54.7,
+    "SOL": -39.0,
+    "XRP": -12.8,
+    "ADA": -10.5,
+    "DOGE": -11.1,
+    "AVAX": -6.3,
+    "LINK": -45.3,
+    "DOT": -20.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 2690,
+    "avg_r": -0.053,
+    "total_r": -143.5,
+    "win": 42.1,
+    "pf": 0.91,
+    "dd": 176.5
+   },
+   "test": {
+    "n": 1319,
+    "avg_r": -0.12,
+    "total_r": -158.1,
+    "win": 40.7,
+    "pf": 0.82,
+    "dd": 247.1
+   },
+   "all": {
+    "n": 4009,
+    "avg_r": -0.075,
+    "total_r": -301.5,
+    "win": 41.6,
+    "pf": 0.88,
+    "dd": 340.0
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -63.8,
+    "ETH": -36.4,
+    "BNB": -66.9,
+    "SOL": -44.7,
+    "XRP": -26.3,
+    "ADA": -13.3,
+    "DOGE": -10.3,
+    "AVAX": 3.6,
+    "LINK": -36.8,
+    "DOT": -6.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 91,
+    "avg_r": -0.12,
+    "total_r": -10.9,
+    "win": 27.5,
+    "pf": 0.84,
+    "dd": 32.8
+   },
+   "test": {
+    "n": 42,
+    "avg_r": 0.09,
+    "total_r": 3.8,
+    "win": 35.7,
+    "pf": 1.15,
+    "dd": 12.8
+   },
+   "all": {
+    "n": 133,
+    "avg_r": -0.054,
+    "total_r": -7.1,
+    "win": 30.1,
+    "pf": 0.92,
+    "dd": 41.9
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": 5.1,
+    "ETH": 2.7,
+    "BNB": 2.9,
+    "SOL": -2.2,
+    "XRP": -5.0,
+    "ADA": -6.5,
+    "DOGE": -1.4,
+    "AVAX": -6.6,
+    "LINK": 1.5,
+    "DOT": 2.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 105,
+    "avg_r": -0.123,
+    "total_r": -12.9,
+    "win": 36.2,
+    "pf": 0.81,
+    "dd": 25.4
+   },
+   "test": {
+    "n": 55,
+    "avg_r": 0.195,
+    "total_r": 10.7,
+    "win": 49.1,
+    "pf": 1.42,
+    "dd": 7.5
+   },
+   "all": {
+    "n": 160,
+    "avg_r": -0.013,
+    "total_r": -2.1,
+    "win": 40.6,
+    "pf": 0.98,
+    "dd": 30.0
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -3.6,
+    "ETH": 8.9,
+    "BNB": 1.0,
+    "SOL": 2.9,
+    "XRP": -2.6,
+    "ADA": -5.7,
+    "DOGE": -2.9,
+    "AVAX": -1.0,
+    "LINK": -1.2,
+    "DOT": 2.1
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 152,
+    "avg_r": -0.124,
+    "total_r": -18.8,
+    "win": 25.7,
+    "pf": 0.84,
+    "dd": 51.5
+   },
+   "test": {
+    "n": 71,
+    "avg_r": 0.208,
+    "total_r": 14.7,
+    "win": 38.0,
+    "pf": 1.34,
+    "dd": 22.7
+   },
+   "all": {
+    "n": 223,
+    "avg_r": -0.018,
+    "total_r": -4.1,
+    "win": 29.6,
+    "pf": 0.97,
+    "dd": 69.2
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": 9.1,
+    "ETH": 8.3,
+    "BNB": 6.3,
+    "SOL": 0.3,
+    "XRP": -5.4,
+    "ADA": -9.7,
+    "DOGE": -8.8,
+    "AVAX": -0.8,
+    "LINK": -0.3,
+    "DOT": -3.1
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "both",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 1480,
+    "avg_r": -0.068,
+    "total_r": -101.1,
+    "win": 28.6,
+    "pf": 0.91,
+    "dd": 131.2
+   },
+   "test": {
+    "n": 751,
+    "avg_r": -0.125,
+    "total_r": -93.7,
+    "win": 28.0,
+    "pf": 0.84,
+    "dd": 141.8
+   },
+   "all": {
+    "n": 2231,
+    "avg_r": -0.087,
+    "total_r": -194.8,
+    "win": 28.4,
+    "pf": 0.89,
+    "dd": 214.8
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -1.5,
+    "ETH": -25.9,
+    "BNB": -11.4,
+    "SOL": -36.8,
+    "XRP": -37.2,
+    "ADA": -26.2,
+    "DOGE": -10.6,
+    "AVAX": -7.3,
+    "LINK": -20.6,
+    "DOT": -17.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 115,
+    "avg_r": -0.127,
+    "total_r": -14.6,
+    "win": 31.3,
+    "pf": 0.83,
+    "dd": 32.0
+   },
+   "test": {
+    "n": 61,
+    "avg_r": 0.27,
+    "total_r": 16.5,
+    "win": 44.3,
+    "pf": 1.5,
+    "dd": 9.6
+   },
+   "all": {
+    "n": 176,
+    "avg_r": 0.01,
+    "total_r": 1.8,
+    "win": 35.8,
+    "pf": 1.02,
+    "dd": 34.4
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": -5.0,
+    "ETH": 13.4,
+    "BNB": 3.9,
+    "SOL": 0.1,
+    "XRP": -5.2,
+    "ADA": -7.8,
+    "DOGE": -1.0,
+    "AVAX": 1.7,
+    "LINK": -1.1,
+    "DOT": 2.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 877,
+    "avg_r": -0.128,
+    "total_r": -112.6,
+    "win": 26.0,
+    "pf": 0.79,
+    "dd": 116.7
+   },
+   "test": {
+    "n": 409,
+    "avg_r": -0.098,
+    "total_r": -39.9,
+    "win": 27.9,
+    "pf": 0.84,
+    "dd": 68.4
+   },
+   "all": {
+    "n": 1286,
+    "avg_r": -0.119,
+    "total_r": -152.5,
+    "win": 26.6,
+    "pf": 0.81,
+    "dd": 171.7
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -50.0,
+    "ETH": 14.2,
+    "BNB": -14.7,
+    "SOL": -6.9,
+    "XRP": -16.3,
+    "ADA": -23.5,
+    "DOGE": 9.0,
+    "AVAX": -10.8,
+    "LINK": -34.6,
+    "DOT": -18.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 710,
+    "avg_r": -0.026,
+    "total_r": -18.8,
+    "win": 27.9,
+    "pf": 0.95,
+    "dd": 77.3
+   },
+   "test": {
+    "n": 379,
+    "avg_r": -0.128,
+    "total_r": -48.7,
+    "win": 24.0,
+    "pf": 0.78,
+    "dd": 86.3
+   },
+   "all": {
+    "n": 1089,
+    "avg_r": -0.062,
+    "total_r": -67.4,
+    "win": 26.5,
+    "pf": 0.89,
+    "dd": 103.6
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -21.1,
+    "ETH": -24.1,
+    "BNB": 9.6,
+    "SOL": -16.7,
+    "XRP": 0.3,
+    "ADA": -4.5,
+    "DOGE": -3.9,
+    "AVAX": -3.1,
+    "LINK": -9.7,
+    "DOT": 5.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 688,
+    "avg_r": -0.129,
+    "total_r": -88.6,
+    "win": 26.9,
+    "pf": 0.84,
+    "dd": 129.2
+   },
+   "test": {
+    "n": 369,
+    "avg_r": -0.104,
+    "total_r": -38.5,
+    "win": 27.9,
+    "pf": 0.87,
+    "dd": 92.9
+   },
+   "all": {
+    "n": 1057,
+    "avg_r": -0.12,
+    "total_r": -127.1,
+    "win": 27.2,
+    "pf": 0.85,
+    "dd": 196.6
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -16.6,
+    "ETH": -5.8,
+    "BNB": -18.0,
+    "SOL": -2.5,
+    "XRP": -34.2,
+    "ADA": -4.4,
+    "DOGE": -10.9,
+    "AVAX": -19.2,
+    "LINK": -2.1,
+    "DOT": -13.4
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 72,
+    "avg_r": -0.129,
+    "total_r": -9.3,
+    "win": 37.5,
+    "pf": 0.8,
+    "dd": 23.1
+   },
+   "test": {
+    "n": 32,
+    "avg_r": -0.026,
+    "total_r": -0.8,
+    "win": 40.6,
+    "pf": 0.96,
+    "dd": 5.3
+   },
+   "all": {
+    "n": 104,
+    "avg_r": -0.098,
+    "total_r": -10.2,
+    "win": 38.5,
+    "pf": 0.85,
+    "dd": 25.5
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 2.9,
+    "ETH": -2.3,
+    "BNB": 2.5,
+    "SOL": -3.7,
+    "XRP": -1.9,
+    "ADA": 1.3,
+    "DOGE": -0.4,
+    "AVAX": -2.9,
+    "LINK": -4.0,
+    "DOT": -1.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 1173,
+    "avg_r": -0.125,
+    "total_r": -146.6,
+    "win": 26.3,
+    "pf": 0.79,
+    "dd": 156.5
+   },
+   "test": {
+    "n": 664,
+    "avg_r": -0.132,
+    "total_r": -87.9,
+    "win": 25.2,
+    "pf": 0.77,
+    "dd": 114.8
+   },
+   "all": {
+    "n": 1837,
+    "avg_r": -0.128,
+    "total_r": -234.5,
+    "win": 25.9,
+    "pf": 0.79,
+    "dd": 271.3
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -26.5,
+    "ETH": -11.3,
+    "BNB": -22.2,
+    "SOL": -32.7,
+    "XRP": -28.5,
+    "ADA": 6.3,
+    "DOGE": -23.5,
+    "AVAX": -22.2,
+    "LINK": -30.6,
+    "DOT": -43.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 518,
+    "avg_r": -0.135,
+    "total_r": -70.1,
+    "win": 40.2,
+    "pf": 0.79,
+    "dd": 94.5
+   },
+   "test": {
+    "n": 201,
+    "avg_r": -0.136,
+    "total_r": -27.3,
+    "win": 40.8,
+    "pf": 0.79,
+    "dd": 42.1
+   },
+   "all": {
+    "n": 719,
+    "avg_r": -0.135,
+    "total_r": -97.4,
+    "win": 40.3,
+    "pf": 0.79,
+    "dd": 135.1
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -20.7,
+    "ETH": -18.6,
+    "BNB": -24.0,
+    "SOL": -12.6,
+    "XRP": -14.6,
+    "ADA": -0.4,
+    "DOGE": -14.8,
+    "AVAX": -1.0,
+    "LINK": 7.6,
+    "DOT": 1.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 541,
+    "avg_r": -0.02,
+    "total_r": -10.7,
+    "win": 41.6,
+    "pf": 0.97,
+    "dd": 73.1
+   },
+   "test": {
+    "n": 280,
+    "avg_r": -0.137,
+    "total_r": -38.2,
+    "win": 35.4,
+    "pf": 0.79,
+    "dd": 65.6
+   },
+   "all": {
+    "n": 821,
+    "avg_r": -0.06,
+    "total_r": -48.9,
+    "win": 39.5,
+    "pf": 0.9,
+    "dd": 82.2
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -14.4,
+    "ETH": -11.5,
+    "BNB": 5.8,
+    "SOL": -12.9,
+    "XRP": -2.9,
+    "ADA": -14.9,
+    "DOGE": -4.1,
+    "AVAX": 2.3,
+    "LINK": 2.6,
+    "DOT": 1.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 185,
+    "avg_r": -0.139,
+    "total_r": -25.8,
+    "win": 35.7,
+    "pf": 0.78,
+    "dd": 46.3
+   },
+   "test": {
+    "n": 92,
+    "avg_r": 0.069,
+    "total_r": 6.4,
+    "win": 44.6,
+    "pf": 1.13,
+    "dd": 14.0
+   },
+   "all": {
+    "n": 277,
+    "avg_r": -0.07,
+    "total_r": -19.4,
+    "win": 38.6,
+    "pf": 0.88,
+    "dd": 56.9
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -5.3,
+    "ETH": 11.2,
+    "BNB": 3.7,
+    "SOL": 2.2,
+    "XRP": -4.3,
+    "ADA": -9.0,
+    "DOGE": -11.8,
+    "AVAX": 3.8,
+    "LINK": -8.1,
+    "DOT": -1.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 133,
+    "avg_r": -0.143,
+    "total_r": -19.0,
+    "win": 22.6,
+    "pf": 0.75,
+    "dd": 36.8
+   },
+   "test": {
+    "n": 66,
+    "avg_r": 0.221,
+    "total_r": 14.6,
+    "win": 34.8,
+    "pf": 1.53,
+    "dd": 7.7
+   },
+   "all": {
+    "n": 199,
+    "avg_r": -0.022,
+    "total_r": -4.5,
+    "win": 26.6,
+    "pf": 0.96,
+    "dd": 38.3
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": -2.2,
+    "ETH": 7.3,
+    "BNB": 0.7,
+    "SOL": -5.5,
+    "XRP": -2.2,
+    "ADA": -5.7,
+    "DOGE": -4.0,
+    "AVAX": 1.6,
+    "LINK": 2.9,
+    "DOT": 2.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 2867,
+    "avg_r": -0.073,
+    "total_r": -209.8,
+    "win": 35.3,
+    "pf": 0.9,
+    "dd": 255.6
+   },
+   "test": {
+    "n": 1423,
+    "avg_r": -0.145,
+    "total_r": -205.7,
+    "win": 34.0,
+    "pf": 0.81,
+    "dd": 306.5
+   },
+   "all": {
+    "n": 4290,
+    "avg_r": -0.097,
+    "total_r": -415.6,
+    "win": 34.9,
+    "pf": 0.87,
+    "dd": 468.4
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -103.5,
+    "ETH": -48.0,
+    "BNB": -77.5,
+    "SOL": -42.6,
+    "XRP": -52.8,
+    "ADA": -26.4,
+    "DOGE": -5.1,
+    "AVAX": 3.7,
+    "LINK": -52.8,
+    "DOT": -10.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "both",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 355,
+    "avg_r": 0.046,
+    "total_r": 16.3,
+    "win": 29.9,
+    "pf": 1.06,
+    "dd": 23.9
+   },
+   "test": {
+    "n": 198,
+    "avg_r": -0.145,
+    "total_r": -28.6,
+    "win": 27.8,
+    "pf": 0.81,
+    "dd": 52.2
+   },
+   "all": {
+    "n": 553,
+    "avg_r": -0.022,
+    "total_r": -12.3,
+    "win": 29.1,
+    "pf": 0.97,
+    "dd": 61.3
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -17.5,
+    "ETH": -17.4,
+    "BNB": 12.4,
+    "SOL": 14.4,
+    "XRP": 19.3,
+    "ADA": -0.6,
+    "DOGE": -6.3,
+    "AVAX": -12.3,
+    "LINK": -5.1,
+    "DOT": 1.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 231,
+    "avg_r": 0.109,
+    "total_r": 25.3,
+    "win": 31.2,
+    "pf": 1.15,
+    "dd": 53.2
+   },
+   "test": {
+    "n": 128,
+    "avg_r": -0.146,
+    "total_r": -18.7,
+    "win": 27.3,
+    "pf": 0.8,
+    "dd": 51.1
+   },
+   "all": {
+    "n": 359,
+    "avg_r": 0.018,
+    "total_r": 6.5,
+    "win": 29.8,
+    "pf": 1.03,
+    "dd": 64.6
+   },
+   "coins_plus": 7,
+   "per_coin": {
+    "BTC": 0.9,
+    "ETH": 1.8,
+    "BNB": 6.2,
+    "SOL": -9.1,
+    "XRP": -3.1,
+    "ADA": -7.3,
+    "DOGE": 5.4,
+    "AVAX": 0.1,
+    "LINK": 4.8,
+    "DOT": 6.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 849,
+    "avg_r": -0.153,
+    "total_r": -129.7,
+    "win": 38.9,
+    "pf": 0.77,
+    "dd": 153.9
+   },
+   "test": {
+    "n": 439,
+    "avg_r": -0.127,
+    "total_r": -55.8,
+    "win": 40.3,
+    "pf": 0.8,
+    "dd": 77.6
+   },
+   "all": {
+    "n": 1288,
+    "avg_r": -0.144,
+    "total_r": -185.5,
+    "win": 39.4,
+    "pf": 0.78,
+    "dd": 222.9
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -31.6,
+    "ETH": -26.3,
+    "BNB": -26.9,
+    "SOL": -3.2,
+    "XRP": -25.1,
+    "ADA": -4.8,
+    "DOGE": -25.9,
+    "AVAX": -11.9,
+    "LINK": -8.5,
+    "DOT": -21.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "breakout",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 3058,
+    "avg_r": -0.098,
+    "total_r": -299.5,
+    "win": 26.3,
+    "pf": 0.83,
+    "dd": 313.7
+   },
+   "test": {
+    "n": 1517,
+    "avg_r": -0.153,
+    "total_r": -231.9,
+    "win": 25.4,
+    "pf": 0.75,
+    "dd": 325.2
+   },
+   "all": {
+    "n": 4575,
+    "avg_r": -0.116,
+    "total_r": -531.4,
+    "win": 26.0,
+    "pf": 0.81,
+    "dd": 543.0
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -126.4,
+    "ETH": -46.7,
+    "BNB": -104.1,
+    "SOL": -67.1,
+    "XRP": -65.7,
+    "ADA": -35.1,
+    "DOGE": -11.2,
+    "AVAX": -0.8,
+    "LINK": -55.5,
+    "DOT": -18.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 213,
+    "avg_r": -0.002,
+    "total_r": -0.5,
+    "win": 27.7,
+    "pf": 1.0,
+    "dd": 32.9
+   },
+   "test": {
+    "n": 77,
+    "avg_r": -0.156,
+    "total_r": -12.0,
+    "win": 26.0,
+    "pf": 0.76,
+    "dd": 17.1
+   },
+   "all": {
+    "n": 290,
+    "avg_r": -0.043,
+    "total_r": -12.5,
+    "win": 27.2,
+    "pf": 0.92,
+    "dd": 32.9
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": 1.2,
+    "ETH": -2.2,
+    "BNB": -5.9,
+    "SOL": -9.0,
+    "XRP": 6.9,
+    "ADA": 2.8,
+    "DOGE": -3.5,
+    "AVAX": -5.2,
+    "LINK": -1.9,
+    "DOT": 4.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 1134,
+    "avg_r": -0.098,
+    "total_r": -111.4,
+    "win": 35.2,
+    "pf": 0.87,
+    "dd": 127.9
+   },
+   "test": {
+    "n": 640,
+    "avg_r": -0.157,
+    "total_r": -100.3,
+    "win": 34.4,
+    "pf": 0.8,
+    "dd": 114.7
+   },
+   "all": {
+    "n": 1774,
+    "avg_r": -0.119,
+    "total_r": -211.7,
+    "win": 34.9,
+    "pf": 0.84,
+    "dd": 242.6
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -13.5,
+    "ETH": -19.8,
+    "BNB": -18.5,
+    "SOL": -25.1,
+    "XRP": -31.3,
+    "ADA": -3.1,
+    "DOGE": -11.9,
+    "AVAX": -9.8,
+    "LINK": -31.5,
+    "DOT": -47.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 847,
+    "avg_r": -0.093,
+    "total_r": -78.9,
+    "win": 35.1,
+    "pf": 0.87,
+    "dd": 95.6
+   },
+   "test": {
+    "n": 400,
+    "avg_r": -0.164,
+    "total_r": -65.7,
+    "win": 34.5,
+    "pf": 0.79,
+    "dd": 84.3
+   },
+   "all": {
+    "n": 1247,
+    "avg_r": -0.116,
+    "total_r": -144.6,
+    "win": 34.9,
+    "pf": 0.85,
+    "dd": 157.4
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -39.7,
+    "ETH": -0.0,
+    "BNB": -19.2,
+    "SOL": -8.7,
+    "XRP": -21.0,
+    "ADA": -16.1,
+    "DOGE": 15.8,
+    "AVAX": 6.7,
+    "LINK": -40.0,
+    "DOT": -22.4
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 1190,
+    "avg_r": -0.092,
+    "total_r": -110.0,
+    "win": 41.7,
+    "pf": 0.85,
+    "dd": 146.7
+   },
+   "test": {
+    "n": 589,
+    "avg_r": -0.166,
+    "total_r": -98.0,
+    "win": 39.9,
+    "pf": 0.75,
+    "dd": 135.6
+   },
+   "all": {
+    "n": 1779,
+    "avg_r": -0.117,
+    "total_r": -208.0,
+    "win": 41.1,
+    "pf": 0.82,
+    "dd": 221.3
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -42.8,
+    "ETH": -26.0,
+    "BNB": -55.0,
+    "SOL": -31.2,
+    "XRP": -30.0,
+    "ADA": 6.6,
+    "DOGE": -21.6,
+    "AVAX": 2.7,
+    "LINK": 0.4,
+    "DOT": -11.1
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 226,
+    "avg_r": -0.095,
+    "total_r": -21.4,
+    "win": 38.1,
+    "pf": 0.85,
+    "dd": 49.5
+   },
+   "test": {
+    "n": 103,
+    "avg_r": -0.167,
+    "total_r": -17.2,
+    "win": 33.0,
+    "pf": 0.74,
+    "dd": 31.1
+   },
+   "all": {
+    "n": 329,
+    "avg_r": -0.117,
+    "total_r": -38.6,
+    "win": 36.5,
+    "pf": 0.81,
+    "dd": 77.8
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -2.0,
+    "ETH": -7.2,
+    "BNB": 1.4,
+    "SOL": -4.4,
+    "XRP": -5.7,
+    "ADA": -10.4,
+    "DOGE": -4.8,
+    "AVAX": -5.3,
+    "LINK": 1.5,
+    "DOT": -1.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 614,
+    "avg_r": -0.01,
+    "total_r": -6.4,
+    "win": 35.7,
+    "pf": 0.98,
+    "dd": 78.2
+   },
+   "test": {
+    "n": 330,
+    "avg_r": -0.168,
+    "total_r": -55.3,
+    "win": 30.9,
+    "pf": 0.77,
+    "dd": 91.8
+   },
+   "all": {
+    "n": 944,
+    "avg_r": -0.065,
+    "total_r": -61.8,
+    "win": 34.0,
+    "pf": 0.91,
+    "dd": 97.1
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -16.8,
+    "ETH": -17.7,
+    "BNB": 9.0,
+    "SOL": -19.7,
+    "XRP": -3.3,
+    "ADA": -12.4,
+    "DOGE": -4.5,
+    "AVAX": -1.5,
+    "LINK": 0.4,
+    "DOT": 4.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 1907,
+    "avg_r": -0.103,
+    "total_r": -196.2,
+    "win": 41.1,
+    "pf": 0.84,
+    "dd": 197.9
+   },
+   "test": {
+    "n": 923,
+    "avg_r": -0.17,
+    "total_r": -156.5,
+    "win": 39.5,
+    "pf": 0.74,
+    "dd": 191.8
+   },
+   "all": {
+    "n": 2830,
+    "avg_r": -0.125,
+    "total_r": -352.7,
+    "win": 40.6,
+    "pf": 0.81,
+    "dd": 364.9
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -66.3,
+    "ETH": -44.4,
+    "BNB": -87.0,
+    "SOL": -29.7,
+    "XRP": -32.8,
+    "ADA": 6.8,
+    "DOGE": -31.7,
+    "AVAX": -12.4,
+    "LINK": -21.2,
+    "DOT": -34.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 974,
+    "avg_r": -0.072,
+    "total_r": -70.5,
+    "win": 28.2,
+    "pf": 0.91,
+    "dd": 154.5
+   },
+   "test": {
+    "n": 483,
+    "avg_r": -0.173,
+    "total_r": -83.4,
+    "win": 28.4,
+    "pf": 0.78,
+    "dd": 152.4
+   },
+   "all": {
+    "n": 1457,
+    "avg_r": -0.106,
+    "total_r": -153.9,
+    "win": 28.3,
+    "pf": 0.87,
+    "dd": 189.1
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -56.8,
+    "ETH": -37.1,
+    "BNB": -33.6,
+    "SOL": -33.6,
+    "XRP": -19.7,
+    "ADA": 15.5,
+    "DOGE": 5.6,
+    "AVAX": 3.3,
+    "LINK": 7.9,
+    "DOT": -5.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "both",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 157,
+    "avg_r": -0.068,
+    "total_r": -10.7,
+    "win": 26.8,
+    "pf": 0.91,
+    "dd": 34.6
+   },
+   "test": {
+    "n": 83,
+    "avg_r": -0.174,
+    "total_r": -14.4,
+    "win": 25.3,
+    "pf": 0.78,
+    "dd": 24.6
+   },
+   "all": {
+    "n": 240,
+    "avg_r": -0.104,
+    "total_r": -25.1,
+    "win": 26.2,
+    "pf": 0.86,
+    "dd": 36.8
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -1.2,
+    "ETH": -4.0,
+    "BNB": 7.4,
+    "SOL": -5.0,
+    "XRP": -3.5,
+    "ADA": -7.8,
+    "DOGE": -1.7,
+    "AVAX": -2.7,
+    "LINK": -5.8,
+    "DOT": -0.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 74,
+    "avg_r": 0.013,
+    "total_r": 1.0,
+    "win": 29.7,
+    "pf": 1.02,
+    "dd": 14.2
+   },
+   "test": {
+    "n": 33,
+    "avg_r": -0.174,
+    "total_r": -5.8,
+    "win": 27.3,
+    "pf": 0.75,
+    "dd": 7.3
+   },
+   "all": {
+    "n": 107,
+    "avg_r": -0.045,
+    "total_r": -4.8,
+    "win": 29.0,
+    "pf": 0.93,
+    "dd": 19.9
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": 2.6,
+    "ETH": 1.7,
+    "BNB": 0.5,
+    "SOL": -2.8,
+    "XRP": -0.5,
+    "ADA": 2.7,
+    "DOGE": -0.5,
+    "AVAX": -5.6,
+    "LINK": -2.6,
+    "DOT": -0.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 407,
+    "avg_r": 0.135,
+    "total_r": 55.0,
+    "win": 33.2,
+    "pf": 1.2,
+    "dd": 37.1
+   },
+   "test": {
+    "n": 210,
+    "avg_r": -0.177,
+    "total_r": -37.2,
+    "win": 25.2,
+    "pf": 0.77,
+    "dd": 70.4
+   },
+   "all": {
+    "n": 617,
+    "avg_r": 0.029,
+    "total_r": 17.8,
+    "win": 30.5,
+    "pf": 1.04,
+    "dd": 70.4
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -0.7,
+    "ETH": -6.8,
+    "BNB": 14.4,
+    "SOL": -0.2,
+    "XRP": -1.7,
+    "ADA": -10.7,
+    "DOGE": -3.1,
+    "AVAX": 9.1,
+    "LINK": 2.8,
+    "DOT": 14.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 2166,
+    "avg_r": -0.129,
+    "total_r": -280.0,
+    "win": 25.9,
+    "pf": 0.79,
+    "dd": 292.3
+   },
+   "test": {
+    "n": 1086,
+    "avg_r": -0.179,
+    "total_r": -194.8,
+    "win": 24.5,
+    "pf": 0.71,
+    "dd": 199.0
+   },
+   "all": {
+    "n": 3252,
+    "avg_r": -0.146,
+    "total_r": -474.8,
+    "win": 25.4,
+    "pf": 0.76,
+    "dd": 487.6
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -73.7,
+    "ETH": -38.3,
+    "BNB": -72.5,
+    "SOL": -57.3,
+    "XRP": -53.1,
+    "ADA": -22.6,
+    "DOGE": -11.0,
+    "AVAX": -31.4,
+    "LINK": -69.2,
+    "DOT": -45.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 1550,
+    "avg_r": -0.094,
+    "total_r": -145.9,
+    "win": 27.8,
+    "pf": 0.88,
+    "dd": 173.7
+   },
+   "test": {
+    "n": 770,
+    "avg_r": -0.18,
+    "total_r": -138.4,
+    "win": 27.3,
+    "pf": 0.78,
+    "dd": 204.4
+   },
+   "all": {
+    "n": 2320,
+    "avg_r": -0.123,
+    "total_r": -284.4,
+    "win": 27.6,
+    "pf": 0.85,
+    "dd": 311.5
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -68.4,
+    "ETH": -39.6,
+    "BNB": -62.2,
+    "SOL": -39.7,
+    "XRP": -26.6,
+    "ADA": 10.5,
+    "DOGE": -7.2,
+    "AVAX": -14.8,
+    "LINK": -6.1,
+    "DOT": -30.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 216,
+    "avg_r": -0.18,
+    "total_r": -38.9,
+    "win": 29.6,
+    "pf": 0.76,
+    "dd": 65.2
+   },
+   "test": {
+    "n": 104,
+    "avg_r": 0.111,
+    "total_r": 11.5,
+    "win": 39.4,
+    "pf": 1.18,
+    "dd": 18.5
+   },
+   "all": {
+    "n": 320,
+    "avg_r": -0.086,
+    "total_r": -27.4,
+    "win": 32.8,
+    "pf": 0.88,
+    "dd": 80.3
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -5.7,
+    "ETH": 16.8,
+    "BNB": 4.4,
+    "SOL": 1.2,
+    "XRP": -11.0,
+    "ADA": -12.3,
+    "DOGE": -12.8,
+    "AVAX": 8.7,
+    "LINK": -10.9,
+    "DOT": -5.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 1673,
+    "avg_r": -0.096,
+    "total_r": -160.9,
+    "win": 40.4,
+    "pf": 0.85,
+    "dd": 195.1
+   },
+   "test": {
+    "n": 852,
+    "avg_r": -0.181,
+    "total_r": -154.6,
+    "win": 37.6,
+    "pf": 0.73,
+    "dd": 194.7
+   },
+   "all": {
+    "n": 2525,
+    "avg_r": -0.125,
+    "total_r": -315.5,
+    "win": 39.4,
+    "pf": 0.81,
+    "dd": 336.0
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -35.7,
+    "ETH": -37.6,
+    "BNB": -50.6,
+    "SOL": -38.5,
+    "XRP": -47.1,
+    "ADA": -13.6,
+    "DOGE": -8.6,
+    "AVAX": -52.4,
+    "LINK": -20.0,
+    "DOT": -11.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 249,
+    "avg_r": -0.185,
+    "total_r": -46.0,
+    "win": 21.3,
+    "pf": 0.69,
+    "dd": 71.1
+   },
+   "test": {
+    "n": 112,
+    "avg_r": 0.11,
+    "total_r": 12.3,
+    "win": 32.1,
+    "pf": 1.23,
+    "dd": 17.8
+   },
+   "all": {
+    "n": 361,
+    "avg_r": -0.093,
+    "total_r": -33.7,
+    "win": 24.7,
+    "pf": 0.83,
+    "dd": 84.6
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": -4.9,
+    "ETH": 9.7,
+    "BNB": 3.9,
+    "SOL": -7.4,
+    "XRP": -10.1,
+    "ADA": -11.3,
+    "DOGE": -13.9,
+    "AVAX": 7.7,
+    "LINK": -5.2,
+    "DOT": -1.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 1045,
+    "avg_r": -0.188,
+    "total_r": -196.8,
+    "win": 23.3,
+    "pf": 0.69,
+    "dd": 198.9
+   },
+   "test": {
+    "n": 520,
+    "avg_r": -0.186,
+    "total_r": -97.0,
+    "win": 24.8,
+    "pf": 0.7,
+    "dd": 100.7
+   },
+   "all": {
+    "n": 1565,
+    "avg_r": -0.188,
+    "total_r": -293.8,
+    "win": 23.8,
+    "pf": 0.7,
+    "dd": 299.6
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -55.5,
+    "ETH": -30.2,
+    "BNB": -50.5,
+    "SOL": -23.5,
+    "XRP": -19.7,
+    "ADA": -4.4,
+    "DOGE": -38.0,
+    "AVAX": -29.8,
+    "LINK": -13.8,
+    "DOT": -28.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 266,
+    "avg_r": -0.07,
+    "total_r": -18.5,
+    "win": 33.5,
+    "pf": 0.9,
+    "dd": 47.8
+   },
+   "test": {
+    "n": 118,
+    "avg_r": -0.19,
+    "total_r": -22.5,
+    "win": 29.7,
+    "pf": 0.75,
+    "dd": 39.0
+   },
+   "all": {
+    "n": 384,
+    "avg_r": -0.107,
+    "total_r": -41.0,
+    "win": 32.3,
+    "pf": 0.85,
+    "dd": 83.0
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -0.5,
+    "ETH": -13.2,
+    "BNB": 7.3,
+    "SOL": -8.6,
+    "XRP": -6.3,
+    "ADA": -11.3,
+    "DOGE": -4.7,
+    "AVAX": -7.6,
+    "LINK": 6.2,
+    "DOT": -2.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 1199,
+    "avg_r": -0.053,
+    "total_r": -63.7,
+    "win": 28.7,
+    "pf": 0.93,
+    "dd": 156.4
+   },
+   "test": {
+    "n": 641,
+    "avg_r": -0.196,
+    "total_r": -125.6,
+    "win": 25.0,
+    "pf": 0.76,
+    "dd": 175.3
+   },
+   "all": {
+    "n": 1840,
+    "avg_r": -0.103,
+    "total_r": -189.4,
+    "win": 27.4,
+    "pf": 0.87,
+    "dd": 234.3
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -17.1,
+    "ETH": -48.5,
+    "BNB": -24.5,
+    "SOL": -30.2,
+    "XRP": -23.6,
+    "ADA": -5.1,
+    "DOGE": -9.7,
+    "AVAX": -19.9,
+    "LINK": -2.2,
+    "DOT": -8.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 307,
+    "avg_r": -0.023,
+    "total_r": -6.9,
+    "win": 27.4,
+    "pf": 0.96,
+    "dd": 36.4
+   },
+   "test": {
+    "n": 137,
+    "avg_r": -0.197,
+    "total_r": -27.0,
+    "win": 23.4,
+    "pf": 0.69,
+    "dd": 42.7
+   },
+   "all": {
+    "n": 444,
+    "avg_r": -0.076,
+    "total_r": -33.9,
+    "win": 26.1,
+    "pf": 0.87,
+    "dd": 75.3
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": -9.1,
+    "ETH": -10.6,
+    "BNB": 6.3,
+    "SOL": -7.8,
+    "XRP": 0.5,
+    "ADA": -5.5,
+    "DOGE": -5.9,
+    "AVAX": -8.7,
+    "LINK": 3.0,
+    "DOT": 3.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 1331,
+    "avg_r": -0.118,
+    "total_r": -156.7,
+    "win": 34.2,
+    "pf": 0.84,
+    "dd": 211.6
+   },
+   "test": {
+    "n": 655,
+    "avg_r": -0.199,
+    "total_r": -130.4,
+    "win": 32.7,
+    "pf": 0.74,
+    "dd": 162.0
+   },
+   "all": {
+    "n": 1986,
+    "avg_r": -0.145,
+    "total_r": -287.2,
+    "win": 33.7,
+    "pf": 0.81,
+    "dd": 293.6
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -56.5,
+    "ETH": -29.1,
+    "BNB": -75.3,
+    "SOL": -52.7,
+    "XRP": -28.7,
+    "ADA": 1.0,
+    "DOGE": -25.3,
+    "AVAX": -2.2,
+    "LINK": -7.6,
+    "DOT": -10.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 636,
+    "avg_r": -0.166,
+    "total_r": -105.9,
+    "win": 23.9,
+    "pf": 0.73,
+    "dd": 127.3
+   },
+   "test": {
+    "n": 230,
+    "avg_r": -0.199,
+    "total_r": -45.8,
+    "win": 24.8,
+    "pf": 0.69,
+    "dd": 49.5
+   },
+   "all": {
+    "n": 866,
+    "avg_r": -0.175,
+    "total_r": -151.7,
+    "win": 24.1,
+    "pf": 0.72,
+    "dd": 162.6
+   },
+   "coins_plus": 2,
+   "per_coin": {
+    "BTC": -36.4,
+    "ETH": -17.1,
+    "BNB": -37.1,
+    "SOL": -23.1,
+    "XRP": -7.1,
+    "ADA": 0.5,
+    "DOGE": -16.7,
+    "AVAX": -9.3,
+    "LINK": 0.8,
+    "DOT": -6.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 2148,
+    "avg_r": -0.139,
+    "total_r": -298.9,
+    "win": 33.7,
+    "pf": 0.82,
+    "dd": 304.4
+   },
+   "test": {
+    "n": 1027,
+    "avg_r": -0.201,
+    "total_r": -206.1,
+    "win": 32.8,
+    "pf": 0.74,
+    "dd": 235.3
+   },
+   "all": {
+    "n": 3175,
+    "avg_r": -0.159,
+    "total_r": -505.0,
+    "win": 33.4,
+    "pf": 0.79,
+    "dd": 510.2
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -84.7,
+    "ETH": -51.1,
+    "BNB": -107.7,
+    "SOL": -48.7,
+    "XRP": -38.0,
+    "ADA": -6.5,
+    "DOGE": -37.3,
+    "AVAX": -35.3,
+    "LINK": -49.3,
+    "DOT": -46.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "cross",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 2000,
+    "avg_r": -0.109,
+    "total_r": -218.6,
+    "win": 34.8,
+    "pf": 0.85,
+    "dd": 233.3
+   },
+   "test": {
+    "n": 1003,
+    "avg_r": -0.206,
+    "total_r": -206.7,
+    "win": 32.8,
+    "pf": 0.74,
+    "dd": 209.0
+   },
+   "all": {
+    "n": 3003,
+    "avg_r": -0.142,
+    "total_r": -425.3,
+    "win": 34.1,
+    "pf": 0.81,
+    "dd": 438.6
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -56.4,
+    "ETH": -53.7,
+    "BNB": -62.8,
+    "SOL": -58.6,
+    "XRP": -50.0,
+    "ADA": -11.8,
+    "DOGE": -6.3,
+    "AVAX": -19.5,
+    "LINK": -57.3,
+    "DOT": -48.9
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 590,
+    "avg_r": -0.206,
+    "total_r": -121.5,
+    "win": 31.4,
+    "pf": 0.74,
+    "dd": 136.5
+   },
+   "test": {
+    "n": 213,
+    "avg_r": -0.147,
+    "total_r": -31.3,
+    "win": 34.3,
+    "pf": 0.81,
+    "dd": 40.1
+   },
+   "all": {
+    "n": 803,
+    "avg_r": -0.19,
+    "total_r": -152.7,
+    "win": 32.1,
+    "pf": 0.75,
+    "dd": 167.7
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -36.9,
+    "ETH": -17.0,
+    "BNB": -36.0,
+    "SOL": -21.2,
+    "XRP": -9.4,
+    "ADA": -2.8,
+    "DOGE": -19.2,
+    "AVAX": -5.7,
+    "LINK": -1.8,
+    "DOT": -2.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 69,
+    "avg_r": -0.182,
+    "total_r": -12.5,
+    "win": 21.7,
+    "pf": 0.78,
+    "dd": 25.2
+   },
+   "test": {
+    "n": 32,
+    "avg_r": -0.208,
+    "total_r": -6.7,
+    "win": 25.0,
+    "pf": 0.73,
+    "dd": 10.4
+   },
+   "all": {
+    "n": 101,
+    "avg_r": -0.19,
+    "total_r": -19.2,
+    "win": 22.8,
+    "pf": 0.76,
+    "dd": 32.7
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 1.1,
+    "ETH": -4.1,
+    "BNB": 5.0,
+    "SOL": 1.5,
+    "XRP": -5.4,
+    "ADA": -2.2,
+    "DOGE": -2.4,
+    "AVAX": -5.1,
+    "LINK": -3.5,
+    "DOT": -4.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 969,
+    "avg_r": -0.209,
+    "total_r": -202.2,
+    "win": 31.4,
+    "pf": 0.73,
+    "dd": 209.7
+   },
+   "test": {
+    "n": 483,
+    "avg_r": -0.137,
+    "total_r": -66.1,
+    "win": 34.6,
+    "pf": 0.82,
+    "dd": 85.5
+   },
+   "all": {
+    "n": 1452,
+    "avg_r": -0.185,
+    "total_r": -268.3,
+    "win": 32.4,
+    "pf": 0.76,
+    "dd": 282.2
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -45.6,
+    "ETH": -27.9,
+    "BNB": -36.5,
+    "SOL": -10.9,
+    "XRP": -23.7,
+    "ADA": -5.3,
+    "DOGE": -34.3,
+    "AVAX": -27.4,
+    "LINK": -26.7,
+    "DOT": -29.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 185,
+    "avg_r": 0.177,
+    "total_r": 32.8,
+    "win": 49.2,
+    "pf": 1.34,
+    "dd": 22.9
+   },
+   "test": {
+    "n": 73,
+    "avg_r": -0.21,
+    "total_r": -15.3,
+    "win": 34.2,
+    "pf": 0.69,
+    "dd": 16.5
+   },
+   "all": {
+    "n": 258,
+    "avg_r": 0.068,
+    "total_r": 17.5,
+    "win": 45.0,
+    "pf": 1.12,
+    "dd": 22.9
+   },
+   "coins_plus": 7,
+   "per_coin": {
+    "BTC": 4.0,
+    "ETH": 0.8,
+    "BNB": -4.1,
+    "SOL": 2.6,
+    "XRP": 3.2,
+    "ADA": 0.1,
+    "DOGE": 5.5,
+    "AVAX": -1.8,
+    "LINK": -0.3,
+    "DOT": 7.4
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 184,
+    "avg_r": 0.013,
+    "total_r": 2.5,
+    "win": 27.7,
+    "pf": 1.02,
+    "dd": 40.9
+   },
+   "test": {
+    "n": 72,
+    "avg_r": -0.211,
+    "total_r": -15.2,
+    "win": 23.6,
+    "pf": 0.72,
+    "dd": 31.9
+   },
+   "all": {
+    "n": 256,
+    "avg_r": -0.05,
+    "total_r": -12.7,
+    "win": 26.6,
+    "pf": 0.93,
+    "dd": 71.0
+   },
+   "coins_plus": 4,
+   "per_coin": {
+    "BTC": 0.7,
+    "ETH": -12.6,
+    "BNB": 14.7,
+    "SOL": 4.1,
+    "XRP": -2.6,
+    "ADA": -10.7,
+    "DOGE": -6.9,
+    "AVAX": -2.5,
+    "LINK": -0.5,
+    "DOT": 3.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 1881,
+    "avg_r": -0.119,
+    "total_r": -223.6,
+    "win": 34.0,
+    "pf": 0.84,
+    "dd": 243.6
+   },
+   "test": {
+    "n": 983,
+    "avg_r": -0.223,
+    "total_r": -219.7,
+    "win": 31.5,
+    "pf": 0.72,
+    "dd": 274.3
+   },
+   "all": {
+    "n": 2864,
+    "avg_r": -0.155,
+    "total_r": -443.3,
+    "win": 33.1,
+    "pf": 0.8,
+    "dd": 460.5
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -59.8,
+    "ETH": -46.2,
+    "BNB": -58.0,
+    "SOL": -38.5,
+    "XRP": -63.0,
+    "ADA": -23.7,
+    "DOGE": -9.2,
+    "AVAX": -69.9,
+    "LINK": -48.1,
+    "DOT": -27.0
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 2802,
+    "avg_r": -0.116,
+    "total_r": -326.2,
+    "win": 39.5,
+    "pf": 0.82,
+    "dd": 359.2
+   },
+   "test": {
+    "n": 1419,
+    "avg_r": -0.226,
+    "total_r": -321.3,
+    "win": 36.0,
+    "pf": 0.67,
+    "dd": 359.7
+   },
+   "all": {
+    "n": 4221,
+    "avg_r": -0.153,
+    "total_r": -647.5,
+    "win": 38.3,
+    "pf": 0.77,
+    "dd": 673.9
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -67.9,
+    "ETH": -85.9,
+    "BNB": -101.2,
+    "SOL": -47.1,
+    "XRP": -69.0,
+    "ADA": -41.0,
+    "DOGE": -33.1,
+    "AVAX": -83.8,
+    "LINK": -62.0,
+    "DOT": -56.4
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 2203,
+    "avg_r": -0.13,
+    "total_r": -285.6,
+    "win": 26.1,
+    "pf": 0.79,
+    "dd": 302.8
+   },
+   "test": {
+    "n": 1154,
+    "avg_r": -0.228,
+    "total_r": -263.1,
+    "win": 23.7,
+    "pf": 0.66,
+    "dd": 310.4
+   },
+   "all": {
+    "n": 3357,
+    "avg_r": -0.163,
+    "total_r": -548.7,
+    "win": 25.3,
+    "pf": 0.74,
+    "dd": 557.3
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -77.8,
+    "ETH": -65.5,
+    "BNB": -73.4,
+    "SOL": -47.5,
+    "XRP": -64.0,
+    "ADA": -22.7,
+    "DOGE": -22.6,
+    "AVAX": -75.3,
+    "LINK": -53.2,
+    "DOT": -46.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 2036,
+    "avg_r": -0.089,
+    "total_r": -182.1,
+    "win": 27.9,
+    "pf": 0.89,
+    "dd": 269.3
+   },
+   "test": {
+    "n": 1084,
+    "avg_r": -0.239,
+    "total_r": -259.4,
+    "win": 23.6,
+    "pf": 0.72,
+    "dd": 307.8
+   },
+   "all": {
+    "n": 3120,
+    "avg_r": -0.142,
+    "total_r": -441.5,
+    "win": 26.4,
+    "pf": 0.82,
+    "dd": 501.1
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -40.5,
+    "ETH": -90.5,
+    "BNB": -48.9,
+    "SOL": -30.4,
+    "XRP": -40.1,
+    "ADA": -28.1,
+    "DOGE": -24.3,
+    "AVAX": -54.3,
+    "LINK": -35.1,
+    "DOT": -49.3
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 2333,
+    "avg_r": -0.103,
+    "total_r": -241.3,
+    "win": 25.9,
+    "pf": 0.82,
+    "dd": 266.3
+   },
+   "test": {
+    "n": 1130,
+    "avg_r": -0.247,
+    "total_r": -279.0,
+    "win": 23.2,
+    "pf": 0.63,
+    "dd": 303.4
+   },
+   "all": {
+    "n": 3463,
+    "avg_r": -0.15,
+    "total_r": -520.3,
+    "win": 25.0,
+    "pf": 0.75,
+    "dd": 522.8
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -94.2,
+    "ETH": -41.7,
+    "BNB": -127.1,
+    "SOL": -44.2,
+    "XRP": -38.7,
+    "ADA": -2.8,
+    "DOGE": -52.7,
+    "AVAX": -29.6,
+    "LINK": -35.6,
+    "DOT": -53.7
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 3697,
+    "avg_r": -0.15,
+    "total_r": -554.6,
+    "win": 25.3,
+    "pf": 0.76,
+    "dd": 567.4
+   },
+   "test": {
+    "n": 1890,
+    "avg_r": -0.249,
+    "total_r": -470.3,
+    "win": 22.9,
+    "pf": 0.63,
+    "dd": 516.3
+   },
+   "all": {
+    "n": 5587,
+    "avg_r": -0.183,
+    "total_r": -1024.9,
+    "win": 24.5,
+    "pf": 0.71,
+    "dd": 1037.0
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -135.9,
+    "ETH": -147.9,
+    "BNB": -139.3,
+    "SOL": -55.5,
+    "XRP": -109.1,
+    "ADA": -64.6,
+    "DOGE": -51.8,
+    "AVAX": -111.1,
+    "LINK": -109.0,
+    "DOT": -100.8
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "pullback",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 1447,
+    "avg_r": -0.075,
+    "total_r": -109.0,
+    "win": 26.7,
+    "pf": 0.87,
+    "dd": 174.0
+   },
+   "test": {
+    "n": 724,
+    "avg_r": -0.252,
+    "total_r": -182.1,
+    "win": 22.8,
+    "pf": 0.62,
+    "dd": 207.9
+   },
+   "all": {
+    "n": 2171,
+    "avg_r": -0.134,
+    "total_r": -291.1,
+    "win": 25.4,
+    "pf": 0.78,
+    "dd": 294.8
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -53.1,
+    "ETH": -28.9,
+    "BNB": -87.8,
+    "SOL": -47.3,
+    "XRP": -25.5,
+    "ADA": 4.8,
+    "DOGE": -23.0,
+    "AVAX": -5.3,
+    "LINK": -2.5,
+    "DOT": -22.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "breakout",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 202,
+    "avg_r": 0.065,
+    "total_r": 13.0,
+    "win": 37.6,
+    "pf": 1.1,
+    "dd": 34.3
+   },
+   "test": {
+    "n": 77,
+    "avg_r": -0.26,
+    "total_r": -20.0,
+    "win": 27.3,
+    "pf": 0.67,
+    "dd": 24.1
+   },
+   "all": {
+    "n": 279,
+    "avg_r": -0.025,
+    "total_r": -7.0,
+    "win": 34.8,
+    "pf": 0.96,
+    "dd": 34.3
+   },
+   "coins_plus": 5,
+   "per_coin": {
+    "BTC": 0.3,
+    "ETH": -2.2,
+    "BNB": -11.9,
+    "SOL": -3.8,
+    "XRP": 7.9,
+    "ADA": 4.8,
+    "DOGE": 0.7,
+    "AVAX": -3.2,
+    "LINK": -4.8,
+    "DOT": 5.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "4h",
+   "entry": "cross",
+   "side": "both",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 171,
+    "avg_r": -0.091,
+    "total_r": -15.6,
+    "win": 25.7,
+    "pf": 0.85,
+    "dd": 33.9
+   },
+   "test": {
+    "n": 93,
+    "avg_r": -0.262,
+    "total_r": -24.4,
+    "win": 21.5,
+    "pf": 0.61,
+    "dd": 28.2
+   },
+   "all": {
+    "n": 264,
+    "avg_r": -0.151,
+    "total_r": -39.9,
+    "win": 24.2,
+    "pf": 0.76,
+    "dd": 53.4
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 0.9,
+    "ETH": -5.6,
+    "BNB": -0.3,
+    "SOL": -4.8,
+    "XRP": 1.8,
+    "ADA": -8.0,
+    "DOGE": -5.1,
+    "AVAX": -12.3,
+    "LINK": -7.1,
+    "DOT": 0.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "both",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 3148,
+    "avg_r": -0.146,
+    "total_r": -461.1,
+    "win": 33.1,
+    "pf": 0.81,
+    "dd": 485.7
+   },
+   "test": {
+    "n": 1612,
+    "avg_r": -0.27,
+    "total_r": -435.6,
+    "win": 30.0,
+    "pf": 0.67,
+    "dd": 485.5
+   },
+   "all": {
+    "n": 4760,
+    "avg_r": -0.188,
+    "total_r": -896.7,
+    "win": 32.1,
+    "pf": 0.76,
+    "dd": 920.6
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -118.4,
+    "ETH": -120.0,
+    "BNB": -122.9,
+    "SOL": -49.2,
+    "XRP": -108.3,
+    "ADA": -71.4,
+    "DOGE": -30.3,
+    "AVAX": -99.1,
+    "LINK": -90.6,
+    "DOT": -86.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp3R",
+   "train": {
+    "n": 554,
+    "avg_r": -0.009,
+    "total_r": -5.2,
+    "win": 30.1,
+    "pf": 0.99,
+    "dd": 85.4
+   },
+   "test": {
+    "n": 190,
+    "avg_r": -0.277,
+    "total_r": -52.5,
+    "win": 22.6,
+    "pf": 0.68,
+    "dd": 63.0
+   },
+   "all": {
+    "n": 744,
+    "avg_r": -0.078,
+    "total_r": -57.8,
+    "win": 28.2,
+    "pf": 0.9,
+    "dd": 124.1
+   },
+   "coins_plus": 3,
+   "per_coin": {
+    "BTC": 2.7,
+    "ETH": -20.3,
+    "BNB": -17.8,
+    "SOL": -10.1,
+    "XRP": -4.4,
+    "ADA": -4.5,
+    "DOGE": 0.4,
+    "AVAX": -3.7,
+    "LINK": 8.7,
+    "DOT": -8.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 772,
+    "avg_r": -0.096,
+    "total_r": -73.8,
+    "win": 40.9,
+    "pf": 0.85,
+    "dd": 102.8
+   },
+   "test": {
+    "n": 240,
+    "avg_r": -0.289,
+    "total_r": -69.5,
+    "win": 32.9,
+    "pf": 0.59,
+    "dd": 74.5
+   },
+   "all": {
+    "n": 1012,
+    "avg_r": -0.142,
+    "total_r": -143.3,
+    "win": 39.0,
+    "pf": 0.78,
+    "dd": 171.6
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -17.9,
+    "ETH": -14.8,
+    "BNB": -42.2,
+    "SOL": -16.5,
+    "XRP": -19.2,
+    "ADA": -3.5,
+    "DOGE": 3.0,
+    "AVAX": -15.2,
+    "LINK": -5.5,
+    "DOT": -11.5
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 1776,
+    "avg_r": -0.189,
+    "total_r": -335.8,
+    "win": 24.4,
+    "pf": 0.7,
+    "dd": 359.7
+   },
+   "test": {
+    "n": 833,
+    "avg_r": -0.29,
+    "total_r": -241.4,
+    "win": 21.6,
+    "pf": 0.58,
+    "dd": 241.4
+   },
+   "all": {
+    "n": 2609,
+    "avg_r": -0.221,
+    "total_r": -577.2,
+    "win": 23.5,
+    "pf": 0.66,
+    "dd": 591.2
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -91.0,
+    "ETH": -64.5,
+    "BNB": -75.0,
+    "SOL": -25.6,
+    "XRP": -54.1,
+    "ADA": -50.6,
+    "DOGE": -13.8,
+    "AVAX": -54.3,
+    "LINK": -63.8,
+    "DOT": -84.4
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp1.5R",
+   "train": {
+    "n": 1341,
+    "avg_r": -0.141,
+    "total_r": -188.4,
+    "win": 38.8,
+    "pf": 0.79,
+    "dd": 225.0
+   },
+   "test": {
+    "n": 649,
+    "avg_r": -0.297,
+    "total_r": -193.0,
+    "win": 33.3,
+    "pf": 0.59,
+    "dd": 193.5
+   },
+   "all": {
+    "n": 1990,
+    "avg_r": -0.192,
+    "total_r": -381.5,
+    "win": 37.0,
+    "pf": 0.72,
+    "dd": 406.9
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -40.5,
+    "ETH": -37.8,
+    "BNB": -67.1,
+    "SOL": -18.1,
+    "XRP": -36.3,
+    "ADA": -35.0,
+    "DOGE": -9.8,
+    "AVAX": -43.2,
+    "LINK": -32.0,
+    "DOT": -61.6
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp3R",
+   "train": {
+    "n": 994,
+    "avg_r": -0.086,
+    "total_r": -85.9,
+    "win": 27.8,
+    "pf": 0.89,
+    "dd": 177.0
+   },
+   "test": {
+    "n": 517,
+    "avg_r": -0.302,
+    "total_r": -155.9,
+    "win": 21.7,
+    "pf": 0.66,
+    "dd": 155.9
+   },
+   "all": {
+    "n": 1511,
+    "avg_r": -0.16,
+    "total_r": -241.8,
+    "win": 25.7,
+    "pf": 0.8,
+    "dd": 319.5
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -16.0,
+    "ETH": -42.7,
+    "BNB": -26.9,
+    "SOL": -5.2,
+    "XRP": -19.2,
+    "ADA": -29.0,
+    "DOGE": -9.9,
+    "AVAX": -28.2,
+    "LINK": -17.6,
+    "DOT": -47.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R-be",
+   "train": {
+    "n": 1023,
+    "avg_r": -0.153,
+    "total_r": -156.5,
+    "win": 25.8,
+    "pf": 0.76,
+    "dd": 180.6
+   },
+   "test": {
+    "n": 313,
+    "avg_r": -0.314,
+    "total_r": -98.4,
+    "win": 20.4,
+    "pf": 0.54,
+    "dd": 102.8
+   },
+   "all": {
+    "n": 1336,
+    "avg_r": -0.191,
+    "total_r": -254.9,
+    "win": 24.6,
+    "pf": 0.7,
+    "dd": 276.0
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -51.3,
+    "ETH": -23.5,
+    "BNB": -46.6,
+    "SOL": -22.1,
+    "XRP": -23.9,
+    "ADA": -15.4,
+    "DOGE": 1.8,
+    "AVAX": -20.4,
+    "LINK": -29.3,
+    "DOT": -24.2
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": true,
+   "exit": "tp2R",
+   "train": {
+    "n": 877,
+    "avg_r": -0.123,
+    "total_r": -107.8,
+    "win": 34.1,
+    "pf": 0.84,
+    "dd": 129.3
+   },
+   "test": {
+    "n": 272,
+    "avg_r": -0.331,
+    "total_r": -89.9,
+    "win": 27.9,
+    "pf": 0.6,
+    "dd": 98.0
+   },
+   "all": {
+    "n": 1149,
+    "avg_r": -0.172,
+    "total_r": -197.7,
+    "win": 32.6,
+    "pf": 0.78,
+    "dd": 220.8
+   },
+   "coins_plus": 1,
+   "per_coin": {
+    "BTC": -38.8,
+    "ETH": -19.3,
+    "BNB": -39.2,
+    "SOL": -19.5,
+    "XRP": -25.5,
+    "ADA": -5.9,
+    "DOGE": 8.1,
+    "AVAX": -24.1,
+    "LINK": -20.2,
+    "DOT": -13.4
+   },
+   "ok": false
+  },
+  {
+   "tf": "1h",
+   "entry": "ema20",
+   "side": "buy",
+   "trend": false,
+   "exit": "tp2R",
+   "train": {
+    "n": 1520,
+    "avg_r": -0.175,
+    "total_r": -266.7,
+    "win": 32.4,
+    "pf": 0.77,
+    "dd": 295.6
+   },
+   "test": {
+    "n": 730,
+    "avg_r": -0.339,
+    "total_r": -247.5,
+    "win": 27.7,
+    "pf": 0.6,
+    "dd": 251.0
+   },
+   "all": {
+    "n": 2250,
+    "avg_r": -0.228,
+    "total_r": -514.1,
+    "win": 30.8,
+    "pf": 0.71,
+    "dd": 530.7
+   },
+   "coins_plus": 0,
+   "per_coin": {
+    "BTC": -75.0,
+    "ETH": -56.6,
+    "BNB": -69.2,
+    "SOL": -22.3,
+    "XRP": -61.0,
+    "ADA": -43.9,
+    "DOGE": -2.3,
+    "AVAX": -54.7,
+    "LINK": -52.7,
+    "DOT": -76.5
+   },
+   "ok": false
+  }
+ ]
+}
