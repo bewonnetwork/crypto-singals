@@ -1056,10 +1056,11 @@ function pipsOf(t,v){ if(!isFx(t)) return ""; const ps=t.coin.includes("JPY")?0.
 function pillOpen(){ return `<span class="pill p-open">● ${tr("চলছে","Active")}</span>`; }
 function gradeOf(c){ return c==null?"—":c>=85?"A+":c>=78?"A":c>=70?"B":c>=60?"C":"D"; }
 function confColor(c){ return c>=75?"var(--up)":c>=60?"var(--accent)":"var(--down)"; }
-function isMine(t){ return t.src==="manual"; }
+function isMine(t){ return t.src==="manual"||t.src==="partner"; }
+function mineTag(t){ return t.src==="partner"?"🤝":"👤"; }
 function confBlock(t){ if(t.conf==null&&!isMine(t)) return "";
   const why=(t.why||[]).map(w=>w.startsWith("⚠")?`<li class="warn">${esc(whyText(w.replace(/^⚠\s*/,"")))}</li>`:`<li>${esc(whyText(w))}</li>`).join("");
-  if(isMine(t)) return `<div class="conf"><div class="top"><span class="muted">👤 ${tr("অ্যাডমিনের নিজের সিগনাল · ইঞ্জিন মিলিয়ে দেখেছে","Admin's own signal · engine check")}</span><b style="color:var(--accent)">${esc(t.chk||"")}</b></div>${why?`<ul class="why">${why}</ul>`:""}${t.note?`<p class="muted" style="margin:0;font-size:12.5px">📝 ${esc(t.note)}</p>`:""}</div>`;
+  if(isMine(t)) return `<div class="conf"><div class="top"><span class="muted">${t.src==="partner"?`🤝 ${tr("পার্টনার সিগনাল","Partner signal")}${t.from?` · ${esc(t.from)}`:""}`:`👤 ${tr("অ্যাডমিনের নিজের সিগনাল","Admin's own signal")}`} · ${tr("ইঞ্জিন মিলিয়ে দেখেছে","engine check")}</span><b style="color:var(--accent)">${esc(t.chk||"")}</b></div>${why?`<ul class="why">${why}</ul>`:""}${t.note?`<p class="muted" style="margin:0;font-size:12.5px">📝 ${esc(t.note)}</p>`:""}</div>`;
   return `<div class="conf"><div class="top"><span class="muted">Confidence · ${tr("গ্রেড","Grade")} <b class="grade" style="color:${confColor(t.conf)}">${gradeOf(t.conf)}</b></span><b style="color:${confColor(t.conf)}">${t.conf}%</b></div>
     <div class="cbar"><i style="width:${t.conf}%;background:${confColor(t.conf)}"></i></div>${why?`<ul class="why">${why}</ul>`:""}</div>`; }
 function pillSide(s){ return `<span class="pill ${s==="BUY"?"p-buy":"p-sell"}">${s==="BUY"?"▲ BUY":"▼ SELL"}</span>`; }
@@ -1478,7 +1479,7 @@ function watchBlock(s){ const w=(s.watch||[]).slice(0,6); if(!w.length) return "
   return `<div class="card" style="padding:14px 16px;margin-bottom:14px"><h3 style="margin:0 0 4px;font-size:15px">👀 Market Watch</h3><p class="muted" style="margin:0 0 10px;font-size:12.5px">${tr("সেটআপ তৈরি হচ্ছে কিন্তু পাকা নয় — এগুলো ট্রেড সিগনাল নয়, তাই Entry/TP/SL নেই।","Setups forming but not confirmed — these are not trade signals, so no Entry/TP/SL.")}</p>
   ${w.map(t=>{ const miss=(t.why||[]).filter(x=>x.startsWith("⚠")).length, ok=(t.why||[]).length-miss;
     return `<a href="${goOf(t)}" style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line);color:inherit;text-decoration:none"><span class="sym">${logoOf(t)}<span><b>${esc(isFx(t)?t.name||t.coin:t.coin)}</b> ${pillSide(t.side)}<div class="muted" style="font-size:12px">✓ ${ok} · ⚠ ${miss} · ${ago(t.time)}</div></span></span><span class="cpill" style="color:${confColor(t.score)}">${gradeOf(t.score)} · ${t.score}/100</span></a>`; }).join("")}</div>`; }
-function confPill(t){ return isMine(t)?`<span class="cpill" style="color:var(--accent)">👤 ${esc(t.chk||"Admin")}</span>`:t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${gradeOf(t.conf)} · ${t.conf}%</span>`:'<span class="muted">—</span>'; }
+function confPill(t){ return isMine(t)?`<span class="cpill" style="color:var(--accent)">${mineTag(t)} ${esc(t.chk||"Admin")}</span>`:t.conf!=null?`<span class="cpill" style="color:${confColor(t.conf)}">${gradeOf(t.conf)} · ${t.conf}%</span>`:'<span class="muted">—</span>'; }
 
 async function fearGreed(s){
   let v=null,l="";
@@ -1970,7 +1971,7 @@ function demoTick(d,PX,sig){ let n=0;
       if(opp){ dmSell(d,c,h.qty,PX[c],{bot:true,why:"SELL signal"}); n++; }
       else if(h.sig&&!still){ dmSell(d,c,h.qty,PX[c],{bot:true,why:"signal closed"}); n++; } });
     open.forEach(t=>{ const k=key(t), p=PX[t.coin]; if(t.side!=="BUY"||d.bot.taken[k]||!p) return;
-      if(t.src==="manual"?!d.bot.mine:(t.conf??0)<d.bot.min) return; if(d.bot.coins.length&&!d.bot.coins.includes(t.coin)) return;
+      if(isMine(t)?!d.bot.mine:(t.conf??0)<d.bot.min) return; if(d.bot.coins.length&&!d.bot.coins.includes(t.coin)) return;
       if(!(p>t.sl&&p<t.tp1)){ d.bot.taken[k]="skip"; n++; return; }
       const nb=Object.values(d.hold).filter(h=>h.bot).length; if(nb>=d.bot.max||d.cash<d.bot.amt||d.hold[t.coin]) return;
       dmBuy(d,t.coin,d.bot.amt,p,{bot:true}); const h=d.hold[t.coin]; h.tp=d.bot.tp==="tp1"?t.tp1:t.tp2; h.sl=t.sl; h.bot=true; h.sig=k; d.bot.taken[k]="buy"; n++; });
@@ -2423,7 +2424,7 @@ async function pageDemo(){
           <div class="dx-sw ${b.on?"on":""}"><div><b>${b.on?tr("বট চালু আছে","Bot is ON"):tr("বট বন্ধ আছে","Bot is OFF")}</b><span>${b.on?tr("নতুন BUY সিগনাল এলে নিজে ডেমো টাকায় কিনবে","Buys new BUY signals with demo money by itself"):tr("চালু করলে বট নিজে ডেমো ট্রেড করবে","Turn on and the bot will place demo trades")}</span></div><button id="bxT" aria-pressed="${b.on}">${b.on?"ON":"OFF"}</button></div>
           <label class="dm-f">${tr("প্রতি ট্রেডে কত ডেমো USDT","Demo USDT per trade")}<input id="bxA" type="number" min="10" max="5000" step="10" value="${b.amt}"></label>
           <label class="dm-f">${tr("কমপক্ষে কত Confidence হলে কিনবে","Minimum confidence to buy")}<select id="bxM">${[[60,"60%+ (C)"],[70,"70%+ (B)"],[78,"78%+ (A)"],[85,"85%+ (A+)"]].map(([v,l])=>`<option value="${v}"${b.min==v?" selected":""}>${l}</option>`).join("")}</select></label>
-          <label class="dm-f">${tr("অ্যাডমিনের নিজের সিগনাল (👤) ফলো করবে","Follow admin's own signals (👤)")}<select id="bxN"><option value="1"${b.mine?" selected":""}>${tr("হ্যাঁ, সবসময়","Yes, always")}</option><option value="0"${b.mine?"":" selected"}>${tr("না, শুধু ইঞ্জিনের সিগনাল","No, engine signals only")}</option></select></label>
+          <label class="dm-f">${tr("অ্যাডমিন (👤) ও পার্টনার (🤝) সিগনাল ফলো করবে","Follow admin (👤) and partner (🤝) signals")}<select id="bxN"><option value="1"${b.mine?" selected":""}>${tr("হ্যাঁ, সবসময়","Yes, always")}</option><option value="0"${b.mine?"":" selected"}>${tr("না, শুধু ইঞ্জিনের সিগনাল","No, engine signals only")}</option></select></label>
           <label class="dm-f">${tr("একসাথে সর্বোচ্চ কয়টা ট্রেড","Max open trades at once")}<select id="bxX">${[1,2,3,5,8].map(v=>`<option${b.max==v?" selected":""}>${v}</option>`).join("")}</select></label>
           <label class="dm-f">${tr("কোথায় লাভ নিয়ে বেচবে","Where to take profit")}<select id="bxP"><option value="tp1"${b.tp==="tp1"?" selected":""}>TP1 (${tr("কাছের লক্ষ্য, কম ঝুঁকি","nearer target, safer")})</option><option value="tp2"${b.tp!=="tp1"?" selected":""}>TP2 (${tr("দূরের লক্ষ্য, বেশি লাভ","further target, more profit")})</option></select></label>
           <div class="dm-f">${tr("কোন কোন কয়েনে ট্রেড করবে (কিছু না বাছলে সব)","Which coins to trade (none selected = all)")}<div class="bx-c">${(s.coins||SITE.botCoins).map(c=>`<button type="button" data-bc="${c}" class="${b.coins.includes(c)?"on":""}">${c}</button>`).join("")}</div></div>

@@ -420,7 +420,7 @@ def _close(t, result, when, state):
         "opened": t.get("opened", ""), "closed": when, "result": result,
         "conf": t.get("conf"), "why": t.get("why", []),
         "market": t.get("market", "crypto"), "name": t.get("name", t["coin"]),
-        **{k: t[k] for k in ("src", "chk", "note", "exit") if t.get(k) not in (None, "")}})
+        **{k: t[k] for k in ("src", "chk", "note", "exit", "from") if t.get(k) not in (None, "")}})
     del state["history"][300:]
 
 
@@ -489,6 +489,8 @@ def fmt(x, sym=None):
         return f"{x:,.2f}"
     if x >= 1:
         return f"{x:,.4f}"
+    if x < 0.01:
+        return f"{x:.8f}"
     return f"{x:.6f}"
 
 
@@ -564,7 +566,7 @@ SITE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "da
 
 def export_site(state):
     """ওয়েবসাইটের জন্য docs/data/signals.json বানায় (কিছু বদলালে তবেই)"""
-    keep = ("coin", "side", "entry", "sl", "tp1", "tp2", "tp1_hit", "opened", "rsi", "conf", "why", "market", "name", "src", "chk", "note")
+    keep = ("coin", "side", "entry", "sl", "tp1", "tp2", "tp1_hit", "opened", "rsi", "conf", "why", "market", "name", "src", "chk", "note", "from")
     payload = {
         "interval": INTERVAL, "coins": COINS, "stats": state["stats"], "min_conf": MIN_CONFIDENCE,
         "open": [{k: t.get(k) for k in keep} for t in state["open"]],
@@ -1261,18 +1263,24 @@ MANUAL_HELP = ("🧑‍💼 <b>নিজের সিগনাল দেওয�
                "১) সহজ (বট নিজে TP/SL হিসাব করবে):\n<code>/signal BTC BUY</code>\n\n"
                "২) নিজের দাম দিয়ে:\n<code>/signal BTC BUY entry 65000 tp 66000 67000 sl 64000</code>\n\n"
                "৩) সাথে নোট:\n<code>/signal ETH SELL tp 2400 2300 sl 2600 note সাপোর্ট ভেঙেছে</code>\n\n"
-               "অন্য কমান্ড:\n<code>/list</code> — খোলা সিগনাল\n<code>/close BTC</code> — নিজে হাতে বন্ধ\n\n"
-               f"কয়েন: {', '.join(COINS)}\nForex: {', '.join(FX_PAIRS)}\n\n"
+               "৪) পার্টনারের সিগনাল: তাদের পোস্টটা এই বটে <b>Forward</b> করুন (TP আর SL থাকতে হবে)।\n\n"
+               "অন্য কমান্ড:\n<code>/list</code> — খোলা সিগনাল\n<code>/close BTC</code> — নিজে হাতে বন্ধ\n"
+               "<code>/partner @channel</code> — পার্টনার চ্যানেল থেকে নিজে নিজে সিগনাল নেওয়া\n\n"
+               f"কয়েন: {', '.join(COINS)} (অন্য কয়েনও চলবে, যেমন <code>/signal PEPE BUY</code>)\nForex: {', '.join(FX_PAIRS)}\n\n"
                "⏱ মেসেজ দেওয়ার পর সর্বোচ্চ ১৫–২০ মিনিটের মধ্যে চ্যানেল ও সাইটে যাবে।")
 
 
-def parse_signal(text):
+def parse_signal(text, first_is_coin=False):
     """যেকোনো সাধারণ ফরম্যাটের সিগনাল লেখা থেকে coin/side/entry/tp/sl বের করে"""
     note = ""
     m = re.search(r"\bnote\b[:\-\s]*(.+)", text, re.I | re.S)
     if m:
         note, text = _clean_text(m.group(1), 160), text[:m.start()]
     text = re.sub(r"(?<=\d),(?=\d{3}\b)", "", text)              # 65,000 -> 65000
+    text = re.sub(r"\b\d+\s*/\s*\d+\b|\b\d+\s*(m|min|h|hr|d|w)\b", " ", text, flags=re.I)   # 71/100, 1h, 15m বাদ
+    any_coin = None                                              # তালিকার বাইরের কয়েন: BTC/USDT, #PEPE, $SUI
+    m = re.search(r"\b([A-Za-z]{2,10})\s*[/\-_]?\s*USDT\b", text, re.I) or re.search(r"[#$]([A-Za-z]{2,10})\b", text)
+    pair_coin = m.group(1).upper() if m and m.group(1).upper() not in _STOP else None
     text = re.sub(r"\b\d+(\.\d+)?\s*(x\b|%)", " ", text, flags=re.I)  # 10x, 2% বাদ
     toks = re.findall(r"[A-Za-z]+[1-4]?(?![\d.])|\d+(?:\.\d+)?", text)      # TP1, TP2 এক টুকরা
     side, coin, cur = None, None, "pos"
@@ -1296,13 +1304,19 @@ def parse_signal(text):
             base = up if up in FX_PAIRS else re.sub(r"(USDT|USD|PERP)$", "", up) or up
             if up in FX_PAIRS or base in COINS:
                 coin = up if up in FX_PAIRS else base
+            elif first_is_coin and not any_coin and 2 <= len(base) <= 10:
+                any_coin = base
+            first_is_coin = False
     if cur == "pos" and len(nums["pos"]) == 4:                    # entry tp1 tp2 sl
         e, a, b, c = nums["pos"]
         nums = {"pos": [], "entry": [e], "tp": [a, b], "sl": [c]}
     elif nums["pos"] and not nums["entry"]:
         nums["entry"] = nums["pos"]
-    entry = sum(nums["entry"][:2]) / len(nums["entry"][:2]) if nums["entry"] else None
-    return {"coin": coin, "side": side, "entry": entry, "tps": nums["tp"][:2],
+    en = nums["entry"][:2]
+    if len(en) == 2 and abs(en[1] / en[0] - 1) > 0.05:           # দ্বিতীয়টা Entry রেঞ্জ নয়
+        en = en[:1]
+    entry = sum(en) / len(en) if en else None
+    return {"coin": pair_coin or coin or any_coin, "side": side, "entry": entry, "tps": nums["tp"][:2],
             "sl": nums["sl"][0] if nums["sl"] else None, "note": note}
 
 
@@ -1323,9 +1337,12 @@ def manual_check(df, side, htf, btc_trend, is_btc, fx):
 def manual_message(coin, t):
     icon = "🟢" if t["side"] == "BUY" else "🔴"
     fx = coin in FX_PAIRS
-    link = f"{SITE_URL}#/forex" if fx else f"{SITE_URL}#/coin/{coin}"
+    link = f"{SITE_URL}#/forex" if fx else f"{SITE_URL}#/coin/{coin}" if coin in COINS else f"{SITE_URL}#/signals"
     rr = abs(t["tp1"] - t["entry"]) / max(abs(t["entry"] - t["sl0"]), 1e-12)
-    return (f"🧑‍💼 <b>ADMIN SIGNAL</b> (হাতে দেওয়া)\n{icon} <b>{t['side']} — {label(coin) if fx else coin + '/USDT'}</b>\n\n"
+    head = (f"🤝 <b>PARTNER SIGNAL</b> — সোর্স: {html.escape(t.get('from') or 'Partner')}" if t.get("src") == "partner"
+            else "🧑‍💼 <b>ADMIN SIGNAL</b> (হাতে দেওয়া)")
+    tail = ("এটা পার্টনার চ্যানেলের সিগনাল (অনুমতি নিয়ে শেয়ার করা)" if t.get("src") == "partner" else "এটা অ্যাডমিনের নিজের মতামত")
+    return (f"{head}\n{icon} <b>{t['side']} — {label(coin) if fx else coin + '/USDT'}</b>\n\n"
             f"Entry: <code>{fmt(t['entry'], coin)}</code>\n"
             f"TP1: <code>{fmt(t['tp1'], coin)}</code>\n"
             f"TP2: <code>{fmt(t['tp2'], coin)}</code>\n"
@@ -1335,22 +1352,24 @@ def manual_message(coin, t):
             + "".join(f"• {w}\n" for w in t["why"])
             + (f"\n📝 {html.escape(t['note'])}\n" if t.get("note") else "")
             + f"\n📊 <a href=\"{link}\">চার্ট ও সব সিগনাল দেখুন</a>\n\n"
-            f"⚠️ এটা অ্যাডমিনের নিজের মতামত, লাভের নিশ্চয়তা নয়। Not financial advice. Use Stop Loss. DYOR.")
+            f"⚠️ {tail}, লাভের নিশ্চয়তা নয়। Not financial advice. Use Stop Loss. DYOR.")
 
 
 def _candles_for(sym, interval=None):
     return get_fx_candles(sym, interval) if sym in FX_PAIRS else get_candles(sym, interval)
 
 
-def add_manual_signal(p, state, frames, btc_trend):
+def add_manual_signal(p, state, frames, btc_trend, src="manual", who=""):
     """ঠিক থাকলে সিগনাল খোলে আর (চ্যানেলের মেসেজ, অ্যাডমিনকে উত্তর) ফেরত দেয়"""
     coin, side = p["coin"], p["side"]
     if not coin or not side:
         return None, "❌ কয়েন বা BUY/SELL বুঝিনি।\n\n" + MANUAL_HELP
     if any(t["coin"] == coin for t in state["open"]):
         return None, f"❌ {coin}-এ আগে থেকেই একটা সিগনাল খোলা আছে। আগে <code>/close {coin}</code> দিন।"
-    if sum(1 for t in state["open"] if t.get("src") == "manual") >= MANUAL_MAX_OPEN:
-        return None, f"❌ একসাথে সর্বোচ্চ {MANUAL_MAX_OPEN}টা নিজের সিগনাল খোলা রাখা যায়।"
+    if sum(1 for t in state["open"] if t.get("src")) >= MANUAL_MAX_OPEN:
+        return None, f"❌ একসাথে সর্বোচ্চ {MANUAL_MAX_OPEN}টা নিজের/পার্টনার সিগনাল খোলা রাখা যায়।"
+    if src == "partner" and (not p["tps"] or p["sl"] is None):
+        return None, "❌ এই পোস্টে TP আর SL নেই (এটা ট্রেড সিগনাল নয়), তাই নেওয়া হয়নি।"
     fx = coin in FX_PAIRS
     if fx and not fx_market_open(datetime.now(timezone.utc)):
         return None, "❌ Forex মার্কেট এখন বন্ধ (শনি-রবি)। খুললে আবার দিন।"
@@ -1378,7 +1397,7 @@ def add_manual_signal(p, state, frames, btc_trend):
     ok, total, why = manual_check(df, side, htf, btc_trend, coin == "BTC", fx)
     t = {"coin": coin, "side": side, "entry": entry, "sl": sl, "tp1": tp1, "tp2": tp2, "tp1_hit": False, "age": 0,
          "checked_until": cur.time.isoformat(), "sl0": sl, "opened": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-         "rsi": round(float(cur.rsi), 1), "conf": None, "why": why, "chk": f"{ok}/{total}", "src": "manual",
+         "rsi": round(float(cur.rsi), 1), "conf": None, "why": why, "chk": f"{ok}/{total}", "src": src, "from": who,
          "note": p["note"], "market": "forex" if fx else "crypto", "name": label(coin)}
     warn = f"\n\n⚠ ইঞ্জিনের মাত্র {ok}/{total} নিশ্চয়তা মিলেছে — ঝুঁকি বেশি।" if ok * 2 < total else ""
     return t, f"✅ {coin} {side} সিগনাল চ্যানেল ও সাইটে গেছে।{warn}"
@@ -1408,7 +1427,7 @@ def read_owner_commands(state, frames, btc_trend):
     api = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/"
     try:
         r = HTTP.get(api + "getUpdates", params={"offset": state.get("tg_offset", 0), "timeout": 0,
-                                                 "allowed_updates": json.dumps(["message"])}, timeout=20).json()
+                                                 "allowed_updates": json.dumps(["message", "channel_post"])}, timeout=20).json()
     except Exception as e:
         print("inbox error:", str(e)[:60])
         return []
@@ -1418,9 +1437,25 @@ def read_owner_commands(state, frames, btc_trend):
     admins, out = None, []
     for u in r.get("result", []):
         state["tg_offset"] = u["update_id"] + 1
+        post = u.get("channel_post")
+        if post:                                   # পার্টনার চ্যানেলের পোস্ট (বট সেখানে অ্যাডমিন থাকলে আসে)
+            pc = post.get("chat", {})
+            keys = {str(pc.get("id")), "@" + str(pc.get("username", "")).lower()}
+            ptext = (post.get("text") or post.get("caption") or "").strip()
+            if keys & set(state.get("partners", [])) and ptext and time.time() - post.get("date", 0) < 2 * 3600:
+                t, why_not = add_manual_signal(parse_signal(ptext), state, frames, btc_trend, "partner", pc.get("title", "Partner"))
+                if t and send_telegram(manual_message(t["coin"], t)):
+                    state["open"].append(t)
+                    print(f"partner {t['side']} {t['coin']} from {pc.get('title')}")
+                elif not t:
+                    print("partner post skipped:", re.sub(r"<[^>]+>", "", why_not)[:70])
+            continue
         msg = u.get("message") or {}
         text = (msg.get("text") or msg.get("caption") or "").strip()
         chat, uid = msg.get("chat", {}), str(msg.get("from", {}).get("id", ""))
+        fo = msg.get("forward_origin") or {}
+        fwd = (fo.get("chat") or fo.get("sender_user") or msg.get("forward_from_chat") or {})
+        fwd = fwd.get("title") or fwd.get("first_name") or fo.get("sender_user_name") or ""
         if chat.get("type") != "private" or not text or not uid:
             continue
         if admins is None:
@@ -1442,9 +1477,21 @@ def read_owner_commands(state, frames, btc_trend):
         if cmd in ("/start", "/help"):
             send_telegram(MANUAL_HELP, chat["id"])
         elif cmd == "/list":
-            rows = [f"• {label(t['coin'])} {t['side']} @ {fmt(t['entry'], t['coin'])}" + (" (নিজের)" if t.get("src") == "manual" else " (ইঞ্জিন)")
+            rows = [f"• {label(t['coin'])} {t['side']} @ {fmt(t['entry'], t['coin'])}" + {"manual": " (নিজের)", "partner": " (পার্টনার)"}.get(t.get("src"), " (ইঞ্জিন)")
                     for t in state["open"]]
             send_telegram("📋 খোলা সিগনাল:\n" + ("\n".join(rows) or "কিছু নেই"), chat["id"])
+        elif cmd == "/partner":
+            ps, arg = state.setdefault("partners", []), low.split()[1:]
+            names = [("@" + a.lstrip("@")) if not a.lstrip("-").isdigit() else a for a in arg if a != "off"]
+            for nm in names:
+                if "off" in arg:
+                    if nm in ps:
+                        ps.remove(nm)
+                elif nm not in ps and len(ps) < 10:
+                    ps.append(nm)
+            send_telegram("🤝 পার্টনার চ্যানেল: " + (", ".join(ps) or "কোনোটা নেই") +
+                          "\n\nযোগ: <code>/partner @channelname</code>\nবাদ: <code>/partner off @channelname</code>\n\n"
+                          "ℹ️ ওই চ্যানেলের মালিককে আপনার বটকে সেখানে <b>অ্যাডমিন</b> করতে হবে, নইলে বট পোস্ট দেখতে পাবে না।", chat["id"])
         elif cmd == "/close":
             p = parse_signal(text[6:] + " buy")
             pub, reply = close_manual(p["coin"], state, frames) if p["coin"] else (None, "❌ কোন কয়েন? যেমন: <code>/close BTC</code>")
@@ -1452,7 +1499,8 @@ def read_owner_commands(state, frames, btc_trend):
                 out.append(pub)
             send_telegram(reply, chat["id"])
         elif cmd in ("/signal", "/s") or (re.search(r"\b(buy|sell|long|short)\b", low) and re.search(r"\b(sl|stop)", low)):
-            t, reply = add_manual_signal(parse_signal(re.sub(r"^/\w+(@\w+)?", "", text)), state, frames, btc_trend)
+            t, reply = add_manual_signal(parse_signal(re.sub(r"^/\w+(@\w+)?", "", text), first_is_coin=cmd in ("/signal", "/s")),
+                                         state, frames, btc_trend, "partner" if fwd else "manual", fwd)
             if t and send_telegram(manual_message(t["coin"], t)):
                 state["open"].append(t)
                 print(f"manual {t['side']} {t['coin']}")
@@ -1583,6 +1631,15 @@ def run_once(force_digest=False):
         run_forex(state, outbox, fails)
     except Exception as e:
         print("forex error:", e)
+
+    # (খ২.৪) তালিকার বাইরের কয়েনে খোলা নিজের/পার্টনার সিগনাল
+    for coin in sorted({t["coin"] for t in state["open"]} - set(COINS) - set(FX_PAIRS)):
+        try:
+            df = add_indicators(get_candles(coin)[0])
+            frames_extra = update_open_trades(coin, df, state)
+            outbox += frames_extra
+        except Exception as e:
+            fails.append(f"{coin}: {str(e)[:60]}")
 
     # (খ২.৫) অ্যাডমিনের নিজের সিগনাল (Telegram ইনবক্স থেকে)
     try:
