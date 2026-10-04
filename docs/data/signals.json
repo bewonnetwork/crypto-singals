@@ -14,12 +14,13 @@
  ],
  "stats": {
   "win": 0,
-  "loss": 4,
+  "loss": 5,
   "tp2": 0,
   "expired": 0
  },
  "min_conf": 60,
- "open": [
+ "open": [],
+ "history": [
   {
    "coin": "BTC",
    "side": "BUY",
@@ -27,9 +28,9 @@
    "sl": 84669.2228761645,
    "tp1": 85354.7771238355,
    "tp2": 85697.55424767101,
-   "tp1_hit": false,
    "opened": "2026-10-03T17:00:00+00:00",
-   "rsi": 56.4,
+   "closed": "2026-10-03T21:00:00+00:00",
+   "result": "SL",
    "conf": 64,
    "why": [
     "EMA 9/21 ক্রস + RSI ঠিক সীমায় + ভলিউম বেশি",
@@ -40,14 +41,8 @@
     "RSI 56 ভালো জায়গায়"
    ],
    "market": "crypto",
-   "name": "BTC",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  }
- ],
- "history": [
+   "name": "BTC"
+  },
   {
    "coin": "XAUUSD",
    "side": "SELL",
@@ -153,5 +148,5 @@
    }
   }
  },
- "updated": "2026-10-03T18:39:12+00:00"
+ "updated": "2026-10-04T00:29:19+00:00"
 }
