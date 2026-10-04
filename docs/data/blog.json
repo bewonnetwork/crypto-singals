@@ -1,6 +1,274 @@
 {
  "posts": [
   {
+   "slug": "position-size-and-the-1-percent-rule",
+   "type": "learn",
+   "date": "2026-10-04T06:15:17+00:00",
+   "title": "Position Size and the 1% Rule",
+   "title_bn": "এক ট্রেডে কত টাকা? ১% নিয়ম",
+   "sum_en": "How much you risk per trade matters more than which coin you pick. The 1% rule keeps one bad trade from hurting your account.",
+   "sum_bn": "কোন কয়েন কিনছেন তার চেয়ে বড় কথা এক ট্রেডে কত ঝুঁকি নিচ্ছেন। ১% নিয়ম একটা খারাপ ট্রেড থেকে আপনার টাকা বাঁচায়।",
+   "body": {
+    "pts_bn": [
+     "নিয়ম: এক ট্রেডে মোট টাকার ১–২%-এর বেশি হারানোর ঝুঁকি নেবেন না।",
+     "হিসাব: ঝুঁকির টাকা ÷ (Entry থেকে Stop Loss-এর দূরত্ব %) = ট্রেডের আকার। যেমন ১০০০ ডলারে ১% = ১০ ডলার ঝুঁকি; Stop Loss ২% দূরে হলে ট্রেডের আকার ৫০০ ডলার।",
+     "Stop Loss দূরে হলে ট্রেড ছোট হবে, কাছে হলে বড় হতে পারে। ঝুঁকির টাকা একই থাকে।",
+     "টানা ১০টা ট্রেড হারলেও এই নিয়মে মাত্র ১০% মতো যায়, আপনি খেলায় টিকে থাকেন।",
+     "ওয়েবসাইটের ডেমো পাতায় নকল টাকায় এই হিসাব প্র্যাকটিস করুন।"
+    ],
+    "pts_en": [
+     "Rule: never risk more than 1–2% of your total money on one trade.",
+     "Maths: risk amount ÷ (distance from entry to stop-loss in %) = position size. With $1,000, 1% is $10 of risk; if the stop is 2% away the position is $500.",
+     "A wider stop means a smaller position, a tighter stop allows a bigger one. The money at risk stays the same.",
+     "Even ten losing trades in a row cost only about 10%, so you stay in the game.",
+     "Practise this with play money on the demo page of our site."
+    ]
+   }
+  },
+  {
+   "slug": "crypto-market-digest-october-4-2026",
+   "type": "digest",
+   "date": "2026-10-04T06:15:17+00:00",
+   "title": "Crypto Market Digest — October 4, 2026",
+   "sum_en": "BTW leads today's movers (-35.4%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে BTW (-35.4%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "RAIN",
+      "name": "Rain",
+      "price": 0.01294473,
+      "ch": 29.38,
+      "vol": 16347479,
+      "rank": 17
+     },
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "price": 0.05316,
+      "ch": 22.73,
+      "vol": 171893406,
+      "rank": 130
+     },
+     {
+      "sym": "PUMP",
+      "name": "Pump.fun",
+      "price": 0.00645838,
+      "ch": 18.28,
+      "vol": 355227996,
+      "rank": 39
+     },
+     {
+      "sym": "ZRO",
+      "name": "LayerZero",
+      "price": 2.03,
+      "ch": 16.11,
+      "vol": 238207411,
+      "rank": 94
+     },
+     {
+      "sym": "MON",
+      "name": "Monad",
+      "price": 0.0345197,
+      "ch": 9.39,
+      "vol": 52468178,
+      "rank": 127
+     },
+     {
+      "sym": "SKY",
+      "name": "Sky",
+      "price": 0.096192,
+      "ch": 8.46,
+      "vol": 20199830,
+      "rank": 51
+     },
+     {
+      "sym": "TIA",
+      "name": "Celestia",
+      "price": 0.487325,
+      "ch": 8.25,
+      "vol": 64219558,
+      "rank": 122
+     },
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "price": 0.410565,
+      "ch": 7.32,
+      "vol": 19150472,
+      "rank": 126
+     }
+    ],
+    "losers": [
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 0.928535,
+      "ch": -35.37,
+      "vol": 29915231,
+      "rank": 43
+     },
+     {
+      "sym": "XDC",
+      "name": "XDC Network",
+      "price": 0.03253149,
+      "ch": -4.61,
+      "vol": 10607187,
+      "rank": 102
+     },
+     {
+      "sym": "NIGHT",
+      "name": "Midnight",
+      "price": 0.04950872,
+      "ch": -3.99,
+      "vol": 51978957,
+      "rank": 88
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "price": 1.04,
+      "ch": -3.17,
+      "vol": 1746016,
+      "rank": 137
+     },
+     {
+      "sym": "MNT",
+      "name": "Mantle",
+      "price": 0.639311,
+      "ch": -1.92,
+      "vol": 20796811,
+      "rank": 53
+     },
+     {
+      "sym": "FF",
+      "name": "Falcon Finance",
+      "price": 0.114915,
+      "ch": -1.5,
+      "vol": 3489355,
+      "rank": 131
+     },
+     {
+      "sym": "UNI",
+      "name": "Uniswap",
+      "price": 9.0,
+      "ch": -1.44,
+      "vol": 411971453,
+      "rank": 23
+     },
+     {
+      "sym": "TRUMP",
+      "name": "Official Trump",
+      "price": 2.05,
+      "ch": -1.3,
+      "vol": 131778518,
+      "rank": 108
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 84912.01,
+      "ch": 0.31
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2694.74,
+      "ch": 0.63
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 786.69,
+      "ch": 2.56
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 120.81,
+      "ch": 0.99
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.4917,
+      "ch": 0.39
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.244,
+      "ch": -0.89
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.09281,
+      "ch": -0.2
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 11.071,
+      "ch": 1.68
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 14.035,
+      "ch": 0.08
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.186,
+      "ch": 2.86
+     }
+    ],
+    "up": 96,
+    "total": 140,
+    "fear_greed": {
+     "value": 65,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.12613,
+      "ch": 0.16
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.32461,
+      "ch": 0.39
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 157.81599,
+      "ch": -0.2
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4176.6001,
+      "ch": -0.74
+     }
+    ],
+    "stats": {
+     "win": 0,
+     "loss": 5,
+     "tp2": 0,
+     "expired": 0
+    },
+    "open": 0
+   }
+  },
+  {
    "slug": "trending-in-crypto-october-3-2026",
    "type": "trending",
    "date": "2026-10-03T14:50:09+00:00",
@@ -174,5 +442,5 @@
    }
   }
  ],
- "updated": "2026-10-03T14:50:09+00:00"
+ "updated": "2026-10-04T06:15:17+00:00"
 }
