@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T16:58:46+00:00",
+ "updated": "2026-10-04T20:03:14+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,69 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "127ef5c1bc",
+   "title": "Bitcoin Core’s new fix closes gap that could redirect funds without stealing keys",
+   "link": "https://cryptoslate.com/bitcoin-cores-new-fix-closes-gap-that-could-redirect-funds-without-stealing-keys/",
+   "source": "CryptoSlate",
+   "published": "2026-10-04T19:40:34+00:00",
+   "summary": "A missing-output SIGHASH_SINGLE request can leave recipients unbound; Core’s merged PSBT repair has no confirmed fixed-release destination. The post Bitcoin Core’s new fix closes gap that could redirect funds without stealing keys appeared…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/psbt-output-check-v2.webp"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-04T18:51:50+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "faa7a84d51",
+   "title": "New Treasury rules could change how stablecoin issuers get your dollars back",
+   "link": "https://cryptoslate.com/new-treasury-rules-could-change-how-stablecoin-issuers-get-your-dollars-back/",
+   "source": "CryptoSlate",
+   "published": "2026-10-04T18:40:36+00:00",
+   "summary": "US government debt is one of the easiest assets in the world to borrow against, which lets financial companies get cash without giving up their investments for good. Washington is rewriting the rules for that borrowing, and the result will…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/treasury-clearing-stablecoins-1.webp"
+  },
+  {
+   "id": "4fb4683e37",
+   "title": "There's an election next month: State of Crypto",
+   "link": "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto",
+   "source": "CoinDesk",
+   "published": "2026-10-04T18:30:00+00:00",
+   "summary": "Congress is gone from Washington for the final pre-election recess, and it's time to take stock of what's going on ahead of November.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/39aef47b93f60ebf7e668e371d51320693bb79e3-3364x1894.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "935ca44a8d",
+   "title": "India’s local crypto exchanges get just 0.7% of inflows, Chainalysis reports",
+   "link": "https://cryptoslate.com/indias-local-crypto-exchanges-get-just-0-7-of-inflows-chainalysis-reports/",
+   "source": "CryptoSlate",
+   "published": "2026-10-04T18:20:31+00:00",
+   "summary": "Chainalysis’s new regional chapters separate national crypto participation from domestic exchange business, with Brazil-based platforms receiving 12.5% of inflows. The post India’s local crypto exchanges get just 0.7% of inflows,…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/india-brazil-market-capture.webp"
+  },
+  {
+   "id": "44e80b3058",
+   "title": "Drift hack recovery opened near one cent per dollar lost",
+   "link": "https://cryptoslate.com/drift-hack-recovery-opened-near-one-cent-per-dollar-lost/",
+   "source": "CryptoSlate",
+   "published": "2026-10-04T17:20:02+00:00",
+   "summary": "Drift's October 1 launch quote valued DFX near one cent per USDT lost, while redemption ends future pool participation for the tokens burned. The post Drift hack recovery opened near one cent per dollar lost appeared first on CryptoSlate .",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/dfx-burn-usdt-redemption.webp"
+  },
+  {
+   "id": "a7b1c075dd",
+   "title": "Trump Taps Jay Clayton, the SEC Chair Who Sued Ripple, to Lead AI Push",
+   "link": "https://decrypt.co/380019/trump-jay-clayton-sec-ripple-ai-push-super-intelligence",
+   "source": "Decrypt",
+   "published": "2026-10-04T17:01:03+00:00",
+   "summary": "President Trump named a new \"Super Intelligence Force\" to coordinate federal AI policy, with Director of National Intelligence Jay Clayton at the helm. As SEC chair, Clayton launched crypto lawsuits including the agency's case against…",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2021/04/bitcoin-jay-clayton-sec-gID_4.jpg"
+  },
   {
    "id": "657886b281",
    "title": "Vitalik-inspired AI payment system can send expired deposits to its treasury",
@@ -144,24 +207,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M42W4H59F8TR0F58VVB4T7YG/russia-kremlin-moscow-red-square-digital-rouble-ruble-national-cryptocurrency.png"
   },
   {
-   "id": "e1b0d0ed7e",
-   "title": "Bankers sue to overturn OCC trust-bank rule used by crypto firms",
-   "link": "https://cryptoslate.com/bankers-sue-to-overturn-occ-trust-bank-rule-used-by-crypto-firms/",
-   "source": "CryptoSlate",
-   "published": "2026-10-03T20:00:08+00:00",
-   "summary": "The Independent Community Bankers of America sued the OCC in federal court in Washington on Oct. 2, two weeks after the agency approved Agora National Trust Bank, Catena Trust Bank and Bastion Platforms. American Banker reported that the…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/occ-trust-bank-gateway.webp"
-  },
-  {
-   "id": "0fa234510d",
-   "title": "Hedge funds built a $1.2 trillion Treasury trade on money they have to keep borrowing",
-   "link": "https://cryptoslate.com/hedge-funds-built-a-1-2-trillion-treasury-trade-on-money-they-have-to-keep-borrowing/",
-   "source": "CryptoSlate",
-   "published": "2026-10-03T18:40:22+00:00",
-   "summary": "Companies can own a mountain of US government debt without betting that bond prices will rise. Hedge funds buy Treasury securities and sell futures against them to collect a small pricing gap, borrowing most of the purchase money to make…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/hedge-fund-treasury-basis-trade-standard.jpg"
-  },
-  {
    "id": "b3898e2d6f",
    "title": "Chainalysis Used AI to Trace the $387M Bitget Hack Back to North Korea",
    "link": "https://decrypt.co/380005/chainalysis-ai-87m-bitget-hack-north-korea",
@@ -178,15 +223,6 @@
    "published": "2026-10-03T16:01:03+00:00",
    "summary": "The YouTuber says OpenAI suspended his account twice while he trained a small, uncensored model built to run on your own computer.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2020/05/Screenshot-2020-05-06-at-12-gID_4.jpg"
-  },
-  {
-   "id": "30e4ed4c16",
-   "title": "ESMA proposes ending EU custody and transfer services for non-compliant stablecoins",
-   "link": "https://cryptoslate.com/esma-proposes-ending-eu-custody-and-transfer-services-for-non-compliant-stablecoins/",
-   "source": "CryptoSlate",
-   "published": "2026-10-03T16:00:54+00:00",
-   "summary": "Non-compliant tokens could lose licensed custody and transfer access if the proposal becomes law, with exit rules still unresolved. The post ESMA proposes ending EU custody and transfer services for non-compliant stablecoins appeared first…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/eu-stablecoin-compliance-split.webp"
   },
   {
    "id": "478a2512d7",
@@ -225,15 +261,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/cb41936ab0c9767ce6de085eb8b95a680f9dc9ac-6000x4161.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
   },
   {
-   "id": "832d4e6061",
-   "title": "Six US banks have failed in 2026 but the numbers look nothing like 2023",
-   "link": "https://cryptoslate.com/six-us-banks-have-failed-in-2026-but-the-numbers-look-nothing-like-2023/",
-   "source": "CryptoSlate",
-   "published": "2026-10-03T13:20:17+00:00",
-   "summary": "Six US banks have failed in 2026 so far, which is one more than in 2023 and enough to make another banking-crisis headline practically write itself. But before we start reliving Silicon Valley Bank, it's worth looking at what those six…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/us-bank-failure-count.webp"
-  },
-  {
    "id": "e21e4e065e",
    "title": "The Pope Has Thoughts on AI Art—And They're Not Flattering",
    "link": "https://decrypt.co/379983/pope-leo-human-art-ai-creation",
@@ -259,15 +286,6 @@
    "published": "2026-10-03T13:00:00+00:00",
    "summary": "Tokenization is not just about putting individual stocks and funds onchain. The next step could be entire investment portfolios that can be traded, rebalanced and eventually managed in real-time.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/ebc74e2355bdaf89e5b68901d1642e7e17f7a651-5637x3824.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-03T12:20:00+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
   },
   {
    "id": "a910c319e3",
@@ -709,24 +727,6 @@
    "published": "2026-10-02T05:50:41+00:00",
    "summary": "US spot bitcoin ETFs recorded $2.65 billion in net inflows in September, their second-largest monthly inflow since October 2025.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/09/article-16x9-v2.png"
-  },
-  {
-   "id": "2bf272a55d",
-   "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
-   "link": "https://cointelegraph.com/news/south-korea-tokenized-securities-rules-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-02T05:08:32+00:00",
-   "summary": "South Korea’s financial regulator proposed detailed rules for tokenized securities, including capital requirements, OTC trading licenses and retail investment limits.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XE74WBH0J6TWS0FYDKCWPS/south-korea-tokenization.png"
-  },
-  {
-   "id": "9505e781e1",
-   "title": "SEC’s innovation exemption poses constraint on bringing stock tokens to US, Robinhood crypto chief says",
-   "link": "https://www.theblock.co/news/regulation/2026-10-02-secs-innovation-exemption-robinhood-417538",
-   "source": "The Block",
-   "published": "2026-10-02T05:04:41+00:00",
-   "summary": "Robinhood's Johann Kerbrat told The Block that Robinhood is still working through the SEC's latest innovation exemption on tokenized stocks.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/kerbrat_option_C_darkgreen.jpg"
   }
  ]
 }
