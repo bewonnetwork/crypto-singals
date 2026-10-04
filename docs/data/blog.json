@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-4-2026",
+   "type": "trending",
+   "date": "2026-10-04T16:58:42+00:00",
+   "title": "Trending in Crypto — October 4, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (SI, SUI, GRASS…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "SI",
+      "name": "Super Iguana",
+      "rank": 951,
+      "price": 0.01802107527393057,
+      "ch": 45.93
+     },
+     {
+      "sym": "SUI",
+      "name": "Sui",
+      "rank": 25,
+      "price": 1.2249833133240349,
+      "ch": 4.67
+     },
+     {
+      "sym": "GRASS",
+      "name": "Grass",
+      "rank": 120,
+      "price": 0.6925373510052822,
+      "ch": -4.44
+     },
+     {
+      "sym": "FET",
+      "name": "Artificial Superintelligence Alliance",
+      "rank": 109,
+      "price": 0.2464067990410474,
+      "ch": 8.91
+     },
+     {
+      "sym": "PONS",
+      "name": "Pons",
+      "rank": 163,
+      "price": 0.3964587433076768,
+      "ch": -2.36
+     },
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "rank": 126,
+      "price": 0.05607369242263594,
+      "ch": 9.87
+     },
+     {
+      "sym": "PUMP",
+      "name": "Pump.fun",
+      "rank": 40,
+      "price": 0.006723541011031698,
+      "ch": 9.85
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 106,
+      "price": 0.009303173677318201,
+      "ch": 1.11
+     },
+     {
+      "sym": "SAND",
+      "name": "The Sandbox",
+      "rank": 181,
+      "price": 0.07584388327933508,
+      "ch": 2.51
+     },
+     {
+      "sym": "QNT",
+      "name": "Quant",
+      "rank": 33,
+      "price": 255.82435739433615,
+      "ch": 0.56
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 85350,
+      "ch": 0.6,
+      "vol": 14655100993,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2704.6,
+      "ch": 0.87,
+      "vol": 4835208632,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 121.79,
+      "ch": 1.77,
+      "vol": 1846805820,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.5,
+      "ch": 0.99,
+      "vol": 1017377594,
+      "rank": 5
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 788.58,
+      "ch": 1.13,
+      "vol": 708970798,
+      "rank": 4
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.96,
+      "ch": 6.56,
+      "vol": 572683304,
+      "rank": 21
+     },
+     {
+      "sym": "SUI",
+      "name": "Sui",
+      "price": 1.23,
+      "ch": 4.73,
+      "vol": 564809755,
+      "rank": 25
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1336.82,
+      "ch": 3.23,
+      "vol": 498718675,
+      "rank": 10
+     }
+    ]
+   }
+  },
+  {
    "slug": "position-size-and-the-1-percent-rule",
    "type": "learn",
    "date": "2026-10-04T06:15:17+00:00",
@@ -442,5 +590,5 @@
    }
   }
  ],
- "updated": "2026-10-04T06:15:17+00:00"
+ "updated": "2026-10-04T16:58:42+00:00"
 }

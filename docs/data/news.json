@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T12:31:44+00:00",
+ "updated": "2026-10-04T16:58:46+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,105 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "657886b281",
+   "title": "Vitalik-inspired AI payment system can send expired deposits to its treasury",
+   "link": "https://cryptoslate.com/vitalik-inspired-ai-payment-system-can-send-expired-deposits-to-its-treasury/",
+   "source": "CryptoSlate",
+   "published": "2026-10-04T16:20:35+00:00",
+   "summary": "zkAPI offers an exit without server clearance, but challenged spending states, vault pauses and note expiry can constrain recovery. The post Vitalik-inspired AI payment system can send expired deposits to its treasury appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/vitalik-ethereum-recovery.webp"
+  },
+  {
+   "id": "2bd2129f2f",
+   "title": "Banking Group Sues to Block Crypto's 'Side Door' Into the Banking System",
+   "link": "https://decrypt.co/380017/banking-group-sues-block-crypto-side-door-banking",
+   "source": "Decrypt",
+   "published": "2026-10-04T16:01:03+00:00",
+   "summary": "The Independent Community Bankers of America argues the OCC's national trust charters give crypto firms a \"side door into the banking system\" without the safeguards that bind traditional banks.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/banks2-gID_7.jpg"
+  },
+  {
+   "id": "3761eb4a16",
+   "title": "Lido’s proposed staking route needs over 13 times the default entry bond",
+   "link": "https://cryptoslate.com/lidos-proposed-staking-route-needs-over-13-times-the-default-entry-bond/",
+   "source": "CryptoSlate",
+   "published": "2026-10-04T15:20:58+00:00",
+   "summary": "A higher entry bond lowers collateral per ETH at full balance, but funding and operator profiles determine fee-efficiency gains. The post Lido’s proposed staking route needs over 13 times the default entry bond appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-staking-bond-burden.webp"
+  },
+  {
+   "id": "96bec3203e",
+   "title": "'Uptober' Starts Green as Bitcoin ETFs Draw $134 Million",
+   "link": "https://decrypt.co/380007/uptober-starts-green-bitcoin-etfs-draw-134-million",
+   "source": "Decrypt",
+   "published": "2026-10-04T15:01:03+00:00",
+   "summary": "Spot Bitcoin ETFs took in $134.4 million over the first two trading days of October, rebounding from a Sept. 30 outflow as a weak jobs report cooled Fed rate-hike bets.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-05-gID_7.png"
+  },
+  {
+   "id": "755be3a70a",
+   "title": "3x Bitcoin and Ether futures funds clear SEC listing hurdle",
+   "link": "https://cryptoslate.com/3x-bitcoin-and-ether-futures-funds-clear-sec-listing-hurdle/",
+   "source": "CryptoSlate",
+   "published": "2026-10-04T14:20:32+00:00",
+   "summary": "The products target triple daily futures-benchmark returns before fees, while registration effectiveness and a first trading date remain unconfirmed. The post 3x Bitcoin and Ether futures funds clear SEC listing hurdle appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/3x-crypto-start-line.webp"
+  },
+  {
+   "id": "81c097777c",
+   "title": "Crypto poured years into new products. The next challenge is keeping users",
+   "link": "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
+   "source": "CoinDesk",
+   "published": "2026-10-04T14:00:00+00:00",
+   "summary": "Crypto firms have spent years building financial products on blockchains. Getting people to use them — and keep using them — is becoming the next challenge.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/9ee7275965dc93a941f1a56376be262c2efce6af-4536x3027.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "b25b7d34a9",
+   "title": "Trump taps intel chief Jay Clayton to lead new Super Intelligence Force",
+   "link": "https://cointelegraph.com/news/trump-taps-jay-clayton-to-lead-new-super-intelligence-force?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-04T13:48:48+00:00",
+   "summary": "President Donald Trump said US intel chief Clayton will lead the SIF, reporting to the president and Chief of Staff Susie Wiles.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M43HDDKT65TRCAPN5G00GZPC/white-house-tron.png"
+  },
+  {
+   "id": "d678432a67",
+   "title": "The same Fed rate hike can help stablecoins and hurt Bitcoin borrowers",
+   "link": "https://cryptoslate.com/the-same-fed-rate-hike-can-help-stablecoins-and-hurt-bitcoin-borrowers/",
+   "source": "CryptoSlate",
+   "published": "2026-10-04T13:20:06+00:00",
+   "summary": "When you hold a dollar stablecoin, somebody else may be earning interest on the assets backing your balance, while a company borrowing to buy Bitcoin has to find the money to pay its lenders. Both businesses are crypto-native, but a higher…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-slot-machine-1.webp"
+  },
+  {
+   "id": "cd770a1f4a",
+   "title": "'We Have Identified You, Sir': Near Intents Recovers $3.8 Million After 48-Hour Ultimatum",
+   "link": "https://decrypt.co/380014/near-intents-recovers-3-8-million-after-48-hour-ultimatum",
+   "source": "Decrypt",
+   "published": "2026-10-04T13:01:03+00:00",
+   "summary": "Near Intents said the roughly $3.8 million drained in an exploit on Thursday was returned in full, a day after the team said it had identified the attacker and gave them 48 hours to return the funds.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Crime-crypto-decrypt-style-01-gID_7.png"
+  },
+  {
+   "id": "97067ae19b",
+   "title": "The Clarity Act stalled. Bankers aren’t hitting the brakes yet on crypto dealmaking",
+   "link": "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
+   "source": "CoinDesk",
+   "published": "2026-10-04T13:00:00+00:00",
+   "summary": "Crypto M&A has hit record levels, but the Clarity Act’s Senate setback leaves dealmakers weighing how much regulatory uncertainty still matters.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/66abae4ea7817e1052c710afba1f9fa54651f319-5434x3622.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "847d7b07d4",
+   "title": "Japan adds Garantex to list of Russia sanctions over Ukraine war",
+   "link": "https://cointelegraph.com/news/japan-adds-garantex-to-list-of-russia-sanctions-over-ukraine-war?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-04T12:42:00+00:00",
+   "summary": "Garantex was previously sanctioned by the US, the EU and other jurisdictions for helping Russian entities evade financial restrictions.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M43EQ7PEEE3Z1JRGK2E12RMJ/hi-crypto-offers-russia-no-way-out-from-western-sanctions2.png"
+  },
   {
    "id": "4edfe6b2b7",
    "title": "Binance will hold some Brazil crypto deposits until users explain where the money came from",
@@ -22,7 +121,7 @@
    "title": "El Salvador receives $138 million from IMF after Bitcoin waivers granted",
    "link": "https://cointelegraph.com/news/el-salvador-receives-138-million-from-imf-after-bitcoin-waivers-granted?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-04T09:39:51+00:00",
+   "published": "2026-10-04T09:40:00+00:00",
    "summary": "Efforts will continue to reduce the state’s involvement in Bitcoin-related activities and to strengthen crypto‑asset regulation and governance, the IMF said.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M434D7ZXME5ND5M2XADZCGVE/hi-how-bitcoin-is-transforming-lives-in-el-salvador.png"
   },
@@ -40,7 +139,7 @@
    "title": "Russia’s Finance Ministry pays wages in digital rubles for first time",
    "link": "https://cointelegraph.com/news/russias-finance-ministry-pays-wages-in-digital-rubles-for-first-time?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-04T07:16:53+00:00",
+   "published": "2026-10-04T07:18:00+00:00",
    "summary": "Work on the introduction of the digital ruble to the budget process is being carried out by the Bank of Russia together with the Ministry of Finance.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M42W4H59F8TR0F58VVB4T7YG/russia-kremlin-moscow-red-square-digital-rouble-ruble-national-cryptocurrency.png"
   },
@@ -180,58 +279,22 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M40T1J9CWEBBB07G6QG02X27/hi-5-greatest-hacks-in-the-cryptocurrency-industry.png"
   },
   {
-   "id": "441701b4b0",
-   "title": "Leveraged funds’ Bitcoin futures shorts fall by 5,300 BTC-equivalent as longs shrink",
-   "link": "https://cryptoslate.com/leveraged-funds-bitcoin-futures-shorts-fall-by-5300-btc-equivalent-as-longs-shrink/",
-   "source": "CryptoSlate",
-   "published": "2026-10-03T11:30:07+00:00",
-   "summary": "The September 29 snapshot shows leveraged funds’ reported shorts fell about 5,300 BTC-equivalent across four products, while longs and open interest also declined. The post Leveraged funds’ Bitcoin futures shorts fall by 5,300…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-futures-road-ahead.webp"
-  },
-  {
-   "id": "0a8c03acd4",
-   "title": "Arbitrum pauses new Stylus activations over AI-assisted attack risks",
-   "link": "https://cryptoslate.com/arbitrum-pauses-new-stylus-activations-over-ai-assisted-attack-risks/",
-   "source": "CryptoSlate",
-   "published": "2026-10-03T09:50:30+00:00",
-   "summary": "Existing programs keep running, while a separate proof-conflict guard can delay unconfirmed withdrawals to Ethereum. The post Arbitrum pauses new Stylus activations over AI-assisted attack risks appeared first on CryptoSlate .",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/arbitrum-stylus-activation-tray.webp"
-  },
-  {
    "id": "396a1e763c",
    "title": "Community banks sue OCC over trust bank charters of crypto firms",
    "link": "https://cointelegraph.com/news/community-banks-sue-occ-over-trust-bank-charters-of-crypto-firms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-03T09:25:01+00:00",
+   "published": "2026-10-03T09:28:00+00:00",
    "summary": "Community banking group’s lawsuit claims OCC has overstepped its mandate from Congress.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M40GZ6STY7R8TJPNFCZ17PJ8/courtroom-court-lawsuit-justice-jurisdiction-breaking-news-3.png"
   },
   {
-   "id": "f9241a4506",
-   "title": "Plunging GPU prices threaten AI hosts, and new hedges step in",
-   "link": "https://cryptoslate.com/plunging-gpu-prices-threaten-ai-hosts-and-new-hedges-step-in/",
-   "source": "CryptoSlate",
-   "published": "2026-10-03T07:30:22+00:00",
-   "summary": "Companies building AI applications can rent powerful computers instead of buying the equipment themselves, paying for access to the graphics processing units, or GPUs, that run their software. Lower rental prices make those applications…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ai-compute-price-crossroads-1.webp"
-  },
-  {
    "id": "c3e59c87a2",
-   "title": "Trump is expected to appoint Jay Clayton as new AI czar: Reports",
+   "title": "Trump expected to appoint Jay Clayton as new AI czar: Reports",
    "link": "https://cointelegraph.com/news/trump-is-expected-to-appoint-jay-clayton-as-new-ai-czar-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-03T07:06:08+00:00",
+   "published": "2026-10-03T07:09:00+00:00",
    "summary": "US intel chief Clayton may be asked to also oversee AI innovation and development along with “self policing” tech CEOs.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M408YEEABFWBFJG6GQ567JX7/hi-china-own-ai.png"
-  },
-  {
-   "id": "32f186ee8e",
-   "title": "US judge kills Milei’s LIBRA memecoin lawsuit, leaving investors stranded",
-   "link": "https://cryptoslate.com/us-judge-kills-mileis-libra-memecoin-lawsuit-leaving-investors-stranded/",
-   "source": "CryptoSlate",
-   "published": "2026-10-03T03:40:54+00:00",
-   "summary": "A September 29 ruling closes the LIBRA/M3M3 district-court case after continuity, pleading and jurisdiction failures. The post US judge kills Milei’s LIBRA memecoin lawsuit, leaving investors stranded appeared first on CryptoSlate .",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/libra-rico-timeline-standard-v2.jpg"
   },
   {
    "id": "4cae606ac9",
@@ -664,69 +727,6 @@
    "published": "2026-10-02T05:04:41+00:00",
    "summary": "Robinhood's Johann Kerbrat told The Block that Robinhood is still working through the SEC's latest innovation exemption on tokenized stocks.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/kerbrat_option_C_darkgreen.jpg"
-  },
-  {
-   "id": "f0239726e0",
-   "title": "Zano exploiter minted more than a quadrillion fUSD before blockchain rollback",
-   "link": "https://cointelegraph.com/news/zano-exploiter-created-369m-unauthorized-zano-before-blockchain-rollback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-02T05:02:23+00:00",
-   "summary": "The unauthorized coins were indistinguishable from legitimate ZANO, leaving the team unable to remove them without rolling back the blockchain.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XFTC4Y1X9C4TEN43SCBMC8/coins.jpg"
-  },
-  {
-   "id": "5321acb456",
-   "title": "Core Lightning warns attackers are targeting unpatched nodes",
-   "link": "https://cointelegraph.com/news/core-lightning-urges-upgrade-amid-reports-attackers-targeting-unpatched-nodes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-02T04:18:43+00:00",
-   "summary": "Node operators running version 26.06.7 or earlier were told to upgrade immediately.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XCTY0H5CWTX6KGY7GT99ER/lightning-network.jpg"
-  },
-  {
-   "id": "f69f34108f",
-   "title": "Ethereum’s zkAPI brings privacy-preserving API payments to mainnet",
-   "link": "https://cointelegraph.com/news/ethereum-zkapi-private-api-payments-mainnet?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-02T03:34:25+00:00",
-   "summary": "Ethereum’s zkAPI is now live on mainnet, turning an earlier zero-knowledge API payment proposal into a working implementation for private, prepaid access.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3X972EWX5K7AHE6FH5F9MX3/privacy-ai.png"
-  },
-  {
-   "id": "d16597412b",
-   "title": "NEAR Intents says it’s identified the hacker, gives 48-hour ultimatum",
-   "link": "https://cointelegraph.com/news/near-intents-says-its-identified-the-hacker-gives-48-hour-ultimatum?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-02T02:02:13+00:00",
-   "summary": "“We have identified you, sir,” NEAR Intents general manager Alex Shevchenko said on Friday after the protocol was hacked for $3.8 million.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3X5BHCXH6SN25VJD4G0A2MX/hacker.jpg"
-  },
-  {
-   "id": "dbd0d84c4d",
-   "title": "SEC moves to clear custody hurdle for advisers offering crypto",
-   "link": "https://cointelegraph.com/news/sec-moves-to-clear-custody-hurdle-for-advisers-offering-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-02T01:07:08+00:00",
-   "summary": "Custody requirements have kept some investment advisers from offering certain crypto to clients, a regulatory hurdle the SEC’s proposal could remove.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1XP9EEWDQ84ZSGS1X5SFP19/hi-sbuidl-blackrocks-tokenized-treasury-fund.jpg"
-  },
-  {
-   "id": "b737975a32",
-   "title": "Ethereum Foundation launches zkAPI to let users pay for AI models without revealing identity",
-   "link": "https://www.theblock.co/news/defi/2026-10-01-ethereum-foundation-launches-zkapi-417504",
-   "source": "The Block",
-   "published": "2026-10-02T00:22:58+00:00",
-   "summary": "Users deposit funds into an Ethereum vault and authorize spending with zero-knowledge proofs, so the API provider can't link requests to a payer.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/image-1790891524107.png"
-  },
-  {
-   "id": "57f139cdca",
-   "title": "China warns foreign spies about crypto, Singapore dominates Asia: Asia Express",
-   "link": "https://cointelegraph.com/magazine/china-claims-crypto-used-by-spies-singapore-dominates-asian-crypto-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-01T23:17:47+00:00",
-   "summary": "Singapore’s crypto economy grows 55%, South Korea set to make crypto market makers legal, and Chinese spy ministry warns would-be foreign spies it’s watching the blockchain.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3WVGY0BWCZXBWJ212RM1CMX/magazineasia-expresshighway.jpg"
   }
  ]
 }
