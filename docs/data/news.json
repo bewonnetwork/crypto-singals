@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T23:02:49+00:00",
+ "updated": "2026-10-05T01:53:33+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,24 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "c5b00b0156",
+   "title": "Zcash gets a Washington lobbyist to push crypto policy",
+   "link": "https://cointelegraph.com/news/zcash-gets-a-washington-lobbyist-to-push-crypto-policy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-05T00:35:34+00:00",
+   "summary": "The newly registered lobbying operation lists the CLARITY Act and two digital asset tax proposals among the issues it plans to lobby on in Washington.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M44PCPNQJ0FDJMVNEEJEXBKG/zcash-1.jpg"
+  },
+  {
+   "id": "a80aa04a9d",
+   "title": "El Salvador’s $666 million Bitcoin reserve survives IMF review",
+   "link": "https://cryptoslate.com/el-salvadors-666-million-bitcoin-reserve-survives-imf-review/",
+   "source": "CryptoSlate",
+   "published": "2026-10-05T00:00:39+00:00",
+   "summary": "Waivers for missed accumulation criteria accompany renewed commitments, with no further Bitcoin accumulation envisaged beyond documented donations. The post El Salvador’s $666 million Bitcoin reserve survives IMF review appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/el-salvador-bitcoin-fortress.webp"
+  },
   {
    "id": "b5cf57916c",
    "title": "Former SEC boss made AI Czar, Bitcoin may hit $600K this cycle: Hodler’s Digest",
@@ -160,15 +178,6 @@
    "published": "2026-10-04T13:48:48+00:00",
    "summary": "President Donald Trump said US intel chief Clayton will lead the SIF, reporting to the president and Chief of Staff Susie Wiles.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M43HDDKT65TRCAPN5G00GZPC/white-house-tron.png"
-  },
-  {
-   "id": "d678432a67",
-   "title": "The same Fed rate hike can help stablecoins and hurt Bitcoin borrowers",
-   "link": "https://cryptoslate.com/the-same-fed-rate-hike-can-help-stablecoins-and-hurt-bitcoin-borrowers/",
-   "source": "CryptoSlate",
-   "published": "2026-10-04T13:20:06+00:00",
-   "summary": "When you hold a dollar stablecoin, somebody else may be earning interest on the assets backing your balance, while a company borrowing to buy Bitcoin has to find the money to pay its lenders. Both businesses are crypto-native, but a higher…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-slot-machine-1.webp"
   },
   {
    "id": "cd770a1f4a",
@@ -718,15 +727,6 @@
    "published": "2026-10-02T08:11:54+00:00",
    "summary": "Bitcoin is up roughly 3% in October as traders await September’s jobs data, while rising bond yields, a stronger dollar weigh on broader markets.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/705735639a0b6346c5f13b5330dd574c2aaf87d2-1200x760.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "dacbdcc80e",
-   "title": "South Korea crypto exchange profits fall 78% in H1 amid trading slump",
-   "link": "https://cointelegraph.com/news/south-korea-crypto-exchange-profits-fall-78-percent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-02T05:53:27+00:00",
-   "summary": "South Korean crypto exchange operating profits fell 78% in the first half of 2026 as trading volumes, market capitalization and customer deposits declined.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3XHV0FC144KSRRK1DF5EHGE/south-korea-flag-stocks.png"
   }
  ]
 }
