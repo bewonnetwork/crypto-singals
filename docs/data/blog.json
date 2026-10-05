@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-5-2026",
+   "type": "trending",
+   "date": "2026-10-05T18:18:31+00:00",
+   "title": "Trending in Crypto — October 5, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (HI, AGENTCAT, EDEL…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "HI",
+      "name": "Hood Inu",
+      "rank": 597,
+      "price": 0.03700439343166347,
+      "ch": 180.72
+     },
+     {
+      "sym": "AGENTCAT",
+      "name": "Agent Cat",
+      "rank": 765,
+      "price": 0.026233176918613772,
+      "ch": 0
+     },
+     {
+      "sym": "EDEL",
+      "name": "Edel",
+      "rank": 646,
+      "price": 0.04959722798481505,
+      "ch": 3.2
+     },
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 85424.06133956576,
+      "ch": 0.13
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 21,
+      "price": 5.082064923113435,
+      "ch": 2.3
+     },
+     {
+      "sym": "TAO",
+      "name": "Bittensor",
+      "rank": 35,
+      "price": 299.8969478743897,
+      "ch": -0.91
+     },
+     {
+      "sym": "PONS",
+      "name": "Pons",
+      "rank": 167,
+      "price": 0.3739265371118246,
+      "ch": -4.04
+     },
+     {
+      "sym": "QNT",
+      "name": "Quant",
+      "rank": 33,
+      "price": 254.32168195749006,
+      "ch": -1.87
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 105,
+      "price": 0.009575657299742853,
+      "ch": 2.86
+     },
+     {
+      "sym": "PUMP",
+      "name": "Pump.fun",
+      "rank": 41,
+      "price": 0.006289011843240948,
+      "ch": -4.72
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 85448,
+      "ch": 0.15,
+      "vol": 33218570101,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2708.3,
+      "ch": 0.26,
+      "vol": 13342653042,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 120.0,
+      "ch": -1.16,
+      "vol": 2766979371,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.5,
+      "ch": -0.16,
+      "vol": 2094268913,
+      "rank": 5
+     },
+     {
+      "sym": "ADA",
+      "name": "Cardano",
+      "price": 0.264965,
+      "ch": 6.85,
+      "vol": 1208212901,
+      "rank": 17
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 93.69,
+      "ch": 3.87,
+      "vol": 1068034704,
+      "rank": 11
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 786.92,
+      "ch": -0.22,
+      "vol": 990685895,
+      "rank": 4
+     },
+     {
+      "sym": "DOGE",
+      "name": "Dogecoin",
+      "price": 0.094765,
+      "ch": -0.59,
+      "vol": 825787231,
+      "rank": 12
+     }
+    ]
+   }
+  },
+  {
    "slug": "risk-reward-ratio-explained",
    "type": "learn",
    "date": "2026-10-05T08:50:39+00:00",
@@ -858,5 +1006,5 @@
    }
   }
  ],
- "updated": "2026-10-05T08:50:39+00:00"
+ "updated": "2026-10-05T18:18:31+00:00"
 }
