@@ -3,15 +3,41 @@
   "ADA": "2026-09-27T22:00:00+00:00",
   "DOGE": "2026-09-30T10:00:00+00:00",
   "DOT": "2026-09-28T04:00:00+00:00",
-  "SOL": "2026-09-30T10:00:00+00:00",
+  "SOL": "2026-10-05T07:00:00+00:00",
   "XAUUSD": "2026-10-02T01:00:00+00:00",
   "XRP": "2026-10-02T01:00:00+00:00",
   "LINK": "2026-10-02T14:00:00+00:00",
   "EURUSD": "2026-10-02T14:00:00+00:00",
   "BTC": "2026-10-03T17:00:00+00:00"
  },
- "open": [],
- "last_digest": "2026-10-04",
+ "open": [
+  {
+   "coin": "SOL",
+   "side": "BUY",
+   "entry": 121.69,
+   "sl": 120.68275051900265,
+   "tp1": 122.69724948099734,
+   "tp2": 123.70449896199469,
+   "tp1_hit": false,
+   "age": 0,
+   "checked_until": "2026-10-05T07:00:00+00:00",
+   "sl0": 120.68275051900265,
+   "opened": "2026-10-05T07:00:00+00:00",
+   "rsi": 59.3,
+   "conf": 79,
+   "why": [
+    "EMA 9/21 ক্রস + RSI ঠিক সীমায় + ভলিউম বেশি",
+    "4h বড় ট্রেন্ড একই দিকে",
+    "দাম EMA 200-এর ওপরে",
+    "ট্রেন্ড শক্তিশালী (ADX 29)",
+    "RSI 59 ভালো জায়গায়",
+    "BTC-ও একই দিকে যাচ্ছে"
+   ],
+   "market": "crypto",
+   "name": "SOL"
+  }
+ ],
+ "last_digest": "2026-10-05",
  "stats": {
   "win": 0,
   "loss": 5,
@@ -19,7 +45,7 @@
   "expired": 0
  },
  "fear_greed": {
-  "value": 65,
+  "value": 70,
   "label": "Greed"
  },
  "history": [
@@ -102,6 +128,20 @@
   }
  ],
  "news_posted": [
+  "https://www.theblock.co/news/defi/2026-10-05-injective-ceo-eric-inj-etf-417616",
+  "https://cointelegraph.com/markets/bitcoin-etf-third-inflow-week-ether-funds-red?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/us-expands-hamas-sanctions-after-tracing-crypto-transfers-from-france/",
+  "https://www.coindesk.com/markets/2026/10/05/bitcoin-is-about-to-get-a-major-bullish-signal-it-hasn-t-had-in-over-a-year",
+  "https://www.coindesk.com/tech/2026/10/05/ethereum-has-a-25-day-wait-to-start-staking-with-nearly-1-5-million-eth-in-line",
+  "https://www.theblock.co/news/business/2026-10-05-okx-ice-joint-venture-tokenized-stock-trading-417613",
+  "https://www.coindesk.com/markets/2026/10/05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks",
+  "https://www.coindesk.com/tech/2026/10/05/zcash-s-25-second-blocks-go-live-on-public-testnet-ahead-of-schedule",
+  "https://www.coindesk.com/markets/2026/10/05/bitcoin-zooms-toward-usd87-000-nearly-setting-an-eight-month-high-then-reverses",
+  "https://www.coindesk.com/markets/2026/10/05/ether-s-bitcoin-beating-q3-rally-came-with-a-catch-liquidity-thinned",
+  "https://cointelegraph.com/news/zcash-nu7-testnet-activation-november-mainnet?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cointelegraph.com/news/okx-nyse-parent-file-to-launch-tokenized-us-stock-platform?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cointelegraph.com/news/safe-investor-asks-swiss-watchdog-to-intervene-in-governance-dispute?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/illinois-backs-delay-to-crypto-tax-rule-after-months-of-industry-pushback/",
   "https://cointelegraph.com/news/zcash-gets-a-washington-lobbyist-to-push-crypto-policy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
   "https://cryptoslate.com/el-salvadors-666-million-bitcoin-reserve-survives-imf-review/",
   "https://cointelegraph.com/magazine/former-sec-boss-made-ai-czar-bitcoin-may-hit-600k-this-cycle-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -587,34 +627,29 @@
   "https://www.coindesk.com/markets/2026/09/25/strategy-proposes-daily-dividends-to-bring-strc-back-toward-usd100",
   "https://www.theblock.co/news/web3/2026-09-25-magic-eden-legacy-approvals-leave-5-7-million-in-nfts-exposed-to-exploit-before-rescue-416874",
   "https://www.theblock.co/news/defi/2026-09-25-aave-v4-on-base-adds-coinbase-tokenized-stocks-as-collateral-for-usdc-loans-416372",
-  "https://www.theblock.co/news/business/2026-09-25-strategy-proposes-daily-dividends-for-strc-strd-strf-and-strk-preferred-stocks-416869",
-  "https://cointelegraph.com/magazine/exchanges-reporting-crypto-gains-to-irs-becomes-tax-nightmare?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-  "https://decrypt.co/379309/strategy-wants-its-preferred-stock-dividends-to-accrue-365-days-a-year",
-  "https://decrypt.co/379218/morgan-stanley-joins-nextpredict-as-prediction-markets-bet-on-more-institutional-play",
-  "https://decrypt.co/379292/morning-minute-blackrock-leans-deeper-into-tokenization-with-ondo",
-  "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+  "https://www.theblock.co/news/business/2026-09-25-strategy-proposes-daily-dividends-for-strc-strd-strf-and-strk-preferred-stocks-416869"
  ],
  "news_seeded": true,
  "fx_quotes": {
   "EURUSD": {
-   "price": 1.12461,
-   "ch": -0.04,
-   "time": "2026-10-05T00:00:00+00:00"
+   "price": 1.12045,
+   "ch": -0.52,
+   "time": "2026-10-05T07:00:00+00:00"
   },
   "GBPUSD": {
-   "price": 1.32394,
-   "ch": 0.32,
-   "time": "2026-10-05T00:00:00+00:00"
+   "price": 1.32263,
+   "ch": 0.09,
+   "time": "2026-10-05T07:00:00+00:00"
   },
   "USDJPY": {
-   "price": 157.71899,
-   "ch": -0.14,
-   "time": "2026-10-05T00:00:00+00:00"
+   "price": 157.65401,
+   "ch": -0.1,
+   "time": "2026-10-05T07:00:00+00:00"
   },
   "XAUUSD": {
-   "price": 4185.0,
-   "ch": -0.63,
-   "time": "2026-10-05T00:00:00+00:00"
+   "price": 4188.7002,
+   "ch": -0.53,
+   "time": "2026-10-05T07:00:00+00:00"
   }
  },
  "vol_last": {},
@@ -622,9 +657,11 @@
   "2026-10-02": 58.74,
   "2026-10-03": 58.61,
   "2026-10-04": 59.28,
-  "2026-10-05": 59.37
+  "2026-10-05": 59.24
  },
  "feed_posted": [
+  "https://www.binance.com/en/support/announcement/41e531ead6b44b35aca9e6821b37baf3",
+  "https://www.kucoin.com/announcement/en-evaa-protocol-evaa-listed-on-kucoin?lang=en_US",
   "https://www.htx.com/support/45045416473707",
   "https://www.okx.com/en-us/help/okx-to-list-rlusd-ripple-usd-for-spot-trading",
   "https://www.okx.com/en-us/help/okx-to-list-mega-megaeth-for-spot-trading",
@@ -733,11 +770,11 @@
  "feed_seeded": true,
  "insights": {
   "dominance": {
-   "btc": 59.37,
-   "eth": 11.34,
-   "mcap": 2929927166286,
-   "mcap_ch": -1.84,
-   "ch_1d": 0.09,
+   "btc": 59.24,
+   "eth": 11.36,
+   "mcap": 2918500779492,
+   "mcap_ch": -1.66,
+   "ch_1d": -0.04,
    "ch_7d": null,
    "history": [
     {
@@ -754,140 +791,140 @@
     },
     {
      "d": "2026-10-05",
-     "v": 59.37
+     "v": 59.24
     }
    ]
   },
   "walls": [
    {
     "coin": "BTC",
-    "price": 86632.005,
+    "price": 86188.005,
     "support": {
-     "price": 86632.005,
-     "usd": 6476979
+     "price": 86188.005,
+     "usd": 7273761
     },
     "resistance": {
-     "price": 86632.005,
-     "usd": 7022238
+     "price": 86188.005,
+     "usd": 6087391
     },
-    "buy_pct": 47
+    "buy_pct": 51
    },
    {
     "coin": "ETH",
-    "price": 2724.825,
+    "price": 2718.4849999999997,
     "support": {
-     "price": 2724.825,
-     "usd": 3608854
+     "price": 2718.4849999999997,
+     "usd": 3179095
     },
     "resistance": {
-     "price": 2724.825,
-     "usd": 4284601
+     "price": 2732.077425,
+     "usd": 6693393
     },
-    "buy_pct": 41
+    "buy_pct": 35
    },
    {
     "coin": "BNB",
-    "price": 800.145,
+    "price": 788.725,
     "support": {
-     "price": 798.1446375,
-     "usd": 1097182
+     "price": 782.8095625000001,
+     "usd": 1218536
     },
     "resistance": {
-     "price": 804.145725,
-     "usd": 1380178
+     "price": 794.6404375000001,
+     "usd": 821632
     },
-    "buy_pct": 40
+    "buy_pct": 59
    },
    {
     "coin": "SOL",
-    "price": 121.13499999999999,
+    "price": 121.065,
     "support": {
-     "price": 120.8321625,
-     "usd": 3181299
+     "price": 120.7623375,
+     "usd": 2501440
     },
     "resistance": {
-     "price": 122.95202499999999,
-     "usd": 2361297
+     "price": 124.091625,
+     "usd": 2521759
     },
     "buy_pct": 52
    },
    {
     "coin": "XRP",
-    "price": 1.52195,
+    "price": 1.5136500000000002,
     "support": {
-     "price": 1.449657375,
-     "usd": 761781
+     "price": 1.4493198750000003,
+     "usd": 762469
     },
     "resistance": {
-     "price": 1.5485841249999999,
-     "usd": 1926343
+     "price": 1.5514912500000002,
+     "usd": 1182019
     },
-    "buy_pct": 32
+    "buy_pct": 49
    },
    {
     "coin": "ADA",
-    "price": 0.26405,
+    "price": 0.27125,
     "support": {
-     "price": 0.263389875,
-     "usd": 228918
+     "price": 0.270571875,
+     "usd": 182897
     },
     "resistance": {
-     "price": 0.264710125,
-     "usd": 188324
+     "price": 0.282778125,
+     "usd": 537687
     },
-    "buy_pct": 51
+    "buy_pct": 44
    },
    {
     "coin": "DOGE",
-    "price": 0.09618499999999999,
+    "price": 0.096915,
     "support": {
-     "price": 0.0959445375,
-     "usd": 609730
+     "price": 0.0966727125,
+     "usd": 472108
     },
     "resistance": {
-     "price": 0.1000324,
-     "usd": 863551
+     "price": 0.0971572875,
+     "usd": 479006
     },
-    "buy_pct": 41
+    "buy_pct": 40
    },
    {
     "coin": "AVAX",
-    "price": 10.967500000000001,
+    "price": 10.9875,
     "support": {
-     "price": 10.94008125,
-     "usd": 233799
+     "price": 10.932562500000001,
+     "usd": 215969
     },
     "resistance": {
-     "price": 10.99491875,
-     "usd": 124371
+     "price": 11.509406250000001,
+     "usd": 191139
     },
-    "buy_pct": 64
+    "buy_pct": 60
    },
    {
     "coin": "LINK",
-    "price": 14.1685,
+    "price": 14.1435,
     "support": {
-     "price": 14.133078750000001,
-     "usd": 156947
+     "price": 14.108141250000001,
+     "usd": 196695
     },
     "resistance": {
-     "price": 14.77066125,
-     "usd": 228015
+     "price": 14.7799575,
+     "usd": 225848
     },
-    "buy_pct": 54
+    "buy_pct": 55
    },
    {
     "coin": "DOT",
-    "price": 1.2085,
+    "price": 1.2185000000000001,
     "support": {
-     "price": 1.20547875,
-     "usd": 97775
+     "price": 1.2124075,
+     "usd": 90284
     },
     "resistance": {
-     "price": 1.2115212499999999,
-     "usd": 69787
+     "price": 1.22154625,
+     "usd": 62500
     },
-    "buy_pct": 60
+    "buy_pct": 68
    }
   ],
   "topics": {
@@ -974,16 +1011,16 @@
    "unlock": [],
    "listing": [
     {
+     "title": "OKX, NYSE parent file to launch tokenized US stock platform",
+     "link": "https://cointelegraph.com/news/okx-nyse-parent-file-to-launch-tokenized-us-stock-platform?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+     "source": "Cointelegraph",
+     "published": "2026-10-05T03:44:09+00:00"
+    },
+    {
      "title": "Zcash gets a Washington lobbyist to push crypto policy",
      "link": "https://cointelegraph.com/news/zcash-gets-a-washington-lobbyist-to-push-crypto-policy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
      "source": "Cointelegraph",
      "published": "2026-10-05T00:35:34+00:00"
-    },
-    {
-     "title": "3x Bitcoin and Ether futures funds clear SEC listing hurdle",
-     "link": "https://cryptoslate.com/3x-bitcoin-and-ether-futures-funds-clear-sec-listing-hurdle/",
-     "source": "CryptoSlate",
-     "published": "2026-10-04T14:20:32+00:00"
     },
     {
      "title": "Japan adds Garantex to list of Russia sanctions over Ukraine war",
@@ -1000,6 +1037,14 @@
    ]
   },
   "listings": [
+   {
+    "ex": "KuCoin",
+    "title": "EVAA Protocol (EVAA) Listed on KuCoin",
+    "url": "https://www.kucoin.com/announcement/en-evaa-protocol-evaa-listed-on-kucoin?lang=en_US",
+    "token": "EVAA",
+    "announced": "2026-10-05T03:01:00+00:00",
+    "trade": "2026-10-05T10:00:00+00:00"
+   },
    {
     "ex": "HTX",
     "title": "HTX Will List POD (Dolphin) on October 4, 2026",
@@ -1337,14 +1382,6 @@
     "trade": "2026-09-09T08:00:00+00:00"
    },
    {
-    "ex": "KuCoin",
-    "title": "MarsCoin (MARSCOIN) Listed on KuCoin",
-    "url": "https://www.kucoin.com/announcement/en-marscoin-marscoin-listed-on-kucoin?lang=en_US",
-    "token": "MARSCOIN",
-    "announced": "2026-09-05T01:57:00+00:00",
-    "trade": "2026-09-05T07:00:00+00:00"
-   },
-   {
     "ex": "OKX",
     "title": "OKX will launch GRVT/USD for spot trading",
     "url": "https://www.okx.com/en-us/help/okx-will-launch-grvt-usd-for-spot-trading",
@@ -1482,6 +1519,14 @@
    }
   ],
   "earn": [
+   {
+    "ex": "Binance",
+    "title": "Word of the Day: Test Your Knowledge on “Proactive Security Wins” to Unlock USDC Rewards!",
+    "url": "https://www.binance.com/en/support/announcement/41e531ead6b44b35aca9e6821b37baf3",
+    "token": "",
+    "announced": "2026-10-05T03:00:01+00:00",
+    "trade": ""
+   },
    {
     "ex": "Binance",
     "title": "Binance Lifestyle Venezuela Cashback Campaign: Spend 5 USDT, Get 2 USDT Back",
@@ -1675,14 +1720,6 @@
     "trade": ""
    },
    {
-    "ex": "Binance",
-    "title": "Binance Alpha Trading Competition: Trade ChainOpera AI (COAI) and Share $200K Worth of Rewards (2026-09-24)",
-    "url": "https://www.binance.com/en/support/announcement/df0f5afc43aa4ef1b344eb92b75c2716",
-    "token": "COAI",
-    "announced": "2026-09-24T11:30:07+00:00",
-    "trade": ""
-   },
-   {
     "ex": "DigiFinex",
     "title": "【Important Announcement】Discontinuation of BTC SIP, Crypto Loans and Interest-free Loan",
     "url": "https://support.digifinex.com/hc/en-us/articles/62531145035673--Important-Announcement-Discontinuation-of-BTC-SIP-Crypto-Loans-and-Interest-free-Loan",
@@ -1724,7 +1761,7 @@
    }
   ],
   "tip": "লাভের লক্ষ্য ক্ষতির অন্তত ১.৫–২ গুণ না হলে ট্রেডটা বাদ দিন।",
-  "updated": "2026-10-05T01:53:33+00:00",
+  "updated": "2026-10-05T08:50:43+00:00",
   "sources": {
    "Airdrops.io": 10,
    "AirdropAlert": 3,
@@ -1740,7 +1777,7 @@
    "Bitcoinist": 0,
    "CoinJournal": 0,
    "OKX": 19,
-   "KuCoin": 28,
+   "KuCoin": 29,
    "Binance": 22,
    "Bitget": 3,
    "HTX": 9,
@@ -2231,9 +2268,9 @@
     "name": "Nullmask",
     "sym": "MASK",
     "added": "2026-10-04T21:15:22.000Z",
-    "price": 0.03923246184007865,
-    "ch24": 10.43843383,
-    "vol": 857319.24585718,
+    "price": 0.03619705129560549,
+    "ch24": -5.53189075,
+    "vol": 755714.26585609,
     "mcap": 0.0,
     "chain": "Solana",
     "url": "https://coinmarketcap.com/currencies/nullmask/"
@@ -2242,10 +2279,10 @@
     "name": "Dolphin",
     "sym": "POD",
     "added": "2026-10-02T05:05:29.000Z",
-    "price": 0.8542893715053033,
-    "ch24": 3.95264203,
-    "vol": 70372291.60723613,
-    "mcap": 71346709.18,
+    "price": 0.7981760872033207,
+    "ch24": -6.31075704,
+    "vol": 46259549.33757038,
+    "mcap": 66660360.14,
     "chain": "Base",
     "url": "https://coinmarketcap.com/currencies/dolphin/"
    },
@@ -2253,9 +2290,9 @@
     "name": "HoodPork",
     "sym": "PORKU",
     "added": "2026-10-02T04:24:45.000Z",
-    "price": 0.005623996623620926,
-    "ch24": 1.41908202,
-    "vol": 112.08400732,
+    "price": 0.0056172085039031695,
+    "ch24": 0.97537056,
+    "vol": 62.05729403,
     "mcap": 0.0,
     "chain": "Robinhood",
     "url": "https://coinmarketcap.com/currencies/hoodpork/"
@@ -2264,9 +2301,9 @@
     "name": "FUSD",
     "sym": "FUSD",
     "added": "2026-10-01T19:12:34.000Z",
-    "price": 0.9999746897994963,
-    "ch24": -0.03044361,
-    "vol": 234.94020724,
+    "price": 0.999947607254773,
+    "ch24": -0.00771822,
+    "vol": 429.29892117,
     "mcap": 0.0,
     "chain": "TRON",
     "url": "https://coinmarketcap.com/currencies/fun-united-dollar-cultura/"
@@ -2275,8 +2312,8 @@
     "name": "H100 Group AB (Derivatives)",
     "sym": "H100",
     "added": "2026-10-01T05:31:28.000Z",
-    "price": 2.6385327941192465,
-    "ch24": -0.35351411,
+    "price": 2.6284189287374784,
+    "ch24": -0.73872851,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "",
@@ -2286,10 +2323,10 @@
     "name": "Open USD",
     "sym": "OUSD",
     "added": "2026-10-01T03:22:35.000Z",
-    "price": 0.9992892470958432,
-    "ch24": -0.05994247,
-    "vol": 6043.38031033,
-    "mcap": 668024441.28,
+    "price": 1.0020875334130024,
+    "ch24": 0.53820854,
+    "vol": 6603.6447648,
+    "mcap": 669895094.51,
     "chain": "Solana",
     "url": "https://coinmarketcap.com/currencies/open-usd/"
    },
@@ -2297,9 +2334,9 @@
     "name": "Super Inu",
     "sym": "SI",
     "added": "2026-09-30T17:04:36.000Z",
-    "price": 0.0366213222476242,
-    "ch24": -7.10866199,
-    "vol": 17483173.51808408,
+    "price": 0.032988836198498676,
+    "ch24": -23.97949773,
+    "vol": 17855144.73751272,
     "mcap": 0.0,
     "chain": "Solana",
     "url": "https://coinmarketcap.com/currencies/super-inu-2/"
@@ -2308,9 +2345,9 @@
     "name": "zipcoin",
     "sym": "ZC",
     "added": "2026-09-30T09:13:41.000Z",
-    "price": 0.03310316251522206,
-    "ch24": -2.35814391,
-    "vol": 7961103.97465206,
+    "price": 0.035740835217279214,
+    "ch24": 10.48788985,
+    "vol": 5278677.65496012,
     "mcap": 0.0,
     "chain": "Ethereum",
     "url": "https://coinmarketcap.com/currencies/zipcoin-cash/"
@@ -2319,10 +2356,10 @@
     "name": "SharonAI Tokenized bStocks",
     "sym": "SHAZB",
     "added": "2026-09-29T10:59:43.000Z",
-    "price": 51.653519685576896,
-    "ch24": 1.2706286,
-    "vol": 57883.41188963,
-    "mcap": 388447.2,
+    "price": 51.40082814491203,
+    "ch24": 0.39802284,
+    "vol": 61898.70644709,
+    "mcap": 386546.9,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/sharonai-tokenized-bstocks/"
    },
@@ -2330,10 +2367,10 @@
     "name": "Zoom Tokenized bStocks",
     "sym": "ZMB",
     "added": "2026-09-29T10:53:42.000Z",
-    "price": 93.60095048191106,
-    "ch24": 0.60017175,
-    "vol": 22051.41692721,
-    "mcap": 379759.93,
+    "price": 92.98312168624939,
+    "ch24": -0.01994943,
+    "vol": 21358.99695657,
+    "mcap": 378592.37,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/zoom-tokenized-bstocks/"
    },
@@ -2341,10 +2378,10 @@
     "name": "Wendy's Tokenized bStocks",
     "sym": "WENB",
     "added": "2026-09-29T10:49:35.000Z",
-    "price": 6.189334842886584,
-    "ch24": 0.8934165,
-    "vol": 22700.86007039,
-    "mcap": 445676.81,
+    "price": 6.150164457239082,
+    "ch24": 0.20062383,
+    "vol": 25893.74658012,
+    "mcap": 444547.72,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/wendys-tokenized-bstocks/"
    },
@@ -2352,10 +2389,10 @@
     "name": "Forward Industries Tokenized bStocks",
     "sym": "FWDIB",
     "added": "2026-09-29T10:29:46.000Z",
-    "price": 8.310647839786649,
-    "ch24": 1.93803618,
-    "vol": 68665.28980049,
-    "mcap": 447040.74,
+    "price": 8.330365715585822,
+    "ch24": 1.78265789,
+    "vol": 176333.83179101,
+    "mcap": 452616.45,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/forward-industries-tokenized-bstocks/"
    },
@@ -2363,10 +2400,10 @@
     "name": "Hewlett Packard Tokenized bStocks",
     "sym": "HPEB",
     "added": "2026-09-29T10:26:25.000Z",
-    "price": 70.86949454882095,
-    "ch24": 2.02460186,
-    "vol": 59465.56072557,
-    "mcap": 546677.47,
+    "price": 69.63419772004349,
+    "ch24": 0.38371463,
+    "vol": 74321.09460366,
+    "mcap": 539689.46,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/hewlett-packard-tokenized-bstocks/"
    },
@@ -2374,10 +2411,10 @@
     "name": "Adobe Tokenized bStocks",
     "sym": "ADBEB",
     "added": "2026-09-29T10:23:13.000Z",
-    "price": 237.6921641138049,
-    "ch24": -0.01297299,
-    "vol": 77397.89926195,
-    "mcap": 1053916.56,
+    "price": 237.62771184800255,
+    "ch24": -0.03799248,
+    "vol": 83723.90064028,
+    "mcap": 1053996.72,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/adobe-tokenized-bstocks/"
    },
@@ -2385,10 +2422,10 @@
     "name": "PDD Holdings Tokenized bStocks",
     "sym": "PDDB",
     "added": "2026-09-29T10:19:28.000Z",
-    "price": 75.54287573747077,
-    "ch24": 0.14426233,
-    "vol": 85119.53644024,
-    "mcap": 1985942.71,
+    "price": 75.7264281950019,
+    "ch24": 0.30905877,
+    "vol": 74890.33100253,
+    "mcap": 2017131.48,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/pdd-holdings-tokenized-bstocks/"
    },
@@ -2396,8 +2433,8 @@
     "name": "Nike Inc (Derivatives)",
     "sym": "NKE",
     "added": "2026-09-29T05:20:39.000Z",
-    "price": 34.055120379087654,
-    "ch24": -0.53986203,
+    "price": 34.1676522879407,
+    "ch24": -0.35615808,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "",
@@ -2407,8 +2444,8 @@
     "name": "Securitize Corp (Derivatives)",
     "sym": "SECZ",
     "added": "2026-09-29T05:14:45.000Z",
-    "price": 13.288822061333562,
-    "ch24": 4.02356971,
+    "price": 13.264734691769114,
+    "ch24": 3.77855158,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "",
@@ -2418,8 +2455,8 @@
     "name": "MP Materials Corp (Derivatives)",
     "sym": "MP",
     "added": "2026-09-29T05:11:22.000Z",
-    "price": 47.52269217574065,
-    "ch24": 0.74988559,
+    "price": 47.40691423478767,
+    "ch24": 0.27232289,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "",
@@ -2429,8 +2466,8 @@
     "name": "Accenture plc Class A Ordinary Shares (D",
     "sym": "ACN",
     "added": "2026-09-29T05:08:01.000Z",
-    "price": 199.6074573925985,
-    "ch24": -0.11944433,
+    "price": 199.80547084683033,
+    "ch24": 0.12917274,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "",
@@ -2440,8 +2477,8 @@
     "name": "Breakwave Tanker Shipping ETF (Derivativ",
     "sym": "BWET",
     "added": "2026-09-29T05:02:16.000Z",
-    "price": 858.6763042719415,
-    "ch24": 0.02427766,
+    "price": 865.2501616531682,
+    "ch24": 0.67448924,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "",
@@ -2451,8 +2488,8 @@
     "name": "Critical Metals Corp (Derivatives)",
     "sym": "CRML",
     "added": "2026-09-29T04:58:16.000Z",
-    "price": 7.114271192950768,
-    "ch24": -0.01527513,
+    "price": 7.0742041995406675,
+    "ch24": -0.34246865,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "",
@@ -2462,10 +2499,10 @@
     "name": "Nokia Oyj (Backpack)",
     "sym": "NOK",
     "added": "2026-09-28T20:28:16.000Z",
-    "price": 10.676025912095238,
-    "ch24": 1.48076124,
-    "vol": 13830.29948085,
-    "mcap": 448788.53,
+    "price": 10.528778586709237,
+    "ch24": 0.76428417,
+    "vol": 9699.09267792,
+    "mcap": 442598.69,
     "chain": "Solana",
     "url": "https://coinmarketcap.com/currencies/nokia-oyj-backpack/"
    },
@@ -2473,10 +2510,10 @@
     "name": "ishares MSCI South Korea tokenized ETF (",
     "sym": "EWY",
     "added": "2026-09-27T07:04:33.000Z",
-    "price": 190.47891779339258,
-    "ch24": 0.57417603,
-    "vol": 17114.56679009,
-    "mcap": 94749.93,
+    "price": 192.19730409599595,
+    "ch24": 1.18929116,
+    "vol": 0.0,
+    "mcap": 95604.7,
     "chain": "Solana",
     "url": "https://coinmarketcap.com/currencies/ishares-msci-south-korea-tokenized-etf-backpack/"
    },
@@ -2484,10 +2521,10 @@
     "name": "Paid",
     "sym": "PAID",
     "added": "2026-09-26T16:10:38.000Z",
-    "price": 0.005512120959938229,
-    "ch24": -18.03672647,
-    "vol": 5784442.6653505,
-    "mcap": 5188431.0,
+    "price": 0.0048863039398567105,
+    "ch24": -28.72116682,
+    "vol": 6600489.85656038,
+    "mcap": 4599364.02,
     "chain": "Solana",
     "url": "https://coinmarketcap.com/currencies/paid/"
    },
@@ -2495,8 +2532,8 @@
     "name": "PANDAAI",
     "sym": "PANDA",
     "added": "2026-09-25T08:18:12.000Z",
-    "price": 0.1679662580204634,
-    "ch24": -0.00205032,
+    "price": 0.16785132559084284,
+    "ch24": -0.01528825,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "Ethereum",
@@ -2506,9 +2543,9 @@
     "name": "Catching Absolute Tops (catchingabsolute",
     "sym": "CAT",
     "added": "2026-09-25T08:03:03.000Z",
-    "price": 0.0002554944639524957,
-    "ch24": -2.5548261,
-    "vol": 1570.18089966,
+    "price": 0.00024646645570673627,
+    "ch24": -9.42514768,
+    "vol": 3425.47254262,
     "mcap": 0.0,
     "chain": "Solana",
     "url": "https://coinmarketcap.com/currencies/catching-absolute-tops/"
@@ -2517,10 +2554,10 @@
     "name": "Agrippa",
     "sym": "AGRIPPA",
     "added": "2026-09-23T07:52:41.000Z",
-    "price": 9.63787974137182e-06,
-    "ch24": -12.1168475,
-    "vol": 958732.90570606,
-    "mcap": 963787.97,
+    "price": 1.0272896215329862e-05,
+    "ch24": -18.07560801,
+    "vol": 962799.64535892,
+    "mcap": 1027289.62,
     "chain": "Robinhood",
     "url": "https://coinmarketcap.com/currencies/agrippa/"
    },
@@ -2528,8 +2565,8 @@
     "name": "Matrix (matrix.app)",
     "sym": "MTX",
     "added": "2026-09-23T07:09:03.000Z",
-    "price": 32.74142996718127,
-    "ch24": 0.47204041,
+    "price": 32.43102547376856,
+    "ch24": -1.23583764,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "Ethereum",
@@ -2539,9 +2576,9 @@
     "name": "Snap Tokenized Stock (Robinhood)",
     "sym": "SNAP",
     "added": "2026-09-23T06:38:13.000Z",
-    "price": 5.591596476510237,
-    "ch24": 0.05926871,
-    "vol": 7914.18607995,
+    "price": 5.628302389495604,
+    "ch24": 0.50424516,
+    "vol": 34993.21780814,
     "mcap": 0.0,
     "chain": "Robinhood",
     "url": "https://coinmarketcap.com/currencies/snap-tokenized-stock-robinhood/"
@@ -2550,19 +2587,19 @@
     "name": "IBM Tokenized Stock (Robinhood)",
     "sym": "IBM",
     "added": "2026-09-23T06:34:45.000Z",
-    "price": 222.43194948221617,
-    "ch24": -0.32227018,
-    "vol": 27122.55589851,
+    "price": 222.2551907674106,
+    "ch24": -0.57443072,
+    "vol": 28322.4792752,
     "mcap": 0.0,
     "chain": "Robinhood",
     "url": "https://coinmarketcap.com/currencies/ibm-tokenized-stock-robinhood/"
    }
   ]
  },
- "insights_time": "2026-10-05T01:53:33+00:00",
- "last_insight": "2026-10-04",
+ "insights_time": "2026-10-05T08:50:43+00:00",
+ "last_insight": "2026-10-05",
  "probe_v": 2,
- "slow_hr": 82924,
+ "slow_hr": 82925,
  "src_seen": {
   "Airdrops.io": 10,
   "AirdropAlert": 3,
@@ -2578,7 +2615,7 @@
   "Bitcoinist": 0,
   "CoinJournal": 0,
   "OKX": 19,
-  "KuCoin": 28,
+  "KuCoin": 29,
   "Binance": 22,
   "Bitget": 3,
   "HTX": 9,
@@ -2590,8 +2627,8 @@
   "DefiLlama unlocks": 59,
   "CoinMarketCap new": 30
  },
- "last_lesson": "2026-10-04",
- "lesson_n": 2,
+ "last_lesson": "2026-10-05",
+ "lesson_n": 3,
  "lab_v": 1,
  "last_trending": "2026-10-04"
 }

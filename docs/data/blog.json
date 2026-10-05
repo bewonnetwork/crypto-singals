@@ -1,6 +1,274 @@
 {
  "posts": [
   {
+   "slug": "risk-reward-ratio-explained",
+   "type": "learn",
+   "date": "2026-10-05T08:50:39+00:00",
+   "title": "Risk : Reward Ratio Explained",
+   "title_bn": "Risk : Reward কী?",
+   "sum_en": "A trade is worth taking only if the possible gain is clearly bigger than the possible loss. Here is how to measure it before you enter.",
+   "sum_bn": "সম্ভাব্য লাভ সম্ভাব্য ক্ষতির চেয়ে পরিষ্কারভাবে বড় হলে তবেই ট্রেড নেওয়ার মতো। ঢোকার আগে কীভাবে মাপবেন দেখুন।",
+   "body": {
+    "pts_bn": [
+     "Risk = Entry থেকে Stop Loss। Reward = Entry থেকে Target।",
+     "১ : ২ মানে ১ টাকা ঝুঁকিতে ২ টাকা লাভের সুযোগ। এতে ১০টার মধ্যে মাত্র ৪টা জিতলেও লাভে থাকা যায়।",
+     "১ : ১-এর কম হলে অর্ধেকের বেশি ট্রেড জিততে হবে, যা কঠিন।",
+     "Target বাস্তব জায়গায় বসান (আগের হাই বা রেজিস্ট্যান্স), শুধু অনুপাত মেলাতে দূরে বসাবেন না।",
+     "ফি-ও হিসাবে ধরুন: ছোট টার্গেটের ট্রেডে ফি লাভের বড় অংশ খেয়ে ফেলে।"
+    ],
+    "pts_en": [
+     "Risk = entry to stop-loss. Reward = entry to target.",
+     "1 : 2 means risking 1 to make 2. With that you can win only 4 trades out of 10 and still be in profit.",
+     "Below 1 : 1 you need to win more than half your trades, which is hard.",
+     "Put the target at a real level (a previous high or resistance); do not stretch it just to make the ratio look good.",
+     "Count fees too: on small-target trades fees eat a large share of the gain."
+    ]
+   }
+  },
+  {
+   "slug": "crypto-market-digest-october-5-2026",
+   "type": "digest",
+   "date": "2026-10-05T08:50:39+00:00",
+   "title": "Crypto Market Digest — October 5, 2026",
+   "sum_en": "HASH leads today's movers (+19.4%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে HASH (+19.4%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "HASH",
+      "name": "Provenance Blockchain",
+      "price": 0.00589444,
+      "ch": 19.4,
+      "vol": 1419.46,
+      "rank": 138
+     },
+     {
+      "sym": "FET",
+      "name": "Artificial Superintelligence Alliance",
+      "price": 0.265201,
+      "ch": 17.79,
+      "vol": 317388388,
+      "rank": 106
+     },
+     {
+      "sym": "ADA",
+      "name": "Cardano",
+      "price": 0.271164,
+      "ch": 10.69,
+      "vol": 1030424446,
+      "rank": 16
+     },
+     {
+      "sym": "VIRTUAL",
+      "name": "Virtuals Protocol",
+      "price": 0.87788,
+      "ch": 10.63,
+      "vol": 150625724,
+      "rank": 111
+     },
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "price": 0.057942,
+      "ch": 7.38,
+      "vol": 154314245,
+      "rank": 125
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "price": 1.099,
+      "ch": 7.36,
+      "vol": 3011779,
+      "rank": 134
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "price": 0.00984813,
+      "ch": 6.89,
+      "vol": 219247291,
+      "rank": 105
+     },
+     {
+      "sym": "ENA",
+      "name": "Ethena",
+      "price": 0.251095,
+      "ch": 5.66,
+      "vol": 382466239,
+      "rank": 44
+     }
+    ],
+    "losers": [
+     {
+      "sym": "AKE",
+      "name": "Akedo",
+      "price": 0.03168039,
+      "ch": -8.68,
+      "vol": 6399839,
+      "rank": 96
+     },
+     {
+      "sym": "GRASS",
+      "name": "Grass",
+      "price": 0.699943,
+      "ch": -7.56,
+      "vol": 39275569,
+      "rank": 120
+     },
+     {
+      "sym": "KITE",
+      "name": "Kite",
+      "price": 0.143526,
+      "ch": -6.57,
+      "vol": 8896433,
+      "rank": 139
+     },
+     {
+      "sym": "RAIN",
+      "name": "Rain",
+      "price": 0.01226772,
+      "ch": -5.43,
+      "vol": 26870016,
+      "rank": 18
+     },
+     {
+      "sym": "MON",
+      "name": "Monad",
+      "price": 0.03250881,
+      "ch": -5.08,
+      "vol": 43229303,
+      "rank": 132
+     },
+     {
+      "sym": "NIGHT",
+      "name": "Midnight",
+      "price": 0.04691075,
+      "ch": -4.93,
+      "vol": 37628135,
+      "rank": 89
+     },
+     {
+      "sym": "ZRO",
+      "name": "LayerZero",
+      "price": 1.94,
+      "ch": -3.52,
+      "vol": 94916688,
+      "rank": 72
+     },
+     {
+      "sym": "RAY",
+      "name": "Raydium",
+      "price": 2.05,
+      "ch": -3.32,
+      "vol": 38996473,
+      "rank": 112
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 86252.76,
+      "ch": 1.35
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2726.49,
+      "ch": 0.77
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 791.82,
+      "ch": 0.5
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 121.69,
+      "ch": 0.45
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.5222,
+      "ch": 1.53
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2729,
+      "ch": 10.98
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.09661,
+      "ch": 3.36
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 11.065,
+      "ch": 0.14
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 14.249,
+      "ch": 1.06
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.235,
+      "ch": 3.87
+     }
+    ],
+    "up": 85,
+    "total": 140,
+    "fear_greed": {
+     "value": 70,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.12045,
+      "ch": -0.52
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.32263,
+      "ch": 0.09
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 157.65401,
+      "ch": -0.1
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4188.7002,
+      "ch": -0.53
+     }
+    ],
+    "stats": {
+     "win": 0,
+     "loss": 5,
+     "tp2": 0,
+     "expired": 0
+    },
+    "open": 1
+   }
+  },
+  {
    "slug": "trending-in-crypto-october-4-2026",
    "type": "trending",
    "date": "2026-10-04T16:58:42+00:00",
@@ -590,5 +858,5 @@
    }
   }
  ],
- "updated": "2026-10-04T16:58:42+00:00"
+ "updated": "2026-10-05T08:50:39+00:00"
 }
