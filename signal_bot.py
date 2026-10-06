@@ -62,7 +62,8 @@ NEWS_TO_TELEGRAM = True     # False করলে নিউজ Telegram-এ য�
 NEWS_PER_RUN = 2            # প্রতি ১৫ মিনিটে সর্বোচ্চ কয়টা নতুন খবর Telegram-এ যাবে
 SITE_URL = "https://bewonnetwork.github.io/crypto-singals/"
 
-COINS = ["BTC", "ETH", "BNB", "SOL", "XRP", "ADA", "DOGE", "AVAX", "LINK", "DOT"]
+COINS = ["BTC", "ETH", "BNB", "SOL", "XRP", "ADA", "DOGE", "AVAX", "LINK", "DOT",
+         "LTC", "UNI", "AAVE", "NEAR", "SUI", "POL", "ONDO", "PEPE"]      # ১৮টা কয়েনের ওয়াচলিস্ট
 INTERVAL = "1h"             # 15m / 1h / 4h
 TREND_INTERVAL = "4h"       # বড় ট্রেন্ড দেখার টাইমফ্রেম
 MIN_CONFIDENCE = 60         # এর কম Confidence হলে সিগনাল পাঠাবে না
@@ -421,7 +422,9 @@ def _close(t, result, when, state):
         "opened": t.get("opened", ""), "closed": when, "result": result,
         "conf": t.get("conf"), "why": t.get("why", []),
         "market": t.get("market", "crypto"), "name": t.get("name", t["coin"]),
-        **{k: t[k] for k in ("src", "chk", "note", "exit", "from") if t.get(k) not in (None, "")}})
+        "exit": t.get("exit") or {"SL": t.get("sl0", t["sl"]), "TP2": t["tp2"], "TP1": t["tp1"]}.get(result),
+        "mdd": round(t["mdd"], 2) if t.get("mdd") is not None else None, "h24": t.get("h24"),
+        **{k: t[k] for k in ("src", "chk", "note", "from") if t.get(k) not in (None, "")}})
     del state["history"][300:]
 
 
@@ -437,6 +440,10 @@ def update_open_trades(coin, df, state):
         closed = False
         for _, c in after.iterrows():
             t["age"] += 1
+            adverse = ((t["entry"] - c.low) if buy else (c.high - t["entry"])) / t["entry"] * 100
+            t["mdd"] = max(t.get("mdd") or 0.0, float(adverse))          # দাম সিগনালের বিপক্ষে সর্বোচ্চ কতটা গেছে
+            if t["age"] == 24 and t.get("h24") is None:                    # ২৪ ঘণ্টা পরে বন্ধ করলে কী হতো
+                t["h24"] = round(float((c.close / t["entry"] - 1) * 100 * (1 if buy else -1)), 2)
             hit_sl = c.low <= t["sl"] if buy else c.high >= t["sl"]
             hit_tp1 = c.high >= t["tp1"] if buy else c.low <= t["tp1"]
             hit_tp2 = c.high >= t["tp2"] if buy else c.low <= t["tp2"]
@@ -467,6 +474,7 @@ def update_open_trades(coin, df, state):
                 if not t["tp1_hit"]:
                     state["stats"]["expired"] += 1
                 msgs.append(f"⌛ {label(coin)} {t['side']}: সময় শেষ, সিগনাল বন্ধ")
+                t["exit"] = float(c.close)
                 _close(t, "TP1" if t["tp1_hit"] else "EXPIRED", c.time.isoformat(), state)
                 closed = True
                 break
