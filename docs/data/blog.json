@@ -1,6 +1,274 @@
 {
  "posts": [
   {
+   "slug": "support-and-resistance-basics",
+   "type": "learn",
+   "date": "2026-10-06T06:32:44+00:00",
+   "title": "Support and Resistance Basics",
+   "title_bn": "সাপোর্ট ও রেজিস্ট্যান্স",
+   "sum_en": "Prices often stop and turn at the same levels again and again. Learn how to find those levels and how traders use them.",
+   "sum_bn": "দাম প্রায়ই একই জায়গায় এসে থামে বা ঘুরে যায়। সেই জায়গাগুলো কীভাবে খুঁজবেন আর কাজে লাগাবেন জেনে নিন।",
+   "body": {
+    "pts_bn": [
+     "সাপোর্ট: যে দামে ক্রেতা বেশি আসে, দাম পড়া থামে। রেজিস্ট্যান্স: যে দামে বিক্রেতা বেশি আসে, দাম ওঠা থামে।",
+     "যে জায়গা থেকে দাম ২–৩ বার ফিরে গেছে সেটা শক্ত। বড় টাইমফ্রেমের (৪ঘ, ১দিন) লেভেল বেশি গুরুত্বপূর্ণ।",
+     "রেজিস্ট্যান্স ভেঙে ওপরে গেলে সেটা অনেক সময় নতুন সাপোর্ট হয়ে যায়।",
+     "লেভেল একটা দাগ নয়, একটা এলাকা। ঠিক দামে না ধরে আশপাশের কয়েকটা দাম ধরুন।",
+     "লেভেলের একদম গায়ে Stop Loss বসালে সহজে হিট হয়; একটু বাইরে বসান।"
+    ],
+    "pts_en": [
+     "Support is a price where buyers step in and the fall stops. Resistance is a price where sellers step in and the rise stops.",
+     "A level that turned price two or three times is strong. Levels on bigger timeframes (4h, 1 day) matter more.",
+     "When resistance breaks, it often becomes the new support.",
+     "A level is a zone, not a thin line. Think of a small price area rather than one exact number.",
+     "A stop placed exactly on the level gets hit easily; put it a little beyond."
+    ]
+   }
+  },
+  {
+   "slug": "crypto-market-digest-october-6-2026",
+   "type": "digest",
+   "date": "2026-10-06T06:32:44+00:00",
+   "title": "Crypto Market Digest — October 6, 2026",
+   "sum_en": "BTW leads today's movers (+19.0%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে BTW (+19.0%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 1.2,
+      "ch": 19.03,
+      "vol": 29966339,
+      "rank": 39
+     },
+     {
+      "sym": "FIL",
+      "name": "Filecoin",
+      "price": 1.18,
+      "ch": 11.77,
+      "vol": 268289030,
+      "rank": 81
+     },
+     {
+      "sym": "ZRO",
+      "name": "LayerZero",
+      "price": 2.11,
+      "ch": 10.37,
+      "vol": 162682345,
+      "rank": 86
+     },
+     {
+      "sym": "NIGHT",
+      "name": "Midnight",
+      "price": 0.050086,
+      "ch": 10.23,
+      "vol": 40432313,
+      "rank": 88
+     },
+     {
+      "sym": "STABLE",
+      "name": "​​Stable",
+      "price": 0.02833313,
+      "ch": 5.53,
+      "vol": 9902846,
+      "rank": 90
+     },
+     {
+      "sym": "ICP",
+      "name": "Internet Computer",
+      "price": 3.46,
+      "ch": 5.28,
+      "vol": 109605311,
+      "rank": 56
+     },
+     {
+      "sym": "LIT",
+      "name": "Lighter",
+      "price": 3.92,
+      "ch": 4.27,
+      "vol": 124572008,
+      "rank": 82
+     },
+     {
+      "sym": "GRASS",
+      "name": "Grass",
+      "price": 0.718076,
+      "ch": 4.2,
+      "vol": 40393252,
+      "rank": 115
+     }
+    ],
+    "losers": [
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "price": 0.052069,
+      "ch": -10.86,
+      "vol": 72147861,
+      "rank": 129
+     },
+     {
+      "sym": "MON",
+      "name": "Monad",
+      "price": 0.02907847,
+      "ch": -10.38,
+      "vol": 59681843,
+      "rank": 138
+     },
+     {
+      "sym": "SKY",
+      "name": "Sky",
+      "price": 0.087446,
+      "ch": -8.38,
+      "vol": 48102364,
+      "rank": 54
+     },
+     {
+      "sym": "BONK",
+      "name": "Bonk",
+      "price": 3.75e-06,
+      "ch": -7.09,
+      "vol": 47887733,
+      "rank": 141
+     },
+     {
+      "sym": "AKE",
+      "name": "Akedo",
+      "price": 0.02988068,
+      "ch": -6.11,
+      "vol": 7091491,
+      "rank": 100
+     },
+     {
+      "sym": "DASH",
+      "name": "Dash",
+      "price": 56.72,
+      "ch": -5.94,
+      "vol": 86446955,
+      "rank": 94
+     },
+     {
+      "sym": "VVV",
+      "name": "Venice Token",
+      "price": 27.76,
+      "ch": -5.93,
+      "vol": 36972936,
+      "rank": 69
+     },
+     {
+      "sym": "STX",
+      "name": "Stacks",
+      "price": 0.373159,
+      "ch": -4.69,
+      "vol": 25525861,
+      "rank": 99
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 85518.35,
+      "ch": -0.29
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2699.56,
+      "ch": -0.26
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 780.88,
+      "ch": -1.43
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 119.81,
+      "ch": -0.53
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.4998,
+      "ch": -0.47
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2685,
+      "ch": -0.44
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.0947,
+      "ch": -0.63
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 11.285,
+      "ch": 3.29
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 13.823,
+      "ch": -2.22
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.232,
+      "ch": 0.82
+     }
+    ],
+    "up": 53,
+    "total": 140,
+    "fear_greed": {
+     "value": 73,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.12171,
+      "ch": 0.19
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.32149,
+      "ch": 0.04
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 158.065,
+      "ch": 0.15
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4146.7002,
+      "ch": -0.29
+     }
+    ],
+    "stats": {
+     "win": 0,
+     "loss": 6,
+     "tp2": 0,
+     "expired": 0
+    },
+    "open": 0
+   }
+  },
+  {
    "slug": "trending-in-crypto-october-5-2026",
    "type": "trending",
    "date": "2026-10-05T18:18:31+00:00",
@@ -1006,5 +1274,5 @@
    }
   }
  ],
- "updated": "2026-10-05T18:18:31+00:00"
+ "updated": "2026-10-06T06:32:44+00:00"
 }
