@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-6-2026",
+   "type": "trending",
+   "date": "2026-10-06T19:07:51+00:00",
+   "title": "Trending in Crypto — October 6, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (ORCA, ZIG, BTC…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "ORCA",
+      "name": "Orca",
+      "rank": 206,
+      "price": 2.90415256665299,
+      "ch": 37.57
+     },
+     {
+      "sym": "ZIG",
+      "name": "ZIG Finance",
+      "rank": 326,
+      "price": 0.06072297439111283,
+      "ch": 7.11
+     },
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 85554.99827568256,
+      "ch": -0.08
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 106,
+      "price": 0.009405200035101252,
+      "ch": -2.18
+     },
+     {
+      "sym": "ONDO",
+      "name": "Ondo",
+      "rank": 46,
+      "price": 0.4981185605895005,
+      "ch": 1.99
+     },
+     {
+      "sym": "STONK",
+      "name": "STONK",
+      "rank": 212,
+      "price": 0.21124356876315836,
+      "ch": 10.03
+     },
+     {
+      "sym": "QNT",
+      "name": "Quant",
+      "rank": 33,
+      "price": 258.29987146230854,
+      "ch": 2.54
+     },
+     {
+      "sym": "PONS",
+      "name": "Pons",
+      "rank": 161,
+      "price": 0.4188452548500468,
+      "ch": 14.63
+     },
+     {
+      "sym": "ZRO",
+      "name": "LayerZero",
+      "rank": 85,
+      "price": 2.2421208939084014,
+      "ch": 10.31
+     },
+     {
+      "sym": "LIT",
+      "name": "Lighter",
+      "rank": 84,
+      "price": 3.7842880682616045,
+      "ch": -4.11
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 85530,
+      "ch": -0.03,
+      "vol": 26974595845,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2690.22,
+      "ch": -0.66,
+      "vol": 10755956747,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 120.83,
+      "ch": 0.71,
+      "vol": 2538689844,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.5,
+      "ch": 0.29,
+      "vol": 1465554835,
+      "rank": 5
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 91.89,
+      "ch": -1.37,
+      "vol": 1000491785,
+      "rank": 11
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 5.08,
+      "ch": -1.23,
+      "vol": 787341187,
+      "rank": 21
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1360.29,
+      "ch": 2.02,
+      "vol": 730423927,
+      "rank": 10
+     },
+     {
+      "sym": "ADA",
+      "name": "Cardano",
+      "price": 0.271762,
+      "ch": 2.81,
+      "vol": 719934386,
+      "rank": 15
+     }
+    ]
+   }
+  },
+  {
    "slug": "support-and-resistance-basics",
    "type": "learn",
    "date": "2026-10-06T06:32:44+00:00",
@@ -1274,5 +1422,5 @@
    }
   }
  ],
- "updated": "2026-10-06T06:32:44+00:00"
+ "updated": "2026-10-06T19:07:51+00:00"
 }
