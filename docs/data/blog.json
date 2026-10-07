@@ -1,6 +1,31 @@
 {
  "posts": [
   {
+   "slug": "what-is-leverage-and-liquidation",
+   "type": "learn",
+   "date": "2026-10-07T09:10:25+00:00",
+   "title": "What Is Leverage and Liquidation?",
+   "title_bn": "লিভারেজ ও লিকুইডেশন কী?",
+   "sum_en": "Leverage lets you trade a bigger size than your money, and it makes losses bigger just as fast. See how liquidation happens.",
+   "sum_bn": "লিভারেজে নিজের টাকার চেয়ে বড় ট্রেড করা যায়, আর ক্ষতিও ততটাই দ্রুত বড় হয়। লিকুইডেশন কীভাবে হয় দেখুন।",
+   "body": {
+    "pts_bn": [
+     "১০x লিভারেজ মানে ১০০ ডলার দিয়ে ১০০০ ডলারের ট্রেড। দাম ১% নড়লে আপনার টাকায় ১০% লাভ বা ক্ষতি।",
+     "দাম উল্টো দিকে প্রায় ১০% গেলে (১০x-এ) পুরো টাকা শেষ। এক্সচেঞ্জ তখন ট্রেড জোর করে বন্ধ করে দেয়, এটাই লিকুইডেশন।",
+     "লিভারেজ যত বেশি, লিকুইডেশনের দাম তত কাছে। ৫০x-এ মাত্র ২% নড়াচড়াই যথেষ্ট।",
+     "নতুনদের জন্য লিভারেজ নয়। আগে স্পটে আর ডেমোতে শিখুন।",
+     "ব্যবহার করলেও কম লিভারেজ (২–৩x) আর সবসময় Stop Loss।"
+    ],
+    "pts_en": [
+     "10x leverage means a $1,000 trade with $100. A 1% price move is a 10% gain or loss on your money.",
+     "If price goes about 10% against you (at 10x) the money is gone. The exchange force-closes the trade: that is liquidation.",
+     "The higher the leverage, the closer the liquidation price. At 50x a 2% move is enough.",
+     "Leverage is not for beginners. Learn on spot and on the demo first.",
+     "If you do use it, keep it low (2–3x) and always use a stop-loss."
+    ]
+   }
+  },
+  {
    "slug": "crypto-market-digest-october-7-2026",
    "type": "digest",
    "date": "2026-10-07T02:27:16+00:00",
@@ -1713,5 +1738,5 @@
    }
   }
  ],
- "updated": "2026-10-07T02:27:16+00:00"
+ "updated": "2026-10-07T09:10:25+00:00"
 }
