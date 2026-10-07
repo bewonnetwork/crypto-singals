@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06T23:06:12+00:00",
+ "updated": "2026-10-07T02:27:20+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,42 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "8f81744edc",
+   "title": "SEC drops to 2 members, and 1 hidden rule shifts crypto power",
+   "link": "https://cryptoslate.com/sec-drops-to-2-members-and-1-hidden-rule-shifts-crypto-power/",
+   "source": "CryptoSlate",
+   "published": "2026-10-07T02:20:47+00:00",
+   "summary": "The new exception permits one eligible commissioner to form a quorum when every other sitting member is disqualified from the particular matter. The post SEC drops to 2 members, and 1 hidden rule shifts crypto power appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/sec-one-member-quorum-standard.jpg"
+  },
+  {
+   "id": "3df09d2c21",
+   "title": "Bitcoin.de trading remains halted as German regulator rejects MiCA application",
+   "link": "https://cointelegraph.com/news/bitcoinde-trading-remains-halted-as-german-regulator-rejects-mica-application?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-07T01:48:53+00:00",
+   "summary": "Trading on the platform has largely been suspended since June as its operator awaited MiCA authorization, with the company now looking to regulated partners to restart services.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4A095MDC2D69YPTJKJTJZCV/mica.jpg"
+  },
+  {
+   "id": "f60dd41130",
+   "title": "Open USD supply hits $666 million as 10 wallets trap most tokens",
+   "link": "https://cryptoslate.com/open-usd-supply-hits-666-million-as-10-wallets-trap-most-tokens/",
+   "source": "CryptoSlate",
+   "published": "2026-10-07T00:30:19+00:00",
+   "summary": "Crystal’s October 5 snapshot found $396 million unmoved in eight Tempo wallets, while customer activity inside custody accounts remains unknown. The post Open USD supply hits $666 million as 10 wallets trap most tokens appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ousd-staged-supply-standard.jpg"
+  },
+  {
+   "id": "7a0186d836",
+   "title": "Pudgy Penguins-backed Abstract to shut down after ‘tens of millions’ in losses",
+   "link": "https://cointelegraph.com/news/consumer-crypto-chain-abstract-to-wind-down?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-07T00:01:40+00:00",
+   "summary": "Igloo CEO Luca Netz said the company funded Abstract for 18 months but still failed to find product-market fit despite attracting major brands and a community of millions.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M49QY81Q8WDEP0W0BZRYD0A8/abstract.jpg"
+  },
   {
    "id": "567b9edd01",
    "title": "Google Launches Nano Banana 2.1: Better Than Its Predecessor at Half the Price",
@@ -468,15 +504,6 @@
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/don-davis.png"
   },
   {
-   "id": "7df423cc63",
-   "title": "Aave and Pendle may have found a way to keep yield capital from ever leaving DeFi",
-   "link": "https://cryptoslate.com/aave-and-pendle-may-have-found-a-way-to-keep-yield-capital-from-ever-leaving-defi/",
-   "source": "CryptoSlate",
-   "published": "2026-10-06T11:30:49+00:00",
-   "summary": "LlamaRisk recommends a smaller December PT reserve as October 8 ends the old yield term while Aave borrowing costs continue. The post Aave and Pendle may have found a way to keep yield capital from ever leaving DeFi appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-rollover-cap.webp"
-  },
-  {
    "id": "fdfb2278b4",
    "title": "The VIX of bonds is rising but bitcoin and stocks aren't hearing it yet",
    "link": "https://www.coindesk.com/daybook-us/2026/10/06/the-vix-of-bonds-is-rising-but-bitcoin-and-stocks-aren-t-hearing-it-yet",
@@ -529,15 +556,6 @@
    "published": "2026-10-06T10:16:55+00:00",
    "summary": "Hong Kong regulators plan to establish a licensing regime for four categories, including digital asset trading, custody, advisory and management services.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M489R6N7E1AB2YW1Y7Q9J3JB/hi-how-hong-kong-is-turning-tokenized-bonds-into-real-market-infrastructure-1.jpg"
-  },
-  {
-   "id": "40a19ad488",
-   "title": "Cardano just added the kind of token controls Wall Street wants and DeFi may hate",
-   "link": "https://cryptoslate.com/cardano-just-added-the-kind-of-token-controls-wall-street-wants-and-defi-may-hate/",
-   "source": "CryptoSlate",
-   "published": "2026-10-06T10:00:57+00:00",
-   "summary": "Under proposed CIP-113, separating bundled assets requires holder authorization and the restricted token’s permission hook. The post Cardano just added the kind of token controls Wall Street wants and DeFi may hate appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/cardano-cip113-token-freeze.webp"
   },
   {
    "id": "a56eb89267",
@@ -709,24 +727,6 @@
    "published": "2026-10-06T01:47:24+00:00",
    "summary": "ZachXBT says he infiltrated the network by posing as a customer, gaining information that helped trace funds from the $1.5 billion Bybit hack.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M47E98M7WF0617YMCEA467EH/laundering.jpg"
-  },
-  {
-   "id": "f406036a49",
-   "title": "Strive Adds $169M Bitcoin in Its Biggest Buy in Four Months",
-   "link": "https://decrypt.co/380129/strive-adds-169m-bitcoin-biggest-buy-four-months",
-   "source": "Decrypt",
-   "published": "2026-10-05T22:30:20+00:00",
-   "summary": "The Nasdaq-listed bitcoin treasury company, co-founded by Vivek Ramaswamy, paid roughly $169 million for 2,000 coins last week and now holds 29,462 BTC.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-17-gID_7.png"
-  },
-  {
-   "id": "46f022de06",
-   "title": "DeFi Development Corp Adds $3 Million in Solana as SOL Buys Slow",
-   "link": "https://decrypt.co/380125/defi-development-corp-adds-3m-solana",
-   "source": "Decrypt",
-   "published": "2026-10-05T21:48:03+00:00",
-   "summary": "Nasdaq-listed DeFi Development Corp's latest SEC filing shows its Solana stash grew 1%, to about 2.56 million SOL and SOL equivalents—roughly half the prior week's gain and well below mid-September's pace.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Solana-gID_7.png"
   }
  ]
 }

@@ -1,6 +1,297 @@
 {
  "posts": [
   {
+   "slug": "crypto-market-digest-october-7-2026",
+   "type": "digest",
+   "date": "2026-10-07T02:27:16+00:00",
+   "title": "Crypto Market Digest — October 7, 2026",
+   "sum_en": "HASH leads today's movers (-13.8%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে HASH (-13.8%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 1.21,
+      "ch": 6.43,
+      "vol": 16010661,
+      "rank": 36
+     },
+     {
+      "sym": "ZRO",
+      "name": "LayerZero",
+      "price": 2.23,
+      "ch": 5.02,
+      "vol": 125987882,
+      "rank": 85
+     },
+     {
+      "sym": "ETHFI",
+      "name": "Ether.fi",
+      "price": 0.763545,
+      "ch": 4.16,
+      "vol": 66305609,
+      "rank": 92
+     },
+     {
+      "sym": "JST",
+      "name": "JUST",
+      "price": 0.141021,
+      "ch": 3.49,
+      "vol": 33345337,
+      "rank": 73
+     },
+     {
+      "sym": "M",
+      "name": "MemeCore",
+      "price": 1.046,
+      "ch": 3.45,
+      "vol": 1856754,
+      "rank": 47
+     },
+     {
+      "sym": "UB",
+      "name": "Unibase",
+      "price": 0.140162,
+      "ch": 2.14,
+      "vol": 10697759,
+      "rank": 136
+     },
+     {
+      "sym": "RENDER",
+      "name": "Render",
+      "price": 2.08,
+      "ch": 1.37,
+      "vol": 112487679,
+      "rank": 78
+     },
+     {
+      "sym": "STX",
+      "name": "Stacks",
+      "price": 0.37801,
+      "ch": 0.97,
+      "vol": 20355600,
+      "rank": 96
+     }
+    ],
+    "losers": [
+     {
+      "sym": "HASH",
+      "name": "Provenance Blockchain",
+      "price": 0.00515476,
+      "ch": -13.77,
+      "vol": 4029.96,
+      "rank": 150
+     },
+     {
+      "sym": "GRASS",
+      "name": "Grass",
+      "price": 0.654566,
+      "ch": -10.67,
+      "vol": 35255710,
+      "rank": 121
+     },
+     {
+      "sym": "MON",
+      "name": "Monad",
+      "price": 0.0271914,
+      "ch": -10.35,
+      "vol": 64906767,
+      "rank": 143
+     },
+     {
+      "sym": "MNT",
+      "name": "Mantle",
+      "price": 0.581863,
+      "ch": -10.31,
+      "vol": 38109755,
+      "rank": 55
+     },
+     {
+      "sym": "SPX",
+      "name": "SPX6900",
+      "price": 0.406283,
+      "ch": -9.25,
+      "vol": 14443895,
+      "rank": 128
+     },
+     {
+      "sym": "ENA",
+      "name": "Ethena",
+      "price": 0.225986,
+      "ch": -9.04,
+      "vol": 349331396,
+      "rank": 40
+     },
+     {
+      "sym": "VIRTUAL",
+      "name": "Virtuals Protocol",
+      "price": 0.781749,
+      "ch": -8.93,
+      "vol": 69863231,
+      "rank": 114
+     },
+     {
+      "sym": "ARB",
+      "name": "Arbitrum",
+      "price": 0.186535,
+      "ch": -8.88,
+      "vol": 158519037,
+      "rank": 71
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 84391.56,
+      "ch": -1.49
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2657.58,
+      "ch": -1.86
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 770.44,
+      "ch": -1.62
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 119.0,
+      "ch": -1.38
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.4761,
+      "ch": -1.71
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2605,
+      "ch": -2.8
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.09177,
+      "ch": -3.35
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 11.338,
+      "ch": 1.56
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 13.703,
+      "ch": -0.8
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.159,
+      "ch": -4.92
+     },
+     {
+      "sym": "LTC",
+      "name": "LTC",
+      "price": 68.31,
+      "ch": -1.68
+     },
+     {
+      "sym": "UNI",
+      "name": "UNI",
+      "price": 8.218,
+      "ch": -8.49
+     },
+     {
+      "sym": "AAVE",
+      "name": "AAVE",
+      "price": 174.61,
+      "ch": -4.74
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR",
+      "price": 5.047,
+      "ch": -5.45
+     },
+     {
+      "sym": "SUI",
+      "name": "SUI",
+      "price": 1.1454,
+      "ch": -4.5
+     },
+     {
+      "sym": "POL",
+      "name": "POL",
+      "price": 0.10569,
+      "ch": -2.89
+     },
+     {
+      "sym": "ONDO",
+      "name": "ONDO",
+      "price": 0.4778,
+      "ch": -3.94
+     },
+     {
+      "sym": "PEPE",
+      "name": "PEPE",
+      "price": 4.18e-06,
+      "ch": -2.79
+     }
+    ],
+    "up": 28,
+    "total": 140,
+    "fear_greed": {
+     "value": 71,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.12423,
+      "ch": 0.16
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.32573,
+      "ch": 0.26
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 158.381,
+      "ch": 0.36
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4174.2998,
+      "ch": -0.1
+     }
+    ],
+    "stats": {
+     "win": 0,
+     "loss": 7,
+     "tp2": 0,
+     "expired": 0
+    },
+    "open": 0
+   }
+  },
+  {
    "slug": "trending-in-crypto-october-6-2026",
    "type": "trending",
    "date": "2026-10-06T19:07:51+00:00",
@@ -1422,5 +1713,5 @@
    }
   }
  ],
- "updated": "2026-10-06T19:07:51+00:00"
+ "updated": "2026-10-07T02:27:16+00:00"
 }
