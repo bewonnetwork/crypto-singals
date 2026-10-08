@@ -1,6 +1,470 @@
 {
  "posts": [
   {
+   "slug": "how-to-read-rsi",
+   "type": "learn",
+   "date": "2026-10-08T16:47:58+00:00",
+   "title": "How to Read RSI",
+   "title_bn": "RSI কীভাবে পড়বেন",
+   "sum_en": "RSI shows how fast price has been rising or falling on a 0–100 scale. Here is what the numbers mean and the common mistake to avoid.",
+   "sum_bn": "RSI ০–১০০ স্কেলে দেখায় দাম কত জোরে উঠছে বা পড়ছে। সংখ্যাগুলোর মানে আর সাধারণ ভুলটা জেনে নিন।",
+   "body": {
+    "pts_bn": [
+     "৫০-এর ওপরে মানে ক্রেতারা শক্তিশালী, ৫০-এর নিচে বিক্রেতারা।",
+     "৭০-এর ওপরে 'overbought', ৩০-এর নিচে 'oversold'। মানে দাম দ্রুত অনেকটা চলে গেছে।",
+     "সাধারণ ভুল: RSI ৭০ দেখেই বেচে দেওয়া। শক্ত ট্রেন্ডে RSI অনেকক্ষণ ৭০-এর ওপরে থাকতে পারে।",
+     "দাম নতুন হাই করছে কিন্তু RSI করছে না: এটাকে divergence বলে, ট্রেন্ড দুর্বল হওয়ার ইঙ্গিত।",
+     "RSI একা সিদ্ধান্ত নয়। ট্রেন্ড আর সাপোর্ট-রেজিস্ট্যান্সের সাথে মিলিয়ে দেখুন।"
+    ],
+    "pts_en": [
+     "Above 50 buyers are stronger; below 50 sellers are.",
+     "Above 70 is called overbought and below 30 oversold: price has moved far, fast.",
+     "Common mistake: selling just because RSI is 70. In a strong trend RSI can stay above 70 for a long time.",
+     "Price makes a new high but RSI does not: this is divergence, a hint that the trend is weakening.",
+     "RSI alone is not a decision. Read it together with the trend and support/resistance."
+    ]
+   }
+  },
+  {
+   "slug": "trending-in-crypto-october-8-2026",
+   "type": "trending",
+   "date": "2026-10-08T16:47:58+00:00",
+   "title": "Trending in Crypto — October 8, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (SIMD, TRUMP, BTC…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "SIMD",
+      "name": "Super Intelligent Identity",
+      "rank": 803,
+      "price": 0.022442202775764284,
+      "ch": 28.82
+     },
+     {
+      "sym": "TRUMP",
+      "name": "Official Trump",
+      "rank": 112,
+      "price": 1.78415074969091,
+      "ch": -3.75
+     },
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 81205.33819196424,
+      "ch": -2.68
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 21,
+      "price": 4.696609180962184,
+      "ch": -8.11
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 503,
+      "price": 167.19781384671765,
+      "ch": 62.21
+     },
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "rank": 125,
+      "price": 0.4097416471061788,
+      "ch": 8.73
+     },
+     {
+      "sym": "BP",
+      "name": "Backpack",
+      "rank": 162,
+      "price": 0.9755649288974815,
+      "ch": -12.63
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "rank": 117,
+      "price": 1.448211396888096,
+      "ch": 3.19
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 115,
+      "price": 0.007917472260757612,
+      "ch": -7.53
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "rank": 2,
+      "price": 2429.2253195996554,
+      "ch": -5.39
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 81280,
+      "ch": -2.56,
+      "vol": 38183417742,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2430.4,
+      "ch": -5.3,
+      "vol": 17285461326,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 108.67,
+      "ch": -6.96,
+      "vol": 3965531009,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.36,
+      "ch": -5.25,
+      "vol": 2945208213,
+      "rank": 5
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.71,
+      "ch": -8.25,
+      "vol": 1489815925,
+      "rank": 21
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1144.23,
+      "ch": -13.16,
+      "vol": 1249040836,
+      "rank": 10
+     },
+     {
+      "sym": "DOGE",
+      "name": "Dogecoin",
+      "price": 0.083019,
+      "ch": -6.44,
+      "vol": 1074531004,
+      "rank": 12
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 729.54,
+      "ch": -5.4,
+      "vol": 991892206,
+      "rank": 4
+     }
+    ]
+   }
+  },
+  {
+   "slug": "crypto-market-digest-october-8-2026",
+   "type": "digest",
+   "date": "2026-10-08T16:47:57+00:00",
+   "title": "Crypto Market Digest — October 8, 2026",
+   "sum_en": "STRK leads today's movers (+20.9%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে STRK (+20.9%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "price": 0.059,
+      "ch": 20.95,
+      "vol": 211585252,
+      "rank": 124
+     },
+     {
+      "sym": "APEPE",
+      "name": "Ape and Pepe",
+      "price": 1.42e-06,
+      "ch": 13.13,
+      "vol": 24170606,
+      "rank": 150
+     },
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 1.38,
+      "ch": 10.61,
+      "vol": 13496632,
+      "rank": 33
+     },
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "price": 0.408581,
+      "ch": 8.77,
+      "vol": 35958446,
+      "rank": 125
+     },
+     {
+      "sym": "币安人生",
+      "name": "币安人生 (BinanceLife)",
+      "price": 0.510794,
+      "ch": 7.24,
+      "vol": 19944170,
+      "rank": 111
+     },
+     {
+      "sym": "JUP",
+      "name": "Jupiter",
+      "price": 0.340624,
+      "ch": 7.0,
+      "vol": 195099000,
+      "rank": 72
+     },
+     {
+      "sym": "PYTH",
+      "name": "Pyth Network",
+      "price": 0.076127,
+      "ch": 6.69,
+      "vol": 69017823,
+      "rank": 104
+     },
+     {
+      "sym": "AKE",
+      "name": "Akedo",
+      "price": 0.02886527,
+      "ch": 5.2,
+      "vol": 16005966,
+      "rank": 96
+     }
+    ],
+    "losers": [
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1144.23,
+      "ch": -13.16,
+      "vol": 1249040836,
+      "rank": 10
+     },
+     {
+      "sym": "VVV",
+      "name": "Venice Token",
+      "price": 22.24,
+      "ch": -13.08,
+      "vol": 100799048,
+      "rank": 76
+     },
+     {
+      "sym": "GRASS",
+      "name": "Grass",
+      "price": 0.579609,
+      "ch": -10.87,
+      "vol": 40260488,
+      "rank": 126
+     },
+     {
+      "sym": "AVAX",
+      "name": "Avalanche",
+      "price": 10.06,
+      "ch": -10.52,
+      "vol": 539164477,
+      "rank": 28
+     },
+     {
+      "sym": "INJ",
+      "name": "Injective",
+      "price": 6.63,
+      "ch": -10.15,
+      "vol": 119985454,
+      "rank": 95
+     },
+     {
+      "sym": "ADA",
+      "name": "Cardano",
+      "price": 0.231273,
+      "ch": -10.07,
+      "vol": 596750864,
+      "rank": 17
+     },
+     {
+      "sym": "RENDER",
+      "name": "Render",
+      "price": 1.83,
+      "ch": -9.92,
+      "vol": 76059589,
+      "rank": 80
+     },
+     {
+      "sym": "ENA",
+      "name": "Ethena",
+      "price": 0.205209,
+      "ch": -9.53,
+      "vol": 420801141,
+      "rank": 41
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 81037.99,
+      "ch": -2.9
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2435.66,
+      "ch": -5.25
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 731.42,
+      "ch": -4.98
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 108.57,
+      "ch": -7.04
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.3464,
+      "ch": -6.15
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2316,
+      "ch": -9.6
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.08266,
+      "ch": -6.96
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 10.001,
+      "ch": -11.03
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 12.362,
+      "ch": -7.96
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.032,
+      "ch": -6.61
+     },
+     {
+      "sym": "LTC",
+      "name": "LTC",
+      "price": 61.94,
+      "ch": -6.35
+     },
+     {
+      "sym": "UNI",
+      "name": "UNI",
+      "price": 7.324,
+      "ch": -6.68
+     },
+     {
+      "sym": "AAVE",
+      "name": "AAVE",
+      "price": 164.99,
+      "ch": -4.02
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR",
+      "price": 4.633,
+      "ch": -8.0
+     },
+     {
+      "sym": "SUI",
+      "name": "SUI",
+      "price": 1.0267,
+      "ch": -8.75
+     },
+     {
+      "sym": "POL",
+      "name": "POL",
+      "price": 0.09602,
+      "ch": -6.63
+     },
+     {
+      "sym": "ONDO",
+      "name": "ONDO",
+      "price": 0.4424,
+      "ch": -5.19
+     },
+     {
+      "sym": "PEPE",
+      "name": "PEPE",
+      "price": 3.75e-06,
+      "ch": -7.64
+     }
+    ],
+    "up": 37,
+    "total": 140,
+    "fear_greed": {
+     "value": 64,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.11944,
+      "ch": 0.03
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.32092,
+      "ch": -0.03
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 158.326,
+      "ch": 0.14
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4135.8999,
+      "ch": 0.14
+     }
+    ],
+    "stats": {
+     "win": 0,
+     "loss": 7,
+     "tp2": 0,
+     "expired": 0
+    },
+    "open": 1
+   }
+  },
+  {
    "slug": "what-is-leverage-and-liquidation",
    "type": "learn",
    "date": "2026-10-07T09:10:25+00:00",
@@ -1738,5 +2202,5 @@
    }
   }
  ],
- "updated": "2026-10-07T09:10:25+00:00"
+ "updated": "2026-10-08T16:47:58+00:00"
 }
