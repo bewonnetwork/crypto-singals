@@ -1661,7 +1661,6 @@ def watch_message(sym, sig, dc, source):
     return (f"👀 <b>{name} — Market Watch ({grade(dc['score'])})</b>\n\n"
             + deep_lines(sym, sig, dc) + "\n"
             + why + "\n\n"
-            f"🇧🇩 এটা শুধু নজরে রাখার নোট, ট্রেড সিগনাল নয়।\n\n"
             f"This is a rule-based technical-analysis score, not a win probability — informational only, "
             f"not financial advice, and no profit is guaranteed.\n\n"
             f"🕐 Generated: {now:%d %b %Y, %H:%M} UTC+6\n\n"
@@ -1802,15 +1801,36 @@ def run_once(force_digest=False):
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
     if force_digest or (now.hour >= DIGEST_HOUR_UTC and state["last_digest"] != today):
-        msg = None
+        msg, post = None, None
         if BLOG_ENABLED and frames:
             try:
                 post = blog_digest(frames, state)
                 msg = blog_message(post) if post else None
             except Exception as e:
                 print("blog digest error:", str(e)[:80])
-        if frames and send_telegram(msg or daily_digest(frames, state), preview=bool(msg)):
+        full = None
+        try:                       # পুরো তালিকা: দাম, ২৪ঘ পরিবর্তন, রেঞ্জ, ভলিউম (ছবির মতো ফরম্যাট)
+            import posts
+            full = posts.market_digest(HTTP, COINS, SITE_URL, state.get("fear_greed"),
+                                       f"{SITE_URL}#/blog/{post['slug']}" if post else None)
+        except Exception as e:
+            print("market digest error:", str(e)[:80])
+        if frames and send_telegram(full or msg or daily_digest(frames, state), preview=False):
             state["last_digest"] = today
+
+    if now.weekday() == 0 and now.hour >= 3 and state.get("last_week") != today:   # সোমবার: সাপ্তাহিক ফলাফল
+        try:
+            import posts
+            if send_telegram(posts.weekly_recap(state, SITE_URL)):
+                state["last_week"] = today
+        except Exception as e:
+            print("weekly recap error:", str(e)[:80])
+    try:                                   # লিকুইডেশন কার্ড (ছবি) প্রতি ৪ ঘণ্টায় + বড় লিকুইডেশনে অ্যালার্ট
+        import posts
+        posts.run_liquidations(state, HTTP, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, SITE_URL)
+        posts.run_promo(state, HTTP, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, SITE_URL)
+    except Exception as e:
+        print("liquidations error:", str(e)[:80])
 
     if TRENDING_ENABLED and now.hour >= TRENDING_HOUR_UTC and state.get("last_trending") != today:
         try:
