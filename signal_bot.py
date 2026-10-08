@@ -1829,6 +1829,8 @@ def run_once(force_digest=False):
         import posts
         posts.run_liquidations(state, HTTP, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, SITE_URL)
         posts.run_promo(state, HTTP, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, SITE_URL)
+        if not state.pop("promo_done_now", False):
+            posts.run_guide_video(state, HTTP, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, SITE_URL)
     except Exception as e:
         print("liquidations error:", str(e)[:80])
 
