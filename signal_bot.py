@@ -1274,7 +1274,8 @@ MANUAL_HELP = ("🧑‍💼 <b>নিজের সিগনাল দেওয�
                "৩) সাথে নোট:\n<code>/signal ETH SELL tp 2400 2300 sl 2600 note সাপোর্ট ভেঙেছে</code>\n\n"
                "৪) পার্টনারের সিগনাল: তাদের পোস্টটা এই বটে <b>Forward</b> করুন (TP আর SL থাকতে হবে)।\n\n"
                "অন্য কমান্ড:\n<code>/list</code> — খোলা সিগনাল\n<code>/close BTC</code> — নিজে হাতে বন্ধ\n"
-               "<code>/partner @channel</code> — পার্টনার চ্যানেল থেকে নিজে নিজে সিগনাল নেওয়া\n\n"
+               "<code>/partner @channel</code> — পার্টনার চ্যানেল থেকে নিজে নিজে সিগনাল নেওয়া\n"
+               "<code>/video https://youtu.be/XXXX শিরোনাম</code> — সাইটের ভিডিও সেকশনে ভিডিও যোগ\n<code>/video @channel</code> — পুরো YouTube চ্যানেল যোগ\n\n"
                f"কয়েন: {', '.join(COINS)} (অন্য কয়েনও চলবে, যেমন <code>/signal PEPE BUY</code>)\nForex: {', '.join(FX_PAIRS)}\n\n"
                "⏱ মেসেজ দেওয়ার পর সর্বোচ্চ ১৫–২০ মিনিটের মধ্যে চ্যানেল ও সাইটে যাবে।")
 
@@ -1501,6 +1502,12 @@ def read_owner_commands(state, frames, btc_trend):
             send_telegram("🤝 পার্টনার চ্যানেল: " + (", ".join(ps) or "কোনোটা নেই") +
                           "\n\nযোগ: <code>/partner @channelname</code>\nবাদ: <code>/partner off @channelname</code>\n\n"
                           "ℹ️ ওই চ্যানেলের মালিককে আপনার বটকে সেখানে <b>অ্যাডমিন</b> করতে হবে, নইলে বট পোস্ট দেখতে পাবে না।", chat["id"])
+        elif cmd == "/video":
+            try:
+                import extras
+                send_telegram(extras.video_command(state, HTTP, text), chat["id"])
+            except Exception as e:
+                send_telegram("❌ ভিডিও যোগ করা গেল না: " + html.escape(str(e)[:80]), chat["id"])
         elif cmd == "/close":
             p = parse_signal(text[6:] + " buy")
             pub, reply = close_manual(p["coin"], state, frames) if p["coin"] else (None, "❌ কোন কয়েন? যেমন: <code>/close BTC</code>")
@@ -1839,6 +1846,12 @@ def run_once(force_digest=False):
         update_insights(state)
     except Exception as e:
         print("insights error:", e)
+    # টপ-২০ কয়েনের বহু-উৎসের মত (consensus), রিমোট জবের তালিকা, ভিডিও — সব docs/data-তে
+    try:
+        import extras
+        extras.run(state, HTTP, frames, lambda c: add_indicators(get_candles(c)[0]), state.get("fear_greed"))
+    except Exception as e:
+        print("extras error:", str(e)[:80])
     # উৎস পরীক্ষা: নতুন সংস্করণ এলে একবার নিজে থেকে চলে, ফল docs/data/probe.json-এ থাকে
     try:
         import probe
