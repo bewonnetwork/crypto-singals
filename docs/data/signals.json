@@ -231,6 +231,25 @@
  ],
  "watch": [
   {
+   "coin": "NEAR",
+   "name": "NEAR",
+   "market": "crypto",
+   "side": "BUY",
+   "price": 4.93,
+   "score": 46,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-09T23:34:56+00:00"
+  },
+  {
    "coin": "GBPUSD",
    "name": "GBP/USD",
    "market": "forex",
@@ -354,5 +373,5 @@
    }
   }
  },
- "updated": "2026-10-09T19:48:26+00:00"
+ "updated": "2026-10-09T23:35:51+00:00"
 }
