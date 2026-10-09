@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-9-2026",
+   "type": "trending",
+   "date": "2026-10-09T14:42:13+00:00",
+   "title": "Trending in Crypto — October 9, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (DRV, TRUMP, BP…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "rank": 114,
+      "price": 0.5060639577664022,
+      "ch": 19.16
+     },
+     {
+      "sym": "TRUMP",
+      "name": "Official Trump",
+      "rank": 113,
+      "price": 1.8451774466608628,
+      "ch": -0.75
+     },
+     {
+      "sym": "BP",
+      "name": "Backpack",
+      "rank": 146,
+      "price": 1.2481134863806334,
+      "ch": 17.92
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "rank": 120,
+      "price": 1.3895009540431693,
+      "ch": -2.96
+     },
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "rank": 112,
+      "price": 0.07134070270263598,
+      "ch": 17.18
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "rank": 10,
+      "price": 1221.7622805933622,
+      "ch": 1.29
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 608,
+      "price": 128.6992051449012,
+      "ch": -26.01
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 115,
+      "price": 0.008061015865841138,
+      "ch": -5.07
+     },
+     {
+      "sym": "LIT",
+      "name": "Lighter",
+      "rank": 84,
+      "price": 3.5933280830050327,
+      "ch": -2.54
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 21,
+      "price": 4.7825190090670135,
+      "ch": -4.51
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 83020,
+      "ch": 0.61,
+      "vol": 37896444235,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2490.65,
+      "ch": -1.45,
+      "vol": 16661252705,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 110.22,
+      "ch": -1.79,
+      "vol": 4519500644,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.38,
+      "ch": -1.22,
+      "vol": 2965151805,
+      "rank": 5
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1219.74,
+      "ch": 1.21,
+      "vol": 1508234838,
+      "rank": 10
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.77,
+      "ch": -4.37,
+      "vol": 1432155810,
+      "rank": 21
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 740.86,
+      "ch": -2.16,
+      "vol": 1219040711,
+      "rank": 4
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 85.56,
+      "ch": -0.29,
+      "vol": 1055933763,
+      "rank": 11
+     }
+    ]
+   }
+  },
+  {
    "slug": "market-cap-vs-fdv",
    "type": "learn",
    "date": "2026-10-09T07:46:23+00:00",
@@ -2518,5 +2666,5 @@
    }
   }
  ],
- "updated": "2026-10-09T07:46:23+00:00"
+ "updated": "2026-10-09T14:42:14+00:00"
 }

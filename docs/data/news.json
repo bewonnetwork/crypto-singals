@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T07:46:26+00:00",
+ "updated": "2026-10-09T14:42:17+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,294 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "cd84583d3b",
+   "title": "US targets $1 billion Iran-linked crypto seizure, Bessent says ‘we know where it is’",
+   "link": "https://www.theblock.co/news/regulation/2026-10-09-us-targets-1-billion-iran-linked-crypto-seizure-bessent-says-we-know-where-it-is-418151",
+   "source": "The Block",
+   "published": "2026-10-09T14:41:09+00:00",
+   "summary": "Bessent’s latest crypto seizure plan follows months of sanctions and freezes targeting Iranian assets.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/07/iran-3.jpg"
+  },
+  {
+   "id": "c9d758ebc7",
+   "title": "Locked liquidity did not stop this $14 million crypto pool drain",
+   "link": "https://cryptoslate.com/79thvaults-14-million-pool-drain-shows-why-locked-liquidity-can-fail/",
+   "source": "CryptoSlate",
+   "published": "2026-10-09T14:40:46+00:00",
+   "summary": "Bitquery traced 79AU’s drain to token permissions that bypassed burned LP receipts, with residual rights documented on Oct. 8. The post Locked liquidity did not stop this $14 million crypto pool drain appeared first on CryptoSlate .",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/pancakeswap-locked-liquidity-exploit.webp"
+  },
+  {
+   "id": "8bb2a8999e",
+   "title": "New York AG secures up to $35 million from former Celsius CEO Alex Mashinsky",
+   "link": "https://www.theblock.co/news/regulation/2026-10-09-ny-attorney-general-alex-mashinsky-celsius-35-million-ban-418154",
+   "source": "The Block",
+   "published": "2026-10-09T14:16:15+00:00",
+   "summary": "NY AG Letitia James secured up to $35M from ex-Celsius CEO Alex Mashinsky and a permanent ban from the securities and crypto industries.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/05/Screenshot-2023-05-03-at-11.49.08.png"
+  },
+  {
+   "id": "5c71e31bb9",
+   "title": "Dragonfly partner rejects ‘bunker mode’ doomerism, calls for proactive blockchain measures",
+   "link": "https://cointelegraph.com/news/dragonfly-bunker-mode-doomerism-proactive-blockchain-measures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-09T13:49:22+00:00",
+   "summary": "Dragonfly’s Qureshi argued that asset migration is not a real solution in case of AI models breaking cryptographic signatures, and urged blockchains to adopt proactive measures.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4GCWY4XX0MD3NEZQFT038VE/hi-using-ai-in-crypto-do-it-at-your-own-risk.jpg"
+  },
+  {
+   "id": "fcb39a78b2",
+   "title": "Polygon’s 8 million USDT0 holders face scrutiny as 58% of growth matches scam patterns",
+   "link": "https://cryptoslate.com/polygons-8-million-usdt0-holders-face-scrutiny-as-58-of-growth-matches-scam-patterns/",
+   "source": "CryptoSlate",
+   "published": "2026-10-09T13:40:01+00:00",
+   "summary": "The Oct. 7 audit estimates about 1.1 million scam look-alikes, while addresses holding at least $10 fell 42% since August 2025. The post Polygon’s 8 million USDT0 holders face scrutiny as 58% of growth matches scam patterns appeared first…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/polygon-fake-address-flood.webp"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-09T13:31:41+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "ada2ca8ebb",
+   "title": "France is world’s most dangerous place for Bitcoiners: 90 attacks in 7 months",
+   "link": "https://cointelegraph.com/magazine/france-is-worlds-most-dangerous-place-for-bitcoiners-90-attacks-in-7-months?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-09T13:30:00+00:00",
+   "summary": "French authorities recorded 90 crypto-related cases involving kidnapping, extortion, threats and violent theft in seven months. What makes France such a hotspot?",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4AWRRN51808RRM7J8KQMKT8/magazine-investigations-2.png"
+  },
+  {
+   "id": "95e3e64e55",
+   "title": "Bitcoin Bleeds in Uptober—How Low Can It Go? Experts Weigh In",
+   "link": "https://decrypt.co/380574/bitcoin-bleeds-in-uptober-how-low-can-it-go-experts-weigh-in",
+   "source": "Decrypt",
+   "published": "2026-10-09T13:20:12+00:00",
+   "summary": "Experts highlight several support levels, from $83,000 down to $72,000, that Bitcoin may need to test in a bearish start to Uptober.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/bitcoin-crack-decrypt-style-gID_7.jpg"
+  },
+  {
+   "id": "1a611a7ffe",
+   "title": "Base creator Jesse Pollak says equities and non-dollar stablecoins will lead upcoming ‘tokenization supercycle’",
+   "link": "https://www.theblock.co/news/defi/2026-10-09-tokenization-supercycle-base-jesse-pollak-418144",
+   "source": "The Block",
+   "published": "2026-10-09T13:12:57+00:00",
+   "summary": "Coinbase launched tokenized stocks on Base six weeks ago, with about $70 million to $100 million in daily volume, according to Pollak.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/jesse_pollak_base_1920x1080.jpg"
+  },
+  {
+   "id": "40366d63a5",
+   "title": "DWF Labs subsidiaries sue BitGo for $141 million over alleged token lock-up breach",
+   "link": "https://www.coindesk.com/policy/2026/10/09/dwf-labs-subsidiaries-sue-bitgo-for-usd141-million-over-alleged-token-lock-up-breach",
+   "source": "CoinDesk",
+   "published": "2026-10-09T12:23:54+00:00",
+   "summary": "DWF is seeking $114 million in damages on the basis BitGo’s token sales resulted in direct losses through the fall in tokens' prices.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/20b32fd8cd327bc8631f52da23df84063b120957-1000x563.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "e634999d5e",
+   "title": "UK Targets Cryptomus and TokenSpot in New Russia Sanctions Package",
+   "link": "https://decrypt.co/380568/uk-targets-cryptomus-and-tokenspot-in-new-russia-sanctions-package",
+   "source": "Decrypt",
+   "published": "2026-10-09T12:04:07+00:00",
+   "summary": "The package hits five crypto and payment platforms, two of which handled transactions with Russia’s A7 network, the UK government said.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/russia-moscow-red-square-kremlin-decrypt-style-gID_7.jpg"
+  },
+  {
+   "id": "d22f417b5d",
+   "title": "Backing Polymarket’s primary favorites would have lost 4%, new audit finds.",
+   "link": "https://cryptoslate.com/backing-polymarkets-primary-favorites-would-have-lost-4-new-audit-finds/",
+   "source": "CryptoSlate",
+   "published": "2026-10-09T12:00:22+00:00",
+   "summary": "Bitquery’s 273-race scorecard found an 87% win rate, but its equal-dollar hypothetical shows why accurate calls can come at losing prices. The post Backing Polymarket’s primary favorites would have lost 4%, new audit finds. appeared first…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/polymarket-win-loss-mindset.webp"
+  },
+  {
+   "id": "b3ab513325",
+   "title": "Morning Minute: Uptober Turns Sour as Crypto Majors Slide",
+   "link": "https://decrypt.co/380569/morning-minute-uptober-turns-sour-as-crypto-majors-slide",
+   "source": "Decrypt",
+   "published": "2026-10-09T11:41:15+00:00",
+   "summary": "Is this the beginning of a bigger selloff with the anniversary of 10/10 looming? Or just a leverage flush before the next leg up?",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/bitcoin-down-decrypt-style-gID_7.png"
+  },
+  {
+   "id": "c3d7c8963f",
+   "title": "Zcash developers set January target for quantum-resistant payments after ‘bunker mode’ scare",
+   "link": "https://www.coindesk.com/tech/2026/10/09/zcash-developers-set-january-target-for-quantum-resistant-payments-after-bunker-mode-scare",
+   "source": "CoinDesk",
+   "published": "2026-10-09T11:39:05+00:00",
+   "summary": "The plan concerns public payments, where about seven in 10 ZEC sit. A separate wallet tool would keep balance checks from revealing which addresses belong together.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/6359a9ff83ee7ba7465c0ff2289cb8ae23e7ac43-1500x1000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "3779b69e59",
+   "title": "Trump's Iran pledge underpins crypto gains as bitcoin bears face liquidation pressure",
+   "link": "https://www.coindesk.com/daybook-us/2026/10/09/trump-s-iran-pledge-underpins-crypto-gains-as-bitcoin-bears-face-liquidation-pressure",
+   "source": "CoinDesk",
+   "published": "2026-10-09T11:09:04+00:00",
+   "summary": "Your day-ahead look for Oct. 9, 2026",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/f1989cca173a6179b4bf2c5e784f3cb6ef51c75a-1000x668.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "59af78f548",
+   "title": "ESMA seeks evidence tokenized collateral can be cashed out in crisis",
+   "link": "https://cointelegraph.com/news/esma-tokenized-collateral-eu-clearinghouses?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-09T10:49:24+00:00",
+   "summary": "ESMA is seeking industry feedback on the legal, liquidity and operational risks of tokenized collateral before deciding whether additional EU regulatory measures are necessary.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4G06R9TT5S4ED9Y271GTGVR/hi-company-wants-to-launch-digital-currency-bank-stablecoin-eu-1.jpg"
+  },
+  {
+   "id": "4c291b2589",
+   "title": "Bitcoin steadies near $82,500 after Trump rules out Iran strike before midterms",
+   "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-steadies-near-usd82-500-after-trump-rules-out-iran-strike-before-midterms",
+   "source": "CoinDesk",
+   "published": "2026-10-09T10:44:22+00:00",
+   "summary": "Bitcoin recovered to around $82,500 after Trump ruled out an Iran strike, but remains about 4% lower on the week, while ether has lost 9%.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/abb4aca167f34914c10d26d1200f41bbd63c76ae-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "34ae86540e",
+   "title": "Thailand SEC issues bitcoin and ether ETF rules set to take effect Oct. 16",
+   "link": "https://www.theblock.co/news/regulation/2026-10-09-thailand-sec-issues-bitcoin-and-ether-etf-rules-set-to-take-effect-oct-16-418132",
+   "source": "The Block",
+   "published": "2026-10-09T10:40:59+00:00",
+   "summary": "Thailand's SEC has limited initial crypto ETFs to bitcoin and ether, with new custody, exposure, and trading rules taking effect Oct. 16.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/thai-sec-crypto-etfs.png"
+  },
+  {
+   "id": "703f1b38e6",
+   "title": "AI agents can pay for your shopping. Who gets your money back?",
+   "link": "https://cryptoslate.com/ai-agents-hijack-online-shopping-forcing-a-6b-merchant-crisis/",
+   "source": "CryptoSlate",
+   "published": "2026-10-09T10:40:44+00:00",
+   "summary": "Amazon's Bedrock AgentCore Payments, built with Coinbase and Stripe, lets AI agents discover paid services, authenticate, and pay with stablecoins and x402 under preset spending limits. AI agents are getting wallets before merchants get a…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/autonomous-commerce-disputes.webp"
+  },
+  {
+   "id": "02d158bb4a",
+   "title": "UK sanctions three crypto exchanges tied to Russian illicit funds",
+   "link": "https://cointelegraph.com/news/uk-sanctions-crypto-exchanges-russian-illicit-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-09T10:34:37+00:00",
+   "summary": "The UK sanctioned crypto exchanges and payment processors, some of which were tied to thousands of Russian entities and the sanctioned HTX exchange.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FZR0YP4HAX26C5RVN1W1T2/hi-russias-law-on-crypto-whats-the-latest-2.jpg"
+  },
+  {
+   "id": "01c8fbd280",
+   "title": "Sam Altman-backed bitcoin life insurer Meanwhile raises $37.5 million round led by Bain Capital Crypto",
+   "link": "https://www.theblock.co/news/deals/2026-10-09-sam-altman-backed-bitcoin-life-insurer-meanwhile-raises-37-5-million-round-led-by-bain-capital-crypto-418131",
+   "source": "The Block",
+   "published": "2026-10-09T10:33:46+00:00",
+   "summary": "Meanwhile raised $37.5M from existing investors, bringing the Sam Altman-backed bitcoin life insurer's total funding above $180 million.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/meanwhile.png"
+  },
+  {
+   "id": "4028130e9f",
+   "title": "Thailand opens door to locally listed bitcoin and ether ETFs",
+   "link": "https://www.coindesk.com/policy/2026/10/09/thailand-opens-door-to-locally-listed-bitcoin-and-ether-etfs",
+   "source": "CoinDesk",
+   "published": "2026-10-09T10:16:55+00:00",
+   "summary": "Thailand’s new crypto rules taking effect Oct. 16. They allow Thai asset managers to launch crypto ETFs on the local stock exchange, with bitcoin and ether initially eligible.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/70284126e74d9b4b82638d4995ed0ba9820e80a9-4883x2747.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "40e66a9214",
+   "title": "French lawmakers back stablecoin swap tax in 2027 budget bill",
+   "link": "https://cointelegraph.com/news/france-crypto-stablecoin-swap-tax-2027-budget?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-09T10:16:48+00:00",
+   "summary": "France’s Finance Committee backed taxes on stablecoin swaps, as well as unrealized crypto gains when households with more than 800,000 euros move abroad.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FT35RCS7WXQT4HAHHT14GK/regulations-france-crypto.jpg"
+  },
+  {
+   "id": "4528f64851",
+   "title": "UK slaps sanctions on three crypto exchanges over alleged Russia links",
+   "link": "https://www.coindesk.com/policy/2026/10/09/uk-slaps-sanctions-on-three-crypto-exchanges-over-alleged-russia-links",
+   "source": "CoinDesk",
+   "published": "2026-10-09T10:14:59+00:00",
+   "summary": "Britain said the crypto platforms and two payment services may have helped Russia evade financial sanctions, with two handling transactions involving the Kremlin-backed A7 network.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/3ed99ad8e1d2af4b11b0bb301a546dddccbf65e4-6000x4000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "286c941440",
+   "title": "Empire Market Co-Creator Sentenced to 40 Years Over $430M Dark Web Bazaar",
+   "link": "https://decrypt.co/380561/empire-market-co-creator-sentenced-to-40-years-over-430m-dark-web-bazaar",
+   "source": "Decrypt",
+   "published": "2026-10-09T10:11:51+00:00",
+   "summary": "Raheim Hamilton forfeited some 1,230 BTC. His co-creator Thomas Pavey, who agreed to forfeit 1,584 BTC, is due to be sentenced this month.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/crypto-crime-decrypt-style-1-gID_7.png"
+  },
+  {
+   "id": "34bcc3c96b",
+   "title": "Bitcoin speculators move 55K BTC to exchanges amid $1.1B liquidations",
+   "link": "https://cointelegraph.com/markets/bitcoin-speculators-btc-exchanges-crypto-liquidation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-09T09:50:01+00:00",
+   "summary": "Bitcoin dipped below $81,000, sparking mass crypto liquidations as traders sent BTC to exchanges at a loss.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FX2DFZ8H6KSQP3M3F615T4/article-covers-246541-three-signs-bitcoin-price-near-full-capitulation-960x640.webp"
+  },
+  {
+   "id": "ed687902c2",
+   "title": "Strategy’s $150 million-a-day STRC market has a hidden dependency on its own buybacks",
+   "link": "https://cryptoslate.com/strategys-150-million-a-day-strc-market-has-a-hidden-dependency-on-its-own-buybacks/",
+   "source": "CryptoSlate",
+   "published": "2026-10-09T09:40:38+00:00",
+   "summary": "Strategy's $1.45 billion preferred-share buyback program is supporting a substantial share of trading in one of its key Bitcoin financing instruments. According to a Keyrock research report, Strategy's repurchases accounted for more than…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/strc-issuer-support-balance.webp"
+  },
+  {
+   "id": "6259efcca5",
+   "title": "Dark web drug market operator sentenced to 40 years, forfeits $101 million in bitcoin",
+   "link": "https://www.coindesk.com/policy/2026/10/09/dark-web-drug-market-operator-forfeits-1-230-bitcoin-and-faces-40-years-in-prison",
+   "source": "CoinDesk",
+   "published": "2026-10-09T09:20:16+00:00",
+   "summary": "A man from Virginia, who facilitated millions of drug transactions worth roughly $430 million, agreed to give up $100 million worth of BTC. His partner forfeited nearly 1,600 BTC.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/b063c17ac3fe517655237e5d48234c80c38753b9-6000x3999.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "1682416faa",
+   "title": "MARA transfers $81.1 million in bitcoin to Galaxy Digital as strategy pivots to AI",
+   "link": "https://www.coindesk.com/markets/2026/10/09/mara-transfers-usd81-1-million-in-bitcoin-to-galaxy-digital-as-strategy-pivots-to-ai",
+   "source": "CoinDesk",
+   "published": "2026-10-09T09:08:09+00:00",
+   "summary": "The bitcoin miner’s transfer does not confirm a sale, but comes as its treasury has fallen from 53,822 BTC in February to 35,577 BTC in August.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/bb6f6358f562f5d7eac6d507275a723688c7ec8c-720x406.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "4b4e027e14",
+   "title": "Sam Altman-backed bitcoin insurer Meanwhile secures $37.5 million in Bain Capital Crypto-led round",
+   "link": "https://www.coindesk.com/business/2026/10/09/sam-altman-backed-bitcoin-insurer-meanwhile-secures-usd37-5-million-in-bain-capital-crypto-led-round",
+   "source": "CoinDesk",
+   "published": "2026-10-09T09:06:00+00:00",
+   "summary": "Meanwhile has signed 15 brokers serving high-net worth clients across markets iSwitzerland, Singapore, Hong Kong and the UAE.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/37a1020d99f838de78640a139f98435ebafd1ad1-1280x720.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "8c8ab076c2",
+   "title": "SIM-Swap Fraudster Who Spent Stolen Crypto on Gold Grills and Dubai Trips Jailed",
+   "link": "https://decrypt.co/380554/sim-swap-fraudster-who-spent-stolen-crypto-on-gold-grills-and-dubai-trips-jailed",
+   "source": "Decrypt",
+   "published": "2026-10-09T08:59:31+00:00",
+   "summary": "Ajay Shinjin helped steal nearly $265,000 in crypto after criminals hijacked BT customers' phone numbers in November 2021.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Jail-cell-2-gID_7.png"
+  },
+  {
+   "id": "b9218efeb1",
+   "title": "Coinbase streams $150,000 Singapore trading cup and crowns its first champion",
+   "link": "https://cryptoslate.com/coinbase-streams-150000-singapore-trading-cup-and-crowns-its-first-champion/",
+   "source": "CryptoSlate",
+   "published": "2026-10-09T08:30:11+00:00",
+   "summary": "The exchange paired walkouts and memes with a ten-trader tournament; its displayed leaderboard listed Intern first without confirming a winner. The post Coinbase streams $150,000 Singapore trading cup and crowns its first champion appeared…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-trading-cup.webp"
+  },
   {
    "id": "db49e65d8c",
    "title": "Bitcoin, Ether ETFs’ October outflows swell toward $1B",
@@ -28,7 +316,7 @@
   },
   {
    "id": "996033a907",
-   "title": "Live updates: XRP ETFs the only ones in green as BTC, ETH, ZEC funds post outflows",
+   "title": "Live updates: Bitcoin steadies near $83,000 as crypto recovers from Thursday selloff",
    "link": "https://www.coindesk.com/business/2026/10/09/live-updates-xrp-etfs-the-only-ones-in-green-as-btc-eth-zec-funds-post-outflows",
    "source": "CoinDesk",
    "published": "2026-10-09T06:51:32+00:00",
@@ -52,15 +340,6 @@
    "published": "2026-10-09T06:30:02+00:00",
    "summary": "The coming-weeks rollout limits US access to Eligible Contract Participants and puts borrowers’ collateral at risk. The post Coinbase rolls out 10x spot leverage, but blocks US retail from it appeared first on CryptoSlate .",
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-leverage-machine-1.webp"
-  },
-  {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-09T05:38:03+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
   },
   {
    "id": "ab952a01a5",
@@ -144,33 +423,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FA1413AR809PCC2V0XRTMJ/thailand.jpg"
   },
   {
-   "id": "d60cbcccf3",
-   "title": "AI may be keeping Bitcoin’s biggest macro headwind alive after the Fed stops hiking",
-   "link": "https://cryptoslate.com/ai-may-be-keeping-bitcoins-biggest-macro-headwind-alive-after-the-fed-stops-hiking/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T03:00:33+00:00",
-   "summary": "Minutes released Oct. 7 cite AI debt as one explanation for higher yields, while stronger earnings helped stocks absorb pressure. The post AI may be keeping Bitcoin’s biggest macro headwind alive after the Fed stops hiking appeared first…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ai-capital-vortex-bitcoin.webp"
-  },
-  {
-   "id": "a934778b09",
-   "title": "Abstract’s shutdown exposes the gap between owning assets and being able to move them",
-   "link": "https://cryptoslate.com/abstracts-shutdown-exposes-the-gap-between-owning-assets-and-being-able-to-move-them/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T02:00:05+00:00",
-   "summary": "Abstract sets a Dec. 15 shutdown, but wallet access, supported routes and settlement determine whether holders can complete an exit. The post Abstract’s shutdown exposes the gap between owning assets and being able to move them appeared…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/abstract-migration-routes.webp"
-  },
-  {
-   "id": "4e5d58eb4c",
-   "title": "XRPL’s $1.34 billion stablecoin base doesn’t tell us how much XRP users need",
-   "link": "https://cryptoslate.com/xrpls-1-34-billion-stablecoin-base-doesnt-tell-us-how-much-xrp-users-need/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T01:00:56+00:00",
-   "summary": "Fees and reserves require XRP, while larger demand depends on routing choices and the balances held in liquidity or credit products. The post XRPL’s $1.34 billion stablecoin base doesn’t tell us how much XRP users need appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-usage-pathways-2.webp"
-  },
-  {
    "id": "abc9df379e",
    "title": "Cantor Fitzgerald faces Senate Democrat’s questions over Tether ties",
    "link": "https://cointelegraph.com/news/cantor-fitzgerald-faces-senate-democrats-probe-over-tether-ties?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -180,24 +432,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4F1W4R51W8W7BPK0508NAMP/investigation.jpg"
   },
   {
-   "id": "ece0434b58",
-   "title": "Solana’s geographic speed plan trusts validator locations the network cannot verify",
-   "link": "https://cryptoslate.com/solanas-geographic-speed-plan-trusts-validator-locations-the-network-cannot-verify/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T00:00:53+00:00",
-   "summary": "Wattenhofer and Kniep’s proposal preserves leader allocations while faster modeled handovers come with longer consecutive-control and regional risks. The post Solana’s geographic speed plan trusts validator locations the network cannot…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-geographic-leader-scheduling.webp"
-  },
-  {
-   "id": "44dc5127a5",
-   "title": "Bitcoin Core’s privacy fix reaches v32 code while the v31 patch remains open",
-   "link": "https://cryptoslate.com/bitcoin-cores-privacy-fix-reaches-v32-code-while-the-v31-patch-remains-open/",
-   "source": "CryptoSlate",
-   "published": "2026-10-08T23:00:07+00:00",
-   "summary": "The opt-in private-broadcast repair is merged into 32.x, while the older-branch backport remains open and 31.1 is still the stable download. The post Bitcoin Core’s privacy fix reaches v32 code while the v31 patch remains open appeared…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-core-branch-status.webp"
-  },
-  {
    "id": "0e94726a2c",
    "title": "China’s P2P stablecoin wallets surge 43x, Korea’s $450B crypto economy: Asia Express",
    "link": "https://cointelegraph.com/magazine/chinas-p2p-stablecoin-wallets-surge-43x-koreas-450b-crypto-economy-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -205,15 +439,6 @@
    "published": "2026-10-08T22:35:00+00:00",
    "summary": "Despite ongoing bans, China has seen a big surge in peer-to-peer stablecoin use. New figures show South Korea’s $450B crypto economy is the largest in East Asia.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M26Q2WGDD8GDA5QMCWQF3GB3/magazineasia-expresssnow.jpg"
-  },
-  {
-   "id": "de3e00b021",
-   "title": "PumpFun is making millions from a market where 81% of memecoins crashed 90%",
-   "link": "https://cryptoslate.com/pumpfun-is-making-millions-from-a-market-where-81-of-memecoins-crashed-90/",
-   "source": "CryptoSlate",
-   "published": "2026-10-08T22:00:06+00:00",
-   "summary": "Talos reports rare observed recoveries, while platform fees and PUMP burns offer no automatic route back to break-even for other tokens. The post PumpFun is making millions from a market where 81% of memecoins crashed 90% appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/pump-memecoin-theater.webp"
   },
   {
    "id": "6a38e85825",
@@ -502,231 +727,6 @@
    "published": "2026-10-08T14:39:48+00:00",
    "summary": "As crypto debates whether holders should move funds before AI or quantum advances expose wallet keys, custody firms face a separate problem: upgrading systems before an emergency migration.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/f849c0a9167b7c6ad26a634f02b3fd8630fb848f-3287x1944.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "f2f9113ffe",
-   "title": "Cardano Foundation spins out Veridian, tokenizes its shares on new standard",
-   "link": "https://www.coindesk.com/business/2026/10/08/cardano-foundation-spins-out-veridian-tokenizes-its-shares-on-new-standard",
-   "source": "CoinDesk",
-   "published": "2026-10-08T14:24:24+00:00",
-   "summary": "Veridian became the first company to use Cardano’s new programmable-token standard for its equity, though the tokenized shares are not being offered to the public.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/538d25ad6e37ed464e96af57fec7bc18aa7776c3-919x517.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "305846351b",
-   "title": "Securitize launches 1:1-backed tokenized stocks, starting with Apple, Nvidia, Strategy and more",
-   "link": "https://www.theblock.co/news/markets/2026-10-08-securitize-launches-tokenized-us-stocks-solana-418043",
-   "source": "The Block",
-   "published": "2026-10-08T14:04:39+00:00",
-   "summary": "Securitize launches tokenized US stocks on Solana, backed 1:1 by real shares with dividends and USDC settlement.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/10/20251028_Secrutize_News_2.jpg"
-  },
-  {
-   "id": "1372027fa9",
-   "title": "Over 6 million bitcoin sit behind exposed public keys as AI warnings mount",
-   "link": "https://www.coindesk.com/markets/2026/10/08/over-6-million-bitcoin-sit-behind-exposed-public-keys-as-ai-warnings-mount",
-   "source": "CoinDesk",
-   "published": "2026-10-08T14:03:20+00:00",
-   "summary": "Glassnode co-founder's latest figures show growing public-key exposure as Justin Drake urges preparations for potential AI attacks on wallet cryptography.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/4420c630cb05b3c60a6adc8bcef8a317d63d788a-3000x1676.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "f355f287c5",
-   "title": "‘No going back’ for institutions moving toward tokenized onchain future, says Fidelity",
-   "link": "https://cointelegraph.com/news/institutions-tokenized-onchain-future-no-going-back-fidelity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T13:42:27+00:00",
-   "summary": "Tokenization offers structural advantages to financial institutions and helps asset managers reach new markets, according to Fidelity’s head of digital asset strategists.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4DTXW3K631JQCMDGZKV9MNS/hi-harmless-for-now-dangerous-in-the-future-heres-what-researches-think-of-cryptocurrencies-rwa-1.jpg"
-  },
-  {
-   "id": "ee6fd4a061",
-   "title": "Crypto lending rises again… but have they solved the risks?",
-   "link": "https://cointelegraph.com/magazine/crypto-lending-rises-again-but-have-they-solved-the-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T13:30:00+00:00",
-   "summary": "Crypto lending has risen by 55% since July, but now has to deal with the dangers of AI assisted hacks, and risks cascading through interlinked protocols. Here’s how to stay safe.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M47ZC7BVFK1X6QFTDNSWBMXC/magazine-memecoins-betrayal-of-cryptos-ideal-or-its-true-purpose.png"
-  },
-  {
-   "id": "944730c641",
-   "title": "Securitize brings Apple, Nvidia and Tesla to Solana, with NYSE trading in the works",
-   "link": "https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works",
-   "source": "CoinDesk",
-   "published": "2026-10-08T13:06:24+00:00",
-   "summary": "Tokenized shares in the mega-caps will first trade on Securitize's Solana-based platform, with further plans to expand them to NYSE and OKXICE digital venues, the firm said.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/0df058fe321b648948d8a5b690588aaafbb157fe-2048x1152.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "1aad1d45d5",
-   "title": "EU lawmakers push crypto onto anti-corruption agenda",
-   "link": "https://cointelegraph.com/news/eu-lawmakers-crypto-anti-corruption?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T12:54:21+00:00",
-   "summary": "MEPs also called for stronger asset recovery, while the Commission plans to adopt its first anti-corruption strategy by the end of this year.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4DRPQDAKZJCFPBHT0CSH4QT/hi-international-association-of-trusted-blockchain-applications-eu.jpg"
-  },
-  {
-   "id": "e3eb350286",
-   "title": "AI Video Game Mod Mashups Are Taking Off—Here Are the Wackiest Examples",
-   "link": "https://decrypt.co/380407/ai-video-game-mod-mashups-are-taking-off-here-are-the-wackiest-examples",
-   "source": "Decrypt",
-   "published": "2026-10-08T12:15:51+00:00",
-   "summary": "Minecraft in Elden Ring, Skate in Call of Duty, and Spider-Man in Gotham. AI vibe coders are creating crazy video game mashup mods.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/Minecraft-CallofDuty-gID_7.jpg"
-  },
-  {
-   "id": "5459efdd8c",
-   "title": "Sui’s Hashi to launch with $500M in Bitcoin finance commitments",
-   "link": "https://cointelegraph.com/news/sui-hashi-bitcoin-finance-commitments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T12:03:28+00:00",
-   "summary": "Hashi has more than $500M in commitments ahead of mainnet launch, while Anchorage offers institutions settlement and self-custody.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4DNKQ04726V0SJFRMWH6S5G/hi-a-beginners-guide-to-understanding-wrapped-tokens-and-wrapped-bitcoin.jpg"
-  },
-  {
-   "id": "483ff59144",
-   "title": "Morning Minute: AI Could Break Crypto Encryption Before Quantum, Says Ethereum Researcher",
-   "link": "https://decrypt.co/380402/morning-minute-ethereum-researcher-says-ai-may-break-crypto-encryption-before-quantum",
-   "source": "Decrypt",
-   "published": "2026-10-08T11:48:13+00:00",
-   "summary": "Justin Drake is calling for crypto holders to start calmly planning for “Bunker Mode.\" But reactions so far haven’t been too calm.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/crime_hacker-gID_7.png"
-  },
-  {
-   "id": "e3163fb8bd",
-   "title": "Bitcoin and ether holders urged to enter ‘bunker mode’ against possible AI attacks",
-   "link": "https://www.coindesk.com/tech/2026/10/08/bitcoin-and-ether-holders-urged-to-prepare-bunker-mode-against-possible-ai-attacks",
-   "source": "CoinDesk",
-   "published": "2026-10-08T11:47:16+00:00",
-   "summary": "Ethereum researchers warned AI could break the signatures guarding bitcoin, ether and the tokens built on them \"in months, not years\" in the worst case, well before quantum computers arrive.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/422bf0c58d3c5d984b8ee7f8a379b85250db7bc2-6016x4016.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "99f0bcdf0f",
-   "title": "Uranium Finance Hacker Who Bought Pokémon and Magic Cards Convicted Over $50M Theft",
-   "link": "https://decrypt.co/380401/uranium-finance-hacker-who-bought-pokemon-and-magic-cards-convicted-over-50m-theft",
-   "source": "Decrypt",
-   "published": "2026-10-08T11:37:17+00:00",
-   "summary": "Jonathan Spalletta also spent stolen crypto on a Roman coin marking Julius Caesar's assassination and moon-flown Wright brothers fabric.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Judge-decrypt-style-2-gID_7.png"
-  },
-  {
-   "id": "b7f07e7ea4",
-   "title": "NUVA brings U.S. residential mortgage credit to offshore investors",
-   "link": "https://www.coindesk.com/business/2026/10/08/nuva-brings-u-s-residential-mortgage-credit-to-offshore-investors",
-   "source": "CoinDesk",
-   "published": "2026-10-08T11:36:25+00:00",
-   "summary": "The company's HOME token gives eligible investors exposure to a vault of U.S. home equity lines of credit starting from 1 USDC and targets a 7% annual yield.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/b856b1afb247f8082e69a19b53267a84038a907e-3000x2001.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "e9066a91fa",
-   "title": "Bitcoin mined for pennies in 2010 moves after 16 years, now worth $8.5 million",
-   "link": "https://www.coindesk.com/tech/2026/10/08/bitcoin-mined-for-pennies-in-2010-moves-after-16-years-now-worth-usd8-5-million",
-   "source": "CoinDesk",
-   "published": "2026-10-08T11:30:19+00:00",
-   "summary": "The 100 BTC came directly from two mining rewards created during Bitcoin’s “Satoshi era” and had not moved for more than 16 years.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/a0a7940835c9275731c2adf69015343cc4a850ac-1024x683.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "e4ad15ae24",
-   "title": "Bitcoin ETF investors head for the exit, and it's the biggest rush in months",
-   "link": "https://www.coindesk.com/daybook-us/2026/10/08/bitcoin-etf-investors-head-for-the-exit-and-it-s-the-biggest-rush-in-months",
-   "source": "CoinDesk",
-   "published": "2026-10-08T11:15:00+00:00",
-   "summary": "Your day-ahead look for Oct. 8, 2026",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/6af94a0747793db9df5d2b93c808c0aa07ab3c78-1600x857.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "adbec30adf",
-   "title": "US government moves $770M of seized Bitcoin to Coinbase Prime",
-   "link": "https://cointelegraph.com/news/us-government-moves-770m-seized-bitcoin-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T11:03:36+00:00",
-   "summary": "The US government moved 9,261 Bitcoin to Coinbase Prime, including 2,456 BTC in newly discovered funds pointing to federal law enforcement seizures.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4DJ3V1RSDPDYAETXYR8NEK1/hi-us-government-has-shut-down-bitcoin-crypto.jpg"
-  },
-  {
-   "id": "98b8c84fe9",
-   "title": "Former PlayStation Exec Slams Sony's Move to Kill Discs: 'What Are You Buying?'",
-   "link": "https://decrypt.co/380387/former-playstation-exec-slams-sonys-move-to-kill-discs-what-are-you-buying",
-   "source": "Decrypt",
-   "published": "2026-10-08T10:45:11+00:00",
-   "summary": "Sony plans to cease physical disc production in 2028. A former PlayStation exec claims it has caused reputational damage.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/08/sony-ps5-playstation-5-decrypt-style-gID_7.jpg"
-  },
-  {
-   "id": "8fb8ca5b65",
-   "title": "Live updates: Bitcoin pulls off worst levels late in Thursday session",
-   "link": "https://www.coindesk.com/markets/2026/10/08/live-news-risk-assets-under-pressure-as-bond-selloff-and-oil-rally-intensify",
-   "source": "CoinDesk",
-   "published": "2026-10-08T10:44:47+00:00",
-   "summary": "Crypto markets tumbled on Thursday, with cryptography fears, rising oil prices and interest rates, and the one-year anniversary of last October's flash crash on traders' radar.",
-   "image": ""
-  },
-  {
-   "id": "0fc6a60850",
-   "title": "Greece Plans 10% Crypto Capital Gains Tax, Down From 15% Floated in June",
-   "link": "https://decrypt.co/380385/greece-plans-10-crypto-capital-gains-tax-down-from-15-floated-in-june",
-   "source": "Decrypt",
-   "published": "2026-10-08T10:32:52+00:00",
-   "summary": "A draft bill would exempt the first €500 of annual gains, as crypto tax rates across Europe run from Cyprus's 8% to Italy's 33%.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/athens-greece-decrypt-style-gID_7.jpg"
-  },
-  {
-   "id": "246a427254",
-   "title": "Bitcoin slips below $83,000 as Ethereum researcher's 'bunker mode' call divides crypto",
-   "link": "https://www.coindesk.com/markets/2026/10/08/bitcoin-slips-below-usd83-000-as-ethereum-researcher-s-bunker-mode-call-divides-crypto",
-   "source": "CoinDesk",
-   "published": "2026-10-08T10:30:41+00:00",
-   "summary": "Justin Drake's call to prepare for an AI break of wallet cryptography drew a mixed response as bitcoin slipped below $83,000.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/5c8c3e0d2c0f200e66dc7edd62382084312312b7-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "3865a36756",
-   "title": "Crypto industry split over Justin Drake’s AI warning",
-   "link": "https://www.theblock.co/news/defi/2026-10-08-crypto-industry-split-over-justin-drakes-ai-warning-418021",
-   "source": "The Block",
-   "published": "2026-10-08T10:20:00+00:00",
-   "summary": "Crypto players disagree over Justin Drake’s AI cryptography warning, with some dismissing it while others urge proactive preparation.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/05/20260511_Quantum_News_3.jpg"
-  },
-  {
-   "id": "62713c29ec",
-   "title": "Bitcoin monthly ‘new money’ inflows near $5B as BTC price rally stalls",
-   "link": "https://cointelegraph.com/markets/bitcoin-monthly-new-money-inflows-near-5b-as-btc-price-rally-stalls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T09:56:07+00:00",
-   "summary": "Bitcoin’s realized cap rise in the 30 days to Oct. 5 came mostly from existing holders, not fresh capital, Glassnode data showed.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4DEN6J4BGP9C8NCD8A1AQCZ/hi-crypto-market-trading-1-breaking-news-1.jpg"
-  },
-  {
-   "id": "96b3af6c83",
-   "title": "ESMA gives crypto firms 3 months to exit non-compliant stablecoins",
-   "link": "https://cointelegraph.com/news/esma-unauthorised-stablecoins-three-month-deadline?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T09:42:04+00:00",
-   "summary": "ESMA said EU crypto firms should halt services involving non-MiCA-compliant stablecoins, giving regulators three months to address existing exposures.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4DDYJS1PK890DM0QY77B65J/hi-how-to-read-a-stablecoin-attestation-report-eu-mica-1.jpg"
-  },
-  {
-   "id": "260c99f269",
-   "title": "Standard Chartered to expand institutional crypto and RWA custody to Singapore",
-   "link": "https://www.coindesk.com/business/2026/10/08/standard-chartered-singapore-dives-into-crypto-stablecoins-and-tokenized-assets-custody",
-   "source": "CoinDesk",
-   "published": "2026-10-08T09:32:13+00:00",
-   "summary": "The bank would offer the service to institutions and accredited corporate investors, subject to regulatory requirements.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/b8d846e2133aa83a7cc8c40a8d6391ac0c3050bc-6192x4128.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "1f355f4baf",
-   "title": "Greece prepares to levy 10% capital gains tax on cryptocurrency",
-   "link": "https://www.coindesk.com/policy/2026/10/08/greece-prepares-to-levy-10-capital-gains-tax-on-cryptocurrency",
-   "source": "CoinDesk",
-   "published": "2026-10-08T09:17:18+00:00",
-   "summary": "Crypto gains of up to 500 euros ($560) a year would be exempt under the bill, which will be submitted to parliament in November.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/42d4c9ccc3b896065fd01389069573b1eb1ed6cb-5229x3486.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   }
  ]
 }
