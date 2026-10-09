@@ -217,6 +217,15 @@ PROMO_V = "2026-10-09"
 PROMO_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "promo.mp4")
 
 
+def _vfiles(name, f, thumb):
+    """video + a small cover picture, so Telegram shows the right length and a clear thumbnail"""
+    files = {"video": (name, f, "video/mp4")}
+    tp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", thumb)
+    if os.path.exists(tp):
+        files["thumbnail"] = (thumb, open(tp, "rb").read(), "image/jpeg")
+    return files
+
+
 def run_promo(state, http, token, chat_id, site_url):
     if state.get("promo_v") == PROMO_V or not os.path.exists(PROMO_FILE):
         return
@@ -231,8 +240,8 @@ def run_promo(state, http, token, chat_id, site_url):
     try:
         with open(PROMO_FILE, "rb") as f:
             r = http.post(f"https://api.telegram.org/bot{token}/sendVideo",
-                          data={"chat_id": chat_id, "caption": cap, "parse_mode": "HTML", "supports_streaming": "true", "width": 1080, "height": 1920},
-                          files={"video": ("BEWON_Promo.mp4", f, "video/mp4")}, timeout=120)
+                          data={"chat_id": chat_id, "caption": cap, "parse_mode": "HTML", "supports_streaming": "true", "width": 1080, "height": 1920, "duration": 46},
+                          files=_vfiles("BEWON_Promo.mp4", f, "promo-thumb.jpg"), timeout=120)
         if r.ok:
             state["promo_v"] = PROMO_V
             state["promo_done_now"] = True
@@ -260,11 +269,41 @@ def run_guide_video(state, http, token, chat_id, site_url):
     try:
         with open(GUIDE_FILE, "rb") as f:
             r = http.post(f"https://api.telegram.org/bot{token}/sendVideo",
-                          data={"chat_id": chat_id, "caption": cap, "parse_mode": "HTML", "supports_streaming": "true", "width": 1920, "height": 1080},
-                          files={"video": ("BEWON_Full_Guide.mp4", f, "video/mp4")}, timeout=180)
+                          data={"chat_id": chat_id, "caption": cap, "parse_mode": "HTML", "supports_streaming": "true", "width": 1920, "height": 1080, "duration": 214},
+                          files=_vfiles("BEWON_Full_Guide.mp4", f, "guide-thumb.jpg"), timeout=180)
         if r.ok:
             state["guide_video_v"] = GUIDE_V
+            state["guide_done_now"] = True
         else:
             print("guide video error:", r.text[:200])
     except Exception as e:
         print("guide video error:", e)
+
+
+# ------------------------------------------------------------------ 6. step-by-step video (male voice, music) — posted once
+PRO_V = "2026-10-09-pro2"
+PRO_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "pro-video.mp4")
+
+
+def run_pro_video(state, http, token, chat_id, site_url):
+    if state.get("pro_video_v") == PRO_V or not os.path.exists(PRO_FILE):
+        return
+    cap = ("🎬 <b>BEWON — read a signal and enter a trade, step by step</b>\n\n"
+           "✅ Join BEWON on Telegram\n✅ Read entry, take profit and stop loss\n✅ Enter a trade in 8 steps\n"
+           "✅ BEWON auto bot\n✅ Earn online with BEWON\n\n"
+           "📢 Share BEWON with your friends!\n\n"
+           f"🌐 {site_url}#/learn/videos\n\nEducation only — not financial advice.\n\n{SIGN}")
+    if not token or not chat_id:
+        state["pro_video_v"] = PRO_V
+        return
+    try:
+        with open(PRO_FILE, "rb") as f:
+            r = http.post(f"https://api.telegram.org/bot{token}/sendVideo",
+                          data={"chat_id": chat_id, "caption": cap, "parse_mode": "HTML", "supports_streaming": "true", "width": 1920, "height": 1080, "duration": 158},
+                          files=_vfiles("BEWON_Step_by_Step.mp4", f, "pro-thumb.jpg"), timeout=180)
+        if r.ok:
+            state["pro_video_v"] = PRO_V
+        else:
+            print("pro video error:", r.text[:200])
+    except Exception as e:
+        print("pro video error:", e)

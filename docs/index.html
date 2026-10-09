@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>BEWON Signals — ফ্রি ক্রিপ্টো সিগনাল</title>
-<meta name="description" content="ফ্রি, অটোমেটেড ক্রিপ্টো ট্রেডিং সিগনাল। লাইভ মার্কেট, চার্ট, সিগনালের পুরো ইতিহাস ও Win rate। আর্থিক পরামর্শ নয়।">
-<meta property="og:title" content="BEWON Signals — ফ্রি ক্রিপ্টো সিগনাল">
-<meta property="og:description" content="লাইভ মার্কেট, চার্ট আর সৎ Win rate সহ ফ্রি ক্রিপ্টো সিগনাল।">
+<title>BEWON Signals — Crypto signals, trading &amp; learning</title>
+<meta name="description" content="BEWON Signals: crypto signals with every result public, a step-by-step trading exchange, live market data, news and ways to earn online.">
+<meta property="og:title" content="BEWON Signals — Crypto signals, trading &amp; learning">
+<meta property="og:description" content="Live market, charts, signals with every result public, and ways to earn online.">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#07090d">
@@ -2230,7 +2230,7 @@ function openVid(id){ const local=/\.mp4$/.test(id), tall=/promo/.test(id), ov=d
 async function learnVideos(body){ let v=null; try{ v=await (await fetch("data/videos.json?t="+Math.floor(Date.now()/600000))).json(); }catch(e){}
   const promo={id:LANG==="en"?"promo.mp4":"promo-bn.mp4",t:tr("BEWON কীভাবে কাজ করে — কীভাবে জয়েন করবেন (৪৬ সেকেন্ড)","How BEWON works — how to join (46 seconds)"),ch:"BEWON",cat:"bewon",thumb:"promo.jpg"};
   const full={id:"guide-video.mp4",t:tr("BEWON সম্পূর্ণ গাইড — জয়েন, ট্রেড, আয় (ইংরেজি ভয়েস, ৩.৫ মিনিট)","BEWON full guide — join, trade, earn (English voice, 3.5 min)"),ch:"BEWON",cat:"bewon",thumb:"guide-video.jpg"};
-  const pro={id:"pro-video.mp4",t:tr("ধাপে ধাপে: সিগনাল পড়া ও ট্রেড এন্ট্রি (ইংরেজি ভয়েস, ২.৫ মিনিট)","Step by step: read a signal and enter a trade (English voice, 2.5 min)"),ch:"BEWON",cat:"bewon",thumb:"pro-video.jpg"};
+  const pro={id:"pro-video.mp4",t:tr("BEWON — ধাপে ধাপে সিগনাল পড়া ও ট্রেড এন্ট্রি (২.৫ মিনিট)","BEWON — read a signal and enter a trade, step by step (2.5 min)"),ch:"BEWON",cat:"bewon",thumb:"pro-video.jpg"};
   const all=[pro,full,promo,...(v?[...(v.pinned||[]).map(x=>Object.assign({ch:"BEWON"},x,{cat:"bewon"})),...(v.videos||[])]:[])];
   const draw=()=>{ if(!body.isConnected) return; const L=all.filter(x=>VID_CAT==="all"||x.cat===VID_CAT);
     body.innerHTML=`<div class="ln"><div class="card dm-panel"><h3>🎬 ${tr("ভিডিও","Videos")}</h3>
