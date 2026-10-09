@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T21:34:13+00:00",
+ "updated": "2026-10-09T01:28:26+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,69 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "4e5d58eb4c",
+   "title": "XRPL’s $1.34 billion stablecoin base doesn’t tell us how much XRP users need",
+   "link": "https://cryptoslate.com/xrpls-1-34-billion-stablecoin-base-doesnt-tell-us-how-much-xrp-users-need/",
+   "source": "CryptoSlate",
+   "published": "2026-10-09T01:00:56+00:00",
+   "summary": "Fees and reserves require XRP, while larger demand depends on routing choices and the balances held in liquidity or credit products. The post XRPL’s $1.34 billion stablecoin base doesn’t tell us how much XRP users need appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-usage-pathways-2.webp"
+  },
+  {
+   "id": "abc9df379e",
+   "title": "Cantor Fitzgerald faces Senate Democrat’s questions over Tether ties",
+   "link": "https://cointelegraph.com/news/cantor-fitzgerald-faces-senate-democrats-probe-over-tether-ties?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-09T00:46:27+00:00",
+   "summary": "The letter follows a report by the Democratic investigators last month alleging Tether’s USDT has become a key tool for Iran’s shadow banking network.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4F1W4R51W8W7BPK0508NAMP/investigation.jpg"
+  },
+  {
+   "id": "ece0434b58",
+   "title": "Solana’s geographic speed plan trusts validator locations the network cannot verify",
+   "link": "https://cryptoslate.com/solanas-geographic-speed-plan-trusts-validator-locations-the-network-cannot-verify/",
+   "source": "CryptoSlate",
+   "published": "2026-10-09T00:00:53+00:00",
+   "summary": "Wattenhofer and Kniep’s proposal preserves leader allocations while faster modeled handovers come with longer consecutive-control and regional risks. The post Solana’s geographic speed plan trusts validator locations the network cannot…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-geographic-leader-scheduling.webp"
+  },
+  {
+   "id": "44dc5127a5",
+   "title": "Bitcoin Core’s privacy fix reaches v32 code while the v31 patch remains open",
+   "link": "https://cryptoslate.com/bitcoin-cores-privacy-fix-reaches-v32-code-while-the-v31-patch-remains-open/",
+   "source": "CryptoSlate",
+   "published": "2026-10-08T23:00:07+00:00",
+   "summary": "The opt-in private-broadcast repair is merged into 32.x, while the older-branch backport remains open and 31.1 is still the stable download. The post Bitcoin Core’s privacy fix reaches v32 code while the v31 patch remains open appeared…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-core-branch-status.webp"
+  },
+  {
+   "id": "0e94726a2c",
+   "title": "China’s P2P stablecoin wallets surge 43x, Korea’s $450B crypto economy: Asia Express",
+   "link": "https://cointelegraph.com/magazine/chinas-p2p-stablecoin-wallets-surge-43x-koreas-450b-crypto-economy-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-08T22:35:00+00:00",
+   "summary": "Despite ongoing bans, China has seen a big surge in peer-to-peer stablecoin use. New figures show South Korea’s $450B crypto economy is the largest in East Asia.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M26Q2WGDD8GDA5QMCWQF3GB3/magazineasia-expresssnow.jpg"
+  },
+  {
+   "id": "de3e00b021",
+   "title": "PumpFun is making millions from a market where 81% of memecoins crashed 90%",
+   "link": "https://cryptoslate.com/pumpfun-is-making-millions-from-a-market-where-81-of-memecoins-crashed-90/",
+   "source": "CryptoSlate",
+   "published": "2026-10-08T22:00:06+00:00",
+   "summary": "Talos reports rare observed recoveries, while platform fees and PUMP burns offer no automatic route back to break-even for other tokens. The post PumpFun is making millions from a market where 81% of memecoins crashed 90% appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/pump-memecoin-theater.webp"
+  },
+  {
+   "id": "6a38e85825",
+   "title": "AI Startup Manus Raises $500 Million After China Nixed Meta’s $2 Billion Acquisition",
+   "link": "https://decrypt.co/380546/maus-ai-startup-raises-500m-meta-acquisition-china",
+   "source": "Decrypt",
+   "published": "2026-10-08T21:46:03+00:00",
+   "summary": "Manus built a self-driving AI assistant before the hype, sold itself to Meta, then watched Beijing unwind the deal. Its first fresh money since: more than $500 million.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/07/decrypt-style-woman-money-gID_7.png"
+  },
   {
    "id": "82a413f928",
    "title": "Top Democrat among Senate investigators probes ties between Cantor Fitzgerald, Tether",
@@ -261,15 +324,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4E33RFBJJSYXE4M7F92S5P1/hi-imf-and-blockchain.png"
   },
   {
-   "id": "4aa97d4d26",
-   "title": "MiCA rejection forces German crypto platform into operational overhaul",
-   "link": "https://cryptoslate.com/mica-rejection-forces-german-crypto-platform-into-operational-overhaul/",
-   "source": "CryptoSlate",
-   "published": "2026-10-08T16:20:21+00:00",
-   "summary": "BaFin rejected operator futurum bank AG's application, and a proposed restart depends on unfinished arrangements with regulated partners. The post MiCA rejection forces German crypto platform into operational overhaul appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-de-open-cage.webp"
-  },
-  {
    "id": "6eb6fb5212",
    "title": "From Uptober to Spooky Szn? Bitcoin Cuts September Gains in Half",
    "link": "https://decrypt.co/380462/uptober-spooky-szn-bitcoin-cuts-september-gains",
@@ -306,15 +360,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/header-article-gID_7.png"
   },
   {
-   "id": "2fb0c0bb74",
-   "title": "Bitcoin ETFs suffer biggest exodus since June as Ethereum withdrawals hit nine-month high",
-   "link": "https://cryptoslate.com/bitcoin-etfs-suffer-biggest-exodus-since-june-as-ethereum-withdrawals-hit-nine-month-high/",
-   "source": "CryptoSlate",
-   "published": "2026-10-08T15:40:34+00:00",
-   "summary": "US spot Bitcoin and Ethereum exchange-traded funds saw their steepest withdrawals in months as the cryptocurrency market continued to decline. Data from SoSoValue shows that the 12 listed US Bitcoin ETFs lost $484.9 million on Oct. 7,…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/crypto-etf-capital-drain.webp"
-  },
-  {
    "id": "520edeea5f",
    "title": "US government moves $1B in seized Bitcoin after $770M transfers",
    "link": "https://cointelegraph.com/news/us-government-seized-bitcoin-moved-one-transaction?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -349,15 +394,6 @@
    "published": "2026-10-08T15:10:49+00:00",
    "summary": "The new Securitize Stocks product launches with 12 names backed one-to-one by real shares—preserving dividends and voting rights—trading first on Solana, with NYSE and OKX-ICE venues planned.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/01/decrypt-style-wall-street-gID_7.png"
-  },
-  {
-   "id": "1223bad12f",
-   "title": "A $1,000 MetaMask incident could turn Ethereum’s staking queue into a $5 billion traffic jam",
-   "link": "https://cryptoslate.com/a-1000-metamask-incident-could-turn-ethereums-staking-queue-into-a-5-billion-traffic-jam/",
-   "source": "CryptoSlate",
-   "published": "2026-10-08T15:00:46+00:00",
-   "summary": "A full return of Bitquery’s identified exit cohort as new demand would create a $5.04 billion combined workload, while Lido expects gradual re-entry. The post A $1,000 MetaMask incident could turn Ethereum’s staking queue into a $5 billion…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-carousel-backlog.webp"
   },
   {
    "id": "4f97688df6",
@@ -403,15 +439,6 @@
    "published": "2026-10-08T14:03:20+00:00",
    "summary": "Glassnode co-founder's latest figures show growing public-key exposure as Justin Drake urges preparations for potential AI attacks on wallet cryptography.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/4420c630cb05b3c60a6adc8bcef8a317d63d788a-3000x1676.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "a60506063e",
-   "title": "Citi predicts Bitcoin going back to $113,000. Here’s what the buying data shows",
-   "link": "https://cryptoslate.com/bitcoin-needs-a-36-rise-to-hit-citis-target-we-tested-the-demand-case/",
-   "source": "CryptoSlate",
-   "published": "2026-10-08T14:00:36+00:00",
-   "summary": "The twelve-month forecast sits below Bitcoin's prior record, while fresh Glassnode data leave broad buying participation uncertain. The post Citi predicts Bitcoin going back to $113,000. Here’s what the buying data shows appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-adoption-ascent.webp"
   },
   {
    "id": "f355f287c5",
@@ -700,33 +727,6 @@
    "published": "2026-10-08T06:17:13+00:00",
    "summary": "The crypto company's $1.25 billion acquisition of Hidden Road has opened a corner of Wall Street where funds pay to amplify daily moves in stocks such as Nvidia and Sandisk.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/b870a99b3666942b2ac0a5c20219248585e42b45-6016x4016.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "2ff4915c99",
-   "title": "Bitcoin loans are paying for tuition and working capital, not just trades, lenders say",
-   "link": "https://www.coindesk.com/markets/2026/10/08/bitcoin-loans-are-paying-for-tuition-and-working-capital-not-just-trades-lenders-say",
-   "source": "CoinDesk",
-   "published": "2026-10-08T05:40:41+00:00",
-   "summary": "Bitcoin-backed lending is evolving into a mainstream source of credit, with borrowers using BTC to access liquidity without selling.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/bc36ed29f9a378600a32086ff9de3eb232b4408d-6000x4000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "4d0f7ba275",
-   "title": "Crypto’s heavy backing of Republicans alienated Democrats: Cuomo",
-   "link": "https://cointelegraph.com/news/cryptos-republican-spending-alienated-democrats-says-andrew-cuomo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T05:06:51+00:00",
-   "summary": "Former New York Governor Andrew Cuomo urged the crypto industry to balance its support for Democrats and Republicans if they want federal crypto legislation passed.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4CY3W2AFFGN1AY103ADQ3SC/republicans-vs-democrats-voting.jpg"
-  },
-  {
-   "id": "d4b1e401f1",
-   "title": "‘Don’t rush anything’: Vitalik Buterin warns against hasty wallet migrations amid growing AI threats",
-   "link": "https://www.theblock.co/news/defi/2026-10-08-vitalik-buterin-warns-hasty-wallet-migrations-418007",
-   "source": "The Block",
-   "published": "2026-10-08T05:00:28+00:00",
-   "summary": "Ethereum co-founder Vitalik Buterin warned that the crypto industry should take risks to cryptography from AI-accelerated math seriously.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/10/20241001_Vitalik_News_2.jpg"
   }
  ]
 }
