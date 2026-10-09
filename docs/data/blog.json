@@ -1,6 +1,322 @@
 {
  "posts": [
   {
+   "slug": "market-cap-vs-fdv",
+   "type": "learn",
+   "date": "2026-10-09T07:46:23+00:00",
+   "title": "Market Cap vs FDV",
+   "title_bn": "Market Cap আর FDV-এর পার্থক্য",
+   "sum_en": "Two numbers that tell you how big a coin is today and how much new supply is still coming. A big gap between them is a warning.",
+   "sum_bn": "দুটো সংখ্যা: কয়েনটা আজ কত বড়, আর সামনে কত নতুন টোকেন আসবে। দুটোর মধ্যে বড় ফারাক একটা সতর্কবার্তা।",
+   "body": {
+    "pts_bn": [
+     "Market cap = এখন বাজারে থাকা টোকেন × দাম।",
+     "FDV = মোট যত টোকেন কখনো হবে × দাম।",
+     "FDV যদি Market cap-এর অনেক গুণ হয়, সামনে প্রচুর টোকেন বাজারে আসবে (আনলক)। সরবরাহ বাড়লে দামে চাপ পড়ে।",
+     "কেনার আগে আনলকের তারিখ দেখে নিন। সাইটের 'শেখা' পাতায় সামনের আনলকের তালিকা আছে।",
+     "কম দামের কয়েন মানেই সস্তা নয়। দাম নয়, Market cap দিয়ে তুলনা করুন।"
+    ],
+    "pts_en": [
+     "Market cap = tokens in circulation now × price.",
+     "FDV = every token that will ever exist × price.",
+     "If FDV is many times the market cap, a lot of tokens will still be unlocked. More supply puts pressure on price.",
+     "Check unlock dates before buying. The Learn page on our site lists upcoming unlocks.",
+     "A low price does not mean cheap. Compare by market cap, not by price."
+    ]
+   }
+  },
+  {
+   "slug": "crypto-market-digest-october-9-2026",
+   "type": "digest",
+   "date": "2026-10-09T07:46:13+00:00",
+   "title": "Crypto Market Digest — October 9, 2026",
+   "sum_en": "STRK leads today's movers (+42.1%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে STRK (+42.1%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "price": 0.070195,
+      "ch": 42.12,
+      "vol": 438599935,
+      "rank": 113
+     },
+     {
+      "sym": "HASH",
+      "name": "Provenance Blockchain",
+      "price": 0.00722543,
+      "ch": 34.68,
+      "vol": 44332,
+      "rank": 127
+     },
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "price": 0.458158,
+      "ch": 26.57,
+      "vol": 74525260,
+      "rank": 123
+     },
+     {
+      "sym": "PYTH",
+      "name": "Pyth Network",
+      "price": 0.085195,
+      "ch": 12.24,
+      "vol": 115523968,
+      "rank": 99
+     },
+     {
+      "sym": "ATOM",
+      "name": "Cosmos Hub",
+      "price": 1.95,
+      "ch": 9.75,
+      "vol": 141677379,
+      "rank": 79
+     },
+     {
+      "sym": "APT",
+      "name": "Aptos",
+      "price": 0.840193,
+      "ch": 9.0,
+      "vol": 151385976,
+      "rank": 91
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "price": 1.38,
+      "ch": 8.6,
+      "vol": 5872513,
+      "rank": 121
+     },
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 1.49,
+      "ch": 8.12,
+      "vol": 9732091,
+      "rank": 32
+     }
+    ],
+    "losers": [
+     {
+      "sym": "CRV",
+      "name": "Curve DAO",
+      "price": 0.342405,
+      "ch": -12.75,
+      "vol": 105903660,
+      "rank": 110
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.88,
+      "ch": -10.36,
+      "vol": 1654857877,
+      "rank": 21
+     },
+     {
+      "sym": "VVV",
+      "name": "Venice Token",
+      "price": 22.9,
+      "ch": -8.18,
+      "vol": 122446021,
+      "rank": 75
+     },
+     {
+      "sym": "PUMP",
+      "name": "Pump.fun",
+      "price": 0.00566566,
+      "ch": -7.77,
+      "vol": 383720946,
+      "rank": 43
+     },
+     {
+      "sym": "PENDLE",
+      "name": "Pendle",
+      "price": 2.12,
+      "ch": -7.77,
+      "vol": 75545201,
+      "rank": 130
+     },
+     {
+      "sym": "KITE",
+      "name": "Kite",
+      "price": 0.125561,
+      "ch": -6.9,
+      "vol": 9848810,
+      "rank": 149
+     },
+     {
+      "sym": "MORPHO",
+      "name": "Morpho",
+      "price": 2.4,
+      "ch": -6.51,
+      "vol": 32554042,
+      "rank": 60
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "price": 0.00811934,
+      "ch": -6.14,
+      "vol": 200787635,
+      "rank": 115
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 82574.75,
+      "ch": -0.37
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2499.62,
+      "ch": -2.62
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 743.41,
+      "ch": -3.34
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 110.65,
+      "ch": -4.07
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.4004,
+      "ch": -0.41
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2407,
+      "ch": -4.94
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.08543,
+      "ch": -2.49
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 10.342,
+      "ch": -5.14
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 12.903,
+      "ch": -1.77
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.167,
+      "ch": 5.9
+     },
+     {
+      "sym": "LTC",
+      "name": "LTC",
+      "price": 64.21,
+      "ch": -0.3
+     },
+     {
+      "sym": "UNI",
+      "name": "UNI",
+      "price": 7.438,
+      "ch": -4.24
+     },
+     {
+      "sym": "AAVE",
+      "name": "AAVE",
+      "price": 168.95,
+      "ch": -2.5
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR",
+      "price": 4.847,
+      "ch": -12.0
+     },
+     {
+      "sym": "SUI",
+      "name": "SUI",
+      "price": 1.0667,
+      "ch": -5.58
+     },
+     {
+      "sym": "POL",
+      "name": "POL",
+      "price": 0.10061,
+      "ch": -1.0
+     },
+     {
+      "sym": "ONDO",
+      "name": "ONDO",
+      "price": 0.4817,
+      "ch": 3.24
+     },
+     {
+      "sym": "PEPE",
+      "name": "PEPE",
+      "price": 3.95e-06,
+      "ch": -2.23
+     }
+    ],
+    "up": 45,
+    "total": 140,
+    "fear_greed": {
+     "value": 59,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.12284,
+      "ch": 0.3
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.32343,
+      "ch": 0.29
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 158.21001,
+      "ch": 0.0
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4220.5,
+      "ch": 1.9
+     }
+    ],
+    "stats": {
+     "win": 0,
+     "loss": 8,
+     "tp2": 0,
+     "expired": 0
+    },
+    "open": 0
+   }
+  },
+  {
    "slug": "how-to-read-rsi",
    "type": "learn",
    "date": "2026-10-08T16:47:58+00:00",
@@ -2202,5 +2518,5 @@
    }
   }
  ],
- "updated": "2026-10-08T16:47:58+00:00"
+ "updated": "2026-10-09T07:46:23+00:00"
 }
