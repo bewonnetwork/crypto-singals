@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T23:35:12+00:00",
+ "updated": "2026-10-10T02:47:15+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,24 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "f1ece4fed9",
+   "title": "Celsius founder faces lifetime ban, but can trade his own crypto",
+   "link": "https://cryptoslate.com/celsius-founder-faces-lifetime-ban-but-can-trade-his-own-crypto/",
+   "source": "CryptoSlate",
+   "published": "2026-10-10T01:50:00+00:00",
+   "summary": "A qualifying DOJ payment can satisfy the $25 million obligation, while a separate $10 million judgment has a sentence-completion condition with exceptions. The post Celsius founder faces lifetime ban, but can trade his own crypto appeared…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/mashinsky-new-york-settlement-standard.jpg"
+  },
+  {
+   "id": "fb03cffa91",
+   "title": "Solana doubles block production speed to 200ms as network prepares for Alpenglow upgrade",
+   "link": "https://cryptoslate.com/solana-doubles-block-production-speed-to-200ms-as-network-prepares-for-alpenglow-upgrade/",
+   "source": "CryptoSlate",
+   "published": "2026-10-10T00:40:59+00:00",
+   "summary": "The final SIMD-0525 step halves Solana’s original slot-time target, shortening leader windows and epochs while per-slot budgets keep work capacity roughly steady. The post Solana doubles block production speed to 200ms as network prepares…",
+   "image": ""
+  },
   {
    "id": "372eb233bd",
    "title": "Tether freezes $1.4M in TRON vaults and THORChain stalls",
@@ -306,15 +324,6 @@
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/07/iran-3.jpg"
   },
   {
-   "id": "c9d758ebc7",
-   "title": "Locked liquidity did not stop this $14 million crypto pool drain",
-   "link": "https://cryptoslate.com/79thvaults-14-million-pool-drain-shows-why-locked-liquidity-can-fail/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T14:40:46+00:00",
-   "summary": "Bitquery traced 79AU’s drain to token permissions that bypassed burned LP receipts, with residual rights documented on Oct. 8. The post Locked liquidity did not stop this $14 million crypto pool drain appeared first on CryptoSlate .",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/pancakeswap-locked-liquidity-exploit.webp"
-  },
-  {
    "id": "8bb2a8999e",
    "title": "New York AG secures up to $35 million from former Celsius CEO Alex Mashinsky",
    "link": "https://www.theblock.co/news/regulation/2026-10-09-ny-attorney-general-alex-mashinsky-celsius-35-million-ban-418154",
@@ -331,15 +340,6 @@
    "published": "2026-10-09T13:49:22+00:00",
    "summary": "Dragonfly’s Qureshi argued that asset migration is not a real solution in case of AI models breaking cryptographic signatures, and urged blockchains to adopt proactive measures.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4GCWY4XX0MD3NEZQFT038VE/hi-using-ai-in-crypto-do-it-at-your-own-risk.jpg"
-  },
-  {
-   "id": "fcb39a78b2",
-   "title": "Polygon’s 8 million USDT0 holders face scrutiny as 58% of growth matches scam patterns",
-   "link": "https://cryptoslate.com/polygons-8-million-usdt0-holders-face-scrutiny-as-58-of-growth-matches-scam-patterns/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T13:40:01+00:00",
-   "summary": "The Oct. 7 audit estimates about 1.1 million scam look-alikes, while addresses holding at least $10 fell 42% since August 2025. The post Polygon’s 8 million USDT0 holders face scrutiny as 58% of growth matches scam patterns appeared first…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/polygon-fake-address-flood.webp"
   },
   {
    "id": "ada2ca8ebb",

@@ -231,6 +231,25 @@
  ],
  "watch": [
   {
+   "coin": "AVAX",
+   "name": "AVAX",
+   "market": "crypto",
+   "side": "BUY",
+   "price": 10.411,
+   "score": 40,
+   "chk": "3/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "5M",
+    "⚠ run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-10T02:46:58+00:00"
+  },
+  {
    "coin": "NEAR",
    "name": "NEAR",
    "market": "crypto",
@@ -327,7 +346,7 @@
   }
  ],
  "fear_greed": {
-  "value": 59,
+  "value": 64,
   "label": "Greed"
  },
  "forex": {
@@ -373,5 +392,5 @@
    }
   }
  },
- "updated": "2026-10-09T23:35:51+00:00"
+ "updated": "2026-10-10T02:47:42+00:00"
 }

@@ -1,6 +1,297 @@
 {
  "posts": [
   {
+   "slug": "crypto-market-digest-october-10-2026",
+   "type": "digest",
+   "date": "2026-10-10T02:47:06+00:00",
+   "title": "Crypto Market Digest — October 10, 2026",
+   "sum_en": "KAIA leads today's movers (+58.8%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে KAIA (+58.8%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "KAIA",
+      "name": "Kaia",
+      "price": 0.059702,
+      "ch": 58.77,
+      "vol": 131499877,
+      "rank": 128
+     },
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "price": 0.075213,
+      "ch": 23.16,
+      "vol": 445772192,
+      "rank": 110
+     },
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "price": 0.542219,
+      "ch": 19.23,
+      "vol": 55375208,
+      "rank": 112
+     },
+     {
+      "sym": "OP",
+      "name": "Optimism",
+      "price": 0.141166,
+      "ch": 16.7,
+      "vol": 132402590,
+      "rank": 143
+     },
+     {
+      "sym": "DOT",
+      "name": "Polkadot",
+      "price": 1.28,
+      "ch": 12.93,
+      "vol": 269049925,
+      "rank": 51
+     },
+     {
+      "sym": "ATOM",
+      "name": "Cosmos Hub",
+      "price": 2.02,
+      "ch": 11.31,
+      "vol": 218648149,
+      "rank": 76
+     },
+     {
+      "sym": "APT",
+      "name": "Aptos",
+      "price": 0.834991,
+      "ch": 11.02,
+      "vol": 132562794,
+      "rank": 94
+     },
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 1.58,
+      "ch": 10.32,
+      "vol": 15068293,
+      "rank": 30
+     }
+    ],
+    "losers": [
+     {
+      "sym": "HASH",
+      "name": "Provenance Blockchain",
+      "price": 0.00627921,
+      "ch": -16.34,
+      "vol": 9520.9,
+      "rank": 130
+     },
+     {
+      "sym": "AERO",
+      "name": "Aerodrome Finance",
+      "price": 0.804126,
+      "ch": -5.44,
+      "vol": 45171557,
+      "rank": 86
+     },
+     {
+      "sym": "TIA",
+      "name": "Celestia",
+      "price": 0.483725,
+      "ch": -4.97,
+      "vol": 93222834,
+      "rank": 121
+     },
+     {
+      "sym": "RAY",
+      "name": "Raydium",
+      "price": 2.33,
+      "ch": -4.73,
+      "vol": 65833457,
+      "rank": 104
+     },
+     {
+      "sym": "XMR",
+      "name": "Monero",
+      "price": 518.77,
+      "ch": -4.16,
+      "vol": 136494673,
+      "rank": 15
+     },
+     {
+      "sym": "ZRO",
+      "name": "LayerZero",
+      "price": 1.95,
+      "ch": -4.05,
+      "vol": 106526128,
+      "rank": 91
+     },
+     {
+      "sym": "LIT",
+      "name": "Lighter",
+      "price": 3.57,
+      "ch": -3.3,
+      "vol": 167657916,
+      "rank": 84
+     },
+     {
+      "sym": "FIGR_HELOC",
+      "name": "Figure Heloc",
+      "price": 1.001,
+      "ch": -2.8,
+      "vol": 697163222,
+      "rank": 9
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 82694.0,
+      "ch": 0.88
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2495.95,
+      "ch": 0.56
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 745.82,
+      "ch": 1.2
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 109.96,
+      "ch": 0.47
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.4087,
+      "ch": 1.35
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2535,
+      "ch": 8.52
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.08622,
+      "ch": 1.73
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 10.411,
+      "ch": 2.09
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 12.865,
+      "ch": 0.47
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.279,
+      "ch": 12.09
+     },
+     {
+      "sym": "LTC",
+      "name": "LTC",
+      "price": 63.78,
+      "ch": 0.17
+     },
+     {
+      "sym": "UNI",
+      "name": "UNI",
+      "price": 7.388,
+      "ch": 1.19
+     },
+     {
+      "sym": "AAVE",
+      "name": "AAVE",
+      "price": 170.71,
+      "ch": 2.65
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR",
+      "price": 5.022,
+      "ch": 7.26
+     },
+     {
+      "sym": "SUI",
+      "name": "SUI",
+      "price": 1.0906,
+      "ch": 3.45
+     },
+     {
+      "sym": "POL",
+      "name": "POL",
+      "price": 0.1009,
+      "ch": 1.48
+     },
+     {
+      "sym": "ONDO",
+      "name": "ONDO",
+      "price": 0.4933,
+      "ch": 4.16
+     },
+     {
+      "sym": "PEPE",
+      "name": "PEPE",
+      "price": 4.02e-06,
+      "ch": 3.34
+     }
+    ],
+    "up": 101,
+    "total": 140,
+    "fear_greed": {
+     "value": 64,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.12057,
+      "ch": -0.06
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.3241,
+      "ch": 0.12
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 158.20399,
+      "ch": 0.22
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4224.5,
+      "ch": 1.61
+     }
+    ],
+    "stats": {
+     "win": 0,
+     "loss": 8,
+     "tp2": 0,
+     "expired": 0
+    },
+    "open": 0
+   }
+  },
+  {
    "slug": "trending-in-crypto-october-9-2026",
    "type": "trending",
    "date": "2026-10-09T14:42:13+00:00",
@@ -2666,5 +2957,5 @@
    }
   }
  ],
- "updated": "2026-10-09T14:42:14+00:00"
+ "updated": "2026-10-10T02:47:06+00:00"
 }
