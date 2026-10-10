@@ -1,6 +1,16 @@
 {
  "jobs": [
   {
+   "t": "Inside Sales Contractor",
+   "co": "Credit Wellness, LLC",
+   "url": "https://remotive.com/remote-jobs/sales/inside-sales-contractor-2086540",
+   "geo": "Worldwide",
+   "at": "2026-10-08T21:47:32",
+   "src": "Remotive",
+   "type": "Sales",
+   "sec": "other"
+  },
+  {
    "t": "Tier III Service Desk Engineer",
    "co": "Unio Digital",
    "url": "https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045",
@@ -571,203 +581,193 @@
    "sec": "support"
   },
   {
-   "t": "Sr. Product Marketing Manager",
-   "co": "airSlate",
-   "url": "https://himalayas.app/companies/airslate/jobs/sr-product-marketing-manager",
-   "geo": "Poland",
-   "at": "2026-10-10T06:47:20+00:00",
+   "t": "Content Lead - Remote, Based in Europe",
+   "co": "Bifrost Studios",
+   "url": "https://himalayas.app/companies/bifrost-studios/jobs/content-lead-remote-based-in-europe",
+   "geo": "Denmark",
+   "at": "2026-10-10T14:47:17+00:00",
    "src": "Himalayas",
-   "type": "Product-Marketing-Manager Prod",
-   "sec": "marketing"
+   "type": "Content-Lead Content-Manager C",
+   "sec": "writing"
   },
   {
-   "t": "Structural Revit Drafter",
-   "co": "ITHR Technologies Consulting LLC",
-   "url": "https://himalayas.app/companies/ithr-technologies-consulting-llc/jobs/structural-revit-drafter",
-   "geo": "India",
-   "at": "2026-10-10T06:47:20+00:00",
-   "src": "Himalayas",
-   "type": "Structural-BIM-Modeler Revit-D",
-   "sec": "other"
-  },
-  {
-   "t": "Technical Architect",
-   "co": "Rapinno Tech",
-   "url": "https://himalayas.app/companies/rapinno-tech/jobs/technical-architect",
+   "t": "Remote Psychologist Telemedicine with California License",
+   "co": "Concentra",
+   "url": "https://himalayas.app/companies/concentra/jobs/remote-psychologist-telemedicine-with-california-license",
    "geo": "United States",
-   "at": "2026-10-10T06:47:20+00:00",
+   "at": "2026-10-10T14:46:47+00:00",
    "src": "Himalayas",
-   "type": "Technical-Architect Solutions-",
+   "type": "Psychologist Clinical-Psycholo",
    "sec": "other"
   },
   {
-   "t": "Project Manager",
-   "co": "TheHiveCareers",
-   "url": "https://himalayas.app/companies/thehivecareers/jobs/project-manager-8951222188",
-   "geo": "Grenada",
-   "at": "2026-10-10T06:46:54+00:00",
+   "t": "Auxiliar Técnico/a Educativo/a",
+   "co": "Tusclasesparticulares",
+   "url": "https://himalayas.app/companies/tusclasesparticulares/jobs/auxiliar-tecnico-a-educativo-a",
+   "geo": "Spain",
+   "at": "2026-10-10T14:46:42+00:00",
    "src": "Himalayas",
-   "type": "Project-Manager Agile-Project-",
+   "type": "Fashion-Design-Instructor Desi",
+   "sec": "design"
+  },
+  {
+   "t": "Executive Assistant to the CEO",
+   "co": "Bosun",
+   "url": "https://himalayas.app/companies/bosun/jobs/executive-assistant-to-the-ceo",
+   "geo": "United States",
+   "at": "2026-10-10T14:46:40+00:00",
+   "src": "Himalayas",
+   "type": "Executive-Assistant Chief-of-S",
+   "sec": "design"
+  },
+  {
+   "t": "Scheduler",
+   "co": "SpaceCoast AV Consultants, LLC",
+   "url": "https://himalayas.app/companies/spacecoast-av-consultants-llc/jobs/scheduler",
+   "geo": "United States",
+   "at": "2026-10-10T14:46:38+00:00",
+   "src": "Himalayas",
+   "type": "Schedulers Administrative-Assi",
+   "sec": "support"
+  },
+  {
+   "t": "Medical Records Retrieval Specialist - India (Talent Pooling)",
+   "co": "CatalyzeX",
+   "url": "https://himalayas.app/companies/catalyzex/jobs/medical-records-retrieval-specialist-india-talent-pooling",
+   "geo": "United States",
+   "at": "2026-10-10T14:46:38+00:00",
+   "src": "Himalayas",
+   "type": "Medical-Records-Retrieval-Spec",
    "sec": "dev"
   },
   {
-   "t": "Pessoa Desenvolvedora BackEnd III (Vaga Afirmativa para Talentos Diversos)",
-   "co": "Grupo Boticário",
-   "url": "https://himalayas.app/companies/grupo-boticario/jobs/pessoa-desenvolvedora-backend-iii-vaga-afirmativa-para-talentos-diversos",
+   "t": "Full Stack and Backend NodeJS TypeScript/JavaScript Engineer (Senior) - Latin Am",
+   "co": "Bluelight Consulting",
+   "url": "https://himalayas.app/companies/bluelight-consulting/jobs/full-stack-and-backend-nodejs-typescript-javascript-engineer-senior-latin-am-9916433192",
+   "geo": "Colombia",
+   "at": "2026-10-10T14:44:58+00:00",
+   "src": "Himalayas",
+   "type": "Fullstack-Development Backend-",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Account Executive, Risk Management",
+   "co": "CAC Group",
+   "url": "https://himalayas.app/companies/cac-group/jobs/senior-account-executive-risk-management",
+   "geo": "United States",
+   "at": "2026-10-10T14:44:39+00:00",
+   "src": "Himalayas",
+   "type": "Account-Executive Senior-Accou",
+   "sec": "other"
+  },
+  {
+   "t": "Senior Data Scientist",
+   "co": "Cotality",
+   "url": "https://himalayas.app/companies/cotality/jobs/senior-data-scientist",
+   "geo": "United Kingdom",
+   "at": "2026-10-10T14:44:38+00:00",
+   "src": "Himalayas",
+   "type": "Data-Scientist Machine-Learnin",
+   "sec": "dev"
+  },
+  {
+   "t": "EL1 Senior Business Analyst",
+   "co": "Softtest pays pty ltd",
+   "url": "https://himalayas.app/companies/softtest-pays-pty-ltd/jobs/el1-senior-business-analyst",
+   "geo": "Australia",
+   "at": "2026-10-10T14:43:19+00:00",
+   "src": "Himalayas",
+   "type": "Process-Improvement Business-A",
+   "sec": "design"
+  },
+  {
+   "t": "Clinical Quality Reviewer (Coder/Auditor)",
+   "co": "Virtix Health LLC",
+   "url": "https://himalayas.app/companies/virtix-health-llc/jobs/clinical-quality-reviewer-coder-auditor",
+   "geo": "United States",
+   "at": "2026-10-10T14:43:15+00:00",
+   "src": "Himalayas",
+   "type": "Clinical-Quality-Reviewer Medi",
+   "sec": "other"
+  },
+  {
+   "t": "Coder II",
+   "co": "Augusta Health",
+   "url": "https://himalayas.app/companies/augusta-health/jobs/coder-ii",
+   "geo": "United States",
+   "at": "2026-10-10T14:43:15+00:00",
+   "src": "Himalayas",
+   "type": "Medical-Coder Health-Informati",
+   "sec": "dev"
+  },
+  {
+   "t": "Sr. Staff, IT Programs",
+   "co": "Lockheed Martin Corporation",
+   "url": "https://himalayas.app/companies/lockheed-martin-corporation/jobs/sr-staff-it-programs",
+   "geo": "United States",
+   "at": "2026-10-10T14:43:14+00:00",
+   "src": "Himalayas",
+   "type": "IT-Program-Manager Program-Man",
+   "sec": "dev"
+  },
+  {
+   "t": "Analista de Desenvolvimento de Sistemas Sênior | Backend Node.js",
+   "co": "Finnet",
+   "url": "https://himalayas.app/companies/finnet/jobs/analista-de-desenvolvimento-de-sistemas-senior-backend-node-js",
    "geo": "Brazil",
-   "at": "2026-10-10T06:46:43+00:00",
+   "at": "2026-10-10T14:43:11+00:00",
    "src": "Himalayas",
-   "type": "Backend-Engineer Desenvolvedor",
+   "type": "Backend-Engineer NodeJS-Develo",
    "sec": "dev"
   },
   {
-   "t": "Cyber Security Engineer",
-   "co": "Boardroom Appointments",
-   "url": "https://himalayas.app/companies/boardroom-appointments/jobs/cyber-security-engineer-3035044316",
-   "geo": "South Africa",
-   "at": "2026-10-10T06:46:29+00:00",
-   "src": "Himalayas",
-   "type": "Cybersecurity-Engineer Threat-",
-   "sec": "dev"
-  },
-  {
-   "t": "SVP of Marketing",
-   "co": "Claravine",
-   "url": "https://himalayas.app/companies/claravine/jobs/svp-of-marketing",
+   "t": "Strategic Client Manager",
+   "co": "CPSI",
+   "url": "https://himalayas.app/companies/cpsi/jobs/strategic-client-manager-6964061268",
    "geo": "United States",
-   "at": "2026-10-10T06:46:10+00:00",
+   "at": "2026-10-10T14:43:09+00:00",
    "src": "Himalayas",
-   "type": "Chief-Marketing-Officer VP-Of-",
-   "sec": "marketing"
-  },
-  {
-   "t": "Behavioral Medical Biller (Part-time to start)",
-   "co": "RCM Staff LLC",
-   "url": "https://himalayas.app/companies/rcm-staff-llc/jobs/behavioral-medical-biller-part-time-to-start",
-   "geo": "United States",
-   "at": "2026-10-10T06:46:10+00:00",
-   "src": "Himalayas",
-   "type": "Medical-Biller Medical-Billing",
-   "sec": "support"
-  },
-  {
-   "t": "Entry Level Remote Insurance Sales Representative",
-   "co": "MINK Life & Legacy Agency",
-   "url": "https://himalayas.app/companies/mink-life-legacy-agency/jobs/entry-level-remote-insurance-sales-representative-7880689776",
-   "geo": "United States",
-   "at": "2026-10-10T06:46:10+00:00",
-   "src": "Himalayas",
-   "type": "Insurance-Sales Life-Insurance",
+   "type": "Client-Manager Account-Manager",
    "sec": "other"
   },
   {
-   "t": "Environmental Engineer-Air Quality Compliance",
-   "co": "Arclin",
-   "url": "https://himalayas.app/companies/arclin/jobs/environmental-engineer-air-quality-compliance",
+   "t": "Sr Manager, Data & Analytics",
+   "co": "Lennar",
+   "url": "https://himalayas.app/companies/lennar/jobs/sr-manager-data-analytics",
    "geo": "United States",
-   "at": "2026-10-10T06:44:38+00:00",
+   "at": "2026-10-10T14:43:09+00:00",
    "src": "Himalayas",
-   "type": "Environmental-Engineer Air-Qua",
+   "type": "Data-Analytics-Manager Senior-",
    "sec": "dev"
   },
   {
-   "t": "Salesforce Solutions Architect",
-   "co": "ELYON International",
-   "url": "https://himalayas.app/companies/elyon-international/jobs/salesforce-solutions-architect",
+   "t": "Manager I, Compliance & Risk Operations",
+   "co": "Radian Generation",
+   "url": "https://himalayas.app/companies/radian-generation/jobs/manager-i-compliance-risk-operations",
    "geo": "United States",
-   "at": "2026-10-10T06:44:24+00:00",
+   "at": "2026-10-10T14:43:07+00:00",
    "src": "Himalayas",
-   "type": "Salesforce-Solutions-Architect",
+   "type": "Compliance-Manager Risk-Manage",
    "sec": "other"
   },
   {
-   "t": "Intermediate Process and Tools Specialist",
-   "co": "Delan Associates",
-   "url": "https://himalayas.app/companies/delan-associates/jobs/intermediate-process-and-tools-specialist",
+   "t": "Técnico de Neumáticos de Viaje",
+   "co": "Remote Mechanic Jobs",
+   "url": "https://himalayas.app/companies/remote-mechanic-jobs/jobs/tecnico-de-neumaticos-de-viaje",
    "geo": "United States",
-   "at": "2026-10-10T06:44:11+00:00",
+   "at": "2026-10-10T14:43:06+00:00",
    "src": "Himalayas",
-   "type": "Power-Platform-Specialist Proc",
-   "sec": "support"
-  },
-  {
-   "t": "Sr. Implementation Engineer (MANTL)",
-   "co": "Alkami Technology, Inc.",
-   "url": "https://himalayas.app/companies/alkami-technology-inc/jobs/sr-implementation-engineer-mantl",
-   "geo": "United States",
-   "at": "2026-10-10T06:44:01+00:00",
-   "src": "Himalayas",
-   "type": "Implementation-Engineer Techni",
-   "sec": "dev"
-  },
-  {
-   "t": "Work From Home Inbound Contact Centre Agent",
-   "co": "The Sydney Call Centre",
-   "url": "https://himalayas.app/companies/the-sydney-call-centre/jobs/work-from-home-inbound-contact-centre-agent",
-   "geo": "Canada",
-   "at": "2026-10-10T06:44:01+00:00",
-   "src": "Himalayas",
-   "type": "Customer-Service Call-Center-R",
-   "sec": "support"
-  },
-  {
-   "t": "Executive Loan Officer (North Carolina)",
-   "co": "Quicken Loans",
-   "url": "https://himalayas.app/companies/quicken-loans/jobs/executive-loan-officer-north-carolina",
-   "geo": "United States",
-   "at": "2026-10-10T06:43:43+00:00",
-   "src": "Himalayas",
-   "type": "Mortgage-Officer Loan-Officer ",
+   "type": "Tire-Technician Automotive-Tec",
    "sec": "other"
   },
   {
-   "t": "Virtual Platform Engineer",
-   "co": "Bright Vision Technologies",
-   "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/virtual-platform-engineer",
-   "geo": "United States",
-   "at": "2026-10-10T06:43:32+00:00",
+   "t": "(Senior) Manager (w/m/d) Finance & Accounting Advisory – US GAAP",
+   "co": "CFGI",
+   "url": "https://himalayas.app/companies/cfgi/jobs/senior-manager-w-m-d-finance-accounting-advisory-us-gaap",
+   "geo": "Germany",
+   "at": "2026-10-10T14:43:03+00:00",
    "src": "Himalayas",
-   "type": "Virtual-Platform-Engineer Vmwa",
-   "sec": "dev"
-  },
-  {
-   "t": "Multi-Site Quoter {SE}",
-   "co": "ARCH",
-   "url": "https://himalayas.app/companies/archglobalprecision/jobs/multi-site-quoter-se",
-   "geo": "United States",
-   "at": "2026-10-10T06:43:26+00:00",
-   "src": "Himalayas",
-   "type": "Estimator Quoter Pricing-Analy",
-   "sec": "dev"
-  },
-  {
-   "t": "Life Claims Examiner",
-   "co": "Symetra",
-   "url": "https://himalayas.app/companies/symetra/jobs/life-claims-examiner",
-   "geo": "United States",
-   "at": "2026-10-10T06:43:26+00:00",
-   "src": "Himalayas",
-   "type": "Life-Claims-Examiner Claims-Ex",
-   "sec": "other"
-  },
-  {
-   "t": "Microsoft Teams Customer Engineer (Bilingual English)",
-   "co": "Concentrix",
-   "url": "https://himalayas.app/companies/concentrix/jobs/microsoft-teams-customer-engineer-bilingual-english",
-   "geo": "Mexico",
-   "at": "2026-10-10T06:43:10+00:00",
-   "src": "Himalayas",
-   "type": "Customer-Engineer Technical-Co",
-   "sec": "dev"
-  },
-  {
-   "t": "Scrum Master",
-   "co": "TheHiveCareers",
-   "url": "https://himalayas.app/companies/thehivecareers/jobs/scrum-master-6208660089",
-   "geo": "Jamaica",
-   "at": "2026-10-10T06:42:43+00:00",
-   "src": "Himalayas",
-   "type": "Scrum-Master Agile-Coach Proje",
+   "type": "Accounting-Manager Finance-Man",
    "sec": "other"
   },
   {
@@ -971,16 +971,6 @@
    "sec": "writing"
   },
   {
-   "t": "Developer Relations Engineer - USA",
-   "co": "Storyblok",
-   "url": "https://weworkremotely.com/remote-jobs/storyblok-developer-relations-engineer-usa",
-   "geo": "Anywhere in the World",
-   "at": "Fri, 09 Oct 2026 07:31:02 +0000",
-   "src": "We Work Remotely",
-   "type": "Sales and Marketing",
-   "sec": "dev"
-  },
-  {
    "t": "ALM Manager",
    "co": "Upstart",
    "url": "https://weworkremotely.com/remote-jobs/upstart-alm-manager",
@@ -1059,6 +1049,16 @@
    "src": "We Work Remotely",
    "type": "Customer Support",
    "sec": "support"
+  },
+  {
+   "t": "Head of CRM & Lifecycle Marketing",
+   "co": "Bondora",
+   "url": "https://weworkremotely.com/remote-jobs/bondora-head-of-crm-lifecycle-marketing",
+   "geo": "Anywhere in the World",
+   "at": "Thu, 08 Oct 2026 18:37:31 +0000",
+   "src": "We Work Remotely",
+   "type": "Customer Support",
+   "sec": "marketing"
   }
  ],
  "learn": [
@@ -1129,5 +1129,5 @@
   "Himalayas",
   "We Work Remotely"
  ],
- "updated": "2026-10-10T09:06:31+00:00"
+ "updated": "2026-10-10T15:24:01+00:00"
 }

@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-10-2026",
+   "type": "trending",
+   "date": "2026-10-10T15:23:26+00:00",
+   "title": "Trending in Crypto — October 10, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (NEAR, STRK, SWARM…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 20,
+      "price": 5.417357247166638,
+      "ch": 13.96
+     },
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "rank": 101,
+      "price": 0.0879169592178118,
+      "ch": 19.98
+     },
+     {
+      "sym": "SWARM",
+      "name": "SWARM ENGINE",
+      "rank": 923,
+      "price": 0.018716961595114583,
+      "ch": 13.45
+     },
+     {
+      "sym": "TRUMP",
+      "name": "Official Trump",
+      "rank": 114,
+      "price": 1.894292996390768,
+      "ch": 2.96
+     },
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "rank": 111,
+      "price": 0.5461785673540417,
+      "ch": 0.08
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 116,
+      "price": 0.008307385127245366,
+      "ch": 3.88
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "rank": 11,
+      "price": 86.10065814057306,
+      "ch": 0.84
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 606,
+      "price": 131.313192389394,
+      "ch": 3.43
+     },
+     {
+      "sym": "LIT",
+      "name": "Lighter",
+      "rank": 83,
+      "price": 3.7171124928162036,
+      "ch": 2.32
+     },
+     {
+      "sym": "RAY",
+      "name": "Raydium",
+      "rank": 102,
+      "price": 2.3841341055748666,
+      "ch": 0.23
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 82898,
+      "ch": -0.0,
+      "vol": 17734713763,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2506.31,
+      "ch": 0.76,
+      "vol": 5671147808,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 110.38,
+      "ch": 0.76,
+      "vol": 1810893258,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.41,
+      "ch": 1.98,
+      "vol": 1092464044,
+      "rank": 5
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 5.4,
+      "ch": 13.72,
+      "vol": 914476868,
+      "rank": 20
+     },
+     {
+      "sym": "FIGR_HELOC",
+      "name": "Figure Heloc",
+      "price": 1.001,
+      "ch": -2.81,
+      "vol": 695736107,
+      "rank": 9
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 86.07,
+      "ch": 0.71,
+      "vol": 562471047,
+      "rank": 11
+     },
+     {
+      "sym": "ADA",
+      "name": "Cardano",
+      "price": 0.255703,
+      "ch": 8.34,
+      "vol": 542580812,
+      "rank": 17
+     }
+    ]
+   }
+  },
+  {
    "slug": "how-to-avoid-airdrop-scams",
    "type": "learn",
    "date": "2026-10-10T09:05:50+00:00",
@@ -2982,5 +3130,5 @@
    }
   }
  ],
- "updated": "2026-10-10T09:05:50+00:00"
+ "updated": "2026-10-10T15:23:26+00:00"
 }

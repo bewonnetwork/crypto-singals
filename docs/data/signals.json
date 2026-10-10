@@ -231,6 +231,25 @@
  ],
  "watch": [
   {
+   "coin": "SOL",
+   "name": "SOL",
+   "market": "crypto",
+   "side": "BUY",
+   "price": 110.51,
+   "score": 56,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-10T15:23:09+00:00"
+  },
+  {
    "coin": "AVAX",
    "name": "AVAX",
    "market": "crypto",
@@ -392,5 +411,5 @@
    }
   }
  },
- "updated": "2026-10-10T02:47:42+00:00"
+ "updated": "2026-10-10T15:24:06+00:00"
 }
