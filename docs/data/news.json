@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T15:23:29+00:00",
+ "updated": "2026-10-10T19:26:37+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,69 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "96c63fba25",
+   "title": "BTCPay Docker users must opt into Tor at their next update to keep onion access",
+   "link": "https://cryptoslate.com/btcpays-docker-servers-must-opt-into-tor-to-keep-onion-access/",
+   "source": "CryptoSlate",
+   "published": "2026-10-10T19:00:26+00:00",
+   "summary": "Existing installations must explicitly select Tor at their next setup or update, even though existing Tor data is preserved. The post BTCPay Docker users must opt into Tor at their next update to keep onion access appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/btcpay-tor-server-reconnection.webp"
+  },
+  {
+   "id": "2233753ac3",
+   "title": "Kalshi is investigating bets on Trump’s press secretary pick placed before announcement: WSJ",
+   "link": "https://www.theblock.co/news/regulation/2026-10-10-kalshi-is-investigating-bets-on-trumps-press-secretary-pick-placed-before-announcement-wsj-418222",
+   "source": "The Block",
+   "published": "2026-10-10T18:35:25+00:00",
+   "summary": "Three bets totaling about $173 were placed before news outlets reported Zacharia's pick and are expected to pay out roughly $9,600 combined.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/09/20250917_Kalshi_News_2.jpg"
+  },
+  {
+   "id": "844249a678",
+   "title": "Newer AI models missed more payment fraud in Coinbase’s benchmark",
+   "link": "https://cryptoslate.com/coinbase-benchmark-finds-newer-ai-models-missed-more-payment-fraud/",
+   "source": "CryptoSlate",
+   "published": "2026-10-10T18:00:18+00:00",
+   "summary": "A fixed historical replay found weaker fraud coverage across three model upgrades, while GPT’s precision improved. The post Newer AI models missed more payment fraud in Coinbase’s benchmark appeared first on CryptoSlate .",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-fraud-pipeline.webp"
+  },
+  {
+   "id": "2df2b79818",
+   "title": "CFTC Draws the Line Between Prediction Markets and Gambling in New Rules",
+   "link": "https://decrypt.co/380635/cftc-draws-line-prediction-markets-and-gambling-new-rules",
+   "source": "Decrypt",
+   "published": "2026-10-10T17:01:03+00:00",
+   "summary": "A proposed rule would expressly fold event contracts tied to sports, politics, culture and weather into the “swap” definition, while an interim rule excludes casino-style gambling—sharpening the agency’s claim to exclusive jurisdiction.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/cftc-decrypt-style-01-gID_7.jpg"
+  },
+  {
+   "id": "76404a86e7",
+   "title": "Being right about Bitcoin won’t save your 3x leveraged ETF position",
+   "link": "https://cryptoslate.com/being-right-about-bitcoin-wont-save-your-3x-leveraged-etf-position/",
+   "source": "CryptoSlate",
+   "published": "2026-10-10T17:00:12+00:00",
+   "summary": "Bitcoin's next recovery could vindicate your investment thesis but leave your leveraged fund deep in the red, because the fund's daily reset can make waiting a pretty expensive habit. Getting Bitcoin right and actually making money on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-river-recovery.webp"
+  },
+  {
+   "id": "ad5bc367c1",
+   "title": "This Sam Altman-Backed Life Insurer Runs Entirely on Bitcoin, and Just Raised $37.5 Million",
+   "link": "https://decrypt.co/380633/sam-altman-backed-life-insurer-bitcoin-raise",
+   "source": "Decrypt",
+   "published": "2026-10-10T16:01:04+00:00",
+   "summary": "The Bermuda-based insurer, which runs entirely on Bitcoin, drew the funding from existing backers led by Bain Capital Crypto after a record year driven by demand from wealthy families in Asia, Europe and the Middle East.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-09-gID_7.png"
+  },
+  {
+   "id": "08323ce7c0",
+   "title": "CFTC proposes a divide between prediction contracts and sportsbook wagers",
+   "link": "https://cryptoslate.com/cftc-proposes-new-divide-between-prediction-contracts-and-sportsbook-wagers/",
+   "source": "CryptoSlate",
+   "published": "2026-10-10T16:00:40+00:00",
+   "summary": "An event-contract proposal and separate casino-wager rule sharpen the federal classification boundary while leaving state-law access disputes unresolved. The post CFTC proposes a divide between prediction contracts and sportsbook wagers…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/cftc-sportsbook-divide.webp"
+  },
   {
    "id": "bfbe627ebc",
    "title": "Ether ETFs extend outflow streak to nine days as Solana funds snap record 14-week inflow run",
@@ -189,33 +252,6 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/mashinsky-new-york-settlement-standard.jpg"
   },
   {
-   "id": "fb03cffa91",
-   "title": "Solana doubles block production speed to 200ms as network prepares for Alpenglow upgrade",
-   "link": "https://cryptoslate.com/solana-doubles-block-production-speed-to-200ms-as-network-prepares-for-alpenglow-upgrade/",
-   "source": "CryptoSlate",
-   "published": "2026-10-10T00:40:59+00:00",
-   "summary": "The final SIMD-0525 step halves Solana’s original slot-time target, shortening leader windows and epochs while per-slot budgets keep work capacity roughly steady. The post Solana doubles block production speed to 200ms as network prepares…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-block-canyon.webp"
-  },
-  {
-   "id": "372eb233bd",
-   "title": "Tether freezes $1.4M in TRON vaults and THORChain stalls",
-   "link": "https://cryptoslate.com/tether-freezes-1-4m-in-tron-vaults-and-thorchain-stalls/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T23:30:53+00:00",
-   "summary": "A researcher reported resumed TRON swaps after four vaults were blacklisted, exposing issuer control over USDT inside decentralized infrastructure. The post Tether freezes $1.4M in TRON vaults and THORChain stalls appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/tether-unfreeze-thorchain-swaps.webp"
-  },
-  {
-   "id": "d93f58becd",
-   "title": "ETH fee burns cover just 2% of new coins printed in 2026",
-   "link": "https://cryptoslate.com/eth-fee-burns-cover-just-2-of-new-coins-printed-in-2026/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T22:20:23+00:00",
-   "summary": "An October 9 ledger puts fee burn at 2.07% of gross issuance, while a conditional capacity model tests the demand needed to shrink supply. The post ETH fee burns cover just 2% of new coins printed in 2026 appeared first on CryptoSlate .",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-scaling-capacity-construction.webp"
-  },
-  {
    "id": "57466e6480",
    "title": "U.S. CFTC moves to fold event contracts into swaps regulations as legal fight rages",
    "link": "https://www.coindesk.com/policy/2026/10/09/u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rages",
@@ -223,15 +259,6 @@
    "published": "2026-10-09T21:21:54+00:00",
    "summary": "The derivatives regulator is proposing a formal rule to include certain contracts traded on platforms like Kalshi's as swaps that require the agency's oversight.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/e677de9a7fbe496bd8405a8d8976d6448ebd0b86-4184x2354.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "719d747b97",
-   "title": "Ledger hack scare nears $90 million as Tether moves to freeze stolen USDT",
-   "link": "https://cryptoslate.com/ledger-hack-scare-nears-90-million-as-tether-moves-to-freeze-stolen-usdt/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T21:10:39+00:00",
-   "summary": "Suspected Ledger wallet thefts are approaching $90 million as Tether freezes USDT stablecoin linked to the incident, according to blockchain investigators. In an Oct. 9 statement, the crypto hardware wallet maker said it was investigating…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/tether-frozen-crypto-assets.webp"
   },
   {
    "id": "5b2f859089",
@@ -700,33 +727,6 @@
    "published": "2026-10-09T05:25:27+00:00",
    "summary": "The White House outlined a $215 million quantum computing competition and $2.4 billion in AI industry commitments as concerns grow over quantum threats to cryptocurrency security.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FG6B1R6A2XBTWZ9CFPZ8SJ/ai-and-quantum.png"
-  },
-  {
-   "id": "d8396a28d7",
-   "title": "Solana is about to halve its block times as final 200-millisecond upgrade nears",
-   "link": "https://www.coindesk.com/tech/2026/10/09/solana-is-about-to-halve-its-block-times-as-final-200-millisecond-upgrade-nears",
-   "source": "CoinDesk",
-   "published": "2026-10-09T05:00:52+00:00",
-   "summary": "The network is completing a seven-week push to produce blocks twice as frequently, though validators face higher costs and tighter operating windows.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/54c0f3b41e62df4cdf774aab4c7d68c64e5e976c-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "6ba6552ab6",
-   "title": "XRP Ledger adds new controls for banks, stablecoins and tokenized funds",
-   "link": "https://www.coindesk.com/tech/2026/10/09/xrp-ledger-adds-new-controls-for-banks-stablecoins-and-tokenized-funds",
-   "source": "CoinDesk",
-   "published": "2026-10-09T04:21:36+00:00",
-   "summary": "The feature lets businesses give separate accounts limited powers such as approving customers or making payments, while keeping the keys that control their main holdings offline.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/af945cfdd3152f9ebc96d44f89ccafea550ccb57-5760x3840.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "88b5946844",
-   "title": "Ether bets were wiped out at six times bitcoin’s rate in crypto’s $1 billion flush",
-   "link": "https://www.coindesk.com/markets/2026/10/09/ether-bets-were-wiped-out-at-six-times-bitcoin-s-rate-in-crypto-s-usd1-billion-flush",
-   "source": "CoinDesk",
-   "published": "2026-10-09T04:04:36+00:00",
-   "summary": "About $356 million in ETH positions were liquidated over 24 hours, more than bitcoin despite ether’s market value being less than a fifth as large.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/5dafa8731b57ed898b6252e0ca207ab2a5222126-1460x810.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   }
  ]
 }
