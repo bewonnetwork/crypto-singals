@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T02:47:15+00:00",
+ "updated": "2026-10-10T09:05:54+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,69 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "6594f2311f",
+   "title": "Tech chief says EU can fend off rogue AI risk: Report",
+   "link": "https://cointelegraph.com/news/tech-chief-says-eu-can-fend-off-rogue-ai-risk-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-10T08:41:06+00:00",
+   "summary": "There are global concerns following incidents at OpenAI ‌and Anthropic, and fears have arisen that rogue AI agents may venture beyond human control.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4JFDB4ND4321Z9KER496JAS/ai-machine-cyber-mind-google.png"
+  },
+  {
+   "id": "337e7a9bea",
+   "title": "Sam Altman-backed Bitcoin life insurer, Meanwhile, raises more funds",
+   "link": "https://cointelegraph.com/news/sam-altman-backed-bitcoin-life-insurer-meanwhile-raises-more-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-10T07:10:43+00:00",
+   "summary": "The round follows increased international demand for Meanwhile’s Bitcoin life insurance policies amid broader macro instability.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4JA710W3MTHS923BYD1G7PT/hi-the-increasingly-acute-need-for-crypto-native-insurance.png"
+  },
+  {
+   "id": "4a9f6d58e9",
+   "title": "Inflation target of 2% may not stop the next Fed rate freeze",
+   "link": "https://cryptoslate.com/what-would-actually-stop-the-fed-from-raising-rates-again/",
+   "source": "CryptoSlate",
+   "published": "2026-10-10T07:00:05+00:00",
+   "summary": "The Fed can stop raising rates before inflation reaches 2% if officials believe the economy's already heading there without another increase. September's meeting left most unconvinced, with strong spending and persistent price increases…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/fed-zipper-squeeze.webp"
+  },
+  {
+   "id": "4aa69036b4",
+   "title": "Bitcoin's volatility has plunged, but extreme price swings are more frequent than in 2018",
+   "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018",
+   "source": "CoinDesk",
+   "published": "2026-10-10T05:43:00+00:00",
+   "summary": "CoinDesk analysis finds 10 unusually large trading days in 2026, raising questions about how investors measure risk in an increasingly institutional crypto market.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/dd764207630edd2b441c0d7a7c060015ee0e6c90-1600x1060.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "5f727cba53",
+   "title": "Robinhood Chain slowdown spreads from fees to trading as transactions fall more than 40%",
+   "link": "https://www.coindesk.com/markets/2026/10/10/robinhood-chain-slowdown-spreads-from-fees-to-trading-as-transactions-fall-more-than-40",
+   "source": "CoinDesk",
+   "published": "2026-10-10T04:44:35+00:00",
+   "summary": "Daily activity has dropped from 10.8 million transactions to 6.2 million since mid-September even as Robinhood keeps paying network fees on customer swaps.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/420b7f8ce090d7bdf4a04ea5fa1495a09ff9ce29-6889x4593.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "7d9aab8527",
+   "title": "XRP Ledger patched decade-old bug that could create billions of dollars in XRP from nothing",
+   "link": "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing",
+   "source": "CoinDesk",
+   "published": "2026-10-10T04:20:07+00:00",
+   "summary": "Researchers demonstrated how a payment could create spendable XRP without the sender funding it, prompting an emergency software release.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/0fd512cd2b3b63152562fab784b9d94b8b8b56ea-1500x994.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "aa6783c977",
+   "title": "Visa survey says nearly half of APAC consumers open to using stablecoins by 2031",
+   "link": "https://www.coindesk.com/business/2026/10/05/1-2-billion-apac-consumers-could-adopt-stablecoins-by-2031-according-to-visa",
+   "source": "CoinDesk",
+   "published": "2026-10-10T03:00:00+00:00",
+   "summary": "Visa’s survey of 14,250 people found interest in stablecoin payments is growing, though only 6% of respondents correctly understood how they work.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/6a3e8c93fcda98c3decad9229705aecebec1b999-1170x780.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
   {
    "id": "f1ece4fed9",
    "title": "Celsius founder faces lifetime ban, but can trade his own crypto",
@@ -24,7 +87,7 @@
    "source": "CryptoSlate",
    "published": "2026-10-10T00:40:59+00:00",
    "summary": "The final SIMD-0525 step halves Solana’s original slot-time target, shortening leader windows and epochs while per-slot budgets keep work capacity roughly steady. The post Solana doubles block production speed to 200ms as network prepares…",
-   "image": ""
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-block-canyon.webp"
   },
   {
    "id": "372eb233bd",
@@ -250,15 +313,6 @@
    "published": "2026-10-09T16:05:22+00:00",
    "summary": "Blockchain.com has applied for DCM and FCM licenses to offer ahead of a planned $500 million IPO.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/03/20220331_Blockchain.com_.jpg"
-  },
-  {
-   "id": "46dd97792e",
-   "title": "OpenAI, Google and Meta battle for AI internet domains as crypto firms target .bitcoin and .wallet",
-   "link": "https://cryptoslate.com/openai-google-and-meta-battle-for-ai-internet-domains-as-crypto-firms-target-bitcoin-and-wallet/",
-   "source": "CryptoSlate",
-   "published": "2026-10-09T16:00:55+00:00",
-   "summary": "CryptoSlate's tally shows 11 applications for .bit and five for .crypto, with final strings due Nov. 17. The post OpenAI, Google and Meta battle for AI internet domains as crypto firms target .bitcoin and .wallet appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/agent-domain-signpost.webp"
   },
   {
    "id": "37749f1ce2",
@@ -673,60 +727,6 @@
    "published": "2026-10-08T21:16:03+00:00",
    "summary": "Google Cloud unveiled a single Gemini agent that takes goals instead of questions, works in the background for days, and can join a company as a staffer with its own inbox and calendar.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/07/ai-agentic-payments-1-gID_7.jpg"
-  },
-  {
-   "id": "99a5095115",
-   "title": "Ethereum Test Network Raises Block Limit to Over 3x Its Current Capacity",
-   "link": "https://decrypt.co/380538/ethereum-test-raises-block-limit-3x-current-capacity",
-   "source": "Decrypt",
-   "published": "2026-10-08T20:16:03+00:00",
-   "summary": "Ethereum's Sepolia test network activated Glamsterdam on October 6 with a block gas limit near 200 million, over three times mainnet's 60 million.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Ethereum-decrypt-style-03-gID_7.png"
-  },
-  {
-   "id": "42d578ff11",
-   "title": "Wall Street's tokenization boom could have bigger winners than bitcoin and ether, Citrini says",
-   "link": "https://www.coindesk.com/markets/2026/10/08/wall-street-s-tokenization-boom-could-have-bigger-winners-than-bitcoin-and-ether-citrini-says",
-   "source": "CoinDesk",
-   "published": "2026-10-08T19:46:15+00:00",
-   "summary": "The research firm sees tokenized stocks, bonds and loans creating new markets for trading and lending, with fee-generating platforms and companies poised to benefit.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/d0183643376c63d3344b437b12fb69486c8bd450-1500x996.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "5ddbfd4ea2",
-   "title": "Securitize stock jumps over 10% after launching tokenized US equities on Solana",
-   "link": "https://cointelegraph.com/news/securitize-stock-jumps-launching-tokenized-us-equities-solana?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T19:31:38+00:00",
-   "summary": "Securitize’s new offering gives eligible investors access to tokenized shares of 12 US companies, with dividend and voting rights and plans for round-the-clock trading.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4EEEA4K0X2GAJFKB9A8T56C/hi-how-ondo-finance-plans-to-bring-tokenized-us-stocks-to-solana-3.png"
-  },
-  {
-   "id": "ed716941bd",
-   "title": "NFL Sides With States Against Kalshi in Supreme Court Prediction Market Fight",
-   "link": "https://decrypt.co/380530/nfl-kalshi-supreme-court-prediction-market",
-   "source": "Decrypt",
-   "published": "2026-10-08T19:31:03+00:00",
-   "summary": "The NFL urged the Supreme Court to resolve a circuit split over whether states can regulate sports contracts on prediction markets, arguing they're gambling, not federally regulated swaps.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/05/decrypt-style-nfl-football-gID_7.png"
-  },
-  {
-   "id": "30f1a548a9",
-   "title": "NFL backs New Jersey authorities in SCOTUS petition over Kalshi",
-   "link": "https://cointelegraph.com/news/nfl-new-jersey-supreme-court-kalshi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-08T19:17:18+00:00",
-   "summary": "According to the league, Kalshi and other prediction markets “threaten game integrity” because many event contracts are “highly susceptible to manipulation.”",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4E1T9RDDQM4RHT8VGKG97F0/hi-nfl-players-choosing-crypto-over-cash2.jpg"
-  },
-  {
-   "id": "e63dce9522",
-   "title": "JPMorgan estimates $50 billion has flowed into crypto this year as momentum improves into Q4",
-   "link": "https://www.theblock.co/news/markets/2026-10-08-jpmorgan-crypto-inflows-50-billion-etf-futures-q4-418115",
-   "source": "The Block",
-   "published": "2026-10-08T18:46:59+00:00",
-   "summary": "JPMorgan analysts estimate around $50 billion has flowed into digital assets this year, equal to an annualized pace of $66 billion.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/05/20240501_JPMorgan_News.jpg"
   }
  ]
 }

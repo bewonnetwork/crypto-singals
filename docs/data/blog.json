@@ -1,6 +1,31 @@
 {
  "posts": [
   {
+   "slug": "how-to-avoid-airdrop-scams",
+   "type": "learn",
+   "date": "2026-10-10T09:05:50+00:00",
+   "title": "How to Avoid Airdrop Scams",
+   "title_bn": "এয়ারড্রপের প্রতারণা থেকে বাঁচবেন কীভাবে",
+   "sum_en": "Real airdrops never ask for your seed phrase or for money first. These simple checks keep your wallet safe.",
+   "sum_bn": "আসল এয়ারড্রপ কখনো seed phrase বা আগে টাকা চায় না। এই কয়টা সহজ নিয়ম আপনার ওয়ালেট নিরাপদ রাখবে।",
+   "body": {
+    "pts_bn": [
+     "কেউ seed phrase বা private key চাইলে সেটা শতভাগ প্রতারণা।",
+     "'আগে টাকা বা গ্যাস ফি পাঠান, তারপর এয়ারড্রপ' — এটাও সবসময় প্রতারণা।",
+     "এয়ারড্রপের জন্য আলাদা খালি ওয়ালেট ব্যবহার করুন, মূল টাকার ওয়ালেট নয়।",
+     "লিংক সবসময় প্রজেক্টের অফিসিয়াল সাইট বা অফিসিয়াল X অ্যাকাউন্ট থেকে নিন। মেসেজে আসা লিংকে চাপবেন না।",
+     "ওয়ালেটে হঠাৎ অচেনা টোকেন এলে সেটা বেচতে বা 'claim' করতে যাবেন না; এগুলো প্রায়ই ফাঁদ।"
+    ],
+    "pts_en": [
+     "Anyone asking for your seed phrase or private key is a scammer, every time.",
+     "'Send money or gas first, then get the airdrop' is also always a scam.",
+     "Use a separate empty wallet for airdrops, never the wallet that holds your main funds.",
+     "Take links only from the project's official site or official X account. Do not tap links sent in messages.",
+     "If unknown tokens suddenly appear in your wallet, do not try to sell or claim them; they are often traps."
+    ]
+   }
+  },
+  {
    "slug": "crypto-market-digest-october-10-2026",
    "type": "digest",
    "date": "2026-10-10T02:47:06+00:00",
@@ -2957,5 +2982,5 @@
    }
   }
  ],
- "updated": "2026-10-10T02:47:06+00:00"
+ "updated": "2026-10-10T09:05:50+00:00"
 }
