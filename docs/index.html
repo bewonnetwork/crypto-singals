@@ -1085,7 +1085,29 @@ const WHY_EN = [
   [/^BTC-ও একই দিকে যাচ্ছে$/, "BTC moving the same way"],
   [/^BTC উল্টো দিকে$/, "BTC moving the opposite way"],
 ];
-function whyText(w){ if(LANG!=="en") return w; for(const [re,en] of WHY_EN){ if(re.test(w)) return w.replace(re,en); } return w; }
+const WHY_BN = [  /* the bot now writes reasons in English; show them in Bangla when the site is in Bangla */
+  [/^EMA 9\/21 cross \+ RSI in range \+ above-average volume$/, "EMA 9/21 ক্রস + RSI ঠিক সীমায় + ভলিউম বেশি"],
+  [/^EMA 9\/21 cross \+ RSI in range$/, "EMA 9/21 ক্রস + RSI ঠিক সীমায়"],
+  [/^(\S+) higher-timeframe trend agrees$/, "$1 বড় ট্রেন্ড একই দিকে"],
+  [/^(\S+) higher-timeframe trend does not agree$/, "$1 বড় ট্রেন্ড একই দিকে নয়"],
+  [/^(\S+) higher-timeframe trend is opposite$/, "$1 বড় ট্রেন্ড উল্টো দিকে"],
+  [/^(\S+) EMA 9\/21 in favour$/, "$1 EMA 9/21 পক্ষে"],
+  [/^(\S+) EMA 9\/21 against$/, "$1 EMA 9/21 বিপক্ষে"],
+  [/^MACD momentum in favour$/, "MACD মোমেন্টাম পক্ষে"],
+  [/^MACD momentum against$/, "MACD মোমেন্টাম বিপক্ষে"],
+  [/^MACD momentum building$/, "MACD মোমেন্টাম বাড়ছে"],
+  [/^Trend strength ADX (\d+)$/, "ট্রেন্ডের শক্তি ADX $1"],
+  [/^Price above EMA 200$/, "দাম EMA 200-এর ওপরে"],
+  [/^Price below EMA 200$/, "দাম EMA 200-এর নিচে"],
+  [/^Strong trend \(ADX (\d+)\)$/, "ট্রেন্ড শক্তিশালী (ADX $1)"],
+  [/^Moderate trend \(ADX (\d+)\)$/, "ট্রেন্ড মাঝারি (ADX $1)"],
+  [/^Weak trend \(ADX (\d+)\)$/, "ট্রেন্ড দুর্বল (ADX $1)"],
+  [/^Volume ([\d.]+)× the average$/, "ভলিউম গড়ের $1 গুণ"],
+  [/^RSI (\d+) in the sweet spot$/, "RSI $1 ভালো জায়গায়"],
+  [/^BTC moving the same way$/, "BTC-ও একই দিকে যাচ্ছে"],
+  [/^BTC moving the (opposite|other) way$/, "BTC উল্টো দিকে"],
+];
+function whyText(w){ for(const [re,t] of (LANG==="en"?WHY_EN:WHY_BN)){ if(re.test(w)) return w.replace(re,t); } return w; }
 function applyStatic(){
   document.documentElement.lang = LANG;
   document.querySelectorAll("[data-bn]").forEach(el=>{ el.textContent = LANG==="en" ? el.dataset.en : el.dataset.bn; });

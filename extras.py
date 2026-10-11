@@ -354,8 +354,8 @@ def video_command(state, http, text):
     if not arg or arg == "list":
         rows = [f"• {v['t']} ({v['id']})" for v in man[:15]]
         extra = [h for h, _ in state.get("yt_extra", [])]
-        return ("🎬 পিন করা ভিডিও:\n" + ("\n".join(rows) or "কিছু নেই") + "\n\nযোগ করা চ্যানেল: " + (", ".join(extra) or "নেই") +
-                "\n\nযোগ: <code>/video https://youtu.be/XXXX শিরোনাম</code>\nচ্যানেল: <code>/video @channelname</code>\nবাদ: <code>/video off XXXX</code>")
+        return ("🎬 Pinned videos:\n" + ("\n".join(rows) or "none") + "\n\nAdded channels: " + (", ".join(extra) or "none") +
+                "\n\nAdd: <code>/video https://youtu.be/XXXX title</code>\nChannel: <code>/video @channelname</code>\nRemove: <code>/video off XXXX</code>")
     if arg.startswith("off"):
         key = arg[3:].strip()
         vid = yt_id(key)
@@ -363,21 +363,21 @@ def video_command(state, http, text):
         state["videos_manual"] = [v for v in man if v["id"] != vid]
         state["yt_extra"] = [x for x in state.get("yt_extra", []) if x[0].lower() != key.lower()]
         videos(state, http, force=True)
-        return "🗑 বাদ দেওয়া হয়েছে।" if len(state["videos_manual"]) < before or key.startswith("@") else "❌ এই ভিডিও তালিকায় নেই।"
+        return "🗑 Removed." if len(state["videos_manual"]) < before or key.startswith("@") else "❌ This video is not in the list."
     if arg.startswith("@"):
         h = arg.split()[0]
         cid = _channel_id(http, h, state.setdefault("yt_ids", {}))
         if not cid:
-            return "❌ এই নামে YouTube চ্যানেল পাওয়া যায়নি।"
+            return "❌ No YouTube channel found with this name."
         ex = state.setdefault("yt_extra", [])
         if not any(x[0].lower() == h.lower() for x in ex):
             ex.append([h, arg.split()[1] if len(arg.split()) > 1 and arg.split()[1] in ("crypto", "skills") else "crypto"])
         videos(state, http, force=True)
-        return f"✅ চ্যানেল {h} যোগ হয়েছে। এর নতুন ভিডিও সাইটে নিজে নিজে আসবে।"
+        return f"✅ Channel {h} added. Its new videos will appear on the site automatically."
     parts = arg.split(None, 1)
     vid = yt_id(parts[0])
     if not vid:
-        return "❌ YouTube লিংক বোঝা যায়নি। যেমন: <code>/video https://youtu.be/abcdefghijk শিরোনাম</code>"
+        return "❌ Could not read the YouTube link. Example: <code>/video https://youtu.be/abcdefghijk title</code>"
     title = parts[1].strip() if len(parts) > 1 else ""
     if not title:
         try:
@@ -387,7 +387,7 @@ def video_command(state, http, text):
     man[:] = [v for v in man if v["id"] != vid]
     man.insert(0, {"id": vid, "t": _clean(title or "BEWON video", 120), "at": _now().isoformat(timespec="seconds"), "cat": "bewon"})
     videos(state, http, force=True)
-    return f"✅ ভিডিও সাইটে যোগ হয়েছে: {html.escape(title or vid)}"
+    return f"✅ Video added to the site: {html.escape(title or vid)}"
 
 
 def run(state, http, frames, get_df, fear_greed=None):

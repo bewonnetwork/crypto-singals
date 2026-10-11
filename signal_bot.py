@@ -234,11 +234,11 @@ def check_volatility(state):
                                                   "mins": VOL_WINDOW_MIN, "time": now.isoformat(timespec="seconds")})
         del state["alerts"][50:]
         arrow = "🚀 ▲" if ch > 0 else "🔻 ▼"
-        msgs.append(f"⚡ <b>হঠাৎ ওঠানামা — {coin}/USDT</b>\n\n"
-                    f"{arrow} <b>{ch:+.2f}%</b> গত {VOL_WINDOW_MIN} মিনিটে\n"
-                    f"দাম: <code>{fmt(cur)}</code>  (আগে <code>{fmt(ref)}</code>)\n\n"
-                    f"ℹ️ এটা ট্রেড সিগনাল নয়, শুধু সতর্কতা। দাম দ্রুত নড়ছে, সাবধানে সিদ্ধান্ত নিন।\n"
-                    f"📊 <a href=\"{SITE_URL}#/coin/{coin}\">লাইভ চার্ট দেখুন</a>")
+        msgs.append(f"⚡ <b>Sudden move — {coin}/USDT</b>\n\n"
+                    f"{arrow} <b>{ch:+.2f}%</b> in the last {VOL_WINDOW_MIN} minutes\n"
+                    f"Price: <code>{fmt(cur)}</code>  (was <code>{fmt(ref)}</code>)\n\n"
+                    f"ℹ️ This is not a trade signal, only an alert. Price is moving fast — decide carefully.\n"
+                    f"📊 <a href=\"{SITE_URL}#/coin/{coin}\">View live chart</a>")
         time.sleep(0.2)
     return msgs
 
@@ -280,7 +280,7 @@ def fx_from_yahoo(sym, interval=None):
 
 def fx_from_twelve(sym, interval=None):
     if not TWELVE_KEY:
-        raise ValueError("Twelve Data key নেই")
+        raise ValueError("no Twelve Data key")
     r = HTTP.get("https://api.twelvedata.com/time_series",
                  params={"symbol": FX_PAIRS[sym][1], "interval": {"1h": "1h", "4h": "4h"}[interval or INTERVAL],
                          "outputsize": 300, "apikey": TWELVE_KEY}, timeout=15)
@@ -370,35 +370,35 @@ def score_signal(df, side, htf_trend, btc_trend, is_btc, fx=False):
     """বড় প্রোভাইডাররা যেসব ফিল্টার ব্যবহার করে সেগুলো মিলিয়ে Confidence % বানায়"""
     c, prev = df.iloc[-1], df.iloc[-2]
     d = 1 if side == "BUY" else -1
-    score, why = (25, ["EMA 9/21 ক্রস + RSI ঠিক সীমায়"]) if fx else (20, ["EMA 9/21 ক্রস + RSI ঠিক সীমায় + ভলিউম বেশি"])
+    score, why = (25, ["EMA 9/21 cross + RSI in range"]) if fx else (20, ["EMA 9/21 cross + RSI in range + above-average volume"])
     if htf_trend == d:
-        score += 20; why.append(f"{TREND_INTERVAL} বড় ট্রেন্ড একই দিকে")
+        score += 20; why.append(f"{TREND_INTERVAL} higher-timeframe trend agrees")
     elif htf_trend == -d:
-        score -= 10; why.append(f"⚠ {TREND_INTERVAL} বড় ট্রেন্ড উল্টো দিকে")
+        score -= 10; why.append(f"⚠ {TREND_INTERVAL} higher-timeframe trend is opposite")
     if (c.close - c.ema200) * d > 0:
-        score += 10; why.append("দাম EMA 200-এর " + ("ওপরে" if d > 0 else "নিচে"))
+        score += 10; why.append("Price " + ("above" if d > 0 else "below") + " EMA 200")
     if c.macd_hist * d > 0 and (c.macd_hist - prev.macd_hist) * d > 0:
-        score += 10; why.append("MACD মোমেন্টাম বাড়ছে")
+        score += 10; why.append("MACD momentum building")
     if c.adx >= 25:
-        score += 15; why.append(f"ট্রেন্ড শক্তিশালী (ADX {c.adx:.0f})")
+        score += 15; why.append(f"Strong trend (ADX {c.adx:.0f})")
     elif c.adx >= 20:
-        score += 8; why.append(f"ট্রেন্ড মাঝারি (ADX {c.adx:.0f})")
+        score += 8; why.append(f"Moderate trend (ADX {c.adx:.0f})")
     else:
-        score -= 5; why.append(f"⚠ ট্রেন্ড দুর্বল (ADX {c.adx:.0f})")
+        score -= 5; why.append(f"⚠ Weak trend (ADX {c.adx:.0f})")
     vr = c.volume / c.vol_avg if c.vol_avg else 1
     if fx:
         pass                                    # Forex-এ নির্ভরযোগ্য ভলিউম নেই
     elif vr >= 1.5:
-        score += 10; why.append(f"ভলিউম গড়ের {vr:.1f} গুণ")
+        score += 10; why.append(f"Volume {vr:.1f}× the average")
     else:
         score += 3
     if (50 <= c.rsi <= 65) if d > 0 else (35 <= c.rsi <= 50):
-        score += 5; why.append(f"RSI {c.rsi:.0f} ভালো জায়গায়")
+        score += 5; why.append(f"RSI {c.rsi:.0f} in the sweet spot")
     if not is_btc and btc_trend:
         if btc_trend == d:
-            score += 10; why.append("BTC-ও একই দিকে যাচ্ছে")
+            score += 10; why.append("BTC moving the same way")
         else:
-            score -= 10; why.append("⚠ BTC উল্টো দিকে")
+            score -= 10; why.append("⚠ BTC moving the opposite way")
     return max(5, min(95, score)), why
 
 
@@ -460,11 +460,11 @@ def update_open_trades(coin, df, state):
             hit_tp2 = c.high >= t["tp2"] if buy else c.low <= t["tp2"]
             if hit_sl:   # একই ক্যান্ডেলে দুটোই হলে সাবধানে SL ধরছি
                 if t["tp1_hit"]:
-                    msgs.append(f"🟡 {label(coin)} {t['side']}: TP1 এর পর দাম Entry তে ফিরে এসেছে — লাভ লক (Breakeven)")
+                    msgs.append(f"🟡 {label(coin)} {t['side']}: back to Entry after TP1 — profit locked (breakeven)")
                     _close(t, "TP1", c.time.isoformat(), state)
                 else:
                     state["stats"]["loss"] += 1
-                    msgs.append(f"❌ {label(coin)} {t['side']}: Stop Loss হিট ({fmt(t['sl'], coin)})")
+                    msgs.append(f"❌ {label(coin)} {t['side']}: Stop Loss hit ({fmt(t['sl'], coin)})")
                     _close(t, "SL", c.time.isoformat(), state)
                 closed = True
                 break
@@ -472,7 +472,7 @@ def update_open_trades(coin, df, state):
                 if not t["tp1_hit"]:
                     state["stats"]["win"] += 1
                 state["stats"]["tp2"] += 1
-                msgs.append(f"🎯🎯 {label(coin)} {t['side']}: TP2 হিট! ({fmt(t['tp2'], coin)})")
+                msgs.append(f"🎯🎯 {label(coin)} {t['side']}: TP2 hit! ({fmt(t['tp2'], coin)})")
                 _close(t, "TP2", c.time.isoformat(), state)
                 closed = True
                 break
@@ -480,11 +480,11 @@ def update_open_trades(coin, df, state):
                 t["tp1_hit"] = True
                 state["stats"]["win"] += 1
                 t["sl"] = t["entry"]          # TP1 এর পর SL কে Entry তে সরানো হলো
-                msgs.append(f"✅ {label(coin)} {t['side']}: TP1 হিট! ({fmt(t['tp1'], coin)}) — এখন SL = Entry")
+                msgs.append(f"✅ {label(coin)} {t['side']}: TP1 hit! ({fmt(t['tp1'], coin)}) — SL moved to Entry")
             if t["age"] >= MAX_TRADE_CANDLES:
                 if not t["tp1_hit"]:
                     state["stats"]["expired"] += 1
-                msgs.append(f"⌛ {label(coin)} {t['side']}: সময় শেষ, সিগনাল বন্ধ")
+                msgs.append(f"⌛ {label(coin)} {t['side']}: time is up, signal closed")
                 t["exit"] = float(c.close)
                 _close(t, "TP1" if t["tp1_hit"] else "EXPIRED", c.time.isoformat(), state)
                 closed = True
@@ -534,14 +534,14 @@ def signal_message(coin, s, source):
             f"RSI: {s['rsi']}  |  Data: {source}\n\n"
             + (s["deep"] + "\n" if s.get("deep") else f"🎯 <b>Confidence: {s['conf']}% · Grade {grade(s['conf'])}</b>\n")
             + "".join(f"• {w}\n" for w in s["why"]) + "\n"
-            f"📊 <a href=\"{link}\">চার্ট ও সব সিগনাল দেখুন</a>\n\n"
+            f"📊 <a href=\"{link}\">View chart and all signals</a>\n\n"
             f"⚠️ Free signal, not financial advice. Use Stop Loss. DYOR.")
 
 
 def win_rate_text(st):
     done = st["win"] + st["loss"]
     if not done:
-        return "এখনো কোনো সিগনাল শেষ হয়নি"
+        return "No signal has closed yet"
     return (f"Win {st['win']} | Loss {st['loss']} | Expired {st['expired']} | "
             f"Win rate {st['win'] * 100 / done:.0f}%")
 
@@ -549,7 +549,7 @@ def win_rate_text(st):
 def send_telegram(text, chat_id=None, preview=False):
     chat_id = chat_id or TELEGRAM_CHAT_ID
     if not TELEGRAM_BOT_TOKEN or not chat_id:
-        print("---- (Telegram সেট করা নেই, তাই শুধু দেখাচ্ছি) ----\n" + text + "\n")
+        print("---- (Telegram not set, printing only) ----\n" + text + "\n")
         return True
     try:
         r = HTTP.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
@@ -624,14 +624,14 @@ def daily_digest(frames, state):
             lines.append(f"{'🟢' if ch >= 0 else '🔴'} {coin}: {fmt(now)} ({ch:+.2f}%)")
     fxq = state.get("fx_quotes", {})
     if fxq:
-        lines.append("\n💱 <b>Forex ও Gold</b>")
+        lines.append("\n💱 <b>Forex &amp; Gold</b>")
         for k, q in fxq.items():
             lines.append(f"{'🟢' if q['ch'] >= 0 else '🔴'} {label(k)}: {fmt(q['price'], k)} ({q['ch']:+.2f}%)")
     if fg is not None:
         lines.append(f"\n😨→🤑 Fear & Greed: <b>{fg}</b> ({fg_txt})  <i>source: alternative.me</i>")
     lines.append(f"\n📈 Bot record: {win_rate_text(state['stats'])}")
     lines.append(f"🔓 Open signals: {len(state['open'])}")
-    lines.append(f"\n🌐 <a href=\"{SITE_URL}\">ওয়েবসাইট</a> · <a href=\"{SITE_URL}#/signals\">সব ফলাফল</a> · <a href=\"{SITE_URL}#/news\">নিউজ</a>")
+    lines.append(f"\n🌐 <a href=\"{SITE_URL}\">Website</a> · <a href=\"{SITE_URL}#/signals\">All results</a> · <a href=\"{SITE_URL}#/news\">News</a>")
     lines.append("\n⚠️ Not financial advice.")
     return "\n".join(lines)
 
@@ -765,6 +765,29 @@ LESSONS = [
     "বড় খবর বা বড় আনলকের ঠিক আগে নতুন ট্রেডে সাবধান।",
     "আসল টাকার আগে ডেমোতে প্র্যাকটিস করুন। ওয়েবসাইটের ডেমো পেজ ফ্রি।",
     "Confidence বা গ্রেড মানে জেতার সম্ভাবনা নয় — শুধু কতগুলো শর্ত মিলেছে।",
+]
+LESSONS_EN = [
+    "Check the FDV before buying. If it is far above the market cap, a lot of new tokens are still coming.",
+    "Check for a big token unlock ahead. More supply can pressure the price.",
+    "No trade without a stop loss. Decide where you are wrong first, then enter.",
+    "Never risk more than 1–2% of your money on one trade.",
+    "Skip the trade if the target is not at least 1.5–2× the risk.",
+    "Do not trade against the 4h and daily trend.",
+    "When BTC dominance rises, altcoins are usually weak; when it falls, money moves into altcoins.",
+    "A price that turned the market 2–3 times before is a strong support or resistance.",
+    "Big order-book orders can be fake (spoofing). Never decide on them alone.",
+    "Anyone asking for your seed phrase or private key is a scam — airdrop or 'support'.",
+    "'Send money first to receive the airdrop' is always a scam.",
+    "Use a separate empty wallet for airdrops, not your main one.",
+    "Low daily volume means easy to enter, hard to exit.",
+    "No leverage for beginners. High leverage wipes you out on small moves.",
+    "Do not trade angry or out of FOMO after a loss. Take a break.",
+    "Write down every trade. Without a journal you cannot see your mistakes.",
+    "Always verify the contract address on the project's official site. Fakes are everywhere.",
+    "When most tokens sit with the team or investors, risk is higher.",
+    "Be careful opening new trades right before big news or a big unlock.",
+    "Practise in demo before using real money. The Demo page is free.",
+    "Confidence or grade is not a win probability — only how many conditions lined up.",
 ]
 TOPICS = {"airdrop": r"airdrop", "unlock": r"\bunlock|vesting", "listing": r"\blist(s|ed|ing)?\b|launchpool|launchpad"}
 
@@ -1127,15 +1150,15 @@ def fetch_exchange_feed():
 def feed_message(x, kind):
     e = html.escape
     if kind == "listing":
-        head = f"🆕 <b>নতুন লিস্টিং — {e(x['ex'])}</b>" + (f"  <code>{e(x['token'])}</code>" if x["token"] else "")
-        when = f"\n⏰ ট্রেডিং শুরু: {x['trade'][:16].replace('T', ' ')} UTC" if x.get("trade") else ""
-        tail = "ℹ️ নতুন লিস্টিংয়ে দাম খুব দ্রুত ওঠানামা করে। এটা কেনার সুপারিশ নয়।"
+        head = f"🆕 <b>New listing — {e(x['ex'])}</b>" + (f"  <code>{e(x['token'])}</code>" if x["token"] else "")
+        when = f"\n⏰ Trading starts: {x['trade'][:16].replace('T', ' ')} UTC" if x.get("trade") else ""
+        tail = "ℹ️ New listings move very fast. This is not a recommendation to buy."
     else:
-        head, when = f"🎁 <b>ফ্রি ইনকামের সুযোগ — {e(x['ex'])}</b>", ""
-        tail = "ℹ️ শর্ত আর যোগ্যতা অফিসিয়াল পেজে পড়ে নিন। কেউ আগে টাকা বা seed phrase চাইলে সেটা প্রতারণা।"
+        head, when = f"🎁 <b>Free earning opportunity — {e(x['ex'])}</b>", ""
+        tail = "ℹ️ Read the terms on the official page. Anyone asking for money or a seed phrase first is a scammer."
     return (f"{head}\n\n{e(x['title'])}{when}\n\n"
-            f"🔗 <a href=\"{e(x['url'])}\">অফিসিয়াল ঘোষণা পড়ুন</a>\n"
-            f"📚 <a href=\"{SITE_URL}#/learn\">সব লিস্টিং ও সুযোগ ওয়েবসাইটে</a>\n\n{tail}")
+            f"🔗 <a href=\"{e(x['url'])}\">Read the official announcement</a>\n"
+            f"📚 <a href=\"{SITE_URL}#/learn\">All listings and opportunities on the website</a>\n\n{tail}")
 
 
 def post_feed(listings, earn, state):
@@ -1209,6 +1232,7 @@ def update_insights(state):
         print("feed error:", str(e)[:80])
     day = int(now.timestamp() // 86400)
     ins["tip"] = LESSONS[day % len(LESSONS)]
+    ins["tip_en"] = LESSONS_EN[day % len(LESSONS_EN)]
     hr = int(now.timestamp() // 21600)                    # আনলক আর নতুন কয়েন: ৬ ঘণ্টায় একবার
     if state.get("slow_hr") != hr:
         for key, fn in (("unlocks", fetch_unlocks), ("newcoins", fetch_newcoins)):
@@ -1234,21 +1258,21 @@ def update_insights(state):
 
 def insight_message(ins):
     e = html.escape
-    lines = ["🧭 <b>আজকের মার্কেট ইনসাইট</b>\n"]
+    lines = ["🧭 <b>Today's market insight</b>\n"]
     d = ins.get("dominance")
     if d:
-        ch = f" ({d['ch_1d']:+.2f} গতকাল থেকে)" if d.get("ch_1d") is not None else ""
-        mood = "অল্টকয়েন দুর্বল থাকতে পারে" if d["btc"] >= 55 else "টাকা অল্টকয়েনে যাচ্ছে" if d["btc"] < 50 else "মাঝামাঝি অবস্থা"
-        lines.append(f"👑 <b>BTC Dominance: {d['btc']}%</b>{ch}\n   ETH: {d['eth']}% · মোট মার্কেট: ${d['mcap'] / 1e12:.2f}T ({d['mcap_ch']:+.2f}%)\n   ➜ {mood}\n")
+        ch = f" ({d['ch_1d']:+.2f} since yesterday)" if d.get("ch_1d") is not None else ""
+        mood = "altcoins may stay weak" if d["btc"] >= 55 else "money is moving into altcoins" if d["btc"] < 50 else "balanced"
+        lines.append(f"👑 <b>BTC Dominance: {d['btc']}%</b>{ch}\n   ETH: {d['eth']}% · Total market: ${d['mcap'] / 1e12:.2f}T ({d['mcap_ch']:+.2f}%)\n   ➜ {mood}\n")
     walls = ins.get("walls") or []
     if walls:
-        lines.append("🧱 <b>বড় অর্ডারের দেয়াল (Order book)</b>")
+        lines.append("🧱 <b>Big order walls (order book)</b>")
         for w in walls[:5]:
-            lines.append(f"• {w['coin']}: সাপোর্ট <code>{fmt(w['support']['price'])}</code> (${w['support']['usd'] / 1e6:.1f}M) · "
-                         f"রেজিস্ট্যান্স <code>{fmt(w['resistance']['price'])}</code> (${w['resistance']['usd'] / 1e6:.1f}M)")
+            lines.append(f"• {w['coin']}: support <code>{fmt(w['support']['price'])}</code> (${w['support']['usd'] / 1e6:.1f}M) · "
+                         f"resistance <code>{fmt(w['resistance']['price'])}</code> (${w['resistance']['usd'] / 1e6:.1f}M)")
         lines.append("")
     tp = ins.get("topics") or {}
-    for key, label in (("airdrop", "🎁 এয়ারড্রপের খবর"), ("unlock", "🔓 টোকেন আনলকের খবর")):
+    for key, label in (("airdrop", "🎁 Airdrop news"), ("unlock", "🔓 Token unlock news")):
         if tp.get(key):
             lines.append(f"<b>{label}</b>")
             for n in tp[key][:2]:
@@ -1256,13 +1280,13 @@ def insight_message(ins):
             lines.append("")
     soon = [u for u in (ins.get("unlocks") or []) if u.get("pct", 0) >= 0.3][:4]
     if soon:
-        lines.append("🔓 <b>সামনের বড় টোকেন আনলক</b>")
+        lines.append("🔓 <b>Big token unlocks ahead</b>")
         for u in soon:
-            lines.append(f"• {e(u['name'])}: {u['t'][:10]} · {u['tokens'] / 1e6:.1f}M টোকেন ({u['pct']:.2f}% সরবরাহ)")
+            lines.append(f"• {e(u['name'])}: {u['t'][:10]} · {u['tokens'] / 1e6:.1f}M tokens ({u['pct']:.2f}% of supply)")
         lines.append("")
-    lines.append(f"🎓 <b>আজকের টিপ:</b> {ins.get('tip', '')}\n")
-    lines.append(f"📚 <a href=\"{SITE_URL}#/learn\">লাইভ ইনসাইট ও পুরো গাইড ওয়েবসাইটে</a>")
-    lines.append("\n⚠️ শুধু তথ্য, আর্থিক পরামর্শ নয়। বড় অর্ডার যেকোনো সময় সরে যেতে পারে।")
+    lines.append(f"🎓 <b>Tip of the day:</b> {ins.get('tip_en') or ins.get('tip', '')}\n")
+    lines.append(f"📚 <a href=\"{SITE_URL}#/learn\">Live insights and the full guide on the website</a>")
+    lines.append("\n⚠️ Information only, not financial advice. Big orders can be pulled at any time.")
     return "\n".join(lines)
 
 
@@ -1279,16 +1303,16 @@ _LBL = {"entry": "entry", "price": "entry", "at": "entry", "zone": "entry", "cmp
         "sl": "sl", "stop": "sl", "stoploss": "sl", "loss": "sl"}
 _STOP = set("BUY SELL LONG SHORT TP SL ENTRY PRICE AT ZONE CMP TARGET TARGETS TAKE PROFIT TGT STOP STOPLOSS LOSS "
             "SIGNAL S NOTE NOW MARKET USDT USD PERP SPOT FUTURES LEVERAGE CROSS ISOLATED X THE AND TO".split())
-MANUAL_HELP = ("🧑‍💼 <b>নিজের সিগনাল দেওয়ার নিয়ম</b>\n\n"
-               "১) সহজ (বট নিজে TP/SL হিসাব করবে):\n<code>/signal BTC BUY</code>\n\n"
-               "২) নিজের দাম দিয়ে:\n<code>/signal BTC BUY entry 65000 tp 66000 67000 sl 64000</code>\n\n"
-               "৩) সাথে নোট:\n<code>/signal ETH SELL tp 2400 2300 sl 2600 note সাপোর্ট ভেঙেছে</code>\n\n"
-               "৪) পার্টনারের সিগনাল: তাদের পোস্টটা এই বটে <b>Forward</b> করুন (TP আর SL থাকতে হবে)।\n\n"
-               "অন্য কমান্ড:\n<code>/list</code> — খোলা সিগনাল\n<code>/close BTC</code> — নিজে হাতে বন্ধ\n"
-               "<code>/partner @channel</code> — পার্টনার চ্যানেল থেকে নিজে নিজে সিগনাল নেওয়া\n"
-               "<code>/video https://youtu.be/XXXX শিরোনাম</code> — সাইটের ভিডিও সেকশনে ভিডিও যোগ\n<code>/video @channel</code> — পুরো YouTube চ্যানেল যোগ\n\n"
-               f"কয়েন: {', '.join(COINS)} (অন্য কয়েনও চলবে, যেমন <code>/signal PEPE BUY</code>)\nForex: {', '.join(FX_PAIRS)}\n\n"
-               "⏱ মেসেজ দেওয়ার পর সর্বোচ্চ ১৫–২০ মিনিটের মধ্যে চ্যানেল ও সাইটে যাবে।")
+MANUAL_HELP = ("🧑‍💼 <b>How to post your own signal</b>\n\n"
+               "1) Simple (the bot works out TP/SL):\n<code>/signal BTC BUY</code>\n\n"
+               "2) With your own prices:\n<code>/signal BTC BUY entry 65000 tp 66000 67000 sl 64000</code>\n\n"
+               "3) With a note:\n<code>/signal ETH SELL tp 2400 2300 sl 2600 note support broken</code>\n\n"
+               "4) Partner signal: <b>Forward</b> their post to this bot (it must have TP and SL).\n\n"
+               "Other commands:\n<code>/list</code> — open signals\n<code>/close BTC</code> — close by hand\n"
+               "<code>/partner @channel</code> — take signals from a partner channel automatically\n"
+               "<code>/video https://youtu.be/XXXX title</code> — add a video to the site\n<code>/video @channel</code> — add a whole YouTube channel\n\n"
+               f"Coins: {', '.join(COINS)} (other coins work too, e.g. <code>/signal PEPE BUY</code>)\nForex: {', '.join(FX_PAIRS)}\n\n"
+               "⏱ It reaches the channel and the site within 15–20 minutes.")
 
 
 def parse_signal(text, first_is_coin=False):
@@ -1344,13 +1368,13 @@ def parse_signal(text, first_is_coin=False):
 def manual_check(df, side, htf, btc_trend, is_btc, fx):
     """অ্যাডমিনের সিগনালকে ইঞ্জিন দিয়ে মিলিয়ে দেখে: কয়টা নিশ্চয়তা মিলছে"""
     c, d = df.iloc[-1], (1 if side == "BUY" else -1)
-    rows = [(htf == d, f"{TREND_INTERVAL} বড় ট্রেন্ড " + ("একই দিকে" if htf == d else "একই দিকে নয়")),
-            ((c.ema_fast - c.ema_slow) * d > 0, f"{INTERVAL} EMA 9/21 " + ("পক্ষে" if (c.ema_fast - c.ema_slow) * d > 0 else "বিপক্ষে")),
-            (c.macd_hist * d > 0, "MACD মোমেন্টাম " + ("পক্ষে" if c.macd_hist * d > 0 else "বিপক্ষে")),
-            (c.adx >= 20, f"ট্রেন্ডের শক্তি ADX {c.adx:.0f}"),
+    rows = [(htf == d, f"{TREND_INTERVAL} higher-timeframe trend " + ("agrees" if htf == d else "does not agree")),
+            ((c.ema_fast - c.ema_slow) * d > 0, f"{INTERVAL} EMA 9/21 " + ("in favour" if (c.ema_fast - c.ema_slow) * d > 0 else "against")),
+            (c.macd_hist * d > 0, "MACD momentum " + ("in favour" if c.macd_hist * d > 0 else "against")),
+            (c.adx >= 20, f"Trend strength ADX {c.adx:.0f}"),
             ((c.rsi < 70) if d > 0 else (c.rsi > 30), f"RSI {c.rsi:.0f}")]
     if not is_btc and not fx and btc_trend:
-        rows.append((btc_trend == d, "BTC " + ("একই দিকে" if btc_trend == d else "উল্টো দিকে")))
+        rows.append((btc_trend == d, "BTC " + ("moving the same way" if btc_trend == d else "moving the other way")))
     ok = sum(1 for good, _ in rows if good)
     return ok, len(rows), [(("" if good else "⚠ ") + txt) for good, txt in rows]
 
@@ -1360,20 +1384,20 @@ def manual_message(coin, t):
     fx = coin in FX_PAIRS
     link = f"{SITE_URL}#/forex" if fx else f"{SITE_URL}#/coin/{coin}" if coin in COINS else f"{SITE_URL}#/signals"
     rr = abs(t["tp1"] - t["entry"]) / max(abs(t["entry"] - t["sl0"]), 1e-12)
-    head = (f"🤝 <b>PARTNER SIGNAL</b> — সোর্স: {html.escape(t.get('from') or 'Partner')}" if t.get("src") == "partner"
-            else "🧑‍💼 <b>ADMIN SIGNAL</b> (হাতে দেওয়া)")
-    tail = ("এটা পার্টনার চ্যানেলের সিগনাল (অনুমতি নিয়ে শেয়ার করা)" if t.get("src") == "partner" else "এটা অ্যাডমিনের নিজের মতামত")
+    head = (f"🤝 <b>PARTNER SIGNAL</b> — source: {html.escape(t.get('from') or 'Partner')}" if t.get("src") == "partner"
+            else "🧑‍💼 <b>ADMIN SIGNAL</b> (posted by hand)")
+    tail = ("This is a partner channel's signal (shared with permission)" if t.get("src") == "partner" else "This is the admin's own view")
     return (f"{head}\n{icon} <b>{t['side']} — {label(coin) if fx else coin + '/USDT'}</b>\n\n"
             f"Entry: <code>{fmt(t['entry'], coin)}</code>\n"
             f"TP1: <code>{fmt(t['tp1'], coin)}</code>\n"
             f"TP2: <code>{fmt(t['tp2'], coin)}</code>\n"
             f"Stop Loss: <code>{fmt(t['sl0'], coin)}</code>\n"
             f"Risk : Reward (TP1) = 1 : {rr:.1f}\n\n"
-            f"🔎 <b>ইঞ্জিন মিলিয়ে দেখেছে: {t['chk']} নিশ্চয়তা মিলেছে</b>\n"
+            f"🔎 <b>Engine check: {t['chk']} confirmations match</b>\n"
             + "".join(f"• {w}\n" for w in t["why"])
             + (f"\n📝 {html.escape(t['note'])}\n" if t.get("note") else "")
-            + f"\n📊 <a href=\"{link}\">চার্ট ও সব সিগনাল দেখুন</a>\n\n"
-            f"⚠️ {tail}, লাভের নিশ্চয়তা নয়। Not financial advice. Use Stop Loss. DYOR.")
+            + f"\n📊 <a href=\"{link}\">View chart and all signals</a>\n\n"
+            f"⚠️ {tail}, no profit is guaranteed. Not financial advice. Use Stop Loss. DYOR.")
 
 
 def _candles_for(sym, interval=None):
@@ -1384,44 +1408,44 @@ def add_manual_signal(p, state, frames, btc_trend, src="manual", who=""):
     """ঠিক থাকলে সিগনাল খোলে আর (চ্যানেলের মেসেজ, অ্যাডমিনকে উত্তর) ফেরত দেয়"""
     coin, side = p["coin"], p["side"]
     if not coin or not side:
-        return None, "❌ কয়েন বা BUY/SELL বুঝিনি।\n\n" + MANUAL_HELP
+        return None, "❌ Could not read the coin or BUY/SELL.\n\n" + MANUAL_HELP
     if any(t["coin"] == coin for t in state["open"]):
-        return None, f"❌ {coin}-এ আগে থেকেই একটা সিগনাল খোলা আছে। আগে <code>/close {coin}</code> দিন।"
+        return None, f"❌ {coin} already has an open signal. Send <code>/close {coin}</code> first."
     if sum(1 for t in state["open"] if t.get("src")) >= MANUAL_MAX_OPEN:
-        return None, f"❌ একসাথে সর্বোচ্চ {MANUAL_MAX_OPEN}টা নিজের/পার্টনার সিগনাল খোলা রাখা যায়।"
+        return None, f"❌ At most {MANUAL_MAX_OPEN} own/partner signals can be open at once."
     if src == "partner" and (not p["tps"] or p["sl"] is None):
-        return None, "❌ এই পোস্টে TP আর SL নেই (এটা ট্রেড সিগনাল নয়), তাই নেওয়া হয়নি।"
+        return None, "❌ This post has no TP and SL (it is not a trade signal), so it was not taken."
     fx = coin in FX_PAIRS
     if fx and not fx_market_open(datetime.now(timezone.utc)):
-        return None, "❌ Forex মার্কেট এখন বন্ধ (শনি-রবি)। খুললে আবার দিন।"
+        return None, "❌ The forex market is closed now (weekend). Send it again when it opens."
     try:
         df = frames.get(coin)
         if df is None:
             df = add_indicators(_candles_for(coin)[0])
         htf = trend_of(add_indicators(_candles_for(coin, TREND_INTERVAL)[0]))
     except Exception as e:
-        return None, f"❌ {coin}-এর দাম আনা যায়নি ({str(e)[:60]})। একটু পরে আবার দিন।"
+        return None, f"❌ {coin}: could not get the price ({str(e)[:60]}). Try again shortly."
     cur, sign = df.iloc[-1], (1 if side == "BUY" else -1)
     price, atr = float(cur.close), float(cur.atr)
     entry = p["entry"] or price
     if abs(entry - price) / price * 100 > MANUAL_ENTRY_PCT:
-        return None, (f"❌ Entry {fmt(entry, coin)} এখনকার দাম {fmt(price, coin)} থেকে {MANUAL_ENTRY_PCT:.0f}% এর বেশি দূরে। "
-                      f"এখনকার দামে দিতে entry না লিখে পাঠান।")
+        return None, (f"❌ Entry {fmt(entry, coin)} is more than {MANUAL_ENTRY_PCT:.0f}% away from the current price {fmt(price, coin)}. "
+                      f"To use the current price, send it without entry.")
     if p["tps"] and p["sl"] is None:
-        return None, "❌ Stop Loss দেননি। SL ছাড়া সিগনাল পাঠানো হয় না। যেমন: <code>sl 64000</code>"
+        return None, "❌ No Stop Loss given. Signals are never sent without an SL. Example: <code>sl 64000</code>"
     sl = p["sl"] if p["sl"] is not None else entry - sign * SL_ATR * atr
     tp1 = p["tps"][0] if p["tps"] else entry + sign * TP1_ATR * atr
     tp2 = p["tps"][1] if len(p["tps"]) > 1 else (tp1 + (tp1 - entry) if p["tps"] else entry + sign * TP2_ATR * atr)
     if not ((sl - entry) * sign < 0 < (tp1 - entry) * sign <= (tp2 - entry) * sign):
         need = "SL < Entry < TP1 ≤ TP2" if side == "BUY" else "TP2 ≤ TP1 < Entry < SL"
-        return None, f"❌ দামগুলো উল্টাপাল্টা। {side}-এ হতে হবে: {need}\nEntry {fmt(entry, coin)} · TP {fmt(tp1, coin)} / {fmt(tp2, coin)} · SL {fmt(sl, coin)}"
+        return None, f"❌ The prices are in the wrong order. For {side} it must be: {need}\nEntry {fmt(entry, coin)} · TP {fmt(tp1, coin)} / {fmt(tp2, coin)} · SL {fmt(sl, coin)}"
     ok, total, why = manual_check(df, side, htf, btc_trend, coin == "BTC", fx)
     t = {"coin": coin, "side": side, "entry": entry, "sl": sl, "tp1": tp1, "tp2": tp2, "tp1_hit": False, "age": 0,
          "checked_until": cur.time.isoformat(), "sl0": sl, "opened": datetime.now(timezone.utc).isoformat(timespec="seconds"),
          "rsi": round(float(cur.rsi), 1), "conf": None, "why": why, "chk": f"{ok}/{total}", "src": src, "from": who,
          "note": p["note"], "market": "forex" if fx else "crypto", "name": label(coin)}
-    warn = f"\n\n⚠ ইঞ্জিনের মাত্র {ok}/{total} নিশ্চয়তা মিলেছে — ঝুঁকি বেশি।" if ok * 2 < total else ""
-    return t, f"✅ {coin} {side} সিগনাল চ্যানেল ও সাইটে গেছে।{warn}"
+    warn = f"\n\n⚠ Only {ok}/{total} engine confirmations match — higher risk." if ok * 2 < total else ""
+    return t, f"✅ {coin} {side} signal sent to the channel and the site.{warn}"
 
 
 def close_manual(coin, state, frames):
@@ -1431,14 +1455,14 @@ def close_manual(coin, state, frames):
                 df = frames.get(coin)
                 price = float((df if df is not None else _candles_for(coin)[0])["close"].iloc[-1])
             except Exception:
-                return None, f"❌ {coin}-এর দাম আনা যায়নি, একটু পরে আবার দিন।"
+                return None, f"❌ {coin}: could not get the price, try again shortly."
             pct = (price / t["entry"] - 1) * 100 * (1 if t["side"] == "BUY" else -1)
             t["exit"] = price
             _close(t, "CLOSED", datetime.now(timezone.utc).isoformat(timespec="seconds"), state)
             state["open"].remove(t)
-            return (f"🔒 {label(coin)} {t['side']}: অ্যাডমিন হাতে বন্ধ করেছেন ({fmt(price, coin)}, {pct:+.2f}%)",
-                    f"✅ {coin} বন্ধ করা হলো ({pct:+.2f}%).")
-    return None, f"❌ {coin}-এ কোনো খোলা সিগনাল নেই।"
+            return (f"🔒 {label(coin)} {t['side']}: closed by the admin ({fmt(price, coin)}, {pct:+.2f}%)",
+                    f"✅ {coin} closed ({pct:+.2f}%).")
+    return None, f"❌ {coin} has no open signal."
 
 
 def read_owner_commands(state, frames, btc_trend):
@@ -1488,19 +1512,19 @@ def read_owner_commands(state, frames, btc_trend):
                 except Exception as e:
                     print("admin list error:", str(e)[:60])
         if uid not in admins:
-            send_telegram(f"👋 এই বট শুধু চ্যানেলে সিগনাল পাঠায়।\n📢 চ্যানেল ও সাইট: {SITE_URL}", chat["id"])
+            send_telegram(f"👋 This bot only posts signals to the channel.\n📢 Channel and site: {SITE_URL}", chat["id"])
             continue
         if time.time() - msg.get("date", 0) > 6 * 3600:
-            send_telegram("⌛ এই মেসেজটা ৬ ঘণ্টার বেশি পুরোনো, তাই নেওয়া হয়নি। আবার পাঠান।", chat["id"])
+            send_telegram("⌛ This message is more than 6 hours old, so it was not taken. Please send it again.", chat["id"])
             continue
         low = text.lower()
         cmd = low.split()[0].split("@")[0]
         if cmd in ("/start", "/help"):
             send_telegram(MANUAL_HELP, chat["id"])
         elif cmd == "/list":
-            rows = [f"• {label(t['coin'])} {t['side']} @ {fmt(t['entry'], t['coin'])}" + {"manual": " (নিজের)", "partner": " (পার্টনার)"}.get(t.get("src"), " (ইঞ্জিন)")
+            rows = [f"• {label(t['coin'])} {t['side']} @ {fmt(t['entry'], t['coin'])}" + {"manual": " (own)", "partner": " (partner)"}.get(t.get("src"), " (engine)")
                     for t in state["open"]]
-            send_telegram("📋 খোলা সিগনাল:\n" + ("\n".join(rows) or "কিছু নেই"), chat["id"])
+            send_telegram("📋 Open signals:\n" + ("\n".join(rows) or "none"), chat["id"])
         elif cmd == "/partner":
             ps, arg = state.setdefault("partners", []), low.split()[1:]
             names = [("@" + a.lstrip("@")) if not a.lstrip("-").isdigit() else a for a in arg if a != "off"]
@@ -1510,18 +1534,18 @@ def read_owner_commands(state, frames, btc_trend):
                         ps.remove(nm)
                 elif nm not in ps and len(ps) < 10:
                     ps.append(nm)
-            send_telegram("🤝 পার্টনার চ্যানেল: " + (", ".join(ps) or "কোনোটা নেই") +
-                          "\n\nযোগ: <code>/partner @channelname</code>\nবাদ: <code>/partner off @channelname</code>\n\n"
-                          "ℹ️ ওই চ্যানেলের মালিককে আপনার বটকে সেখানে <b>অ্যাডমিন</b> করতে হবে, নইলে বট পোস্ট দেখতে পাবে না।", chat["id"])
+            send_telegram("🤝 Partner channels: " + (", ".join(ps) or "none") +
+                          "\n\nAdd: <code>/partner @channelname</code>\nRemove: <code>/partner off @channelname</code>\n\n"
+                          "ℹ️ The owner of that channel must make your bot an <b>admin</b> there, or the bot cannot see the posts.", chat["id"])
         elif cmd == "/video":
             try:
                 import extras
                 send_telegram(extras.video_command(state, HTTP, text), chat["id"])
             except Exception as e:
-                send_telegram("❌ ভিডিও যোগ করা গেল না: " + html.escape(str(e)[:80]), chat["id"])
+                send_telegram("❌ Could not add the video: " + html.escape(str(e)[:80]), chat["id"])
         elif cmd == "/close":
             p = parse_signal(text[6:] + " buy")
-            pub, reply = close_manual(p["coin"], state, frames) if p["coin"] else (None, "❌ কোন কয়েন? যেমন: <code>/close BTC</code>")
+            pub, reply = close_manual(p["coin"], state, frames) if p["coin"] else (None, "❌ Which coin? Example: <code>/close BTC</code>")
             if pub:
                 out.append(pub)
             send_telegram(reply, chat["id"])
@@ -1532,7 +1556,7 @@ def read_owner_commands(state, frames, btc_trend):
                 state["open"].append(t)
                 print(f"manual {t['side']} {t['coin']}")
             elif t:
-                reply = "❌ চ্যানেলে পাঠানো যায়নি। বট চ্যানেলের অ্যাডমিন আছে কিনা দেখুন।"
+                reply = "❌ Could not post to the channel. Check that the bot is an admin of the channel."
             send_telegram(reply, chat["id"])
         else:
             send_telegram(MANUAL_HELP, chat["id"])
@@ -1546,8 +1570,8 @@ LESSON_HOUR_UTC = 6         # 6 UTC = দুপুর ১২টা বাংল�
 
 def blog_message(p):
     e = html.escape
-    title = e(p["title"]) + (f"\n{e(p['title_bn'])}" if p.get("title_bn") else "")
-    return f"📰 <b>{title}</b>\n\n{e(p['sum_bn'])}\n\n🔗 {SITE_URL}#/blog/{p['slug']}"
+    title = e(p["title"])
+    return f"📰 <b>{title}</b>\n\n{e(p.get('sum_en') or p.get('sum_bn', ''))}\n\n🔗 {SITE_URL}#/blog/{p['slug']}"
 
 
 def blog_digest(frames, state):
@@ -1570,7 +1594,7 @@ TRENDING_HOUR_UTC = 14      # 14 UTC = রাত ৮টা বাংলাদে
 
 def trending_message():
     r = HTTP.get("https://api.coingecko.com/api/v3/search/trending", headers=BROWSER_UA, timeout=20).json()
-    lines = ["🔥 <b>আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে</b> (Trending)\n"]
+    lines = ["🔥 <b>Most searched coins today</b> (Trending)\n"]
     for i, c in enumerate((r.get("coins") or [])[:7], 1):
         it = c.get("item", {})
         d = it.get("data") or {}
@@ -1584,8 +1608,8 @@ def trending_message():
         lines.append(f"{i}. <b>{html.escape(str(it.get('symbol', '')).upper())}</b> — {html.escape(str(it.get('name', '')))}{rank}{price}{chs}")
     if len(lines) < 4:
         return None
-    lines.append("\nℹ️ Trending মানে মানুষ বেশি খুঁজছে — কেনার পরামর্শ নয়। বেশি খোঁজা কয়েনে দাম দ্রুত ওঠে, দ্রুত পড়েও।")
-    lines.append(f"🌐 <a href=\"{SITE_URL}#/market\">মার্কেট দেখুন</a>  ·  <i>source: CoinGecko</i>\n⚠️ Not financial advice. DYOR.")
+    lines.append("\nℹ️ Trending means many people are searching for it — not a buy tip. Hot coins rise fast and fall fast.")
+    lines.append(f"🌐 <a href=\"{SITE_URL}#/market\">View the market</a>  ·  <i>source: CoinGecko</i>\n⚠️ Not financial advice. DYOR.")
     return "\n".join(lines)
 
 
@@ -1806,7 +1830,7 @@ def run_once(force_digest=False):
         send_telegram(m)
 
     for m in outbox:
-        send_telegram(m + f"\n🌐 <a href=\"{SITE_URL}#/signals\">সব ফলাফল ওয়েবসাইটে</a>")
+        send_telegram(m + f"\n🌐 <a href=\"{SITE_URL}#/signals\">All results on the website</a>")
 
     # (গ) দিনে একবার সারাংশ
     now = datetime.now(timezone.utc)
@@ -1916,11 +1940,11 @@ def run_once(force_digest=False):
     for f in fails:
         print("FAIL", f)
     if not frames:
-        sys.exit("কোনো এক্সচেঞ্জ থেকেই ডেটা আসেনি")
+        sys.exit("no exchange returned data")
 
 
 def run_test():
-    lines = ["🤖 <b>Test message</b> — bot কাজ করছে!\n"]
+    lines = ["🤖 <b>Test message</b> — the bot is working!\n"]
     for name, fn in SOURCES:
         try:
             df = fn("BTC")
@@ -1929,7 +1953,7 @@ def run_test():
             lines.append(f"❌ {name}: {str(e)[:60]}")
     fg, fg_txt = get_fear_greed()
     lines.append(f"{'✅' if fg is not None else '❌'} Fear & Greed: {fg} {fg_txt or ''}")
-    lines.append(f"\n🌐 ওয়েবসাইট: {SITE_URL}")
+    lines.append(f"\n🌐 Website: {SITE_URL}")
     ok = send_telegram("\n".join(lines))
     print("Telegram:", "OK" if ok else "FAILED")
     if not ok:
@@ -1955,7 +1979,7 @@ if __name__ == "__main__":
         import probe
         probe.run()
     elif mode == "loop":
-        print("Bot চালু... বন্ধ করতে Ctrl+C")
+        print("Bot running... press Ctrl+C to stop")
         while True:
             try:
                 run_once()
