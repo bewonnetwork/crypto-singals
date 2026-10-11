@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T18:51:56+00:00",
+ "updated": "2026-10-11T19:12:16+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,15 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "51d7bc62c3",
+   "title": "XRP’s next Wall Street expansion comes with an unexpected complication from Ripple",
+   "link": "https://cryptoslate.com/xrps-next-wall-street-expansion-comes-with-an-unexpected-complication-from-ripple/",
+   "source": "CryptoSlate",
+   "published": "2026-10-11T19:00:09+00:00",
+   "summary": "Management retains cost less impairment, so an unrealized XRP price rise alone will not lift earnings by revaluing the holdings. The post XRP’s next Wall Street expansion comes with an unexpected complication from Ripple appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-eclipse-skyline.webp"
+  },
   {
    "id": "4d23c19423",
    "title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
@@ -49,7 +58,7 @@
    "title": "Saylor teases Strategy Bitcoin buying after ending September with STRC buybacks",
    "link": "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-11T17:03:00+00:00",
+   "published": "2026-10-11T17:07:00+00:00",
    "summary": "Investors will have to wait an extra day to find out if and how much Strategy added to its Bitcoin treasury in the first week of October.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4NVX0EM8XS2QYBBRNFM2NW0/hi-why-saylors-strategy-keeps-buying-bitcoin-the-long-term-bet-explained-1.png"
   },
@@ -166,7 +175,7 @@
    "title": "Coldcard says it’s investigating how phishing link appeared on its X account",
    "link": "https://cointelegraph.com/news/coldcard-says-its-investigating-how-phishing-link-appeared-on-its-x-account?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-11T10:32:00+00:00",
+   "published": "2026-10-11T10:40:00+00:00",
    "summary": "Company advised users not to visit or interact with the link in question and said it will share any further verified updates.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4N7GC7PDTK5CW4F08YBFCW8/hi-what-is-a-phishing-attack-in-crypto-and-how-to-prevent-it.jpg"
   },
@@ -205,15 +214,6 @@
    "published": "2026-10-11T07:00:24+00:00",
    "summary": "Metaplanet sold 10,000 BTC and bought back 11,000 at a higher average price to show it was willing to sell its Bitcoin. The Japanese treasury company was pursuing a credit rating and better access to financing, and its Oct. 5 disclosure…",
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-shield-dome.webp"
-  },
-  {
-   "id": "96c63fba25",
-   "title": "BTCPay Docker users must opt into Tor at their next update to keep onion access",
-   "link": "https://cryptoslate.com/btcpays-docker-servers-must-opt-into-tor-to-keep-onion-access/",
-   "source": "CryptoSlate",
-   "published": "2026-10-10T19:00:26+00:00",
-   "summary": "Existing installations must explicitly select Tor at their next setup or update, even though existing Tor data is preserved. The post BTCPay Docker users must opt into Tor at their next update to keep onion access appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/btcpay-tor-server-reconnection.webp"
   },
   {
    "id": "2233753ac3",
