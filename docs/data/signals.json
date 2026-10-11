@@ -231,6 +231,25 @@
  ],
  "watch": [
   {
+   "coin": "DOGE",
+   "name": "DOGE",
+   "market": "crypto",
+   "side": "SELL",
+   "price": 0.08564,
+   "score": 48,
+   "chk": "4/4",
+   "why": [
+    "4H",
+    "⚠ 15M",
+    "⚠ 5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-11T01:34:15+00:00"
+  },
+  {
    "coin": "SOL",
    "name": "SOL",
    "market": "crypto",
@@ -411,5 +430,5 @@
    }
   }
  },
- "updated": "2026-10-10T15:24:06+00:00"
+ "updated": "2026-10-11T01:35:12+00:00"
 }
