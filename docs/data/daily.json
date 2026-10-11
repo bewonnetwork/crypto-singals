@@ -1,0 +1,549 @@
+{
+ "today": {
+  "date": "2026-10-11",
+  "picks": [
+   {
+    "coin": "APT",
+    "market": "crypto",
+    "side": "BUY",
+    "entry": 0.9189,
+    "sl": 0.8852788684160047,
+    "tp1": 0.9525211315839954,
+    "tp2": 0.9861422631679909,
+    "score": 81,
+    "agree": 5,
+    "n": 6,
+    "src": {
+     "tv1h": 0.445,
+     "tv4h": 0.467,
+     "tv1d": 0.582,
+     "engine": 0.953,
+     "rsi": 66.8,
+     "mom": 1.0,
+     "lsr": 1.44,
+     "crowd": -0.219
+    },
+    "opened": "2026-10-11T18:52:42+00:00",
+    "status": "open",
+    "also_bot": false
+   },
+   {
+    "coin": "NEAR",
+    "market": "crypto",
+    "side": "BUY",
+    "entry": 5.72,
+    "sl": 5.543735934878669,
+    "tp1": 5.896264065121331,
+    "tp2": 6.072528130242662,
+    "score": 80,
+    "agree": 6,
+    "n": 6,
+    "src": {
+     "tv1h": 0.355,
+     "tv4h": 0.421,
+     "tv1d": 0.467,
+     "engine": 1.0,
+     "rsi": 70.8,
+     "mom": 1.0,
+     "lsr": 0.76,
+     "crowd": 0.12
+    },
+    "opened": "2026-10-11T18:52:42+00:00",
+    "status": "open",
+    "also_bot": false
+   },
+   {
+    "coin": "INJ",
+    "market": "crypto",
+    "side": "BUY",
+    "entry": 7.924,
+    "sl": 7.7348807909500925,
+    "tp1": 8.11311920904991,
+    "tp2": 8.302238418099817,
+    "score": 78,
+    "agree": 5,
+    "n": 6,
+    "src": {
+     "tv1h": 0.355,
+     "tv4h": 0.558,
+     "tv1d": 0.512,
+     "engine": 0.992,
+     "rsi": 69.5,
+     "mom": 0.6,
+     "lsr": 1.19,
+     "crowd": -0.093
+    },
+    "opened": "2026-10-11T18:52:42+00:00",
+    "status": "open",
+    "also_bot": false
+   }
+  ],
+  "board": [
+   {
+    "c": "APT",
+    "m": "crypto",
+    "score": 81,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 7.49
+   },
+   {
+    "c": "NEAR",
+    "m": "crypto",
+    "score": 80,
+    "buy": 6,
+    "sell": 0,
+    "n": 6,
+    "ch24": 7.28
+   },
+   {
+    "c": "INJ",
+    "m": "crypto",
+    "score": 78,
+    "buy": 5,
+    "sell": 0,
+    "n": 6,
+    "ch24": 4.59
+   },
+   {
+    "c": "FIL",
+    "m": "crypto",
+    "score": 76,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 2.73
+   },
+   {
+    "c": "ENA",
+    "m": "crypto",
+    "score": 76,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 7.91
+   },
+   {
+    "c": "TIA",
+    "m": "crypto",
+    "score": 76,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 14.91
+   },
+   {
+    "c": "FET",
+    "m": "crypto",
+    "score": 75,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 6.14
+   },
+   {
+    "c": "OP",
+    "m": "crypto",
+    "score": 74,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 4.21
+   },
+   {
+    "c": "ICP",
+    "m": "crypto",
+    "score": 74,
+    "buy": 4,
+    "sell": 1,
+    "n": 6,
+    "ch24": 1.93
+   },
+   {
+    "c": "RENDER",
+    "m": "crypto",
+    "score": 73,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 3.33
+   },
+   {
+    "c": "DOT",
+    "m": "crypto",
+    "score": 71,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": -0.4
+   },
+   {
+    "c": "ONDO",
+    "m": "crypto",
+    "score": 71,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 1.86
+   },
+   {
+    "c": "TAO",
+    "m": "crypto",
+    "score": 71,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 3.68
+   },
+   {
+    "c": "SEI",
+    "m": "crypto",
+    "score": 71,
+    "buy": 4,
+    "sell": 1,
+    "n": 6,
+    "ch24": 2.72
+   },
+   {
+    "c": "AVAX",
+    "m": "crypto",
+    "score": 70,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 3.61
+   },
+   {
+    "c": "PEPE",
+    "m": "crypto",
+    "score": 69,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 4.96
+   },
+   {
+    "c": "ADA",
+    "m": "crypto",
+    "score": 68,
+    "buy": 4,
+    "sell": 1,
+    "n": 6,
+    "ch24": -0.24
+   },
+   {
+    "c": "ARB",
+    "m": "crypto",
+    "score": 68,
+    "buy": 5,
+    "sell": 1,
+    "n": 6,
+    "ch24": 6.95
+   },
+   {
+    "c": "BTC",
+    "m": "crypto",
+    "score": 67,
+    "buy": 5,
+    "sell": 1,
+    "n": 7,
+    "ch24": 0.85
+   },
+   {
+    "c": "ZEC",
+    "m": "crypto",
+    "score": 67,
+    "buy": 4,
+    "sell": 0,
+    "n": 6,
+    "ch24": 4.73
+   },
+   {
+    "c": "POL",
+    "m": "crypto",
+    "score": 64,
+    "buy": 4,
+    "sell": 1,
+    "n": 6,
+    "ch24": 3.17
+   },
+   {
+    "c": "SUI",
+    "m": "crypto",
+    "score": 63,
+    "buy": 4,
+    "sell": 2,
+    "n": 6,
+    "ch24": 1.33
+   },
+   {
+    "c": "ATOM",
+    "m": "crypto",
+    "score": 61,
+    "buy": 3,
+    "sell": 2,
+    "n": 6,
+    "ch24": 0.82
+   },
+   {
+    "c": "LINK",
+    "m": "crypto",
+    "score": 58,
+    "buy": 4,
+    "sell": 1,
+    "n": 6,
+    "ch24": 2.43
+   },
+   {
+    "c": "ETH",
+    "m": "crypto",
+    "score": 56,
+    "buy": 3,
+    "sell": 2,
+    "n": 7,
+    "ch24": 1.2
+   },
+   {
+    "c": "XLM",
+    "m": "crypto",
+    "score": 56,
+    "buy": 3,
+    "sell": 1,
+    "n": 6,
+    "ch24": 3.04
+   },
+   {
+    "c": "UNI",
+    "m": "crypto",
+    "score": 53,
+    "buy": 2,
+    "sell": 2,
+    "n": 6,
+    "ch24": 3.55
+   },
+   {
+    "c": "ETC",
+    "m": "crypto",
+    "score": 53,
+    "buy": 2,
+    "sell": 1,
+    "n": 6,
+    "ch24": 1.19
+   },
+   {
+    "c": "SOL",
+    "m": "crypto",
+    "score": 52,
+    "buy": 2,
+    "sell": 1,
+    "n": 6,
+    "ch24": 1.97
+   },
+   {
+    "c": "HBAR",
+    "m": "crypto",
+    "score": 52,
+    "buy": 3,
+    "sell": 2,
+    "n": 6,
+    "ch24": 1.1
+   },
+   {
+    "c": "LTC",
+    "m": "crypto",
+    "score": 51,
+    "buy": 2,
+    "sell": 2,
+    "n": 6,
+    "ch24": 0.76
+   },
+   {
+    "c": "SHIB",
+    "m": "crypto",
+    "score": 51,
+    "buy": 2,
+    "sell": 2,
+    "n": 6,
+    "ch24": 0.55
+   },
+   {
+    "c": "BCH",
+    "m": "crypto",
+    "score": 50,
+    "buy": 2,
+    "sell": 2,
+    "n": 6,
+    "ch24": 1.68
+   },
+   {
+    "c": "BNB",
+    "m": "crypto",
+    "score": 49,
+    "buy": 2,
+    "sell": 3,
+    "n": 7,
+    "ch24": 0.5
+   },
+   {
+    "c": "XRP",
+    "m": "crypto",
+    "score": 49,
+    "buy": 3,
+    "sell": 3,
+    "n": 7,
+    "ch24": 0.84
+   },
+   {
+    "c": "DOGE",
+    "m": "crypto",
+    "score": 48,
+    "buy": 2,
+    "sell": 3,
+    "n": 6,
+    "ch24": 1.15
+   },
+   {
+    "c": "AAVE",
+    "m": "crypto",
+    "score": 48,
+    "buy": 1,
+    "sell": 3,
+    "n": 6,
+    "ch24": -0.53
+   },
+   {
+    "c": "WIF",
+    "m": "crypto",
+    "score": 48,
+    "buy": 2,
+    "sell": 3,
+    "n": 6,
+    "ch24": 1.93
+   },
+   {
+    "c": "TON",
+    "m": "crypto",
+    "score": 45,
+    "buy": 0,
+    "sell": 1,
+    "n": 2,
+    "ch24": 0.06
+   },
+   {
+    "c": "TRX",
+    "m": "crypto",
+    "score": 41,
+    "buy": 1,
+    "sell": 4,
+    "n": 6,
+    "ch24": 0.09
+   }
+  ],
+  "n": 40
+ },
+ "open": [
+  {
+   "coin": "APT",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 0.9189,
+   "sl": 0.8852788684160047,
+   "tp1": 0.9525211315839954,
+   "tp2": 0.9861422631679909,
+   "score": 81,
+   "agree": 5,
+   "n": 6,
+   "src": {
+    "tv1h": 0.445,
+    "tv4h": 0.467,
+    "tv1d": 0.582,
+    "engine": 0.953,
+    "rsi": 66.8,
+    "mom": 1.0,
+    "lsr": 1.44,
+    "crowd": -0.219
+   },
+   "opened": "2026-10-11T18:52:42+00:00",
+   "status": "open",
+   "also_bot": false
+  },
+  {
+   "coin": "NEAR",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 5.72,
+   "sl": 5.543735934878669,
+   "tp1": 5.896264065121331,
+   "tp2": 6.072528130242662,
+   "score": 80,
+   "agree": 6,
+   "n": 6,
+   "src": {
+    "tv1h": 0.355,
+    "tv4h": 0.421,
+    "tv1d": 0.467,
+    "engine": 1.0,
+    "rsi": 70.8,
+    "mom": 1.0,
+    "lsr": 0.76,
+    "crowd": 0.12
+   },
+   "opened": "2026-10-11T18:52:42+00:00",
+   "status": "open",
+   "also_bot": false
+  },
+  {
+   "coin": "INJ",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 7.924,
+   "sl": 7.7348807909500925,
+   "tp1": 8.11311920904991,
+   "tp2": 8.302238418099817,
+   "score": 78,
+   "agree": 5,
+   "n": 6,
+   "src": {
+    "tv1h": 0.355,
+    "tv4h": 0.558,
+    "tv1d": 0.512,
+    "engine": 0.992,
+    "rsi": 69.5,
+    "mom": 0.6,
+    "lsr": 1.19,
+    "crowd": -0.093
+   },
+   "opened": "2026-10-11T18:52:42+00:00",
+   "status": "open",
+   "also_bot": false
+  }
+ ],
+ "history": [],
+ "stats": {
+  "tp1": 0,
+  "tp2": 0,
+  "sl": 0,
+  "expired": 0
+ },
+ "sources": [
+  "TradingView 1h",
+  "TradingView 4h",
+  "TradingView 1D",
+  "BEWON engine",
+  "Price momentum",
+  "CoinGecko community",
+  "Gate.io traders"
+ ],
+ "rules": {
+  "buy_score": 62,
+  "sell_score": 38,
+  "min_agree": 3,
+  "sl_atr": 1.5,
+  "tp1_atr": 1.5,
+  "tp2_atr": 3.0,
+  "expire_h": 48,
+  "hour_utc": 6
+ },
+ "updated": "2026-10-11T18:52:42+00:00"
+}

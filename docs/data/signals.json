@@ -18,7 +18,29 @@
   "SUI",
   "POL",
   "ONDO",
-  "PEPE"
+  "PEPE",
+  "TRX",
+  "TON",
+  "SHIB",
+  "BCH",
+  "XLM",
+  "HBAR",
+  "APT",
+  "ARB",
+  "OP",
+  "INJ",
+  "FIL",
+  "ATOM",
+  "ICP",
+  "ETC",
+  "WIF",
+  "RENDER",
+  "TAO",
+  "ENA",
+  "SEI",
+  "TIA",
+  "FET",
+  "ZEC"
  ],
  "stats": {
   "win": 0,
@@ -231,6 +253,25 @@
  ],
  "watch": [
   {
+   "coin": "AAVE",
+   "name": "AAVE",
+   "market": "crypto",
+   "side": "BUY",
+   "price": 169.72,
+   "score": 32,
+   "chk": "3/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "⚠ 5M",
+    "run-up",
+    "⚠ RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-11T18:51:21+00:00"
+  },
+  {
    "coin": "AVAX",
    "name": "AVAX",
    "market": "crypto",
@@ -424,6 +465,34 @@
    {
     "sym": "XAUUSD",
     "name": "Gold (XAU/USD)"
+   },
+   {
+    "sym": "AUDUSD",
+    "name": "AUD/USD"
+   },
+   {
+    "sym": "USDCAD",
+    "name": "USD/CAD"
+   },
+   {
+    "sym": "USDCHF",
+    "name": "USD/CHF"
+   },
+   {
+    "sym": "NZDUSD",
+    "name": "NZD/USD"
+   },
+   {
+    "sym": "EURJPY",
+    "name": "EUR/JPY"
+   },
+   {
+    "sym": "GBPJPY",
+    "name": "GBP/JPY"
+   },
+   {
+    "sym": "XAGUSD",
+    "name": "Silver (XAG/USD)"
    }
   ],
   "quotes": {
@@ -449,5 +518,5 @@
    }
   }
  },
- "updated": "2026-10-11T14:40:42+00:00"
+ "updated": "2026-10-11T18:52:42+00:00"
 }
