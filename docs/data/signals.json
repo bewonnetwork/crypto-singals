@@ -231,6 +231,25 @@
  ],
  "watch": [
   {
+   "coin": "AVAX",
+   "name": "AVAX",
+   "market": "crypto",
+   "side": "BUY",
+   "price": 10.533,
+   "score": 56,
+   "chk": "3/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "5M",
+    "run-up",
+    "RSI",
+    "⚠ extension",
+    "range"
+   ],
+   "time": "2026-10-11T14:39:45+00:00"
+  },
+  {
    "coin": "DOGE",
    "name": "DOGE",
    "market": "crypto",
@@ -430,5 +449,5 @@
    }
   }
  },
- "updated": "2026-10-11T07:51:23+00:00"
+ "updated": "2026-10-11T14:40:42+00:00"
 }

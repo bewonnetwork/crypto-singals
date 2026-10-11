@@ -1,11 +1,11 @@
 {
  "dominance": {
-  "btc": 59.17,
-  "eth": 10.84,
-  "mcap": 2810179750420,
-  "mcap_ch": -2.58,
-  "ch_1d": 0.08,
-  "ch_7d": -0.11,
+  "btc": 59.64,
+  "eth": 10.93,
+  "mcap": 2792735653506,
+  "mcap_ch": -3.33,
+  "ch_1d": 0.55,
+  "ch_7d": 0.36,
   "history": [
    {
     "d": "2026-10-02",
@@ -45,244 +45,244 @@
    },
    {
     "d": "2026-10-11",
-    "v": 59.17
+    "v": 59.64
    }
   ]
  },
  "walls": [
   {
    "coin": "BTC",
-   "price": 83016.005,
+   "price": 83138.16500000001,
    "support": {
-    "price": 83016.005,
-    "usd": 37241690
+    "price": 82930.31958750001,
+    "usd": 30275547
    },
    "resistance": {
-    "price": 83016.005,
-    "usd": 7943848
+    "price": 83138.16500000001,
+    "usd": 9982295
    },
-   "buy_pct": 76
+   "buy_pct": 75
   },
   {
    "coin": "ETH",
-   "price": 2502.885,
+   "price": 2507.045,
    "support": {
-    "price": 2496.6277875,
-    "usd": 3586599
+    "price": 2507.045,
+    "usd": 4106988
    },
    "resistance": {
-    "price": 2502.885,
-    "usd": 3515531
+    "price": 2507.045,
+    "usd": 4175124
    },
-   "buy_pct": 55
+   "buy_pct": 46
   },
   {
    "coin": "BNB",
-   "price": 748.075,
+   "price": 749.945,
    "support": {
-    "price": 744.3346250000001,
-    "usd": 876972
+    "price": 744.3204125000001,
+    "usd": 1063632
    },
    "resistance": {
-    "price": 753.6855625000001,
-    "usd": 1095165
-   },
-   "buy_pct": 47
-  },
-  {
-   "coin": "SOL",
-   "price": 109.455,
-   "support": {
-    "price": 105.07679999999999,
-    "usd": 1460654
-   },
-   "resistance": {
-    "price": 109.72863749999999,
-    "usd": 2312500
+    "price": 751.8198625,
+    "usd": 878087
    },
    "buy_pct": 52
   },
   {
-   "coin": "XRP",
-   "price": 1.39365,
+   "coin": "SOL",
+   "price": 109.63499999999999,
    "support": {
-    "price": 1.390165875,
-    "usd": 586601
+    "price": 109.63499999999999,
+    "usd": 1374900
    },
    "resistance": {
-    "price": 1.397134125,
-    "usd": 792091
+    "price": 109.9090875,
+    "usd": 1753458
    },
-   "buy_pct": 53
+   "buy_pct": 54
+  },
+  {
+   "coin": "XRP",
+   "price": 1.39995,
+   "support": {
+    "price": 1.39295025,
+    "usd": 545740
+   },
+   "resistance": {
+    "price": 1.403449875,
+    "usd": 633564
+   },
+   "buy_pct": 47
   },
   {
    "coin": "ADA",
-   "price": 0.24835000000000002,
+   "price": 0.24814999999999998,
    "support": {
-    "price": 0.247729125,
-    "usd": 388005
+    "price": 0.24752962499999998,
+    "usd": 323167
    },
    "resistance": {
-    "price": 0.248970875,
-    "usd": 244525
+    "price": 0.248770375,
+    "usd": 349784
    },
-   "buy_pct": 59
+   "buy_pct": 52
   },
   {
    "coin": "DOGE",
-   "price": 0.085315,
+   "price": 0.08566499999999999,
    "support": {
-    "price": 0.0851017125,
-    "usd": 628555
+    "price": 0.08545083749999999,
+    "usd": 560117
    },
    "resistance": {
-    "price": 0.0855282875,
-    "usd": 617101
+    "price": 0.0858791625,
+    "usd": 541944
    },
-   "buy_pct": 55
+   "buy_pct": 51
   },
   {
    "coin": "AVAX",
-   "price": 10.317499999999999,
+   "price": 10.5445,
    "support": {
-    "price": 10.291706249999999,
-    "usd": 140817
+    "price": 10.30724875,
+    "usd": 294176
    },
    "resistance": {
-    "price": 10.807581249999998,
-    "usd": 226853
+    "price": 10.8081125,
+    "usd": 228986
    },
-   "buy_pct": 60
+   "buy_pct": 40
   },
   {
    "coin": "LINK",
-   "price": 12.8655,
+   "price": 13.0735,
    "support": {
-    "price": 12.801172500000002,
-    "usd": 171169
+    "price": 13.040816249999999,
+    "usd": 215415
    },
    "resistance": {
-    "price": 13.508775000000002,
-    "usd": 423266
+    "price": 13.10618375,
+    "usd": 221114
    },
-   "buy_pct": 57
+   "buy_pct": 46
   },
   {
    "coin": "DOT",
    "price": 1.2395,
    "support": {
     "price": 1.2364012500000001,
-    "usd": 96403
+    "usd": 112845
    },
    "resistance": {
     "price": 1.2425987500000002,
-    "usd": 69027
+    "usd": 78992
    },
-   "buy_pct": 64
+   "buy_pct": 59
   },
   {
    "coin": "LTC",
-   "price": 63.855000000000004,
+   "price": 63.765,
    "support": {
-    "price": 63.69536250000001,
-    "usd": 240497
+    "price": 63.605587500000006,
+    "usd": 183931
    },
    "resistance": {
-    "price": 64.0146375,
-    "usd": 166989
+    "price": 63.9244125,
+    "usd": 187940
    },
-   "buy_pct": 53
+   "buy_pct": 45
   },
   {
    "coin": "UNI",
-   "price": 7.5205,
+   "price": 7.5815,
    "support": {
-    "price": 7.501698750000001,
-    "usd": 273661
+    "price": 7.5625462500000005,
+    "usd": 175803
    },
    "resistance": {
-    "price": 7.708512500000001,
-    "usd": 157683
+    "price": 7.600453750000001,
+    "usd": 168702
    },
-   "buy_pct": 62
+   "buy_pct": 54
   },
   {
    "coin": "AAVE",
-   "price": 167.575,
+   "price": 168.535,
    "support": {
-    "price": 166.737125,
-    "usd": 161208
+    "price": 168.1136625,
+    "usd": 148480
    },
    "resistance": {
-    "price": 175.115875,
-    "usd": 70944
+    "price": 168.535,
+    "usd": 153291
    },
-   "buy_pct": 70
+   "buy_pct": 52
   },
   {
    "coin": "NEAR",
-   "price": 5.2135,
+   "price": 5.310499999999999,
    "support": {
-    "price": 5.10923,
-    "usd": 273423
+    "price": 5.29722375,
+    "usd": 274255
    },
    "resistance": {
-    "price": 5.30473625,
-    "usd": 293692
-   },
-   "buy_pct": 53
-  },
-  {
-   "coin": "SUI",
-   "price": 1.0989499999999999,
-   "support": {
-    "price": 1.0962026249999999,
-    "usd": 252807
-   },
-   "resistance": {
-    "price": 1.1401606249999998,
-    "usd": 368006
-   },
-   "buy_pct": 57
-  },
-  {
-   "coin": "POL",
-   "price": 0.101135,
-   "support": {
-    "price": 0.10088216250000001,
-    "usd": 37356
-   },
-   "resistance": {
-    "price": 0.10138783750000001,
-    "usd": 42041
+    "price": 5.496367499999999,
+    "usd": 1377649
    },
    "buy_pct": 56
   },
   {
-   "coin": "ONDO",
-   "price": 0.48575,
+   "coin": "SUI",
+   "price": 1.1068500000000001,
    "support": {
-    "price": 0.46631999999999996,
-    "usd": 644330
+    "price": 1.1040828750000002,
+    "usd": 279248
    },
    "resistance": {
-    "price": 0.50275125,
-    "usd": 324135
+    "price": 1.1400555,
+    "usd": 360102
    },
    "buy_pct": 44
   },
   {
-   "coin": "PEPE",
-   "price": 4.025e-06,
+   "coin": "POL",
+   "price": 0.101935,
    "support": {
-    "price": 3.884125e-06,
-    "usd": 377356
+    "price": 0.1016801625,
+    "usd": 57658
    },
    "resistance": {
-    "price": 4.045125e-06,
-    "usd": 498992
+    "price": 0.1021898375,
+    "usd": 48598
    },
-   "buy_pct": 40
+   "buy_pct": 52
+  },
+  {
+   "coin": "ONDO",
+   "price": 0.48925,
+   "support": {
+    "price": 0.466010625,
+    "usd": 639780
+   },
+   "resistance": {
+    "price": 0.502704375,
+    "usd": 321061
+   },
+   "buy_pct": 45
+  },
+  {
+   "coin": "PEPE",
+   "price": 4.045e-06,
+   "support": {
+    "price": 3.8832e-06,
+    "usd": 376391
+   },
+   "resistance": {
+    "price": 4.0551125e-06,
+    "usd": 181606
+   },
+   "buy_pct": 48
   }
  ],
  "topics": {
@@ -369,6 +369,12 @@
   "unlock": [],
   "listing": [
    {
+    "title": "XRP ETFs extend a 13-week inflow streak as Bitcoin, Ethereum and Solana funds shed $1.25 billion",
+    "link": "https://cryptoslate.com/bitcoin-ethereum-and-solana-etfs-lose-1-25-billion-as-xrp-extends-13-week-inflow-streak/",
+    "source": "CryptoSlate",
+    "published": "2026-10-11T14:00:41+00:00"
+   },
+   {
     "title": "Thailand opens door to locally listed bitcoin and ether ETFs",
     "link": "https://www.coindesk.com/policy/2026/10/09/thailand-opens-door-to-locally-listed-bitcoin-and-ether-etfs",
     "source": "CoinDesk",
@@ -377,6 +383,14 @@
   ]
  },
  "listings": [
+  {
+   "ex": "KuCoin",
+   "title": "World Premiere: Incentiv (CENT) Listed on KuCoin",
+   "url": "https://www.kucoin.com/announcement/en-world-premiere-incentiv-cent-listed-on-kucoin?lang=en_US",
+   "token": "CENT",
+   "announced": "2026-10-11T09:01:00+00:00",
+   "trade": "2026-10-12T10:00:00+00:00"
+  },
   {
    "ex": "Kraken",
    "title": "ZCHF is available for trading!",
@@ -848,14 +862,6 @@
    "token": "PROS",
    "announced": "2026-05-13T04:00:15+00:00",
    "trade": ""
-  },
-  {
-   "ex": "OKX",
-   "title": "OKX to list PROS/USDT (Pharos) for spot trading",
-   "url": "https://www.okx.com/en-us/help/okx-to-list-pros-usdt-pharos-for-spot-trading",
-   "token": "PROS",
-   "announced": "2026-05-13T04:00:10+00:00",
-   "trade": ""
   }
  ],
  "earn": [
@@ -1085,7 +1091,7 @@
   }
  ],
  "tip": "'আগে টাকা পাঠান, তারপর এয়ারড্রপ পাবেন' — এটা সবসময় প্রতারণা।",
- "updated": "2026-10-11T07:50:41+00:00",
+ "updated": "2026-10-11T14:40:01+00:00",
  "sources": {
   "Airdrops.io": 10,
   "AirdropAlert": 3,
@@ -1101,7 +1107,7 @@
   "Bitcoinist": 0,
   "CoinJournal": -1,
   "OKX": 19,
-  "KuCoin": 23,
+  "KuCoin": 25,
   "Binance": 20,
   "Bitget": 2,
   "HTX": 12,
@@ -1592,10 +1598,10 @@
    "name": "Ansem Cat",
    "sym": "ANSEMCAT",
    "added": "2026-10-08T08:28:45.000Z",
-   "price": 0.00020934768268244568,
-   "ch24": -2.84932682,
+   "price": 0.00020863186972536337,
+   "ch24": -2.55564264,
    "vol": 0.0,
-   "mcap": 88070476.63,
+   "mcap": 87769341.27,
    "chain": "Robinhood",
    "url": "https://coinmarketcap.com/currencies/ansem-cat/"
   },
@@ -1603,9 +1609,9 @@
    "name": "Whuffie",
    "sym": "WHUF",
    "added": "2026-10-08T06:25:24.000Z",
-   "price": 2.5033879356295885,
-   "ch24": -8.10126959,
-   "vol": 1229800.66618014,
+   "price": 2.5967880053173507,
+   "ch24": 6.2259394,
+   "vol": 882631.85447875,
    "mcap": 0.0,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/whuffie/"
@@ -1614,10 +1620,10 @@
    "name": "Duolingo, Inc. Tokenized Stock (Coinbase",
    "sym": "DUOLc",
    "added": "2026-10-08T04:00:04.000Z",
-   "price": 178.40719479301518,
-   "ch24": 0.13356197,
-   "vol": 1617.36396636,
-   "mcap": 1998.36,
+   "price": 178.27089044542865,
+   "ch24": 0.05705923,
+   "vol": 1491.20167282,
+   "mcap": 1996.84,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/duolingo-inc-tokenized-stock-coinbase/"
   },
@@ -1625,10 +1631,10 @@
    "name": "Wendy's Co Tokenized Stock (Coinbase)",
    "sym": "WENc",
    "added": "2026-10-08T04:00:04.000Z",
-   "price": 13.966179365293684,
-   "ch24": -30.26893631,
-   "vol": 342.48358709,
-   "mcap": 3376.54,
+   "price": 13.955360457496337,
+   "ch24": 0.04866751,
+   "vol": 0.0,
+   "mcap": 3373.93,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/wendys-co-tokenized-stock-coinbase/"
   },
@@ -1636,10 +1642,10 @@
    "name": "Tesla Inc. Tokenized Stock (Coinbase)",
    "sym": "TSLAc",
    "added": "2026-10-08T04:00:03.000Z",
-   "price": 382.6461040389045,
-   "ch24": -0.15408097,
-   "vol": 795045.03742958,
-   "mcap": 2011725.41,
+   "price": 382.9842287338705,
+   "ch24": 0.19667761,
+   "vol": 583551.60261629,
+   "mcap": 2013503.07,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/tesla-inc-tokenized-stock-coinbase/"
   },
@@ -1647,10 +1653,10 @@
    "name": "Netflix Inc Tokenized Stock (Coinbase)",
    "sym": "NFLXc",
    "added": "2026-10-08T04:00:03.000Z",
-   "price": 71.24289077226143,
-   "ch24": 0.0510208,
+   "price": 71.05595442890552,
+   "ch24": -0.12056372,
    "vol": 0.0,
-   "mcap": 57712.98,
+   "mcap": 57561.54,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/netflix-inc-tokenized-stock-coinbase/"
   },
@@ -1658,10 +1664,10 @@
    "name": "Take-Two Interactive Software, Inc. Toke",
    "sym": "TTWOc",
    "added": "2026-10-08T03:59:59.000Z",
-   "price": 227.352061488597,
-   "ch24": 8.65661862,
+   "price": 227.15648421661967,
+   "ch24": 0.10522412,
    "vol": 0.0,
-   "mcap": 3358.24,
+   "mcap": 3355.35,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/take-two-interactive-software-inc-tokenized-stock-coinbase/"
   },
@@ -1669,10 +1675,10 @@
    "name": "Alphabet Inc. Tokenized Stock (Coinbase)",
    "sym": "GOOGLc",
    "added": "2026-10-08T03:59:58.000Z",
-   "price": 351.34212827648446,
-   "ch24": -0.36795832,
-   "vol": 2214995.32429121,
-   "mcap": 3435807.87,
+   "price": 350.9958722329484,
+   "ch24": -0.17820813,
+   "vol": 2225923.35397141,
+   "mcap": 3432421.8,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/alphabet-inc-tokenized-stock-coinbase/"
   },
@@ -1680,10 +1686,10 @@
    "name": "Strategy Inc. Tokenized Stock (Coinbase)",
    "sym": "MSTRc",
    "added": "2026-10-08T03:59:57.000Z",
-   "price": 155.46543815445762,
-   "ch24": 0.26161659,
-   "vol": 4641009.90587252,
-   "mcap": 2085887.86,
+   "price": 155.79728437155828,
+   "ch24": 0.29140042,
+   "vol": 3999190.71597018,
+   "mcap": 2090340.26,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/strategy-inc-tokenized-stock-coinbase/"
   },
@@ -1691,10 +1697,10 @@
    "name": "Pfizer Inc Tokenized Stock (Coinbase)",
    "sym": "PFEc",
    "added": "2026-10-08T03:59:57.000Z",
-   "price": 143.38330031414523,
-   "ch24": 0.1944723,
-   "vol": 309.50464893,
-   "mcap": 1414.66,
+   "price": 142.86052355210973,
+   "ch24": -0.213212,
+   "vol": 160.16114093,
+   "mcap": 1409.5,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/pfizer-inc-tokenized-stock-coinbase/"
   },
@@ -1702,10 +1708,10 @@
    "name": "Roblox Corporation Tokenized Stock (Coin",
    "sym": "RBLXc",
    "added": "2026-10-08T03:59:57.000Z",
-   "price": 52.20715965177785,
-   "ch24": 3.82465976,
-   "vol": 3368.75559316,
-   "mcap": 59359.54,
+   "price": 52.24530129790926,
+   "ch24": 2.3905344,
+   "vol": 3137.14870284,
+   "mcap": 59402.91,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/roblox-corporation-tokenized-stock-coinbase/"
   },
@@ -1713,10 +1719,10 @@
    "name": "Moderna, Inc. Tokenized Stock (Coinbase)",
    "sym": "MRNAc",
    "added": "2026-10-08T03:59:56.000Z",
-   "price": 246.33486469861157,
-   "ch24": 18.74003522,
+   "price": 246.24800090338877,
+   "ch24": 5.92016101,
    "vol": 0.0,
-   "mcap": 3242.78,
+   "mcap": 3241.64,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/moderna-inc-tokenized-stock-coinbase/"
   },
@@ -1724,10 +1730,10 @@
    "name": "Meta Platforms Inc. Tokenized Stock (Coi",
    "sym": "METAc",
    "added": "2026-10-08T03:59:56.000Z",
-   "price": 719.9707771096503,
-   "ch24": -0.13840829,
-   "vol": 1524471.89148243,
-   "mcap": 4196957.59,
+   "price": 718.6197479837458,
+   "ch24": 0.2092102,
+   "vol": 963069.9793676,
+   "mcap": 4189081.98,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/meta-platforms-inc-tokenized-stock-coinbase/"
   },
@@ -1735,10 +1741,10 @@
    "name": "Advanced Micro Devices, Inc. Tokenized S",
    "sym": "AMDc",
    "added": "2026-10-08T03:59:55.000Z",
-   "price": 649.2712770949794,
-   "ch24": 0.05967155,
+   "price": 650.350940673207,
+   "ch24": 0.12763929,
    "vol": 0.0,
-   "mcap": 10584.59,
+   "mcap": 10602.19,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/advanced-micro-devices-inc-tokenized-stock-coinbase/"
   },
@@ -1757,10 +1763,10 @@
    "name": "GameStop Corp. Tokenized Stock (Coinbase",
    "sym": "GMEc",
    "added": "2026-10-08T03:59:54.000Z",
-   "price": 27.363526372192503,
-   "ch24": 0.20516966,
-   "vol": 356.3124026,
-   "mcap": 54453.62,
+   "price": 27.305993691477244,
+   "ch24": -0.04225012,
+   "vol": 0.0,
+   "mcap": 54339.13,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/gamestop-corp-tokenized-stock-coinbase/"
   },
@@ -1768,10 +1774,10 @@
    "name": "Hims & Hers Health, Inc. Tokenized Stock",
    "sym": "HIMSc",
    "added": "2026-10-08T03:59:53.000Z",
-   "price": 30.289369399709532,
-   "ch24": 0.95140376,
-   "vol": 0.0,
-   "mcap": 39850.86,
+   "price": 30.29640404155154,
+   "ch24": -0.231264,
+   "vol": 18356.4698293,
+   "mcap": 39860.11,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/hims-hers-health-inc-tokenized-stock-coinbase/"
   },
@@ -1779,10 +1785,10 @@
    "name": "NVIDIA Corporation Tokenized Stock (Coin",
    "sym": "NVDAc",
    "added": "2026-10-08T03:59:53.000Z",
-   "price": 230.8565050285587,
-   "ch24": 0.29275752,
-   "vol": 1215187.19000135,
-   "mcap": 6220324.35,
+   "price": 230.63090668370126,
+   "ch24": 0.31832605,
+   "vol": 1126052.80921646,
+   "mcap": 6214245.7,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/nvidia-corporation-tokenized-stock-coinbase/"
   },
@@ -1790,10 +1796,10 @@
    "name": "Bloom Energy Corporation Tokenized Stock",
    "sym": "BEc",
    "added": "2026-10-08T03:59:52.000Z",
-   "price": 299.91288986710936,
-   "ch24": 0.0922897,
-   "vol": 805.44697674,
-   "mcap": 2137.1,
+   "price": 314.1888168293774,
+   "ch24": 4.85625354,
+   "vol": 1638.95095474,
+   "mcap": 2238.83,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/bloom-energy-corporation-tokenized-stock-coinbase/"
   },
@@ -1801,10 +1807,10 @@
    "name": "AST SpaceMobile, Inc. Tokenized Stock (C",
    "sym": "ASTSc",
    "added": "2026-10-08T03:59:52.000Z",
-   "price": 54.89312771624469,
-   "ch24": 0.13721139,
-   "vol": 787.0439083,
-   "mcap": 2314.92,
+   "price": 54.88136294212067,
+   "ch24": 0.01778035,
+   "vol": 781.73081508,
+   "mcap": 2314.43,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/ast-spacemobile-inc-tokenized-stock-coinbase/"
   },
@@ -1812,10 +1818,10 @@
    "name": "Sandisk Corporation Tokenized Stock (Coi",
    "sym": "SNDKc",
    "added": "2026-10-08T03:59:50.000Z",
-   "price": 1591.126384705017,
-   "ch24": 0.27530823,
-   "vol": 4310497.70923334,
-   "mcap": 1503426.12,
+   "price": 1601.131006246175,
+   "ch24": 0.96146757,
+   "vol": 4894235.45116655,
+   "mcap": 1512879.3,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/sandisk-corporation-tokenized-stock-coinbase/"
   },
@@ -1823,10 +1829,10 @@
    "name": "Quantum Computing Inc. Tokenized Stock (",
    "sym": "QUBTc",
    "added": "2026-10-08T03:59:50.000Z",
-   "price": 8.181388397786792,
-   "ch24": 0.14957009,
-   "vol": 561.23824263,
-   "mcap": 2349.78,
+   "price": 8.174905681599906,
+   "ch24": 0.02524391,
+   "vol": 315.70379588,
+   "mcap": 2347.92,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/quantum-computing-inc-tokenized-stock-coinbase/"
   },
@@ -1834,10 +1840,10 @@
    "name": "PayPal Holdings, Inc. Tokenized Stock (C",
    "sym": "PYPLc",
    "added": "2026-10-08T03:59:50.000Z",
-   "price": 58.799329152108264,
-   "ch24": 3.55296365,
-   "vol": 2569.14702628,
-   "mcap": 9470.71,
+   "price": 58.82090250405643,
+   "ch24": 0.64231436,
+   "vol": 0.0,
+   "mcap": 9474.18,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/paypal-holdings-inc-tokenized-stock-coinbase/"
   },
@@ -1845,10 +1851,10 @@
    "name": "Palantir Technologies Inc. Tokenized Sto",
    "sym": "PLTRc",
    "added": "2026-10-08T03:59:49.000Z",
-   "price": 209.57910036709927,
-   "ch24": 0.37777162,
-   "vol": 1088278.21244536,
-   "mcap": 676144.6,
+   "price": 209.1527688856306,
+   "ch24": 0.51847767,
+   "vol": 864245.431997,
+   "mcap": 674769.16,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/palantir-technologies-inc-tokenized-stock-coinbase/"
   },
@@ -1856,10 +1862,10 @@
    "name": "Reddit, Inc. Tokenized Stock (Coinbase)",
    "sym": "RDDTc",
    "added": "2026-10-08T03:59:48.000Z",
-   "price": 158.0177797662111,
-   "ch24": 3.78044124,
+   "price": 158.02105046620704,
+   "ch24": 0.03157838,
    "vol": 0.0,
-   "mcap": 62433.94,
+   "mcap": 62435.23,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/reddit-inc-tokenized-stock-coinbase/"
   },
@@ -1867,10 +1873,10 @@
    "name": "Microsoft Corporation Tokenized Stock (C",
    "sym": "MSFTc",
    "added": "2026-10-08T03:59:47.000Z",
-   "price": 535.0234825075054,
-   "ch24": 0.08060806,
-   "vol": 932970.51932595,
-   "mcap": 1844032.28,
+   "price": 534.1023171227866,
+   "ch24": -0.08799165,
+   "vol": 667385.57837124,
+   "mcap": 1840857.35,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/microsoft-corporation-tokenized-stock-coinbase/"
   },
@@ -1878,10 +1884,10 @@
    "name": "Eli Lilly & Co Tokenized Stock (Coinbase",
    "sym": "LLYc",
    "added": "2026-10-08T03:59:47.000Z",
-   "price": 1251.8610097916767,
-   "ch24": 4.46695583,
+   "price": 1251.3967230104456,
+   "ch24": 4.44148287,
    "vol": 0.0,
-   "mcap": 54898.52,
+   "mcap": 54878.16,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/eli-lilly-co-tokenized-stock-coinbase/"
   },
@@ -1889,10 +1895,10 @@
    "name": "Apple Inc. Tokenized Stock (Coinbase)",
    "sym": "AAPLc",
    "added": "2026-10-08T03:59:47.000Z",
-   "price": 336.1172201285597,
-   "ch24": -0.11274585,
-   "vol": 1049798.55501214,
-   "mcap": 2871094.52,
+   "price": 336.0257380854392,
+   "ch24": 0.17611436,
+   "vol": 929418.61398771,
+   "mcap": 2870313.09,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/apple-inc-tokenized-stock-coinbase/"
   },
@@ -1900,10 +1906,10 @@
    "name": "Oracle Corporation Tokenized Stock (Coin",
    "sym": "ORCLc",
    "added": "2026-10-08T03:59:46.000Z",
-   "price": 152.14350326352817,
-   "ch24": 7.13861044,
+   "price": 151.96653387006378,
+   "ch24": 7.19063835,
    "vol": 0.0,
-   "mcap": 2232.95,
+   "mcap": 2230.35,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/oracle-corporation-tokenized-stock-coinbase/"
   },
@@ -1911,10 +1917,10 @@
    "name": "Broadcom Inc. Tokenized Stock (Coinbase)",
    "sym": "AVGOc",
    "added": "2026-10-08T03:59:46.000Z",
-   "price": 388.52499473439,
-   "ch24": 4.68855348,
+   "price": 391.1426375117121,
+   "ch24": 5.33878835,
    "vol": 0.0,
-   "mcap": 103811.53,
+   "mcap": 104510.95,
    "chain": "Base",
    "url": "https://coinmarketcap.com/currencies/broadcom-inc-tokenized-stock-coinbase/"
   }

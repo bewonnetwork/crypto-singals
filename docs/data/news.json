@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T07:50:41+00:00",
+ "updated": "2026-10-11T14:40:01+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,96 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "a927e21139",
+   "title": "XRP ETFs extend a 13-week inflow streak as Bitcoin, Ethereum and Solana funds shed $1.25 billion",
+   "link": "https://cryptoslate.com/bitcoin-ethereum-and-solana-etfs-lose-1-25-billion-as-xrp-extends-13-week-inflow-streak/",
+   "source": "CryptoSlate",
+   "published": "2026-10-11T14:00:41+00:00",
+   "summary": "US-listed XRP ETFs extended their inflow streak to 13 weeks as Bitcoin, Ethereum and Solana funds suffered nearly $1.25 billion in combined withdrawals during the week ended Oct. 9. Bitcoin ETFs recorded $681.1 million in net withdrawals,…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-versus-crypto-etfs.webp"
+  },
+  {
+   "id": "81eaf108c8",
+   "title": "New iPhone spyware can hunt for crypto wallets and extract their data every 15 seconds",
+   "link": "https://cryptoslate.com/new-iphone-spyware-can-hunt-for-crypto-wallets-and-extract-their-data-every-15-seconds/",
+   "source": "CryptoSlate",
+   "published": "2026-10-11T13:00:14+00:00",
+   "summary": "iVerify’s P7 DarkSword report describes remote commands to collect imToken-related data after an iPhone is compromised. The post New iPhone spyware can hunt for crypto wallets and extract their data every 15 seconds appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/iphone-spyware-wallet-exposure.webp"
+  },
+  {
+   "id": "626b3201e6",
+   "title": "How Zcash Plans to Hide Your Keys From AI and Quantum Attacks",
+   "link": "https://decrypt.co/380637/zcash-plans-hide-keys-ai-quantum-attacks",
+   "source": "Decrypt",
+   "published": "2026-10-11T13:00:03+00:00",
+   "summary": "Zakura, a Zcash full node developer, says it expects hash-based signatures to land in Zcash in January, and is rolling out a privacy tool for rotating transparent addresses this week.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/zcash-shutterstock-gID_7.png"
+  },
+  {
+   "id": "4a11c6a539",
+   "title": "IMF finds demand for tokenized stocks, says the market is still volatile, illiquid",
+   "link": "https://www.coindesk.com/business/2026/10/11/imf-finds-demand-for-tokenized-stocks-says-the-market-is-still-volatile-illiquid",
+   "source": "CoinDesk",
+   "published": "2026-10-11T13:00:00+00:00",
+   "summary": "Investors are using blockchain-based shares for smaller and after-hours trades. The IMF says liquidity, legal rules and settlement systems have not caught up.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/a1cc4ecb548aa7f3f0c05e51784af125e119c5bd-2048x1380.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-11T12:45:00+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "964808e2e1",
+   "title": "What happens when crypto trades stocks while Wall Street sleeps?",
+   "link": "https://cryptoslate.com/who-prices-a-stock-index-when-its-shares-arent-trading/",
+   "source": "CryptoSlate",
+   "published": "2026-10-11T12:00:20+00:00",
+   "summary": "Wall Street closes at 4 p.m., but apparently that's becoming more of a suggestion than a rule. You can now spend the evening watching Netflix and making leveraged bets on American semiconductor companies while the exchange where their…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/cracked-clock-market-cycles.webp"
+  },
+  {
+   "id": "ee4800bd99",
+   "title": "AI discovers XRP Ledger flaw that could mint 18 trillion tokens and put $94 billion market at risk",
+   "link": "https://cryptoslate.com/ai-discovers-xrp-ledger-flaw-that-could-mint-18-trillion-tokens-and-put-94-billion-market-at-risk/",
+   "source": "CryptoSlate",
+   "published": "2026-10-11T10:30:30+00:00",
+   "summary": "Testing produced spendable XRP, but the disclosure reports no evidence of public-network exploitation and explains why the fix took effect immediately. The post AI discovers XRP Ledger flaw that could mint 18 trillion tokens and put $94…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-ledger-patch-security.webp"
+  },
+  {
+   "id": "b8963dea01",
+   "title": "Coldcard says it’s investigating how phishing link appeared on its X account",
+   "link": "https://cointelegraph.com/news/coldcard-says-its-investigating-how-phishing-link-appeared-on-its-x-account?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-11T10:22:44+00:00",
+   "summary": "Company advised users not to visit or interact with the link in question and said it will share any further verified updates.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4N7GC7PDTK5CW4F08YBFCW8/hi-what-is-a-phishing-attack-in-crypto-and-how-to-prevent-it.jpg"
+  },
+  {
+   "id": "7a1c5088f0",
+   "title": "Ledger confirms unauthorized hardware implant; losses may exceed $86M",
+   "link": "https://cointelegraph.com/news/ledger-confirms-unauthorized-hardware-implant-losses-may-exceed-86m?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-11T09:01:51+00:00",
+   "summary": "Ledger said the incident appeared to be isolated to a single reseller and its Southeast Asian market.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4N2YQ5YYNE3JRCF0HH088AW/hi-ledger1.png"
+  },
+  {
+   "id": "34a9aacc40",
+   "title": "CFTC proposals aimed at separating prediction markets from casino gambling",
+   "link": "https://cointelegraph.com/news/cftc-proposals-aimed-at-separating-prediction-markets-from-casino-gambling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-11T07:44:51+00:00",
+   "summary": "The two measures attempt to set the stage for a potential US Supreme Court battle over federal and state jurisdiction.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2TJB7047S01XKJY4FWVJGEK/judge-hammer-regulation-cftc-2.jpg"
+  },
   {
    "id": "437a06f0f0",
    "title": "Bitcoin companies are learning that holding forever takes cash",
@@ -108,15 +198,6 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-mining-risk-balance.webp"
   },
   {
-   "id": "a2536ec2d5",
-   "title": "Coinbase’s Texas move gets a shareholder suit dismissed over Delaware-era claims",
-   "link": "https://cryptoslate.com/coinbase-shareholder-suit-hits-texas-demand-rule-for-conduct-from-its-delaware-years/",
-   "source": "CryptoSlate",
-   "published": "2026-10-10T14:00:52+00:00",
-   "summary": "The October 2 court order required a written board demand in this action, without deciding whether directors committed misconduct. The post Coinbase’s Texas move gets a shareholder suit dismissed over Delaware-era claims appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-delaware-texas-transition.webp"
-  },
-  {
    "id": "3b2db88b4d",
    "title": "French Committee Backs Stablecoin Swap Tax and Crypto Exit Tax, Then Rejects the Budget",
    "link": "https://decrypt.co/380630/france-stablecoin-swap-crypto-exit-tax",
@@ -124,33 +205,6 @@
    "published": "2026-10-10T13:01:03+00:00",
    "summary": "A National Assembly committee adopted amendments taxing stablecoin swaps and crypto exits by wealthy holders, then rejected the 2027 budget's revenue section.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/Paris-gID_7.jpg"
-  },
-  {
-   "id": "009afafaa2",
-   "title": "Bitcoin’s weekend rebound faces an $80,400 test after nearly $730 million in ETF outflows",
-   "link": "https://cryptoslate.com/bitcoin-faces-weekend-test-as-80400-level-determines-next-move/",
-   "source": "CryptoSlate",
-   "published": "2026-10-10T13:00:34+00:00",
-   "summary": "Bitcoin traded near $82,900 in PerpFinder’s Oct. 10, 09:36 UTC snapshot, with traders watching whether the weekend rebound brings fresh leverage or further position unwinding. The same snapshot put Binance BTC futures open interest at…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/570893-featured-upload.jpg"
-  },
-  {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-10T12:30:00+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
-   "id": "d486ac7f22",
-   "title": "Stealing $1.5B in crypto is easy, cashing out is the trap",
-   "link": "https://cryptoslate.com/the-business-that-turns-north-korean-stolen-crypto-into-spendable-money/",
-   "source": "CryptoSlate",
-   "published": "2026-10-10T12:00:37+00:00",
-   "summary": "North Korean hackers stole around $1.5 billion from Bybit in February 2025. While the hack itself has been widely covered and analyzed, few have focused on what happened afterward and what became of the stolen funds. To move all that…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/shadow-broker-profile.webp"
   },
   {
    "id": "8b501c6960",
@@ -205,15 +259,6 @@
    "published": "2026-10-10T07:10:43+00:00",
    "summary": "The round follows increased international demand for Meanwhile’s Bitcoin life insurance policies amid broader macro instability.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4JA710W3MTHS923BYD1G7PT/hi-the-increasingly-acute-need-for-crypto-native-insurance.png"
-  },
-  {
-   "id": "4a9f6d58e9",
-   "title": "Inflation target of 2% may not stop the next Fed rate freeze",
-   "link": "https://cryptoslate.com/what-would-actually-stop-the-fed-from-raising-rates-again/",
-   "source": "CryptoSlate",
-   "published": "2026-10-10T07:00:05+00:00",
-   "summary": "The Fed can stop raising rates before inflation reaches 2% if officials believe the economy's already heading there without another increase. September's meeting left most unconvinced, with strong spending and persistent price increases…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/fed-zipper-squeeze.webp"
   },
   {
    "id": "4aa69036b4",
@@ -682,51 +727,6 @@
    "published": "2026-10-09T08:59:31+00:00",
    "summary": "Ajay Shinjin helped steal nearly $265,000 in crypto after criminals hijacked BT customers' phone numbers in November 2021.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Jail-cell-2-gID_7.png"
-  },
-  {
-   "id": "db49e65d8c",
-   "title": "Bitcoin, Ether ETFs’ October outflows swell toward $1B",
-   "link": "https://cointelegraph.com/markets/bitcoin-ether-etfs-october-outflows-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-09T07:34:44+00:00",
-   "summary": "Bitcoin ETFs lost $244 million on Thursday, while Ether funds extended their outflow streak to eight sessions, shedding $641 million.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FQAANP3H5Z0XYV77PNYB10/hi-will-the-blockchain-stop-leaks-of-crypto.jpg"
-  },
-  {
-   "id": "996033a907",
-   "title": "Live updates: Bitcoin slips from day's highs, set to close week with a loss",
-   "link": "https://www.coindesk.com/business/2026/10/09/live-updates-xrp-etfs-the-only-ones-in-green-as-btc-eth-zec-funds-post-outflows",
-   "source": "CoinDesk",
-   "published": "2026-10-09T06:51:32+00:00",
-   "summary": "Bitcoin ETFs lost $244 million on Thursday and the ZEC fund extended a run of October outflows. Bitcoin is back near $82,000 after a $1 billion liquidation.",
-   "image": ""
-  },
-  {
-   "id": "9193d76e6b",
-   "title": "New tech to power bitcoin lending is set to debut with $500 million in commitments",
-   "link": "https://www.coindesk.com/markets/2026/10/09/new-tech-to-power-bitcoin-lending-is-set-to-debut-with-usd500-million-in-commitments",
-   "source": "CoinDesk",
-   "published": "2026-10-09T06:40:54+00:00",
-   "summary": "Layer-1 blockchain Sui is launching Hashi, an institutional protocol allowing holders to use bitcoin as collateral without moving it off the Bitcoin network.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/4caf34246416f1020ad3fc1aaa25373b18a9161f-5760x3240.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "ab952a01a5",
-   "title": "Crypto projects apply for Anthropic’s new frontier AI security scanner",
-   "link": "https://cointelegraph.com/news/crypto-projects-apply-for-anthropics-new-frontier-ai-security-scanner?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-09T05:34:33+00:00",
-   "summary": "Anthropic’s new opt-in service promises vulnerability reports from its strongest AI models, including Claude Mythos.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FJ993JA7JTR422QAJS3TDX/hi-can-ai-bots-verify-you.jpg"
-  },
-  {
-   "id": "b330ac7f00",
-   "title": "Trump administration outlines quantum, AI initiatives in $6B science push",
-   "link": "https://cointelegraph.com/news/trump-administration-quantum-computing-ai-6-billion-science-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-09T05:25:27+00:00",
-   "summary": "The White House outlined a $215 million quantum computing competition and $2.4 billion in AI industry commitments as concerns grow over quantum threats to cryptocurrency security.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FG6B1R6A2XBTWZ9CFPZ8SJ/ai-and-quantum.png"
   }
  ]
 }
