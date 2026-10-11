@@ -907,6 +907,60 @@ h1,h2,h3{letter-spacing:-.015em}
 }
 @media (max-width:860px){.tabbar a,.tabbar button{font-size:9.5px!important;white-space:nowrap;overflow:hidden}.dm-grid[style]{grid-template-columns:minmax(0,1fr)!important}}
 #tf,#dxTf{max-width:100%;min-width:0;overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap}#tf::-webkit-scrollbar,#dxTf::-webkit-scrollbar{display:none}#tf button,#dxTf button{flex:0 0 auto}
+/* NFT market + node mining */
+.nft-hero,.nd-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px;align-items:center}
+.nft-hero h1,.nd-hero h1{font:800 clamp(30px,4.4vw,48px)/1.08 "Inter","Hind Siliguri",sans-serif;margin:8px 0 12px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nft-hero p,.nd-hero p{color:var(--muted);font-size:15.5px;max-width:58ch}
+.nft-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:18px}
+.nft-stats div{padding:10px;border-radius:12px;background:var(--sunk);border:1px solid var(--line)}.nft-stats span{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.nft-stats b{font:700 14px "Inter",sans-serif}
+.nft-hero-a{position:relative;height:330px}
+.nft-fan{position:absolute;width:200px;border-radius:18px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.12);transition:transform .4s}
+.nft-fan svg{display:block;width:100%;height:auto}
+.nft-f0{left:2%;top:50px;transform:rotate(-12deg)}.nft-f1{left:26%;top:6px;transform:rotate(-3deg);z-index:3}.nft-f2{left:48%;top:44px;transform:rotate(8deg);z-index:2}.nft-f3{left:66%;top:110px;transform:rotate(16deg)}
+.nft-hero-a:hover .nft-f1{transform:rotate(0) translateY(-8px)}
+.nft-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.nft-col{display:grid;grid-template-columns:64px minmax(0,1fr);gap:10px;align-items:center;text-align:left;padding:10px;cursor:pointer;color:var(--ink);font:inherit}
+.nft-col.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.nft-col-a svg{width:64px;height:64px;border-radius:12px;display:block}.nft-col b{display:block;font-size:13.5px}.nft-col small{display:block;color:var(--muted);font-size:11.5px;line-height:1.35;margin:2px 0}.nft-col span{font-size:11.5px;color:var(--muted)}
+.nft-bar{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:14px}.nft-bar .tabs{overflow-x:auto;max-width:100%}.nft-bar .tabs button{white-space:nowrap}
+.nft-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.nft-c{display:grid;gap:0;padding:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface);cursor:pointer;text-align:left;color:var(--ink);font:inherit;transition:transform .2s,box-shadow .2s}
+.nft-c:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.3)}.nft-c svg{display:block;width:100%;height:auto}
+.nft-ci{display:flex;justify-content:space-between;gap:6px;align-items:center;padding:10px 12px 2px}.nft-ci b{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nft-r{font:700 10.5px "Inter",sans-serif;text-transform:uppercase;letter-spacing:.05em}
+.nft-cp{display:flex;justify-content:space-between;padding:4px 12px 12px;font-size:13px}
+.nft-modal{width:min(860px,94vw);max-height:92vh;overflow:auto;padding:16px}
+.nft-mg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;margin-top:10px}.nft-big{width:100%;height:auto;border-radius:16px;display:block}
+.nft-tr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.nft-tr div{padding:8px;border-radius:10px;background:var(--sunk);text-align:center}.nft-tr span{display:block;font-size:10.5px;color:var(--muted);text-transform:uppercase}.nft-tr b{font-size:13px}
+.nft-prev{width:min(340px,100%)}
+.nft-how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.nft-how .card{padding:16px}.nft-how i{font-style:normal;font-size:26px}.nft-how b{display:block;margin:6px 0}.nft-how p{margin:0;color:var(--muted);font-size:13.5px}
+.nd-warn{margin-top:14px;padding:10px 14px;border-radius:12px;border:1px dashed var(--line);font-size:13px;color:var(--muted)}
+.nd-art{display:grid;place-items:center}.node-svg{width:min(380px,100%);height:auto}
+.nd-ln{stroke:var(--p1);stroke-opacity:.35;stroke-width:1.5}.node-svg.on .nd-flow{stroke:var(--p2);stroke-opacity:.9;stroke-dasharray:6 10;animation:ndFlow 1.2s linear infinite}
+.nd-dot{fill:var(--p1);opacity:.5}.node-svg.on .nd-dot{animation:ndPulse 1.8s ease-in-out infinite}
+.nd-hx{fill:var(--surface);stroke-width:3}.node-svg.on .nd-hx{animation:ndPulse 2.4s ease-in-out infinite}
+.nd-glow{opacity:.35}.node-svg.on .nd-glow{opacity:1;animation:ndBreath 3s ease-in-out infinite}
+.nd-spin{transform-origin:200px 200px}.node-svg.on .nd-spin{animation:ndSpin 12s linear infinite}
+@keyframes ndFlow{to{stroke-dashoffset:-32}}@keyframes ndPulse{0%,100%{opacity:.45}50%{opacity:1}}@keyframes ndBreath{0%,100%{opacity:.7}50%{opacity:1}}@keyframes ndSpin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.node-svg *{animation:none!important}}
+.nd-stats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.nd-stats .card{padding:12px;display:grid;gap:2px}.nd-stats i{font-style:normal;font-size:18px}.nd-stats span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.nd-stats b{font:700 16px "Inter",sans-serif;font-variant-numeric:tabular-nums}
+.nd-run{margin-top:14px;padding:18px;display:grid;gap:14px}
+.nd-bar{height:10px;border-radius:99px;background:var(--sunk);overflow:hidden}.nd-bar div{height:100%;background:var(--grad);border-radius:99px;transition:width 1s linear}
+.nd-big{min-height:48px;padding:0 26px;font-size:15.5px}
+.nd-tiers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.nd-t{padding:16px;display:grid;gap:10px;border-top:3px solid var(--tc)}.nd-th{display:flex;gap:8px;align-items:center;font-size:16px}.nd-tr{font:800 26px "Inter",sans-serif;color:var(--tc)}.nd-tr{font-variant-numeric:tabular-nums}
+.nd-t ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px;display:grid;gap:3px}
+@media (max-width:900px){.nft-hero,.nd-hero{grid-template-columns:1fr}.nft-hero-a{height:250px}.nft-fan{width:150px}.nft-cols{grid-template-columns:repeat(2,minmax(0,1fr))}.nft-mg{grid-template-columns:1fr}.nft-how{grid-template-columns:1fr 1fr}.nd-stats{grid-template-columns:repeat(3,minmax(0,1fr))}.nd-tiers{grid-template-columns:1fr 1fr}.nft-stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.nft-g{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.nft-ci{flex-direction:column;align-items:flex-start;gap:2px;padding:8px 10px 2px}.nft-ci b{max-width:100%;font-size:12.5px}.nft-cp{flex-direction:column;gap:0;padding:2px 10px 10px;font-size:12px}.nft-cols{grid-template-columns:1fr}.nft-how{grid-template-columns:1fr}.nd-tiers{grid-template-columns:1fr}.nft-hero-a{height:210px}.nft-fan{width:120px}.node-svg{width:min(290px,100%)}.nd-big{width:100%}.nft-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.dp-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}.dp-card{padding:16px;display:grid;gap:12px}.dp-h{display:flex;justify-content:space-between;align-items:center}
+.dp-sc{display:grid;grid-template-columns:1fr 1fr;gap:8px}.dp-sc div,.dp-lv div{padding:8px 10px;border-radius:10px;background:var(--sunk)}.dp-sc span,.dp-lv span{display:block;font-size:11px;color:var(--muted);text-transform:uppercase}.dp-sc b{font-size:18px}
+.dp-lv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.dp-lv b{font-size:12.5px;font-variant-numeric:tabular-nums}
+.dp-srcs{display:grid;gap:5px}.dp-src{display:grid;grid-template-columns:120px 1fr 64px;gap:8px;align-items:center;font-size:12px}.dp-src>span{color:var(--muted)}.dp-src b{font-size:11.5px;text-align:right}
+.dp-b{position:relative;height:6px;border-radius:9px;background:var(--sunk)}.dp-b:after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--line)}.dp-b i{position:absolute;top:0;bottom:0;border-radius:9px}
+.dp-srcl{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+@media (max-width:560px){.dp-lv{grid-template-columns:1fr 1fr}.dp-src{grid-template-columns:100px 1fr 56px}}
+.dp-cta{display:flex;align-items:center;gap:14px;padding:14px 16px;margin:12px 0 16px;color:var(--ink);text-decoration:none;border-color:var(--accent)}.dp-cta i{font-style:normal;font-size:28px}.dp-cta div{flex:1}.dp-cta small{display:block;color:var(--muted)}.dp-cta span{color:var(--accent);font-weight:700;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -970,14 +1024,14 @@ const SITE = {
   name: "BEWON Signals",
   telegram: "https://t.me/all_crypt_signals",
   channel: "@all_crypt_signals",
-  botCoins: ["BTC","ETH","BNB","SOL","XRP","ADA","DOGE","AVAX","LINK","DOT","LTC","UNI","AAVE","NEAR","SUI","POL","ONDO","PEPE"],
+  botCoins: ["BTC","ETH","BNB","SOL","XRP","ADA","DOGE","AVAX","LINK","DOT","LTC","UNI","AAVE","NEAR","SUI","POL","ONDO","PEPE","TRX","TON","SHIB","BCH","XLM","HBAR","APT","ARB","OP","INJ","FIL","ATOM","ICP","ETC","WIF","RENDER","TAO","ENA","SEI","TIA","FET","ZEC"],
   defaultLang: "bn",          // "bn" = বাংলা, "en" = English
 };
 /* ========================================================================== */
 
 const API = ["https://api.binance.com", "https://data-api.binance.vision"];
 const STABLE = new Set(["USDC","FDUSD","TUSD","BUSD","DAI","USDP","USDD","EUR","AEUR","EURI","USDE","USD1","XUSD","BFUSD","PYUSD","RLUSD","UST","USTC"]);
-const NAMES = {PAXG:"Gold (PAXG)",BTC:"Bitcoin",ETH:"Ethereum",BNB:"BNB",SOL:"Solana",XRP:"XRP",ADA:"Cardano",DOGE:"Dogecoin",AVAX:"Avalanche",LINK:"Chainlink",DOT:"Polkadot",TRX:"TRON",LTC:"Litecoin",BCH:"Bitcoin Cash",NEAR:"NEAR",SUI:"Sui",PEPE:"Pepe",SHIB:"Shiba Inu",TON:"Toncoin",UNI:"Uniswap",ARB:"Arbitrum",OP:"Optimism",APT:"Aptos",ATOM:"Cosmos",ETC:"Ethereum Classic",XLM:"Stellar",FIL:"Filecoin",AAVE:"Aave",INJ:"Injective",WLD:"Worldcoin",POL:"Polygon"};
+const NAMES = {PAXG:"Gold (PAXG)",BTC:"Bitcoin",ETH:"Ethereum",BNB:"BNB",SOL:"Solana",XRP:"XRP",ADA:"Cardano",DOGE:"Dogecoin",AVAX:"Avalanche",LINK:"Chainlink",DOT:"Polkadot",TRX:"TRON",LTC:"Litecoin",BCH:"Bitcoin Cash",NEAR:"NEAR",SUI:"Sui",PEPE:"Pepe",SHIB:"Shiba Inu",TON:"Toncoin",UNI:"Uniswap",ARB:"Arbitrum",OP:"Optimism",APT:"Aptos",ATOM:"Cosmos",ETC:"Ethereum Classic",XLM:"Stellar",FIL:"Filecoin",AAVE:"Aave",INJ:"Injective",WLD:"Worldcoin",POL:"Polygon",ONDO:"Ondo",HBAR:"Hedera",ICP:"Internet Computer",WIF:"dogwifhat",RENDER:"Render",TAO:"Bittensor",ENA:"Ethena",SEI:"Sei",TIA:"Celestia",FET:"Artificial Superintelligence",ZEC:"Zcash",HYPE:"Hyperliquid",BONK:"Bonk",FLOKI:"Floki",JUP:"Jupiter",KAS:"Kaspa"};
 const $ = (s, el = document) => el.querySelector(s);
 const app = $("#app");
 let timers = [], chart = null, SIG = null;
@@ -1087,11 +1141,11 @@ function pillResult(r){ const m={TP2:["p-tp2","🎯 TP2"],TP1:["p-tp1","✅ TP1"
 function isFx(t){ return t.market==="forex"; }
 function nameOf(t){ return isFx(t) ? (t.name||t.coin) : `${t.coin}/USDT`; }
 function goOf(t){ return isFx(t) ? "#/forex" : `#/coin/${t.coin}`; }
-function fxDec(sym){ return sym.startsWith("XAU")?2:sym.includes("JPY")?3:5; }
+function fxDec(sym){ return sym.startsWith("XAU")?2:(sym.includes("JPY")||sym.startsWith("XAG"))?3:5; }
 function px(t,x){ return isFx(t) ? (+x).toLocaleString("en-US",{minimumFractionDigits:fxDec(t.coin),maximumFractionDigits:fxDec(t.coin)}) : fmtPx(x); }
 function fxLogo(sym){ const g=sym.startsWith("XAU"); return `<span class="logo" style="background:${g?"var(--accent-soft)":"var(--blue-soft)"};color:${g?"var(--accent)":"var(--blue)"};font-size:${g?13:10}px">${g?"Au":sym.slice(0,3)}</span>`; }
 function logoOf(t){ return isFx(t) ? fxLogo(t.coin) : logo(t.coin); }
-function pipsOf(t,v){ if(!isFx(t)) return ""; const ps=t.coin.includes("JPY")?0.01:t.coin.startsWith("XAU")?0.1:0.0001; return ` <span class="muted" style="font-size:11.5px">${Math.round(Math.abs(v-t.entry)/ps)}p</span>`; }
+function pipsOf(t,v){ if(!isFx(t)) return ""; const ps=(t.coin.includes("JPY")||t.coin.startsWith("XAG"))?0.01:t.coin.startsWith("XAU")?0.1:0.0001; return ` <span class="muted" style="font-size:11.5px">${Math.round(Math.abs(v-t.entry)/ps)}p</span>`; }
 function pillOpen(){ return `<span class="pill p-open">● ${tr("চলছে","Active")}</span>`; }
 function gradeOf(c){ return c==null?"—":c>=85?"A+":c>=78?"A":c>=70?"B":c>=60?"C":"D"; }
 function confColor(c){ return c>=75?"var(--up)":c>=60?"var(--accent)":"var(--down)"; }
@@ -1436,7 +1490,7 @@ async function pageHome(){
     <div class="txt">
       <span class="pill-live blue"><span class="dot"></span>${tr("চালু · Forex ও Gold","Live · Forex & Gold")}</span>
       <h2>${tr(`<span class="grad-text">Forex ও Gold</span> সিগনাল`,`<span class="grad-text">Forex &amp; Gold</span> signals`)}</h2>
-      <p>${tr("বিশ্বের সবচেয়ে বড় মার্কেটের জন্য আলাদা সিগনাল: EUR/USD, GBP/USD, USD/JPY আর Gold। একই নিয়মে Entry, TP, SL, pip-এর হিসাব আর ফলাফলের সৎ রেকর্ড, সোমবার থেকে শুক্রবার।","A separate signal stream for the world's largest market — EUR/USD, GBP/USD, USD/JPY and Gold — with Entry, TP, SL, pip distances and an honest record, Monday to Friday.")}</p>
+      <p>${tr("বিশ্বের সবচেয়ে বড় মার্কেটের জন্য আলাদা সিগনাল: EUR/USD, GBP/USD, USD/JPY, AUD/USD, USD/CAD, USD/CHF, NZD/USD, EUR/JPY, GBP/JPY, Gold আর Silver। একই নিয়মে Entry, TP, SL, pip-এর হিসাব আর ফলাফলের সৎ রেকর্ড, সোমবার থেকে শুক্রবার।","A separate signal stream for the world's largest market — EUR/USD, GBP/USD, USD/JPY, AUD/USD, USD/CAD, USD/CHF, NZD/USD, EUR/JPY, GBP/JPY, Gold and Silver — with Entry, TP, SL, pip distances and an honest record, Monday to Friday.")}</p>
       <div class="pairs">${((s.forex||{}).pairs||[{sym:"EURUSD",name:"EUR/USD"},{sym:"GBPUSD",name:"GBP/USD"},{sym:"USDJPY",name:"USD/JPY"},{sym:"XAUUSD",name:"Gold"}]).map(p=>{const x=((s.forex||{}).quotes||{})[p.sym];
         return `<span class="pair${p.sym.startsWith("XAU")?" gold":""}">${esc(p.sym.startsWith("XAU")?"Gold":p.name)}${x?` · <span class="${x.ch>=0?"up":"down"}">${pct(x.ch)}</span>`:""}</span>`}).join("")}</div>
       <div class="cta"><a class="btn btn-primary" href="#/forex">${tr("Forex সিগনাল দেখুন →","See Forex signals →")}</a></div>
@@ -1626,7 +1680,7 @@ async function coinInfo(sym){ const box=()=>$("#coinInfo"); if(!box()) return;
   const mb=$("#ciMore"); if(mb) mb.onclick=()=>{ $("#ciIntro").style.display="block"; mb.remove(); }; }
 async function pageCoin(sym){
   sym=clean(sym)||"BTC";
-  if(["EURUSD","GBPUSD","USDJPY","XAUUSD"].includes(sym)){ location.hash="#/forex"; return; }
+  if(["EURUSD","GBPUSD","USDJPY","XAUUSD","AUDUSD","USDCAD","USDCHF","NZDUSD","EURJPY","GBPJPY","XAGUSD"].includes(sym)){ location.hash="#/forex"; return; }
   const s=await loadSignals(), isBot=(s.coins||SITE.botCoins).includes(sym);
   const mine=[...s.open.map(t=>({...t,live:true})),...s.history].filter(t=>t.coin===sym);
   app.innerHTML=`<section>
@@ -1710,6 +1764,7 @@ async function pageSignals(){
   const s=await loadSignals(), st=s.stats, wr=winRate(st);
   const coins=[...new Set([...s.open,...s.history].map(t=>t.coin))].sort();
   app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">${tr("সৎ রেকর্ড","Full track record")}</span><h2>${tr("সব সিগনাল ও ফলাফল","All signals & results")}</h2></div><p>${tr("শেষ আপডেট","Last update")}: ${ago(s.updated)}</p></div>
+    <a class="card dp-cta" href="#/daily"><i>🌍</i><div><b>${tr("প্রতিদিনের গ্লোবাল পিক","Daily global picks")}</b><small>${tr("প্রতিদিন বিশ্বের অনেক উৎস মিলিয়ে নতুন সিগনাল","New signals every day from many global sources combined")}</small></div><span>${tr("দেখুন","View")} →</span></a>
     ${trackRecord(s)}</section>
   ${bandStats(s)}
   ${(s.watch||[]).length?`<section>${watchBlock(s)}</section>`:""}
@@ -1853,7 +1908,7 @@ async function pageAbout(){
       <li>After TP1 the Stop Loss moves to entry. If nothing happens within 48 candles, the signal expires.</li>
       <li><b>Confidence %:</b> a 0–95% score from the extra filters experienced providers use: the 4-hour trend (EMA 50/200), price vs EMA 200, MACD momentum, trend strength (ADX), how far volume is above average, and whether BTC is moving the same way.</li>
       <li>Signals below ${mc}% confidence are not sent. Confidence counts how many conditions agree — it is not a promise of profit.</li>
-      <li><b>Forex &amp; Gold:</b> EUR/USD, GBP/USD, USD/JPY and Gold use the same rules on 1-hour candles (no volume filter, since forex has no central volume), Monday to Friday. Prices come from Yahoo Finance.</li>
+      <li><b>Forex &amp; Gold:</b> 9 currency pairs (EUR/USD, GBP/USD, USD/JPY, AUD/USD, USD/CAD, USD/CHF, NZD/USD, EUR/JPY, GBP/JPY) plus Gold and Silver use the same rules on 1-hour candles (no volume filter, since forex has no central volume), Monday to Friday. Prices come from Yahoo Finance.</li>
       <li>Every result, win or loss, stays on this site. Nothing is deleted.</li>
     </ul>
     <h2>Coins</h2><p>${(s.coins||SITE.botCoins).join(" · ")}</p>
@@ -1875,7 +1930,7 @@ async function pageAbout(){
       <li>TP1 ছুঁলে Stop Loss Entry-তে সরে যায়। ৪৮ ক্যান্ডেলে কিছু না হলে সিগনাল "Expired" হয়।</li>
       <li><b>Confidence %:</b> বড় সিগনাল প্রোভাইডাররা যেসব বাড়তি ফিল্টার ব্যবহার করে, সেগুলো মিলিয়ে ০–৯৫% স্কোর দেওয়া হয়। ফিল্টারগুলো হলো: ৪ ঘণ্টার বড় ট্রেন্ড (EMA 50/200), দাম EMA 200-এর কোন দিকে, MACD মোমেন্টাম, ট্রেন্ডের শক্তি (ADX), ভলিউম কতটা বেশি, আর BTC একই দিকে যাচ্ছে কিনা।</li>
       <li>Confidence ${mc}%-এর কম হলে সিগনাল পাঠানো হয় না। Confidence মানে জেতার নিশ্চয়তা নয়, শুধু কতগুলো শর্ত মিলেছে তার হিসাব।</li>
-      <li><b>Forex ও Gold:</b> EUR/USD, GBP/USD, USD/JPY আর Gold-এ ১ ঘণ্টার ক্যান্ডেলে একই নিয়ম চলে, সোমবার থেকে শুক্রবার। Forex-এ কেন্দ্রীয় ভলিউম নেই, তাই ভলিউমের শর্ত বাদ। দাম আসে Yahoo Finance থেকে।</li>
+      <li><b>Forex ও Gold:</b> ৯টা কারেন্সি পেয়ার (EUR/USD, GBP/USD, USD/JPY, AUD/USD, USD/CAD, USD/CHF, NZD/USD, EUR/JPY, GBP/JPY) আর Gold ও Silver-এ ১ ঘণ্টার ক্যান্ডেলে একই নিয়ম চলে, সোমবার থেকে শুক্রবার। Forex-এ কেন্দ্রীয় ভলিউম নেই, তাই ভলিউমের শর্ত বাদ। দাম আসে Yahoo Finance থেকে।</li>
       <li>প্রতিটা সিগনালের ফলাফল, জয় হোক বা হার, এই সাইটে থেকে যায়। কিছু মুছে ফেলা হয় না।</li>
     </ul>
     <h2>কয়েন</h2><p>${(s.coins||SITE.botCoins).join(" · ")}</p>
@@ -1889,7 +1944,7 @@ async function pageAbout(){
 
 /* ---------- engine page ---------- */
 const ENGINE_VER="1.5";
-const FXN={EURUSD:"EUR/USD",GBPUSD:"GBP/USD",USDJPY:"USD/JPY",XAUUSD:"XAU/USD"};
+const FXN={EURUSD:"EUR/USD",GBPUSD:"GBP/USD",USDJPY:"USD/JPY",XAUUSD:"XAU/USD",AUDUSD:"AUD/USD",USDCAD:"USD/CAD",USDCHF:"USD/CHF",NZDUSD:"NZD/USD",EURJPY:"EUR/JPY",GBPJPY:"GBP/JPY",XAGUSD:"XAG/USD"};
 async function pageEngine(){
   const s=await loadSignals(), coins=s.coins||SITE.botCoins, mc=s.min_conf??60;
   const fxq=(s.forex&&s.forex.quotes)||{}, fxs=Object.keys(fxq).length?Object.keys(fxq):Object.keys(FXN);
@@ -2100,7 +2155,7 @@ function demoLoad(){ let d=null; try{ d=JSON.parse(localStorage.getItem(DEMO_KEY
   if(!d||typeof d!=="object"){ d={uid:"BW"+Math.random().toString(36).slice(2,8).toUpperCase(),name:"",since:new Date().toISOString(),cash:DEMO_START,hold:{},tx:[{t:new Date().toISOString(),type:"start",usdt:DEMO_START}],jr:[]}; demoSave(d); }
   d.hold=d.hold||{}; d.tx=d.tx||[]; d.jr=d.jr||[]; d.orders=d.orders||[]; d.wtx=d.wtx||[]; d.p2p=d.p2p||[]; d.kyc=d.kyc||{lvl:0,at:0}; d.fut=d.fut||[]; d.futH=d.futH||[]; d.earn=d.earn||[]; d.alerts=d.alerts||[]; d.sec=d.sec||{}; if(!Array.isArray(d.fav)) d.fav=[]; if(!d.dex||typeof d.dex!=="object") d.dex={}; DEX_MAP=d.dex;
   d.w3=Object.assign({on:false,seed:[],addr:"",net:W3_NETS[0],bal:{},tokens:["tBNB"],nfts:[],claimed:{},faucet:0},d.w3||{});
-  d.bot=Object.assign({on:false,amt:200,min:70,max:5,tp:"tp2",coins:[],taken:{},mine:true,mode:"active"},d.bot||{}); Object.values(d.hold).forEach(h=>{ if(h&&h.bot) h.sl=null; }); if(!Array.isArray(d.bot.coins)) d.bot.coins=[]; d.bot.taken=d.bot.taken||{}; return d; }
+  d.bot=Object.assign({on:false,amt:200,min:70,max:5,tp:"tp2",coins:[],taken:{},mine:true,mode:"active",size:"auto",pct:10},d.bot||{}); Object.values(d.hold).forEach(h=>{ if(h&&h.bot) h.sl=null; }); if(!Array.isArray(d.bot.coins)) d.bot.coins=[]; d.bot.taken=d.bot.taken||{}; return d; }
 function demoSave(d){ try{ localStorage.setItem(DEMO_KEY,JSON.stringify(d)); }catch(e){} try{ fbTouch(); }catch(e){} }
 const usd=x=>(+x).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
 const qtyF=x=>{ x=+x; return x>=100?x.toFixed(2):x>=1?x.toFixed(4):x.toPrecision(4); };
@@ -2124,6 +2179,8 @@ function botList(d){ return d.bot.coins.length?d.bot.coins:botTop(); }
 /* offline catch-up: when the site opens again, replay every closed 15-minute candle the bot missed (max 7 days)
    and make the same trades it would have made, at the real prices of that time */
 let BOT_CU=false;
+function botFund(d){ return Math.max(0,d.cash)+Object.values(d.hold).reduce((a,h)=>a+(h&&h.cost||0),0); }
+function botAmt(d){ const b=d.bot; if(b.size==="fixed") return b.amt; const pct=Math.max(1,Math.min(50,+b.pct||10)); return Math.max(10,Math.floor(botFund(d)*pct/100)); }
 async function botCatchUp(d){ const b=d.bot, now=Date.now(); if(!b.on){ b.last=now; return 0; } if(BOT_CU) return 0;
   const last=b.last||0; if(!last||now-last<20*60000){ b.last=now; return 0; }
   BOT_CU=true; let n=0; const from=Math.max(last,now-7*864e5);
@@ -2137,8 +2194,8 @@ async function botCatchUp(d){ const b=d.bot, now=Date.now(); if(!b.on){ b.last=n
     const stamp=t=>{ d.tx[0].t=new Date(t).toISOString(); d.tx[0].off=true; };
     for(const e of ev){
       if(e.s){ const t=e.s, k=t.coin+"|"+t.opened; if(b.taken[k]||!(t.entry>0)) continue; if(isMine(t)?!b.mine:(t.conf??0)<b.min) continue; if(b.coins.length&&!b.coins.includes(t.coin)) continue;
-        if(Object.values(d.hold).filter(h=>h.bot).length>=b.max||d.cash<b.amt||d.hold[t.coin]) continue;
-        dmBuy(d,t.coin,b.amt,t.entry,{bot:true}); stamp(e.t); const h=d.hold[t.coin]; h.tp=b.tp==="tp1"?t.tp1:t.tp2; h.sl=null; h.bot=true; h.sig=k; b.taken[k]="buy"; n++; continue; }
+        if(Object.values(d.hold).filter(h=>h.bot).length>=b.max||d.cash<botAmt(d)||d.hold[t.coin]) continue;
+        dmBuy(d,t.coin,botAmt(d),t.entry,{bot:true}); stamp(e.t); const h=d.hold[t.coin]; h.tp=b.tp==="tp1"?t.tp1:t.tp2; h.sl=null; h.bot=true; h.sig=k; b.taken[k]="buy"; n++; continue; }
       const k=K[e.c], row=k[e.i], hi=+row[2], cl=+row[4], h=d.hold[e.c];
       if(h){ if(h.bot&&h.tp&&hi>=h.tp&&h.tp*h.qty*(1-DEMO_FEE)>h.cost){ dmSell(d,e.c,h.qty,h.tp,{bot:true,ot:"tp",why:"TP"}); stamp(e.t); lastSell[e.c]=e.t; n++; } continue; }
       if(b.mode==="signal") continue;
@@ -2146,8 +2203,8 @@ async function botCatchUp(d){ const b=d.bot, now=Date.now(); if(!b.on){ b.last=n
       const cx=consOf(e.c);
       if(a.e9<=a.e21||a.close<=a.e21||a.rsi<50||a.rsi>70||!a.green||(lastSell[e.c]&&e.t-lastSell[e.c]<45*60000)||(cx&&cx.score<45)) continue;
       const key="A|"+e.c+"|"+a.t; if(b.taken[key]) continue;
-      if(Object.values(d.hold).filter(x=>x.bot).length>=b.max||d.cash<b.amt) continue;
-      dmBuy(d,e.c,b.amt,cl,{bot:true}); stamp(e.t); const hh=d.hold[e.c]; hh.tp=cl+2*a.atr; hh.sl=null; hh.bot=true; hh.sig=key; b.taken[key]="buy"; n++; }
+      if(Object.values(d.hold).filter(x=>x.bot).length>=b.max||d.cash<botAmt(d)) continue;
+      dmBuy(d,e.c,botAmt(d),cl,{bot:true}); stamp(e.t); const hh=d.hold[e.c]; hh.tp=cl+2*a.atr; hh.sl=null; hh.bot=true; hh.sig=key; b.taken[key]="buy"; n++; }
     d.tx.sort((x,y)=>x.t<y.t?1:-1); b.last=now; if(n) b.off={n,from,at:now}; }
   catch(e){ b.last=now; }
   finally{ BOT_CU=false; } return n; }
@@ -2171,8 +2228,8 @@ async function botScan(d,PX){ const b=d.bot; if(!b.on||b.mode==="signal"||BOT_SC
       const k="A|"+c+"|"+a.t, nb=Object.values(d.hold).filter(h=>h.bot).length, p=PX[c]||a.close;
       if(why||b.taken[k]){ rows.push({c,st:"wait",why:why||"done",rsi:a.rsi,sc:cx&&cx.score}); continue; }
       if(nb>=b.max){ rows.push({c,st:"wait",why:"max",rsi:a.rsi,sc:cx&&cx.score}); continue; }
-      if(d.cash<b.amt){ rows.push({c,st:"wait",why:"cash",rsi:a.rsi,sc:cx&&cx.score}); continue; }
-      dmBuy(d,c,b.amt,p,{bot:true}); const h=d.hold[c]; h.tp=p+2*a.atr; h.sl=null; h.bot=true; h.sig=k; b.taken[k]="buy"; PX[c]=p; n++;
+      if(d.cash<botAmt(d)){ rows.push({c,st:"wait",why:"cash",rsi:a.rsi,sc:cx&&cx.score}); continue; }
+      dmBuy(d,c,botAmt(d),p,{bot:true}); const h=d.hold[c]; h.tp=p+2*a.atr; h.sl=null; h.bot=true; h.sig=k; b.taken[k]="buy"; PX[c]=p; n++;
       rows.push({c,st:"buy",rsi:a.rsi,sc:cx&&cx.score}); } }
   finally{ BOT_SCAN={t:Date.now(),rows,busy:false}; }
   return n; }
@@ -2206,8 +2263,8 @@ function demoTick(d,PX,sig){ let n=0;
     open.forEach(t=>{ const k=key(t), p=PX[t.coin]; if(t.side!=="BUY"||d.bot.taken[k]||!p) return;
       if(isMine(t)?!d.bot.mine:(t.conf??0)<d.bot.min) return; if(d.bot.coins.length&&!d.bot.coins.includes(t.coin)) return;
       if(!(p>t.sl&&p<t.tp1)){ d.bot.taken[k]="skip"; n++; return; }
-      const nb=Object.values(d.hold).filter(h=>h.bot).length; if(nb>=d.bot.max||d.cash<d.bot.amt||d.hold[t.coin]) return;
-      dmBuy(d,t.coin,d.bot.amt,p,{bot:true}); const h=d.hold[t.coin]; h.tp=d.bot.tp==="tp1"?t.tp1:t.tp2; h.sl=null; h.bot=true; h.sig=k; d.bot.taken[k]="buy"; n++; });
+      const nb=Object.values(d.hold).filter(h=>h.bot).length; if(nb>=d.bot.max||d.cash<botAmt(d)||d.hold[t.coin]) return;
+      dmBuy(d,t.coin,botAmt(d),p,{bot:true}); const h=d.hold[t.coin]; h.tp=d.bot.tp==="tp1"?t.tp1:t.tp2; h.sl=null; h.bot=true; h.sig=k; d.bot.taken[k]="buy"; n++; });
     const ks=Object.keys(d.bot.taken); if(ks.length>150) ks.slice(0,ks.length-150).forEach(k=>delete d.bot.taken[k]); }
   return n; }
 async function demoPrices(list,PX){ list=[...new Set(list)].filter(c=>/^[A-Z0-9]{2,12}$/.test(c));
@@ -2225,13 +2282,15 @@ setInterval(async()=>{ if(location.hash.startsWith("#/demo")) return; let d; try
   const PX={}; await demoPrices(watch,PX); const d2=demoLoad(); const n1=demoTick(d2,PX,sig), n2=await botStep(d2,PX); if(n1+n2) demoSave(d2); },30000);
 /* ---------- learn: videos (auto-updated by the bot from YouTube channels + admin's /video command) ---------- */
 let VID_CAT="all";
-function openVid(id){ const local=/\.mp4$/.test(id), tall=/promo/.test(id), ov=document.createElement("div"); ov.className="wz"; ov.innerHTML=`<div class="vp${tall?" vp-v":""}"><div class="vp-h"><b>${tr("ভিডিও","Video")}</b><button type="button" class="wz-ic" aria-label="Close">✕</button></div><div class="vp-f">${local?`<video src="${esc(id)}" controls autoplay playsinline poster="${tall?"promo.jpg":id.replace(/\.mp4$/,".jpg")}"></video>`:`<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="Video"></iframe>`}</div></div>`;
+function openVid(id){ const local=/\.mp4$/.test(id), tall=/promo(-bn)?\.mp4$/.test(id), ov=document.createElement("div"); ov.className="wz"; ov.innerHTML=`<div class="vp${tall?" vp-v":""}"><div class="vp-h"><b>${tr("ভিডিও","Video")}</b><button type="button" class="wz-ic" aria-label="Close">✕</button></div><div class="vp-f">${local?`<video src="${esc(id)}" controls autoplay playsinline poster="${tall?"promo.jpg":id.replace(/\.mp4$/,".jpg")}"></video>`:`<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="Video"></iframe>`}</div></div>`;
   document.body.appendChild(ov); const close=()=>{ ov.remove(); window.removeEventListener("hashchange",close); }; ov.onclick=e=>{ if(e.target===ov||e.target.closest(".wz-ic")) close(); }; window.addEventListener("hashchange",close); }
 async function learnVideos(body){ let v=null; try{ v=await (await fetch("data/videos.json?t="+Math.floor(Date.now()/600000))).json(); }catch(e){}
   const promo={id:LANG==="en"?"promo.mp4":"promo-bn.mp4",t:tr("BEWON কীভাবে কাজ করে — কীভাবে জয়েন করবেন (৪৬ সেকেন্ড)","How BEWON works — how to join (46 seconds)"),ch:"BEWON",cat:"bewon",thumb:"promo.jpg"};
   const full={id:"guide-video.mp4",t:tr("BEWON সম্পূর্ণ গাইড — জয়েন, ট্রেড, আয় (ইংরেজি ভয়েস, ৩.৫ মিনিট)","BEWON full guide — join, trade, earn (English voice, 3.5 min)"),ch:"BEWON",cat:"bewon",thumb:"guide-video.jpg"};
   const pro={id:"pro-video.mp4",t:tr("BEWON — ধাপে ধাপে সিগনাল পড়া ও ট্রেড এন্ট্রি (২.৫ মিনিট)","BEWON — read a signal and enter a trade, step by step (2.5 min)"),ch:"BEWON",cat:"bewon",thumb:"pro-video.jpg"};
-  const all=[pro,full,promo,...(v?[...(v.pinned||[]).map(x=>Object.assign({ch:"BEWON"},x,{cat:"bewon"})),...(v.videos||[])]:[])];
+  const pp={id:"promo-pro.mp4",t:tr("BEWON — জয়েন, ট্রেড, অনলাইন আয় (মিউজিকসহ, ১ মিনিট)","BEWON — join, trade, earn online (with music, 1 min)"),ch:"BEWON",cat:"bewon",thumb:"promo-pro.jpg"};
+  const hm={id:"howto-music.mp4",t:tr("BEWON কীভাবে ব্যবহার করবেন — অ্যাকাউন্ট, টেস্ট, স্টপ লস, অটো বট, অনলাইন আয় (মিউজিক)","How to use BEWON — account, test, stop loss, auto bot, earn online (music)"),ch:"BEWON",cat:"bewon",thumb:"howto-music.jpg"};
+  const all=[hm,pp,pro,full,promo,...(v?[...(v.pinned||[]).map(x=>Object.assign({ch:"BEWON"},x,{cat:"bewon"})),...(v.videos||[])]:[])];
   const draw=()=>{ if(!body.isConnected) return; const L=all.filter(x=>VID_CAT==="all"||x.cat===VID_CAT);
     body.innerHTML=`<div class="ln"><div class="card dm-panel"><h3>🎬 ${tr("ভিডিও","Videos")}</h3>
       <p class="muted" style="margin:0;font-size:13.5px">${tr("ক্রিপ্টো শেখা আর অনলাইন আয়ের দক্ষতার ফ্রি ভিডিও। নতুন ভিডিও নিজে থেকে যোগ হয়।","Free videos on learning crypto and online-earning skills. New videos are added automatically.")}</p>
@@ -2313,14 +2372,20 @@ function dmChain(d,o){ const x=Object.assign({id:Date.now().toString(36)+hx(4),h
 const DEMO_NETS=[{k:"BEP20",n:"BNB Smart Chain",fee:0.3,conf:15},{k:"TRC20",n:"TRON",fee:1,conf:20},{k:"ERC20",n:"Ethereum",fee:5,conf:6}];
 const DEMO_P2P=[["BUY","Demo Merchant A",1240,99.1,1.003,20,5000,["Bank transfer","Wise"]],["BUY","Demo Merchant B",612,98.4,1.005,50,8000,["Revolut"]],["BUY","Demo Merchant C",2890,99.6,1.007,10,3000,["Wise","Payoneer"]],["BUY","Demo Merchant D",95,96.0,0.999,100,6000,["Bank transfer"]],
   ["SELL","Demo Merchant E",1750,99.3,0.996,20,5000,["Bank transfer","Wise"]],["SELL","Demo Merchant F",430,97.9,0.994,50,8000,["Revolut"]],["SELL","Demo Merchant G",3120,99.7,0.992,10,4000,["Payoneer"]],["SELL","Demo Merchant H",58,95.2,0.998,100,6000,["Wise","Bank transfer"]]].map(a=>({side:a[0],m:a[1],n:a[2],r:a[3],price:a[4],min:a[5],max:a[6],pay:a[7]}));
-const NET_CONF={BEP20:15,TRC20:20,ERC20:6,ARB:12,BTC:2,SOL:10,XRP:5,DOGE:12,LTC:8};
+const NET_CONF={BEP20:15,TRC20:20,ERC20:6,ARB:12,BTC:2,SOL:10,XRP:5,DOGE:12,LTC:8,ADA:10,DOT:6,AVAXC:6,POLYGON:20,TON:3,NEAR:5,SUI:3,BCH:6,XLM:3};
 const WL_COINS={USDT:[{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.3,min:1,mins:2},{k:"TRC20",n:"TRON (TRC20)",fee:1,min:1,mins:2},{k:"ERC20",n:"Ethereum (ERC20)",fee:5,min:5,mins:3}],
   BTC:[{k:"BTC",n:"Bitcoin",fee:0.00005,min:0.0001,mins:30},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.000003,min:0.00001,mins:2}],
   ETH:[{k:"ERC20",n:"Ethereum (ERC20)",fee:0.0005,min:0.001,mins:3},{k:"ARB",n:"Arbitrum One",fee:0.00004,min:0.0005,mins:2},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.00002,min:0.0005,mins:2}],
   BNB:[{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.0001,min:0.001,mins:2}],SOL:[{k:"SOL",n:"Solana",fee:0.001,min:0.01,mins:1}],XRP:[{k:"XRP",n:"XRP Ledger",fee:0.2,min:1,mins:1,memo:true}],
   USDC:[{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.3,min:1,mins:2},{k:"ERC20",n:"Ethereum (ERC20)",fee:4,min:5,mins:3},{k:"SOL",n:"Solana",fee:0.5,min:1,mins:1}],
-  TRX:[{k:"TRC20",n:"TRON (TRC20)",fee:1,min:1,mins:2}],DOGE:[{k:"DOGE",n:"Dogecoin",fee:4,min:10,mins:10}],LTC:[{k:"LTC",n:"Litecoin",fee:0.001,min:0.002,mins:5}]};
-const WL_FMT={BEP20:/^0x[0-9a-fA-F]{40}$/,ERC20:/^0x[0-9a-fA-F]{40}$/,ARB:/^0x[0-9a-fA-F]{40}$/,TRC20:/^T[1-9A-HJ-NP-Za-km-z]{33}$/,BTC:/^(bc1[a-z0-9]{25,60}|[13][1-9A-HJ-NP-Za-km-z]{25,34})$/,SOL:/^[1-9A-HJ-NP-Za-km-z]{32,44}$/,XRP:/^r[1-9A-HJ-NP-Za-km-z]{24,34}$/,DOGE:/^D[1-9A-HJ-NP-Za-km-z]{25,34}$/,LTC:/^(ltc1[a-z0-9]{25,60}|[LM3][1-9A-HJ-NP-Za-km-z]{26,33})$/};
+  TRX:[{k:"TRC20",n:"TRON (TRC20)",fee:1,min:1,mins:2}],DOGE:[{k:"DOGE",n:"Dogecoin",fee:4,min:10,mins:10}],LTC:[{k:"LTC",n:"Litecoin",fee:0.001,min:0.002,mins:5}],
+  ADA:[{k:"ADA",n:"Cardano",fee:0.8,min:2,mins:3},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.15,min:1,mins:2}],DOT:[{k:"DOT",n:"Polkadot",fee:0.08,min:1,mins:3},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.01,min:0.1,mins:2}],
+  LINK:[{k:"ERC20",n:"Ethereum (ERC20)",fee:0.3,min:0.5,mins:3},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.005,min:0.05,mins:2}],AVAX:[{k:"AVAXC",n:"AVAX C-Chain",fee:0.008,min:0.1,mins:2},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.0005,min:0.01,mins:2}],
+  POL:[{k:"POLYGON",n:"Polygon PoS",fee:0.1,min:1,mins:3},{k:"ERC20",n:"Ethereum (ERC20)",fee:5,min:10,mins:3}],SHIB:[{k:"ERC20",n:"Ethereum (ERC20)",fee:400000,min:800000,mins:3},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:10000,min:50000,mins:2}],PEPE:[{k:"ERC20",n:"Ethereum (ERC20)",fee:600000,min:1500000,mins:3},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:20000,min:100000,mins:2}],
+  TON:[{k:"TON",n:"The Open Network",fee:0.01,min:0.1,mins:1,memo:true}],UNI:[{k:"ERC20",n:"Ethereum (ERC20)",fee:0.4,min:1,mins:3},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.003,min:0.05,mins:2}],ARB:[{k:"ARB",n:"Arbitrum One",fee:0.1,min:1,mins:2}],
+  NEAR:[{k:"NEAR",n:"NEAR Protocol",fee:0.01,min:0.1,mins:2},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:0.002,min:0.05,mins:2}],SUI:[{k:"SUI",n:"Sui",fee:0.05,min:0.1,mins:1}],
+  BCH:[{k:"BCH",n:"Bitcoin Cash",fee:0.0002,min:0.001,mins:10},{k:"BEP20",n:"BNB Smart Chain (BEP20)",fee:4e-05,min:0.001,mins:2}],XLM:[{k:"XLM",n:"Stellar",fee:0.02,min:1,mins:1,memo:true}]};
+const WL_FMT={BEP20:/^0x[0-9a-fA-F]{40}$/,ERC20:/^0x[0-9a-fA-F]{40}$/,ARB:/^0x[0-9a-fA-F]{40}$/,TRC20:/^T[1-9A-HJ-NP-Za-km-z]{33}$/,BTC:/^(bc1[a-z0-9]{25,60}|[13][1-9A-HJ-NP-Za-km-z]{25,34})$/,SOL:/^[1-9A-HJ-NP-Za-km-z]{32,44}$/,XRP:/^r[1-9A-HJ-NP-Za-km-z]{24,34}$/,DOGE:/^D[1-9A-HJ-NP-Za-km-z]{25,34}$/,LTC:/^(ltc1[a-z0-9]{25,60}|[LM3][1-9A-HJ-NP-Za-km-z]{26,33})$/,AVAXC:/^0x[0-9a-fA-F]{40}$/,POLYGON:/^0x[0-9a-fA-F]{40}$/,ADA:/^addr1[0-9a-z]{50,110}$/,DOT:/^1[1-9A-HJ-NP-Za-km-z]{45,47}$/,TON:/^(EQ|UQ)[A-Za-z0-9_-]{46}$/,NEAR:/^([a-z0-9_-]+\.near|[0-9a-f]{64})$/,SUI:/^0x[0-9a-fA-F]{64}$/,BCH:/^(bitcoincash:)?[qp][0-9a-z]{41}$/,XLM:/^G[A-Z2-7]{55}$/};
 function wlSample(k){ const B="123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz", r=(n,a)=>Array.from({length:n},()=>a[Math.floor(Math.random()*a.length)]).join("");
   return /BEP20|ERC20|ARB/.test(k)?"0x"+r(40,"0123456789abcdef"):k==="TRC20"?"T"+r(33,B):k==="BTC"?"bc1q"+r(38,"023456789acdefghjklmnpqrstuvwxyz"):k==="XRP"?"r"+r(33,B):k==="DOGE"?"D"+r(33,B):k==="LTC"?"ltc1q"+r(38,"023456789acdefghjklmnpqrstuvwxyz"):r(44,B); }
 function demoConf(x){ return Math.floor((Date.now()-new Date(x.t))/1000); }
@@ -2861,7 +2926,10 @@ async function pageDemo(){
           <div class="dx-qk">${[["trade","⇅",tr("স্পট","Spot")],["fut","📈",tr("ফিউচার","Futures")],["conv","🔄",tr("কনভার্ট","Convert")],["earn","🌱","Earn"],["p2p","🤝","P2P"],["wallet","👛",tr("ওয়ালেট","Wallet")]].map(x=>`<button type="button" data-qk="${x[0]}"><i>${x[1]}</i>${x[2]}</button>`).join("")}</div>
           <div class="dx-sw ${b.on?"on":""}"><div><b>${b.on?tr("বট চালু আছে","Bot is ON"):tr("বট বন্ধ আছে","Bot is OFF")}</b><span>${b.on?(b.mode==="signal"?tr("নতুন BUY সিগনাল এলে নিজে কিনবে","Buys new BUY signals by itself"):tr("প্রতি মিনিটে চার্ট দেখছে, শর্ত মিললেই কিনবে","Checks the chart every minute and buys when its rules match")):tr("চালু করলে বট নিজে ট্রেড করবে","Turn on and the bot will place trades")}</span></div><button id="bxT" aria-pressed="${b.on}">${b.on?"ON":"OFF"}</button></div>
           <label class="dm-f">${tr("বট কীভাবে ট্রেড নেবে","How the bot takes trades")}<select id="bxMo"><option value="active"${b.mode!=="signal"?" selected":""}>${tr("অ্যাক্টিভ: নিজে চার্ট দেখে ট্রেড নেয় + সিগনালও ফলো করে","Active: reads the chart itself + follows signals")}</option><option value="signal"${b.mode==="signal"?" selected":""}>${tr("শুধু চ্যানেলের সিগনাল ফলো করে","Follow channel signals only")}</option></select></label>
-          <label class="dm-f">${tr("প্রতি ট্রেডে কত USDT","USDT per trade")}<input id="bxA" type="number" min="10" max="5000" step="10" value="${b.amt}"></label>
+          <label class="dm-f">${tr("ট্রেডের সাইজ","Trade size")}<select id="bxSz"><option value="auto"${b.size!=="fixed"?" selected":""}>${tr("অটো: ফান্ড অনুযায়ী (কম ফান্ডে ছোট, বেশি ফান্ডে বড় ট্রেড)","Auto: by fund (small fund = small trades, big fund = bigger trades)")}</option><option value="fixed"${b.size==="fixed"?" selected":""}>${tr("নির্দিষ্ট: প্রতি ট্রেডে একই USDT","Fixed: same USDT every trade")}</option></select></label>
+          ${b.size==="fixed"?`<label class="dm-f">${tr("প্রতি ট্রেডে কত USDT","USDT per trade")}<input id="bxA" type="number" min="10" max="5000" step="10" value="${b.amt}"></label>`:`<label class="dm-f">${tr("প্রতি ট্রেডে ফান্ডের কত %","% of fund per trade")}<select id="bxPc">${[2,5,10,15,20,25].map(v=>`<option value="${v}"${(+b.pct||10)==v?" selected":""}>${v}%</option>`).join("")}</select></label>
+          <div class="dm-est"><span>${tr("আপনার ফান্ড","Your fund")}: <b>${usd(botFund(d))}</b></span><b>${tr("এখন প্রতি ট্রেড","Each trade now")}: ${usd(botAmt(d))}</b></div>
+          <p class="muted" style="margin:-4px 0 0;font-size:12px">${tr("উদাহরণ","Example")} (${+b.pct||10}%): $100 → ${usd(Math.max(10,100*(+b.pct||10)/100))} · $1,000 → ${usd(1000*(+b.pct||10)/100)} · $10,000 → ${usd(10000*(+b.pct||10)/100)}. ${tr("সর্বনিম্ন ট্রেড $10।","Minimum trade $10.")}</p>`}
           <label class="dm-f">${tr("কমপক্ষে কত Confidence হলে কিনবে","Minimum confidence to buy")}<select id="bxM">${[[60,"60%+ (C)"],[70,"70%+ (B)"],[78,"78%+ (A)"],[85,"85%+ (A+)"]].map(([v,l])=>`<option value="${v}"${b.min==v?" selected":""}>${l}</option>`).join("")}</select></label>
           <label class="dm-f">${tr("অ্যাডমিন (👤) ও পার্টনার (🤝) সিগনাল ফলো করবে","Follow admin (👤) and partner (🤝) signals")}<select id="bxN"><option value="1"${b.mine?" selected":""}>${tr("হ্যাঁ, সবসময়","Yes, always")}</option><option value="0"${b.mine?"":" selected"}>${tr("না, শুধু ইঞ্জিনের সিগনাল","No, engine signals only")}</option></select></label>
           <label class="dm-f">${tr("একসাথে সর্বোচ্চ কয়টা ট্রেড","Max open trades at once")}<select id="bxX">${[1,2,3,5,8].map(v=>`<option${b.max==v?" selected":""}>${v}</option>`).join("")}</select></label>
@@ -2888,7 +2956,8 @@ async function pageDemo(){
       $("#bxP").onchange=e=>{ d.bot.tp=e.target.value; demoSave(d); };
       if($("#bxOff")) $("#bxOff").onclick=()=>{ delete d.bot.off; demoSave(d); draw(); };
       $("#bxT").onclick=()=>{ d.bot.on=!d.bot.on; BOT_SCAN.t=0; demoSave(d); draw(); if(d.bot.on) tick(); };
-      $("#bxA").onchange=e=>{ d.bot.amt=Math.max(10,Math.min(5000,+e.target.value||200)); demoSave(d); };
+      if($("#bxA")) $("#bxA").onchange=e=>{ d.bot.amt=Math.max(10,Math.min(5000,+e.target.value||200)); demoSave(d); };
+      $("#bxSz").onchange=e=>{ d.bot.size=e.target.value; demoSave(d); draw(); }; if($("#bxPc")) $("#bxPc").onchange=e=>{ d.bot.pct=+e.target.value; demoSave(d); draw(); };
       $("#bxM").onchange=e=>{ d.bot.min=+e.target.value; demoSave(d); }; $("#bxX").onchange=e=>{ d.bot.max=+e.target.value; demoSave(d); }; $("#bxN").onchange=e=>{ d.bot.mine=e.target.value==="1"; demoSave(d); }; $("#bxMo").onchange=e=>{ d.bot.mode=e.target.value; BOT_SCAN.t=0; demoSave(d); draw(); tick(); }; };
     const tick=async()=>{ if(!alive()) return; const sg=d.bot.on?await demoSignalsFresh():null; await demoPrices([...need(),...(sg?sg.open.filter(t=>!isFx(t)).map(t=>t.coin):[])],PX); if(!alive()) return; if(demoTick(d,PX,sg)) demoSave(d); if(await botStep(d,PX)) demoSave(d); if(!alive()) return;
       if(!document.activeElement||!["INPUT","SELECT"].includes(document.activeElement.tagName)) draw(); };
@@ -3081,6 +3150,209 @@ async function pageWhales(){ const s=await loadSignals(), coins=[...new Set([...
   $("#whC").querySelectorAll("button").forEach(b=>b.onclick=()=>{ WH_COIN=b.dataset.c; $("#whC").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b)); $("#whT").innerHTML=$("#whB").innerHTML=`<div class="dm-empty">…</div>`; load(); });
   load(); every(12000,load);
 }
+
+
+/* ---------- daily global picks (many outside sources, once a day) ---------- */
+async function pageDaily(){ let D=null; try{ D=await (await fetch("data/daily.json?t="+Math.floor(Date.now()/60000))).json(); }catch(e){}
+  const SRCN={tv1h:"TradingView 1h",tv4h:"TradingView 4h",tv1d:"TradingView 1D",engine:"BEWON engine",mom:tr("দামের গতি","Price momentum"),sent:"CoinGecko community",crowd:"Gate.io traders"};
+  const st=(D&&D.stats)||{tp1:0,tp2:0,sl:0,expired:0}, won=st.tp1+st.tp2, tot=won+st.sl, today=D&&D.today, picks=(today&&today.picks)||[], rules=(D&&D.rules)||{hour_utc:6};
+  const hrDhaka=((rules.hour_utc+6)%24), nm=t=>t.market==="crypto"?t.coin+"/USDT":t.coin;
+  const bars=s=>Object.keys(SRCN).filter(k=>typeof (s||{})[k]==="number").map(k=>{ const v=s[k], w=Math.min(50,Math.abs(v)*50); return `<div class="dp-src"><span>${SRCN[k]}</span><div class="dp-b"><i style="${v>=0?"left:50%":"right:50%"};width:${w}%;background:${v>0.1?"var(--up)":v<-0.1?"var(--down)":"var(--muted)"}"></i></div><b class="${v>0.1?"up":v<-0.1?"down":"muted"}">${v>0.1?tr("কিনুন","Buy"):v<-0.1?tr("বেচুন","Sell"):tr("নিরপেক্ষ","Neutral")}</b></div>`; }).join("");
+  const card=t=>`<div class="card dp-card"><div class="dp-h"><span class="sym">${isFx(t)?fxLogo(t.coin):logo(t.coin)} <b>${esc(nm(t))}</b></span>${pillSide(t.side)}</div>
+    <div class="dp-sc"><div><span>${tr("মিলিত স্কোর","Combined score")}</span><b style="color:${t.score>=57?"var(--up)":t.score<=43?"var(--down)":"var(--ink)"}">${t.score}/100</b></div><div><span>${tr("একমত উৎস","Sources agree")}</span><b>${t.agree}/${t.n}</b></div></div>
+    <div class="dp-lv">${[["Entry",t.entry],["TP1",t.tp1],["TP2",t.tp2],["SL",t.sl]].map(([k,v])=>`<div><span>${k}</span><b>${px(t,v)}</b></div>`).join("")}</div>
+    ${t.src?`<div class="dp-srcs">${bars(t.src)}</div>`:""}${t.market==="crypto"&&t.side==="SELL"?`<p class="muted" style="margin:0;font-size:12px">${tr("SELL মানে ফিউচারে Short, অথবা এখন না কেনা।","SELL means a futures short, or simply not buying now.")}</p>`:""}
+    <a class="btn btn-ghost" style="min-height:38px" href="${isFx(t)?"#/forex":`#/demo/${t.coin}/${t.side==="BUY"?"buy":"sell"}`}">🎮 ${tr("ডেমোতে চেষ্টা করুন","Try it in demo")}</a></div>`;
+  app.innerHTML=`<section><div class="sec-head"><div><span class="eyebrow">🌍 ${tr("প্রতিদিনের গ্লোবাল পিক","Daily global picks")}</span><h2>${tr("আজকের সিগনাল — বিশ্বের অনেক উৎস মিলিয়ে","Today's signals — many global sources combined")}</h2>
+      <p>${tr(`প্রতিদিন দুপুর ${hrDhaka}টায় (ঢাকা) বট ৪০টা কয়েন আর ১১টা Forex মার্কেট বিভিন্ন উৎস দিয়ে যাচাই করে। যেখানে বেশিরভাগ উৎস একমত, শুধু সেগুলোই পিক হয়। প্রতিটা পিকের ফলাফল নিচে খোলাখুলি লেখা থাকে।`,`Every day at ${rules.hour_utc}:00 UTC the bot checks 40 coins and 11 forex markets with several outside sources. Only markets where most sources agree become picks. Every result is listed below.`)}</p></div></div>
+    <div class="nft-stats" style="grid-template-columns:repeat(4,minmax(0,1fr));margin:6px 0 18px"><div><span>${tr("আজকের পিক","Today's picks")}</span><b>${picks.length}</b></div><div><span>${tr("যাচাই করা মার্কেট","Markets checked")}</span><b>${(today&&today.n)||"—"}</b></div><div><span>${tr("লক্ষ্য ছুঁয়েছে","Hit target")}</span><b class="up">${won}</b></div><div><span>${tr("স্টপ লস","Stopped")}</span><b class="down">${st.sl}</b></div></div>
+    <div class="dp-srcl">${tr("উৎস","Sources")}: ${((D&&D.sources)||Object.values(SRCN)).map(x=>`<span class="pill p-flat">${esc(x)}</span>`).join(" ")}</div>
+    ${!D?`<div class="card empty">${tr("প্রথম পিক আসবে বট পরের বার দিনের নির্দিষ্ট সময়ে চললে।","The first picks arrive the next time the bot runs at the daily hour.")}</div>`:
+      `<h3 style="margin:18px 0 10px">${tr("আজকের পিক","Today's picks")} <span class="muted" style="font-weight:500;font-size:14px">${today?esc(today.date):""}</span></h3>
+      ${picks.length?`<div class="dp-g">${picks.map(card).join("")}</div>`:`<div class="card empty">${tr("আজ কোনো মার্কেটে উৎসগুলো জোরালোভাবে একমত না। পিক না দেওয়াও একটা সিদ্ধান্ত: অপেক্ষা করুন।","Today the sources do not agree strongly on any market. No pick is also a decision: wait.")}</div>`}
+      ${(D.open||[]).filter(t=>!picks.some(p=>p.coin===t.coin&&p.opened===t.opened)).length?`<h3 style="margin:22px 0 10px">${tr("আগের দিনের চলমান পিক","Earlier picks still open")}</h3><div class="card tbl-wrap"><table><tbody>${D.open.filter(t=>!picks.some(p=>p.coin===t.coin&&p.opened===t.opened)).map(t=>`<tr><td>${isFx(t)?fxLogo(t.coin):logo(t.coin)} <b>${esc(nm(t))}</b> ${pillSide(t.side)}</td><td class="r">Entry ${px(t,t.entry)}</td><td class="r">TP2 ${px(t,t.tp2)} · SL ${px(t,t.sl)}</td><td class="r muted">${ago(t.opened)}</td></tr>`).join("")}</tbody></table></div>`:""}
+      <h3 style="margin:22px 0 10px">${tr("সব মার্কেটের স্কোর","Score of every market")}</h3>
+      <div class="card tbl-wrap" style="max-height:440px;overflow:auto"><table><thead><tr><th>#</th><th>${tr("মার্কেট","Market")}</th><th class="r">${tr("স্কোর","Score")}</th><th class="r">${tr("কেনার পক্ষে","For buy")}</th><th class="r">${tr("বেচার পক্ষে","For sell")}</th><th class="r">24h</th></tr></thead><tbody>${((today&&today.board)||[]).map((r,i)=>`<tr><td class="muted">${i+1}</td><td>${r.m==="forex"?fxLogo(r.c):logo(r.c)} <b>${esc(r.c)}</b></td><td class="r"><b class="${r.score>=57?"up":r.score<=43?"down":""}">${r.score}</b></td><td class="r up">${r.buy}/${r.n}</td><td class="r down">${r.sell}/${r.n}</td><td class="r ${r.ch24>=0?"up":"down"}">${pct(r.ch24||0)}</td></tr>`).join("")}</tbody></table></div>
+      <h3 style="margin:22px 0 10px">${tr("ফলাফলের রেকর্ড","Results record")} <span class="muted" style="font-weight:500;font-size:14px">${tot?tr(`${tot}টার মধ্যে ${won}টা লক্ষ্যে`,`${won} of ${tot} hit target`):""}</span></h3>
+      ${(D.history||[]).length?`<div class="card tbl-wrap"><table><thead><tr><th>${tr("মার্কেট","Market")}</th><th>${tr("ফলাফল","Result")}</th><th class="r">Entry</th><th class="r">${tr("স্কোর","Score")}</th><th class="r">${tr("কখন","When")}</th></tr></thead><tbody>${D.history.map(t=>`<tr><td>${isFx(t)?fxLogo(t.coin):logo(t.coin)} <b>${esc(nm(t))}</b> ${pillSide(t.side)}</td><td>${pillResult(t.status)}</td><td class="r">${px(t,t.entry)}</td><td class="r">${t.score}</td><td class="r muted">${ago(t.closed)}</td></tr>`).join("")}</tbody></table></div>`:`<div class="card empty">${tr("এখনো কোনো পিক শেষ হয়নি।","No pick has closed yet.")}</div>`}`}
+    <p class="note" style="margin-top:18px">⚠️ ${tr(`নিয়ম: স্কোর ${rules.buy_score||62}+ এবং কমপক্ষে ${rules.min_agree||3}টা উৎস কেনার পক্ষে হলে BUY, স্কোর ${rules.sell_score||38} বা কম হলে SELL। Stop loss ১.৫×ATR, TP1 ১.৫×ATR, TP2 ৩×ATR, ${rules.expire_h||48} ঘণ্টা পর মেয়াদ শেষ। সব উৎস একসাথেও ভুল হতে পারে। এটা আর্থিক পরামর্শ নয়।`,`Rules: BUY when the score is ${rules.buy_score||62}+ and at least ${rules.min_agree||3} sources lean buy; SELL at ${rules.sell_score||38} or below. Stop loss 1.5×ATR, TP1 1.5×ATR, TP2 3×ATR, expires after ${rules.expire_h||48} hours. All sources can be wrong together. Not financial advice.`)}</p></section>`; }
+/* ---------- NFT marketplace + Node mining (both demo, play money) ---------- */
+function nRng(seed){ let a=seed>>>0; return ()=>{ a|=0; a=a+0x6D2B79F5|0; let t=Math.imul(a^a>>>15,1|a); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+function nHash(s){ let h=2166136261; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; }
+const NFT_COLS=[
+  {k:"orb",n:"BEWON Genesis Orbs",ic:"🔮",sup:240,floor:120,d:["গ্রহের মতো আলোর গোলক, প্রতিটা আলাদা রং আর কক্ষপথ।","Glowing orbs with their own colours and orbits."]},
+  {k:"candle",n:"Candle Spirits",ic:"🕯️",sup:180,floor:60,d:["ট্রেডিং চার্টের ক্যান্ডেল থেকে তৈরি শিল্প।","Art made from trading-chart candles."]},
+  {k:"grid",n:"Neon Grid",ic:"🟪",sup:300,floor:35,d:["নিয়ন আলোর টাইল দিয়ে বানানো নকশা।","Patterns built from neon tiles."]},
+  {k:"key",n:"Node Keys",ic:"🔑",sup:120,floor:250,d:["নোডের চাবি। মালিকের ডেমো নোডের শক্তি +১০%।","Node keys. Owner's demo node power +10%."]}];
+const NFT_PAL=[["#3fb6ff","#f5c451","#0b1020"],["#19d3a2","#c6f25a","#06140f"],["#a78bfa","#f472b6","#140b22"],["#ff7a45","#ffd166","#1a0d06"],["#22e4ff","#ff4ecd","#060f1a"],["#f0b90b","#ffffff","#0b0e11"],["#ff4d6d","#ffb3c1","#1a070c"],["#7cf29c","#3fb6ff","#071a12"]];
+const NFT_RAR=[["Common",1,"#9aa4b2"],["Rare",1.6,"#3fb6ff"],["Epic",2.8,"#a78bfa"],["Legendary",6,"#f5c451"]];
+function nftMeta(c,s){ const r=nRng(nHash(c+"|"+s)), x=r(), rar=x<0.03?3:x<0.15?2:x<0.40?1:0, pal=Math.floor(r()*NFT_PAL.length), v=Math.floor(r()*4);
+  const col=NFT_COLS.find(z=>z.k===c)||NFT_COLS[0];
+  return {c,s,rar,pal,v,col,price:Math.round(col.floor*NFT_RAR[rar][1]*(1+r()*0.4)*100)/100,fair:Math.round(col.floor*NFT_RAR[rar][1]*100)/100,
+    traits:[["Rarity",NFT_RAR[rar][0]],["Palette",["Sky","Mint","Violet","Sunset","Cyber","Gold","Rose","Aurora"][pal]],["Form",["I","II","III","IV"][v]]]}; }
+function nftArt(c,s,big){ const m=nftMeta(c,s), r=nRng(nHash("art|"+c+"|"+s)), [a,b,bg]=NFT_PAL[m.pal], id="g"+c+String(s).replace(/\W/g,""); let g="";
+  if(c==="orb"){ const R=70+r()*30; g=`<radialGradient id="${id}" cx=".35" cy=".35"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".25" stop-color="${b}"/><stop offset="1" stop-color="${a}"/></radialGradient>`;
+    let o=""; for(let i=0;i<2+m.v;i++){ const rx=R+18+i*16, ry=(R+18+i*16)*(0.25+r()*0.25), rot=r()*180; o+=`<ellipse cx="150" cy="150" rx="${rx}" ry="${ry}" fill="none" stroke="${i%2?a:b}" stroke-opacity=".55" stroke-width="2" transform="rotate(${rot} 150 150)"/><circle cx="${150+rx}" cy="150" r="${3+r()*4}" fill="${b}" transform="rotate(${rot} 150 150)"/>`; }
+    let st=""; for(let i=0;i<30;i++) st+=`<circle cx="${r()*300}" cy="${r()*300}" r="${r()*1.4+.3}" fill="#fff" opacity="${.3+r()*.6}"/>`;
+    g=`<defs>${g}</defs>${st}${o}<circle cx="150" cy="150" r="${R}" fill="url(#${id})"/>`; }
+  else if(c==="candle"){ let p=150, x=""; const n=10+m.v*2, w=240/n; for(let i=0;i<n;i++){ const mv=(r()-.45)*50, o=p, cl=Math.max(40,Math.min(260,p-mv)), hi=Math.min(o,cl)-r()*20, lo=Math.max(o,cl)+r()*20, up=cl<o, col=up?a:b;
+      x+=`<line x1="${30+i*w+w/2}" y1="${hi}" x2="${30+i*w+w/2}" y2="${lo}" stroke="${col}" stroke-width="2"/><rect x="${30+i*w+w*.18}" y="${Math.min(o,cl)}" width="${w*.64}" height="${Math.max(3,Math.abs(o-cl))}" rx="2" fill="${col}"/>`; p=cl; }
+    g=`<defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}" stop-opacity=".25"/><stop offset="1" stop-color="${bg}" stop-opacity="0"/></linearGradient></defs><rect width="300" height="300" fill="url(#${id})"/>${[60,120,180,240].map(y=>`<line x1="20" y1="${y}" x2="280" y2="${y}" stroke="#fff" stroke-opacity=".06"/>`).join("")}${x}<circle cx="${250}" cy="${50}" r="${12+m.v*3}" fill="${b}" opacity=".85"/>`; }
+  else if(c==="grid"){ const n=6+m.v, w=300/n; let x=""; for(let i=0;i<n;i++) for(let j=0;j<n;j++){ const X=i*w, Y=j*w, t=r(), col=r()<.5?a:b;
+      x+=t<.5?`<path d="M${X} ${Y+w/2}A${w/2} ${w/2} 0 0 0 ${X+w/2} ${Y}M${X+w/2} ${Y+w}A${w/2} ${w/2} 0 0 1 ${X+w} ${Y+w/2}" stroke="${col}" stroke-width="${2+m.rar}" fill="none" stroke-linecap="round"/>`:`<path d="M${X+w/2} ${Y}A${w/2} ${w/2} 0 0 0 ${X+w} ${Y+w/2}M${X} ${Y+w/2}A${w/2} ${w/2} 0 0 1 ${X+w/2} ${Y+w}" stroke="${col}" stroke-width="${2+m.rar}" fill="none" stroke-linecap="round"/>`; }
+    g=`<g style="filter:drop-shadow(0 0 4px ${a})">${x}</g>`; }
+  else { const pts=k=>[0,1,2,3,4,5].map(i=>{ const an=Math.PI/3*i-Math.PI/2; return (150+k*Math.cos(an)).toFixed(1)+","+(150+k*Math.sin(an)).toFixed(1); }).join(" ");
+    let teeth=""; for(let i=0;i<3+m.v;i++) teeth+=`<rect x="${168+i*14}" y="${222}" width="8" height="${10+r()*14}" rx="2" fill="${b}"/>`;
+    g=`<defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><polygon points="${pts(118)}" fill="none" stroke="url(#${id})" stroke-width="3" opacity=".5"/><polygon points="${pts(96)}" fill="${bg}" stroke="url(#${id})" stroke-width="6"/><circle cx="150" cy="128" r="30" fill="none" stroke="url(#${id})" stroke-width="10"/><rect x="144" y="156" width="12" height="70" rx="4" fill="url(#${id})"/>${teeth}<text x="150" y="134" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="16" fill="${b}">${m.rar>=2?"★":"B"}</text>`; }
+  return `<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(m.col.n)} #${esc(s)}"${big?' class="nft-big"':""}><rect width="300" height="300" fill="${bg}"/>${g}<text x="12" y="290" font-family="Inter,sans-serif" font-size="11" fill="#fff" opacity=".5">BEWON · DEMO</text></svg>`; }
+function nftName(it){ return it.nm||(nftMeta(it.c,it.s).col.n+" #"+it.s); }
+function nftState(d){ if(!d.nft||typeof d.nft!=="object") d.nft={}; const n=d.nft; if(!Array.isArray(n.own)) n.own=[]; if(!n.bought||typeof n.bought!=="object") n.bought={}; if(!Array.isArray(n.act)) n.act=[]; return n; }
+function nftAct(d,x){ const n=nftState(d); n.act.unshift(Object.assign({t:new Date().toISOString()},x)); n.act=n.act.slice(0,120); }
+function nftDay(){ return Math.floor(Date.now()/864e5); }
+function nftMarket(d){ const n=nftState(d), day=nftDay(), out=[];
+  NFT_COLS.forEach((c,ci)=>{ const r=nRng(day*31+ci*7+1), used=new Set(); for(let i=0;i<12;i++){ let s=1+Math.floor(r()*c.sup); if(used.has(s)) continue; used.add(s); const id=c.k+"-"+s;
+      if(n.bought[id]||n.own.some(o=>o.c===c.k&&o.s==s)) continue; out.push(Object.assign(nftMeta(c.k,s),{id,seller:"0x"+nHash(id+day).toString(16).padStart(8,"0").slice(0,4)+"…"+nHash(day+id).toString(16).slice(0,4)})); } });
+  return out; }
+function nftFloor(d,c){ const m=nftMarket(d).filter(x=>x.c===c); return m.length?Math.min(...m.map(x=>x.price)):(NFT_COLS.find(z=>z.k===c)||{floor:0}).floor; }
+/* listed NFTs: a demo buyer takes a listing that is priced near its fair value after a short wait */
+function nftSettle(d){ const n=nftState(d); let k=0; const now=Date.now();
+  n.own=n.own.filter(o=>{ if(!o.list) return true; const m=nftMeta(o.c,o.s), wait=(10+nHash(o.c+o.s+o.la)%80)*60000;
+    if(o.list<=m.fair*1.15&&now-o.la>wait){ const fee=o.list*0.025, roy=o.mint?0:o.list*0.05, got=o.list-fee-roy; d.cash+=got; nftAct(d,{type:"sold",c:o.c,s:o.s,nm:o.nm,price:o.list,got,pl:got-(o.cost||0)}); k++; return false; } return true; });
+  return k; }
+let NFT_TAB="explore", NFT_COL="all", NFT_SORT="low";
+async function pageNft(){ let d=demoLoad(); nftState(d); if(nftSettle(d)) demoSave(d);
+  const tabs=[["explore","🧭",tr("দেখুন ও কিনুন","Explore")],["mint","✨",tr("মিন্ট","Mint")],["mine","🖼️",tr("আমার NFT","My NFTs")],["act","🧾",tr("কাজের তালিকা","Activity")],["how","❓",tr("কীভাবে কাজ করে","How it works")]];
+  app.innerHTML=`<section class="nft-hero"><div class="nft-hero-t"><span class="eyebrow">🖼️ BEWON NFT Market</span><h1>${tr("BEWON NFT মার্কেটপ্লেস","BEWON NFT Marketplace")}</h1>
+      <p>${tr("NFT কী, কীভাবে মিন্ট, কেনা, বেচা আর লিস্ট করতে হয়, সব হাতে-কলমে শিখুন। প্রতিটা ছবি এখানেই কোড দিয়ে তৈরি। ডেমো ব্যালান্সে চলে, আসল NFT বা আসল টাকা নেই।","Learn hands-on what an NFT is and how to mint, buy, sell and list one. Every artwork is generated here in code. Runs on your demo balance: no real NFTs and no real money.")}</p>
+      <div class="nft-stats" id="nfS"></div></div>
+      <div class="nft-hero-a">${["orb","key","candle","grid"].map((c,i)=>`<div class="nft-fan nft-f${i}">${nftArt(c,[7,3,11,5][i])}</div>`).join("")}</div></section>
+    <section style="padding-top:0"><div class="dm-tabs" id="nfT" role="tablist">${tabs.map(t=>`<button type="button" data-t="${t[0]}" class="${NFT_TAB===t[0]?"on":""}">${t[1]} ${t[2]}</button>`).join("")}</div><div id="nfB" style="margin-top:16px"></div>
+      <p class="muted" style="font-size:12px;margin-top:16px">🎮 ${tr("ডেমো: এখানকার NFT ব্লকচেইনে নেই, বাইরে বেচা বা পাঠানো যায় না, আর টাকা হিসেবে কোনো মূল্য নেই। দাম আর ক্রেতা অনুশীলনের জন্য তৈরি।","Demo: these NFTs are not on a blockchain, cannot be sold or sent outside, and have no money value. Prices and buyers are made for practice.")} <a href="BEWON_NFT_Node_Whitepaper.pdf" target="_blank" rel="noopener">${tr("হোয়াইট পেপার","Whitepaper")} ↗</a></p></section>`;
+  const body=$("#nfB"), alive=()=>location.hash.startsWith("#/nft")&&$("#nfB")===body;
+  const stats=()=>{ const n=nftState(d), mk=nftMarket(d), vol=n.act.filter(x=>["buy","sold"].includes(x.type)).reduce((a,x)=>a+(x.price||0),0);
+    $("#nfS").innerHTML=[[tr("লিস্টিং","Listed"),mk.length],[tr("কালেকশন","Collections"),NFT_COLS.length],[tr("আপনার NFT","Your NFTs"),n.own.length],[tr("ডেমো ব্যালান্স","Demo balance"),usd(d.cash)+" USDT"],[tr("আপনার লেনদেন","Your volume"),usd(vol)]].map(([a,b])=>`<div><span>${a}</span><b>${b}</b></div>`).join(""); };
+  const msg=(t,ok)=>{ const e=$("#nfM"); if(e){ e.textContent=t; e.className="dm-msg "+(ok?"ok":"err"); } };
+  const openItem=(it,mode)=>{ const m=nftMeta(it.c,it.s), own=mode==="own", w=document.createElement("div"); w.className="wz";
+    w.innerHTML=`<div class="nft-modal card"><div class="vp-h"><b>${esc(nftName(it))}</b><button type="button" class="wz-ic" aria-label="Close">✕</button></div>
+      <div class="nft-mg"><div>${nftArt(it.c,it.s,true)}</div><div style="display:grid;gap:10px;align-content:start">
+        <div class="muted" style="font-size:13px">${m.col.ic} ${esc(m.col.n)}</div>
+        <div class="nft-tr">${m.traits.map(([k,v])=>`<div><span>${k}</span><b${k==="Rarity"?` style="color:${NFT_RAR[m.rar][2]}"`:""}>${v}</b></div>`).join("")}</div>
+        <div class="dm-est"><span>${tr("ন্যায্য দাম (রেয়ারিটি অনুযায়ী)","Fair value (by rarity)")}</span><b>${usd(m.fair)} USDT</b></div>
+        <div class="dm-est"><span>${tr("কালেকশনের সর্বনিম্ন দাম (Floor)","Collection floor")}</span><b>${usd(nftFloor(d,it.c))} USDT</b></div>
+        ${own?`<label class="dm-f">${tr("বিক্রির দাম (USDT)","Sale price (USDT)")}<input id="nmP" type="number" min="1" step="0.01" value="${it.list||m.fair}"></label>
+          <div class="dm-est"><span>${tr("মার্কেট ফি ২.৫%"+(it.mint?"":" + ক্রিয়েটর রয়্যালটি ৫%"),"Market fee 2.5%"+(it.mint?"":" + creator royalty 5%"))}</span><b id="nmG">—</b></div>
+          <div class="dm-act">${it.list?`<button class="btn btn-ghost" id="nmC">${tr("লিস্টিং বাতিল","Cancel listing")}</button>`:""}<button class="btn btn-primary" id="nmL">${it.list?tr("দাম বদলান","Update price"):tr("বিক্রির জন্য লিস্ট করুন","List for sale")}</button></div>
+          <button class="btn btn-ghost" id="nmQ">⚡ ${tr("এখনই বেচুন (ডেমো পুলে, Floor-এর ৮৫%)","Sell now (to the demo pool, 85% of floor)")} · ${usd(nftFloor(d,it.c)*0.85)}</button>`
+        :`<div class="dm-est"><span>${tr("দাম","Price")}</span><b style="font-size:20px">${usd(it.price)} USDT</b></div><div class="muted" style="font-size:12px">${tr("বিক্রেতা","Seller")}: ${esc(it.seller)} (${tr("ডেমো","demo")})</div>
+          <div class="dm-act"><button class="btn btn-primary" id="nmB">${tr("এখনই কিনুন","Buy now")}</button><button class="btn btn-ghost" id="nmO">${tr("অফার দিন","Make offer")}</button></div>`}
+        <div class="dm-msg" id="nfM" role="status"></div></div></div></div>`;
+    document.body.appendChild(w); const close=()=>{ w.remove(); draw(); }; w.querySelector(".wz-ic").onclick=close; w.addEventListener("click",e=>{ if(e.target===w) close(); });
+    const say=(t,ok)=>{ const e=w.querySelector("#nfM"); e.textContent=t; e.className="dm-msg "+(ok?"ok":"err"); };
+    const buy=(p)=>{ if(d.cash<p) return say(tr("ডেমো ব্যালান্স যথেষ্ট নয়।","Not enough demo balance."),false); d.cash-=p; const n=nftState(d); n.bought[it.id]=1; n.own.unshift({c:it.c,s:it.s,cost:p,at:Date.now(),list:null}); nftAct(d,{type:"buy",c:it.c,s:it.s,price:p}); demoSave(d); say("✓ "+tr("কেনা হয়েছে। 'আমার NFT'-তে দেখুন।","Bought. See it in My NFTs."),true); setTimeout(close,900); };
+    if(own){ const P=w.querySelector("#nmP"), G=w.querySelector("#nmG"), up=()=>{ const p=+P.value||0; G.textContent=usd(p*(1-0.025-(it.mint?0:0.05)))+" USDT"; }; P.oninput=up; up();
+      w.querySelector("#nmL").onclick=()=>{ const p=Math.round((+P.value||0)*100)/100; if(p<1) return say(tr("দাম কমপক্ষে ১ USDT।","Price must be at least 1 USDT."),false); it.list=p; it.la=Date.now(); nftAct(d,{type:"list",c:it.c,s:it.s,nm:it.nm,price:p}); demoSave(d);
+        say(p<=m.fair*1.15?tr("লিস্ট হয়েছে। দাম ন্যায্য, তাই একজন ডেমো ক্রেতা ১০–৯০ মিনিটের মধ্যে কিনতে পারে।","Listed. The price is fair, so a demo buyer may take it within 10–90 minutes."):tr("লিস্ট হয়েছে, কিন্তু দাম ন্যায্য দামের চেয়ে অনেক বেশি। ক্রেতা না-ও আসতে পারে।","Listed, but the price is well above fair value. A buyer may not come."),true); };
+      const c=w.querySelector("#nmC"); if(c) c.onclick=()=>{ it.list=null; nftAct(d,{type:"cancel",c:it.c,s:it.s,nm:it.nm}); demoSave(d); close(); };
+      w.querySelector("#nmQ").onclick=()=>{ const p=Math.round(nftFloor(d,it.c)*0.85*100)/100; const n=nftState(d); n.own=n.own.filter(o=>o!==it); d.cash+=p; nftAct(d,{type:"sold",c:it.c,s:it.s,nm:it.nm,price:p,got:p,pl:p-(it.cost||0),pool:true}); demoSave(d); say("✓ "+tr(`বিক্রি হয়েছে: ${usd(p)} USDT`,`Sold for ${usd(p)} USDT`),true); setTimeout(close,900); }; }
+    else { w.querySelector("#nmB").onclick=()=>buy(it.price);
+      w.querySelector("#nmO").onclick=()=>{ const v=prompt(tr("আপনার অফার (USDT):","Your offer (USDT):"),(it.price*0.9).toFixed(2)); if(!v) return; const p=+v; if(!(p>0)) return;
+        if(p>=it.price*0.92) buy(Math.round(p*100)/100); else { nftAct(d,{type:"offer",c:it.c,s:it.s,price:p,no:true}); demoSave(d); say(tr("ডেমো বিক্রেতা অফার নেয়নি। দামের ৯২%-এর কাছাকাছি চেষ্টা করুন।","The demo seller declined. Try closer to 92% of the price."),false); } }; } };
+  const card=(it,own)=>{ const m=nftMeta(it.c,it.s); return `<button type="button" class="nft-c" data-id="${esc(own?"o"+nftState(d).own.indexOf(it):it.id)}">${nftArt(it.c,it.s)}<div class="nft-ci"><b>${esc(nftName(it))}</b><span class="nft-r" style="color:${NFT_RAR[m.rar][2]}">${NFT_RAR[m.rar][0]}</span></div>
+    <div class="nft-cp"><span class="muted">${own?(it.list?tr("লিস্টেড","Listed"):tr("কেনা দাম","Cost")):tr("দাম","Price")}</span><b>${usd(own?(it.list||it.cost||0):it.price)} USDT</b></div></button>`; };
+  const draw=()=>{ if(!alive()) return; stats(); const n=nftState(d);
+    $("#nfT").querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.t===NFT_TAB));
+    if(NFT_TAB==="explore"){ let mk=nftMarket(d).filter(x=>NFT_COL==="all"||x.c===NFT_COL); mk.sort((a,b)=>NFT_SORT==="low"?a.price-b.price:NFT_SORT==="high"?b.price-a.price:b.rar-a.rar||a.price-b.price);
+      body.innerHTML=`<div class="nft-cols">${NFT_COLS.map(c=>`<button type="button" class="card nft-col${NFT_COL===c.k?" on":""}" data-col="${c.k}"><div class="nft-col-a">${nftArt(c.k,c.k==="key"?3:9)}</div><div><b>${c.ic} ${c.n}</b><small>${tr(...c.d)}</small><span>${tr("সংখ্যা","Items")} ${c.sup} · Floor <b>${usd(nftFloor(d,c.k))}</b></span></div></button>`).join("")}</div>
+        <div class="nft-bar"><div class="tabs">${[["all",tr("সব","All")],...NFT_COLS.map(c=>[c.k,c.ic+" "+c.n.split(" ").slice(-1)[0]])].map(([k,l])=>`<button type="button" data-cf="${k}" class="${NFT_COL===k?"on":""}">${l}</button>`).join("")}</div>
+          <select id="nfSo" aria-label="Sort"><option value="low"${NFT_SORT==="low"?" selected":""}>${tr("দাম: কম থেকে বেশি","Price: low to high")}</option><option value="high"${NFT_SORT==="high"?" selected":""}>${tr("দাম: বেশি থেকে কম","Price: high to low")}</option><option value="rar"${NFT_SORT==="rar"?" selected":""}>${tr("রেয়ারিটি","Rarity")}</option></select></div>
+        <div class="nft-g">${mk.map(it=>card(it,false)).join("")||`<div class="dm-empty">${tr("আজকের সব NFT বিক্রি হয়ে গেছে। কাল নতুন লিস্টিং আসবে।","Everything listed today is sold. New listings arrive tomorrow.")}</div>`}</div>
+        <p class="muted" style="font-size:12px">${tr("প্রতিদিন নতুন ডেমো লিস্টিং আসে।","New demo listings arrive every day.")}</p>`;
+      body.querySelectorAll("[data-col],[data-cf]").forEach(b=>b.onclick=()=>{ const k=b.dataset.col||b.dataset.cf; NFT_COL=NFT_COL===k&&b.dataset.col?"all":k; draw(); });
+      $("#nfSo").onchange=e=>{ NFT_SORT=e.target.value; draw(); };
+      body.querySelectorAll(".nft-c").forEach(b=>b.onclick=()=>{ const it=nftMarket(d).find(x=>x.id===b.dataset.id); if(it) openItem(it,"buy"); }); }
+    else if(NFT_TAB==="mint"){ const ms=(window.NFT_MS=window.NFT_MS||{c:"orb",s:1000+Math.floor(Math.random()*8999)}), pts=(d.node&&d.node.pts)||0;
+      body.innerHTML=`<div class="dm-grid"><div class="dm-panel card"><h3>✨ ${tr("নিজের NFT মিন্ট করুন","Mint your own NFT")}</h3>
+          <label class="dm-f">${tr("ধরন","Style")}<select id="mnC">${NFT_COLS.map(c=>`<option value="${c.k}"${ms.c===c.k?" selected":""}>${c.ic} ${c.n}</option>`).join("")}</select></label>
+          <label class="dm-f">${tr("নাম","Name")}<input id="mnN" maxlength="32" placeholder="${tr("যেমন: আমার প্রথম NFT","e.g. My first NFT")}"></label>
+          <button type="button" class="btn btn-ghost" id="mnR">🎲 ${tr("আরেকটা ডিজাইন","Another design")}</button>
+          <div class="dm-est"><span>${tr("মিন্ট ফি","Mint fee")}</span><b>5 USDT ${tr("অথবা","or")} 50 BWN</b></div>
+          <div class="dm-act"><button class="btn btn-primary" id="mnU">${tr("USDT দিয়ে মিন্ট","Mint with USDT")}</button><button class="btn btn-ghost" id="mnP"${pts<50?" disabled":""}>⛏️ ${tr("BWN পয়েন্ট দিয়ে","With BWN points")} (${Math.floor(pts)})</button></div>
+          <div class="dm-msg" id="nfM" role="status"></div>
+          <p class="muted" style="margin:0;font-size:12px">${tr("BWN পয়েন্ট আসে ডেমো নোড মাইনিং থেকে।","BWN points come from demo node mining.")} <a href="#/node">${tr("নোড চালু করুন →","Run a node →")}</a></p></div>
+        <div class="dm-panel card" style="justify-items:center"><div class="nft-prev">${nftArt(ms.c,ms.s,true)}</div><div class="nft-tr" style="width:100%">${nftMeta(ms.c,ms.s).traits.map(([k,v])=>`<div><span>${k}</span><b>${v}</b></div>`).join("")}</div></div></div>`;
+      $("#mnC").onchange=e=>{ ms.c=e.target.value; draw(); }; $("#mnR").onclick=()=>{ ms.s=1000+Math.floor(Math.random()*8999); draw(); };
+      const mint=(pay)=>{ if(n.own.length>=40) return msg(tr("সর্বোচ্চ ৪০টা NFT রাখা যায়।","You can hold up to 40 NFTs."),false);
+        if(pay==="u"){ if(d.cash<5) return msg(tr("ডেমো ব্যালান্স যথেষ্ট নয়।","Not enough demo balance."),false); d.cash-=5; } else { if(!d.node||d.node.pts<50) return msg(tr("৫০ BWN পয়েন্ট লাগবে।","You need 50 BWN points."),false); d.node.pts-=50; }
+        const nm=($("#mnN").value||"").trim().slice(0,32); n.own.unshift({c:ms.c,s:ms.s,nm,cost:pay==="u"?5:0,at:Date.now(),list:null,mint:true}); nftAct(d,{type:"mint",c:ms.c,s:ms.s,nm,price:pay==="u"?5:0,pts:pay==="u"?0:50}); demoSave(d);
+        window.NFT_MS=null; NFT_TAB="mine"; draw(); };
+      $("#mnU").onclick=()=>mint("u"); $("#mnP").onclick=()=>mint("p"); }
+    else if(NFT_TAB==="mine"){ const v=n.own.reduce((a,o)=>a+nftMeta(o.c,o.s).fair,0), keys=n.own.filter(o=>o.c==="key").length;
+      body.innerHTML=`<div class="dm-row3 dx-st" style="margin-bottom:14px"><div><span>${tr("আমার NFT","My NFTs")}</span><b>${n.own.length}</b></div><div><span>${tr("আনুমানিক মূল্য","Estimated value")}</span><b>${usd(v)}</b></div><div><span>${tr("লিস্টেড","Listed")}</span><b>${n.own.filter(o=>o.list).length}</b></div></div>
+        ${keys?`<p class="note">🔑 ${tr(`আপনার ${keys}টা Node Key আছে: ডেমো নোডের শক্তি +${Math.min(keys,3)*10}%।`,`You hold ${keys} Node Key(s): demo node power +${Math.min(keys,3)*10}%.`)}</p>`:""}
+        <div class="nft-g">${n.own.map(o=>card(o,true)).join("")||`<div class="dm-empty">${tr("এখনো কোনো NFT নেই। 'দেখুন ও কিনুন' থেকে কিনুন বা 'মিন্ট' করুন।","No NFTs yet. Buy one in Explore or mint your own.")}</div>`}</div>`;
+      body.querySelectorAll(".nft-c").forEach(b=>b.onclick=()=>{ const o=n.own[+b.dataset.id.slice(1)]; if(o) openItem(o,"own"); }); }
+    else if(NFT_TAB==="act"){ const L={buy:tr("কিনেছেন","Bought"),sold:tr("বিক্রি","Sold"),mint:tr("মিন্ট","Minted"),list:tr("লিস্ট","Listed"),cancel:tr("লিস্টিং বাতিল","Cancelled"),offer:tr("অফার (নেয়নি)","Offer (declined)")};
+      body.innerHTML=n.act.length?`<div class="card tbl-wrap dm"><table><thead><tr><th>${tr("কাজ","Event")}</th><th>NFT</th><th class="r">${tr("দাম","Price")}</th><th class="r">P/L</th><th class="r">${tr("কখন","When")}</th></tr></thead><tbody>${n.act.map(x=>`<tr><td><span class="pill ${x.type==="sold"?"p-tp2":x.type==="buy"||x.type==="mint"?"p-open":"p-flat"}">${L[x.type]||x.type}</span>${x.pool?` <span class="muted" style="font-size:11px">${tr("ডেমো পুল","demo pool")}</span>`:""}</td><td><b>${esc(nftName(x))}</b></td><td class="r">${x.pts?x.pts+" BWN":x.price!=null?usd(x.price):"—"}</td><td class="r ${x.pl>=0?"up":"down"}">${x.pl!=null?(x.pl>=0?"+":"")+usd(x.pl):""}</td><td class="r muted" style="font-size:12px">${ago(x.t)}</td></tr>`).join("")}</tbody></table></div>`:`<div class="card dm-empty">${tr("এখনো কিছু হয়নি।","Nothing yet.")}</div>`; }
+    else { body.innerHTML=`<div class="nft-how">${[["1","🧭",tr("দেখুন","Explore"),tr("চারটা কালেকশন। প্রতিটা NFT-র রেয়ারিটি আছে: Common, Rare, Epic, Legendary। রেয়ার যত, দাম তত বেশি।","Four collections. Each NFT has a rarity: Common, Rare, Epic or Legendary. Rarer means pricier.")],
+        ["2","💳",tr("কিনুন বা অফার দিন","Buy or make an offer"),tr("ডেমো ব্যালান্স দিয়ে সাথে সাথে কিনুন, অথবা কম দামে অফার দিন। দামের ৯২%-এর বেশি হলে ডেমো বিক্রেতা রাজি হয়।","Buy instantly with your demo balance, or offer less. The demo seller accepts 92% of the price or more.")],
+        ["3","✨",tr("মিন্ট করুন","Mint"),tr("নিজের ডিজাইন বানিয়ে নাম দিন। ৫ USDT অথবা নোড মাইনিংয়ের ৫০ BWN পয়েন্ট লাগে।","Create your own design and name it. Costs 5 USDT or 50 BWN points from node mining.")],
+        ["4","🏷️",tr("লিস্ট করে বেচুন","List and sell"),tr("নিজের দাম দিন। ন্যায্য দামের কাছাকাছি হলে ১০–৯০ মিনিটে ডেমো ক্রেতা কেনে। মার্কেট ফি ২.৫%, অন্যের কালেকশনে ক্রিয়েটর রয়্যালটি ৫%।","Set your price. Near fair value, a demo buyer takes it in 10–90 minutes. Market fee 2.5%, plus 5% creator royalty on collection items.")],
+        ["5","🔑",tr("Node Key-এর সুবিধা","Node Key perk"),tr("প্রতিটা Node Key NFT আপনার ডেমো নোডের শক্তি ১০% বাড়ায় (সর্বোচ্চ ৩টা, +৩০%)।","Each Node Key NFT adds 10% to your demo node power (up to 3, +30%).")],
+        ["6","🛡️",tr("আসল জগতে সতর্কতা","Real-world safety"),tr("আসল NFT কিনতে Web3 ওয়ালেট লাগে। কখনো seed phrase কাউকে দেবেন না, অচেনা সাইটে 'Approve' করবেন না, আর 'ফ্রি মিন্ট' লিংকে সাবধান।","Real NFTs need a Web3 wallet. Never share your seed phrase, never 'Approve' on unknown sites, and be careful with 'free mint' links.")]].map(x=>`<div class="card"><i>${x[1]}</i><b>${x[0]}. ${x[2]}</b><p>${x[3]}</p></div>`).join("")}</div>`; } };
+  $("#nfT").onclick=e=>{ const b=e.target.closest("[data-t]"); if(!b) return; NFT_TAB=b.dataset.t; draw(); };
+  draw(); every(30000,()=>{ if(!alive()) return; if(nftSettle(d)){ demoSave(d); draw(); } else stats(); }); }
+
+/* ---------- Node mining (demo) ---------- */
+const NODE_T=[{k:"lite",n:"Lite Node",ic:"🟢",price:0,rate:1,max:1,c:"#19d3a2"},{k:"pro",n:"Pro Node",ic:"🔵",price:100,rate:6,max:5,c:"#3fb6ff"},{k:"elite",n:"Elite Node",ic:"🟣",price:500,rate:35,max:3,c:"#a78bfa"},{k:"gen",n:"Genesis Node",ic:"🟡",price:2000,rate:160,max:1,c:"#f5c451"}];
+const NODE_H=24*3600e3;
+function nodeState(d){ if(!d.node||typeof d.node!=="object") d.node={}; const n=d.node; [["pts",0],["sess",0],["last",0],["streak",0],["day",""],["tot",0]].forEach(([k,v])=>{ if(n[k]==null) n[k]=v; }); if(!n.lic||typeof n.lic!=="object") n.lic={}; n.lic.lite=1; if(!Array.isArray(n.log)) n.log=[]; return n; }
+function nodeKeys(d){ return Math.min(3,((d.nft&&d.nft.own)||[]).filter(o=>o.c==="key").length); }
+function nodeRate(d){ const n=nodeState(d), base=NODE_T.reduce((a,t)=>a+(n.lic[t.k]||0)*t.rate,0); return base*(1+Math.min(n.streak,10)*0.05+nodeKeys(d)*0.10); }
+function nodeEnd(n){ return n.sess?n.sess+NODE_H:0; }
+function nodeUnclaimed(d){ const n=nodeState(d); if(!n.sess) return 0; const to=Math.min(Date.now(),nodeEnd(n)), from=Math.max(n.last||n.sess,n.sess); return to>from?nodeRate(d)*(to-from)/3600e3:0; }
+function nodeLog(n,x){ n.log.unshift(Object.assign({t:new Date().toISOString()},x)); n.log=n.log.slice(0,60); }
+function nodeArt(on,cols){ const hex=(cx,cy,r)=>[0,1,2,3,4,5].map(i=>{ const a=Math.PI/3*i+Math.PI/6; return (cx+r*Math.cos(a)).toFixed(1)+","+(cy+r*Math.sin(a)).toFixed(1); }).join(" ");
+  const ring=[...Array(6)].map((_,i)=>{ const a=Math.PI/3*i-Math.PI/2; return [200+120*Math.cos(a),200+120*Math.sin(a)]; }), outer=[...Array(12)].map((_,i)=>{ const a=Math.PI/6*i; return [200+178*Math.cos(a),200+178*Math.sin(a)]; });
+  return `<svg viewBox="0 0 400 400" class="node-svg${on?" on":""}" role="img" aria-label="Node network"><defs><radialGradient id="ndG"><stop offset="0" stop-color="var(--p2)" stop-opacity=".55"/><stop offset="1" stop-color="var(--p1)" stop-opacity="0"/></radialGradient><linearGradient id="ndL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--p1)"/><stop offset="1" stop-color="var(--p2)"/></linearGradient></defs>
+    <circle cx="200" cy="200" r="190" fill="url(#ndG)" class="nd-glow"/>
+    ${outer.map(([x,y],i)=>`<line x1="${x}" y1="${y}" x2="${ring[Math.round((i*30+90)/60)%6][0]}" y2="${ring[Math.round((i*30+90)/60)%6][1]}" class="nd-ln"/>`).join("")}
+    ${ring.map(([x,y],i)=>`<line x1="200" y1="200" x2="${x}" y2="${y}" class="nd-ln nd-flow" style="animation-delay:${i*.25}s"/><line x1="${x}" y1="${y}" x2="${ring[(i+1)%6][0]}" y2="${ring[(i+1)%6][1]}" class="nd-ln"/>`).join("")}
+    ${outer.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="5" class="nd-dot" style="animation-delay:${i*.2}s"/>`).join("")}
+    ${ring.map(([x,y],i)=>`<polygon points="${hex(x,y,20)}" class="nd-hx" style="stroke:${cols[i%cols.length]};animation-delay:${i*.3}s"/>`).join("")}
+    <polygon points="${hex(200,200,62)}" fill="var(--surface)" stroke="url(#ndL)" stroke-width="5" class="nd-core"/><polygon points="${hex(200,200,74)}" fill="none" stroke="url(#ndL)" stroke-width="1.5" stroke-dasharray="6 8" class="nd-spin"/>
+    <image href="logo-mark.png" x="168" y="168" width="64" height="64"/></svg>`; }
+async function pageNode(){ let d=demoLoad(); const n=nodeState(d);
+  app.innerHTML=`<section class="nd-hero"><div><span class="eyebrow">⛏️ BEWON Node · ${tr("ডেমো নেটওয়ার্ক","Demo network")}</span><h1>${tr("BEWON নোড মাইনিং","BEWON Node Mining")}</h1>
+      <p>${tr("দিনে একবার চাপ দিয়ে নোড চালু করুন। ২৪ ঘণ্টা চলবে, সাইট বন্ধ থাকলেও। BWN পয়েন্ট জমবে, যা দিয়ে NFT মিন্ট করা যায়। নোড কীভাবে কাজ করে তা শেখার জন্য।","Start your node once a day. It runs for 24 hours, even with the site closed, and collects BWN points you can use to mint NFTs. Built to learn how nodes work.")}</p>
+      <div class="nd-warn">🎮 ${tr("ডেমো: BWN পয়েন্ট কোনো কয়েন বা টোকেন নয়, তোলা বা বেচা যায় না, টাকায় বদলায় না। কোনো বিনিয়োগ নয়।","Demo: BWN points are not a coin or token. They cannot be withdrawn, sold or turned into money. This is not an investment.")}</div></div>
+    <div class="nd-art" id="ndA">${nodeArt(!!n.sess&&Date.now()<nodeEnd(n),NODE_T.filter(t=>n.lic[t.k]).map(t=>t.c))}</div></section>
+    <section style="padding-top:0"><div id="ndB"></div></section>`;
+  const body=$("#ndB"), alive=()=>location.hash.startsWith("#/node")&&$("#ndB")===body;
+  const draw=()=>{ if(!alive()) return; const on=!!n.sess&&Date.now()<nodeEnd(n), un=nodeUnclaimed(d), rate=nodeRate(d), left=on?nodeEnd(n)-Date.now():0, hh=Math.floor(left/3600e3), mm=Math.floor(left%3600e3/60000), ss=Math.floor(left%60000/1000), pc=on?100-left/NODE_H*100:0;
+    const blk=Math.floor((Date.now()-Date.UTC(2026,9,1))/12000), nodes=NODE_T.reduce((a,t)=>a+(n.lic[t.k]||0),0);
+    $("#ndA").querySelector("svg").classList.toggle("on",on);
+    body.innerHTML=`<div class="nd-stats">${[["⚡",tr("নোডের শক্তি","Node power"),rate.toFixed(2)+" BWN/h"],["⏳",tr("সেশনের বাকি","Session left"),on?`${String(hh).padStart(2,"0")}:${String(mm).padStart(2,"0")}:${String(ss).padStart(2,"0")}`:tr("বন্ধ","Stopped")],["💎",tr("জমা পয়েন্ট","Unclaimed"),un.toFixed(4)],["🏦",tr("মোট BWN","Total BWN"),(n.pts||0).toFixed(2)],["🔥",tr("টানা দিন","Streak"),n.streak+" "+tr("দিন","days")],["🧱",tr("ডেমো ব্লক","Demo block"),"#"+blk.toLocaleString("en-US")]].map(([i,a,b])=>`<div class="card"><i>${i}</i><span>${a}</span><b>${b}</b></div>`).join("")}</div>
+      <div class="card nd-run"><div class="nd-bar"><div style="width:${pc.toFixed(1)}%"></div></div>
+        <div class="dm-act" style="justify-content:center;flex-wrap:wrap"><button class="btn btn-primary nd-big" id="ndS"${on?" disabled":""}>${on?"✅ "+tr("নোড চলছে","Node running"):"▶ "+tr("নোড চালু করুন (২৪ ঘণ্টা)","Start node (24 hours)")}</button><button class="btn btn-ghost nd-big" id="ndC"${un<0.0001?" disabled":""}>💎 ${tr("পয়েন্ট নিন","Claim points")}</button></div>
+        <p class="muted" style="margin:0;text-align:center;font-size:12.5px">${tr(`বোনাস: টানা দিন +${Math.min(n.streak,10)*5}% (সর্বোচ্চ +৫০%)`,`Bonus: streak +${Math.min(n.streak,10)*5}% (max +50%)`)} · ${tr(`Node Key NFT +${nodeKeys(d)*10}%`,`Node Key NFT +${nodeKeys(d)*10}%`)} · ${nodes} ${tr("টা নোড","nodes")}</p></div>
+      <h2 style="margin:26px 0 12px">${tr("নোডের ধরন","Node types")}</h2>
+      <div class="nd-tiers">${NODE_T.map(t=>{ const have=n.lic[t.k]||0; return `<div class="card nd-t" style="--tc:${t.c}"><div class="nd-th"><span>${t.ic}</span><b>${t.n}</b></div><div class="nd-tr"><b>${t.rate}</b> BWN/h</div>
+        <ul><li>${tr("দাম","Price")}: <b>${t.price?usd(t.price)+" "+tr("ডেমো USDT","demo USDT"):tr("ফ্রি","Free")}</b></li><li>${tr("সর্বোচ্চ","Max")}: ${t.max}</li><li>${tr("আপনার আছে","You own")}: <b>${have}</b></li></ul>
+        ${t.price?`<button class="btn ${have<t.max?"btn-primary":"btn-ghost"}" data-buy="${t.k}"${have>=t.max?" disabled":""}>${have>=t.max?tr("সর্বোচ্চ হয়ে গেছে","Max reached"):tr("লাইসেন্স নিন","Get licence")}</button>`:`<span class="pill p-tp2">${tr("সবার জন্য চালু","On for everyone")}</span>`}</div>`; }).join("")}</div>
+      <div class="dm-msg" id="ndM" role="status" style="margin-top:10px"></div>
+      <div class="dm-grid" style="margin-top:20px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+        <div class="dm-panel card"><h3>❓ ${tr("নোড কী?","What is a node?")}</h3><ol class="dx-how"><li>${tr("নোড হলো একটা কম্পিউটার যা ব্লকচেইনের লেনদেন যাচাই করে আর নেটওয়ার্ক চালু রাখে।","A node is a computer that checks blockchain transactions and keeps the network running.")}</li><li>${tr("আসল নেটওয়ার্কে নোড চালাতে হার্ডওয়্যার, বিদ্যুৎ আর কয়েন জমা (stake) লাগে, আর ঝুঁকি থাকে।","On a real network, running a node needs hardware, power and often staked coins, and it carries risk.")}</li><li>${tr("এখানে আমরা সেই ধারণাটা খেলার মতো দেখাই: শক্তি, সেশন, পুরস্কার, বোনাস।","Here we show the idea as a game: power, sessions, rewards and bonuses.")}</li><li>${tr("সাবধান: 'নোড কিনে প্রতিদিন আয়' এমন অনেক প্রকল্প প্রতারণা। টাকা দেওয়ার আগে যাচাই করুন।","Careful: many 'buy a node, earn daily' schemes are scams. Check before paying anything.")}</li></ol><a href="BEWON_NFT_Node_Whitepaper.pdf" target="_blank" rel="noopener" class="btn btn-ghost">📄 ${tr("নোড ও NFT হোয়াইট পেপার","Node & NFT whitepaper")}</a></div>
+        <div class="dm-panel card"><h3>🧾 ${tr("নোডের কাজের তালিকা","Node activity")}</h3>${n.log.length?`<div class="tbl-wrap dm"><table><tbody>${n.log.slice(0,15).map(x=>`<tr><td><b>${{start:tr("নোড চালু","Node started"),claim:tr("পয়েন্ট নেওয়া","Points claimed"),lic:tr("লাইসেন্স","Licence"),mint:tr("NFT মিন্ট","NFT mint")}[x.type]||x.type}</b>${x.k?` · ${esc((NODE_T.find(t=>t.k===x.k)||{}).n||"")}`:""}<div class="muted" style="font-size:12px">${ago(x.t)}</div></td><td class="r">${x.pts!=null?"+"+x.pts.toFixed(2)+" BWN":x.usdt?"−"+usd(x.usdt)+" USDT":""}</td></tr>`).join("")}</tbody></table></div>`:`<div class="dm-empty">${tr("এখনো কিছু হয়নি। নোড চালু করুন।","Nothing yet. Start your node.")}</div>`}
+          <a class="btn btn-ghost" href="#/nft">🖼️ ${tr("BWN দিয়ে NFT মিন্ট করুন","Mint an NFT with BWN")}</a></div></div>`;
+    const say=(t,ok)=>{ const e=$("#ndM"); e.textContent=t; e.className="dm-msg "+(ok?"ok":"err"); };
+    const claim=()=>{ const u=nodeUnclaimed(d); if(u<=0) return 0; n.pts+=u; n.tot+=u; n.last=Math.min(Date.now(),nodeEnd(n)); nodeLog(n,{type:"claim",pts:u}); return u; };
+    $("#ndS").onclick=()=>{ claim(); const today=new Date().toISOString().slice(0,10), yest=new Date(Date.now()-864e5).toISOString().slice(0,10); n.streak=n.day===yest?n.streak+1:n.day===today?n.streak:1; n.day=today; n.sess=Date.now(); n.last=n.sess; nodeLog(n,{type:"start"}); demoSave(d); draw(); };
+    $("#ndC").onclick=()=>{ const u=claim(); demoSave(d); draw(); if(u) say("✓ +"+u.toFixed(4)+" BWN",true); };
+    body.querySelectorAll("[data-buy]").forEach(b=>b.onclick=()=>{ const t=NODE_T.find(x=>x.k===b.dataset.buy); if((n.lic[t.k]||0)>=t.max) return; if(d.cash<t.price) return say(tr("ডেমো ব্যালান্স যথেষ্ট নয়।","Not enough demo balance."),false);
+      claim(); d.cash-=t.price; n.lic[t.k]=(n.lic[t.k]||0)+1; nodeLog(n,{type:"lic",k:t.k,usdt:t.price}); demoSave(d); draw(); say("✓ "+t.n+" "+tr("যোগ হয়েছে","added"),true); }); };
+  draw(); every(1000,()=>{ if(!alive()) return; const on=!!n.sess&&Date.now()<nodeEnd(n), e1=$(".nd-stats"); if(!e1) return; const cells=e1.querySelectorAll("b"), left=on?nodeEnd(n)-Date.now():0;
+    cells[1].textContent=on?[left/3600e3,left%3600e3/60000,left%60000/1000].map(x=>String(Math.floor(x)).padStart(2,"0")).join(":"):tr("বন্ধ","Stopped"); cells[2].textContent=nodeUnclaimed(d).toFixed(4); cells[5].textContent="#"+Math.floor((Date.now()-Date.UTC(2026,9,1))/12000).toLocaleString("en-US");
+    const bar=document.querySelector(".nd-bar div"); if(bar) bar.style.width=(on?100-left/NODE_H*100:0).toFixed(2)+"%"; if(!on&&$("#ndS")&&$("#ndS").disabled) draw(); }); }
 
 /* ---------- square: learning articles ---------- */
 const SQ_BASE=[
@@ -3342,19 +3614,19 @@ async function addBacktest(){
 }
 
 /* ---------- app shell ---------- */
-const AICON={"home": `<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>`, "market": `<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>`, "signals": `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>`, "learn": `<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 3 9 3 12 0v-5"/>`, "whale": `<path d="M3 13c0-4 4-7 9-7 4 0 7 2 9 5-1 4-5 7-10 7-4 0-8-2-8-5z"/><path d="M21 11l1-4M16 11h.01"/>`, "square": `<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9h8M8 13h8M8 17h4"/>`, "more": `<circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>`, "forex": `<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>`, "engine": `<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>`, "demo": `<rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11v3M5.5 12.5h3M15.5 12h.01M18 13.5h.01"/>`, "news": `<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/>`, "about": `<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/>`, "pdf": `<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M12 11v6M9 14l3 3 3-3"/>`, "tg": `<path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/>`};
+const AICON={"daily": `<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/>`, "nft": `<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/>`, "node": `<path d="M12 2l8 4.5v9L12 20l-8-4.5v-9z"/><circle cx="12" cy="11" r="3"/>`, "home": `<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>`, "market": `<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>`, "signals": `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>`, "learn": `<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 3 9 3 12 0v-5"/>`, "whale": `<path d="M3 13c0-4 4-7 9-7 4 0 7 2 9 5-1 4-5 7-10 7-4 0-8-2-8-5z"/><path d="M21 11l1-4M16 11h.01"/>`, "square": `<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9h8M8 13h8M8 17h4"/>`, "more": `<circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>`, "forex": `<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>`, "engine": `<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>`, "demo": `<rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11v3M5.5 12.5h3M15.5 12h.01M18 13.5h.01"/>`, "news": `<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/>`, "about": `<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/>`, "pdf": `<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M12 11v6M9 14l3 3 3-3"/>`, "tg": `<path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/>`};
 const asv=k=>`<svg viewBox="0 0 24 24">${AICON[k]}</svg>`;
 function quickActions(){ const a=[["signals","#/signals",tr("সিগনাল","Signals")],["market","#/market",tr("মার্কেট","Markets")],["forex","#/forex","Forex"],["whale","#/whales",tr("বড় ট্রেড","Big trades")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["news","#/blog",tr("ব্লগ","Blog")],["engine","#/engine",tr("ইঞ্জিন","Engine")],["tg",SITE.telegram,"Telegram"]];
   return a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':""}><i>${asv(k)}</i>${n}</a>`).join(""); }
-function drawFoot(){ const el=$("#footNav"); if(!el) return; const a=[["home","#/",tr("হোম","Home")],["market","#/market",tr("মার্কেট","Market")],["signals","#/signals",tr("সিগনাল","Signals")],["forex","#/forex","Forex"],["engine","#/engine","Engine"],["demo","#/demo",tr("ডেমো","Demo")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["whale","#/whales",tr("বড় ট্রেড","Big trades")],["square","#/square","Square"],["about","#/about",tr("সম্পর্কে","About")],["pdf","BEWON_Guide.pdf",tr("গাইড PDF","Guide PDF")],["tg",SITE.telegram,"Telegram"]];
+function drawFoot(){ const el=$("#footNav"); if(!el) return; const a=[["home","#/",tr("হোম","Home")],["market","#/market",tr("মার্কেট","Market")],["signals","#/signals",tr("সিগনাল","Signals")],["daily","#/daily",tr("গ্লোবাল পিক","Global picks")],["forex","#/forex","Forex"],["engine","#/engine","Engine"],["demo","#/demo",tr("ডেমো","Demo")],["learn","#/learn",tr("শেখা","Learn")],["news","#/news",tr("নিউজ","News")],["whale","#/whales",tr("বড় ট্রেড","Big trades")],["square","#/square","Square"],["nft","#/nft","NFT"],["node","#/node",tr("নোড মাইনিং","Node mining")],["about","#/about",tr("সম্পর্কে","About")],["pdf","BEWON_Guide.pdf",tr("গাইড PDF","Guide PDF")],["tg",SITE.telegram,"Telegram"]];
   el.innerHTML=a.map(([k,u,n])=>`<a href="${u}"${k==="tg"?' target="_blank" rel="noopener"':k==="pdf"?' download="BEWON_Guide.pdf"':""}>${asv(k)}${n}</a>`).join(""); }
 function svcList(){ const tg=SITE.telegram; return [
   [tr("সাধারণ","Common"),[["👤",FB.user?"আমার অ্যাকাউন্ট":"লগইন / রেজিস্ট্রেশন",FB.user?"My account":"Log in / Register","#/account"],["🎮","ট্রেডিং","Trading","#/demo/trade"],["👛","অ্যাসেট / ওয়ালেট","Assets / Wallet","#/demo/wallet"],["➕","টাকা যোগ","Add funds","#/demo/wallet"],["🧾","লেনদেনের ইতিহাস","Transaction history","#/demo/wallet"],["📣","রেফার লিংক","Referral","#/account"],["🔐","নিরাপত্তা ও 2FA অনুশীলন","Security & 2FA practice","#/demo/tools"],["🪪","KYC পাঠ","KYC lesson","#/demo/kyc"]]],
-  [tr("ট্রেড","Trade"),[["⇅","স্পট","Spot","#/demo/trade"],["📈","ফিউচার (TP/SL সহ)","Futures (with TP/SL)","#/demo/fut"],["🔄","কনভার্ট","Convert","#/demo/conv"],["🤝","P2P","P2P","#/demo/p2p"],["🤖","অটো ট্রেড বট","Auto trade bot","#/demo/bot"],["🎯","সিগনাল","Signals","#/signals"],["🥇","গোল্ড ট্রেড","Gold trading","#/gold"],["💱","Forex & Gold","Forex & Gold","#/forex"],["📒","ট্রেড খাতা","Trade journal","#/demo/journal"]]],
+  [tr("ট্রেড","Trade"),[["⇅","স্পট","Spot","#/demo/trade"],["📈","ফিউচার (TP/SL সহ)","Futures (with TP/SL)","#/demo/fut"],["🔄","কনভার্ট","Convert","#/demo/conv"],["🤝","P2P","P2P","#/demo/p2p"],["🤖","অটো ট্রেড বট","Auto trade bot","#/demo/bot"],["🎯","সিগনাল","Signals","#/signals"],["🌍","প্রতিদিনের গ্লোবাল পিক","Daily global picks","#/daily"],["🥇","গোল্ড ট্রেড","Gold trading","#/gold"],["💱","Forex & Gold","Forex & Gold","#/forex"],["📒","ট্রেড খাতা","Trade journal","#/demo/journal"]]],
   ["Earn",[["🌱","Earn","Earn","#/demo/earn"],["💰","অনলাইন ইনকাম শিখুন","Learn to earn online","#/learn/income"],["💼","রিমোট জব ও টুলস","Remote jobs & tools","#/learn/income"],["🎬","ভিডিও","Videos","#/learn/videos"],["🎁","এয়ারড্রপ","Airdrop","#/learn/drops"],["🆕","নতুন লিস্টিং","New listings","#/learn/listings"],["✨","নতুন কয়েন","New coins","#/learn/newcoins"]]],
   [tr("তথ্য","Information"),[["📊","মার্কেট","Markets","#/market"],["👑","BTC Dominance","BTC Dominance","#/learn/insights"],["🐋","বড় ট্রেড","Big trades","#/whales"],["🔓","টোকেন আনলক","Token unlock","#/learn/unlocks"],["📰","নিউজ","News","#/news"],["📝","ব্লগ","Blog","#/blog"],["✍️","Square","Square","#/square"],["🎓","ট্রেনিং গাইড","Training guide","#/learn/guide"],["🏆","Track record","Track record","#/signals"],["⚙️","ইঞ্জিন","Engine","#/engine"]]],
-  ["Web3",[["🌐","Web3 ওয়ালেট (ডেমো)","Web3 wallet (demo)","#/demo/web3"],["🔎","TestScan","TestScan","scan/"],["💼","পোর্টফোলিও ও অ্যালার্ট","Portfolio & alerts","#/demo/tools"]]],
-  [tr("সাহায্য","Help & Support"),[["✈️","Telegram","Telegram",tg],["📘","গাইড PDF","Guide PDF","BEWON_Guide.pdf"],["📄","হোয়াইট পেপার","Whitepaper","BEWON_Whitepaper.pdf"],["🎬","প্রচারের ভিডিও","Promo video","#/learn/videos"],["ℹ️","সম্পর্কে","About","#/about"]]]]; }
+  ["Web3",[["🖼️","NFT মার্কেটপ্লেস","NFT marketplace","#/nft"],["⛏️","নোড মাইনিং","Node mining","#/node"],["🌐","Web3 ওয়ালেট (ডেমো)","Web3 wallet (demo)","#/demo/web3"],["🔎","TestScan","TestScan","scan/"],["💼","পোর্টফোলিও ও অ্যালার্ট","Portfolio & alerts","#/demo/tools"]]],
+  [tr("সাহায্য","Help & Support"),[["✈️","Telegram","Telegram",tg],["📘","গাইড PDF","Guide PDF","BEWON_Guide.pdf"],["📄","হোয়াইট পেপার","Whitepaper","BEWON_Whitepaper.pdf"],["📑","NFT ও নোড হোয়াইট পেপার","NFT & Node whitepaper","BEWON_NFT_Node_Whitepaper.pdf"],["🎬","প্রচারের ভিডিও","Promo video","#/learn/videos"],["ℹ️","সম্পর্কে","About","#/about"]]]]; }
 function drawSheet(q){ const el=$("#sheetQa"); if(!el) return; el.style.display="block"; q=(q||"").toLowerCase().trim();
   const sec=svcList().map(([n,it])=>[n,it.filter(x=>!q||(x[1]+" "+x[2]).toLowerCase().includes(q)||n.toLowerCase().includes(q))]).filter(x=>x[1].length);
   const body=sec.length?sec.map(([n,it])=>`<h4 style="margin:16px 0 10px;font:700 14.5px Inter,'Hind Siliguri',sans-serif">${n}</h4><div class="qa">${it.map(x=>`<a href="${x[3]}"${/^(https:|scan\/|BEWON_)/.test(x[3])?' target="_blank" rel="noopener"':""}><i style="font-style:normal;font-size:20px">${x[0]}</i>${tr(x[1],x[2])}</a>`).join("")}</div>`).join(""):`<p class="muted" style="margin:16px 0">${tr("কিছু পাওয়া যায়নি।","Nothing found.")}</p>`;
@@ -3377,7 +3649,7 @@ async function route(){
   timers.forEach(clearInterval); timers=[]; liveStop(); if(chart){ chart.remove(); chart=null; } stopHero3D();
   const parts=(location.hash.replace(/^#\/?/,"")||"").split("/"), r=parts[0]||"home";
   document.querySelectorAll("#nav a,#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.r===(r==="coin"?"market":r)));
-  $("#moreBtn").classList.toggle("on",["forex","engine","news","blog","about","square","learn","whales","account","gold"].includes(r));
+  $("#moreBtn").classList.toggle("on",["forex","engine","news","blog","about","square","learn","whales","account","gold","nft","node","daily"].includes(r));
   document.title=`${SITE.name} — ${tr("ফ্রি ক্রিপ্টো সিগনাল","Free crypto signals")}`;
   window.scrollTo(0,0); document.body.classList.toggle("is-home",r==="home"); if(r==="home"){ if(!BGW) startBgWorld(); } else stopBgWorld();
   if(r==="market") await pageMarket();
@@ -3393,6 +3665,9 @@ async function route(){
   else if(r==="learn"){ if(["insights","listings","unlocks","newcoins","drops","guide","income","videos"].includes(parts[1])) LEARN_TAB=parts[1]; await pageLearn(); }
   else if(r==="square") await pageSquare();
   else if(r==="whales") await pageWhales();
+  else if(r==="nft") await pageNft();
+  else if(r==="daily") await pageDaily();
+  else if(r==="node") await pageNode();
   else if(r==="about") await pageAbout();
   else await pageHome();
 }

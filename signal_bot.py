@@ -63,7 +63,10 @@ NEWS_PER_RUN = 2            # প্রতি ১৫ মিনিটে সর�
 SITE_URL = "https://bewonnetwork.github.io/crypto-singals/"
 
 COINS = ["BTC", "ETH", "BNB", "SOL", "XRP", "ADA", "DOGE", "AVAX", "LINK", "DOT",
-         "LTC", "UNI", "AAVE", "NEAR", "SUI", "POL", "ONDO", "PEPE"]      # ১৮টা কয়েনের ওয়াচলিস্ট
+         "LTC", "UNI", "AAVE", "NEAR", "SUI", "POL", "ONDO", "PEPE",
+         "TRX", "TON", "SHIB", "BCH", "XLM", "HBAR", "APT", "ARB", "OP", "INJ",
+         "FIL", "ATOM", "ICP", "ETC", "WIF", "RENDER", "TAO", "ENA", "SEI", "TIA",
+         "FET", "ZEC"]      # ৪০টা কয়েনের ওয়াচলিস্ট (কোনোটা না পেলে বাদ দিয়ে বাকিগুলো চলবে)
 INTERVAL = "1h"             # 15m / 1h / 4h
 TREND_INTERVAL = "4h"       # বড় ট্রেন্ড দেখার টাইমফ্রেম
 MIN_CONFIDENCE = 60         # এর কম Confidence হলে সিগনাল পাঠাবে না
@@ -82,6 +85,13 @@ FX_PAIRS = {
     "GBPUSD": ("GBPUSD=X", "GBP/USD", "GBP/USD"),
     "USDJPY": ("JPY=X", "USD/JPY", "USD/JPY"),
     "XAUUSD": ("GC=F", "XAU/USD", "Gold (XAU/USD)"),
+    "AUDUSD": ("AUDUSD=X", "AUD/USD", "AUD/USD"),
+    "USDCAD": ("CAD=X", "USD/CAD", "USD/CAD"),
+    "USDCHF": ("CHF=X", "USD/CHF", "USD/CHF"),
+    "NZDUSD": ("NZDUSD=X", "NZD/USD", "NZD/USD"),
+    "EURJPY": ("EURJPY=X", "EUR/JPY", "EUR/JPY"),
+    "GBPJPY": ("GBPJPY=X", "GBP/JPY", "GBP/JPY"),
+    "XAGUSD": ("SI=F", "XAG/USD", "Silver (XAG/USD)"),
 }
 TWELVE_KEY = os.getenv("TWELVE_DATA_KEY", "")   # ঐচ্ছিক ব্যাকআপ (GitHub Secret-এ বসাবেন)
 EMA_FAST, EMA_SLOW = 9, 21
@@ -100,6 +110,7 @@ LOOP_EVERY_SEC = 300        # --loop মোডে কত সেকেন্ড �
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
 # ======================================================================================
 
+DAILY_FORCE = False         # --daily মোডে আজকের পিক এখনই বানায়
 HTTP = requests.Session()
 HTTP.headers["User-Agent"] = "free-signal-bot/1.0"
 COLS = ["time", "open", "high", "low", "close", "volume"]
@@ -313,7 +324,7 @@ def fx_market_open(now):
 
 
 def pip_size(sym):
-    return 0.01 if "JPY" in sym else (0.1 if sym.startswith("XAU") else 0.0001)
+    return 0.01 if ("JPY" in sym or sym.startswith("XAG")) else (0.1 if sym.startswith("XAU") else 0.0001)
 
 
 # ----------------------------- ২. ইন্ডিকেটর ও সিগনাল -----------------------------
@@ -493,7 +504,7 @@ def label(sym):
 
 def fmt(x, sym=None):
     if sym in FX_PAIRS:
-        return f"{x:,.{2 if sym.startswith('XAU') else 3 if 'JPY' in sym else 5}f}"
+        return f"{x:,.{2 if sym.startswith('XAU') else 3 if ('JPY' in sym or sym.startswith('XAG')) else 5}f}"
     if x >= 100:
         return f"{x:,.2f}"
     if x >= 1:
@@ -1833,6 +1844,7 @@ def run_once(force_digest=False):
             posts.run_guide_video(state, HTTP, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, SITE_URL)
         if state.get("guide_video_v") and not state.pop("guide_done_now", False):
             posts.run_pro_video(state, HTTP, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, SITE_URL)
+        posts.run_nftnode_video(state, HTTP, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, SITE_URL)
     except Exception as e:
         print("liquidations error:", str(e)[:80])
 
@@ -1876,6 +1888,14 @@ def run_once(force_digest=False):
         extras.run(state, HTTP, frames, lambda c: add_indicators(get_candles(c)[0]), state.get("fear_greed"))
     except Exception as e:
         print("extras error:", str(e)[:80])
+    # প্রতিদিনের গ্লোবাল পিক: বিভিন্ন উৎস মিলিয়ে দিনে একবার (৬ UTC = দুপুর ১২টা ঢাকা), ফলাফল খোলাখুলি
+    try:
+        import daily
+        daily.run(state, HTTP, frames, COINS, list(FX_PAIRS) if (FOREX_ENABLED and fx_market_open(datetime.now(timezone.utc))) else [],
+                  lambda s: add_indicators(get_fx_candles(s)[0]), lambda t: send_telegram(t), SITE_URL, state.get("fear_greed"),
+                  force=DAILY_FORCE)
+    except Exception as e:
+        print("daily picks error:", str(e)[:100])
     # উৎস পরীক্ষা: নতুন সংস্করণ এলে একবার নিজে থেকে চলে, ফল docs/data/probe.json-এ থাকে
     try:
         import probe
@@ -1922,6 +1942,9 @@ if __name__ == "__main__":
         run_test()
     elif mode == "digest":
         run_once(force_digest=True)
+    elif mode == "daily":
+        DAILY_FORCE = True
+        run_once()
     elif mode == "backtest":
         import backtest
         backtest.run()

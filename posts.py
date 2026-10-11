@@ -11,7 +11,7 @@ DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "data")
 LIQ_EVERY_H = 4            # liquidation card every 4 hours
 LIQ_ALERT_X = 3.0          # alert when the last hour is 3x the 24h hourly average ...
 LIQ_ALERT_MIN = 3_000_000  # ... and at least $3M
-LIQ_COINS = ["BTC", "ETH", "SOL", "XRP", "DOGE", "BNB", "ADA", "AVAX", "LINK", "SUI", "LTC", "DOT", "NEAR", "AAVE", "UNI", "PEPE", "ONDO", "POL"]
+LIQ_COINS = ["BTC", "ETH", "SOL", "XRP", "DOGE", "BNB", "ADA", "AVAX", "LINK", "SUI", "LTC", "DOT", "NEAR", "AAVE", "UNI", "PEPE", "ONDO", "POL", "TRX", "TON", "SHIB", "BCH", "HBAR", "APT", "ARB", "OP", "WIF", "ENA", "TIA", "FET"]
 SIGN = "— BEWON Signal Assistant"
 DISC = "This is an automated summary of public market data for informational purposes only — not financial advice, and no profit is guaranteed."
 
@@ -307,3 +307,41 @@ def run_pro_video(state, http, token, chat_id, site_url):
             print("pro video error:", r.text[:200])
     except Exception as e:
         print("pro video error:", e)
+
+
+# ------------------------------------------------------------------ 7. NFT + node mining video (music only) — Telegram only, not on the website
+NN_V = "2026-10-12-nftnode"
+NN_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "media")
+NN_FILE = os.path.join(NN_DIR, "nft-node-music.mp4")
+
+
+def run_nftnode_video(state, http, token, chat_id, site_url):
+    if state.get("nftnode_video_v") == NN_V or not os.path.exists(NN_FILE):
+        return
+    cap = ("🎬 <b>New on BEWON: NFT Marketplace + Node Mining</b>\n\n"
+           "🖼 Explore 4 NFT collections\n💎 Buy, make offers, list and sell\n✨ Mint your own NFT\n"
+           "⛏ Start your node once a day — it runs 24 hours\n🤖 Auto bot trade size now follows your fund\n📈 40 coins + 11 forex markets\n\n"
+           f"🖼 {site_url}#/nft\n⛏ {site_url}#/node\n\n"
+           "Demo mode: play money only. BWN points and demo NFTs have no money value. Not financial advice.\n\n"
+           "📢 Share BEWON with your friends!\n\n" + SIGN)
+    if not token or not chat_id:
+        print("---- NFT/node video (Telegram not set) ----")
+        state["nftnode_video_v"] = NN_V
+        return
+    try:
+        files = {}
+        with open(NN_FILE, "rb") as f:
+            files["video"] = ("BEWON_NFT_Node.mp4", f, "video/mp4")
+            tp = os.path.join(NN_DIR, "nft-node-thumb.jpg")
+            if os.path.exists(tp):
+                files["thumbnail"] = ("nft-node-thumb.jpg", open(tp, "rb").read(), "image/jpeg")
+            r = http.post(f"https://api.telegram.org/bot{token}/sendVideo",
+                          data={"chat_id": chat_id, "caption": cap, "parse_mode": "HTML", "supports_streaming": "true",
+                                "width": 1080, "height": 1920, "duration": 73},
+                          files=files, timeout=180)
+        if r.ok:
+            state["nftnode_video_v"] = NN_V
+        else:
+            print("nft/node video error:", r.text[:200])
+    except Exception as e:
+        print("nft/node video error:", e)
