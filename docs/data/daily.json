@@ -492,7 +492,9 @@
    "opened": "2026-10-11T18:52:42+00:00",
    "status": "open",
    "also_bot": false
-  },
+  }
+ ],
+ "history": [
   {
    "coin": "INJ",
    "market": "crypto",
@@ -504,26 +506,17 @@
    "score": 78,
    "agree": 5,
    "n": 6,
-   "src": {
-    "tv1h": 0.355,
-    "tv4h": 0.558,
-    "tv1d": 0.512,
-    "engine": 0.992,
-    "rsi": 69.5,
-    "mom": 0.6,
-    "lsr": 1.19,
-    "crowd": -0.093
-   },
    "opened": "2026-10-11T18:52:42+00:00",
-   "status": "open",
-   "also_bot": false
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-11T22:56:27+00:00",
+   "exit": 7.734
   }
  ],
- "history": [],
  "stats": {
   "tp1": 0,
   "tp2": 0,
-  "sl": 0,
+  "sl": 1,
   "expired": 0
  },
  "sources": [
@@ -545,5 +538,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-11T18:52:42+00:00"
+ "updated": "2026-10-11T22:56:27+00:00"
 }

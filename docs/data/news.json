@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T19:12:16+00:00",
+ "updated": "2026-10-11T22:55:40+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,33 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "3fd88692e2",
+   "title": "Trader nets $1.28 million on new 1,000x exchange Papertrade by moving Hyperliquid’s ETH prices",
+   "link": "https://www.theblock.co/news/defi/2026-10-11-trader-nets-1-28-million-on-new-1000x-exchange-papertrade-by-moving-hyperliquids-eth-prices-418239",
+   "source": "The Block",
+   "published": "2026-10-11T22:26:02+00:00",
+   "summary": "The same wallet later lost $450,000 when 30 short positions were liquidated on Saturday night after staying open for more than three hours.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Copper-fluid-ribbons-frame-papertrade__clean.png"
+  },
+  {
+   "id": "7af783d9c6",
+   "title": "Optimism’s Unichain deal will put more chains under one operator",
+   "link": "https://cryptoslate.com/jing-wangs-optimism-adds-unichain-to-its-operating-plans-while-users-exit-rights-remain-uneven/",
+   "source": "CryptoSlate",
+   "published": "2026-10-11T22:00:06+00:00",
+   "summary": "The October migration would concentrate more chain operations at Optimism, while Ethereum fallback routes depend on each chain’s deployed contracts. The post Optimism’s Unichain deal will put more chains under one operator appeared first…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/optimism-layer2-ecosystem.webp"
+  },
+  {
+   "id": "2d0ebc54fc",
+   "title": "Some Aave loans sit near liquidation with collateral that can take hours to cash out",
+   "link": "https://cryptoslate.com/aaves-yield-collateral-markets-reveal-a-thin-cushion-before-liquidation/",
+   "source": "CryptoSlate",
+   "published": "2026-10-11T20:00:33+00:00",
+   "summary": "October 9 borrower snapshots put the focus on whether collateral sales or redemptions can fund stablecoin repayment. The post Some Aave loans sit near liquidation with collateral that can take hours to cash out appeared first on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-liquidation-balance.webp"
+  },
   {
    "id": "51d7bc62c3",
    "title": "XRP’s next Wall Street expansion comes with an unexpected complication from Ripple",
@@ -58,7 +85,7 @@
    "title": "Saylor teases Strategy Bitcoin buying after ending September with STRC buybacks",
    "link": "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-11T17:07:00+00:00",
+   "published": "2026-10-11T17:11:00+00:00",
    "summary": "Investors will have to wait an extra day to find out if and how much Strategy added to its Bitcoin treasury in the first week of October.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4NVX0EM8XS2QYBBRNFM2NW0/hi-why-saylors-strategy-keeps-buying-bitcoin-the-long-term-bet-explained-1.png"
   },
@@ -157,7 +184,7 @@
    "title": "Here’s what happened in crypto today",
    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-11T12:45:00+00:00",
+   "published": "2026-10-11T12:59:00+00:00",
    "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
   },
@@ -180,15 +207,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4N7GC7PDTK5CW4F08YBFCW8/hi-what-is-a-phishing-attack-in-crypto-and-how-to-prevent-it.jpg"
   },
   {
-   "id": "ee4800bd99",
-   "title": "AI discovers XRP Ledger flaw that could mint 18 trillion tokens and put $94 billion market at risk",
-   "link": "https://cryptoslate.com/ai-discovers-xrp-ledger-flaw-that-could-mint-18-trillion-tokens-and-put-94-billion-market-at-risk/",
-   "source": "CryptoSlate",
-   "published": "2026-10-11T10:30:30+00:00",
-   "summary": "Testing produced spendable XRP, but the disclosure reports no evidence of public-network exploitation and explains why the fix took effect immediately. The post AI discovers XRP Ledger flaw that could mint 18 trillion tokens and put $94…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-ledger-patch-security.webp"
-  },
-  {
    "id": "7a1c5088f0",
    "title": "Ledger confirms unauthorized hardware implant, says losses may exceed $86M",
    "link": "https://cointelegraph.com/news/ledger-confirms-unauthorized-hardware-implant-losses-may-exceed-86m?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -205,15 +223,6 @@
    "published": "2026-10-11T07:50:00+00:00",
    "summary": "The two measures attempt to set the stage for a potential US Supreme Court battle over federal and state jurisdiction.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2TJB7047S01XKJY4FWVJGEK/judge-hammer-regulation-cftc-2.jpg"
-  },
-  {
-   "id": "437a06f0f0",
-   "title": "Bitcoin companies are learning that holding forever takes cash",
-   "link": "https://cryptoslate.com/bitcoin-companies-are-learning-that-holding-forever-takes-cash/",
-   "source": "CryptoSlate",
-   "published": "2026-10-11T07:00:24+00:00",
-   "summary": "Metaplanet sold 10,000 BTC and bought back 11,000 at a higher average price to show it was willing to sell its Bitcoin. The Japanese treasury company was pursuing a credit rating and better access to financing, and its Oct. 5 disclosure…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-shield-dome.webp"
   },
   {
    "id": "2233753ac3",
@@ -718,15 +727,6 @@
    "published": "2026-10-09T10:16:55+00:00",
    "summary": "Thailand’s new crypto rules taking effect Oct. 16. They allow Thai asset managers to launch crypto ETFs on the local stock exchange, with bitcoin and ether initially eligible.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/70284126e74d9b4b82638d4995ed0ba9820e80a9-4883x2747.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "40e66a9214",
-   "title": "French lawmakers back stablecoin swap tax in 2027 budget bill",
-   "link": "https://cointelegraph.com/news/france-crypto-stablecoin-swap-tax-2027-budget?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-09T10:16:48+00:00",
-   "summary": "France’s Finance Committee backed taxes on stablecoin swaps, as well as unrealized crypto gains when households with more than 800,000 euros move abroad.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FT35RCS7WXQT4HAHHT14GK/regulations-france-crypto.jpg"
   }
  ]
 }
