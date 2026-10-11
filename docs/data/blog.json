@@ -1,6 +1,322 @@
 {
  "posts": [
   {
+   "slug": "trend-and-timeframes",
+   "type": "learn",
+   "date": "2026-10-11T07:50:38+00:00",
+   "title": "Trend and Timeframes: Trade With the Bigger Picture",
+   "title_bn": "ট্রেন্ড ও টাইমফ্রেম: বড় ছবির সাথে ট্রেড করুন",
+   "sum_en": "A signal on a small chart works better when the bigger charts agree. Learn the simple top-down check our engine also uses.",
+   "sum_bn": "ছোট চার্টের সিগনাল তখনই ভালো কাজ করে যখন বড় চার্টও একই কথা বলে। আমাদের ইঞ্জিন যে সহজ পরীক্ষাটা করে সেটা শিখুন।",
+   "body": {
+    "pts_bn": [
+     "আগে দৈনিক আর ৪ ঘণ্টার চার্ট দেখুন: দাম উঠছে, নামছে, না পাশাপাশি চলছে?",
+     "তারপর ১ ঘণ্টার চার্টে Entry খুঁজুন, বড় ট্রেন্ডের দিকেই।",
+     "বড় ট্রেন্ডের উল্টো দিকে ট্রেড মানে স্রোতের বিপরীতে সাঁতার।",
+     "আমাদের Market Watch নোটে 'Timeframes' লাইনে ✅ মানে ওই টাইমফ্রেম একমত, ❌ মানে নয়।",
+     "সব টাইমফ্রেম একমত হলেও লাভের নিশ্চয়তা নেই; শুধু সম্ভাবনা একটু ভালো।"
+    ],
+    "pts_en": [
+     "Start with the daily and 4-hour charts: is price rising, falling or moving sideways?",
+     "Then look for an entry on the 1-hour chart, in the direction of the bigger trend.",
+     "Trading against the bigger trend is swimming against the current.",
+     "In our Market Watch notes the 'Timeframes' line shows ✅ when a timeframe agrees and ❌ when it does not.",
+     "Even when every timeframe agrees nothing is guaranteed; the odds are only somewhat better."
+    ]
+   }
+  },
+  {
+   "slug": "crypto-market-digest-october-11-2026",
+   "type": "digest",
+   "date": "2026-10-11T07:50:32+00:00",
+   "title": "Crypto Market Digest — October 11, 2026",
+   "sum_en": "STRK leads today's movers (+55.8%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে STRK (+55.8%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "price": 0.110942,
+      "ch": 55.78,
+      "vol": 847023735,
+      "rank": 87
+     },
+     {
+      "sym": "CFX",
+      "name": "Conflux",
+      "price": 0.069894,
+      "ch": 37.42,
+      "vol": 137123923,
+      "rank": 131
+     },
+     {
+      "sym": "TIA",
+      "name": "Celestia",
+      "price": 0.607788,
+      "ch": 24.19,
+      "vol": 199280403,
+      "rank": 108
+     },
+     {
+      "sym": "AERO",
+      "name": "Aerodrome Finance",
+      "price": 0.959058,
+      "ch": 14.27,
+      "vol": 124282643,
+      "rank": 81
+     },
+     {
+      "sym": "INJ",
+      "name": "Injective",
+      "price": 7.61,
+      "ch": 8.27,
+      "vol": 139973043,
+      "rank": 93
+     },
+     {
+      "sym": "FIGR_HELOC",
+      "name": "Figure Heloc",
+      "price": 1.065,
+      "ch": 6.38,
+      "vol": 1524517,
+      "rank": 9
+     },
+     {
+      "sym": "ARB",
+      "name": "Arbitrum",
+      "price": 0.195328,
+      "ch": 6.17,
+      "vol": 140367065,
+      "rank": 67
+     },
+     {
+      "sym": "GRASS",
+      "name": "Grass",
+      "price": 0.678516,
+      "ch": 4.7,
+      "vol": 19069146,
+      "rank": 122
+     }
+    ],
+    "losers": [
+     {
+      "sym": "HASH",
+      "name": "Provenance Blockchain",
+      "price": 0.00536913,
+      "ch": -15.04,
+      "vol": 3279.32,
+      "rank": 146
+     },
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "price": 0.493088,
+      "ch": -12.67,
+      "vol": 15181868,
+      "rank": 119
+     },
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 1.49,
+      "ch": -7.93,
+      "vol": 17521479,
+      "rank": 33
+     },
+     {
+      "sym": "KAIA",
+      "name": "Kaia",
+      "price": 0.054125,
+      "ch": -7.01,
+      "vol": 26063130,
+      "rank": 135
+     },
+     {
+      "sym": "M",
+      "name": "MemeCore",
+      "price": 0.966254,
+      "ch": -4.38,
+      "vol": 912462,
+      "rank": 50
+     },
+     {
+      "sym": "JUP",
+      "name": "Jupiter",
+      "price": 0.356007,
+      "ch": -4.29,
+      "vol": 71476135,
+      "rank": 71
+     },
+     {
+      "sym": "QNT",
+      "name": "Quant",
+      "price": 235.93,
+      "ch": -4.26,
+      "vol": 116888697,
+      "rank": 34
+     },
+     {
+      "sym": "币安人生",
+      "name": "币安人生 (BinanceLife)",
+      "price": 0.566765,
+      "ch": -4.02,
+      "vol": 9487691,
+      "rank": 111
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 83170.65,
+      "ch": 0.52
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2506.39,
+      "ch": 0.52
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 748.82,
+      "ch": 0.14
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 109.82,
+      "ch": -0.03
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.3973,
+      "ch": -0.72
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2483,
+      "ch": -1.94
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.08558,
+      "ch": -0.73
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 10.348,
+      "ch": -1.89
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 12.918,
+      "ch": 0.19
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.236,
+      "ch": -1.59
+     },
+     {
+      "sym": "LTC",
+      "name": "LTC",
+      "price": 63.96,
+      "ch": 0.38
+     },
+     {
+      "sym": "UNI",
+      "name": "UNI",
+      "price": 7.578,
+      "ch": 1.61
+     },
+     {
+      "sym": "AAVE",
+      "name": "AAVE",
+      "price": 167.66,
+      "ch": -3.53
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR",
+      "price": 5.249,
+      "ch": 1.59
+     },
+     {
+      "sym": "SUI",
+      "name": "SUI",
+      "price": 1.1013,
+      "ch": -0.15
+     },
+     {
+      "sym": "POL",
+      "name": "POL",
+      "price": 0.1019,
+      "ch": 1.24
+     },
+     {
+      "sym": "ONDO",
+      "name": "ONDO",
+      "price": 0.4887,
+      "ch": -2.01
+     },
+     {
+      "sym": "PEPE",
+      "name": "PEPE",
+      "price": 4.04e-06,
+      "ch": 0.0
+     }
+    ],
+    "up": 56,
+    "total": 140,
+    "fear_greed": {
+     "value": 61,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.12057,
+      "ch": -0.06
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.3241,
+      "ch": 0.12
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 158.20399,
+      "ch": 0.22
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4224.5,
+      "ch": 1.61
+     }
+    ],
+    "stats": {
+     "win": 0,
+     "loss": 8,
+     "tp2": 0,
+     "expired": 0
+    },
+    "open": 0
+   }
+  },
+  {
    "slug": "trending-in-crypto-october-10-2026",
    "type": "trending",
    "date": "2026-10-10T15:23:26+00:00",
@@ -3130,5 +3446,5 @@
    }
   }
  ],
- "updated": "2026-10-10T15:23:26+00:00"
+ "updated": "2026-10-11T07:50:38+00:00"
 }

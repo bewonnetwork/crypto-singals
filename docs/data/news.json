@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T19:26:37+00:00",
+ "updated": "2026-10-11T07:50:41+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,15 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "437a06f0f0",
+   "title": "Bitcoin companies are learning that holding forever takes cash",
+   "link": "https://cryptoslate.com/bitcoin-companies-are-learning-that-holding-forever-takes-cash/",
+   "source": "CryptoSlate",
+   "published": "2026-10-11T07:00:24+00:00",
+   "summary": "Metaplanet sold 10,000 BTC and bought back 11,000 at a higher average price to show it was willing to sell its Bitcoin. The Japanese treasury company was pursuing a credit rating and better access to financing, and its Oct. 5 disclosure…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-shield-dome.webp"
+  },
   {
    "id": "96c63fba25",
    "title": "BTCPay Docker users must opt into Tor at their next update to keep onion access",
@@ -241,15 +250,6 @@
    "published": "2026-10-10T03:00:00+00:00",
    "summary": "Visa’s survey of 14,250 people found interest in stablecoin payments is growing, though only 6% of respondents correctly understood how they work.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/6a3e8c93fcda98c3decad9229705aecebec1b999-1170x780.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "f1ece4fed9",
-   "title": "Celsius founder faces lifetime ban, but can trade his own crypto",
-   "link": "https://cryptoslate.com/celsius-founder-faces-lifetime-ban-but-can-trade-his-own-crypto/",
-   "source": "CryptoSlate",
-   "published": "2026-10-10T01:50:00+00:00",
-   "summary": "A qualifying DOJ payment can satisfy the $25 million obligation, while a separate $10 million judgment has a sentence-completion condition with exceptions. The post Celsius founder faces lifetime ban, but can trade his own crypto appeared…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/mashinsky-new-york-settlement-standard.jpg"
   },
   {
    "id": "57466e6480",
