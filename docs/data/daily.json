@@ -473,7 +473,7 @@
    "market": "crypto",
    "side": "BUY",
    "entry": 5.72,
-   "sl": 5.543735934878669,
+   "sl": 5.72,
    "tp1": 5.896264065121331,
    "tp2": 6.072528130242662,
    "score": 80,
@@ -491,7 +491,8 @@
    },
    "opened": "2026-10-11T18:52:42+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   }
  ],
  "history": [
@@ -538,5 +539,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-11T22:56:27+00:00"
+ "updated": "2026-10-12T02:06:16+00:00"
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T22:55:40+00:00",
+ "updated": "2026-10-12T02:05:23+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,51 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "098f2628d8",
+   "title": "Aave’s USDG rollover plan has a yield below most quoted borrowing rates",
+   "link": "https://cryptoslate.com/aaves-proposed-usdg-rollover-faces-higher-borrowing-costs-and-uncertain-rewards/",
+   "source": "CryptoSlate",
+   "published": "2026-10-12T02:00:47+00:00",
+   "summary": "February PT yield trails three quoted funding rates; GHO was cheaper in the Oct. 7 snapshot, and replacement-token rewards remain unconfirmed. The post Aave’s USDG rollover plan has a yield below most quoted borrowing rates appeared first…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/09/aave-defi-lending.webp"
+  },
+  {
+   "id": "2b0dee7a85",
+   "title": "Sui Foundation invests $30 million in DATA Network as AI data protocol migrates to Sui",
+   "link": "https://www.theblock.co/news/ecosystems/2026-10-11-sui-foundation-invests-30-million-data-network-418243",
+   "source": "The Block",
+   "published": "2026-10-12T02:00:00+00:00",
+   "summary": "DATA Network is set to be upgraded to run as a protocol natively on Sui, and its independent chain will be retired.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/11/20241118_Sui_News.jpg"
+  },
+  {
+   "id": "d68b58796f",
+   "title": "XRP Ledger defends emergency patch for unlimited XRP bug",
+   "link": "https://cointelegraph.com/news/xrp-ledger-defends-emergency-patch-for-unlimited-xrp-bug?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-12T01:21:29+00:00",
+   "summary": "The XRP Ledger Foundation pushed back against claims that its emergency security patch was forced on network operators.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4PTZZ4W2YTP18XY2SMEBFG3/xrpl.jpg"
+  },
+  {
+   "id": "1358277c55",
+   "title": "Starknet considers leaving Ethereum for a quantum-resistant Layer 1",
+   "link": "https://cryptoslate.com/starknet-doubles-in-a-week-as-ethereum-exit-plan-ignite-2-billion-trading-frenzy/",
+   "source": "CryptoSlate",
+   "published": "2026-10-11T23:00:46+00:00",
+   "summary": "Starknet's STRK token more than doubled over seven days while developers considered leaving Ethereum to build an independent Layer 1 blockchain. A CoinGlass snapshot checked at 20:28 UTC on Oct. 11 showed STRK at $0.1190, up 17.7% over 24…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/starknet-ethereum-quantum-rally.webp"
+  },
+  {
+   "id": "d3d82a245a",
+   "title": "Ledger attack spreads to EU, AI finds ’18 trillion XRP’ bug: Hodler’s Digest",
+   "link": "https://cointelegraph.com/magazine/ledger-attack-spreads-to-eu-ai-finds-18-trillion-xrp-bug-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-11T22:57:53+00:00",
+   "summary": "An user reports buying a tampered Ledger from a big retailer in Europe. Security researchers use AI to uncover a “$94 billion” XRP bug — but receive just a $250K bounty.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4PCWNDZ4KC7D9SH89H62G5A/updated-cover-collage-oct-9.png"
+  },
   {
    "id": "3fd88692e2",
    "title": "Trader nets $1.28 million on new 1,000x exchange Papertrade by moving Hyperliquid’s ETH prices",
@@ -153,15 +198,6 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-versus-crypto-etfs.webp"
   },
   {
-   "id": "81eaf108c8",
-   "title": "New iPhone spyware can hunt for crypto wallets and extract their data every 15 seconds",
-   "link": "https://cryptoslate.com/new-iphone-spyware-can-hunt-for-crypto-wallets-and-extract-their-data-every-15-seconds/",
-   "source": "CryptoSlate",
-   "published": "2026-10-11T13:00:14+00:00",
-   "summary": "iVerify’s P7 DarkSword report describes remote commands to collect imToken-related data after an iPhone is compromised. The post New iPhone spyware can hunt for crypto wallets and extract their data every 15 seconds appeared first on…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/iphone-spyware-wallet-exposure.webp"
-  },
-  {
    "id": "626b3201e6",
    "title": "How Zcash Plans to Hide Your Keys From AI and Quantum Attacks",
    "link": "https://decrypt.co/380637/zcash-plans-hide-keys-ai-quantum-attacks",
@@ -187,15 +223,6 @@
    "published": "2026-10-11T12:59:00+00:00",
    "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
-   "id": "964808e2e1",
-   "title": "What happens when crypto trades stocks while Wall Street sleeps?",
-   "link": "https://cryptoslate.com/who-prices-a-stock-index-when-its-shares-arent-trading/",
-   "source": "CryptoSlate",
-   "published": "2026-10-11T12:00:20+00:00",
-   "summary": "Wall Street closes at 4 p.m., but apparently that's becoming more of a suggestion than a rule. You can now spend the evening watching Netflix and making leveraged bets on American semiconductor companies while the exchange where their…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/cracked-clock-market-cycles.webp"
   },
   {
    "id": "b8963dea01",
@@ -406,7 +433,7 @@
   },
   {
    "id": "b70294536a",
-   "title": "THORChain exec accuses Tether of temporarily freezing USDT vaults",
+   "title": "THORChain dev accuses Tether of temporarily freezing USDT vaults",
    "link": "https://cointelegraph.com/news/thorchain-tether-freezing-usdt-addresses?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
    "published": "2026-10-09T19:04:03+00:00",
@@ -700,33 +727,6 @@
    "published": "2026-10-09T10:40:59+00:00",
    "summary": "Thailand's SEC has limited initial crypto ETFs to bitcoin and ether, with new custody, exposure, and trading rules taking effect Oct. 16.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/thai-sec-crypto-etfs.png"
-  },
-  {
-   "id": "02d158bb4a",
-   "title": "UK sanctions three crypto exchanges tied to Russian illicit funds",
-   "link": "https://cointelegraph.com/news/uk-sanctions-crypto-exchanges-russian-illicit-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-09T10:34:37+00:00",
-   "summary": "The UK sanctioned crypto exchanges and payment processors, some of which were tied to thousands of Russian entities and the sanctioned HTX exchange.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FZR0YP4HAX26C5RVN1W1T2/hi-russias-law-on-crypto-whats-the-latest-2.jpg"
-  },
-  {
-   "id": "01c8fbd280",
-   "title": "Sam Altman-backed bitcoin life insurer Meanwhile raises $37.5 million round led by Bain Capital Crypto",
-   "link": "https://www.theblock.co/news/deals/2026-10-09-sam-altman-backed-bitcoin-life-insurer-meanwhile-raises-37-5-million-round-led-by-bain-capital-crypto-418131",
-   "source": "The Block",
-   "published": "2026-10-09T10:33:46+00:00",
-   "summary": "Meanwhile raised $37.5M from existing investors, bringing the Sam Altman-backed bitcoin life insurer's total funding above $180 million.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/meanwhile.png"
-  },
-  {
-   "id": "4028130e9f",
-   "title": "Thailand opens door to locally listed bitcoin and ether ETFs",
-   "link": "https://www.coindesk.com/policy/2026/10/09/thailand-opens-door-to-locally-listed-bitcoin-and-ether-etfs",
-   "source": "CoinDesk",
-   "published": "2026-10-09T10:16:55+00:00",
-   "summary": "Thailand’s new crypto rules taking effect Oct. 16. They allow Thai asset managers to launch crypto ETFs on the local stock exchange, with bitcoin and ether initially eligible.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/70284126e74d9b4b82638d4995ed0ba9820e80a9-4883x2747.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   }
  ]
 }
