@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T02:05:23+00:00",
+ "updated": "2026-10-12T09:13:09+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,123 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "6c8e341c68",
+   "title": "U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead",
+   "link": "https://www.coindesk.com/markets/2026/10/12/u-s-inflation-ethereum-upgrade-talks-crypto-week-ahead",
+   "source": "CoinDesk",
+   "published": "2026-10-12T08:58:24+00:00",
+   "summary": "Your look at what's coming in the week starting Oct. 12.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/c357579ddef2051b405b9e89f8525dd02709081d-5760x3240.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "e49e3f896f",
+   "title": "South Korean bank launches Bitcoin-backed business loans: Report",
+   "link": "https://cointelegraph.com/news/south-korea-jeonbuk-bank-bitcoin-backed-business-loans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-12T08:45:58+00:00",
+   "summary": "Jeonbuk Bank reportedly began offering Bitcoin-backed loans to corporate customers, with a third-party custodian holding the cryptocurrency used as collateral.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QKGRPPCEHYJ6JB01H5VKKA/south-korea-bank.png"
+  },
+  {
+   "id": "876f27361f",
+   "title": "Why a bug that could have threatened XRP's 100 billion supply cap stayed hidden for years",
+   "link": "https://www.coindesk.com/tech/2026/10/12/why-a-bug-that-could-have-threatened-xrp-s-100-billion-supply-cap-stayed-hidden-for-years",
+   "source": "CoinDesk",
+   "published": "2026-10-12T08:32:17+00:00",
+   "summary": "The XRP Ledger Foundation said normal parameters never triggered the bug that could have broken XRP's supply cap, which is why it was undetected for years.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/af945cfdd3152f9ebc96d44f89ccafea550ccb57-5760x3840.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "674557467d",
+   "title": "Solana sandwich bots took $29.7 million before costs, mostly targeting Pump.fun",
+   "link": "https://cryptoslate.com/solana-sandwich-bots-took-29-7-million-before-costs-bitquery-estimates/",
+   "source": "CryptoSlate",
+   "published": "2026-10-12T08:30:49+00:00",
+   "summary": "Pump.fun's launch curve and PumpSwap accounted for 96% of detected attacks in the study's 11-month window. The post Solana sandwich bots took $29.7 million before costs, mostly targeting Pump.fun appeared first on CryptoSlate .",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-sandwich-trader-trap.webp"
+  },
+  {
+   "id": "91e4f46019",
+   "title": "Ledger says unauthorized implant found in at least one device sold by CryptoBilis",
+   "link": "https://www.coindesk.com/tech/2026/10/12/ledger-says-unauthorized-implant-found-in-at-least-one-device-sold-by-cryptobilis",
+   "source": "CoinDesk",
+   "published": "2026-10-12T07:49:40+00:00",
+   "summary": "Ledger confirmed an unauthorized hardware implant in a device linked to crypto losses at CryptoBilis, a Southeast Asian reseller. The company says confirmed cases are limited and its internal systems remain unaffected.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/5607275c13867a17ff6663ed3a0586b0c4361b2b-2560x1707.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "47757d0cb3",
+   "title": "XRP rebounded as Binance spot turnover fell nearly 80%",
+   "link": "https://cryptoslate.com/xrp-futures-partially-rebuild-after-at-least-40-million-in-bullish-bets-were-liquidated/",
+   "source": "CryptoSlate",
+   "published": "2026-10-12T07:30:02+00:00",
+   "summary": "Binance and Bybit exposure is returning after XRPL.to's sampled liquidation wave, while Binance spot turnover declined during the rebound. The post XRP rebounded as Binance spot turnover fell nearly 80% appeared first on CryptoSlate .",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-liquidation-market-rebound.webp"
+  },
+  {
+   "id": "37bbffcae2",
+   "title": "Global watchdog flags stablecoin risks, AI threats ahead of G20",
+   "link": "https://cointelegraph.com/news/fsb-stablecoin-ai-risks-g20-finance-meeting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-12T06:30:21+00:00",
+   "summary": "The Financial Stability Board flagged cross-border stablecoin risks and AI-related cybersecurity threats while urging G20 policymakers to support stronger safeguards.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4QBHGDKZ7W5F58K506PQBRF/g20-meeting.png"
+  },
+  {
+   "id": "bda3909561",
+   "title": "Ledger wallet implant exposes a gap in its authenticity check",
+   "link": "https://cryptoslate.com/ledger-confirms-hidden-implant-in-crypto-wallet-as-93-million-theft-investigation-widens/",
+   "source": "CryptoSlate",
+   "published": "2026-10-12T06:00:34+00:00",
+   "summary": "Ledger has confirmed an unauthorized hardware implant in one affected customer's wallet as independent investigators estimate $93.2 million in suspected cryptocurrency thefts. In an Oct. 10 statement, the hardware wallet manufacturer said…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/cryptobilis-wallet-route-trace.webp"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-12T05:55:00+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "e8c6e1a744",
+   "title": "DATA Network to migrate to Sui, retire own chain",
+   "link": "https://cointelegraph.com/news/data-network-to-migrate-to-sui-retire-its-own-chain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-12T05:15:43+00:00",
+   "summary": "The migration is backed by a $30 million investment from Sui Foundation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4Q7JSD7Z2H5EKPCK19PNAQK/blockchain-2.jpg"
+  },
+  {
+   "id": "c971681742",
+   "title": "Bitcoin shrugs off ETF outflows to trade above $84,000 as oil falls",
+   "link": "https://www.coindesk.com/markets/2026/10/12/bitcoin-shrugs-off-etf-outflows-to-trade-above-usd84-000-as-oil-falls",
+   "source": "CoinDesk",
+   "published": "2026-10-12T04:49:30+00:00",
+   "summary": "Bitcoin is holding on to its weekend gains as oil trades lower. ETFs lost over $600 million in outflows last week.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/67eec2173e38b1d5355dc2ba2a2aa0f4620c070f-2169x1199.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "b772551fe8",
+   "title": "French lawmakers back reporting rule for crypto wallets over $112K",
+   "link": "https://cointelegraph.com/news/french-lawmakers-back-reporting-rule-for-crypto-wallets-over-112k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-12T04:45:15+00:00",
+   "summary": "Holders could face fines of up to 10,000 euros for failing to declare qualifying assets.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4Q6GWATH459W87C1BCBF448/france-tax.jpg"
+  },
+  {
+   "id": "9938bd6319",
+   "title": "Former Acting Chair Caroline Pham says CFTC can regulate almost everything except ‘onions and box office receipts’",
+   "link": "https://www.theblock.co/news/regulation/2026-10-12-former-cftc-acting-chair-caroline-pham-onions-418246",
+   "source": "The Block",
+   "published": "2026-10-12T04:33:57+00:00",
+   "summary": "Pham said the CFTC's recent proposals are 'absolutely the kind of protection' needed for crypto retail traders in the United States.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/10/20221003_CarolinePham2.jpg"
+  },
   {
    "id": "098f2628d8",
    "title": "Aave’s USDG rollover plan has a yield below most quoted borrowing rates",
@@ -153,15 +270,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/Bitcoin-decrypt-style-27-gID_7.jpg"
   },
   {
-   "id": "5bd9eee2e4",
-   "title": "Bitcoin hedge funds face a liquidation trap when their collateral is split across markets",
-   "link": "https://cryptoslate.com/bitcoin-hedge-funds-face-a-liquidation-trap-when-their-collateral-is-split-across-markets/",
-   "source": "CryptoSlate",
-   "published": "2026-10-11T16:00:20+00:00",
-   "summary": "Here's a hypothetical situation: a hedge fund is making money, but one of its exchanges is about to liquidate its position anyway. Bitcoin has fallen, its short position on CME is profitable, and the matching long on Hyperliquid is…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-hedge-margin-pressure.webp"
-  },
-  {
    "id": "59d18c3138",
    "title": "Clarity's failure could speed crypto innovation while shielding incumbents",
    "link": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
@@ -180,24 +288,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/728f1c4d7d3e3ad57795074a8f7602efad6c0fb7-5636x3170.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   },
   {
-   "id": "89eff4e67b",
-   "title": "Tokenized stocks can carry the same rights without the same trading protections",
-   "link": "https://cryptoslate.com/secs-tokenized-stock-exemption-leaves-key-price-feed-choices-to-venues/",
-   "source": "CryptoSlate",
-   "published": "2026-10-11T15:00:49+00:00",
-   "summary": "Douro Labs’ October 9 submission seeks feed-quality guidance, while venue safeguards and covered FINRA-member broker duties remain distinct. The post Tokenized stocks can carry the same rights without the same trading protections appeared…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/sec-tokenized-stock-price-feeds.webp"
-  },
-  {
-   "id": "a927e21139",
-   "title": "XRP ETFs extend a 13-week inflow streak as Bitcoin, Ethereum and Solana funds shed $1.25 billion",
-   "link": "https://cryptoslate.com/bitcoin-ethereum-and-solana-etfs-lose-1-25-billion-as-xrp-extends-13-week-inflow-streak/",
-   "source": "CryptoSlate",
-   "published": "2026-10-11T14:00:41+00:00",
-   "summary": "US-listed XRP ETFs extended their inflow streak to 13 weeks as Bitcoin, Ethereum and Solana funds suffered nearly $1.25 billion in combined withdrawals during the week ended Oct. 9. Bitcoin ETFs recorded $681.1 million in net withdrawals,…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-versus-crypto-etfs.webp"
-  },
-  {
    "id": "626b3201e6",
    "title": "How Zcash Plans to Hide Your Keys From AI and Quantum Attacks",
    "link": "https://decrypt.co/380637/zcash-plans-hide-keys-ai-quantum-attacks",
@@ -214,15 +304,6 @@
    "published": "2026-10-11T13:00:00+00:00",
    "summary": "Investors are using blockchain-based shares for smaller and after-hours trades. The IMF says liquidity, legal rules and settlement systems have not caught up.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/a1cc4ecb548aa7f3f0c05e51784af125e119c5bd-2048x1380.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-11T12:59:00+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
   },
   {
    "id": "b8963dea01",
@@ -646,87 +727,6 @@
    "published": "2026-10-09T13:20:12+00:00",
    "summary": "Experts highlight several support levels, from $83,000 down to $72,000, that Bitcoin may need to test in a bearish start to Uptober.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/bitcoin-crack-decrypt-style-gID_7.jpg"
-  },
-  {
-   "id": "1a611a7ffe",
-   "title": "Base creator Jesse Pollak says equities and non-dollar stablecoins will lead upcoming ‘tokenization supercycle’",
-   "link": "https://www.theblock.co/news/defi/2026-10-09-tokenization-supercycle-base-jesse-pollak-418144",
-   "source": "The Block",
-   "published": "2026-10-09T13:12:57+00:00",
-   "summary": "Coinbase launched tokenized stocks on Base six weeks ago, with about $70 million to $100 million in daily volume, according to Pollak.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/jesse_pollak_base_1920x1080.jpg"
-  },
-  {
-   "id": "40366d63a5",
-   "title": "DWF Labs subsidiaries sue BitGo for $141 million over alleged token lock-up breach",
-   "link": "https://www.coindesk.com/policy/2026/10/09/dwf-labs-subsidiaries-sue-bitgo-for-usd141-million-over-alleged-token-lock-up-breach",
-   "source": "CoinDesk",
-   "published": "2026-10-09T12:23:54+00:00",
-   "summary": "DWF is seeking $114 million in damages on the basis BitGo’s token sales resulted in direct losses through the fall in tokens' prices.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/20b32fd8cd327bc8631f52da23df84063b120957-1000x563.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "e634999d5e",
-   "title": "UK Targets Cryptomus and TokenSpot in New Russia Sanctions Package",
-   "link": "https://decrypt.co/380568/uk-targets-cryptomus-and-tokenspot-in-new-russia-sanctions-package",
-   "source": "Decrypt",
-   "published": "2026-10-09T12:04:07+00:00",
-   "summary": "The package hits five crypto and payment platforms, two of which handled transactions with Russia’s A7 network, the UK government said.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/russia-moscow-red-square-kremlin-decrypt-style-gID_7.jpg"
-  },
-  {
-   "id": "b3ab513325",
-   "title": "Morning Minute: Uptober Turns Sour as Crypto Majors Slide",
-   "link": "https://decrypt.co/380569/morning-minute-uptober-turns-sour-as-crypto-majors-slide",
-   "source": "Decrypt",
-   "published": "2026-10-09T11:41:15+00:00",
-   "summary": "Is this the beginning of a bigger selloff with the anniversary of 10/10 looming? Or just a leverage flush before the next leg up?",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/bitcoin-down-decrypt-style-gID_7.png"
-  },
-  {
-   "id": "c3d7c8963f",
-   "title": "Zcash developers set January target for quantum-resistant payments after ‘bunker mode’ scare",
-   "link": "https://www.coindesk.com/tech/2026/10/09/zcash-developers-set-january-target-for-quantum-resistant-payments-after-bunker-mode-scare",
-   "source": "CoinDesk",
-   "published": "2026-10-09T11:39:05+00:00",
-   "summary": "The plan concerns public payments, where about seven in 10 ZEC sit. A separate wallet tool would keep balance checks from revealing which addresses belong together.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/6359a9ff83ee7ba7465c0ff2289cb8ae23e7ac43-1500x1000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "3779b69e59",
-   "title": "Trump's Iran pledge underpins crypto gains as bitcoin bears face liquidation pressure",
-   "link": "https://www.coindesk.com/daybook-us/2026/10/09/trump-s-iran-pledge-underpins-crypto-gains-as-bitcoin-bears-face-liquidation-pressure",
-   "source": "CoinDesk",
-   "published": "2026-10-09T11:09:04+00:00",
-   "summary": "Your day-ahead look for Oct. 9, 2026",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/f1989cca173a6179b4bf2c5e784f3cb6ef51c75a-1000x668.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "59af78f548",
-   "title": "ESMA seeks evidence tokenized collateral can be cashed out in crisis",
-   "link": "https://cointelegraph.com/news/esma-tokenized-collateral-eu-clearinghouses?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-09T10:49:24+00:00",
-   "summary": "ESMA is seeking industry feedback on the legal, liquidity and operational risks of tokenized collateral before deciding whether additional EU regulatory measures are necessary.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4G06R9TT5S4ED9Y271GTGVR/hi-company-wants-to-launch-digital-currency-bank-stablecoin-eu-1.jpg"
-  },
-  {
-   "id": "4c291b2589",
-   "title": "Bitcoin steadies near $82,500 after Trump rules out Iran strike before midterms",
-   "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-steadies-near-usd82-500-after-trump-rules-out-iran-strike-before-midterms",
-   "source": "CoinDesk",
-   "published": "2026-10-09T10:44:22+00:00",
-   "summary": "Bitcoin recovered to around $82,500 after Trump ruled out an Iran strike, but remains about 4% lower on the week, while ether has lost 9%.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/abb4aca167f34914c10d26d1200f41bbd63c76ae-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "34ae86540e",
-   "title": "Thailand SEC issues bitcoin and ether ETF rules set to take effect Oct. 16",
-   "link": "https://www.theblock.co/news/regulation/2026-10-09-thailand-sec-issues-bitcoin-and-ether-etf-rules-set-to-take-effect-oct-16-418132",
-   "source": "The Block",
-   "published": "2026-10-09T10:40:59+00:00",
-   "summary": "Thailand's SEC has limited initial crypto ETFs to bitcoin and ether, with new custody, exposure, and trading rules taking effect Oct. 16.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/thai-sec-crypto-etfs.png"
   }
  ]
 }
