@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-12-2026",
+   "type": "trending",
+   "date": "2026-10-12T19:03:47+00:00",
+   "title": "Trending in Crypto — October 12, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (BUNKER, W, PRL…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "BUNKER",
+      "name": "Bunker Mode",
+      "rank": 818,
+      "price": 0.022192157583512853,
+      "ch": 1.3
+     },
+     {
+      "sym": "W",
+      "name": "Wormhole",
+      "rank": 236,
+      "price": 0.02086031023679583,
+      "ch": -0.46
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "rank": 116,
+      "price": 1.5268683311612008,
+      "ch": 12.96
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 20,
+      "price": 5.4106940575032425,
+      "ch": -5.23
+     },
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "rank": 96,
+      "price": 0.09559766417267071,
+      "ch": -18.45
+     },
+     {
+      "sym": "PONS",
+      "name": "Pons",
+      "rank": 189,
+      "price": 0.297240290834506,
+      "ch": -17.02
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 119,
+      "price": 0.007790874684511601,
+      "ch": -4.62
+     },
+     {
+      "sym": "GRASS",
+      "name": "Grass",
+      "rank": 111,
+      "price": 0.7762509373424822,
+      "ch": 1.99
+     },
+     {
+      "sym": "S",
+      "name": "Sonic",
+      "rank": 179,
+      "price": 0.055930993152740326,
+      "ch": -15.0
+     },
+     {
+      "sym": "RSR",
+      "name": "Reserve Rights",
+      "rank": 231,
+      "price": 0.00226370753611443,
+      "ch": 39.29
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 82402,
+      "ch": -1.45,
+      "vol": 24948138850,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2512.64,
+      "ch": -0.84,
+      "vol": 12059338008,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 107.56,
+      "ch": -3.52,
+      "vol": 2851882520,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.36,
+      "ch": -3.41,
+      "vol": 1552525510,
+      "rank": 5
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 5.42,
+      "ch": -5.41,
+      "vol": 1046224722,
+      "rank": 20
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1236.64,
+      "ch": -2.53,
+      "vol": 885425440,
+      "rank": 10
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 743.42,
+      "ch": -1.13,
+      "vol": 713641636,
+      "rank": 4
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 83.43,
+      "ch": -3.4,
+      "vol": 679799913,
+      "rank": 11
+     }
+    ]
+   }
+  },
+  {
    "slug": "why-keep-a-trading-journal",
    "type": "learn",
    "date": "2026-10-12T09:13:05+00:00",
@@ -4084,5 +4232,5 @@
    }
   }
  ],
- "updated": "2026-10-12T09:13:05+00:00"
+ "updated": "2026-10-12T19:03:48+00:00"
 }
