@@ -639,111 +639,11 @@
  },
  "open": [
   {
-   "coin": "TIA",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 0.6212,
-   "sl": 0.592288677320648,
-   "tp1": 0.6501113226793519,
-   "tp2": 0.6790226453587038,
-   "score": 81,
-   "agree": 5,
-   "n": 6,
-   "src": {
-    "tv1h": 0.355,
-    "tv4h": 0.512,
-    "tv1d": 0.603,
-    "engine": 0.953,
-    "rsi": 66.9,
-    "mom": 1.0,
-    "lsr": 1.24,
-    "crowd": -0.119
-   },
-   "opened": "2026-10-13T07:46:14+00:00",
-   "status": "open",
-   "also_bot": false
-  },
-  {
-   "coin": "RENDER",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 2.161,
-   "sl": 2.073439516998064,
-   "tp1": 2.248560483001936,
-   "tp2": 2.336120966003872,
-   "score": 80,
-   "agree": 5,
-   "n": 6,
-   "src": {
-    "tv1h": 0.491,
-    "tv4h": 0.512,
-    "tv1d": 0.558,
-    "engine": 0.9,
-    "rsi": 63.4,
-    "mom": 0.801,
-    "lsr": 1.39,
-    "crowd": -0.194
-   },
-   "opened": "2026-10-13T07:46:14+00:00",
-   "status": "open",
-   "also_bot": false
-  },
-  {
-   "coin": "INJ",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 7.993,
-   "sl": 7.699606126275229,
-   "tp1": 8.286393873724773,
-   "tp2": 8.579787747449544,
-   "score": 76,
-   "agree": 5,
-   "n": 6,
-   "src": {
-    "tv1h": 0.491,
-    "tv4h": 0.603,
-    "tv1d": 0.512,
-    "engine": 0.868,
-    "rsi": 61.2,
-    "mom": 0.227,
-    "lsr": 1.14,
-    "crowd": -0.068
-   },
-   "opened": "2026-10-13T07:46:14+00:00",
-   "status": "open",
-   "also_bot": true
-  },
-  {
-   "coin": "HBAR",
-   "market": "crypto",
-   "side": "SELL",
-   "entry": 0.08823,
-   "sl": 0.0898869104795438,
-   "tp1": 0.08657308952045621,
-   "tp2": 0.08491617904091243,
-   "score": 24,
-   "agree": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.242,
-    "tv4h": -0.445,
-    "tv1d": -0.2,
-    "engine": -0.835,
-    "rsi": 41.0,
-    "mom": -0.954,
-    "lsr": 1.92,
-    "crowd": -0.462
-   },
-   "opened": "2026-10-13T07:46:14+00:00",
-   "status": "open",
-   "also_bot": false
-  },
-  {
    "coin": "SHIB",
    "market": "crypto",
    "side": "SELL",
    "entry": 5.28e-06,
-   "sl": 5.371506565729362e-06,
+   "sl": 5.28e-06,
    "tp1": 5.188493434270639e-06,
    "tp2": 5.096986868541278e-06,
    "score": 25,
@@ -761,7 +661,27 @@
    },
    "opened": "2026-10-13T07:46:14+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
+  }
+ ],
+ "history": [
+  {
+   "coin": "EURJPY",
+   "market": "forex",
+   "side": "SELL",
+   "entry": 176.8280029296875,
+   "sl": 177.04938461855465,
+   "tp1": 176.60662124082035,
+   "tp2": 176.38523955195322,
+   "score": 34,
+   "agree": 3,
+   "n": 5,
+   "opened": "2026-10-13T07:46:14+00:00",
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-13T15:18:57+00:00",
+   "exit": 177.28700256347656
   },
   {
    "coin": "USDCHF",
@@ -774,43 +694,81 @@
    "score": 68,
    "agree": 3,
    "n": 5,
-   "src": {
-    "tv1h": 0.045,
-    "tv4h": 0.491,
-    "tv1d": 0.373,
-    "engine": 0.685,
-    "rsi": 49.0,
-    "mom": 0.032
-   },
    "opened": "2026-10-13T07:46:14+00:00",
-   "status": "open",
-   "also_bot": false
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-13T15:18:57+00:00",
+   "exit": 0.8325899839401245
   },
   {
-   "coin": "EURJPY",
-   "market": "forex",
+   "coin": "HBAR",
+   "market": "crypto",
    "side": "SELL",
-   "entry": 176.8280029296875,
-   "sl": 177.04938461855465,
-   "tp1": 176.60662124082035,
-   "tp2": 176.38523955195322,
-   "score": 34,
-   "agree": 3,
-   "n": 5,
-   "src": {
-    "tv1h": 0.091,
-    "tv4h": -0.355,
-    "tv1d": -0.256,
-    "engine": -0.888,
-    "rsi": 37.4,
-    "mom": -0.045
-   },
+   "entry": 0.08823,
+   "sl": 0.08823,
+   "tp1": 0.08657308952045621,
+   "tp2": 0.08491617904091243,
+   "score": 24,
+   "agree": 6,
+   "n": 6,
    "opened": "2026-10-13T07:46:14+00:00",
-   "status": "open",
-   "also_bot": false
-  }
- ],
- "history": [
+   "status": "TP1",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-13T15:18:57+00:00",
+   "exit": 0.08738
+  },
+  {
+   "coin": "INJ",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 7.993,
+   "sl": 7.699606126275229,
+   "tp1": 8.286393873724773,
+   "tp2": 8.579787747449544,
+   "score": 76,
+   "agree": 5,
+   "n": 6,
+   "opened": "2026-10-13T07:46:14+00:00",
+   "status": "SL",
+   "also_bot": true,
+   "closed": "2026-10-13T15:18:57+00:00",
+   "exit": 7.829
+  },
+  {
+   "coin": "RENDER",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 2.161,
+   "sl": 2.073439516998064,
+   "tp1": 2.248560483001936,
+   "tp2": 2.336120966003872,
+   "score": 80,
+   "agree": 5,
+   "n": 6,
+   "opened": "2026-10-13T07:46:14+00:00",
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-13T15:18:57+00:00",
+   "exit": 2.02
+  },
+  {
+   "coin": "TIA",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 0.6212,
+   "sl": 0.592288677320648,
+   "tp1": 0.6501113226793519,
+   "tp2": 0.6790226453587038,
+   "score": 81,
+   "agree": 5,
+   "n": 6,
+   "opened": "2026-10-13T07:46:14+00:00",
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-13T15:18:57+00:00",
+   "exit": 0.5853
+  },
   {
    "coin": "EURUSD",
    "market": "forex",
@@ -989,9 +947,9 @@
   }
  ],
  "stats": {
-  "tp1": 2,
+  "tp1": 3,
   "tp2": 4,
-  "sl": 4,
+  "sl": 9,
   "expired": 0
  },
  "sources": [
@@ -1013,5 +971,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-13T07:46:14+00:00"
+ "updated": "2026-10-13T15:18:57+00:00"
 }

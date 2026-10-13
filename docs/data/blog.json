@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-13-2026",
+   "type": "trending",
+   "date": "2026-10-13T15:18:06+00:00",
+   "title": "Trending in Crypto — October 13, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (WISP, DOPE, BUNKER…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "WISP",
+      "name": "Wisp",
+      "rank": 726,
+      "price": 0.025395312757129283,
+      "ch": 65.24
+     },
+     {
+      "sym": "DOPE",
+      "name": "Doge Pepe",
+      "rank": 857,
+      "price": 0.019521144237441102,
+      "ch": 32.4
+     },
+     {
+      "sym": "BUNKER",
+      "name": "Bunker Mode",
+      "rank": 774,
+      "price": 0.023681471020996363,
+      "ch": 3.5
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "rank": 104,
+      "price": 1.82020475347468,
+      "ch": 26.19
+     },
+     {
+      "sym": "S",
+      "name": "Sonic",
+      "rank": 159,
+      "price": 0.07030008153797102,
+      "ch": 22.08
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 120,
+      "price": 0.007792344507407891,
+      "ch": -1.27
+     },
+     {
+      "sym": "PONS",
+      "name": "Pons",
+      "rank": 187,
+      "price": 0.30193993222582666,
+      "ch": 1.76
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 591,
+      "price": 126.7310429262887,
+      "ch": -6.62
+     },
+     {
+      "sym": "ZYLO",
+      "name": "Zylo Ecosystem",
+      "rank": 849,
+      "price": 0.022896689753933896,
+      "ch": 0.72
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 21,
+      "price": 5.023114568296521,
+      "ch": -9.71
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 83588,
+      "ch": 1.1,
+      "vol": 31919902274,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2518.01,
+      "ch": -0.5,
+      "vol": 14906547866,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 107.69,
+      "ch": -1.37,
+      "vol": 4183331868,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.37,
+      "ch": -0.38,
+      "vol": 2213341679,
+      "rank": 5
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 5.02,
+      "ch": -10.63,
+      "vol": 1278247042,
+      "rank": 21
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1194.05,
+      "ch": -6.16,
+      "vol": 1081077266,
+      "rank": 10
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 81.31,
+      "ch": -3.94,
+      "vol": 944227230,
+      "rank": 11
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 744.69,
+      "ch": -0.26,
+      "vol": 798406431,
+      "rank": 4
+     }
+    ]
+   }
+  },
+  {
    "slug": "what-is-a-stop-loss",
    "type": "learn",
    "date": "2026-10-13T07:45:03+00:00",
@@ -4697,5 +4845,5 @@
    }
   }
  ],
- "updated": "2026-10-13T07:45:03+00:00"
+ "updated": "2026-10-13T15:18:06+00:00"
 }

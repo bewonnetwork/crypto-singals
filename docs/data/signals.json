@@ -44,12 +44,13 @@
  ],
  "stats": {
   "win": 1,
-  "loss": 8,
+  "loss": 9,
   "tp2": 1,
   "expired": 0
  },
  "min_conf": 60,
- "open": [
+ "open": [],
+ "history": [
   {
    "coin": "INJ",
    "side": "BUY",
@@ -57,9 +58,9 @@
    "sl": 7.699606126275229,
    "tp1": 8.286393873724773,
    "tp2": 8.579787747449544,
-   "tp1_hit": false,
    "opened": "2026-10-13T06:00:00+00:00",
-   "rsi": 61.2,
+   "closed": "2026-10-13T12:00:00+00:00",
+   "result": "SL",
    "conf": 95,
    "why": [
     "EMA 9/21 cross + RSI in range + above-average volume",
@@ -72,13 +73,10 @@
    ],
    "market": "crypto",
    "name": "INJ",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  }
- ],
- "history": [
+   "exit": 7.699606126275229,
+   "mdd": 3.69,
+   "h24": null
+  },
   {
    "coin": "AUDUSD",
    "side": "SELL",
@@ -313,6 +311,63 @@
  ],
  "watch": [
   {
+   "coin": "EURJPY",
+   "name": "EUR/JPY",
+   "market": "forex",
+   "side": "BUY",
+   "price": 177.28700256347656,
+   "score": 34,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "⚠ 5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-13T15:17:47+00:00"
+  },
+  {
+   "coin": "XAUUSD",
+   "name": "Gold (XAU/USD)",
+   "market": "forex",
+   "side": "SELL",
+   "price": 4190.39990234375,
+   "score": 34,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "⚠ 5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-13T15:17:44+00:00"
+  },
+  {
+   "coin": "UNI",
+   "name": "UNI",
+   "market": "crypto",
+   "side": "BUY",
+   "price": 7.535,
+   "score": 53,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-13T15:17:28+00:00"
+  },
+  {
    "coin": "AAVE",
    "name": "AAVE",
    "market": "crypto",
@@ -444,63 +499,6 @@
     "range"
    ],
    "time": "2026-10-09T14:42:02+00:00"
-  },
-  {
-   "coin": "LINK",
-   "name": "LINK",
-   "market": "crypto",
-   "side": "SELL",
-   "price": 13.703,
-   "score": 56,
-   "chk": "2/4",
-   "why": [
-    "⚠ 4H",
-    "15M",
-    "5M",
-    "run-up",
-    "RSI",
-    "⚠ extension",
-    "⚠ range"
-   ],
-   "time": "2026-10-07T02:27:00+00:00"
-  },
-  {
-   "coin": "DOGE",
-   "name": "DOGE",
-   "market": "crypto",
-   "side": "SELL",
-   "price": 0.0943,
-   "score": 40,
-   "chk": "3/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "5M",
-    "run-up",
-    "RSI",
-    "extension",
-    "⚠ range"
-   ],
-   "time": "2026-10-06T19:07:39+00:00"
-  },
-  {
-   "coin": "AVAX",
-   "name": "AVAX",
-   "market": "crypto",
-   "side": "BUY",
-   "price": 11.129,
-   "score": 70,
-   "chk": "2/4",
-   "why": [
-    "4H",
-    "15M",
-    "5M",
-    "run-up",
-    "RSI",
-    "⚠ extension",
-    "⚠ range"
-   ],
-   "time": "2026-10-06T00:16:50+00:00"
   }
  ],
  "fear_greed": {
@@ -557,61 +555,61 @@
   ],
   "quotes": {
    "EURUSD": {
-    "price": 1.11819,
-    "ch": -0.25,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 1.1197,
+    "ch": 0.19,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "GBPUSD": {
-    "price": 1.32258,
-    "ch": -0.21,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 1.32482,
+    "ch": 0.21,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "USDJPY": {
-    "price": 158.19099,
-    "ch": -0.11,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 158.377,
+    "ch": -0.19,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "XAUUSD": {
-    "price": 4215.7998,
-    "ch": 0.01,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 4190.3999,
+    "ch": -0.11,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "AUDUSD": {
-    "price": 0.69648,
-    "ch": -0.27,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 0.69852,
+    "ch": 0.28,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "USDCAD": {
-    "price": 1.42687,
-    "ch": 0.15,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 1.4213,
+    "ch": -0.42,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "USDCHF": {
-    "price": 0.83298,
-    "ch": 0.29,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 0.83259,
+    "ch": -0.19,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "NZDUSD": {
-    "price": 0.55994,
-    "ch": -0.2,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 0.56148,
+    "ch": 0.35,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "EURJPY": {
-    "price": 176.828,
-    "ch": -0.36,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 177.287,
+    "ch": -0.0,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "GBPJPY": {
-    "price": 209.216,
-    "ch": -0.32,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 209.827,
+    "ch": 0.03,
+    "time": "2026-10-13T14:00:00+00:00"
    },
    "XAGUSD": {
-    "price": 60.795,
-    "ch": -0.74,
-    "time": "2026-10-13T06:00:00+00:00"
+    "price": 59.695,
+    "ch": -1.89,
+    "time": "2026-10-13T14:00:00+00:00"
    }
   }
  },
- "updated": "2026-10-13T07:46:15+00:00"
+ "updated": "2026-10-13T15:18:57+00:00"
 }
