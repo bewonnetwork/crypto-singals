@@ -49,7 +49,61 @@
   "expired": 0
  },
  "min_conf": 60,
- "open": [],
+ "open": [
+  {
+   "coin": "FIL",
+   "side": "BUY",
+   "entry": 1.1827,
+   "sl": 1.1461055003800107,
+   "tp1": 1.2192944996199895,
+   "tp2": 1.2558889992399789,
+   "tp1_hit": false,
+   "opened": "2026-10-13T19:00:00+00:00",
+   "rsi": 56.6,
+   "conf": 72,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price above EMA 200",
+    "MACD momentum building",
+    "⚠ Weak trend (ADX 18)",
+    "RSI 57 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "FIL",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  },
+  {
+   "coin": "USDJPY",
+   "side": "BUY",
+   "entry": 158.3560028076172,
+   "sl": 158.14240785572457,
+   "tp1": 158.5695977595098,
+   "tp2": 158.78319271140245,
+   "tp1_hit": false,
+   "opened": "2026-10-13T19:00:00+00:00",
+   "rsi": 51.8,
+   "conf": 89,
+   "why": [
+    "EMA 9/21 cross + RSI in range",
+    "4h higher-timeframe trend agrees",
+    "Price above EMA 200",
+    "MACD momentum building",
+    "Strong trend (ADX 27)",
+    "RSI 52 in the sweet spot"
+   ],
+   "market": "forex",
+   "name": "USD/JPY",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  }
+ ],
  "history": [
   {
    "coin": "INJ",
@@ -311,6 +365,25 @@
  ],
  "watch": [
   {
+   "coin": "ARB",
+   "name": "ARB",
+   "market": "crypto",
+   "side": "BUY",
+   "price": 0.1897,
+   "score": 40,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-13T20:43:30+00:00"
+  },
+  {
    "coin": "EURJPY",
    "name": "EUR/JPY",
    "market": "forex",
@@ -480,25 +553,6 @@
     "range"
    ],
    "time": "2026-10-09T23:34:56+00:00"
-  },
-  {
-   "coin": "GBPUSD",
-   "name": "GBP/USD",
-   "market": "forex",
-   "side": "SELL",
-   "price": 1.3226288557052612,
-   "score": 81,
-   "chk": "2/4",
-   "why": [
-    "4H",
-    "15M",
-    "5M",
-    "⚠ run-up",
-    "⚠ RSI",
-    "extension",
-    "range"
-   ],
-   "time": "2026-10-09T14:42:02+00:00"
   }
  ],
  "fear_greed": {
@@ -555,61 +609,61 @@
   ],
   "quotes": {
    "EURUSD": {
-    "price": 1.1197,
-    "ch": 0.19,
-    "time": "2026-10-13T14:00:00+00:00"
+    "price": 1.12007,
+    "ch": 0.39,
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "GBPUSD": {
-    "price": 1.32482,
-    "ch": 0.21,
-    "time": "2026-10-13T14:00:00+00:00"
+    "price": 1.32531,
+    "ch": 0.36,
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "USDJPY": {
-    "price": 158.377,
+    "price": 158.356,
     "ch": -0.19,
-    "time": "2026-10-13T14:00:00+00:00"
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "XAUUSD": {
-    "price": 4190.3999,
-    "ch": -0.11,
-    "time": "2026-10-13T14:00:00+00:00"
+    "price": 4186.2002,
+    "ch": -0.13,
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "AUDUSD": {
     "price": 0.69852,
-    "ch": 0.28,
-    "time": "2026-10-13T14:00:00+00:00"
+    "ch": 0.37,
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "USDCAD": {
-    "price": 1.4213,
-    "ch": -0.42,
-    "time": "2026-10-13T14:00:00+00:00"
+    "price": 1.42178,
+    "ch": -0.47,
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "USDCHF": {
-    "price": 0.83259,
-    "ch": -0.19,
-    "time": "2026-10-13T14:00:00+00:00"
+    "price": 0.83273,
+    "ch": -0.24,
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "NZDUSD": {
     "price": 0.56148,
-    "ch": 0.35,
-    "time": "2026-10-13T14:00:00+00:00"
+    "ch": 0.5,
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "EURJPY": {
-    "price": 177.287,
-    "ch": -0.0,
-    "time": "2026-10-13T14:00:00+00:00"
+    "price": 177.31,
+    "ch": 0.2,
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "GBPJPY": {
-    "price": 209.827,
-    "ch": 0.03,
-    "time": "2026-10-13T14:00:00+00:00"
+    "price": 209.836,
+    "ch": 0.15,
+    "time": "2026-10-13T19:00:00+00:00"
    },
    "XAGUSD": {
-    "price": 59.695,
-    "ch": -1.89,
-    "time": "2026-10-13T14:00:00+00:00"
+    "price": 59.455,
+    "ch": -1.65,
+    "time": "2026-10-13T19:00:00+00:00"
    }
   }
  },
- "updated": "2026-10-13T15:18:57+00:00"
+ "updated": "2026-10-13T20:44:37+00:00"
 }
