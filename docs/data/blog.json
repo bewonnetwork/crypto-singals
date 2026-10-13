@@ -1,6 +1,496 @@
 {
  "posts": [
   {
+   "slug": "what-is-a-stop-loss",
+   "type": "learn",
+   "date": "2026-10-13T07:45:03+00:00",
+   "title": "What Is a Stop-Loss Order and How Does It Work?",
+   "title_bn": "Stop Loss কী এবং কীভাবে কাজ করে?",
+   "sum_en": "A stop-loss closes your trade by itself when price reaches the level where your idea is proven wrong. Here is how to place it and why it sometimes fills at a different price.",
+   "sum_bn": "দাম আপনার ঠিক করা জায়গায় পৌঁছালে Stop Loss নিজে থেকে ট্রেড বন্ধ করে দেয়। কোথায় বসাবেন আর কেন কখনো অন্য দামে বন্ধ হয়, জেনে নিন।",
+   "body": {
+    "pts_bn": [
+     "Stop Loss হলো আগে থেকে দেওয়া একটা অর্ডার: দাম ওই জায়গায় এলে ট্রেড নিজে বন্ধ হবে। এতে ছোট ক্ষতি বড় ক্ষতিতে গড়ায় না।",
+     "কোথায় বসাবেন: যে দামে গেলে আপনার ধারণা ভুল প্রমাণ হয়। BUY হলে শেষ সাপোর্টের একটু নিচে, SELL হলে শেষ রেজিস্ট্যান্সের একটু ওপরে।",
+     "Stop-market দাম ছুঁলেই বাজার দামে বেচে দেয় (নিশ্চিত বন্ধ, দাম একটু এদিক-ওদিক হতে পারে)। Stop-limit শুধু আপনার দামে বেচে (দাম ঠিক, কিন্তু বন্ধ নাও হতে পারে)।",
+     "দাম খুব দ্রুত নড়লে Stop Loss আপনার দামের চেয়ে খারাপ দামে বন্ধ হতে পারে। একে slippage বলে।",
+     "নিয়ম: Stop Loss ছাড়া কোনো ট্রেড নয়, আর ট্রেড চলার সময় Stop Loss দূরে সরাবেন না।"
+    ],
+    "pts_en": [
+     "A stop-loss is an order you place in advance: when price reaches that level the trade closes by itself, so a small loss cannot grow into a big one.",
+     "Where to put it: at the price that proves your idea wrong. For a BUY, a little below the last support; for a SELL, a little above the last resistance.",
+     "A stop-market order sells at the market price once triggered (it will close, but the price may differ slightly). A stop-limit sells only at your price (the price is fixed, but it may not fill).",
+     "When price moves very fast the stop can fill at a worse price than you set. This is called slippage.",
+     "Rule: no trade without a stop-loss, and never move the stop further away while the trade is running."
+    ]
+   }
+  },
+  {
+   "slug": "crypto-market-digest-october-13-2026",
+   "type": "digest",
+   "date": "2026-10-13T07:44:53+00:00",
+   "title": "Crypto Market Digest — October 13, 2026",
+   "sum_en": "PRL leads today's movers (+21.8%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে PRL (+21.8%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "price": 1.66,
+      "ch": 21.79,
+      "vol": 8272369,
+      "rank": 110
+     },
+     {
+      "sym": "STX",
+      "name": "Stacks",
+      "price": 0.429871,
+      "ch": 11.82,
+      "vol": 104167243,
+      "rank": 89
+     },
+     {
+      "sym": "BDX",
+      "name": "Beldex",
+      "price": 0.08917,
+      "ch": 8.27,
+      "vol": 2973189,
+      "rank": 96
+     },
+     {
+      "sym": "RENDER",
+      "name": "Render",
+      "price": 2.15,
+      "ch": 5.23,
+      "vol": 181356048,
+      "rank": 75
+     },
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 1.8,
+      "ch": 4.34,
+      "vol": 78175693,
+      "rank": 24
+     },
+     {
+      "sym": "TIA",
+      "name": "Celestia",
+      "price": 0.620383,
+      "ch": 3.75,
+      "vol": 166344195,
+      "rank": 105
+     },
+     {
+      "sym": "PYTH",
+      "name": "Pyth Network",
+      "price": 0.084752,
+      "ch": 3.31,
+      "vol": 123787374,
+      "rank": 100
+     },
+     {
+      "sym": "RAIN",
+      "name": "Rain",
+      "price": 0.01059245,
+      "ch": 2.43,
+      "vol": 21648856,
+      "rank": 19
+     }
+    ],
+    "losers": [
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "price": 0.086029,
+      "ch": -15.23,
+      "vol": 364288112,
+      "rank": 102
+     },
+     {
+      "sym": "PUMP",
+      "name": "Pump.fun",
+      "price": 0.00511665,
+      "ch": -12.38,
+      "vol": 229675561,
+      "rank": 46
+     },
+     {
+      "sym": "RAY",
+      "name": "Raydium",
+      "price": 2.13,
+      "ch": -11.61,
+      "vol": 66673861,
+      "rank": 108
+     },
+     {
+      "sym": "ZRO",
+      "name": "LayerZero",
+      "price": 2.15,
+      "ch": -11.6,
+      "vol": 188040744,
+      "rank": 86
+     },
+     {
+      "sym": "LIT",
+      "name": "Lighter",
+      "price": 3.45,
+      "ch": -10.53,
+      "vol": 86799323,
+      "rank": 85
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 5.26,
+      "ch": -10.19,
+      "vol": 1341556670,
+      "rank": 20
+     },
+     {
+      "sym": "UB",
+      "name": "Unibase",
+      "price": 0.127817,
+      "ch": -9.19,
+      "vol": 11600542,
+      "rank": 141
+     },
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "price": 0.42837,
+      "ch": -8.97,
+      "vol": 30668216,
+      "rank": 125
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 83774.7,
+      "ch": -0.53
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2534.37,
+      "ch": -1.44
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 746.07,
+      "ch": -1.23
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 108.63,
+      "ch": -3.59
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.3776,
+      "ch": -2.6
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2401,
+      "ch": -5.21
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.08509,
+      "ch": -2.87
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 10.568,
+      "ch": -4.15
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 13.086,
+      "ch": -2.52
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.22,
+      "ch": -3.71
+     },
+     {
+      "sym": "LTC",
+      "name": "LTC",
+      "price": 62.44,
+      "ch": -4.79
+     },
+     {
+      "sym": "UNI",
+      "name": "UNI",
+      "price": 7.462,
+      "ch": -3.0
+     },
+     {
+      "sym": "AAVE",
+      "name": "AAVE",
+      "price": 161.01,
+      "ch": -4.9
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR",
+      "price": 5.29,
+      "ch": -9.2
+     },
+     {
+      "sym": "SUI",
+      "name": "SUI",
+      "price": 1.0739,
+      "ch": -5.1
+     },
+     {
+      "sym": "POL",
+      "name": "POL",
+      "price": 0.10576,
+      "ch": 2.16
+     },
+     {
+      "sym": "ONDO",
+      "name": "ONDO",
+      "price": 0.4824,
+      "ch": -6.91
+     },
+     {
+      "sym": "PEPE",
+      "name": "PEPE",
+      "price": 4.14e-06,
+      "ch": -3.04
+     },
+     {
+      "sym": "TRX",
+      "name": "TRX",
+      "price": 0.3302,
+      "ch": -0.54
+     },
+     {
+      "sym": "TON",
+      "name": "TON",
+      "price": 1.592,
+      "ch": 0.06
+     },
+     {
+      "sym": "SHIB",
+      "name": "SHIB",
+      "price": 5.28e-06,
+      "ch": -4.35
+     },
+     {
+      "sym": "BCH",
+      "name": "BCH",
+      "price": 275.2,
+      "ch": -3.84
+     },
+     {
+      "sym": "XLM",
+      "name": "XLM",
+      "price": 0.1955,
+      "ch": -3.55
+     },
+     {
+      "sym": "HBAR",
+      "name": "HBAR",
+      "price": 0.08823,
+      "ch": -6.61
+     },
+     {
+      "sym": "APT",
+      "name": "APT",
+      "price": 0.858,
+      "ch": -4.21
+     },
+     {
+      "sym": "ARB",
+      "name": "ARB",
+      "price": 0.1902,
+      "ch": -2.41
+     },
+     {
+      "sym": "OP",
+      "name": "OP",
+      "price": 0.1391,
+      "ch": -1.63
+     },
+     {
+      "sym": "INJ",
+      "name": "INJ",
+      "price": 7.993,
+      "ch": 0.5
+     },
+     {
+      "sym": "FIL",
+      "name": "FIL",
+      "price": 1.2001,
+      "ch": -3.06
+     },
+     {
+      "sym": "ATOM",
+      "name": "ATOM",
+      "price": 1.822,
+      "ch": -3.75
+     },
+     {
+      "sym": "ICP",
+      "name": "ICP",
+      "price": 3.247,
+      "ch": -5.86
+     },
+     {
+      "sym": "ETC",
+      "name": "ETC",
+      "price": 8.26,
+      "ch": -2.59
+     },
+     {
+      "sym": "WIF",
+      "name": "WIF",
+      "price": 0.2116,
+      "ch": -4.51
+     },
+     {
+      "sym": "RENDER",
+      "name": "RENDER",
+      "price": 2.161,
+      "ch": 7.57
+     },
+     {
+      "sym": "TAO",
+      "name": "TAO",
+      "price": 284.3,
+      "ch": -4.66
+     },
+     {
+      "sym": "ENA",
+      "name": "ENA",
+      "price": 0.2169,
+      "ch": -8.29
+     },
+     {
+      "sym": "SEI",
+      "name": "SEI",
+      "price": 0.06486,
+      "ch": -7.26
+     },
+     {
+      "sym": "TIA",
+      "name": "TIA",
+      "price": 0.6212,
+      "ch": 3.19
+     },
+     {
+      "sym": "FET",
+      "name": "FET",
+      "price": 0.22,
+      "ch": -7.99
+     },
+     {
+      "sym": "ZEC",
+      "name": "ZEC",
+      "price": 1216.59,
+      "ch": -8.54
+     }
+    ],
+    "up": 35,
+    "total": 140,
+    "fear_greed": {
+     "value": 57,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.11819,
+      "ch": -0.25
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.32258,
+      "ch": -0.21
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 158.19099,
+      "ch": -0.11
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4215.7998,
+      "ch": 0.01
+     },
+     {
+      "sym": "AUDUSD",
+      "name": "AUD/USD",
+      "price": 0.69648,
+      "ch": -0.27
+     },
+     {
+      "sym": "USDCAD",
+      "name": "USD/CAD",
+      "price": 1.42687,
+      "ch": 0.15
+     },
+     {
+      "sym": "USDCHF",
+      "name": "USD/CHF",
+      "price": 0.83298,
+      "ch": 0.29
+     },
+     {
+      "sym": "NZDUSD",
+      "name": "NZD/USD",
+      "price": 0.55994,
+      "ch": -0.2
+     },
+     {
+      "sym": "EURJPY",
+      "name": "EUR/JPY",
+      "price": 176.828,
+      "ch": -0.36
+     },
+     {
+      "sym": "GBPJPY",
+      "name": "GBP/JPY",
+      "price": 209.216,
+      "ch": -0.32
+     },
+     {
+      "sym": "XAGUSD",
+      "name": "Silver (XAG/USD)",
+      "price": 60.795,
+      "ch": -0.74
+     }
+    ],
+    "stats": {
+     "win": 1,
+     "loss": 8,
+     "tp2": 1,
+     "expired": 0
+    },
+    "open": 1
+   }
+  },
+  {
    "slug": "trending-in-crypto-october-12-2026",
    "type": "trending",
    "date": "2026-10-12T19:03:47+00:00",
@@ -4205,32 +4695,7 @@
      }
     ]
    }
-  },
-  {
-   "slug": "what-is-a-stop-loss",
-   "type": "learn",
-   "date": "2026-10-03T10:27:35+00:00",
-   "title": "What Is a Stop-Loss Order and How Does It Work?",
-   "title_bn": "Stop Loss কী এবং কীভাবে কাজ করে?",
-   "sum_en": "A stop-loss closes your trade by itself when price reaches the level where your idea is proven wrong. Here is how to place it and why it sometimes fills at a different price.",
-   "sum_bn": "দাম আপনার ঠিক করা জায়গায় পৌঁছালে Stop Loss নিজে থেকে ট্রেড বন্ধ করে দেয়। কোথায় বসাবেন আর কেন কখনো অন্য দামে বন্ধ হয়, জেনে নিন।",
-   "body": {
-    "pts_bn": [
-     "Stop Loss হলো আগে থেকে দেওয়া একটা অর্ডার: দাম ওই জায়গায় এলে ট্রেড নিজে বন্ধ হবে। এতে ছোট ক্ষতি বড় ক্ষতিতে গড়ায় না।",
-     "কোথায় বসাবেন: যে দামে গেলে আপনার ধারণা ভুল প্রমাণ হয়। BUY হলে শেষ সাপোর্টের একটু নিচে, SELL হলে শেষ রেজিস্ট্যান্সের একটু ওপরে।",
-     "Stop-market দাম ছুঁলেই বাজার দামে বেচে দেয় (নিশ্চিত বন্ধ, দাম একটু এদিক-ওদিক হতে পারে)। Stop-limit শুধু আপনার দামে বেচে (দাম ঠিক, কিন্তু বন্ধ নাও হতে পারে)।",
-     "দাম খুব দ্রুত নড়লে Stop Loss আপনার দামের চেয়ে খারাপ দামে বন্ধ হতে পারে। একে slippage বলে।",
-     "নিয়ম: Stop Loss ছাড়া কোনো ট্রেড নয়, আর ট্রেড চলার সময় Stop Loss দূরে সরাবেন না।"
-    ],
-    "pts_en": [
-     "A stop-loss is an order you place in advance: when price reaches that level the trade closes by itself, so a small loss cannot grow into a big one.",
-     "Where to put it: at the price that proves your idea wrong. For a BUY, a little below the last support; for a SELL, a little above the last resistance.",
-     "A stop-market order sells at the market price once triggered (it will close, but the price may differ slightly). A stop-limit sells only at your price (the price is fixed, but it may not fill).",
-     "When price moves very fast the stop can fill at a worse price than you set. This is called slippage.",
-     "Rule: no trade without a stop-loss, and never move the stop further away while the trade is running."
-    ]
-   }
   }
  ],
- "updated": "2026-10-12T19:03:48+00:00"
+ "updated": "2026-10-13T07:45:03+00:00"
 }
