@@ -43,49 +43,21 @@
   "ZEC"
  ],
  "stats": {
-  "win": 4,
+  "win": 5,
   "loss": 11,
-  "tp2": 3,
+  "tp2": 4,
   "expired": 0
  },
  "min_conf": 60,
  "open": [
   {
-   "coin": "BNB",
-   "side": "SELL",
-   "entry": 741.52,
-   "sl": 741.52,
-   "tp1": 736.7045962026035,
-   "tp2": 731.8891924052069,
-   "tp1_hit": true,
-   "opened": "2026-10-14T08:00:00+00:00",
-   "rsi": 45.1,
-   "conf": 70,
-   "why": [
-    "EMA 9/21 cross + RSI in range + above-average volume",
-    "4h higher-timeframe trend agrees",
-    "Price below EMA 200",
-    "MACD momentum building",
-    "⚠ Weak trend (ADX 13)",
-    "Volume 1.6× the average",
-    "RSI 45 in the sweet spot",
-    "⚠ BTC moving the opposite way"
-   ],
-   "market": "crypto",
-   "name": "BNB",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  },
-  {
    "coin": "ZEC",
    "side": "SELL",
    "entry": 1206.53,
-   "sl": 1238.9425179183393,
+   "sl": 1206.53,
    "tp1": 1174.1174820816607,
    "tp2": 1141.7049641633214,
-   "tp1_hit": false,
+   "tp1_hit": true,
    "opened": "2026-10-14T13:00:00+00:00",
    "rsi": 39.7,
    "conf": 72,
@@ -107,6 +79,33 @@
   }
  ],
  "history": [
+  {
+   "coin": "BNB",
+   "side": "SELL",
+   "entry": 741.52,
+   "sl": 746.3354037973965,
+   "tp1": 736.7045962026035,
+   "tp2": 731.8891924052069,
+   "opened": "2026-10-14T08:00:00+00:00",
+   "closed": "2026-10-14T14:00:00+00:00",
+   "result": "TP2",
+   "conf": 70,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "⚠ Weak trend (ADX 13)",
+    "Volume 1.6× the average",
+    "RSI 45 in the sweet spot",
+    "⚠ BTC moving the opposite way"
+   ],
+   "market": "crypto",
+   "name": "BNB",
+   "exit": 731.8891924052069,
+   "mdd": 0.51,
+   "h24": null
+  },
   {
    "coin": "USDCHF",
    "side": "BUY",
@@ -720,61 +719,61 @@
   ],
   "quotes": {
    "EURUSD": {
-    "price": 1.1121,
-    "ch": -0.62,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 1.11408,
+    "ch": -0.5,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "GBPUSD": {
-    "price": 1.31719,
-    "ch": -0.53,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 1.31686,
+    "ch": -0.61,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "USDJPY": {
-    "price": 158.94,
-    "ch": 0.34,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 158.55701,
+    "ch": 0.13,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "XAUUSD": {
-    "price": 4110.2998,
-    "ch": -1.97,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 4105.7002,
+    "ch": -1.58,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "AUDUSD": {
-    "price": 0.69604,
-    "ch": -0.26,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 0.69643,
+    "ch": -0.25,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "USDCAD": {
-    "price": 1.42978,
-    "ch": 0.47,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 1.4255,
+    "ch": 0.27,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "USDCHF": {
-    "price": 0.83848,
-    "ch": 0.65,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 0.83614,
+    "ch": 0.38,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "NZDUSD": {
-    "price": 0.55751,
-    "ch": -0.64,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 0.55835,
+    "ch": -0.55,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "EURJPY": {
-    "price": 176.668,
-    "ch": -0.29,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 176.61099,
+    "ch": -0.37,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "GBPJPY": {
-    "price": 209.28799,
-    "ch": -0.21,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 208.793,
+    "ch": -0.48,
+    "time": "2026-10-14T17:00:00+00:00"
    },
    "XAGUSD": {
-    "price": 56.57,
-    "ch": -6.26,
-    "time": "2026-10-14T13:00:00+00:00"
+    "price": 55.745,
+    "ch": -6.15,
+    "time": "2026-10-14T17:00:00+00:00"
    }
   }
  },
- "updated": "2026-10-14T14:29:30+00:00"
+ "updated": "2026-10-14T18:50:04+00:00"
 }

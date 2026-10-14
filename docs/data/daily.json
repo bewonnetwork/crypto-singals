@@ -637,7 +637,8 @@
   ],
   "n": 51
  },
- "open": [
+ "open": [],
+ "history": [
   {
    "coin": "POL",
    "market": "crypto",
@@ -649,23 +650,13 @@
    "score": 23,
    "agree": 6,
    "n": 6,
-   "src": {
-    "tv1h": -0.4,
-    "tv4h": -0.512,
-    "tv1d": -0.358,
-    "engine": -0.919,
-    "rsi": 35.4,
-    "mom": -0.574,
-    "lsr": 1.3,
-    "crowd": -0.151
-   },
    "opened": "2026-10-14T09:04:18+00:00",
-   "status": "open",
+   "status": "TP1",
    "also_bot": false,
-   "tp1_hit": true
-  }
- ],
- "history": [
+   "tp1_hit": true,
+   "closed": "2026-10-14T18:50:04+00:00",
+   "exit": 0.09626
+  },
   {
    "coin": "USDJPY",
    "market": "forex",
@@ -1052,7 +1043,7 @@
   }
  ],
  "stats": {
-  "tp1": 3,
+  "tp1": 4,
   "tp2": 7,
   "sl": 12,
   "expired": 0
@@ -1076,5 +1067,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-14T14:29:30+00:00"
+ "updated": "2026-10-14T18:50:04+00:00"
 }
