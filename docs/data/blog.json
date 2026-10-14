@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-14-2026",
+   "type": "trending",
+   "date": "2026-10-14T14:28:50+00:00",
+   "title": "Trending in Crypto — October 14, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (ASTRO, ZYLO, PRL…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "ASTRO",
+      "name": "astronaut",
+      "rank": 885,
+      "price": 0.01878325241686667,
+      "ch": 83173.51
+     },
+     {
+      "sym": "ZYLO",
+      "name": "Zylo Ecosystem",
+      "rank": 828,
+      "price": 0.023247780053010172,
+      "ch": 2.17
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "rank": 100,
+      "price": 1.877134821799195,
+      "ch": 11.88
+     },
+     {
+      "sym": "SUI",
+      "name": "Sui",
+      "rank": 29,
+      "price": 1.0128631918193136,
+      "ch": -4.04
+     },
+     {
+      "sym": "WAL",
+      "name": "Walrus",
+      "rank": 230,
+      "price": 0.05195334039023771,
+      "ch": 35.09
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 616,
+      "price": 117.07532947088536,
+      "ch": -7.28
+     },
+     {
+      "sym": "QNT",
+      "name": "Quant",
+      "rank": 38,
+      "price": 203.773986496079,
+      "ch": -2.17
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 121,
+      "price": 0.007544764844380946,
+      "ch": -4.24
+     },
+     {
+      "sym": "TAO",
+      "name": "Bittensor",
+      "rank": 36,
+      "price": 268.633919304775,
+      "ch": -3.83
+     },
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 81998.55141472186,
+      "ch": -1.85
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 81971,
+      "ch": -1.98,
+      "vol": 30310997017,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2431.31,
+      "ch": -3.5,
+      "vol": 10773019559,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 104.23,
+      "ch": -3.6,
+      "vol": 2935022065,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.34,
+      "ch": -2.79,
+      "vol": 1819988996,
+      "rank": 5
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.91,
+      "ch": -3.35,
+      "vol": 1000458742,
+      "rank": 21
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1170.41,
+      "ch": -3.14,
+      "vol": 933267181,
+      "rank": 10
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 79.84,
+      "ch": -2.54,
+      "vol": 673209413,
+      "rank": 11
+     },
+     {
+      "sym": "USDG",
+      "name": "Global Dollar",
+      "price": 1.0,
+      "ch": -0.02,
+      "vol": 641814772,
+      "rank": 35
+     }
+    ]
+   }
+  },
+  {
    "slug": "position-size-and-the-1-percent-rule",
    "type": "learn",
    "date": "2026-10-14T09:03:08+00:00",
@@ -5310,5 +5458,5 @@
    }
   }
  ],
- "updated": "2026-10-14T09:03:08+00:00"
+ "updated": "2026-10-14T14:28:50+00:00"
 }

@@ -43,48 +43,21 @@
   "ZEC"
  ],
  "stats": {
-  "win": 1,
-  "loss": 10,
-  "tp2": 1,
+  "win": 4,
+  "loss": 11,
+  "tp2": 3,
   "expired": 0
  },
  "min_conf": 60,
  "open": [
   {
-   "coin": "FIL",
-   "side": "BUY",
-   "entry": 1.1827,
-   "sl": 1.1461055003800107,
-   "tp1": 1.2192944996199895,
-   "tp2": 1.2558889992399789,
-   "tp1_hit": false,
-   "opened": "2026-10-13T19:00:00+00:00",
-   "rsi": 56.6,
-   "conf": 72,
-   "why": [
-    "EMA 9/21 cross + RSI in range + above-average volume",
-    "4h higher-timeframe trend agrees",
-    "Price above EMA 200",
-    "MACD momentum building",
-    "⚠ Weak trend (ADX 18)",
-    "RSI 57 in the sweet spot",
-    "BTC moving the same way"
-   ],
-   "market": "crypto",
-   "name": "FIL",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  },
-  {
    "coin": "BNB",
    "side": "SELL",
    "entry": 741.52,
-   "sl": 746.3354037973965,
+   "sl": 741.52,
    "tp1": 736.7045962026035,
    "tp2": 731.8891924052069,
-   "tp1_hit": false,
+   "tp1_hit": true,
    "opened": "2026-10-14T08:00:00+00:00",
    "rsi": 45.1,
    "conf": 70,
@@ -106,31 +79,34 @@
    "from": null
   },
   {
-   "coin": "USDJPY",
-   "side": "BUY",
-   "entry": 158.45399475097656,
-   "sl": 158.24023274423087,
-   "tp1": 158.66775675772226,
-   "tp2": 158.88151876446793,
+   "coin": "ZEC",
+   "side": "SELL",
+   "entry": 1206.53,
+   "sl": 1238.9425179183393,
+   "tp1": 1174.1174820816607,
+   "tp2": 1141.7049641633214,
    "tp1_hit": false,
-   "opened": "2026-10-14T08:00:00+00:00",
-   "rsi": 56.4,
-   "conf": 74,
+   "opened": "2026-10-14T13:00:00+00:00",
+   "rsi": 39.7,
+   "conf": 72,
    "why": [
-    "EMA 9/21 cross + RSI in range",
+    "EMA 9/21 cross + RSI in range + above-average volume",
     "4h higher-timeframe trend agrees",
-    "Price above EMA 200",
+    "Price below EMA 200",
     "MACD momentum building",
     "⚠ Weak trend (ADX 19)",
-    "RSI 56 in the sweet spot"
+    "RSI 40 in the sweet spot",
+    "BTC moving the same way"
    ],
-   "market": "forex",
-   "name": "USD/JPY",
+   "market": "crypto",
+   "name": "ZEC",
    "src": null,
    "chk": null,
    "note": null,
    "from": null
-  },
+  }
+ ],
+ "history": [
   {
    "coin": "USDCHF",
    "side": "BUY",
@@ -138,9 +114,9 @@
    "sl": 0.8326380867351766,
    "tp1": 0.834581909717155,
    "tp2": 0.835553821208144,
-   "tp1_hit": false,
    "opened": "2026-10-14T08:00:00+00:00",
-   "rsi": 61.8,
+   "closed": "2026-10-14T12:00:00+00:00",
+   "result": "TP2",
    "conf": 89,
    "why": [
     "EMA 9/21 cross + RSI in range",
@@ -152,13 +128,61 @@
    ],
    "market": "forex",
    "name": "USD/CHF",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  }
- ],
- "history": [
+   "exit": 0.835553821208144,
+   "mdd": 0.09,
+   "h24": null
+  },
+  {
+   "coin": "USDJPY",
+   "side": "BUY",
+   "entry": 158.45399475097656,
+   "sl": 158.24023274423087,
+   "tp1": 158.66775675772226,
+   "tp2": 158.88151876446793,
+   "opened": "2026-10-14T08:00:00+00:00",
+   "closed": "2026-10-14T13:00:00+00:00",
+   "result": "TP2",
+   "conf": 74,
+   "why": [
+    "EMA 9/21 cross + RSI in range",
+    "4h higher-timeframe trend agrees",
+    "Price above EMA 200",
+    "MACD momentum building",
+    "⚠ Weak trend (ADX 19)",
+    "RSI 56 in the sweet spot"
+   ],
+   "market": "forex",
+   "name": "USD/JPY",
+   "exit": 158.88151876446793,
+   "mdd": 0.05,
+   "h24": null
+  },
+  {
+   "coin": "FIL",
+   "side": "BUY",
+   "entry": 1.1827,
+   "sl": 1.1461055003800107,
+   "tp1": 1.2192944996199895,
+   "tp2": 1.2558889992399789,
+   "opened": "2026-10-13T19:00:00+00:00",
+   "closed": "2026-10-14T09:00:00+00:00",
+   "result": "SL",
+   "conf": 72,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price above EMA 200",
+    "MACD momentum building",
+    "⚠ Weak trend (ADX 18)",
+    "RSI 57 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "FIL",
+   "exit": 1.1461055003800107,
+   "mdd": 5.53,
+   "h24": null
+  },
   {
    "coin": "USDJPY",
    "side": "BUY",
@@ -386,6 +410,14 @@
  ],
  "alerts": [
   {
+   "coin": "ZEC",
+   "ch": -3.56,
+   "price": 1170.59,
+   "ref": 1213.86,
+   "mins": 30,
+   "time": "2026-10-14T14:28:31+00:00"
+  },
+  {
    "coin": "FIL",
    "ch": -3.26,
    "price": 1.2059,
@@ -443,6 +475,44 @@
   }
  ],
  "watch": [
+  {
+   "coin": "GBPJPY",
+   "name": "GBP/JPY",
+   "market": "forex",
+   "side": "SELL",
+   "price": 209.28799438476562,
+   "score": 30,
+   "chk": "3/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "⚠ 5M",
+    "run-up",
+    "RSI",
+    "⚠ extension",
+    "range"
+   ],
+   "time": "2026-10-14T14:28:30+00:00"
+  },
+  {
+   "coin": "AUDUSD",
+   "name": "AUD/USD",
+   "market": "forex",
+   "side": "SELL",
+   "price": 0.6960395574569702,
+   "score": 45,
+   "chk": "2/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "⚠ 5M",
+    "run-up",
+    "RSI",
+    "⚠ extension",
+    "⚠ range"
+   ],
+   "time": "2026-10-14T14:28:26+00:00"
+  },
   {
    "coin": "TRX",
    "name": "TRX",
@@ -594,44 +664,6 @@
     "range"
    ],
    "time": "2026-10-11T01:34:15+00:00"
-  },
-  {
-   "coin": "SOL",
-   "name": "SOL",
-   "market": "crypto",
-   "side": "BUY",
-   "price": 110.51,
-   "score": 56,
-   "chk": "4/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "5M",
-    "run-up",
-    "RSI",
-    "extension",
-    "range"
-   ],
-   "time": "2026-10-10T15:23:09+00:00"
-  },
-  {
-   "coin": "AVAX",
-   "name": "AVAX",
-   "market": "crypto",
-   "side": "BUY",
-   "price": 10.411,
-   "score": 40,
-   "chk": "3/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "5M",
-    "⚠ run-up",
-    "RSI",
-    "extension",
-    "range"
-   ],
-   "time": "2026-10-10T02:46:58+00:00"
   }
  ],
  "fear_greed": {
@@ -688,61 +720,61 @@
   ],
   "quotes": {
    "EURUSD": {
-    "price": 1.11982,
-    "ch": 0.11,
-    "time": "2026-10-14T08:00:00+00:00"
+    "price": 1.1121,
+    "ch": -0.62,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "GBPUSD": {
-    "price": 1.32622,
-    "ch": 0.19,
-    "time": "2026-10-14T08:00:00+00:00"
+    "price": 1.31719,
+    "ch": -0.53,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "USDJPY": {
-    "price": 158.45399,
-    "ch": 0.39,
-    "time": "2026-10-14T08:00:00+00:00"
+    "price": 158.94,
+    "ch": 0.34,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "XAUUSD": {
-    "price": 4172.2002,
-    "ch": -0.93,
-    "time": "2026-10-14T07:00:00+00:00"
+    "price": 4110.2998,
+    "ch": -1.97,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "AUDUSD": {
-    "price": 0.70111,
-    "ch": 0.53,
-    "time": "2026-10-14T08:00:00+00:00"
+    "price": 0.69604,
+    "ch": -0.26,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "USDCAD": {
-    "price": 1.42146,
-    "ch": -0.33,
-    "time": "2026-10-14T08:00:00+00:00"
+    "price": 1.42978,
+    "ch": 0.47,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "USDCHF": {
-    "price": 0.83361,
-    "ch": 0.08,
-    "time": "2026-10-14T08:00:00+00:00"
+    "price": 0.83848,
+    "ch": 0.65,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "NZDUSD": {
-    "price": 0.56211,
-    "ch": 0.27,
-    "time": "2026-10-14T08:00:00+00:00"
+    "price": 0.55751,
+    "ch": -0.64,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "EURJPY": {
-    "price": 177.39,
-    "ch": 0.51,
-    "time": "2026-10-14T08:00:00+00:00"
+    "price": 176.668,
+    "ch": -0.29,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "GBPJPY": {
-    "price": 210.138,
-    "ch": 0.58,
-    "time": "2026-10-14T08:00:00+00:00"
+    "price": 209.28799,
+    "ch": -0.21,
+    "time": "2026-10-14T13:00:00+00:00"
    },
    "XAGUSD": {
-    "price": 58.895,
-    "ch": -3.13,
-    "time": "2026-10-14T07:00:00+00:00"
+    "price": 56.57,
+    "ch": -6.26,
+    "time": "2026-10-14T13:00:00+00:00"
    }
   }
  },
- "updated": "2026-10-14T09:04:18+00:00"
+ "updated": "2026-10-14T14:29:30+00:00"
 }
