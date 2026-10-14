@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T23:55:50+00:00",
+ "updated": "2026-10-14T03:39:32+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,51 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "ae05de20ca",
+   "title": "Coinbase lays out flexible designs as key priority for Bitcoin’s post-quantum migration",
+   "link": "https://www.theblock.co/news/ecosystems/2026-10-13-coinbase-bitcoin-post-quantum-migration-418509",
+   "source": "The Block",
+   "published": "2026-10-14T02:49:34+00:00",
+   "summary": "Coinbase published priorities for Bitcoin's post-quantum transition, urging early preparation for signature upgrades and fund migration.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/06/20260612_Coinbase_News.jpg"
+  },
+  {
+   "id": "8d71ff5e65",
+   "title": "SkyAI risks SEC offer failure if SOL falls under $100",
+   "link": "https://cryptoslate.com/skyai-risks-sec-offer-failure-if-sol-falls-under-100/",
+   "source": "CryptoSlate",
+   "published": "2026-10-14T02:20:08+00:00",
+   "summary": "SkyAI reports about 80% of the required cash and approximately 600,000 SOL retained, while its proposed tender still carries waivable conditions. Read the full story on CryptoSlate Understand the crypto stories that matter and what to…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/skyai-tender-offer-standard.jpg"
+  },
+  {
+   "id": "a4cb39dfb6",
+   "title": "Bitwise’s Hougan says Q3 charts point to ‘crypto spring’",
+   "link": "https://cointelegraph.com/markets/bitwises-hougan-says-q3-charts-point-to-crypto-spring?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-14T02:19:56+00:00",
+   "summary": "Bitwise’s Matt Hougan said nearly every fundamental indicator that Bitwise tracks spiked sharply higher.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4W39C53K5A0QZYE5SN4HY81/spring.jpg"
+  },
+  {
+   "id": "db9e44c921",
+   "title": "Largest Philippines crypto exchange, Coins.ph, said to face central bank regulatory action",
+   "link": "https://www.coindesk.com/policy/2026/10/13/largest-philippines-crypto-exchange-coins-ph-said-to-face-central-bank-regulatory-action",
+   "source": "CoinDesk",
+   "published": "2026-10-14T01:00:00+00:00",
+   "summary": "The exchange, which has over 18 million customers, is said to have handled business transactions involving restricted offshore gaming and gambling companies.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/90725f28abbda8fc3beba48c502b8cb9cd1f93a7-1000x664.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "24d15de616",
+   "title": "Metaplanet unveils $380 million share buyback after stock crashes nearly 90% from peak",
+   "link": "https://cryptoslate.com/metaplanet-unveils-380-million-share-buyback-after-stock-crashes-nearly-90-from-peak/",
+   "source": "CryptoSlate",
+   "published": "2026-10-14T00:30:45+00:00",
+   "summary": "Metaplanet plans to raise $329 million to refinance Bitcoin-backed loans and fund share buybacks after its stock has declined 90% from its peak. On Oct. 13, the Japanese Bitcoin treasury company announced plans to issue ¥52 billion ($329…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/metaplanet-convertible-bonds-standard-v2.jpg"
+  },
   {
    "id": "20bb12b313",
    "title": "Ledger asks resellers to halt sales in Southeast Asia and Hong Kong",
@@ -333,15 +378,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4TNNXR2NKTWJ28W4SJ53VKF/hi-goldman-sachs-and-crypto-recap-bank.jpg"
   },
   {
-   "id": "e7b4517f96",
-   "title": "Sky’s $4.4 billion liquidity disclosure shows why USDS cash-outs need a separate bank route",
-   "link": "https://cryptoslate.com/skys-4-4b-liquidity-disclosure-shows-why-stablecoin-supply-is-not-a-cash-ledger/",
-   "source": "CryptoSlate",
-   "published": "2026-10-13T13:00:58+00:00",
-   "summary": "Sky’s October 9 PSM disclosure highlights existing conversion liquidity, while borrowing and token migration need not bring matching new dollars into crypto. Read the full story on CryptoSlate Understand the crypto stories that matter and…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/psm-liquidity-cash-flow.webp"
-  },
-  {
    "id": "37819db5c8",
    "title": "Russia clears Sberbank for crypto trading ahead of December launch",
    "link": "https://cointelegraph.com/news/sberbank-russia-crypto-trading-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -349,15 +385,6 @@
    "published": "2026-10-13T12:22:24+00:00",
    "summary": "Russia’s largest bank, Sberbank, has secured crypto exchange authorization as it prepares to offer Bitcoin, Ether and Tether USDt trading.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4TJ29HRXGHBG9K7W07M6RBV/sbernew2.jpg"
-  },
-  {
-   "id": "ecd713d397",
-   "title": "More than half of Ethena’s USDe backing is allocated to lending",
-   "link": "https://cryptoslate.com/ethenas-usde-has-51-2-of-backing-in-lending-making-redemption-liquidity-the-key-test/",
-   "source": "CryptoSlate",
-   "published": "2026-10-13T12:00:32+00:00",
-   "summary": "LlamaRisk’s October 12 snapshot makes available pool assets, institutional recall terms and conditional redemption access central to holders’ exits. Read the full story on CryptoSlate Understand the crypto stories that matter and what to…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/usde-redemption-bridge-risk.webp"
   },
   {
    "id": "f711780041",
@@ -700,33 +727,6 @@
    "published": "2026-10-12T21:11:26+00:00",
    "summary": "The defunct exchange acquired a 20% stake in Genesis Digital Assets before FTX declared bankruptcy in November 2022.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4RW88XV464BJDJNJTY3D37E/hi-top-5-biggest-mining-farms.jpg"
-  },
-  {
-   "id": "803bcf3d02",
-   "title": "CFTC’s new crypto framework could face 2028 election deadline, says TD Cowen",
-   "link": "https://www.theblock.co/news/regulation/2026-10-12-cftcs-new-crypto-framework-could-face-2028-election-deadline-td-cowen-418358",
-   "source": "The Block",
-   "published": "2026-10-12T20:53:54+00:00",
-   "summary": "Newly proposed rules for leveraged and margined crypto trading may be too late as the 2028 election cycle looms, according to TD Cowen.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/06/20200626_CFTC_-Daily.jpg"
-  },
-  {
-   "id": "4b484a31fe",
-   "title": "Meta's New Muse Wonder Finally Puts Zuckerberg in the Frontier AI Race",
-   "link": "https://decrypt.co/380768/meta-muse-wonder-zuckerberg-frontier-ai-race",
-   "source": "Decrypt",
-   "published": "2026-10-12T20:46:04+00:00",
-   "summary": "Meta's new flagship beats GPT-6 Astra and Claude on memory, legal and marathon coding tests, but independent rankings still put Anthropic's Opus 5.5 on top.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/meta-logo-gID_7.png"
-  },
-  {
-   "id": "6d9c919e55",
-   "title": "From GTA V on iPhone to Free Photoshop: This AI Tool Is Upending Software",
-   "link": "https://decrypt.co/380741/gta-v-iphone-free-photoshop-ai-tool-rea-upending-software",
-   "source": "Decrypt",
-   "published": "2026-10-12T19:46:03+00:00",
-   "summary": "REA, a free toolkit that hands AI agents the keys to reverse engineering, crossed 100,000 GitHub stars in a week as AI-decompiled game mods, console ports, and Adobe clones flood the internet.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/gaming-decrypt-style-gID_7.jpg"
   }
  ]
 }

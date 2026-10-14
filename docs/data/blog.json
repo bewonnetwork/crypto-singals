@@ -1,6 +1,471 @@
 {
  "posts": [
   {
+   "slug": "crypto-market-digest-october-14-2026",
+   "type": "digest",
+   "date": "2026-10-14T03:39:19+00:00",
+   "title": "Crypto Market Digest — October 14, 2026",
+   "sum_en": "BTW leads today's movers (+43.7%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে BTW (+43.7%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 2.54,
+      "ch": 43.69,
+      "vol": 144014503,
+      "rank": 20
+     },
+     {
+      "sym": "HASH",
+      "name": "Provenance Blockchain",
+      "price": 0.00747195,
+      "ch": 22.64,
+      "vol": 38457,
+      "rank": 126
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "price": 1.86,
+      "ch": 22.4,
+      "vol": 8894652,
+      "rank": 102
+     },
+     {
+      "sym": "OP",
+      "name": "Optimism",
+      "price": 0.158604,
+      "ch": 18.26,
+      "vol": 226425069,
+      "rank": 131
+     },
+     {
+      "sym": "AKE",
+      "name": "Akedo",
+      "price": 0.02540284,
+      "ch": 9.5,
+      "vol": 6462096,
+      "rank": 108
+     },
+     {
+      "sym": "INJ",
+      "name": "Injective",
+      "price": 8.26,
+      "ch": 9.12,
+      "vol": 187910323,
+      "rank": 88
+     },
+     {
+      "sym": "DRV",
+      "name": "Derive",
+      "price": 0.447121,
+      "ch": 5.74,
+      "vol": 18904828,
+      "rank": 124
+     },
+     {
+      "sym": "PEPE",
+      "name": "Pepe",
+      "price": 4.23e-06,
+      "ch": 5.41,
+      "vol": 253753342,
+      "rank": 60
+     }
+    ],
+    "losers": [
+     {
+      "sym": "M",
+      "name": "MemeCore",
+      "price": 0.842686,
+      "ch": -6.4,
+      "vol": 1415373,
+      "rank": 52
+     },
+     {
+      "sym": "KCS",
+      "name": "KuCoin",
+      "price": 7.35,
+      "ch": -5.88,
+      "vol": 4970731,
+      "rank": 79
+     },
+     {
+      "sym": "QNT",
+      "name": "Quant",
+      "price": 216.15,
+      "ch": -5.16,
+      "vol": 187802272,
+      "rank": 36
+     },
+     {
+      "sym": "GRASS",
+      "name": "Grass",
+      "price": 0.730708,
+      "ch": -4.61,
+      "vol": 33496713,
+      "rank": 117
+     },
+     {
+      "sym": "RENDER",
+      "name": "Render",
+      "price": 2.06,
+      "ch": -4.22,
+      "vol": 120664205,
+      "rank": 78
+     },
+     {
+      "sym": "币安人生",
+      "name": "币安人生 (BinanceLife)",
+      "price": 0.526202,
+      "ch": -3.96,
+      "vol": 3826223,
+      "rank": 115
+     },
+     {
+      "sym": "FIGR_HELOC",
+      "name": "Figure Heloc",
+      "price": 1.026,
+      "ch": -3.59,
+      "vol": 61767166,
+      "rank": 9
+     },
+     {
+      "sym": "RAY",
+      "name": "Raydium",
+      "price": 2.08,
+      "ch": -3.23,
+      "vol": 39476596,
+      "rank": 110
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 83650.01,
+      "ch": 0.87
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2514.58,
+      "ch": 0.94
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 745.62,
+      "ch": 0.57
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 107.76,
+      "ch": 0.97
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.373,
+      "ch": 0.56
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2379,
+      "ch": 0.98
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.08492,
+      "ch": 1.51
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 10.34,
+      "ch": -0.31
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 13.002,
+      "ch": 1.42
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.17,
+      "ch": 1.3
+     },
+     {
+      "sym": "LTC",
+      "name": "LTC",
+      "price": 61.86,
+      "ch": 0.65
+     },
+     {
+      "sym": "UNI",
+      "name": "UNI",
+      "price": 7.539,
+      "ch": 4.99
+     },
+     {
+      "sym": "AAVE",
+      "name": "AAVE",
+      "price": 161.58,
+      "ch": 2.01
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR",
+      "price": 5.165,
+      "ch": -1.97
+     },
+     {
+      "sym": "SUI",
+      "name": "SUI",
+      "price": 1.0617,
+      "ch": 1.78
+     },
+     {
+      "sym": "POL",
+      "name": "POL",
+      "price": 0.10165,
+      "ch": -0.18
+     },
+     {
+      "sym": "ONDO",
+      "name": "ONDO",
+      "price": 0.4712,
+      "ch": -1.28
+     },
+     {
+      "sym": "PEPE",
+      "name": "PEPE",
+      "price": 4.23e-06,
+      "ch": 6.02
+     },
+     {
+      "sym": "TRX",
+      "name": "TRX",
+      "price": 0.3309,
+      "ch": 0.27
+     },
+     {
+      "sym": "TON",
+      "name": "TON",
+      "price": 1.592,
+      "ch": 0.06
+     },
+     {
+      "sym": "SHIB",
+      "name": "SHIB",
+      "price": 5.22e-06,
+      "ch": 0.19
+     },
+     {
+      "sym": "BCH",
+      "name": "BCH",
+      "price": 278.6,
+      "ch": 3.41
+     },
+     {
+      "sym": "XLM",
+      "name": "XLM",
+      "price": 0.1904,
+      "ch": -0.99
+     },
+     {
+      "sym": "HBAR",
+      "name": "HBAR",
+      "price": 0.08725,
+      "ch": -0.11
+     },
+     {
+      "sym": "APT",
+      "name": "APT",
+      "price": 0.8369,
+      "ch": 3.82
+     },
+     {
+      "sym": "ARB",
+      "name": "ARB",
+      "price": 0.1932,
+      "ch": 4.72
+     },
+     {
+      "sym": "OP",
+      "name": "OP",
+      "price": 0.1592,
+      "ch": 20.06
+     },
+     {
+      "sym": "INJ",
+      "name": "INJ",
+      "price": 8.255,
+      "ch": 11.77
+     },
+     {
+      "sym": "FIL",
+      "name": "FIL",
+      "price": 1.1712,
+      "ch": 3.43
+     },
+     {
+      "sym": "ATOM",
+      "name": "ATOM",
+      "price": 1.829,
+      "ch": 0.83
+     },
+     {
+      "sym": "ICP",
+      "name": "ICP",
+      "price": 3.134,
+      "ch": 0.71
+     },
+     {
+      "sym": "ETC",
+      "name": "ETC",
+      "price": 8.16,
+      "ch": 0.49
+     },
+     {
+      "sym": "WIF",
+      "name": "WIF",
+      "price": 0.2088,
+      "ch": 1.66
+     },
+     {
+      "sym": "RENDER",
+      "name": "RENDER",
+      "price": 2.083,
+      "ch": -1.84
+     },
+     {
+      "sym": "TAO",
+      "name": "TAO",
+      "price": 280.7,
+      "ch": 1.78
+     },
+     {
+      "sym": "ENA",
+      "name": "ENA",
+      "price": 0.213,
+      "ch": 1.87
+     },
+     {
+      "sym": "SEI",
+      "name": "SEI",
+      "price": 0.06553,
+      "ch": 4.48
+     },
+     {
+      "sym": "TIA",
+      "name": "TIA",
+      "price": 0.5766,
+      "ch": 0.63
+     },
+     {
+      "sym": "FET",
+      "name": "FET",
+      "price": 0.2166,
+      "ch": 1.74
+     },
+     {
+      "sym": "ZEC",
+      "name": "ZEC",
+      "price": 1269.06,
+      "ch": 5.37
+     }
+    ],
+    "up": 94,
+    "total": 140,
+    "fear_greed": {
+     "value": 62,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.12133,
+      "ch": 0.29
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.32714,
+      "ch": 0.36
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 158.289,
+      "ch": 0.04
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4191.0,
+      "ch": -0.31
+     },
+     {
+      "sym": "AUDUSD",
+      "name": "AUD/USD",
+      "price": 0.70003,
+      "ch": 0.55
+     },
+     {
+      "sym": "USDCAD",
+      "name": "USD/CAD",
+      "price": 1.42013,
+      "ch": -0.45
+     },
+     {
+      "sym": "USDCHF",
+      "name": "USD/CHF",
+      "price": 0.83193,
+      "ch": -0.11
+     },
+     {
+      "sym": "NZDUSD",
+      "name": "NZD/USD",
+      "price": 0.56281,
+      "ch": 0.6
+     },
+     {
+      "sym": "EURJPY",
+      "name": "EUR/JPY",
+      "price": 177.442,
+      "ch": 0.33
+     },
+     {
+      "sym": "GBPJPY",
+      "name": "GBP/JPY",
+      "price": 210.07001,
+      "ch": 0.42
+     },
+     {
+      "sym": "XAGUSD",
+      "name": "Silver (XAG/USD)",
+      "price": 59.47,
+      "ch": -1.32
+     }
+    ],
+    "stats": {
+     "win": 1,
+     "loss": 9,
+     "tp2": 1,
+     "expired": 0
+    },
+    "open": 2
+   }
+  },
+  {
    "slug": "trending-in-crypto-october-13-2026",
    "type": "trending",
    "date": "2026-10-13T15:18:06+00:00",
@@ -4845,5 +5310,5 @@
    }
   }
  ],
- "updated": "2026-10-13T15:18:06+00:00"
+ "updated": "2026-10-14T03:39:20+00:00"
 }
