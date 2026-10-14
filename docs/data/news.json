@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T18:49:15+00:00",
+ "updated": "2026-10-14T21:59:08+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,105 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "df45ada0e1",
+   "title": "Godfather of AI and 400 Scientists Want AI Models Cut Off From the Internet",
+   "link": "https://decrypt.co/380998/scientists-want-ai-cut-off-from-internet",
+   "source": "Decrypt",
+   "published": "2026-10-14T21:46:04+00:00",
+   "summary": "After a summer of AI models escaping test environments and hacking real companies, hundreds of researchers say the internet itself should be treated as a security boundary.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-09-gID_7.png"
+  },
+  {
+   "id": "9c8e11306a",
+   "title": "Developer Who Cloned Photoshop With AI Just Did the Same to Microsoft Office",
+   "link": "https://decrypt.co/380991/developer-cloned-photoshop-ai-just-did-same-microsoft-office",
+   "source": "Decrypt",
+   "published": "2026-10-14T21:16:03+00:00",
+   "summary": "Developer Brandon Thomas used Anthropic's Claude to build free, open-source replicas of Word, Excel and PowerPoint. They're rough, but they show how cheap cloning software has become.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-04-gID_7.png"
+  },
+  {
+   "id": "0a53e18e8a",
+   "title": "Surging dollar forces Bitcoin sell-off as rate hike odds double",
+   "link": "https://cryptoslate.com/surging-dollar-forces-bitcoin-sell-off-as-rate-hike-odds-double/",
+   "source": "CryptoSlate",
+   "published": "2026-10-14T21:10:50+00:00",
+   "summary": "September US inflation reached 3.7%, lifting yields as markets increased bets on another rate rise before the October 27–28 Fed meeting. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-fed-trap.webp"
+  },
+  {
+   "id": "22f0adc93f",
+   "title": "Organizations join forces to fight Illinois crypto tax, after 6-month pause",
+   "link": "https://cointelegraph.com/news/cci-ba-fight-illinois-crypto-tax-pause?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-14T20:56:22+00:00",
+   "summary": "Illinois officials already agreed to delay implementation of a 0.2% tax on crypto assets, but industry-aligned organizations are pushing for summary judgment on the merits.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4Y1A2P32XBWMQ5M26VG2T55/hi-a-beginners-guide-to-filing-bitcoin-taxes.jpg"
+  },
+  {
+   "id": "4bba39fe83",
+   "title": "Patrick Witt exits White House crypto role as Clarity Act stalls",
+   "link": "https://www.theblock.co/news/regulation/2026-10-14-white-house-crypto-adviser-patrick-witt-departs-418611",
+   "source": "The Block",
+   "published": "2026-10-14T20:30:15+00:00",
+   "summary": "Leadership at the White House is shifting once again, as Patrick Witt’s tenure as the administration’s top crypto adviser comes to an end.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/02/image-d3d3f946-f84d-4ec0-af8e-b8e8f8da2cab-2.jpg"
+  },
+  {
+   "id": "535f789791",
+   "title": "AI Agents Made 138 Million Crypto Payments in a Year. Most Were Tiny",
+   "link": "https://decrypt.co/380989/ai-agents-138-million-crypto-payments-one-year",
+   "source": "Decrypt",
+   "published": "2026-10-14T20:16:05+00:00",
+   "summary": "A new Chainalysis report found payments through Coinbase’s x402 protocol surged from about 1,500 in mid-2025 to more than 138 million by Q3 2026, with U.S. wallets dominating spending on AI models.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/03/ai-agents-decrypt-style-gID_7.jpg"
+  },
+  {
+   "id": "1360b8cea0",
+   "title": "Kraken moves to acquire $181 million European bank in major push beyond crypto trading",
+   "link": "https://cryptoslate.com/kraken-moves-to-acquire-181-million-european-bank-in-major-push-beyond-crypto-trading/",
+   "source": "CryptoSlate",
+   "published": "2026-10-14T19:50:24+00:00",
+   "summary": "Kraken's parent company, Payward, has agreed to acquire a European bank as it expands beyond cryptocurrency trading into traditional financial services. On Oct. 14, the company announced a definitive agreement to purchase Saldo Finance Oy,…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/kraken-saldo-bank-europe.webp"
+  },
+  {
+   "id": "3b725f6f93",
+   "title": "Russia's Biggest Bank Sberbank Wins Approval to Trade Bitcoin",
+   "link": "https://decrypt.co/380981/sberbank-russia-bank-trade-crypto-bitcoin",
+   "source": "Decrypt",
+   "published": "2026-10-14T19:46:03+00:00",
+   "summary": "Sberbank now holds both custody and exchange status under Russia's new crypto law, and plans to bring Bitcoin, Ethereum and USDT to apps used by 110 million retail clients.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/russia-moscow-red-square-kremlin-decrypt-style-gID_7.jpg"
+  },
+  {
+   "id": "11bc3b93ec",
+   "title": "Solana Sets a Date for Its Next Major Upgrade",
+   "link": "https://decrypt.co/380974/solana-alpenglow-upgrade-date",
+   "source": "Decrypt",
+   "published": "2026-10-14T19:16:04+00:00",
+   "summary": "Solana's Alpenglow upgrade replaces the TowerBFT voting system on October 21, cutting finality from 12.8 seconds to a target of 150ms and pulling vote transactions out of blocks entirely.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/solana-decrypt-style-04-gID_7.png"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-14T19:13:24+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "206389a8c7",
+   "title": "EU authority classifies Circle’s USDC as ‘significant’ under MiCA",
+   "link": "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-14T19:03:52+00:00",
+   "summary": "The second-largest stablecoin by market cap will be overseen by French and EU authorities under its classification as a “significant e-money token.“",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4XTT3VWKHJ84ZJBP443TGSN/hi-globe-usdc.png"
+  },
   {
    "id": "2d1870e85e",
    "title": "Ripple targets trillion-dollar securities markets with new US brokerage and South Korean deals",
@@ -288,15 +387,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/floyd-mayweather-sahil-arora-decrypt-style-gID_7.jpg"
   },
   {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-14T13:36:56+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
    "id": "b7a6ffe4e3",
    "title": "Bitcoin whales accumulate ahead of crucial US inflation report as $744 million exits ETFs",
    "link": "https://cryptoslate.com/bitcoin-whales-accumulate-ahead-of-crucial-us-inflation-report-as-744-million-exits-etfs/",
@@ -405,15 +495,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/vivek-ramaswamy-decrypt-style-gID_7.jpg"
   },
   {
-   "id": "e7c29a1560",
-   "title": "Bitcoin’s next difficulty rise could leave some rigs earning less than their power bill",
-   "link": "https://cryptoslate.com/bitcoins-projected-5-7-difficulty-rise-puts-miners-40-revenue-under-pressure/",
-   "source": "CryptoSlate",
-   "published": "2026-10-14T12:10:23+00:00",
-   "summary": "At unchanged Bitcoin price, subsidy and fees, the projected Oct. 16 retarget could push 20 J/TH equipment paying 8 cents/kWh below its electricity-only threshold. Read the full story on CryptoSlate Understand the crypto stories that matter…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-mining-profit-squeeze.webp"
-  },
-  {
    "id": "ae06e0ce13",
    "title": "Evernorth taps Ripple, Kraken, Coinbase and BitGo to put $648 million XRP treasury to work",
    "link": "https://www.theblock.co/news/deals/2026-10-14-evernorth-taps-ripple-kraken-coinbase-bitgo-xrp-treasury-work-418503",
@@ -457,15 +538,6 @@
    "published": "2026-10-14T11:12:36+00:00",
    "summary": "Backed by BBVA, BNP Paribas, and ING, Qivalis secured Dutch regulatory authorization to offer onchain euro settlement infrastructure.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/79c173f7513da42bae66136f2aeb519084d77d23-2788x1568.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "b54b449748",
-   "title": "Strive bought $280 million in Bitcoin, but Bitcoin per common share rose just 1.72%",
-   "link": "https://cryptoslate.com/strives-bitcoin-buying-diverges-from-strategys-preferred-buyback-focus/",
-   "source": "CryptoSlate",
-   "published": "2026-10-14T11:10:07+00:00",
-   "summary": "Strive added 3,311 BTC, but gross Bitcoin per effective common share increased just 1.72% as common and preferred share counts grew. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-preferred-share-allocation.webp"
   },
   {
    "id": "420d8160d9",
@@ -554,7 +626,7 @@
    "link": "https://www.coindesk.com/business/2026/10/14/live-updates-bitcoin-tumbles-from-near-usd84-000-ahead-of-u-s-inflation-data",
    "source": "CoinDesk",
    "published": "2026-10-14T09:45:53+00:00",
-   "summary": "Bond yields and Fed rate hike expectations are jumping higher after the September CPI report was hotter than expected at both the headline and core levels.",
+   "summary": "An historic turnaround lower in interest rates suggests the possibility that the bond bear market may have run its course.",
    "image": ""
   },
   {
@@ -563,7 +635,7 @@
    "link": "https://www.coindesk.com/policy/2026/10/14/proposed-french-tax-on-regulated-stablecoins-could-drive-crypto-traders-offshore",
    "source": "CoinDesk",
    "published": "2026-10-14T08:48:11+00:00",
-   "summary": "Chainalysis CEO in France Francois Volpoet warned the proposed 31.4% tax on regulated stablecoins could push traders toward unmonitored offshore channels.",
+   "summary": "Chainalysis' regional sales director in France Francois Volpoet warned the proposed 31.4% tax on regulated stablecoins could push traders toward unmonitored offshore channels.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/2695a675c283399d52d01fdcce43803229edb864-4256x2832.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   },
   {
@@ -655,78 +727,6 @@
    "published": "2026-10-14T01:00:00+00:00",
    "summary": "The exchange, which has over 18 million customers, is said to have handled business transactions involving restricted offshore gaming and gambling companies.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/90725f28abbda8fc3beba48c502b8cb9cd1f93a7-1000x664.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "20bb12b313",
-   "title": "Ledger asks resellers to halt sales in Southeast Asia and Hong Kong",
-   "link": "https://cointelegraph.com/news/ledger-asks-resellers-to-halt-sales-in-southeast-asia-and-hong-kong?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-13T23:28:19+00:00",
-   "summary": "The wallet maker requested that devices be removed from shelves while investigators work to establish where tampering occurred.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4VRR79KQN4B5CCVR567DB5T/ledger.jpg"
-  },
-  {
-   "id": "c6bbfa53ed",
-   "title": "Strive raising $500 million to buy additional bitcoin with new preferred share class",
-   "link": "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury",
-   "source": "CoinDesk",
-   "published": "2026-10-13T23:23:05+00:00",
-   "summary": "SATS will offer a fixed 15% dividend yield at par and be junior to the company's existing SATA, which pays a variable rate (currently 13%).",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/2688a309ccf027625e4bf19277b7e78cfc32859f-2123x1084.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "2c1bd08512",
-   "title": "BNY, Citadel Securities test tokenized U.S. Treasuries to speed up Wall Street financing",
-   "link": "https://www.coindesk.com/business/2026/10/13/bny-citadel-securities-test-tokenized-u-s-treasuries-to-speed-up-wall-street-financing",
-   "source": "CoinDesk",
-   "published": "2026-10-13T21:52:00+00:00",
-   "summary": "The transaction shows how blockchain-based government bonds could help trading firms move collateral faster between settlement and financing.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/1df79087776a232721826d2559a0e7004de05895-2724x1532.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "09bb766297",
-   "title": "OpenAI Engineer Arrested for Bugging Office, Company Says AI Caught Him",
-   "link": "https://decrypt.co/380896/openai-engineer-arrested-bugging-office-ai-caught-him",
-   "source": "Decrypt",
-   "published": "2026-10-13T21:46:04+00:00",
-   "summary": "A Saudi national working at OpenAI allegedly hid an encrypted audio recorder behind a TV in an executive meeting room. OpenAI says its own models helped trace it back to him.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/04/decrypt-style-openai-logo-gID_7.png"
-  },
-  {
-   "id": "ef97e9bde2",
-   "title": "Character.AI Files for Bankruptcy as Disney Bids $20 Million—And Users Get Grief Resources",
-   "link": "https://decrypt.co/380894/character-ai-bankruptcy-disney-users-grief-resources",
-   "source": "Decrypt",
-   "published": "2026-10-13T21:16:04+00:00",
-   "summary": "The chatbot app once valued at $1 billion is up for sale in a Delaware court, two weeks after launching new models. If nobody buys it, it shuts down.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-08-gID_7.png"
-  },
-  {
-   "id": "310a87ed0f",
-   "title": "Binance Is Shutting Down Its Bitcoin Mining Pool After Six Years",
-   "link": "https://decrypt.co/380870/binance-shutting-down-bitcoin-mining-pool",
-   "source": "Decrypt",
-   "published": "2026-10-13T20:16:03+00:00",
-   "summary": "Binance will discontinue Binance Pool, Pool Savings, Cloud Mining, and other related services in a retreat from mining infrastructure.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/binance-decrypt-syle-01-gID_7.png"
-  },
-  {
-   "id": "ee18cf8e3b",
-   "title": "Most tokenized stock trading on Solana, BNB Chain occurs outside US market hours",
-   "link": "https://cointelegraph.com/news/tokenized-stocks-after-hours-trading-solana-bnb-chain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-13T19:48:06+00:00",
-   "summary": "Tokenized equities have reached nearly $3.3 billion in value as investors embrace round-the-clock access beyond Wall Street hours.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4VA9NB54GWFZ29JZYNA4293/hi-how-ripple-plans-to-bridge-crypto-and-wall-street.jpg"
-  },
-  {
-   "id": "600e82de3c",
-   "title": "Bitcoin Whale That Sat Through Every Crash Since 2020 Just Moved $377M",
-   "link": "https://decrypt.co/380867/bitcoin-whale-every-crash-2020-moves-377m",
-   "source": "Decrypt",
-   "published": "2026-10-13T19:38:12+00:00",
-   "summary": "A wallet that received 4,581 BTC in March 2020, worth about $40 million then, moved its stash today when it was worth about $377 million.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/09/bitcoin-whale-decrypt-style-02-gID_7.jpg"
   }
  ]
 }
