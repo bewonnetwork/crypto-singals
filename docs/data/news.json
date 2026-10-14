@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T03:39:32+00:00",
+ "updated": "2026-10-14T09:03:11+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,105 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "6b69a9ea56",
+   "title": "Proposed French tax on regulated stablecoins could drive crypto traders offshore",
+   "link": "https://www.coindesk.com/policy/2026/10/14/proposed-french-tax-on-regulated-stablecoins-could-drive-crypto-traders-offshore",
+   "source": "CoinDesk",
+   "published": "2026-10-14T08:48:11+00:00",
+   "summary": "Chainalysis CEO in France Francois Volpoet warned the proposed 31.4% tax on regulated stablecoins could push traders toward unmonitored offshore channels.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/2695a675c283399d52d01fdcce43803229edb864-4256x2832.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "84a929c438",
+   "title": "Standard Chartered unlocks direct bitcoin and ether trading for affluent UAE clients",
+   "link": "https://www.coindesk.com/business/2026/10/14/standard-chartered-unlocks-direct-bitcoin-and-ether-trading-for-affluent-uae-clients",
+   "source": "CoinDesk",
+   "published": "2026-10-14T08:10:07+00:00",
+   "summary": "The bank manages custody and settlement in-house via a closed-loop model, removing the need for separate crypto wallets.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/635098a63fd9f1666a72fdfb7fee8ca9adedf6a2-4032x2268.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "2a8ed74967",
+   "title": "Binance updates Anthropic mark per second to stop liquidation",
+   "link": "https://cryptoslate.com/binance-updates-anthropic-mark-per-second-to-stop-liquidation/",
+   "source": "CryptoSlate",
+   "published": "2026-10-14T07:20:13+00:00",
+   "summary": "Shunyet Jan describes Binance’s perpetual pricing method, while 21Shares’ certificate adds issuer-only recourse, affiliated note terms and costs beyond the 1% fee. Read the full story on CryptoSlate Understand the crypto stories that…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/anthropic-synthetic-etp-pricing-standard.jpg"
+  },
+  {
+   "id": "088b568033",
+   "title": "Coinbase, which holds 5% of all bitcoin, wants the quantum fix started now",
+   "link": "https://www.coindesk.com/tech/2026/10/14/coinbase-which-holds-5-of-all-bitcoin-wants-the-quantum-fix-started-now",
+   "source": "CoinDesk",
+   "published": "2026-10-14T05:44:51+00:00",
+   "summary": "Coinbase says bitcoin should start preparing for quantum computers now, with flexible addresses, a backup quantum-proof key and a separate debate over lost coins.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/6e8ed1cd0f17a1509349ad7cb7c31b8324847527-1920x1280.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-14T05:35:52+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "15581f045b",
+   "title": "Starknet introduces wallet privacy feature for DeFi activity",
+   "link": "https://cointelegraph.com/news/starknet-introduces-wallet-privacy-feature-for-defi-activity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-14T05:32:14+00:00",
+   "summary": "Starknet’s Shadow Accounts allow users to obscure connections between their main wallets and DeFi activity, though transactions remain visible onchain.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4WDYJ6RECS35PSEZTD40N6J/added-starknet-logo.png"
+  },
+  {
+   "id": "1f132a0384",
+   "title": "Fed’s Williams sees AI supply squeeze lasting beyond 2 years",
+   "link": "https://cointelegraph.com/markets/feds-williams-sees-ai-supply-squeeze-lasting-beyond-2-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-14T05:30:10+00:00",
+   "summary": "New York Fed President John Williams’ comments came as he reaffirmed his view that the US Federal Reserve may need to raise interest rates once more this year.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4WDVRKK44RE061434J5PYP7/hi-bitcoin-miners-as-energy-buyers-ai-1.jpg"
+  },
+  {
+   "id": "bc316060ee",
+   "title": "Ripple adds Stripe-owned wallets to XRP Ledger as AI payments pass 14 million",
+   "link": "https://www.coindesk.com/tech/2026/10/14/ripple-adds-stripe-owned-wallets-to-xrp-ledger-as-ai-payments-pass-14-million",
+   "source": "CoinDesk",
+   "published": "2026-10-14T05:24:12+00:00",
+   "summary": "The integration will let software pay for online services using XRP and RLUSD, while questions remain about how much real economic activity the transactions represent.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/260b57a4fe560b018cc5f2eb91b9df196b57dc92-3773x2122.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "4744ff4e51",
+   "title": "South Korea locks out crypto users as 27 exchange sites go dark",
+   "link": "https://cryptoslate.com/south-korea-locks-out-crypto-users-as-27-exchange-sites-go-dark/",
+   "source": "CryptoSlate",
+   "published": "2026-10-14T04:30:38+00:00",
+   "summary": "FIU plans withdrawal guidance through DAXA with operators’ cooperation as website restrictions raise access concerns for existing users. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/south-korea-crypto-access-block-standard.jpg"
+  },
+  {
+   "id": "057b854c68",
+   "title": "Solana sets Oct. 21 for Alpenglow upgrade targeting 150-millisecond finality",
+   "link": "https://www.coindesk.com/tech/2026/10/14/solana-sets-oct-21-for-alpenglow-upgrade-targeting-150-millisecond-finality",
+   "source": "CoinDesk",
+   "published": "2026-10-14T04:11:16+00:00",
+   "summary": "The switch will replace Solana’s existing validator voting system, remove vote transactions from blocks and could sharply change headline transaction counts even if user activity stays flat.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/54c0f3b41e62df4cdf774aab4c7d68c64e5e976c-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "fe37b061fb",
+   "title": "Bitcoin climbs toward $84,000 after Fed’s Williams sees no rate hikes in 2027",
+   "link": "https://www.coindesk.com/markets/2026/10/14/bitcoin-climbs-toward-usd84-000-after-fed-s-williams-sees-no-rate-hikes-in-2027",
+   "source": "CoinDesk",
+   "published": "2026-10-14T03:50:54+00:00",
+   "summary": "ZEC led a broad bounce among major tokens, and Korean chipmakers snapped a five-day losing streak ahead of Thursday’s U.S. inflation data.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/f3e63169156c07452f98787fddb16a5ef4589854-1508x848.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
   {
    "id": "ae05de20ca",
    "title": "Coinbase lays out flexible designs as key priority for Bitcoin’s post-quantum migration",
@@ -153,15 +252,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/09/bitcoin-whale-decrypt-style-02-gID_7.jpg"
   },
   {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-13T19:33:57+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
    "id": "f3c0df1d32",
    "title": "Bitcoin defies $800 million crypto wipeout as South Korea’s AI stock market crashes",
    "link": "https://cryptoslate.com/bitcoin-defies-800-million-crypto-wipeout-as-south-koreas-ai-stock-market-crashes/",
@@ -270,15 +360,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/93d03b154b61caa450721817352d202a4ce97e6d-2400x1350.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   },
   {
-   "id": "7dc2f7d07a",
-   "title": "A $5 billion Bitcoin fortune is at stake, but UK court says being defrauded isn’t enough to claim it",
-   "link": "https://cryptoslate.com/a-5-billion-bitcoin-fortune-is-at-stake-but-uk-court-says-being-defrauded-isnt-enough-to-claim-it/",
-   "source": "CryptoSlate",
-   "published": "2026-10-13T15:40:44+00:00",
-   "summary": "The preliminary ruling leaves ownership and distribution unresolved, with victims still required to establish rights under Chinese law. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/applicant-bitcoin-jurisdiction.webp"
-  },
-  {
    "id": "2775e603ad",
    "title": "Bitcoin keeps up pressure on $84K as US stocks skirt Korea tech sell-off",
    "link": "https://cointelegraph.com/markets/bitcoin-keeps-up-pressure-on-84k-as-us-stocks-sidestep-korea-tech-sell-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -331,15 +412,6 @@
    "published": "2026-10-13T14:45:08+00:00",
    "summary": "Ledger confirmed a hardware implant in CryptoBilis-sold devices steals recovery phrases, as MediaMarkt suspends sales.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-13-at-17.21.39.png"
-  },
-  {
-   "id": "9b36c327b1",
-   "title": "Bitcoin’s quantum-safe protection gets 82% cheaper as researchers race to secure 6 million exposed BTC",
-   "link": "https://cryptoslate.com/bitcoins-quantum-safe-protection-gets-82-cheaper-as-researchers-race-to-secure-6-million-exposed-btc/",
-   "source": "CryptoSlate",
-   "published": "2026-10-13T14:20:26+00:00",
-   "summary": "Cheaper GPU computation supports specially prepared QSB spends, while conventional funding signatures and direct miner access limit practical use. Read the full story on CryptoSlate Understand the crypto stories that matter and what to…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-qsb-transition-risk.webp"
   },
   {
    "id": "79932b5ae5",
@@ -655,78 +727,6 @@
    "published": "2026-10-13T04:18:20+00:00",
    "summary": "Bitcoin climbed back above $83,000 after an early dip, decoupling from a sharp slide in Korean chip stocks and weakness in Nasdaq futures ahead of Thursday’s US CPI report.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/4fc215c16d984306b203a2148546a2afc8f4ba6d-2168x1094.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "18c7deb777",
-   "title": "South Korea moves to block 27 crypto websites, including KuCoin, MEXC",
-   "link": "https://cointelegraph.com/news/south-korea-moves-to-block-27-crypto-websites-including-kucoin-mexc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-13T02:41:30+00:00",
-   "summary": "Authorities said the restrictions are aimed at unregistered exchanges and have acknowledged that customers could have difficulty withdrawing assets.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4SJ32T5MFAHM21PB498EN3Q/korea-website-block.jpg"
-  },
-  {
-   "id": "9d16c68391",
-   "title": "Bitcoin slides below $82,000 as crypto liquidations surge past $770 million",
-   "link": "https://www.theblock.co/news/markets/2026-10-12-bitcoin-slides-crypto-liquidations-surge-418374",
-   "source": "The Block",
-   "published": "2026-10-13T01:57:49+00:00",
-   "summary": "Crypto liquidations amounted to $771 million over the past 24 hours, including $685.6 million in long positions.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin-market.png"
-  },
-  {
-   "id": "9def445c85",
-   "title": "Meta claims new Muse Wonder AI models rival OpenAI, Anthropic",
-   "link": "https://cointelegraph.com/news/meta-launches-muse-wonder-ai-models-challenging-top-rivals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-13T01:54:31+00:00",
-   "summary": "Meta co-founder Mark Zuckerberg said its newest models are a step toward “personal superintelligence.”",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4SEQQ4N93A3WPX8RG9DRBAR/meta.jpg"
-  },
-  {
-   "id": "07f64cf504",
-   "title": "Aptos rolls out Encrypted Mempool to curb frontrunning, sandwich attacks",
-   "link": "https://cointelegraph.com/news/aptos-rolls-out-encrypted-mempool-to-curb-frontrunning-sandwich-attacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-13T00:52:52+00:00",
-   "summary": "The optional feature hides transaction details until their order is finalized, preventing bots from exploiting pending trades.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4SBPCTGPG3FDASX5ZEZCYYW/aptos.jpg"
-  },
-  {
-   "id": "ec7933f7c1",
-   "title": "Blur to shut down frontend next month as NFT trading volume dwindles",
-   "link": "https://www.theblock.co/news/ecosystems/2026-10-12-blur-nft-marketplace-shutting-down-frontend-blend-418363",
-   "source": "The Block",
-   "published": "2026-10-12T21:49:02+00:00",
-   "summary": "The NFT marketplace's frontend next month while the protocol stays onchain. The BLUR token fell more than 20%.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/11/20221107_Blur3.jpg"
-  },
-  {
-   "id": "f16772da15",
-   "title": "AI Will Hit 40% of Jobs, IMF Warns. Young People Are First in Line",
-   "link": "https://decrypt.co/380789/ai-hit-40-percent-jobs-imf-warns-young-people-first",
-   "source": "Decrypt",
-   "published": "2026-10-12T21:46:03+00:00",
-   "summary": "IMF chief Kristalina Georgieva says AI investment is holding global growth near 3%, with Asian chipmakers winning big, while warning of a 'slow-moving tsunami' for young workers.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/04/decrypt-style-ai-jobs-gID_7.jpg"
-  },
-  {
-   "id": "12cf036bd1",
-   "title": "Standard Chartered Will Hold Ripple's Stablecoin in Dubai—And Let Clients Trade With It Without Moving It",
-   "link": "https://decrypt.co/380776/standard-chartered-hold-ripple-rlusd-stablecoin-dubai",
-   "source": "Decrypt",
-   "published": "2026-10-12T21:16:03+00:00",
-   "summary": "The bank's Dubai branch now offers custody for Ripple's RLUSD stablecoin and plans a link with LMAX that lets institutions post it as trading collateral while the coins stay put.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/ripple-logo-decrypt-style-01-gID_7.png"
-  },
-  {
-   "id": "10141217ac",
-   "title": "FTX’s crypto mining venture is now used to advance AI",
-   "link": "https://cointelegraph.com/news/ftx-crypto-mining-ai-data-center?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-12T21:11:26+00:00",
-   "summary": "The defunct exchange acquired a 20% stake in Genesis Digital Assets before FTX declared bankruptcy in November 2022.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4RW88XV464BJDJNJTY3D37E/hi-top-5-biggest-mining-farms.jpg"
   }
  ]
 }
