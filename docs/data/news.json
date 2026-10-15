@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T00:18:58+00:00",
+ "updated": "2026-10-15T04:50:51+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,87 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "e9fdbb7752",
+   "title": "Qivalis wins Dutch EMI license, but MiCA rules block launch",
+   "link": "https://cryptoslate.com/qivalis-wins-dutch-emi-license-but-mica-rules-block-launch/",
+   "source": "CryptoSlate",
+   "published": "2026-10-15T04:40:28+00:00",
+   "summary": "The company says issuance is planned in the coming months, subject to MiCA requirements and white-paper publication. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/qivalis-stablecoin-payment-route.webp"
+  },
+  {
+   "id": "8ea967be24",
+   "title": "Bitcoin drops below $81,000 as risk-off sentiment weighs on Asian equities",
+   "link": "https://www.theblock.co/news/markets/2026-10-15-bitcoin-drops-asian-equities-tumble-418623",
+   "source": "The Block",
+   "published": "2026-10-15T04:38:48+00:00",
+   "summary": "Asian equities tumbled on Thursday, with South Korea's Kospi losing 8% and Japan's Nikkei 225 declining 5% during morning trading.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin.png"
+  },
+  {
+   "id": "0dab81ba28",
+   "title": "Nearly $1 billion in crypto bets liquidated as bitcoin, ether and XRP slide",
+   "link": "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide",
+   "source": "CoinDesk",
+   "published": "2026-10-15T04:25:15+00:00",
+   "summary": "Ether accounted for nearly 60% of the forced closures across the two largest cryptocurrencies, falling roughly twice as much as bitcoin.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/6285ca18b516e7f58992440d81dd86fe7a6f6759-1000x694.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "82491999bc",
+   "title": "Bitcoin mining pool once handling 2.3% of network shuts after hashrate falls 65%",
+   "link": "https://www.coindesk.com/markets/2026/10/15/bitcoin-mining-pool-once-handling-2-3-of-network-shuts-after-hashrate-falls-65",
+   "source": "CoinDesk",
+   "published": "2026-10-15T04:13:56+00:00",
+   "summary": "Computing power directed at Binance Pool has fallen from 26 EH/s in December to about 9 EH/s. Its remaining miners must choose another provider before a Nov. 10 cutoff.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/54bd04de039305784bf732dce245207bcc75ba21-7008x3942.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "1cd516578a",
+   "title": "Bitcoin wilts as Fed rate uncertainty weighs. Kospi plunges 8%",
+   "link": "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs",
+   "source": "CoinDesk",
+   "published": "2026-10-15T03:57:45+00:00",
+   "summary": "Bets on an October Fed rate hike briefly spiked to nearly 50% after Wednesday’s inflation report, but have since cooled.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/120f5e079f145eea15f4ed3c577550e8e70bec73-2189x1264.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "1286c62343",
+   "title": "Bitcoin miners plunge up to 13% in Wall Street’s worst selloff since July",
+   "link": "https://cointelegraph.com/markets/bitcoin-miners-plunge-up-to-13-in-wall-streets-worst-selloff-since-july?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-15T03:29:22+00:00",
+   "summary": "TeraWulf, Core Scientific, Cipher Mining and IREN each lost more than 12% as hotter inflation hit AI infrastructure companies.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4YSG3DXFXJ6NSHP3JM0EBPS/stocks.jpg"
+  },
+  {
+   "id": "ae49ebe84c",
+   "title": "Firelight forces XRP-linked tokens lockup as withdrawal delay queue grows",
+   "link": "https://cryptoslate.com/firelight-forces-xrp-linked-tokens-lockup-as-withdrawal-delay-queue-grows/",
+   "source": "CryptoSlate",
+   "published": "2026-10-15T01:30:51+00:00",
+   "summary": "The October 6 activation moved existing FXRP stakes automatically into pooled cover backing, pairing fee income with claim exposure and longer withdrawals. Read the full story on CryptoSlate Understand the crypto stories that matter and…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/firelight-xrp-cover-transfer.webp"
+  },
+  {
+   "id": "5c9d4df7ad",
+   "title": "VanEck seeks to withdraw application for Lido staked Ether ETF",
+   "link": "https://cointelegraph.com/news/vaneck-seeks-to-withdraw-application-for-lido-staked-ether-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-15T01:21:52+00:00",
+   "summary": "VanEck initially filed an S-1 registration statement for the exchange-traded fund in October last year.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4YJ7E5P377C783E6HEWNS55/hi-using-proprietary-indicators-vaneck.jpg"
+  },
+  {
+   "id": "3a232a9eba",
+   "title": "Polygon gains US payments licenses after closing Coinme deal",
+   "link": "https://cointelegraph.com/news/polygon-gains-us-payments-licenses-after-closing-coinme-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-15T00:55:21+00:00",
+   "summary": "The deal gives Polygon access to 37 money transmitter licenses and 11 state exemptions.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4YGMAKBQ7H9BQG4RR5WN0J2/polygon.jpg"
+  },
   {
    "id": "c847405730",
    "title": "Solana sets October 21 for massive Alpenglow upgrade that could make transactions 99% faster to finalize",
@@ -270,15 +351,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/c71857d0597179e55ec5939c5a27318c5a9a9d1c-6309x3888.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   },
   {
-   "id": "f698a81d44",
-   "title": "Bitcoin Fog operator’s conviction upheld without Chainalysis disclosing source code",
-   "link": "https://cryptoslate.com/bitcoin-fog-appeal-upheld-wallet-tracing-without-requiring-its-source-code/",
-   "source": "CryptoSlate",
-   "published": "2026-10-14T15:30:57+00:00",
-   "summary": "The September 25 ruling relied on corroborated Reactor testimony and a case-specific failure to justify source-code access. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-fog-blockchain-investigation.webp"
-  },
-  {
    "id": "f558ca8fda",
    "title": "Crypto Long & Short: Why gold and bitcoin belong in the same portfolio",
    "link": "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio",
@@ -286,15 +358,6 @@
    "published": "2026-10-14T15:05:15+00:00",
    "summary": "",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/cf236124298c64926d37601e39c5a05a5c54ffd0-1920x1080.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "2ee2b371e0",
-   "title": "Bitcoin plunges to $81,300 support as Fed hike odds hit 55% amid $100 million crypto wipeout",
-   "link": "https://cryptoslate.com/bitcoin-plunges-to-81300-support-as-fed-hike-odds-hit-55-amid-100-million-crypto-wipeout/",
-   "source": "CryptoSlate",
-   "published": "2026-10-14T15:00:32+00:00",
-   "summary": "Bitcoin fell below $83,000 on Wednesday as hotter-than-expected US core inflation data revived expectations of further Federal Reserve interest rate hikes, triggering a fresh wave of liquidations across the cryptocurrency market. CoinGlass…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-inflation-rate-pressure.webp"
   },
   {
    "id": "1c8f247e4c",
@@ -664,69 +727,6 @@
    "published": "2026-10-14T05:32:14+00:00",
    "summary": "Starknet’s Shadow Accounts allow users to obscure connections between their main wallets and DeFi activity, though transactions remain visible onchain.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4WDYJ6RECS35PSEZTD40N6J/added-starknet-logo.png"
-  },
-  {
-   "id": "1f132a0384",
-   "title": "Fed’s Williams sees AI supply squeeze lasting beyond 2 years",
-   "link": "https://cointelegraph.com/markets/feds-williams-sees-ai-supply-squeeze-lasting-beyond-2-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-14T05:30:10+00:00",
-   "summary": "New York Fed President John Williams’ comments came as he reaffirmed his view that the US Federal Reserve may need to raise interest rates once more this year.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4WDVRKK44RE061434J5PYP7/hi-bitcoin-miners-as-energy-buyers-ai-1.jpg"
-  },
-  {
-   "id": "bc316060ee",
-   "title": "Ripple adds Stripe-owned wallets to XRP Ledger as AI payments pass 14 million",
-   "link": "https://www.coindesk.com/tech/2026/10/14/ripple-adds-stripe-owned-wallets-to-xrp-ledger-as-ai-payments-pass-14-million",
-   "source": "CoinDesk",
-   "published": "2026-10-14T05:24:12+00:00",
-   "summary": "The integration will let software pay for online services using XRP and RLUSD, while questions remain about how much real economic activity the transactions represent.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/260b57a4fe560b018cc5f2eb91b9df196b57dc92-3773x2122.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "057b854c68",
-   "title": "Solana sets Oct. 21 for Alpenglow upgrade targeting 150-millisecond finality",
-   "link": "https://www.coindesk.com/tech/2026/10/14/solana-sets-oct-21-for-alpenglow-upgrade-targeting-150-millisecond-finality",
-   "source": "CoinDesk",
-   "published": "2026-10-14T04:11:16+00:00",
-   "summary": "The switch will replace Solana’s existing validator voting system, remove vote transactions from blocks and could sharply change headline transaction counts even if user activity stays flat.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/54c0f3b41e62df4cdf774aab4c7d68c64e5e976c-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "fe37b061fb",
-   "title": "Bitcoin climbs toward $84,000 after Fed’s Williams sees no rate hikes in 2027",
-   "link": "https://www.coindesk.com/markets/2026/10/14/bitcoin-climbs-toward-usd84-000-after-fed-s-williams-sees-no-rate-hikes-in-2027",
-   "source": "CoinDesk",
-   "published": "2026-10-14T03:50:54+00:00",
-   "summary": "ZEC led a broad bounce among major tokens, and Korean chipmakers snapped a five-day losing streak ahead of Thursday’s U.S. inflation data.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/f3e63169156c07452f98787fddb16a5ef4589854-1508x848.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "ae05de20ca",
-   "title": "Coinbase lays out flexible designs as key priority for Bitcoin’s post-quantum migration",
-   "link": "https://www.theblock.co/news/ecosystems/2026-10-13-coinbase-bitcoin-post-quantum-migration-418509",
-   "source": "The Block",
-   "published": "2026-10-14T02:49:34+00:00",
-   "summary": "Coinbase published priorities for Bitcoin's post-quantum transition, urging early preparation for signature upgrades and fund migration.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/06/20260612_Coinbase_News.jpg"
-  },
-  {
-   "id": "a4cb39dfb6",
-   "title": "Bitwise’s Hougan says Q3 charts point to ‘crypto spring’",
-   "link": "https://cointelegraph.com/markets/bitwises-hougan-says-q3-charts-point-to-crypto-spring?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-14T02:19:56+00:00",
-   "summary": "Bitwise’s Matt Hougan said nearly every fundamental indicator that Bitwise tracks spiked sharply higher.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4W39C53K5A0QZYE5SN4HY81/spring.jpg"
-  },
-  {
-   "id": "db9e44c921",
-   "title": "Largest Philippines crypto exchange, Coins.ph, said to face central bank regulatory action",
-   "link": "https://www.coindesk.com/policy/2026/10/13/largest-philippines-crypto-exchange-coins-ph-said-to-face-central-bank-regulatory-action",
-   "source": "CoinDesk",
-   "published": "2026-10-14T01:00:00+00:00",
-   "summary": "The exchange, which has over 18 million customers, is said to have handled business transactions involving restricted offshore gaming and gambling companies.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/90725f28abbda8fc3beba48c502b8cb9cd1f93a7-1000x664.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   }
  ]
 }
