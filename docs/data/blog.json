@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-15-2026",
+   "type": "trending",
+   "date": "2026-10-15T14:26:21+00:00",
+   "title": "Trending in Crypto — October 15, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (BTC, SOL, PRL…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 81135.41296104676,
+      "ch": -0.98
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "rank": 7,
+      "price": 103.16757813035245,
+      "ch": -1.04
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "rank": 102,
+      "price": 1.7879062128071608,
+      "ch": -4.75
+     },
+     {
+      "sym": "ZEREBRO",
+      "name": "Zerebro",
+      "rank": 484,
+      "price": 0.046690632884536065,
+      "ch": 41.34
+     },
+     {
+      "sym": "AERO",
+      "name": "Aerodrome Finance",
+      "rank": 83,
+      "price": 0.8703360498658885,
+      "ch": 1.07
+     },
+     {
+      "sym": "ZRO",
+      "name": "LayerZero",
+      "rank": 88,
+      "price": 1.9111014982602146,
+      "ch": -0.04
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 20,
+      "price": 4.718242361091449,
+      "ch": -3.37
+     },
+     {
+      "sym": "ENA",
+      "name": "Ethena",
+      "rank": 41,
+      "price": 0.19079374265773608,
+      "ch": -2.22
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 635,
+      "price": 110.71282653499452,
+      "ch": -5.39
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 119,
+      "price": 0.00741815269956806,
+      "ch": -1.38
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 81185,
+      "ch": -0.94,
+      "vol": 39548688106,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2370.43,
+      "ch": -2.53,
+      "vol": 18799720389,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 103.08,
+      "ch": -1.12,
+      "vol": 4063737169,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.31,
+      "ch": -2.08,
+      "vol": 2391622711,
+      "rank": 5
+     },
+     {
+      "sym": "DOGE",
+      "name": "Dogecoin",
+      "price": 0.078743,
+      "ch": -3.93,
+      "vol": 1455898325,
+      "rank": 12
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1103.09,
+      "ch": -5.8,
+      "vol": 1107601731,
+      "rank": 10
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.7,
+      "ch": -4.38,
+      "vol": 1066618968,
+      "rank": 20
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 722.14,
+      "ch": -1.48,
+      "vol": 1000880923,
+      "rank": 4
+     }
+    ]
+   }
+  },
+  {
    "slug": "risk-reward-ratio-explained",
    "type": "learn",
    "date": "2026-10-15T09:38:18+00:00",
@@ -5923,5 +6071,5 @@
    }
   }
  ],
- "updated": "2026-10-15T09:38:18+00:00"
+ "updated": "2026-10-15T14:26:21+00:00"
 }
