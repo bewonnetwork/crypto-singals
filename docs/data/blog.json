@@ -1,6 +1,31 @@
 {
  "posts": [
   {
+   "slug": "risk-reward-ratio-explained",
+   "type": "learn",
+   "date": "2026-10-15T09:38:18+00:00",
+   "title": "Risk : Reward Ratio Explained",
+   "title_bn": "Risk : Reward কী?",
+   "sum_en": "A trade is worth taking only if the possible gain is clearly bigger than the possible loss. Here is how to measure it before you enter.",
+   "sum_bn": "সম্ভাব্য লাভ সম্ভাব্য ক্ষতির চেয়ে পরিষ্কারভাবে বড় হলে তবেই ট্রেড নেওয়ার মতো। ঢোকার আগে কীভাবে মাপবেন দেখুন।",
+   "body": {
+    "pts_bn": [
+     "Risk = Entry থেকে Stop Loss। Reward = Entry থেকে Target।",
+     "১ : ২ মানে ১ টাকা ঝুঁকিতে ২ টাকা লাভের সুযোগ। এতে ১০টার মধ্যে মাত্র ৪টা জিতলেও লাভে থাকা যায়।",
+     "১ : ১-এর কম হলে অর্ধেকের বেশি ট্রেড জিততে হবে, যা কঠিন।",
+     "Target বাস্তব জায়গায় বসান (আগের হাই বা রেজিস্ট্যান্স), শুধু অনুপাত মেলাতে দূরে বসাবেন না।",
+     "ফি-ও হিসাবে ধরুন: ছোট টার্গেটের ট্রেডে ফি লাভের বড় অংশ খেয়ে ফেলে।"
+    ],
+    "pts_en": [
+     "Risk = entry to stop-loss. Reward = entry to target.",
+     "1 : 2 means risking 1 to make 2. With that you can win only 4 trades out of 10 and still be in profit.",
+     "Below 1 : 1 you need to win more than half your trades, which is hard.",
+     "Put the target at a real level (a previous high or resistance); do not stretch it just to make the ratio look good.",
+     "Count fees too: on small-target trades fees eat a large share of the gain."
+    ]
+   }
+  },
+  {
    "slug": "crypto-market-digest-october-15-2026",
    "type": "digest",
    "date": "2026-10-15T04:50:38+00:00",
@@ -5116,31 +5141,6 @@
    }
   },
   {
-   "slug": "risk-reward-ratio-explained",
-   "type": "learn",
-   "date": "2026-10-05T08:50:39+00:00",
-   "title": "Risk : Reward Ratio Explained",
-   "title_bn": "Risk : Reward কী?",
-   "sum_en": "A trade is worth taking only if the possible gain is clearly bigger than the possible loss. Here is how to measure it before you enter.",
-   "sum_bn": "সম্ভাব্য লাভ সম্ভাব্য ক্ষতির চেয়ে পরিষ্কারভাবে বড় হলে তবেই ট্রেড নেওয়ার মতো। ঢোকার আগে কীভাবে মাপবেন দেখুন।",
-   "body": {
-    "pts_bn": [
-     "Risk = Entry থেকে Stop Loss। Reward = Entry থেকে Target।",
-     "১ : ২ মানে ১ টাকা ঝুঁকিতে ২ টাকা লাভের সুযোগ। এতে ১০টার মধ্যে মাত্র ৪টা জিতলেও লাভে থাকা যায়।",
-     "১ : ১-এর কম হলে অর্ধেকের বেশি ট্রেড জিততে হবে, যা কঠিন।",
-     "Target বাস্তব জায়গায় বসান (আগের হাই বা রেজিস্ট্যান্স), শুধু অনুপাত মেলাতে দূরে বসাবেন না।",
-     "ফি-ও হিসাবে ধরুন: ছোট টার্গেটের ট্রেডে ফি লাভের বড় অংশ খেয়ে ফেলে।"
-    ],
-    "pts_en": [
-     "Risk = entry to stop-loss. Reward = entry to target.",
-     "1 : 2 means risking 1 to make 2. With that you can win only 4 trades out of 10 and still be in profit.",
-     "Below 1 : 1 you need to win more than half your trades, which is hard.",
-     "Put the target at a real level (a previous high or resistance); do not stretch it just to make the ratio look good.",
-     "Count fees too: on small-target trades fees eat a large share of the gain."
-    ]
-   }
-  },
-  {
    "slug": "crypto-market-digest-october-5-2026",
    "type": "digest",
    "date": "2026-10-05T08:50:39+00:00",
@@ -5923,5 +5923,5 @@
    }
   }
  ],
- "updated": "2026-10-15T04:50:38+00:00"
+ "updated": "2026-10-15T09:38:18+00:00"
 }
