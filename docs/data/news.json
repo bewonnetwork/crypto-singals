@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T23:53:48+00:00",
+ "updated": "2026-10-16T03:15:57+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,33 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "a28205d778",
+   "title": "82 criminal charges follow armed crypto abduction in Toronto",
+   "link": "https://cryptoslate.com/82-criminal-charges-follow-armed-crypto-abduction-in-toronto/",
+   "source": "CryptoSlate",
+   "published": "2026-10-16T02:20:21+00:00",
+   "summary": "Toronto police allege attackers sought cryptocurrency and business security access; searches uncovered ammunition stolen from the military. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/toronto-crypto-kidnapping-standard.jpg"
+  },
+  {
+   "id": "40b22246d8",
+   "title": "MSCI adopts index exclusion rules that could oust Strategy",
+   "link": "https://cointelegraph.com/news/msci-adopts-index-exclusion-rules-that-could-oust-strategy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-16T00:48:20+00:00",
+   "summary": "Strategy, Metaplanet and Upexi were previously identified for deletion under the methodology, with MSCI set to announce its final list on Nov. 11.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M512PJ7T3H0MKWY3KK1SEH21/strategy.jpg"
+  },
+  {
+   "id": "13d2ded6a9",
+   "title": "Ledger wants customers to trust its new $849 device as criminals compromise existing wallets",
+   "link": "https://cryptoslate.com/ledger-wants-customers-to-trust-its-new-849-device-as-criminals-compromise-existing-wallets/",
+   "source": "CryptoSlate",
+   "published": "2026-10-16T00:00:02+00:00",
+   "summary": "Reservations are open for the data-only device, which pairs everyday apps with hardware approvals and targets 2027 delivery. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ledger-atom-data-only.webp"
+  },
   {
    "id": "3e4acbddba",
    "title": "Australia releases draft bill to adopt OECD crypto tax reporting framework",
@@ -297,15 +324,6 @@
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260108_Ripple_News_3.jpg"
   },
   {
-   "id": "f503e6d6c4",
-   "title": "AI agents keep coming back for crypto as x402 wallet refill rate surges to 89%",
-   "link": "https://cryptoslate.com/ai-agents-keep-coming-back-for-crypto-as-x402-wallet-refill-rate-surges-to-89/",
-   "source": "CryptoSlate",
-   "published": "2026-10-15T14:30:53+00:00",
-   "summary": "Chainalysis’s rate covers wallets already active on multiple days, leaving overall retention and independent commercial demand unmeasured. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/x402-wallet-funding-flows.webp"
-  },
-  {
    "id": "af243abb82",
    "title": "Ethereum, Altcoins See 'Outsized Drawdowns' Due to Macro Pressures",
    "link": "https://decrypt.co/381034/ethereum-altcoins-see-outsized-drawdowns-due-to-macro-pressures",
@@ -367,15 +385,6 @@
    "published": "2026-10-15T13:30:00+00:00",
    "summary": "The SEC and the CFTC have issued a raft of pro-crypto rules recently. But will the rules hold up in court, and can they be easily rolled back by the “anti-crypto army”?",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4Y6THP0WR3ZHNE9G3WXBFF6/courtroom-scene-edit-brisov.png"
-  },
-  {
-   "id": "7427326b17",
-   "title": "Ethereum’s faster-exit plan would leave new validators waiting to earn",
-   "link": "https://cryptoslate.com/ethereums-faster-exit-plan-would-preserve-an-earnings-hurdle-for-new-stakers/",
-   "source": "CryptoSlate",
-   "published": "2026-10-15T13:20:02+00:00",
-   "summary": "A dated three-week entry estimate shows how direct deposits and pooled holdings bear the cost of inactive staking capital. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-validator-activation-tunnel.webp"
   },
   {
    "id": "da1347caad",
@@ -718,15 +727,6 @@
    "published": "2026-10-14T20:30:15+00:00",
    "summary": "Leadership at the White House is shifting once again, as Patrick Witt’s tenure as the administration’s top crypto adviser comes to an end.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/02/image-d3d3f946-f84d-4ec0-af8e-b8e8f8da2cab-2.jpg"
-  },
-  {
-   "id": "535f789791",
-   "title": "AI Agents Made 138 Million Crypto Payments in a Year. Most Were Tiny",
-   "link": "https://decrypt.co/380989/ai-agents-138-million-crypto-payments-one-year",
-   "source": "Decrypt",
-   "published": "2026-10-14T20:16:05+00:00",
-   "summary": "A new Chainalysis report found payments through Coinbase’s x402 protocol surged from about 1,500 in mid-2025 to more than 138 million by Q3 2026, with U.S. wallets dominating spending on AI models.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/03/ai-agents-decrypt-style-gID_7.jpg"
   }
  ]
 }
