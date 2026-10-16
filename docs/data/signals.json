@@ -661,6 +661,25 @@
  ],
  "watch": [
   {
+   "coin": "APT",
+   "name": "APT",
+   "market": "crypto",
+   "side": "SELL",
+   "price": 0.8349,
+   "score": 53,
+   "chk": "3/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "5M",
+    "⚠ run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-16T22:44:17+00:00"
+  },
+  {
    "coin": "USDJPY",
    "name": "USD/JPY",
    "market": "forex",
@@ -830,25 +849,6 @@
     "⚠ range"
    ],
    "time": "2026-10-14T14:28:26+00:00"
-  },
-  {
-   "coin": "TRX",
-   "name": "TRX",
-   "market": "crypto",
-   "side": "BUY",
-   "price": 0.3309,
-   "score": 53,
-   "chk": "3/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "5M",
-    "run-up",
-    "RSI",
-    "⚠ extension",
-    "range"
-   ],
-   "time": "2026-10-14T03:38:58+00:00"
   }
  ],
  "fear_greed": {
@@ -961,5 +961,5 @@
    }
   }
  },
- "updated": "2026-10-16T20:02:43+00:00"
+ "updated": "2026-10-16T22:45:10+00:00"
 }

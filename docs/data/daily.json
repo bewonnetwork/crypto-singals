@@ -587,7 +587,8 @@
   ],
   "n": 51
  },
- "open": [
+ "open": [],
+ "history": [
   {
    "coin": "GBPJPY",
    "market": "forex",
@@ -599,21 +600,13 @@
    "score": 74,
    "agree": 4,
    "n": 5,
-   "src": {
-    "tv1h": 0.467,
-    "tv4h": 0.558,
-    "tv1d": 0.127,
-    "engine": 0.954,
-    "rsi": 67.0,
-    "mom": 0.058
-   },
    "opened": "2026-10-16T08:15:11+00:00",
-   "status": "open",
+   "status": "TP1",
    "also_bot": false,
-   "tp1_hit": true
-  }
- ],
- "history": [
+   "tp1_hit": true,
+   "closed": "2026-10-16T22:45:10+00:00",
+   "exit": 210.58700561523438
+  },
   {
    "coin": "TIA",
    "market": "crypto",
@@ -1159,7 +1152,7 @@
   }
  ],
  "stats": {
-  "tp1": 8,
+  "tp1": 9,
   "tp2": 8,
   "sl": 15,
   "expired": 0
@@ -1183,5 +1176,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-16T20:02:43+00:00"
+ "updated": "2026-10-16T22:45:10+00:00"
 }
