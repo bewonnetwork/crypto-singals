@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-16-2026",
+   "type": "trending",
+   "date": "2026-10-16T17:28:02+00:00",
+   "title": "Trending in Crypto — October 16, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (DACITY, QTC, PRL…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "DACITY",
+      "name": "Dacity Coin",
+      "rank": 706,
+      "price": 0.027097281745558553,
+      "ch": 69.26
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 612,
+      "price": 115.75009598896366,
+      "ch": 4.05
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "rank": 104,
+      "price": 1.7625863964585067,
+      "ch": -2.99
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 19,
+      "price": 4.941061950749318,
+      "ch": -4.09
+     },
+     {
+      "sym": "TIA",
+      "name": "Celestia",
+      "rank": 99,
+      "price": 0.6730222958749859,
+      "ch": 12.3
+     },
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 80817.02993352777,
+      "ch": -1.86
+     },
+     {
+      "sym": "TAO",
+      "name": "Bittensor",
+      "rank": 34,
+      "price": 272.73530268017197,
+      "ch": -1.06
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "rank": 11,
+      "price": 78.56106811339482,
+      "ch": -3.8
+     },
+     {
+      "sym": "DNA",
+      "name": "NeoSoul",
+      "rank": 544,
+      "price": 0.2973780365555557,
+      "ch": 0
+     },
+     {
+      "sym": "PUMP",
+      "name": "Pump.fun",
+      "rank": 49,
+      "price": 0.004263713029645199,
+      "ch": -5.38
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 80777,
+      "ch": -1.86,
+      "vol": 26865879825,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2393.88,
+      "ch": -2.03,
+      "vol": 12054171042,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 102.81,
+      "ch": -2.98,
+      "vol": 2718503197,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.29,
+      "ch": -3.61,
+      "vol": 1271354414,
+      "rank": 5
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1134.74,
+      "ch": -7.25,
+      "vol": 1238203904,
+      "rank": 10
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.93,
+      "ch": -4.24,
+      "vol": 1147059165,
+      "rank": 19
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 718.2,
+      "ch": -2.01,
+      "vol": 729759567,
+      "rank": 4
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 78.47,
+      "ch": -3.82,
+      "vol": 657500542,
+      "rank": 11
+     }
+    ]
+   }
+  },
+  {
    "slug": "support-and-resistance-basics",
    "type": "learn",
    "date": "2026-10-16T08:14:04+00:00",
@@ -6536,5 +6684,5 @@
    }
   }
  ],
- "updated": "2026-10-16T08:14:04+00:00"
+ "updated": "2026-10-16T17:28:02+00:00"
 }

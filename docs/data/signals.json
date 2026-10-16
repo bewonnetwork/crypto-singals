@@ -49,7 +49,89 @@
   "expired": 0
  },
  "min_conf": 60,
- "open": [],
+ "open": [
+  {
+   "coin": "LINK",
+   "side": "SELL",
+   "entry": 12.353,
+   "sl": 12.55476949458049,
+   "tp1": 12.151230505419509,
+   "tp2": 11.949461010839016,
+   "tp1_hit": false,
+   "opened": "2026-10-16T16:00:00+00:00",
+   "rsi": 41.9,
+   "conf": 80,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "⚠ Weak trend (ADX 14)",
+    "RSI 42 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "LINK",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  },
+  {
+   "coin": "UNI",
+   "side": "SELL",
+   "entry": 7.216,
+   "sl": 7.386905729637517,
+   "tp1": 7.045094270362483,
+   "tp2": 6.874188540724965,
+   "tp1_hit": false,
+   "opened": "2026-10-16T16:00:00+00:00",
+   "rsi": 39.0,
+   "conf": 81,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "Moderate trend (ADX 21)",
+    "RSI 39 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "UNI",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  },
+  {
+   "coin": "ZEC",
+   "side": "SELL",
+   "entry": 1153.6,
+   "sl": 1187.685815064974,
+   "tp1": 1119.514184935026,
+   "tp2": 1085.4283698700517,
+   "tp1_hit": false,
+   "opened": "2026-10-16T16:00:00+00:00",
+   "rsi": 32.8,
+   "conf": 83,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "Moderate trend (ADX 23)",
+    "Volume 2.0× the average",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "ZEC",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  }
+ ],
  "history": [
   {
    "coin": "EURJPY",
@@ -553,6 +635,63 @@
  ],
  "watch": [
   {
+   "coin": "USDJPY",
+   "name": "USD/JPY",
+   "market": "forex",
+   "side": "BUY",
+   "price": 158.2480010986328,
+   "score": 34,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "⚠ 5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-16T17:27:39+00:00"
+  },
+  {
+   "coin": "RENDER",
+   "name": "RENDER",
+   "market": "crypto",
+   "side": "SELL",
+   "price": 1.903,
+   "score": 53,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-16T17:27:34+00:00"
+  },
+  {
+   "coin": "NEAR",
+   "name": "NEAR",
+   "market": "crypto",
+   "side": "SELL",
+   "price": 5.054,
+   "score": 58,
+   "chk": "3/4",
+   "why": [
+    "⚠ 4H",
+    "⚠ 15M",
+    "5M",
+    "run-up",
+    "⚠ RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-16T17:27:23+00:00"
+  },
+  {
    "coin": "ENA",
    "name": "ENA",
    "market": "crypto",
@@ -684,63 +823,6 @@
     "range"
    ],
    "time": "2026-10-14T03:38:58+00:00"
-  },
-  {
-   "coin": "ARB",
-   "name": "ARB",
-   "market": "crypto",
-   "side": "BUY",
-   "price": 0.1897,
-   "score": 40,
-   "chk": "4/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "5M",
-    "run-up",
-    "RSI",
-    "extension",
-    "range"
-   ],
-   "time": "2026-10-13T20:43:30+00:00"
-  },
-  {
-   "coin": "EURJPY",
-   "name": "EUR/JPY",
-   "market": "forex",
-   "side": "BUY",
-   "price": 177.28700256347656,
-   "score": 34,
-   "chk": "4/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "⚠ 5M",
-    "run-up",
-    "RSI",
-    "extension",
-    "range"
-   ],
-   "time": "2026-10-13T15:17:47+00:00"
-  },
-  {
-   "coin": "XAUUSD",
-   "name": "Gold (XAU/USD)",
-   "market": "forex",
-   "side": "SELL",
-   "price": 4190.39990234375,
-   "score": 34,
-   "chk": "4/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "⚠ 5M",
-    "run-up",
-    "RSI",
-    "extension",
-    "range"
-   ],
-   "time": "2026-10-13T15:17:44+00:00"
   }
  ],
  "fear_greed": {
@@ -797,61 +879,61 @@
   ],
   "quotes": {
    "EURUSD": {
-    "price": 1.12461,
-    "ch": 0.27,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 1.12221,
+    "ch": 0.1,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "GBPUSD": {
-    "price": 1.33328,
-    "ch": 0.59,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 1.33166,
+    "ch": 0.41,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "USDJPY": {
-    "price": 158.041,
-    "ch": 0.18,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 158.248,
+    "ch": 0.08,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "XAUUSD": {
-    "price": 4187.2998,
-    "ch": 0.51,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 4182.2002,
+    "ch": 0.28,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "AUDUSD": {
-    "price": 0.69546,
-    "ch": 0.67,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 0.69469,
+    "ch": 0.52,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "USDCAD": {
-    "price": 1.41708,
-    "ch": -0.24,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 1.41568,
+    "ch": -0.26,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "USDCHF": {
-    "price": 0.82483,
-    "ch": -0.53,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 0.82537,
+    "ch": -0.37,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "NZDUSD": {
-    "price": 0.56558,
-    "ch": 0.88,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 0.56472,
+    "ch": 0.68,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "EURJPY": {
-    "price": 177.67101,
-    "ch": 0.43,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 177.552,
+    "ch": 0.19,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "GBPJPY": {
-    "price": 210.69099,
-    "ch": 0.77,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 210.72501,
+    "ch": 0.49,
+    "time": "2026-10-16T16:00:00+00:00"
    },
    "XAGUSD": {
-    "price": 57.82,
-    "ch": 1.92,
-    "time": "2026-10-16T12:00:00+00:00"
+    "price": 57.385,
+    "ch": 0.31,
+    "time": "2026-10-16T16:00:00+00:00"
    }
   }
  },
- "updated": "2026-10-16T13:17:05+00:00"
+ "updated": "2026-10-16T17:28:48+00:00"
 }
