@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T17:28:05+00:00",
+ "updated": "2026-10-16T20:02:11+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,87 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "b776699cdd",
+   "title": "USDC processed $36 trillion in H1 transactions, but Circle kept just 7 cents of every revenue dollar",
+   "link": "https://cryptoslate.com/usdc-processed-36-trillion-in-h1-transactions-but-circle-kept-just-7-cents-of-every-revenue-dollar/",
+   "source": "CryptoSlate",
+   "published": "2026-10-16T19:50:21+00:00",
+   "summary": "Stablecoin issuer Circle spent 93% of its first-half revenue on distribution, operations, and investment as USDC processed more than $36 trillion in transactions. The stablecoin issuer generated about $1.4 billion in revenue in the first…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/circle-usdc-cost-pressure.webp"
+  },
+  {
+   "id": "08dbe53f82",
+   "title": "Hackers Jailbreak iPhone 18 Pro on Stage, and It Survives a Reboot",
+   "link": "https://decrypt.co/381177/hackers-jailbreak-iphone-18-pro-survives-reboot",
+   "source": "Decrypt",
+   "published": "2026-10-16T19:36:04+00:00",
+   "summary": "Calif showed an untethered jailbreak on an iPhone 18 Pro running iOS 27.0.1 at Hexacon in Paris. It survived a reboot, but no tool or bug details are public yet.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/05/apple-logo-decrypy-style-01-gID_7.png"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-16T19:17:04+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "ec67ed2483",
+   "title": "Circle Plans Push Into 40 Emerging Markets as Stablecoins Go Mainstream, CEO Says",
+   "link": "https://decrypt.co/381178/circle-40-emerging-markets-stablecoins-go-mainstream",
+   "source": "Decrypt",
+   "published": "2026-10-16T18:55:37+00:00",
+   "summary": "Circle CEO Jeremy Allaire told Reuters the USDC issuer plans to enter about 40 emerging and developing markets, citing rising demand in Southeast Asia, Latin America, Africa and the Middle East.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/USDC-gID_7.png"
+  },
+  {
+   "id": "9ea9e7d107",
+   "title": "OpenAI’s rogue crypto agent spent funds without permission, exposing risks to autonomous wallets",
+   "link": "https://cryptoslate.com/openai-research-model-questioned-wallet-permission-then-spent-testnet-eth-anyway-in-june-2026/",
+   "source": "CryptoSlate",
+   "published": "2026-10-16T18:40:50+00:00",
+   "summary": "The October 15 report update describes an internal GPT-5.6 Sol model checking 362 addresses and omitting the account spending from its completion report. Read the full story on CryptoSlate Understand the crypto stories that matter and what…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/sepolia-unauthorized-spending.webp"
+  },
+  {
+   "id": "0d60aa548c",
+   "title": "Bitcoin Treasury Giant Strategy Faces Index Removal Under Finalized MSCI Rules",
+   "link": "https://decrypt.co/381168/bitcoin-treasury-giant-strategy-faces-index-removal-under-finalized-msci-rules",
+   "source": "Decrypt",
+   "published": "2026-10-16T18:16:04+00:00",
+   "summary": "The index provider will classify “non-operating companies” as ineligible starting Nov. 30, targeting firms whose balance sheets are dominated by a single asset.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/strategy-logo-x-twitter-gID_7.png"
+  },
+  {
+   "id": "09f096460e",
+   "title": "India's Cyber Agency Says AI Agents Read Confidential Business Records Without Authorization",
+   "link": "https://decrypt.co/381165/indias-cyber-agency-ai-agents-read-confidential-business-records",
+   "source": "Decrypt",
+   "published": "2026-10-16T17:48:06+00:00",
+   "summary": "India's CERT-In says AI agents exceeded their assigned tasks in tests and read confidential records on live Indian systems.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-09-gID_7.png"
+  },
+  {
+   "id": "a1921faf3c",
+   "title": "Crypto PACs escalate spending against Sherrod Brown in Ohio Senate race",
+   "link": "https://cointelegraph.com/news/crypto-pac-fairshake-spending-ohio-senate-race-sherrod-brown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-16T17:30:09+00:00",
+   "summary": "At least two industry-aligned PACs have poured more than $52 million into opposing Sherrod Brown’s return to the Senate.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M52HJ9YWKB542GFBKZMAPWM1/dollars-fly-away-us-senate-1.jpg"
+  },
+  {
+   "id": "d782e47768",
+   "title": "Stablecoin remittances cost 84% less than traditional transfers, report finds",
+   "link": "https://cointelegraph.com/news/stablecoin-remittances-cost-savings-traditional-transfers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-16T17:21:45+00:00",
+   "summary": "Borderless.xyz data shows major savings on cross-border business payments, with stablecoin transfers also settling faster than traditional international bank wires.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M52M2X6XQAK15HXKMTSR830M/hi-how-to-send-money-to-family-and-friends-abroad-with-cryptocurrency.jpg"
+  },
   {
    "id": "f4007d3a35",
    "title": "Coinbase to power stablecoin-backed cards for Marqeta customers",
@@ -124,15 +205,6 @@
    "published": "2026-10-16T14:00:05+00:00",
    "summary": "Fortitude’s dollar-repayable ZEC borrowing can finance expansion through coin sales, while additional machines compete for existing block rewards. Read the full story on CryptoSlate Understand the crypto stories that matter and what to…",
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/zcash-mining-deployment-path.webp"
-  },
-  {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-16T13:56:15+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
   },
   {
    "id": "472af5c096",
@@ -325,11 +397,11 @@
   },
   {
    "id": "6bf815a65d",
-   "title": "Live updates: Crypto gives up some ground as AI selloff picks up steam",
+   "title": "Live updates: Crypto gives up more ground as AI selloff picks up steam",
    "link": "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue",
    "source": "CoinDesk",
    "published": "2026-10-16T09:48:14+00:00",
-   "summary": "Fixed income is again catching a bid on worries about the deflating AI bubble.",
+   "summary": "A Friday surge in oil prices is hitting already-shaky equity markets, sending the Nasdaq down more than 2%.",
    "image": ""
   },
   {
@@ -387,15 +459,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/536d7d5e6cfaca6de1f092a21de7b4cf4d742687-1500x750.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   },
   {
-   "id": "f4c2636ff8",
-   "title": "Native Bitcoin collateral on Aave triggers WBTC pool deficit",
-   "link": "https://cryptoslate.com/native-bitcoin-collateral-on-aave-triggers-wbtc-pool-deficit/",
-   "source": "CryptoSlate",
-   "published": "2026-10-16T08:30:32+00:00",
-   "summary": "Hub suppliers would finance fast exits before permissioned buyers acquire the vaults, with escrow shortfalls reported as deficits. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-babylon-wbtc-settlement-standard.jpg"
-  },
-  {
    "id": "1ea699b660",
    "title": "Capital B reports $78M H1 loss driven by Bitcoin impairment charge",
    "link": "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -412,15 +475,6 @@
    "published": "2026-10-16T07:43:29+00:00",
    "summary": "Judge ruled changes in CFTC enforcement priorities and allegations of misconduct by its enforcement division were insufficient to overturn Gemini’s January 2025 settlement.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M51T0RBW7AV3PJKM9PKPVK3Y/gemini-cftc.png"
-  },
-  {
-   "id": "ae7147b289",
-   "title": "Binance stock put options lock full USDC reserves for sellers",
-   "link": "https://cryptoslate.com/binance-stock-put-options-lock-full-usdc-reserves-for-sellers/",
-   "source": "CryptoSlate",
-   "published": "2026-10-16T07:30:48+00:00",
-   "summary": "Binance’s seller FAQ requires full purchase funds and allows early assignment, but its linked terms still describe long-only trading. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-stock-options-selling-standard.jpg"
   },
   {
    "id": "212d31c6fa",
@@ -673,60 +727,6 @@
    "published": "2026-10-15T15:10:44+00:00",
    "summary": "BTC buyers attempted to defend $80,000 support after September US producer inflation overshot expectations by 100 basis points for the largest monthly gain since March 2022",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M500AA327W2X1RAET1WJ9AW5/article-covers-257087-bitcoin-dips-3percent-analysis-70k-btc-price-not-obviously-bearish-1280x853.webp"
-  },
-  {
-   "id": "f7fc894882",
-   "title": "Crypto for Advisors: Wall Street is done waiting on Congress for crypto rules",
-   "link": "https://www.coindesk.com/coindesk-indices/2026/10/15/crypto-for-advisors-wall-street-is-done-waiting-on-congress-for-crypto-rules",
-   "source": "CoinDesk",
-   "published": "2026-10-15T15:00:00+00:00",
-   "summary": "",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/5ddf1efa5bb12b3aa1345b8718beec9eb6ab01db-2560x1440.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "849af6e5d7",
-   "title": "Ripple Prime adds RWA swaps referencing perpetual futures listed on Hyperliquid",
-   "link": "https://www.theblock.co/news/business/2026-10-15-ripple-prime-rwa-swaps-perpetual-futures-hyperliquid-418681",
-   "source": "The Block",
-   "published": "2026-10-15T14:43:35+00:00",
-   "summary": "Ripple Prime has added RWA perpetual swaps tied to equities, ETFs, metals, energy and currencies, with 24/7 trading and settlement.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/01/20260108_Ripple_News_3.jpg"
-  },
-  {
-   "id": "af243abb82",
-   "title": "Ethereum, Altcoins See 'Outsized Drawdowns' Due to Macro Pressures",
-   "link": "https://decrypt.co/381034/ethereum-altcoins-see-outsized-drawdowns-due-to-macro-pressures",
-   "source": "Decrypt",
-   "published": "2026-10-15T14:27:18+00:00",
-   "summary": "Market analysts say that macro factors are pushing altcoin prices down, after ETH, XRP, and SOL all dropped on the day.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/ethereum-dogecoin-bitcoin-cardano-xrp-decrypt-style-gID_7.jpg"
-  },
-  {
-   "id": "be01cab201",
-   "title": "Starknet opens seven-day vote on independent Layer 1 over quantum risks",
-   "link": "https://www.theblock.co/news/ecosystems/2026-10-15-starknet-opens-seven-day-vote-on-independent-layer-1-over-quantum-risks-418673",
-   "source": "The Block",
-   "published": "2026-10-15T14:26:53+00:00",
-   "summary": "Starknet opened a seven-day poll on Thursday asking STRK holders whether to research an independent post-quantum Layer 1.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/07/starknet_ethereum_layer_2-2.jpeg"
-  },
-  {
-   "id": "179a0ce8b0",
-   "title": "Russia to ban direct peer-to-peer crypto trades starting July 2027",
-   "link": "https://cointelegraph.com/news/russia-ban-p2p-crypto-trades-july-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T14:22:43+00:00",
-   "summary": "Russia plans to ban direct P2P crypto trades from July 1, 2027, while separate rules already prohibit transfers from digital accounts to self-custody wallets.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZXEK5DTKX65782NKWA8C3M/russia-p2p-ban-illustration-1.png"
-  },
-  {
-   "id": "ef2c2b8357",
-   "title": "Nasdaq-listed Tron sets up $200M ATM share offering to fuel TRX acquisitions",
-   "link": "https://cointelegraph.com/news/nasdaq-tron-200m-atm-offering-fuel-trx-acquisitions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T14:16:55+00:00",
-   "summary": "The Nasdaq-listed treasury company holds about $237 million in TRX tokens and plans to raise additional capital to fund its purchases, alongside its daily accumulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4ZW44RHENZQJH17Z7JFTKHE/hi-crypto-goes-for-nasdaq-tron-1.jpg"
   }
  ]
 }
