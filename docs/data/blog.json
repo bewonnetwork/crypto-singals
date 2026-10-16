@@ -1,6 +1,31 @@
 {
  "posts": [
   {
+   "slug": "support-and-resistance-basics",
+   "type": "learn",
+   "date": "2026-10-16T08:14:04+00:00",
+   "title": "Support and Resistance Basics",
+   "title_bn": "সাপোর্ট ও রেজিস্ট্যান্স",
+   "sum_en": "Prices often stop and turn at the same levels again and again. Learn how to find those levels and how traders use them.",
+   "sum_bn": "দাম প্রায়ই একই জায়গায় এসে থামে বা ঘুরে যায়। সেই জায়গাগুলো কীভাবে খুঁজবেন আর কাজে লাগাবেন জেনে নিন।",
+   "body": {
+    "pts_bn": [
+     "সাপোর্ট: যে দামে ক্রেতা বেশি আসে, দাম পড়া থামে। রেজিস্ট্যান্স: যে দামে বিক্রেতা বেশি আসে, দাম ওঠা থামে।",
+     "যে জায়গা থেকে দাম ২–৩ বার ফিরে গেছে সেটা শক্ত। বড় টাইমফ্রেমের (৪ঘ, ১দিন) লেভেল বেশি গুরুত্বপূর্ণ।",
+     "রেজিস্ট্যান্স ভেঙে ওপরে গেলে সেটা অনেক সময় নতুন সাপোর্ট হয়ে যায়।",
+     "লেভেল একটা দাগ নয়, একটা এলাকা। ঠিক দামে না ধরে আশপাশের কয়েকটা দাম ধরুন।",
+     "লেভেলের একদম গায়ে Stop Loss বসালে সহজে হিট হয়; একটু বাইরে বসান।"
+    ],
+    "pts_en": [
+     "Support is a price where buyers step in and the fall stops. Resistance is a price where sellers step in and the rise stops.",
+     "A level that turned price two or three times is strong. Levels on bigger timeframes (4h, 1 day) matter more.",
+     "When resistance breaks, it often becomes the new support.",
+     "A level is a zone, not a thin line. Think of a small price area rather than one exact number.",
+     "A stop placed exactly on the level gets hit easily; put it a little beyond."
+    ]
+   }
+  },
+  {
    "slug": "crypto-market-digest-october-16-2026",
    "type": "digest",
    "date": "2026-10-16T03:15:46+00:00",
@@ -5338,31 +5363,6 @@
    }
   },
   {
-   "slug": "support-and-resistance-basics",
-   "type": "learn",
-   "date": "2026-10-06T06:32:44+00:00",
-   "title": "Support and Resistance Basics",
-   "title_bn": "সাপোর্ট ও রেজিস্ট্যান্স",
-   "sum_en": "Prices often stop and turn at the same levels again and again. Learn how to find those levels and how traders use them.",
-   "sum_bn": "দাম প্রায়ই একই জায়গায় এসে থামে বা ঘুরে যায়। সেই জায়গাগুলো কীভাবে খুঁজবেন আর কাজে লাগাবেন জেনে নিন।",
-   "body": {
-    "pts_bn": [
-     "সাপোর্ট: যে দামে ক্রেতা বেশি আসে, দাম পড়া থামে। রেজিস্ট্যান্স: যে দামে বিক্রেতা বেশি আসে, দাম ওঠা থামে।",
-     "যে জায়গা থেকে দাম ২–৩ বার ফিরে গেছে সেটা শক্ত। বড় টাইমফ্রেমের (৪ঘ, ১দিন) লেভেল বেশি গুরুত্বপূর্ণ।",
-     "রেজিস্ট্যান্স ভেঙে ওপরে গেলে সেটা অনেক সময় নতুন সাপোর্ট হয়ে যায়।",
-     "লেভেল একটা দাগ নয়, একটা এলাকা। ঠিক দামে না ধরে আশপাশের কয়েকটা দাম ধরুন।",
-     "লেভেলের একদম গায়ে Stop Loss বসালে সহজে হিট হয়; একটু বাইরে বসান।"
-    ],
-    "pts_en": [
-     "Support is a price where buyers step in and the fall stops. Resistance is a price where sellers step in and the rise stops.",
-     "A level that turned price two or three times is strong. Levels on bigger timeframes (4h, 1 day) matter more.",
-     "When resistance breaks, it often becomes the new support.",
-     "A level is a zone, not a thin line. Think of a small price area rather than one exact number.",
-     "A stop placed exactly on the level gets hit easily; put it a little beyond."
-    ]
-   }
-  },
-  {
    "slug": "crypto-market-digest-october-6-2026",
    "type": "digest",
    "date": "2026-10-06T06:32:44+00:00",
@@ -6536,5 +6536,5 @@
    }
   }
  ],
- "updated": "2026-10-16T03:15:46+00:00"
+ "updated": "2026-10-16T08:14:04+00:00"
 }

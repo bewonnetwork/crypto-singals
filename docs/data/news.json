@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T03:15:57+00:00",
+ "updated": "2026-10-16T08:14:07+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,105 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "1ea699b660",
+   "title": "Capital B reports $78M H1 loss driven by Bitcoin impairment charge",
+   "link": "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-16T07:59:46+00:00",
+   "summary": "Europe’s second-largest Bitcoin treasury raised $30 million and increased its Bitcoin holdings by 11% in the first half of 2026, despite reporting a $75 million Bitcoin impairment loss.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M51V1P8ZQ063ADC4P2T050NT/market-red-graph-falling-danger-stones-bitcoin-4.jpg"
+  },
+  {
+   "id": "9d2e31368f",
+   "title": "Judge rejects CFTC, Gemini bid to undo $5M settlement",
+   "link": "https://cointelegraph.com/news/judge-rejects-cftc-gemini-5m-settlement-reversal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-16T07:43:29+00:00",
+   "summary": "Judge ruled changes in CFTC enforcement priorities and allegations of misconduct by its enforcement division were insufficient to overturn Gemini’s January 2025 settlement.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M51T0RBW7AV3PJKM9PKPVK3Y/gemini-cftc.png"
+  },
+  {
+   "id": "ae7147b289",
+   "title": "Binance stock put options lock full USDC reserves for sellers",
+   "link": "https://cryptoslate.com/binance-stock-put-options-lock-full-usdc-reserves-for-sellers/",
+   "source": "CryptoSlate",
+   "published": "2026-10-16T07:30:48+00:00",
+   "summary": "Binance’s seller FAQ requires full purchase funds and allows early assignment, but its linked terms still describe long-only trading. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-stock-options-selling-standard.jpg"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-16T06:21:30+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "212d31c6fa",
+   "title": "OpenAI model helped itself to testnet crypto, then kept quiet about it",
+   "link": "https://cointelegraph.com/news/openai-model-spent-testnet-eth-without-authorization?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-16T06:11:22+00:00",
+   "summary": "An OpenAI research model checked 362 wallet addresses, questioned whether using the funds was ethical and proceeded with a transaction it later omitted from its final task summary.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M51KABB9BETQZNEF1DB9SNM5/openai-ether.png"
+  },
+  {
+   "id": "6dd46e2008",
+   "title": "XRP has failed to make holders rich like bitcoin and ether. Here’s why",
+   "link": "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why",
+   "source": "CoinDesk",
+   "published": "2026-10-16T05:53:58+00:00",
+   "summary": "XRP remains below its 2017-cycle high while bitcoin, ether and other major tokens have surged, enriching their holders.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/38ca8bb4905288c7dc2f7d52bb714f76a4af723b-1600x900.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "a548fe8ab4",
+   "title": "US federal judge denies joint Gemini-CFTC bid to undo $5 million settlement",
+   "link": "https://www.theblock.co/news/regulation/2026-10-16-us-judge-denies-joint-gemini-cftc-bid-418775",
+   "source": "The Block",
+   "published": "2026-10-16T05:44:05+00:00",
+   "summary": "The court noted that Gemini voluntarily settled three weeks before trial and that policy changes do not warrant reopening the judgment.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/03/20230317_Gemini.jpg"
+  },
+  {
+   "id": "0bc5269cf9",
+   "title": "Balaji’s ‘Singapore of social media’ begins with a wave of bans",
+   "link": "https://cointelegraph.com/news/balajis-singapore-of-social-media-begins-with-a-wave-of-bans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-16T05:16:11+00:00",
+   "summary": "Network School founder Balaji Srinivasan wants to turn Farcaster into a haven for well-mannered techno-optimists. He had to do a bit of housekeeping first.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M51HRYEE2Y0DNQAA7EW3JH8Y/balaji.jpg"
+  },
+  {
+   "id": "8602b2223c",
+   "title": "Crypto market cap leaps $800B in Q3, but spot volume drops 14%",
+   "link": "https://cryptoslate.com/crypto-market-cap-leaps-800b-in-q3-but-spot-volume-drops-14/",
+   "source": "CryptoSlate",
+   "published": "2026-10-16T04:40:20+00:00",
+   "summary": "CoinGecko’s Q3 2026 report shows spot turnover at its top 10 centralized exchanges fell 14.2%, while perpetual open interest ended September above $100 billion. Read the full story on CryptoSlate Understand the crypto stories that matter…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/q3-crypto-market-spot-perpetuals-standard.jpg"
+  },
+  {
+   "id": "18e5b1feaa",
+   "title": "An OpenAI agent ran out of Ethereum funds, and took from a wallet it did not own",
+   "link": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
+   "source": "CoinDesk",
+   "published": "2026-10-16T04:29:19+00:00",
+   "summary": "The research model derived funded Sepolia addresses from public seed phrases, questioned whether using the money was ethical, then called the funds “effectively abandoned” and used them anyway.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/c357579ddef2051b405b9e89f8525dd02709081d-5760x3240.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "f18da7c17b",
+   "title": "Bitcoin buyers snap up a brief drop below $80,000 as Asian stocks rebound",
+   "link": "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound",
+   "source": "CoinDesk",
+   "published": "2026-10-16T04:14:22+00:00",
+   "summary": "Bitcoin tore back to $82,500 within two hours of dipping under $80,000, and chipmakers in Seoul recovered from their worst close since April.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/891d851f5c1b7c4185f70d0e7835241eb1a6f7f3-1540x852.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
   {
    "id": "a28205d778",
    "title": "82 criminal charges follow armed crypto abduction in Toronto",
@@ -135,15 +234,6 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-global-exchange-flows.webp"
   },
   {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T19:37:27+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
    "id": "67b2d135a0",
    "title": "Boom or Bust, Bitcoin Wins the AI Trade, Bitwise CIO Says",
    "link": "https://decrypt.co/381077/bitwise-cio-bitcoin-wins-ai-boom-or-bust",
@@ -216,15 +306,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5021VDZN3M8VCH21XJTRFJY/bribe-money-corrupt-usa-1.jpg"
   },
   {
-   "id": "e48c1d2403",
-   "title": "Trump’s crypto bill loses its White House negotiator as Patrick Witt exits",
-   "link": "https://cryptoslate.com/trumps-crypto-policy-power-shifts-toward-sec-and-cftc-as-white-house-team-empties/",
-   "source": "CryptoSlate",
-   "published": "2026-10-15T17:00:01+00:00",
-   "summary": "President Donald Trump's crypto agenda has lost a White House negotiator as Patrick Witt confirms his departure and the administration's flagship digital-asset legislation remains stalled in Congress. On Oct. 15, Patrick Witt, executive…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/sec-cftc-crypto-oversight.webp"
-  },
-  {
    "id": "1bec4aaaa5",
    "title": "Sweden revisits digital krona as ECB advances digital euro plans",
    "link": "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -259,15 +340,6 @@
    "published": "2026-10-15T16:00:02+00:00",
    "summary": "Multiliquid has raised $8 million across its pre-seed and seed rounds, with Polychain leading the seed round.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/04/20260409_Tokens_News.jpg"
-  },
-  {
-   "id": "3fffc3f8fe",
-   "title": "Australia eyes A$14 million capital rule as crypto regulatory crackdown deepens",
-   "link": "https://cryptoslate.com/australia-eyes-a14-million-capital-rule-as-crypto-regulatory-crackdown-deepens/",
-   "source": "CryptoSlate",
-   "published": "2026-10-15T15:50:10+00:00",
-   "summary": "The proposed A$200,000 custody floor comes with asset and revenue tests and requirements for the outside custodian. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/asic-crypto-capital-requirements.webp"
   },
   {
    "id": "89e9530e99",
@@ -655,78 +727,6 @@
    "published": "2026-10-15T04:13:56+00:00",
    "summary": "Computing power directed at Binance Pool has fallen from 26 EH/s in December to about 9 EH/s. Its remaining miners must choose another provider before a Nov. 10 cutoff.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/54bd04de039305784bf732dce245207bcc75ba21-7008x3942.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "1cd516578a",
-   "title": "Bitcoin wilts as Fed rate uncertainty weighs. Kospi plunges 8%",
-   "link": "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs",
-   "source": "CoinDesk",
-   "published": "2026-10-15T03:57:45+00:00",
-   "summary": "Bets on an October Fed rate hike briefly spiked to nearly 50% after Wednesday’s inflation report, but have since cooled.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/120f5e079f145eea15f4ed3c577550e8e70bec73-2189x1264.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "1286c62343",
-   "title": "Bitcoin miners plunge up to 13% in Wall Street’s worst selloff since July",
-   "link": "https://cointelegraph.com/markets/bitcoin-miners-plunge-up-to-13-in-wall-streets-worst-selloff-since-july?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T03:29:22+00:00",
-   "summary": "TeraWulf, Core Scientific, Cipher Mining and IREN each lost more than 12% as hotter inflation hit AI infrastructure companies.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4YSG3DXFXJ6NSHP3JM0EBPS/stocks.jpg"
-  },
-  {
-   "id": "5c9d4df7ad",
-   "title": "VanEck seeks to withdraw application for Lido staked Ether ETF",
-   "link": "https://cointelegraph.com/news/vaneck-seeks-to-withdraw-application-for-lido-staked-ether-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T01:21:52+00:00",
-   "summary": "VanEck initially filed an S-1 registration statement for the exchange-traded fund in October last year.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4YJ7E5P377C783E6HEWNS55/hi-using-proprietary-indicators-vaneck.jpg"
-  },
-  {
-   "id": "3a232a9eba",
-   "title": "Polygon gains US payments licenses after closing Coinme deal",
-   "link": "https://cointelegraph.com/news/polygon-gains-us-payments-licenses-after-closing-coinme-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T00:55:21+00:00",
-   "summary": "The deal gives Polygon access to 37 money transmitter licenses and 11 state exemptions.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4YGMAKBQ7H9BQG4RR5WN0J2/polygon.jpg"
-  },
-  {
-   "id": "df45ada0e1",
-   "title": "Godfather of AI and 400 Scientists Want AI Models Cut Off From the Internet",
-   "link": "https://decrypt.co/380998/scientists-want-ai-cut-off-from-internet",
-   "source": "Decrypt",
-   "published": "2026-10-14T21:46:04+00:00",
-   "summary": "After a summer of AI models escaping test environments and hacking real companies, hundreds of researchers say the internet itself should be treated as a security boundary.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-09-gID_7.png"
-  },
-  {
-   "id": "9c8e11306a",
-   "title": "Developer Who Cloned Photoshop With AI Just Did the Same to Microsoft Office",
-   "link": "https://decrypt.co/380991/developer-cloned-photoshop-ai-just-did-same-microsoft-office",
-   "source": "Decrypt",
-   "published": "2026-10-14T21:16:03+00:00",
-   "summary": "Developer Brandon Thomas used Anthropic's Claude to build free, open-source replicas of Word, Excel and PowerPoint. They're rough, but they show how cheap cloning software has become.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-04-gID_7.png"
-  },
-  {
-   "id": "22f0adc93f",
-   "title": "Organizations join forces to fight Illinois crypto tax, after 6-month pause",
-   "link": "https://cointelegraph.com/news/cci-ba-fight-illinois-crypto-tax-pause?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-14T20:56:22+00:00",
-   "summary": "Illinois officials already agreed to delay implementation of a 0.2% tax on crypto assets, but industry-aligned organizations are pushing for summary judgment on the merits.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4Y1A2P32XBWMQ5M26VG2T55/hi-a-beginners-guide-to-filing-bitcoin-taxes.jpg"
-  },
-  {
-   "id": "4bba39fe83",
-   "title": "Patrick Witt exits White House crypto role as Clarity Act stalls",
-   "link": "https://www.theblock.co/news/regulation/2026-10-14-white-house-crypto-adviser-patrick-witt-departs-418611",
-   "source": "The Block",
-   "published": "2026-10-14T20:30:15+00:00",
-   "summary": "Leadership at the White House is shifting once again, as Patrick Witt’s tenure as the administration’s top crypto adviser comes to an end.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/02/image-d3d3f946-f84d-4ec0-af8e-b8e8f8da2cab-2.jpg"
   }
  ]
 }
