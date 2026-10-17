@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T05:03:23+00:00",
+ "updated": "2026-10-17T09:11:46+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,42 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "6cb67d7807",
+   "title": "Lagarde says euro-area economy is resilient, digital euro imminent",
+   "link": "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-17T08:32:11+00:00",
+   "summary": "“The digital euro will further stimulate innovation and competition in retail payments,” according to the ECB president.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M54ENNHY19CENP5ZV5HX428Z/christine-lagarde-eu.jpg"
+  },
+  {
+   "id": "712c8ebdab",
+   "title": "Bitget to discontinue services for some users in one-off exercise",
+   "link": "https://cointelegraph.com/news/bitget-to-discontinue-services-for-some-users-in-one-off-exercise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-17T07:26:57+00:00",
+   "summary": "Bitget says user funds are safe and exchange will continue to operate during the change.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5499P2SZPHXNNS2X8W74AV7/hi-how-are-governments-implementing-the-bitget-guidelines.jpg"
+  },
+  {
+   "id": "e973270d0d",
+   "title": "Bitcoin’s inflation hedge has a hidden cost, and leverage makes it worse",
+   "link": "https://cryptoslate.com/bitcoins-inflation-hedge-has-a-hidden-cost-and-leverage-makes-it-worse/",
+   "source": "CryptoSlate",
+   "published": "2026-10-17T07:00:46+00:00",
+   "summary": "Borrowing costs, missed interest income, and futures fees can all eat into returns even when Bitcoin holds its value. That's a big problem, and it gets even worse when inflation stays high. September's US inflation report showed consumer…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-borrowing-pressure-squeeze.webp"
+  },
+  {
+   "id": "f9e7978e77",
+   "title": "‘Wow, it’s a real discovery’: Claude cracks a 25-year NSA number mystery",
+   "link": "https://www.coindesk.com/tech/2026/10/17/wow-it-s-a-real-discovery-claude-cracks-a-25-year-nsa-number-mystery",
+   "source": "CoinDesk",
+   "published": "2026-10-17T06:39:48+00:00",
+   "summary": "Numbers the spy agency handed over in the 1990s, long suspected of hiding a backdoor, turn out to have come from a basic computer program. Bitcoin was never on that list, and its quantum problem hasn’t gone anywhere.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/2297ea2e470af647418127b13e7a3275fed8827a-1920x1200.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
   {
    "id": "02b8c17ad9",
    "title": "Cardano shifts $26M to USDCx as bridge controls freeze payouts",
@@ -259,15 +295,6 @@
    "published": "2026-10-16T14:11:03+00:00",
    "summary": "Strategy conditionally declared daily dividends on STRC, which continued to hover below its $100 par value.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M20FPT8H132TZGKAJWQX1YBC/hi-michael-saylors-bitcoin-obsession-how-it-all-started-1.jpg"
-  },
-  {
-   "id": "fa0a72852a",
-   "title": "Fortitude sold $8.3 million in borrowed Zcash to fund its mining expansion",
-   "link": "https://cryptoslate.com/zcashs-mining-boom-can-grow-without-creating-a-new-token-bid/",
-   "source": "CryptoSlate",
-   "published": "2026-10-16T14:00:05+00:00",
-   "summary": "Fortitude’s dollar-repayable ZEC borrowing can finance expansion through coin sales, while additional machines compete for existing block rewards. Read the full story on CryptoSlate Understand the crypto stories that matter and what to…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/zcash-mining-deployment-path.webp"
   },
   {
    "id": "472af5c096",
@@ -700,33 +727,6 @@
    "published": "2026-10-15T16:28:50+00:00",
    "summary": "The first major integration since Mastercard’s $1.8 billion BVNK acquisition lets banks, fintechs and enterprises hold, convert, and spend fiat and stablecoins through a single API, with agentic commerce support planned.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/mastercard-decrypt-style-01-gID_7.png"
-  },
-  {
-   "id": "3d560f2535",
-   "title": "CleanSpark and BitFuFu see bitcoin production slip in September as Canaan remains flat",
-   "link": "https://www.theblock.co/news/business/2026-10-15-cleanspark-bitfufu-bitcoin-production-slip-september-canaan-remains-flat-418686",
-   "source": "The Block",
-   "published": "2026-10-15T16:06:00+00:00",
-   "summary": "CleanSpark is ending monthly mining reports, while BitFuFu faces uncertainty over its Ethiopia deal.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/10/210930_Bitcoin_Mining_General.jpg"
-  },
-  {
-   "id": "4400d6e130",
-   "title": "Multiliquid, a settlement platform for tokenized assets, raises $8 million",
-   "link": "https://www.theblock.co/news/deals/2026-10-15-multiliquid-tokenized-assets-funding-418693",
-   "source": "The Block",
-   "published": "2026-10-15T16:00:02+00:00",
-   "summary": "Multiliquid has raised $8 million across its pre-seed and seed rounds, with Polychain leading the seed round.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/04/20260409_Tokens_News.jpg"
-  },
-  {
-   "id": "89e9530e99",
-   "title": "DeFi Development boosts CHAD dividend to 14% amid push to grow Solana holdings",
-   "link": "https://www.theblock.co/news/markets/2026-10-15-defi-development-chad-dividend-rate-14-418694",
-   "source": "The Block",
-   "published": "2026-10-15T15:48:32+00:00",
-   "summary": "DeFi Development is raising the dividend rate on its CHAD preferred stock to 14% from 13% as it taps CHAD sales to grow its Solana treasury.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/10/20230810_Solana_News4.jpg"
   }
  ]
 }
