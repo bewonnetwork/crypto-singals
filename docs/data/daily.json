@@ -492,33 +492,8 @@
   ],
   "n": 40
  },
- "open": [
-  {
-   "coin": "FET",
-   "market": "crypto",
-   "side": "SELL",
-   "entry": 0.1947,
-   "sl": 0.1947,
-   "tp1": 0.19076380560940828,
-   "tp2": 0.18682761121881658,
-   "score": 21,
-   "agree": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.536,
-    "tv4h": -0.445,
-    "tv1d": -0.155,
-    "engine": -0.961,
-    "rsi": 32.6,
-    "mom": -0.975,
-    "lsr": 1.5,
-    "crowd": -0.249
-   },
-   "opened": "2026-10-17T09:12:47+00:00",
-   "status": "open",
-   "also_bot": false,
-   "tp1_hit": true
-  },
+ "open": [],
+ "history": [
   {
    "coin": "ADA",
    "market": "crypto",
@@ -530,23 +505,31 @@
    "score": 23,
    "agree": 6,
    "n": 6,
-   "src": {
-    "tv1h": -0.491,
-    "tv4h": -0.445,
-    "tv1d": -0.155,
-    "engine": -0.878,
-    "rsi": 38.1,
-    "mom": -0.725,
-    "lsr": 2.07,
-    "crowd": -0.5
-   },
    "opened": "2026-10-17T09:12:47+00:00",
-   "status": "open",
+   "status": "TP1",
    "also_bot": false,
-   "tp1_hit": true
-  }
- ],
- "history": [
+   "tp1_hit": true,
+   "closed": "2026-10-17T18:32:04+00:00",
+   "exit": 0.2204
+  },
+  {
+   "coin": "FET",
+   "market": "crypto",
+   "side": "SELL",
+   "entry": 0.1947,
+   "sl": 0.1947,
+   "tp1": 0.19076380560940828,
+   "tp2": 0.18682761121881658,
+   "score": 21,
+   "agree": 6,
+   "n": 6,
+   "opened": "2026-10-17T09:12:47+00:00",
+   "status": "TP1",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-17T18:32:04+00:00",
+   "exit": 0.1886
+  },
   {
    "coin": "INJ",
    "market": "crypto",
@@ -1162,7 +1145,7 @@
   }
  ],
  "stats": {
-  "tp1": 10,
+  "tp1": 12,
   "tp2": 8,
   "sl": 17,
   "expired": 0
@@ -1186,5 +1169,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-17T16:10:32+00:00"
+ "updated": "2026-10-17T18:32:04+00:00"
 }
