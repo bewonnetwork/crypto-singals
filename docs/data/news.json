@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T22:44:40+00:00",
+ "updated": "2026-10-17T05:03:23+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,33 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "02b8c17ad9",
+   "title": "Cardano shifts $26M to USDCx as bridge controls freeze payouts",
+   "link": "https://cryptoslate.com/cardano-shifts-26m-to-usdcx-as-bridge-controls-freeze-payouts/",
+   "source": "CryptoSlate",
+   "published": "2026-10-17T05:00:24+00:00",
+   "summary": "Converted Intersect-administered budgets reduce ADA exposure, while milestone release and stablecoin cash-out conditions still govern access to usable money. Read the full story on CryptoSlate Understand the crypto stories that matter and…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/cardano-stablecoin-development-funding-standard.jpg"
+  },
+  {
+   "id": "8a099ce06a",
+   "title": "Satoshi-era bitcoin faces a bigger quantum threat after Google’s new Willow breakthrough",
+   "link": "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough",
+   "source": "CoinDesk",
+   "published": "2026-10-17T02:30:00+00:00",
+   "summary": "Google says its Willow chip can prepare the special quantum states needed for advanced calculations with about 40 times fewer errors, reducing one of the hardware bottlenecks behind any future attempt to crack bitcoin wallets.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/9f051c877190174f3a7cbc53e53d11e1620cee92-2560x1707.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "3dbe99f2b9",
+   "title": "Visa and Mastercard adopt USDC payouts across 200 countries",
+   "link": "https://cryptoslate.com/visa-and-mastercard-adopt-usdc-payouts-across-200-countries/",
+   "source": "CryptoSlate",
+   "published": "2026-10-17T02:00:33+00:00",
+   "summary": "Visa's Inyo rollout and Mastercard's BVNK platform give businesses stablecoin funding routes, subject to eligibility and rollout limits. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/visa-mastercard-stablecoin-payments-standard.jpg"
+  },
   {
    "id": "be305cfd01",
    "title": "Cross River Bank links $2.4B RLUSD to core banking system",
@@ -270,15 +297,6 @@
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/ethereum201.png"
   },
   {
-   "id": "bd67962375",
-   "title": "Institutions managing €800 billion ask what crypto tokens actually earn",
-   "link": "https://cryptoslate.com/e800b-in-wealth-managers-rethink-how-they-allocate-to-crypto/",
-   "source": "CryptoSlate",
-   "published": "2026-10-16T13:00:10+00:00",
-   "summary": "Brendan Ma, head of investment strategy at the Arbitrum Foundation, said he met with representatives of institutions managing about €800 billion in assets over 48 hours of closed-door meetings to discuss crypto. Private bankers and wealth…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/crypto-investment-outlook.webp"
-  },
-  {
    "id": "2fd265815a",
    "title": "Scammer Lost $4.8M in Bitcoin to Tampered Ledger Wallets: Chainalysis",
    "link": "https://decrypt.co/381141/scammer-lost-4-8m-in-bitcoin-to-tampered-ledger-wallets-chainalysis",
@@ -286,15 +304,6 @@
    "published": "2026-10-16T12:22:18+00:00",
    "summary": "The funds came from a task scam that paid people to fake product sales and reviews, then demanded deposits before releasing their pay.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/Hacker-hack-decrypt-style-04-gID_7.jpg"
-  },
-  {
-   "id": "bad574f544",
-   "title": "Oil stocks on land are near a decade low, complicating Bitcoin’s inflation relief hopes",
-   "link": "https://cryptoslate.com/bitcoins-inflation-relief-case-faces-a-113-million-barrel-onshore-oil-draw/",
-   "source": "CryptoSlate",
-   "published": "2026-10-16T12:00:11+00:00",
-   "summary": "The IEA’s September estimates show oil accumulating at sea while land-based buffers shrink, leaving inflation and financing relief uncertain. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-oil-spill-risk.webp"
   },
   {
    "id": "a80cb19534",
@@ -718,15 +727,6 @@
    "published": "2026-10-15T15:48:32+00:00",
    "summary": "DeFi Development is raising the dividend rate on its CHAD preferred stock to 14% from 13% as it taps CHAD sales to grow its Solana treasury.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/10/20230810_Solana_News4.jpg"
-  },
-  {
-   "id": "21ae4d8eb4",
-   "title": "Mastercard brings stablecoin balances into traditional banking and card payments",
-   "link": "https://cointelegraph.com/news/mastercard-bvnk-global-money-platform-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T15:46:05+00:00",
-   "summary": "The launch of Global Money Platform marks Mastercard’s first major integration with BVNK since its August acquisition, with Nuvei and Marqeta among the first companies to adopt the platform.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M501MR4NFX8WGM2DEYYC2STT/hi-could-those-who-left-mastercard-come-back3.jpg"
   }
  ]
 }
