@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T18:31:34+00:00",
+ "updated": "2026-10-17T20:52:31+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,24 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "5fcb657b41",
+   "title": "CoreWeave, Broadcom, Verizon among nine companies objecting to tokenized trading of their shares on OKXICE",
+   "link": "https://www.theblock.co/news/markets/2026-10-17-coreweave-broadcom-verizon-among-nine-companies-objecting-to-tokenized-trading-of-their-shares-on-okxice-418859",
+   "source": "The Block",
+   "published": "2026-10-17T19:56:25+00:00",
+   "summary": "Applied Optoelectronics told the WSJ it objected because it was unsure how tokenization would affect its stock price, liquidity and volatility.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/05/20250514_Tokenization-1200x675-1.jpg"
+  },
+  {
+   "id": "7328d27573",
+   "title": "Who opened your crypto wallet before it reached your hands?",
+   "link": "https://cryptoslate.com/who-handled-your-wallet-before-you-did/",
+   "source": "CryptoSlate",
+   "published": "2026-10-17T19:00:25+00:00",
+   "summary": "In early October, customers in Southeast Asia discovered that their crypto had disappeared from Ledger hardware wallets that still seemed to be working normally. They bought the devices through CryptoBilis, an authorized reseller, and…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ledger-wallet-supply-chain-tampering.webp"
+  },
   {
    "id": "e8e0560a9a",
    "title": "Turkey confirms Hex founder Richard Heart’s arrest, says police seized $7.15 million and six cold wallets",
@@ -232,15 +250,6 @@
    "published": "2026-10-16T22:30:17+00:00",
    "summary": "The bank says fintechs can access dollar and RLUSD payments through one API, with availability limited to some US states. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst…",
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/rlusd-dollar-paper-boats.webp"
-  },
-  {
-   "id": "23734f9a58",
-   "title": "Cardano governance hits a wall as treasury reaches 91% cap",
-   "link": "https://cryptoslate.com/cardano-has-42-6-million-ada-left-under-its-current-treasury-spending-limit/",
-   "source": "CryptoSlate",
-   "published": "2026-10-16T21:10:02+00:00",
-   "summary": "Thirty enacted withdrawals have used 457.4 million ADA of the 500 million allowance, which incoming funds and refunds do not replenish. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/cardano-withdrawal-crane-lift.webp"
   },
   {
    "id": "894f39abad",
@@ -718,15 +727,6 @@
    "published": "2026-10-15T22:16:03+00:00",
    "summary": "Researchers added hidden text to contact AI agents probing Alibaba’s map service, getting replies about their tasks as investigators traced activity to Tencent Cloud infrastructure.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-07-gID_7.png"
-  },
-  {
-   "id": "b263ddf5fa",
-   "title": "MSCI finalizes index rules that put Strategy, crypto treasury firms at risk of exclusion",
-   "link": "https://www.theblock.co/news/business/2026-10-15-msci-rules-could-exclude-strategy-mstr-from-indexes-418729",
-   "source": "The Block",
-   "published": "2026-10-15T22:15:56+00:00",
-   "summary": "MSCI's new non-operating company rules could exclude Strategy, Metaplanet and SharpLink. The final list of affected firms is due Nov. 11.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/strategy.png"
   }
  ]
 }

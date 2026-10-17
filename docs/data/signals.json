@@ -78,33 +78,6 @@
    "from": null
   },
   {
-   "coin": "ZEC",
-   "side": "SELL",
-   "entry": 1153.6,
-   "sl": 1153.6,
-   "tp1": 1119.514184935026,
-   "tp2": 1085.4283698700517,
-   "tp1_hit": true,
-   "opened": "2026-10-16T16:00:00+00:00",
-   "rsi": 32.8,
-   "conf": 83,
-   "why": [
-    "EMA 9/21 cross + RSI in range + above-average volume",
-    "4h higher-timeframe trend agrees",
-    "Price below EMA 200",
-    "MACD momentum building",
-    "Moderate trend (ADX 23)",
-    "Volume 2.0× the average",
-    "BTC moving the same way"
-   ],
-   "market": "crypto",
-   "name": "ZEC",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  },
-  {
    "coin": "XAGUSD",
    "side": "SELL",
    "entry": 57.10499954223633,
@@ -132,6 +105,32 @@
   }
  ],
  "history": [
+  {
+   "coin": "ZEC",
+   "side": "SELL",
+   "entry": 1153.6,
+   "sl": 1187.685815064974,
+   "tp1": 1119.514184935026,
+   "tp2": 1085.4283698700517,
+   "opened": "2026-10-16T16:00:00+00:00",
+   "closed": "2026-10-17T19:00:00+00:00",
+   "result": "TP1",
+   "conf": 83,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "Moderate trend (ADX 23)",
+    "Volume 2.0× the average",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "ZEC",
+   "exit": 1119.514184935026,
+   "mdd": 2.72,
+   "h24": 2.21
+  },
   {
    "coin": "LINK",
    "side": "SELL",
@@ -960,5 +959,5 @@
    }
   }
  },
- "updated": "2026-10-17T18:32:04+00:00"
+ "updated": "2026-10-17T20:53:01+00:00"
 }
