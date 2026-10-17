@@ -494,62 +494,11 @@
  },
  "open": [
   {
-   "coin": "TRX",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 0.3359,
-   "sl": 0.3359,
-   "tp1": 0.33679580351222255,
-   "tp2": 0.3376916070244451,
-   "score": 71,
-   "agree": 4,
-   "n": 6,
-   "src": {
-    "tv1h": 0.264,
-    "tv4h": 0.4,
-    "tv1d": 0.558,
-    "engine": 0.858,
-    "rsi": 60.5,
-    "mom": 0.062,
-    "lsr": 1.32,
-    "crowd": -0.162
-   },
-   "opened": "2026-10-17T09:12:47+00:00",
-   "status": "open",
-   "also_bot": false,
-   "tp1_hit": true
-  },
-  {
-   "coin": "INJ",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 8.787,
-   "sl": 8.533078740032833,
-   "tp1": 9.040921259967169,
-   "tp2": 9.294842519934335,
-   "score": 70,
-   "agree": 5,
-   "n": 6,
-   "src": {
-    "tv1h": -0.045,
-    "tv4h": 0.4,
-    "tv1d": 0.445,
-    "engine": 0.719,
-    "rsi": 51.3,
-    "mom": 0.45,
-    "lsr": 0.45,
-    "crowd": 0.273
-   },
-   "opened": "2026-10-17T09:12:47+00:00",
-   "status": "open",
-   "also_bot": false
-  },
-  {
    "coin": "FET",
    "market": "crypto",
    "side": "SELL",
    "entry": 0.1947,
-   "sl": 0.19863619439059174,
+   "sl": 0.1947,
    "tp1": 0.19076380560940828,
    "tp2": 0.18682761121881658,
    "score": 21,
@@ -567,14 +516,15 @@
    },
    "opened": "2026-10-17T09:12:47+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   },
   {
    "coin": "ADA",
    "market": "crypto",
    "side": "SELL",
    "entry": 0.2236,
-   "sl": 0.2263639767432994,
+   "sl": 0.2236,
    "tp1": 0.2208360232567006,
    "tp2": 0.21807204651340123,
    "score": 23,
@@ -592,10 +542,46 @@
    },
    "opened": "2026-10-17T09:12:47+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   }
  ],
  "history": [
+  {
+   "coin": "INJ",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 8.787,
+   "sl": 8.533078740032833,
+   "tp1": 9.040921259967169,
+   "tp2": 9.294842519934335,
+   "score": 70,
+   "agree": 5,
+   "n": 6,
+   "opened": "2026-10-17T09:12:47+00:00",
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-17T16:10:32+00:00",
+   "exit": 8.467
+  },
+  {
+   "coin": "TRX",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 0.3359,
+   "sl": 0.3359,
+   "tp1": 0.33679580351222255,
+   "tp2": 0.3376916070244451,
+   "score": 71,
+   "agree": 4,
+   "n": 6,
+   "opened": "2026-10-17T09:12:47+00:00",
+   "status": "TP1",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-17T16:10:32+00:00",
+   "exit": 0.3354
+  },
   {
    "coin": "TIA",
    "market": "crypto",
@@ -1176,9 +1162,9 @@
   }
  ],
  "stats": {
-  "tp1": 9,
+  "tp1": 10,
   "tp2": 8,
-  "sl": 16,
+  "sl": 17,
   "expired": 0
  },
  "sources": [
@@ -1200,5 +1186,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-17T12:59:57+00:00"
+ "updated": "2026-10-17T16:10:32+00:00"
 }

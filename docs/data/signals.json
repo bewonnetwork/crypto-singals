@@ -43,40 +43,13 @@
   "ZEC"
  ],
  "stats": {
-  "win": 5,
+  "win": 6,
   "loss": 12,
-  "tp2": 5,
+  "tp2": 6,
   "expired": 0
  },
  "min_conf": 60,
  "open": [
-  {
-   "coin": "LINK",
-   "side": "SELL",
-   "entry": 12.353,
-   "sl": 12.55476949458049,
-   "tp1": 12.151230505419509,
-   "tp2": 11.949461010839016,
-   "tp1_hit": false,
-   "opened": "2026-10-16T16:00:00+00:00",
-   "rsi": 41.9,
-   "conf": 80,
-   "why": [
-    "EMA 9/21 cross + RSI in range + above-average volume",
-    "4h higher-timeframe trend agrees",
-    "Price below EMA 200",
-    "MACD momentum building",
-    "⚠ Weak trend (ADX 14)",
-    "RSI 42 in the sweet spot",
-    "BTC moving the same way"
-   ],
-   "market": "crypto",
-   "name": "LINK",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  },
   {
    "coin": "UNI",
    "side": "SELL",
@@ -159,6 +132,32 @@
   }
  ],
  "history": [
+  {
+   "coin": "LINK",
+   "side": "SELL",
+   "entry": 12.353,
+   "sl": 12.55476949458049,
+   "tp1": 12.151230505419509,
+   "tp2": 11.949461010839016,
+   "opened": "2026-10-16T16:00:00+00:00",
+   "closed": "2026-10-17T15:00:00+00:00",
+   "result": "TP2",
+   "conf": 80,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "⚠ Weak trend (ADX 14)",
+    "RSI 42 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "LINK",
+   "exit": 11.949461010839016,
+   "mdd": 0.64,
+   "h24": null
+  },
   {
    "coin": "EURJPY",
    "side": "SELL",
@@ -961,5 +960,5 @@
    }
   }
  },
- "updated": "2026-10-17T05:03:54+00:00"
+ "updated": "2026-10-17T16:10:32+00:00"
 }

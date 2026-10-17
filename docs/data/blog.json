@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-17-2026",
+   "type": "trending",
+   "date": "2026-10-17T16:09:43+00:00",
+   "title": "Trending in Crypto — October 17, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (PRL, SUI, PENGU…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "rank": 105,
+      "price": 1.7191939858829095,
+      "ch": -3.48
+     },
+     {
+      "sym": "SUI",
+      "name": "Sui",
+      "rank": 29,
+      "price": 0.9807961244773489,
+      "ch": -3.84
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 119,
+      "price": 0.007465334889584059,
+      "ch": -1.43
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 19,
+      "price": 4.89022724619808,
+      "ch": -3.18
+     },
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "rank": 113,
+      "price": 0.06599541348880084,
+      "ch": -10.82
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 620,
+      "price": 112.88051578423848,
+      "ch": -2.99
+     },
+     {
+      "sym": "LIT",
+      "name": "Lighter",
+      "rank": 89,
+      "price": 3.093872180769528,
+      "ch": -0.05
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "rank": 10,
+      "price": 1140.9977170306904,
+      "ch": -3.94
+     },
+     {
+      "sym": "QNT",
+      "name": "Quant",
+      "rank": 38,
+      "price": 200.60169857068243,
+      "ch": -0.6
+     },
+     {
+      "sym": "TIA",
+      "name": "Celestia",
+      "rank": 100,
+      "price": 0.6579788821015279,
+      "ch": -5.91
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 81301,
+      "ch": -0.01,
+      "vol": 18170834892,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2408.7,
+      "ch": -0.86,
+      "vol": 7347172288,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 103.63,
+      "ch": -0.17,
+      "vol": 1912684914,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.29,
+      "ch": -1.09,
+      "vol": 955475711,
+      "rank": 5
+     },
+     {
+      "sym": "SUI",
+      "name": "Sui",
+      "price": 0.980303,
+      "ch": -4.05,
+      "vol": 740440207,
+      "rank": 29
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.9,
+      "ch": -2.76,
+      "vol": 667386117,
+      "rank": 19
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1142.15,
+      "ch": -3.19,
+      "vol": 648404009,
+      "rank": 10
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 714.27,
+      "ch": -1.28,
+      "vol": 516386714,
+      "rank": 4
+     }
+    ]
+   }
+  },
+  {
    "slug": "what-is-leverage-and-liquidation",
    "type": "learn",
    "date": "2026-10-17T09:11:43+00:00",
@@ -7149,5 +7297,5 @@
    }
   }
  ],
- "updated": "2026-10-17T09:11:43+00:00"
+ "updated": "2026-10-17T16:09:44+00:00"
 }
