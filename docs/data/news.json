@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T09:11:46+00:00",
+ "updated": "2026-10-17T12:59:21+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,42 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "95e81e4d78",
+   "title": "Eclair patches a browser attack that could send commands to your Lightning node",
+   "link": "https://cryptoslate.com/eclair-blocks-browser-requests-that-could-let-a-webpage-control-a-bitcoin-lightning-node/",
+   "source": "CryptoSlate",
+   "published": "2026-10-17T12:00:20+00:00",
+   "summary": "The Oct. 15 release blocks a cached-authentication route to Eclair's API and requires direct browser interfaces to add a backend. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/eclair-browser-attack-filter.webp"
+  },
+  {
+   "id": "ec74260e21",
+   "title": "Banks could slow stablecoin growth by paying savers more, BIS paper finds",
+   "link": "https://www.coindesk.com/business/2026/10/14/banks-could-slow-stablecoin-growth-by-paying-savers-more-bis-paper-finds",
+   "source": "CoinDesk",
+   "published": "2026-10-17T12:00:00+00:00",
+   "summary": "A BIS working paper found a 1 basis point rise in U.S. bank deposit rates predicted slower stablecoin growth, cutting ten-week growth from 15% to 12%.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/1f36f4b6075554c7a225b5bdef6b7d0bb9142a62-1920x1280.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "7ff9772386",
+   "title": "The hidden trade behind Strive’s 16.7% Bitcoin income offer",
+   "link": "https://cryptoslate.com/the-hidden-trade-behind-strives-16-7-bitcoin-income-offer/",
+   "source": "CryptoSlate",
+   "published": "2026-10-17T11:00:07+00:00",
+   "summary": "There's a Bitcoin company that's now offering investors a 15% annual dividend, paid in small installments every business day. While a 15% dividend is high enough to grab everyone's attention, the more revealing number is what buyers agreed…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/strive-sats-preferred-standard.jpg"
+  },
+  {
+   "id": "b3a2595345",
+   "title": "Circle’s Allaire says stablecoin issuer looking to enter 40 developing markets: Report",
+   "link": "https://cointelegraph.com/news/circles-allaire-says-stablecoin-issuer-looking-to-enter-40-developing-markets-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-17T10:00:07+00:00",
+   "summary": "Markets in Southeast Asia, Latin America, Africa and the Middle East see increasing demand for stablecoins.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M20BVCME3MRSYGBFGFFS62XW/world-global-rating-circle.jpg"
+  },
   {
    "id": "6cb67d7807",
    "title": "Lagarde says euro-area economy is resilient, digital euro imminent",
@@ -216,15 +252,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/gemini-decrypt-style-01-gID_7.png"
   },
   {
-   "id": "d6bbdb566e",
-   "title": "MSCI’s new rules could squeeze Strategy’s Bitcoin buying machine",
-   "link": "https://cryptoslate.com/strategys-mstr-69-decline-exposes-a-bigger-danger-behind-mscis-2-8-billion-selling-threat/",
-   "source": "CryptoSlate",
-   "published": "2026-10-16T16:20:08+00:00",
-   "summary": "MSCI approved rules threatening Strategy's index membership as its shares trade nearly 69% below their peak. On Oct. 15, the global index provider announced that it would adopt a new methodology excluding companies classified as…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/strategy-msci-index-pressure.webp"
-  },
-  {
    "id": "f0f7dbff6e",
    "title": "Bitcoin Bounces, But Where Does It Go Next? Here’s What the Charts Say",
    "link": "https://decrypt.co/381150/bitcoin-price-rebounds-where-next-charts",
@@ -259,15 +286,6 @@
    "published": "2026-10-16T15:43:58+00:00",
    "summary": "Police seized guns, silencers and more than 2,000 rounds of ammunition, nearly all of it allegedly stolen from the Canadian military.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Handcuffs-gID_7.png"
-  },
-  {
-   "id": "ce54a10645",
-   "title": "Microsoft exposes how USDT-funded phishing network targeted 75,000 organizations",
-   "link": "https://cryptoslate.com/microsoft-exposes-how-usdt-funded-phishing-network-targeted-75000-organizations/",
-   "source": "CryptoSlate",
-   "published": "2026-10-16T15:20:01+00:00",
-   "summary": "Domain seizures and account shutdowns hit YAM Store and phishing-kit services, while reported asset freezes remain unquantified. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/microsoft-phishing-crypto-takedown.webp"
   },
   {
    "id": "f681e6f68c",
@@ -709,24 +727,6 @@
    "published": "2026-10-15T17:14:45+00:00",
    "summary": "The Wall Street Journal reported that a company co-founded by Bo Hines benefited from the passage of the GENIUS stablecoin bill.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5021VDZN3M8VCH21XJTRFJY/bribe-money-corrupt-usa-1.jpg"
-  },
-  {
-   "id": "1bec4aaaa5",
-   "title": "Sweden revisits digital krona as ECB advances digital euro plans",
-   "link": "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T16:49:59+00:00",
-   "summary": "Sweden’s Riksbank has recommended that lawmakers prepare for a possible digital krona, citing concerns over foreign-currency stablecoins and the future of domestic payments.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M505KEFKPMPQ9SXKC8HEV451/stockholm-sweden.jpg"
-  },
-  {
-   "id": "6b72222494",
-   "title": "Mastercard and BVNK Launch 'Global Money Platform' to Merge Fiat and Stablecoins",
-   "link": "https://decrypt.co/381057/mastercard-bvnk-global-money-platform-fiat-stablecoins",
-   "source": "Decrypt",
-   "published": "2026-10-15T16:28:50+00:00",
-   "summary": "The first major integration since Mastercard’s $1.8 billion BVNK acquisition lets banks, fintechs and enterprises hold, convert, and spend fiat and stablecoins through a single API, with agentic commerce support planned.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/mastercard-decrypt-style-01-gID_7.png"
   }
  ]
 }

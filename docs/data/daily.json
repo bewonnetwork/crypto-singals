@@ -494,36 +494,11 @@
  },
  "open": [
   {
-   "coin": "TIA",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 0.7199,
-   "sl": 0.682626903385709,
-   "tp1": 0.757173096614291,
-   "tp2": 0.794446193228582,
-   "score": 78,
-   "agree": 5,
-   "n": 6,
-   "src": {
-    "tv1h": 0.176,
-    "tv4h": 0.491,
-    "tv1d": 0.558,
-    "engine": 0.878,
-    "rsi": 61.9,
-    "mom": 1.0,
-    "lsr": 0.99,
-    "crowd": 0.005
-   },
-   "opened": "2026-10-17T09:12:47+00:00",
-   "status": "open",
-   "also_bot": false
-  },
-  {
    "coin": "TRX",
    "market": "crypto",
    "side": "BUY",
    "entry": 0.3359,
-   "sl": 0.3350041964877774,
+   "sl": 0.3359,
    "tp1": 0.33679580351222255,
    "tp2": 0.3376916070244451,
    "score": 71,
@@ -541,7 +516,8 @@
    },
    "opened": "2026-10-17T09:12:47+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   },
   {
    "coin": "INJ",
@@ -620,6 +596,23 @@
   }
  ],
  "history": [
+  {
+   "coin": "TIA",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 0.7199,
+   "sl": 0.682626903385709,
+   "tp1": 0.757173096614291,
+   "tp2": 0.794446193228582,
+   "score": 78,
+   "agree": 5,
+   "n": 6,
+   "opened": "2026-10-17T09:12:47+00:00",
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-17T12:59:57+00:00",
+   "exit": 0.6697
+  },
   {
    "coin": "GBPJPY",
    "market": "forex",
@@ -1185,7 +1178,7 @@
  "stats": {
   "tp1": 9,
   "tp2": 8,
-  "sl": 15,
+  "sl": 16,
   "expired": 0
  },
  "sources": [
@@ -1207,5 +1200,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-17T09:12:47+00:00"
+ "updated": "2026-10-17T12:59:57+00:00"
 }
