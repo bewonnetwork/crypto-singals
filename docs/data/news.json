@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T05:10:32+00:00",
+ "updated": "2026-10-18T09:38:21+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,42 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "6b85b7248f",
+   "title": "Chinese suspect in $75M international crime network arrested in Bangkok",
+   "link": "https://cointelegraph.com/news/chinese-suspect-in-75m-international-crime-network-arrested-in-bangkok?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-18T09:14:26+00:00",
+   "summary": "Police alleged the suspect was involved in cryptocurrency and foreign-currency exchanges for criminal groups across more than 133 accounts.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M574HWMKKS1RW0G387NCF974/hi-comparing-money-laundering-with-cryptocurrencies-and-fiat-police.jpg"
+  },
+  {
+   "id": "e09d5d5302",
+   "title": "Chip-stock bets lost $52 million in 10 minutes with Wall Street shut",
+   "link": "https://www.coindesk.com/markets/2026/10/18/chip-stock-bets-lost-usd52-million-in-10-minutes-with-wall-street-shut",
+   "source": "CoinDesk",
+   "published": "2026-10-18T07:13:32+00:00",
+   "summary": "A 10-minute flush hit round-the-clock chip-stock contracts while U.S. markets were shut, leaving traders with no real share price to lean on.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/286577a8289b83ce1529d6d1d4853747c94ebd18-1444x796.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "f9c20e7261",
+   "title": "The crypto privacy rule Trump’s Treasury proposed, and Trump’s Treasury buried",
+   "link": "https://cryptoslate.com/the-crypto-privacy-rule-trumps-treasury-proposed-and-trumps-treasury-buried/",
+   "source": "CryptoSlate",
+   "published": "2026-10-18T07:00:23+00:00",
+   "summary": "On Dec. 18, 2020, with Christmas a week away and Donald Trump preparing to leave the White House, Steven Mnuchin's Treasury Department announced a plan that would require crypto exchanges and other financial institutions to collect more…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/trump-regulatory-chess-move.webp"
+  },
+  {
+   "id": "5fe4aaa8f5",
+   "title": "Tether backs AIsa as strategic investor, completing seed extension round",
+   "link": "https://cointelegraph.com/news/tether-backs-aisa-as-strategic-investor-completing-seed-extension-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-18T06:26:53+00:00",
+   "summary": "The round brings AIsa’s total funding to more than $9 million.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M56TW7NK49R9HTEZKPD8PEYY/hi-j-tether-investments-1.jpg"
+  },
   {
    "id": "60eb4a9623",
    "title": "Circle defends USDC economics as stablecoin rivals court its partners with bigger cut",
@@ -157,7 +193,7 @@
    "title": "Solana shows resilience, but some areas need continued observation, Fidelity says",
    "link": "https://cointelegraph.com/news/solana-shows-resilience-but-some-areas-need-continued-observation-fidelity-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-17T12:58:03+00:00",
+   "published": "2026-10-17T13:01:00+00:00",
    "summary": "Solana has had no reported mainnet outages in two years, but concentrations in stake, hosting and client software should be monitored, according to a report.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M54YYWKHSQFED5NV6YFBFNJY/hi-surviving-crypto-volatility-with-several-options-solana.jpg"
   },
@@ -193,7 +229,7 @@
    "title": "Circle’s Allaire says stablecoin issuer looking to enter 40 developing markets: Report",
    "link": "https://cointelegraph.com/news/circles-allaire-says-stablecoin-issuer-looking-to-enter-40-developing-markets-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-17T10:00:07+00:00",
+   "published": "2026-10-17T10:03:00+00:00",
    "summary": "Markets in Southeast Asia, Latin America, Africa and the Middle East see increasing demand for stablecoins.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M20BVCME3MRSYGBFGFFS62XW/world-global-rating-circle.jpg"
   },
@@ -202,7 +238,7 @@
    "title": "Lagarde says euro-area economy is resilient, digital euro imminent",
    "link": "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-17T08:32:11+00:00",
+   "published": "2026-10-17T08:37:00+00:00",
    "summary": "“The digital euro will further stimulate innovation and competition in retail payments,” according to the ECB president.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M54ENNHY19CENP5ZV5HX428Z/christine-lagarde-eu.jpg"
   },
@@ -211,7 +247,7 @@
    "title": "Bitget to discontinue services for some users in one-off exercise",
    "link": "https://cointelegraph.com/news/bitget-to-discontinue-services-for-some-users-in-one-off-exercise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
-   "published": "2026-10-17T07:26:57+00:00",
+   "published": "2026-10-17T07:28:00+00:00",
    "summary": "Bitget says user funds are safe and exchange will continue to operate during the change.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5499P2SZPHXNNS2X8W74AV7/hi-how-are-governments-implementing-the-bitget-guidelines.jpg"
   },
@@ -250,15 +286,6 @@
    "published": "2026-10-17T02:30:00+00:00",
    "summary": "Google says its Willow chip can prepare the special quantum states needed for advanced calculations with about 40 times fewer errors, reducing one of the hardware bottlenecks behind any future attempt to crack bitcoin wallets.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/9f051c877190174f3a7cbc53e53d11e1620cee92-2560x1707.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "3dbe99f2b9",
-   "title": "Visa and Mastercard adopt USDC payouts across 200 countries",
-   "link": "https://cryptoslate.com/visa-and-mastercard-adopt-usdc-payouts-across-200-countries/",
-   "source": "CryptoSlate",
-   "published": "2026-10-17T02:00:33+00:00",
-   "summary": "Visa's Inyo rollout and Mastercard's BVNK platform give businesses stablecoin funding routes, subject to eligibility and rollout limits. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/visa-mastercard-stablecoin-payments-standard.jpg"
   },
   {
    "id": "894f39abad",
@@ -700,33 +727,6 @@
    "published": "2026-10-16T04:14:22+00:00",
    "summary": "Bitcoin tore back to $82,500 within two hours of dipping under $80,000, and chipmakers in Seoul recovered from their worst close since April.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/891d851f5c1b7c4185f70d0e7835241eb1a6f7f3-1540x852.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "40b22246d8",
-   "title": "MSCI adopts index exclusion rules that could oust Strategy",
-   "link": "https://cointelegraph.com/news/msci-adopts-index-exclusion-rules-that-could-oust-strategy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-16T00:48:20+00:00",
-   "summary": "Strategy, Metaplanet and Upexi were previously identified for deletion under the methodology, with MSCI set to announce its final list on Nov. 11.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M512PJ7T3H0MKWY3KK1SEH21/strategy.jpg"
-  },
-  {
-   "id": "3e4acbddba",
-   "title": "Australia releases draft bill to adopt OECD crypto tax reporting framework",
-   "link": "https://cointelegraph.com/news/australia-releases-draft-bill-to-adopt-oecd-crypto-tax-reporting-framework?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T23:34:19+00:00",
-   "summary": "Australia is among 77 jurisdictions committed to adopting CARF, with its first international exchanges of crypto tax data expected in 2028.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M50YHACZSJPAG8A0K041MKBV/hi-how-to-file-cryptocurrency-form-in-australia-1.jpg"
-  },
-  {
-   "id": "20ae6d60c1",
-   "title": "Scammer loses $4.8M stored on tampered Ledgers: Asia Express",
-   "link": "https://cointelegraph.com/magazine/scammer-loses-48m-stored-on-tampered-ledgers-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-15T22:42:58+00:00",
-   "summary": "A scammer reportedly lost $4.8M of stolen money after storing the funds on tampered Ledgers. Bitcoin and Ether ETFs launch trading in Thailand and South Korea blocks 27 exchanges.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M50Q9CPRKY0N68C9BSYHP5PM/asia-express-12.jpg"
   }
  ]
 }

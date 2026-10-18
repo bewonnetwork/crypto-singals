@@ -1,6 +1,31 @@
 {
  "posts": [
   {
+   "slug": "how-to-read-rsi",
+   "type": "learn",
+   "date": "2026-10-18T09:38:18+00:00",
+   "title": "How to Read RSI",
+   "title_bn": "RSI কীভাবে পড়বেন",
+   "sum_en": "RSI shows how fast price has been rising or falling on a 0–100 scale. Here is what the numbers mean and the common mistake to avoid.",
+   "sum_bn": "RSI ০–১০০ স্কেলে দেখায় দাম কত জোরে উঠছে বা পড়ছে। সংখ্যাগুলোর মানে আর সাধারণ ভুলটা জেনে নিন।",
+   "body": {
+    "pts_bn": [
+     "৫০-এর ওপরে মানে ক্রেতারা শক্তিশালী, ৫০-এর নিচে বিক্রেতারা।",
+     "৭০-এর ওপরে 'overbought', ৩০-এর নিচে 'oversold'। মানে দাম দ্রুত অনেকটা চলে গেছে।",
+     "সাধারণ ভুল: RSI ৭০ দেখেই বেচে দেওয়া। শক্ত ট্রেন্ডে RSI অনেকক্ষণ ৭০-এর ওপরে থাকতে পারে।",
+     "দাম নতুন হাই করছে কিন্তু RSI করছে না: এটাকে divergence বলে, ট্রেন্ড দুর্বল হওয়ার ইঙ্গিত।",
+     "RSI একা সিদ্ধান্ত নয়। ট্রেন্ড আর সাপোর্ট-রেজিস্ট্যান্সের সাথে মিলিয়ে দেখুন।"
+    ],
+    "pts_en": [
+     "Above 50 buyers are stronger; below 50 sellers are.",
+     "Above 70 is called overbought and below 30 oversold: price has moved far, fast.",
+     "Common mistake: selling just because RSI is 70. In a strong trend RSI can stay above 70 for a long time.",
+     "Price makes a new high but RSI does not: this is divergence, a hint that the trend is weakening.",
+     "RSI alone is not a decision. Read it together with the trend and support/resistance."
+    ]
+   }
+  },
+  {
    "slug": "crypto-market-digest-october-18-2026",
    "type": "digest",
    "date": "2026-10-18T05:10:20+00:00",
@@ -5686,31 +5711,6 @@
    }
   },
   {
-   "slug": "how-to-read-rsi",
-   "type": "learn",
-   "date": "2026-10-08T16:47:58+00:00",
-   "title": "How to Read RSI",
-   "title_bn": "RSI কীভাবে পড়বেন",
-   "sum_en": "RSI shows how fast price has been rising or falling on a 0–100 scale. Here is what the numbers mean and the common mistake to avoid.",
-   "sum_bn": "RSI ০–১০০ স্কেলে দেখায় দাম কত জোরে উঠছে বা পড়ছে। সংখ্যাগুলোর মানে আর সাধারণ ভুলটা জেনে নিন।",
-   "body": {
-    "pts_bn": [
-     "৫০-এর ওপরে মানে ক্রেতারা শক্তিশালী, ৫০-এর নিচে বিক্রেতারা।",
-     "৭০-এর ওপরে 'overbought', ৩০-এর নিচে 'oversold'। মানে দাম দ্রুত অনেকটা চলে গেছে।",
-     "সাধারণ ভুল: RSI ৭০ দেখেই বেচে দেওয়া। শক্ত ট্রেন্ডে RSI অনেকক্ষণ ৭০-এর ওপরে থাকতে পারে।",
-     "দাম নতুন হাই করছে কিন্তু RSI করছে না: এটাকে divergence বলে, ট্রেন্ড দুর্বল হওয়ার ইঙ্গিত।",
-     "RSI একা সিদ্ধান্ত নয়। ট্রেন্ড আর সাপোর্ট-রেজিস্ট্যান্সের সাথে মিলিয়ে দেখুন।"
-    ],
-    "pts_en": [
-     "Above 50 buyers are stronger; below 50 sellers are.",
-     "Above 70 is called overbought and below 30 oversold: price has moved far, fast.",
-     "Common mistake: selling just because RSI is 70. In a strong trend RSI can stay above 70 for a long time.",
-     "Price makes a new high but RSI does not: this is divergence, a hint that the trend is weakening.",
-     "RSI alone is not a decision. Read it together with the trend and support/resistance."
-    ]
-   }
-  },
-  {
    "slug": "trending-in-crypto-october-8-2026",
    "type": "trending",
    "date": "2026-10-08T16:47:58+00:00",
@@ -7762,5 +7762,5 @@
    }
   }
  ],
- "updated": "2026-10-18T05:10:20+00:00"
+ "updated": "2026-10-18T09:38:18+00:00"
 }
