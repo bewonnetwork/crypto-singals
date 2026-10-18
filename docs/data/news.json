@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T22:54:38+00:00",
+ "updated": "2026-10-18T05:10:32+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,15 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "60eb4a9623",
+   "title": "Circle defends USDC economics as stablecoin rivals court its partners with bigger cut",
+   "link": "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut",
+   "source": "CoinDesk",
+   "published": "2026-10-18T01:06:35+00:00",
+   "summary": "Coinbase, Circle’s largest USDC partner, also backs Open USD, a rival network that passes reserve income to partners after a management fee.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/0738e13835f743ba2e3a2f26f7579b27661d1eac-4608x2592.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
   {
    "id": "8d47eb85e2",
    "title": "TRON moved $2.2 trillion in stablecoins while TRX supply grew for 108 straight days",
@@ -718,15 +727,6 @@
    "published": "2026-10-15T22:42:58+00:00",
    "summary": "A scammer reportedly lost $4.8M of stolen money after storing the funds on tampered Ledgers. Bitcoin and Ether ETFs launch trading in Thailand and South Korea blocks 27 exchanges.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M50Q9CPRKY0N68C9BSYHP5PM/asia-express-12.jpg"
-  },
-  {
-   "id": "6c0510e06b",
-   "title": "Hidden Text, a Fake Mailbox: How Researchers Got Rogue AI Agents to Talk",
-   "link": "https://decrypt.co/381109/researchers-fleet-rouge-ai-agents-talk-alibaba",
-   "source": "Decrypt",
-   "published": "2026-10-15T22:16:03+00:00",
-   "summary": "Researchers added hidden text to contact AI agents probing Alibaba’s map service, getting replies about their tasks as investigators traced activity to Tencent Cloud infrastructure.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-07-gID_7.png"
   }
  ]
 }

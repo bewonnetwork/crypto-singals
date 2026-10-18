@@ -51,33 +51,6 @@
  "min_conf": 60,
  "open": [
   {
-   "coin": "UNI",
-   "side": "SELL",
-   "entry": 7.216,
-   "sl": 7.216,
-   "tp1": 7.045094270362483,
-   "tp2": 6.874188540724965,
-   "tp1_hit": true,
-   "opened": "2026-10-16T16:00:00+00:00",
-   "rsi": 39.0,
-   "conf": 81,
-   "why": [
-    "EMA 9/21 cross + RSI in range + above-average volume",
-    "4h higher-timeframe trend agrees",
-    "Price below EMA 200",
-    "MACD momentum building",
-    "Moderate trend (ADX 21)",
-    "RSI 39 in the sweet spot",
-    "BTC moving the same way"
-   ],
-   "market": "crypto",
-   "name": "UNI",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  },
-  {
    "coin": "XAGUSD",
    "side": "SELL",
    "entry": 57.10499954223633,
@@ -105,6 +78,32 @@
   }
  ],
  "history": [
+  {
+   "coin": "UNI",
+   "side": "SELL",
+   "entry": 7.216,
+   "sl": 7.386905729637517,
+   "tp1": 7.045094270362483,
+   "tp2": 6.874188540724965,
+   "opened": "2026-10-16T16:00:00+00:00",
+   "closed": "2026-10-18T01:00:00+00:00",
+   "result": "TP1",
+   "conf": 81,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "Moderate trend (ADX 21)",
+    "RSI 39 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "UNI",
+   "exit": 7.045094270362483,
+   "mdd": 2.0,
+   "h24": 2.48
+  },
   {
    "coin": "ZEC",
    "side": "SELL",
@@ -850,8 +849,8 @@
   }
  ],
  "fear_greed": {
-  "value": 55,
-  "label": "Greed"
+  "value": 53,
+  "label": "Neutral"
  },
  "forex": {
   "enabled": true,
@@ -959,5 +958,5 @@
    }
   }
  },
- "updated": "2026-10-17T20:53:01+00:00"
+ "updated": "2026-10-18T05:11:12+00:00"
 }
