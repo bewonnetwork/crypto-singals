@@ -442,7 +442,8 @@
   ],
   "n": 40
  },
- "open": [
+ "open": [],
+ "history": [
   {
    "coin": "OP",
    "market": "crypto",
@@ -454,23 +455,13 @@
    "score": 27,
    "agree": 5,
    "n": 6,
-   "src": {
-    "tv1h": -0.176,
-    "tv4h": -0.309,
-    "tv1d": -0.088,
-    "engine": -0.939,
-    "rsi": 34.1,
-    "mom": -0.889,
-    "lsr": 1.59,
-    "crowd": -0.295
-   },
    "opened": "2026-10-18T09:39:04+00:00",
-   "status": "open",
+   "status": "TP1",
    "also_bot": false,
-   "tp1_hit": true
-  }
- ],
- "history": [
+   "tp1_hit": true,
+   "closed": "2026-10-18T19:15:05+00:00",
+   "exit": 0.1221
+  },
   {
    "coin": "HBAR",
    "market": "crypto",
@@ -1156,7 +1147,7 @@
   }
  ],
  "stats": {
-  "tp1": 12,
+  "tp1": 13,
   "tp2": 8,
   "sl": 19,
   "expired": 0
@@ -1180,5 +1171,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-18T16:58:10+00:00"
+ "updated": "2026-10-18T19:15:05+00:00"
 }
