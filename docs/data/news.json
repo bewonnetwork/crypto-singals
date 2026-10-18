@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T19:14:30+00:00",
+ "updated": "2026-10-18T21:32:08+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,15 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "9727f71f76",
+   "title": "Crypto.com, Novig sue Missouri over sports event contracts; Kalshi, Polymarket, Robinhood hold off",
+   "link": "https://www.theblock.co/news/regulation/2026-10-18-crypto-com-novig-sue-missouri-over-sports-event-contracts-kalshi-polymarket-robinhood-hold-off-418866",
+   "source": "The Block",
+   "published": "2026-10-18T19:50:28+00:00",
+   "summary": "Kalshi, Polymarket, Robinhood and Underdog, which also received cease-and-desist orders, have not filed suits in Missouri, according to court records.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/02/20220208_Crypto_Sports_Funding.jpg"
+  },
   {
    "id": "cfd515968a",
    "title": "Zcash’s planned Sprout freeze would leave private keys unable to move funds",
@@ -718,15 +727,6 @@
    "published": "2026-10-16T10:13:32+00:00",
    "summary": "Google demonstrated \"magic state cultivation,\" potentially helping address one of quantum computing's most significant bottlenecks.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-16-at-11.10.08.png"
-  },
-  {
-   "id": "6bf815a65d",
-   "title": "Live updates: Bitcoin dips to $81,000 as stocks slide, VIX soars ahead of Black Monday anniversary",
-   "link": "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue",
-   "source": "CoinDesk",
-   "published": "2026-10-16T09:48:14+00:00",
-   "summary": "A Friday surge in oil prices hit already-shaky equity markets, sending the Nasdaq down more than 2%.",
-   "image": ""
   }
  ]
 }
