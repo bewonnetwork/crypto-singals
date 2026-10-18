@@ -658,6 +658,25 @@
  ],
  "watch": [
   {
+   "coin": "LTC",
+   "name": "LTC",
+   "market": "crypto",
+   "side": "SELL",
+   "price": 58.13,
+   "score": 95,
+   "chk": "2/4",
+   "why": [
+    "4H",
+    "15M",
+    "5M",
+    "run-up",
+    "RSI",
+    "⚠ extension",
+    "⚠ range"
+   ],
+   "time": "2026-10-18T16:57:08+00:00"
+  },
+  {
    "coin": "APT",
    "name": "APT",
    "market": "crypto",
@@ -827,25 +846,6 @@
     "range"
    ],
    "time": "2026-10-14T14:28:30+00:00"
-  },
-  {
-   "coin": "AUDUSD",
-   "name": "AUD/USD",
-   "market": "forex",
-   "side": "SELL",
-   "price": 0.6960395574569702,
-   "score": 45,
-   "chk": "2/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "⚠ 5M",
-    "run-up",
-    "RSI",
-    "⚠ extension",
-    "⚠ range"
-   ],
-   "time": "2026-10-14T14:28:26+00:00"
   }
  ],
  "fear_greed": {
@@ -958,5 +958,5 @@
    }
   }
  },
- "updated": "2026-10-18T05:11:12+00:00"
+ "updated": "2026-10-18T16:58:10+00:00"
 }

@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-18-2026",
+   "type": "trending",
+   "date": "2026-10-18T16:57:37+00:00",
+   "title": "Trending in Crypto — October 18, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (BOOMER, HI, CLAUDIA…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "BOOMER",
+      "name": "Boomer",
+      "rank": 807,
+      "price": 0.020755308121366348,
+      "ch": 0
+     },
+     {
+      "sym": "HI",
+      "name": "hi",
+      "rank": 880,
+      "price": 0.018230738169639892,
+      "ch": 0
+     },
+     {
+      "sym": "CLAUDIA",
+      "name": "Claudia",
+      "rank": 836,
+      "price": 0.01970090877240541,
+      "ch": 0
+     },
+     {
+      "sym": "COVENANT",
+      "name": "Covenant x402",
+      "rank": 742,
+      "price": 0.024213039341515415,
+      "ch": 0
+     },
+     {
+      "sym": "PRL",
+      "name": "Pearl",
+      "rank": 92,
+      "price": 1.9520326930131482,
+      "ch": 7.96
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 636,
+      "price": 104.44465828961344,
+      "ch": -6.38
+     },
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 81004.62479207324,
+      "ch": -0.27
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 20,
+      "price": 4.772027900695726,
+      "ch": -2.64
+     },
+     {
+      "sym": "PONS",
+      "name": "Pons",
+      "rank": 199,
+      "price": 0.2542662404447862,
+      "ch": -11.95
+     },
+     {
+      "sym": "SUI",
+      "name": "Sui",
+      "rank": 30,
+      "price": 0.9562672774384081,
+      "ch": -2.1
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 80974,
+      "ch": -0.16,
+      "vol": 17897802176,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2363.39,
+      "ch": -1.42,
+      "vol": 7575282328,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 101.92,
+      "ch": -1.05,
+      "vol": 2128474349,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.27,
+      "ch": -1.44,
+      "vol": 1107067870,
+      "rank": 5
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1081.68,
+      "ch": -3.69,
+      "vol": 711590365,
+      "rank": 10
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.78,
+      "ch": -1.6,
+      "vol": 592919929,
+      "rank": 20
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 710.88,
+      "ch": -0.23,
+      "vol": 562638542,
+      "rank": 4
+     },
+     {
+      "sym": "DOGE",
+      "name": "Dogecoin",
+      "price": 0.07751,
+      "ch": -1.76,
+      "vol": 500427314,
+      "rank": 12
+     }
+    ]
+   }
+  },
+  {
    "slug": "how-to-read-rsi",
    "type": "learn",
    "date": "2026-10-18T09:38:18+00:00",
@@ -7762,5 +7910,5 @@
    }
   }
  ],
- "updated": "2026-10-18T09:38:18+00:00"
+ "updated": "2026-10-18T16:57:37+00:00"
 }

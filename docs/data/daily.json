@@ -444,36 +444,11 @@
  },
  "open": [
   {
-   "coin": "HBAR",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 0.08842,
-   "sl": 0.0865050250417059,
-   "tp1": 0.0903349749582941,
-   "tp2": 0.09224994991658819,
-   "score": 70,
-   "agree": 5,
-   "n": 6,
-   "src": {
-    "tv1h": 0.467,
-    "tv4h": 0.336,
-    "tv1d": 0.179,
-    "engine": 0.968,
-    "rsi": 67.9,
-    "mom": 0.312,
-    "lsr": 1.9,
-    "crowd": -0.448
-   },
-   "opened": "2026-10-18T09:39:04+00:00",
-   "status": "open",
-   "also_bot": false
-  },
-  {
    "coin": "OP",
    "market": "crypto",
    "side": "SELL",
    "entry": 0.1263,
-   "sl": 0.12908381277463724,
+   "sl": 0.1263,
    "tp1": 0.12351618722536277,
    "tp2": 0.12073237445072553,
    "score": 27,
@@ -491,10 +466,28 @@
    },
    "opened": "2026-10-18T09:39:04+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   }
  ],
  "history": [
+  {
+   "coin": "HBAR",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 0.08842,
+   "sl": 0.0865050250417059,
+   "tp1": 0.0903349749582941,
+   "tp2": 0.09224994991658819,
+   "score": 70,
+   "agree": 5,
+   "n": 6,
+   "opened": "2026-10-18T09:39:04+00:00",
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-18T16:58:10+00:00",
+   "exit": 0.08585
+  },
   {
    "coin": "ETC",
    "market": "crypto",
@@ -1165,7 +1158,7 @@
  "stats": {
   "tp1": 12,
   "tp2": 8,
-  "sl": 18,
+  "sl": 19,
   "expired": 0
  },
  "sources": [
@@ -1187,5 +1180,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-18T13:36:32+00:00"
+ "updated": "2026-10-18T16:58:10+00:00"
 }

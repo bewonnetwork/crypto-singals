@@ -1,11 +1,11 @@
 {
  "dominance": {
-  "btc": 59.52,
-  "eth": 10.65,
-  "mcap": 2744984492213,
-  "mcap_ch": -2.69,
-  "ch_1d": 0.03,
-  "ch_7d": -0.07,
+  "btc": 60.15,
+  "eth": 10.67,
+  "mcap": 2700416597311,
+  "mcap_ch": -4.17,
+  "ch_1d": 0.66,
+  "ch_7d": 0.56,
   "history": [
    {
     "d": "2026-10-02",
@@ -73,517 +73,517 @@
    },
    {
     "d": "2026-10-18",
-    "v": 59.52
+    "v": 60.15
    }
   ]
  },
  "walls": [
   {
    "coin": "BTC",
-   "price": 81361.345,
+   "price": 81062.17499999999,
    "support": {
-    "price": 81361.345,
-    "usd": 8301838
+    "price": 81062.17499999999,
+    "usd": 9198631
    },
    "resistance": {
-    "price": 81361.345,
-    "usd": 8580876
+    "price": 81062.17499999999,
+    "usd": 9033052
    },
-   "buy_pct": 37
+   "buy_pct": 42
   },
   {
    "coin": "ETH",
-   "price": 2387.315,
+   "price": 2365.185,
    "support": {
-    "price": 2381.3467125,
-    "usd": 4698071
+    "price": 2365.185,
+    "usd": 3643485
    },
    "resistance": {
-    "price": 2393.2832875000004,
-    "usd": 3152344
+    "price": 2365.185,
+    "usd": 4398029
    },
-   "buy_pct": 54
+   "buy_pct": 52
   },
   {
    "coin": "BNB",
-   "price": 717.265,
+   "price": 711.515,
    "support": {
-    "price": 711.8855125,
-    "usd": 1367951
+    "price": 709.7362125,
+    "usd": 1852088
    },
    "resistance": {
-    "price": 719.0581625,
-    "usd": 987700
+    "price": 713.2937875,
+    "usd": 1124179
    },
-   "buy_pct": 59
+   "buy_pct": 60
   },
   {
    "coin": "SOL",
-   "price": 102.475,
+   "price": 102.025,
    "support": {
-    "price": 99.91312500000001,
-    "usd": 4738640
+    "price": 99.98450000000001,
+    "usd": 3541074
    },
    "resistance": {
-    "price": 102.7311875,
-    "usd": 1051777
-   },
-   "buy_pct": 77
-  },
-  {
-   "coin": "XRP",
-   "price": 1.27835,
-   "support": {
-    "price": 1.2751541250000002,
-    "usd": 1011501
-   },
-   "resistance": {
-    "price": 1.2815458750000002,
-    "usd": 717619
-   },
-   "buy_pct": 65
-  },
-  {
-   "coin": "ADA",
-   "price": 0.21685,
-   "support": {
-    "price": 0.20980237499999999,
-    "usd": 241291
-   },
-   "resistance": {
-    "price": 0.21793425,
-    "usd": 137128
-   },
-   "buy_pct": 65
-  },
-  {
-   "coin": "DOGE",
-   "price": 0.078035,
-   "support": {
-    "price": 0.0778399125,
-    "usd": 752315
-   },
-   "resistance": {
-    "price": 0.0782300875,
-    "usd": 440450
+    "price": 102.28006250000001,
+    "usd": 1613542
    },
    "buy_pct": 74
   },
   {
-   "coin": "AVAX",
-   "price": 9.631499999999999,
+   "coin": "XRP",
+   "price": 1.27005,
    "support": {
-    "price": 9.5833425,
-    "usd": 172125
+    "price": 1.25099925,
+    "usd": 1085910
    },
    "resistance": {
-    "price": 9.65557875,
-    "usd": 205277
+    "price": 1.27005,
+    "usd": 622758
+   },
+   "buy_pct": 66
+  },
+  {
+   "coin": "ADA",
+   "price": 0.21605,
+   "support": {
+    "price": 0.21496975000000001,
+    "usd": 281522
+   },
+   "resistance": {
+    "price": 0.21659012500000002,
+    "usd": 178291
+   },
+   "buy_pct": 66
+  },
+  {
+   "coin": "DOGE",
+   "price": 0.077575,
+   "support": {
+    "price": 0.07738106250000001,
+    "usd": 760168
+   },
+   "resistance": {
+    "price": 0.07776893750000001,
+    "usd": 673953
+   },
+   "buy_pct": 53
+  },
+  {
+   "coin": "AVAX",
+   "price": 9.5245,
+   "support": {
+    "price": 9.50068875,
+    "usd": 198625
+   },
+   "resistance": {
+    "price": 9.54831125,
+    "usd": 139831
+   },
+   "buy_pct": 63
+  },
+  {
+   "coin": "LINK",
+   "price": 11.756499999999999,
+   "support": {
+    "price": 11.49197875,
+    "usd": 261811
+   },
+   "resistance": {
+    "price": 11.785891249999999,
+    "usd": 238795
+   },
+   "buy_pct": 57
+  },
+  {
+   "coin": "DOT",
+   "price": 1.0725,
+   "support": {
+    "price": 1.06981875,
+    "usd": 92294
+   },
+   "resistance": {
+    "price": 1.07518125,
+    "usd": 78523
+   },
+   "buy_pct": 57
+  },
+  {
+   "coin": "LTC",
+   "price": 58.215,
+   "support": {
+    "price": 58.06946250000001,
+    "usd": 250171
+   },
+   "resistance": {
+    "price": 58.36053750000001,
+    "usd": 292174
+   },
+   "buy_pct": 49
+  },
+  {
+   "coin": "UNI",
+   "price": 6.9965,
+   "support": {
+    "price": 6.80409625,
+    "usd": 233933
+   },
+   "resistance": {
+    "price": 6.9965,
+    "usd": 121280
    },
    "buy_pct": 62
   },
   {
-   "coin": "LINK",
-   "price": 11.8265,
-   "support": {
-    "price": 11.50127125,
-    "usd": 274777
-   },
-   "resistance": {
-    "price": 11.85606625,
-    "usd": 165142
-   },
-   "buy_pct": 58
-  },
-  {
-   "coin": "DOT",
-   "price": 1.0815000000000001,
-   "support": {
-    "price": 1.0787962500000001,
-    "usd": 127966
-   },
-   "resistance": {
-    "price": 1.0842037500000001,
-    "usd": 94027
-   },
-   "buy_pct": 61
-  },
-  {
-   "coin": "LTC",
-   "price": 59.285,
-   "support": {
-    "price": 59.1367875,
-    "usd": 190718
-   },
-   "resistance": {
-    "price": 59.433212499999996,
-    "usd": 197141
-   },
-   "buy_pct": 48
-  },
-  {
-   "coin": "UNI",
-   "price": 7.1055,
-   "support": {
-    "price": 6.80351625,
-    "usd": 202487
-   },
-   "resistance": {
-    "price": 7.1232637500000004,
-    "usd": 128958
-   },
-   "buy_pct": 65
-  },
-  {
    "coin": "AAVE",
-   "price": 151.325,
+   "price": 149.635,
    "support": {
-    "price": 144.13706249999998,
-    "usd": 825959
+    "price": 144.0236875,
+    "usd": 826607
    },
    "resistance": {
-    "price": 151.7033125,
-    "usd": 79779
+    "price": 150.0090875,
+    "usd": 92189
    },
-   "buy_pct": 59
+   "buy_pct": 66
   },
   {
    "coin": "NEAR",
-   "price": 4.8395,
+   "price": 4.7835,
    "support": {
-    "price": 4.80320375,
-    "usd": 367723
+    "price": 4.6041187500000005,
+    "usd": 455580
    },
    "resistance": {
-    "price": 5.0572775,
-    "usd": 281104
+    "price": 4.87917,
+    "usd": 268644
    },
-   "buy_pct": 61
+   "buy_pct": 51
   },
   {
    "coin": "SUI",
-   "price": 0.96455,
+   "price": 0.95805,
    "support": {
-    "price": 0.95008175,
-    "usd": 520786
+    "price": 0.950864625,
+    "usd": 457230
    },
    "resistance": {
-    "price": 0.9669613749999999,
-    "usd": 235244
-   },
-   "buy_pct": 76
-  },
-  {
-   "coin": "POL",
-   "price": 0.090835,
-   "support": {
-    "price": 0.090380825,
-    "usd": 47153
-   },
-   "resistance": {
-    "price": 0.0910620875,
-    "usd": 31147
+    "price": 0.960445125,
+    "usd": 228372
    },
    "buy_pct": 69
   },
   {
-   "coin": "ONDO",
-   "price": 0.43105,
+   "coin": "POL",
+   "price": 0.089895,
    "support": {
-    "price": 0.429972375,
-    "usd": 145270
+    "price": 0.08787236250000001,
+    "usd": 47611
    },
    "resistance": {
-    "price": 0.432127625,
-    "usd": 87361
+    "price": 0.089895,
+    "usd": 43898
    },
-   "buy_pct": 56
+   "buy_pct": 68
+  },
+  {
+   "coin": "ONDO",
+   "price": 0.42585,
+   "support": {
+    "price": 0.42372075000000003,
+    "usd": 97855
+   },
+   "resistance": {
+    "price": 0.426914625,
+    "usd": 78312
+   },
+   "buy_pct": 61
   },
   {
    "coin": "PEPE",
-   "price": 3.865e-06,
+   "price": 3.845e-06,
    "support": {
-    "price": 3.7780375000000006e-06,
-    "usd": 293748
+    "price": 3.7777125e-06,
+    "usd": 227658
    },
    "resistance": {
-    "price": 4.0485875000000005e-06,
-    "usd": 228517
+    "price": 3.9219e-06,
+    "usd": 435164
    },
-   "buy_pct": 67
+   "buy_pct": 54
   },
   {
    "coin": "TRX",
-   "price": 0.33255,
+   "price": 0.33245,
    "support": {
-    "price": 0.33171862500000004,
-    "usd": 779496
+    "price": 0.33161887500000004,
+    "usd": 987883
    },
    "resistance": {
-    "price": 0.33338137500000004,
-    "usd": 869787
+    "price": 0.333281125,
+    "usd": 678984
    },
    "buy_pct": 55
   },
   {
    "coin": "SHIB",
-   "price": 4.925e-06,
+   "price": 4.895e-06,
    "support": {
-    "price": 4.851125e-06,
-    "usd": 72375
+    "price": 4.84605e-06,
+    "usd": 62395
    },
    "resistance": {
-    "price": 4.9619375e-06,
-    "usd": 39561
+    "price": 4.9317125e-06,
+    "usd": 43772
    },
    "buy_pct": 57
   },
   {
    "coin": "BCH",
-   "price": 271.45,
+   "price": 268.45,
    "support": {
-    "price": 270.09275,
-    "usd": 200536
+    "price": 267.10775,
+    "usd": 217256
    },
    "resistance": {
-    "price": 272.128625,
-    "usd": 124490
+    "price": 269.79224999999997,
+    "usd": 122671
    },
-   "buy_pct": 57
+   "buy_pct": 52
   },
   {
    "coin": "XLM",
-   "price": 0.17554999999999998,
+   "price": 0.17425000000000002,
    "support": {
-    "price": 0.17511112499999998,
-    "usd": 221729
+    "price": 0.17381437500000002,
+    "usd": 206310
    },
    "resistance": {
-    "price": 0.175988875,
-    "usd": 119193
-   },
-   "buy_pct": 67
-  },
-  {
-   "coin": "HBAR",
-   "price": 0.086825,
-   "support": {
-    "price": 0.083786125,
-    "usd": 328179
-   },
-   "resistance": {
-    "price": 0.089863875,
-    "usd": 342358
-   },
-   "buy_pct": 56
-  },
-  {
-   "coin": "APT",
-   "price": 0.7827,
-   "support": {
-    "price": 0.7807432499999999,
-    "usd": 73501
-   },
-   "resistance": {
-    "price": 0.7846567499999999,
-    "usd": 86438
-   },
-   "buy_pct": 59
-  },
-  {
-   "coin": "ARB",
-   "price": 0.17995,
-   "support": {
-    "price": 0.179500125,
-    "usd": 117592
-   },
-   "resistance": {
-    "price": 0.18039987500000002,
-    "usd": 72948
-   },
-   "buy_pct": 57
-  },
-  {
-   "coin": "OP",
-   "price": 0.12475,
-   "support": {
-    "price": 0.12412625000000001,
-    "usd": 66632
-   },
-   "resistance": {
-    "price": 0.12506187500000002,
-    "usd": 51591
-   },
-   "buy_pct": 57
-  },
-  {
-   "coin": "INJ",
-   "price": 8.1355,
-   "support": {
-    "price": 7.810080000000001,
-    "usd": 120724
-   },
-   "resistance": {
-    "price": 8.155838750000001,
-    "usd": 104823
-   },
-   "buy_pct": 64
-  },
-  {
-   "coin": "FIL",
-   "price": 1.03735,
-   "support": {
-    "price": 1.0166030000000001,
-    "usd": 173739
-   },
-   "resistance": {
-    "price": 1.039943375,
-    "usd": 79251
-   },
-   "buy_pct": 74
-  },
-  {
-   "coin": "ATOM",
-   "price": 1.6724999999999999,
-   "support": {
-    "price": 1.6014187500000001,
-    "usd": 34676
-   },
-   "resistance": {
-    "price": 1.6808625,
-    "usd": 28367
-   },
-   "buy_pct": 48
-  },
-  {
-   "coin": "ICP",
-   "price": 2.8680000000000003,
-   "support": {
-    "price": 2.8536600000000005,
-    "usd": 71752
-   },
-   "resistance": {
-    "price": 2.9468700000000005,
-    "usd": 71398
-   },
-   "buy_pct": 53
-  },
-  {
-   "coin": "ETC",
-   "price": 7.675,
-   "support": {
-    "price": 7.6558125,
-    "usd": 64631
-   },
-   "resistance": {
-    "price": 7.6941875,
-    "usd": 44488
-   },
-   "buy_pct": 55
-  },
-  {
-   "coin": "WIF",
-   "price": 0.19405,
-   "support": {
-    "price": 0.193564875,
-    "usd": 36743
-   },
-   "resistance": {
-    "price": 0.19502025,
-    "usd": 19220
-   },
-   "buy_pct": 46
-  },
-  {
-   "coin": "RENDER",
-   "price": 1.8005,
-   "support": {
-    "price": 1.76899125,
-    "usd": 179607
-   },
-   "resistance": {
-    "price": 1.83651,
-    "usd": 163933
+    "price": 0.174685625,
+    "usd": 104752
    },
    "buy_pct": 58
   },
   {
+   "coin": "HBAR",
+   "price": 0.086065,
+   "support": {
+    "price": 0.0845588625,
+    "usd": 319792
+   },
+   "resistance": {
+    "price": 0.08757113750000001,
+    "usd": 324761
+   },
+   "buy_pct": 50
+  },
+  {
+   "coin": "APT",
+   "price": 0.77275,
+   "support": {
+    "price": 0.7708181250000001,
+    "usd": 76578
+   },
+   "resistance": {
+    "price": 0.7746818750000001,
+    "usd": 72291
+   },
+   "buy_pct": 60
+  },
+  {
+   "coin": "ARB",
+   "price": 0.18015,
+   "support": {
+    "price": 0.179699625,
+    "usd": 156300
+   },
+   "resistance": {
+    "price": 0.180600375,
+    "usd": 91657
+   },
+   "buy_pct": 67
+  },
+  {
+   "coin": "OP",
+   "price": 0.12315000000000001,
+   "support": {
+    "price": 0.12284212500000001,
+    "usd": 55095
+   },
+   "resistance": {
+    "price": 0.12561300000000003,
+    "usd": 42926
+   },
+   "buy_pct": 53
+  },
+  {
+   "coin": "INJ",
+   "price": 8.106,
+   "support": {
+    "price": 8.065470000000001,
+    "usd": 127125
+   },
+   "resistance": {
+    "price": 8.126265,
+    "usd": 104117
+   },
+   "buy_pct": 59
+  },
+  {
+   "coin": "FIL",
+   "price": 1.03015,
+   "support": {
+    "price": 1.017273125,
+    "usd": 201641
+   },
+   "resistance": {
+    "price": 1.032725375,
+    "usd": 77472
+   },
+   "buy_pct": 67
+  },
+  {
+   "coin": "ATOM",
+   "price": 1.6635,
+   "support": {
+    "price": 1.65934125,
+    "usd": 59530
+   },
+   "resistance": {
+    "price": 1.66765875,
+    "usd": 41582
+   },
+   "buy_pct": 57
+  },
+  {
+   "coin": "ICP",
+   "price": 2.835,
+   "support": {
+    "price": 2.8279125,
+    "usd": 82834
+   },
+   "resistance": {
+    "price": 2.8846125,
+    "usd": 66498
+   },
+   "buy_pct": 56
+  },
+  {
+   "coin": "ETC",
+   "price": 7.615,
+   "support": {
+    "price": 7.329437500000001,
+    "usd": 113091
+   },
+   "resistance": {
+    "price": 7.634037500000001,
+    "usd": 45538
+   },
+   "buy_pct": 62
+  },
+  {
+   "coin": "WIF",
+   "price": 0.19225,
+   "support": {
+    "price": 0.19176937500000002,
+    "usd": 34061
+   },
+   "resistance": {
+    "price": 0.19321125000000003,
+    "usd": 24820
+   },
+   "buy_pct": 51
+  },
+  {
+   "coin": "RENDER",
+   "price": 1.7725,
+   "support": {
+    "price": 1.7370500000000002,
+    "usd": 167102
+   },
+   "resistance": {
+    "price": 1.8079500000000002,
+    "usd": 169624
+   },
+   "buy_pct": 55
+  },
+  {
    "coin": "TAO",
-   "price": 263.75,
+   "price": 260.95,
    "support": {
-    "price": 255.17812500000002,
-    "usd": 458846
+    "price": 255.07862500000002,
+    "usd": 540226
    },
    "resistance": {
-    "price": 264.409375,
-    "usd": 114322
-   },
-   "buy_pct": 72
-  },
-  {
-   "coin": "ENA",
-   "price": 0.18335,
-   "support": {
-    "price": 0.180141375,
-    "usd": 771198
-   },
-   "resistance": {
-    "price": 0.18610025,
-    "usd": 289245
-   },
-   "buy_pct": 68
-  },
-  {
-   "coin": "SEI",
-   "price": 0.061380000000000004,
-   "support": {
-    "price": 0.061226550000000005,
-    "usd": 95570
-   },
-   "resistance": {
-    "price": 0.06168690000000001,
-    "usd": 45302
-   },
-   "buy_pct": 64
-  },
-  {
-   "coin": "TIA",
-   "price": 0.62055,
-   "support": {
-    "price": 0.6143445000000001,
-    "usd": 166327
-   },
-   "resistance": {
-    "price": 0.6236527500000001,
-    "usd": 45931
+    "price": 261.602375,
+    "usd": 123753
    },
    "buy_pct": 73
   },
   {
-   "coin": "FET",
-   "price": 0.18775,
+   "coin": "ENA",
+   "price": 0.18215,
    "support": {
-    "price": 0.18634187500000002,
-    "usd": 73869
+    "price": 0.17987312500000002,
+    "usd": 655703
    },
    "resistance": {
-    "price": 0.188219375,
-    "usd": 76222
+    "price": 0.18488225000000003,
+    "usd": 219242
+   },
+   "buy_pct": 60
+  },
+  {
+   "coin": "SEI",
+   "price": 0.060175,
+   "support": {
+    "price": 0.060024562499999996,
+    "usd": 76234
+   },
+   "resistance": {
+    "price": 0.060325437499999995,
+    "usd": 70226
+   },
+   "buy_pct": 53
+  },
+  {
+   "coin": "TIA",
+   "price": 0.61925,
+   "support": {
+    "price": 0.6161537500000001,
+    "usd": 70807
+   },
+   "resistance": {
+    "price": 0.62234625,
+    "usd": 37907
+   },
+   "buy_pct": 64
+  },
+  {
+   "coin": "FET",
+   "price": 0.18675,
+   "support": {
+    "price": 0.186283125,
+    "usd": 85566
+   },
+   "resistance": {
+    "price": 0.187216875,
+    "usd": 85708
    },
    "buy_pct": 50
   },
   {
    "coin": "ZEC",
-   "price": 1106.2150000000001,
+   "price": 1082.975,
    "support": {
-    "price": 1100.683925,
-    "usd": 776151
+    "price": 1074.8526875,
+    "usd": 700750
    },
    "resistance": {
-    "price": 1111.746075,
-    "usd": 820676
+    "price": 1088.3898749999998,
+    "usd": 676449
    },
-   "buy_pct": 50
+   "buy_pct": 57
   }
  ],
  "topics": {
@@ -1342,7 +1342,7 @@
   }
  ],
  "tip": "টোকেনের বেশিরভাগ টিম বা বিনিয়োগকারীদের হাতে থাকলে ঝুঁকি বেশি।",
- "updated": "2026-10-18T13:35:46+00:00",
+ "updated": "2026-10-18T16:57:40+00:00",
  "sources": {
   "Airdrops.io": 10,
   "AirdropAlert": 1,
@@ -1366,9 +1366,7 @@
   "Bitfinex": 0,
   "BitMart": 7,
   "XT": 4,
-  "DigiFinex": 2,
-  "DefiLlama unlocks": 61,
-  "CoinMarketCap new": 30
+  "DigiFinex": 2
  },
  "unlocks": [
   {
