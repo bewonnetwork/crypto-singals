@@ -469,31 +469,6 @@
    "also_bot": false
   },
   {
-   "coin": "ETC",
-   "market": "crypto",
-   "side": "SELL",
-   "entry": 7.68,
-   "sl": 7.771438830843412,
-   "tp1": 7.588561169156588,
-   "tp2": 7.497122338313176,
-   "score": 26,
-   "agree": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.2,
-    "tv4h": -0.355,
-    "tv1d": -0.4,
-    "engine": -0.928,
-    "rsi": 34.8,
-    "mom": -0.502,
-    "lsr": 1.52,
-    "crowd": -0.261
-   },
-   "opened": "2026-10-18T09:39:04+00:00",
-   "status": "open",
-   "also_bot": false
-  },
-  {
    "coin": "OP",
    "market": "crypto",
    "side": "SELL",
@@ -520,6 +495,23 @@
   }
  ],
  "history": [
+  {
+   "coin": "ETC",
+   "market": "crypto",
+   "side": "SELL",
+   "entry": 7.68,
+   "sl": 7.771438830843412,
+   "tp1": 7.588561169156588,
+   "tp2": 7.497122338313176,
+   "score": 26,
+   "agree": 6,
+   "n": 6,
+   "opened": "2026-10-18T09:39:04+00:00",
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-18T13:36:32+00:00",
+   "exit": 7.76
+  },
   {
    "coin": "ADA",
    "market": "crypto",
@@ -1173,7 +1165,7 @@
  "stats": {
   "tp1": 12,
   "tp2": 8,
-  "sl": 17,
+  "sl": 18,
   "expired": 0
  },
  "sources": [
@@ -1195,5 +1187,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-18T09:39:04+00:00"
+ "updated": "2026-10-18T13:36:32+00:00"
 }
