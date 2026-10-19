@@ -641,32 +641,6 @@
  },
  "open": [
   {
-   "coin": "ARB",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 0.1936,
-   "sl": 0.1936,
-   "tp1": 0.19809705232067226,
-   "tp2": 0.20259410464134453,
-   "score": 76,
-   "agree": 5,
-   "n": 6,
-   "src": {
-    "tv1h": 0.512,
-    "tv4h": 0.445,
-    "tv1d": 0.355,
-    "engine": 0.994,
-    "rsi": 69.6,
-    "mom": 0.501,
-    "lsr": 1.46,
-    "crowd": -0.228
-   },
-   "opened": "2026-10-19T06:54:35+00:00",
-   "status": "open",
-   "also_bot": false,
-   "tp1_hit": true
-  },
-  {
    "coin": "INJ",
    "market": "crypto",
    "side": "BUY",
@@ -696,7 +670,7 @@
    "market": "crypto",
    "side": "SELL",
    "entry": 0.7751,
-   "sl": 0.793514005936813,
+   "sl": 0.7751,
    "tp1": 0.756685994063187,
    "tp2": 0.7382719881263741,
    "score": 26,
@@ -714,14 +688,15 @@
    },
    "opened": "2026-10-19T06:54:35+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   },
   {
    "coin": "HBAR",
    "market": "crypto",
    "side": "SELL",
    "entry": 0.0842,
-   "sl": 0.08607546264679479,
+   "sl": 0.0842,
    "tp1": 0.0823245373532052,
    "tp2": 0.08044907470641041,
    "score": 27,
@@ -739,8 +714,11 @@
    },
    "opened": "2026-10-19T06:54:35+00:00",
    "status": "open",
-   "also_bot": false
-  },
+   "also_bot": false,
+   "tp1_hit": true
+  }
+ ],
+ "history": [
   {
    "coin": "USDCHF",
    "market": "forex",
@@ -752,20 +730,30 @@
    "score": 29,
    "agree": 3,
    "n": 5,
-   "src": {
-    "tv1h": -0.467,
-    "tv4h": -0.603,
-    "tv1d": -0.036,
-    "engine": -0.744,
-    "rsi": 47.0,
-    "mom": -0.051
-   },
    "opened": "2026-10-19T06:54:35+00:00",
-   "status": "open",
-   "also_bot": false
-  }
- ],
- "history": [
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-19T20:06:05+00:00",
+   "exit": 0.8266500234603882
+  },
+  {
+   "coin": "ARB",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 0.1936,
+   "sl": 0.1936,
+   "tp1": 0.19809705232067226,
+   "tp2": 0.20259410464134453,
+   "score": 76,
+   "agree": 5,
+   "n": 6,
+   "opened": "2026-10-19T06:54:35+00:00",
+   "status": "TP1",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-19T20:06:05+00:00",
+   "exit": 0.192
+  },
   {
    "coin": "USDCAD",
    "market": "forex",
@@ -1504,9 +1492,9 @@
   }
  ],
  "stats": {
-  "tp1": 13,
+  "tp1": 14,
   "tp2": 9,
-  "sl": 20,
+  "sl": 21,
   "expired": 0
  },
  "sources": [
@@ -1528,5 +1516,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-19T14:23:18+00:00"
+ "updated": "2026-10-19T20:06:05+00:00"
 }
