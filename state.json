@@ -33,7 +33,7 @@
   "XAGUSD": "2026-10-19T13:00:00+00:00",
   "APT": "2026-10-16T21:00:00+00:00",
   "LTC": "2026-10-18T15:00:00+00:00",
-  "FET": "2026-10-19T13:00:00+00:00"
+  "FET": "2026-10-19T22:00:00+00:00"
  },
  "open": [
   {
@@ -44,8 +44,8 @@
    "tp1": 0.21410112200852396,
    "tp2": 0.21090224401704794,
    "tp1_hit": false,
-   "age": 6,
-   "checked_until": "2026-10-19T19:00:00+00:00",
+   "age": 9,
+   "checked_until": "2026-10-19T22:00:00+00:00",
    "sl0": 0.22049887799147602,
    "opened": "2026-10-19T13:00:00+00:00",
    "rsi": 42.3,
@@ -61,7 +61,7 @@
    ],
    "market": "crypto",
    "name": "ADA",
-   "mdd": 1.1044638748274338
+   "mdd": 1.150483202945238
   },
   {
    "coin": "XAGUSD",
@@ -71,8 +71,8 @@
    "tp1": 56.98135403316778,
    "tp2": 56.52770669304454,
    "tp1_hit": false,
-   "age": 5,
-   "checked_until": "2026-10-19T18:00:00+00:00",
+   "age": 8,
+   "checked_until": "2026-10-19T22:00:00+00:00",
    "sl0": 57.88864871341425,
    "opened": "2026-10-19T13:00:00+00:00",
    "rsi": 44.5,
@@ -634,6 +634,16 @@
   }
  ],
  "news_posted": [
+  "https://cryptoslate.com/hyperliquid-wallet-adds-to-eth-short-after-19-8m-in-forced-closures/",
+  "https://cryptoslate.com/crypto-hacks-surge-55-to-1-2b-but-key-theft-drops-by-30/",
+  "https://www.theblock.co/news/regulation/2026-10-19-blackrock-files-bitcoin-managed-protect-etf-downside-protection-ibit-421087",
+  "https://decrypt.co/381382/strive-buys-335-million-bitcoin",
+  "https://cryptoslate.com/hoskinson-reveals-new-code-for-cardano-but-63m-tvl-exposes-a-gap/",
+  "https://decrypt.co/381371/anthropic-gives-public-musk-answers-spacex-shares",
+  "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://decrypt.co/381358/xrp-ledger-repairs-lending-protocol-before-live",
+  "https://cointelegraph.com/news/crypto-pac-california-race-voters-special-election?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes",
   "https://cryptoslate.com/krakens-opt-in-european-wallet-can-expose-spot-holdings-to-futures-losses/",
   "https://cointelegraph.com/news/public-comments-us-sec-proposed-crypto-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
   "https://decrypt.co/381351/hackers-running-apple-ios-android-phones",
@@ -1123,74 +1133,64 @@
   "https://decrypt.co/380669/bitcoin-ranges-near-83k-as-traders-look-to-us-inflation-data",
   "https://www.coindesk.com/markets/2026/10/12/bitcoin-holds-usd83-000-as-dollar-strength-keeps-markets-on-edge",
   "https://cointelegraph.com/markets/btc-price-support-holds-ahead-of-us-cpi-data-three-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-  "https://www.coindesk.com/policy/2026/10/12/global-financial-watchdog-calls-for-cross-border-information-sharing-planning-for-stablecoin-crisis",
-  "https://www.coindesk.com/business/2026/10/12/south-korea-just-got-its-first-traditional-bank-loans-backed-by-bitcoin",
-  "https://cryptoslate.com/fake-payment-addresses-targeted-4-5-million-solana-wallets-study-finds/",
-  "https://www.coindesk.com/business/2026/10/12/swi-raises-usd894-million-to-repurpose-former-ftx-bitcoin-miner-genesis-digital-to-ai",
-  "https://www.coindesk.com/markets/2026/10/12/altcoins-rally-on-thin-trading-as-bitcoin-holds-near-usd84-000",
-  "https://decrypt.co/380661/uk-freezes-12m-london-penthouse-of-alleged-prince-group-finance-chief",
-  "https://www.theblock.co/news/markets/2026-10-12-morgan-stanley-tokenized-equities-q1-2027-418256",
-  "https://cryptoslate.com/cryptomus-and-heleket-share-one-uk-sanctions-target-raising-the-stakes-of-switching-payment-providers/",
-  "https://cointelegraph.com/news/kraken-receives-vara-approval-uae-expansion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-  "https://www.theblock.co/news/business/2026-10-12-standard-chartered-custody-ripple-rlusd-418258",
-  "https://cointelegraph.com/news/standard-chartered-rlusd-custody-lmax-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+  "https://www.coindesk.com/policy/2026/10/12/global-financial-watchdog-calls-for-cross-border-information-sharing-planning-for-stablecoin-crisis"
  ],
  "news_seeded": true,
  "fx_quotes": {
   "EURUSD": {
-   "price": 1.12145,
-   "ch": -0.19,
-   "time": "2026-10-19T19:00:00+00:00"
+   "price": 1.12158,
+   "ch": -0.12,
+   "time": "2026-10-19T18:00:00+00:00"
   },
   "GBPUSD": {
-   "price": 1.33039,
-   "ch": -0.19,
-   "time": "2026-10-19T19:00:00+00:00"
+   "price": 1.33058,
+   "ch": -0.11,
+   "time": "2026-10-19T18:00:00+00:00"
   },
   "USDJPY": {
-   "price": 158.545,
-   "ch": 0.27,
-   "time": "2026-10-19T19:00:00+00:00"
+   "price": 158.508,
+   "ch": 0.16,
+   "time": "2026-10-19T18:00:00+00:00"
   },
   "XAUUSD": {
-   "price": 4165.0,
-   "ch": -0.46,
-   "time": "2026-10-19T18:00:00+00:00"
+   "price": 4155.6001,
+   "ch": -0.74,
+   "time": "2026-10-19T22:00:00+00:00"
   },
   "AUDUSD": {
-   "price": 0.69818,
-   "ch": 0.55,
-   "time": "2026-10-19T19:00:00+00:00"
+   "price": 0.69828,
+   "ch": 0.58,
+   "time": "2026-10-19T18:00:00+00:00"
   },
   "USDCAD": {
-   "price": 1.41108,
-   "ch": -0.3,
-   "time": "2026-10-19T19:00:00+00:00"
+   "price": 1.41051,
+   "ch": -0.39,
+   "time": "2026-10-19T18:00:00+00:00"
   },
   "USDCHF": {
-   "price": 0.82665,
-   "ch": 0.25,
-   "time": "2026-10-19T19:00:00+00:00"
+   "price": 0.82641,
+   "ch": 0.13,
+   "time": "2026-10-19T18:00:00+00:00"
   },
   "NZDUSD": {
-   "price": 0.56625,
-   "ch": 0.23,
-   "time": "2026-10-19T19:00:00+00:00"
+   "price": 0.56628,
+   "ch": 0.28,
+   "time": "2026-10-19T18:00:00+00:00"
   },
   "EURJPY": {
-   "price": 177.74699,
-   "ch": 0.12,
-   "time": "2026-10-19T19:00:00+00:00"
+   "price": 177.733,
+   "ch": 0.13,
+   "time": "2026-10-19T18:00:00+00:00"
   },
   "GBPJPY": {
-   "price": 210.916,
-   "ch": 0.19,
-   "time": "2026-10-19T19:00:00+00:00"
+   "price": 210.901,
+   "ch": 0.18,
+   "time": "2026-10-19T18:00:00+00:00"
   },
   "XAGUSD": {
-   "price": 57.425,
-   "ch": 0.25,
-   "time": "2026-10-19T18:00:00+00:00"
+   "price": 57.04,
+   "ch": -0.17,
+   "time": "2026-10-19T22:00:00+00:00"
   }
  },
  "vol_last": {
@@ -1273,7 +1273,7 @@
   "2026-10-16": 59.38,
   "2026-10-17": 59.49,
   "2026-10-18": 60.1,
-  "2026-10-19": 59.64
+  "2026-10-19": 59.56
  },
  "feed_posted": [
   "https://www.binance.com/en/support/announcement/20b97575070441cc8669cb3c78767c04",
@@ -1454,12 +1454,12 @@
  "feed_seeded": true,
  "insights": {
   "dominance": {
-   "btc": 59.64,
-   "eth": 10.6,
-   "mcap": 2752330759167,
-   "mcap_ch": -0.42,
-   "ch_1d": -0.46,
-   "ch_7d": 0.57,
+   "btc": 59.56,
+   "eth": 10.63,
+   "mcap": 2762034203781,
+   "mcap_ch": -1.44,
+   "ch_1d": -0.54,
+   "ch_7d": 0.49,
    "history": [
     {
      "d": "2026-10-02",
@@ -1531,517 +1531,517 @@
     },
     {
      "d": "2026-10-19",
-     "v": 59.64
+     "v": 59.56
     }
    ]
   },
   "walls": [
    {
     "coin": "BTC",
-    "price": 81958.445,
+    "price": 82068.025,
     "support": {
-     "price": 81958.445,
-     "usd": 7417032
+     "price": 82068.025,
+     "usd": 7200278
     },
     "resistance": {
-     "price": 81958.445,
-     "usd": 9242502
+     "price": 82068.025,
+     "usd": 10013633
     },
-    "buy_pct": 47
+    "buy_pct": 41
    },
    {
     "coin": "ETH",
-    "price": 2400.175,
+    "price": 2410.495,
     "support": {
-     "price": 2400.175,
-     "usd": 3074064
+     "price": 2404.4687624999997,
+     "usd": 3307287
     },
     "resistance": {
-     "price": 2406.1754375,
-     "usd": 4214054
+     "price": 2410.495,
+     "usd": 4117185
     },
-    "buy_pct": 51
+    "buy_pct": 46
    },
    {
     "coin": "BNB",
-    "price": 727.845,
+    "price": 733.245,
     "support": {
-     "price": 726.0253875000001,
-     "usd": 1257889
+     "price": 727.7456625000001,
+     "usd": 1129444
     },
     "resistance": {
-     "price": 729.6646125,
-     "usd": 1161098
+     "price": 735.0781125000001,
+     "usd": 1422441
     },
-    "buy_pct": 51
+    "buy_pct": 52
    },
    {
     "coin": "SOL",
-    "price": 104.375,
+    "price": 105.225,
     "support": {
-     "price": 99.93906249999999,
-     "usd": 3118311
+     "price": 99.96374999999999,
+     "usd": 2925141
     },
     "resistance": {
-     "price": 104.6359375,
-     "usd": 1414412
+     "price": 109.434,
+     "usd": 1763262
     },
-    "buy_pct": 57
+    "buy_pct": 42
    },
    {
     "coin": "XRP",
-    "price": 1.30355,
+    "price": 1.30485,
     "support": {
-     "price": 1.251408,
-     "usd": 985533
+     "price": 1.2493938750000002,
+     "usd": 978964
     },
     "resistance": {
-     "price": 1.306808875,
-     "usd": 716296
-    },
-    "buy_pct": 55
-   },
-   {
-    "coin": "ADA",
-    "price": 0.21745,
-    "support": {
-     "price": 0.216906375,
-     "usd": 197271
-    },
-    "resistance": {
-     "price": 0.21799362500000002,
-     "usd": 183418
+     "price": 1.308112125,
+     "usd": 691855
     },
     "buy_pct": 53
    },
    {
-    "coin": "DOGE",
-    "price": 0.079425,
+    "coin": "ADA",
+    "price": 0.21845,
     "support": {
-     "price": 0.0792264375,
-     "usd": 712884
+     "price": 0.21790387500000002,
+     "usd": 191830
     },
     "resistance": {
-     "price": 0.0796235625,
-     "usd": 594295
+     "price": 0.218996125,
+     "usd": 162690
     },
-    "buy_pct": 56
+    "buy_pct": 54
+   },
+   {
+    "coin": "DOGE",
+    "price": 0.079775,
+    "support": {
+     "price": 0.0795755625,
+     "usd": 627082
+    },
+    "resistance": {
+     "price": 0.0799744375,
+     "usd": 684128
+    },
+    "buy_pct": 53
    },
    {
     "coin": "AVAX",
-    "price": 9.561499999999999,
+    "price": 9.6325,
     "support": {
-     "price": 9.53759625,
-     "usd": 205733
+     "price": 9.5843375,
+     "usd": 185068
     },
     "resistance": {
-     "price": 9.58540375,
-     "usd": 209857
+     "price": 9.65658125,
+     "usd": 165855
     },
     "buy_pct": 55
    },
    {
     "coin": "LINK",
-    "price": 11.910499999999999,
+    "price": 12.0735,
     "support": {
-     "price": 11.88072375,
-     "usd": 216515
+     "price": 12.04331625,
+     "usd": 249807
     },
     "resistance": {
-     "price": 11.940276249999998,
-     "usd": 207141
-    },
-    "buy_pct": 62
-   },
-   {
-    "coin": "DOT",
-    "price": 1.1364999999999998,
-    "support": {
-     "price": 1.13365875,
-     "usd": 104724
-    },
-    "resistance": {
-     "price": 1.1393412499999998,
-     "usd": 90247
-    },
-    "buy_pct": 59
-   },
-   {
-    "coin": "LTC",
-    "price": 59.835,
-    "support": {
-     "price": 59.685412500000005,
-     "usd": 221656
-    },
-    "resistance": {
-     "price": 59.9845875,
-     "usd": 161410
+     "price": 12.194234999999999,
+     "usd": 208140
     },
     "buy_pct": 52
    },
    {
-    "coin": "UNI",
-    "price": 7.2155000000000005,
+    "coin": "DOT",
+    "price": 1.1585,
     "support": {
-     "price": 7.179422500000001,
-     "usd": 200417
+     "price": 1.1556037500000003,
+     "usd": 96069
     },
     "resistance": {
-     "price": 7.233538750000001,
-     "usd": 201961
+     "price": 1.1613962500000001,
+     "usd": 93291
+    },
+    "buy_pct": 53
+   },
+   {
+    "coin": "LTC",
+    "price": 59.754999999999995,
+    "support": {
+     "price": 59.60561249999999,
+     "usd": 150224
+    },
+    "resistance": {
+     "price": 59.90438749999999,
+     "usd": 167449
+    },
+    "buy_pct": 43
+   },
+   {
+    "coin": "UNI",
+    "price": 7.343500000000001,
+    "support": {
+     "price": 7.3067825000000015,
+     "usd": 248956
+    },
+    "resistance": {
+     "price": 7.3618587500000015,
+     "usd": 126660
     },
     "buy_pct": 59
    },
    {
     "coin": "AAVE",
-    "price": 148.095,
+    "price": 149.695,
     "support": {
-     "price": 144.0223875,
-     "usd": 386540
+     "price": 144.0814375,
+     "usd": 381849
     },
     "resistance": {
-     "price": 148.095,
-     "usd": 70549
+     "price": 149.695,
+     "usd": 122970
     },
-    "buy_pct": 63
+    "buy_pct": 60
    },
    {
     "coin": "NEAR",
-    "price": 4.9475,
+    "price": 4.9275,
     "support": {
-     "price": 4.86091875,
-     "usd": 204195
+     "price": 4.915181250000001,
+     "usd": 274499
     },
     "resistance": {
-     "price": 4.996975,
-     "usd": 356470
-    },
-    "buy_pct": 48
-   },
-   {
-    "coin": "SUI",
-    "price": 0.98835,
-    "support": {
-     "price": 0.985879125,
-     "usd": 247291
-    },
-    "resistance": {
-     "price": 0.99329175,
-     "usd": 245587
+     "price": 5.13691875,
+     "usd": 634678
     },
     "buy_pct": 49
    },
    {
-    "coin": "POL",
-    "price": 0.09209,
+    "coin": "SUI",
+    "price": 1.00115,
     "support": {
-     "price": 0.09162955,
-     "usd": 45693
+     "price": 0.998647125,
+     "usd": 241113
     },
     "resistance": {
-     "price": 0.09393180000000001,
-     "usd": 26461
+     "price": 1.0211729999999999,
+     "usd": 222246
     },
-    "buy_pct": 61
+    "buy_pct": 45
+   },
+   {
+    "coin": "POL",
+    "price": 0.092765,
+    "support": {
+     "price": 0.0925330875,
+     "usd": 50825
+    },
+    "resistance": {
+     "price": 0.0943883875,
+     "usd": 36626
+    },
+    "buy_pct": 53
    },
    {
     "coin": "ONDO",
-    "price": 0.43085,
+    "price": 0.43705,
     "support": {
-     "price": 0.42869575,
-     "usd": 122316
+     "price": 0.43705000000000005,
+     "usd": 135856
     },
     "resistance": {
-     "price": 0.43192712499999997,
-     "usd": 76273
-    },
-    "buy_pct": 59
-   },
-   {
-    "coin": "PEPE",
-    "price": 4.115e-06,
-    "support": {
-     "price": 4.0841375000000005e-06,
-     "usd": 435066
-    },
-    "resistance": {
-     "price": 4.1664375000000005e-06,
-     "usd": 297853
+     "price": 0.44032787500000004,
+     "usd": 88778
     },
     "buy_pct": 58
    },
    {
-    "coin": "TRX",
-    "price": 0.33115,
+    "coin": "PEPE",
+    "price": 4.165e-06,
     "support": {
-     "price": 0.330322125,
-     "usd": 846965
+     "price": 4.1545875e-06,
+     "usd": 269617
     },
     "resistance": {
-     "price": 0.33197787500000003,
-     "usd": 919073
+     "price": 4.1962375e-06,
+     "usd": 345748
+    },
+    "buy_pct": 41
+   },
+   {
+    "coin": "TRX",
+    "price": 0.33194999999999997,
+    "support": {
+     "price": 0.33112012499999993,
+     "usd": 900977
+    },
+    "resistance": {
+     "price": 0.33277987499999995,
+     "usd": 687248
     },
     "buy_pct": 54
    },
    {
     "coin": "SHIB",
-    "price": 4.9950000000000005e-06,
+    "price": 5.025e-06,
     "support": {
-     "price": 4.9950000000000005e-06,
-     "usd": 48073
+     "price": 5.0124375000000006e-06,
+     "usd": 44710
     },
     "resistance": {
-     "price": 5.094900000000001e-06,
-     "usd": 60074
+     "price": 5.1631875e-06,
+     "usd": 185286
+    },
+    "buy_pct": 44
+   },
+   {
+    "coin": "BCH",
+    "price": 280.65,
+    "support": {
+     "price": 279.24674999999996,
+     "usd": 177650
+    },
+    "resistance": {
+     "price": 286.263,
+     "usd": 181890
+    },
+    "buy_pct": 54
+   },
+   {
+    "coin": "XLM",
+    "price": 0.17775000000000002,
+    "support": {
+     "price": 0.17730562500000002,
+     "usd": 189410
+    },
+    "resistance": {
+     "price": 0.17819437500000002,
+     "usd": 141108
+    },
+    "buy_pct": 57
+   },
+   {
+    "coin": "HBAR",
+    "price": 0.082925,
+    "support": {
+     "price": 0.0814738125,
+     "usd": 339279
+    },
+    "resistance": {
+     "price": 0.0843761875,
+     "usd": 319905
     },
     "buy_pct": 52
    },
    {
-    "coin": "BCH",
-    "price": 277.45,
+    "coin": "APT",
+    "price": 0.7695,
     "support": {
-     "price": 276.06275,
-     "usd": 231175
+     "price": 0.76757625,
+     "usd": 69502
     },
     "resistance": {
-     "price": 278.83725,
-     "usd": 189143
-    },
-    "buy_pct": 53
-   },
-   {
-    "coin": "XLM",
-    "price": 0.17635,
-    "support": {
-     "price": 0.175909125,
-     "usd": 198760
-    },
-    "resistance": {
-     "price": 0.17679087500000001,
-     "usd": 133153
-    },
-    "buy_pct": 59
-   },
-   {
-    "coin": "HBAR",
-    "price": 0.082285,
-    "support": {
-     "price": 0.0808450125,
-     "usd": 334769
-    },
-    "resistance": {
-     "price": 0.083519275,
-     "usd": 290191
+     "price": 0.77142375,
+     "usd": 60152
     },
     "buy_pct": 55
-   },
-   {
-    "coin": "APT",
-    "price": 0.76175,
-    "support": {
-     "price": 0.759845625,
-     "usd": 64219
-    },
-    "resistance": {
-     "price": 0.763654375,
-     "usd": 59456
-    },
-    "buy_pct": 64
    },
    {
     "coin": "ARB",
-    "price": 0.19275,
+    "price": 0.19785,
     "support": {
-     "price": 0.192268125,
-     "usd": 120680
+     "price": 0.19735537500000003,
+     "usd": 84617
     },
     "resistance": {
-     "price": 0.199978125,
-     "usd": 226153
+     "price": 0.19834462500000002,
+     "usd": 50476
     },
-    "buy_pct": 60
+    "buy_pct": 69
    },
    {
     "coin": "OP",
-    "price": 0.12395,
+    "price": 0.12465000000000001,
     "support": {
-     "price": 0.12333025000000002,
-     "usd": 57948
+     "price": 0.12246862500000003,
+     "usd": 153053
     },
     "resistance": {
-     "price": 0.12828825000000002,
-     "usd": 92783
+     "price": 0.12683137500000002,
+     "usd": 153739
     },
-    "buy_pct": 56
+    "buy_pct": 52
    },
    {
     "coin": "INJ",
-    "price": 8.5475,
+    "price": 8.625499999999999,
     "support": {
-     "price": 8.526131249999999,
-     "usd": 146300
+     "price": 8.603936249999999,
+     "usd": 153820
     },
     "resistance": {
-     "price": 8.56886875,
-     "usd": 103788
-    },
-    "buy_pct": 56
-   },
-   {
-    "coin": "FIL",
-    "price": 1.00875,
-    "support": {
-     "price": 1.001184375,
-     "usd": 273488
-    },
-    "resistance": {
-     "price": 1.011271875,
-     "usd": 85424
-    },
-    "buy_pct": 70
-   },
-   {
-    "coin": "ATOM",
-    "price": 1.7415,
-    "support": {
-     "price": 1.73714625,
-     "usd": 66059
-    },
-    "resistance": {
-     "price": 1.74585375,
-     "usd": 47261
-    },
-    "buy_pct": 60
-   },
-   {
-    "coin": "ICP",
-    "price": 2.8485,
-    "support": {
-     "price": 2.84137875,
-     "usd": 91321
-    },
-    "resistance": {
-     "price": 2.89834875,
-     "usd": 64110
-    },
-    "buy_pct": 56
-   },
-   {
-    "coin": "ETC",
-    "price": 7.725,
-    "support": {
-     "price": 7.7056875,
-     "usd": 71479
-    },
-    "resistance": {
-     "price": 7.7443124999999995,
-     "usd": 48894
-    },
-    "buy_pct": 62
-   },
-   {
-    "coin": "WIF",
-    "price": 0.19905,
-    "support": {
-     "price": 0.198552375,
-     "usd": 21303
-    },
-    "resistance": {
-     "price": 0.20004525,
-     "usd": 44991
-    },
-    "buy_pct": 46
-   },
-   {
-    "coin": "RENDER",
-    "price": 1.802,
-    "support": {
-     "price": 1.7704650000000002,
-     "usd": 161450
-    },
-    "resistance": {
-     "price": 1.8335350000000001,
-     "usd": 163959
-    },
-    "buy_pct": 55
-   },
-   {
-    "coin": "TAO",
-    "price": 266.05,
-    "support": {
-     "price": 260.06387500000005,
-     "usd": 222995
-    },
-    "resistance": {
-     "price": 271.37100000000004,
-     "usd": 145721
-    },
-    "buy_pct": 61
-   },
-   {
-    "coin": "ENA",
-    "price": 0.18664999999999998,
-    "support": {
-     "price": 0.18571674999999999,
-     "usd": 283723
-    },
-    "resistance": {
-     "price": 0.18758324999999998,
-     "usd": 236461
-    },
-    "buy_pct": 48
-   },
-   {
-    "coin": "SEI",
-    "price": 0.060335,
-    "support": {
-     "price": 0.0598824875,
-     "usd": 88122
-    },
-    "resistance": {
-     "price": 0.0613908625,
-     "usd": 64037
-    },
-    "buy_pct": 59
-   },
-   {
-    "coin": "TIA",
-    "price": 0.60775,
-    "support": {
-     "price": 0.606230625,
-     "usd": 70888
-    },
-    "resistance": {
-     "price": 0.619905,
-     "usd": 60856
-    },
-    "buy_pct": 56
-   },
-   {
-    "coin": "FET",
-    "price": 0.18814999999999998,
-    "support": {
-     "price": 0.187679625,
-     "usd": 108541
-    },
-    "resistance": {
-     "price": 0.19379449999999998,
-     "usd": 77297
+     "price": 8.64706375,
+     "usd": 107509
     },
     "buy_pct": 58
    },
    {
-    "coin": "ZEC",
-    "price": 1129.455,
+    "coin": "FIL",
+    "price": 1.02075,
     "support": {
-     "price": 1078.6295249999998,
-     "usd": 2516344
+     "price": 1.0003350000000002,
+     "usd": 213304
     },
     "resistance": {
-     "price": 1132.2786374999998,
-     "usd": 508889
+     "price": 1.023301875,
+     "usd": 80339
     },
-    "buy_pct": 63
+    "buy_pct": 61
+   },
+   {
+    "coin": "ATOM",
+    "price": 1.7435,
+    "support": {
+     "price": 1.7391412500000003,
+     "usd": 64303
+    },
+    "resistance": {
+     "price": 1.7478587500000002,
+     "usd": 49961
+    },
+    "buy_pct": 61
+   },
+   {
+    "coin": "ICP",
+    "price": 2.8725,
+    "support": {
+     "price": 2.8581375,
+     "usd": 100661
+    },
+    "resistance": {
+     "price": 2.92995,
+     "usd": 66990
+    },
+    "buy_pct": 55
+   },
+   {
+    "coin": "ETC",
+    "price": 7.785,
+    "support": {
+     "price": 7.746075,
+     "usd": 59292
+    },
+    "resistance": {
+     "price": 7.8044625000000005,
+     "usd": 47234
+    },
+    "buy_pct": 60
+   },
+   {
+    "coin": "WIF",
+    "price": 0.20055,
+    "support": {
+     "price": 0.20004862499999998,
+     "usd": 21261
+    },
+    "resistance": {
+     "price": 0.20105137499999998,
+     "usd": 29612
+    },
+    "buy_pct": 50
+   },
+   {
+    "coin": "RENDER",
+    "price": 1.815,
+    "support": {
+     "price": 1.7832375,
+     "usd": 159065
+    },
+    "resistance": {
+     "price": 1.8467624999999999,
+     "usd": 171999
+    },
+    "buy_pct": 53
+   },
+   {
+    "coin": "TAO",
+    "price": 268.65,
+    "support": {
+     "price": 263.277,
+     "usd": 159154
+    },
+    "resistance": {
+     "price": 273.35137499999996,
+     "usd": 153857
+    },
+    "buy_pct": 55
+   },
+   {
+    "coin": "ENA",
+    "price": 0.19055,
+    "support": {
+     "price": 0.18959725,
+     "usd": 286863
+    },
+    "resistance": {
+     "price": 0.192931875,
+     "usd": 304118
+    },
+    "buy_pct": 46
+   },
+   {
+    "coin": "SEI",
+    "price": 0.060875,
+    "support": {
+     "price": 0.060570625,
+     "usd": 79627
+    },
+    "resistance": {
+     "price": 0.0610271875,
+     "usd": 67608
+    },
+    "buy_pct": 57
+   },
+   {
+    "coin": "TIA",
+    "price": 0.61375,
+    "support": {
+     "price": 0.612215625,
+     "usd": 74957
+    },
+    "resistance": {
+     "price": 0.6168187500000001,
+     "usd": 57274
+    },
+    "buy_pct": 64
+   },
+   {
+    "coin": "FET",
+    "price": 0.19215,
+    "support": {
+     "price": 0.19166962499999998,
+     "usd": 103770
+    },
+    "resistance": {
+     "price": 0.192630375,
+     "usd": 82106
+    },
+    "buy_pct": 55
+   },
+   {
+    "coin": "ZEC",
+    "price": 1156.475,
+    "support": {
+     "price": 1142.0190625,
+     "usd": 706546
+    },
+    "resistance": {
+     "price": 1159.3661875,
+     "usd": 596911
+    },
+    "buy_pct": 68
    }
   ],
   "topics": {
@@ -2116,10 +2116,10 @@
    "unlock": [],
    "listing": [
     {
-     "title": "XRP’s 13-week ETF inflow streak ends as Bitcoin and Ethereum withdrawals continue",
-     "link": "https://cryptoslate.com/xrp-etf-inflow-streak-ends-as-bitcoin-and-ethereum-outflows-continue/",
-     "source": "CryptoSlate",
-     "published": "2026-10-19T10:30:55+00:00"
+     "title": "Strive Buys $335 Million in Bitcoin After Investors Pour In $369 Million",
+     "link": "https://decrypt.co/381382/strive-buys-335-million-bitcoin",
+     "source": "Decrypt",
+     "published": "2026-10-19T21:46:05+00:00"
     },
     {
      "title": "SEC tokenized stock framework faces issuer pushback as Broadcom, Verizon object to OKX-ICE listing",
@@ -2798,7 +2798,7 @@
    }
   ],
   "tip": "বড় খবর বা বড় আনলকের ঠিক আগে নতুন ট্রেডে সাবধান।",
-  "updated": "2026-10-19T20:05:33+00:00",
+  "updated": "2026-10-19T23:42:29+00:00",
   "sources": {
    "Airdrops.io": 10,
    "AirdropAlert": 1,
@@ -2822,9 +2822,7 @@
    "Bitfinex": 0,
    "BitMart": 7,
    "XT": 3,
-   "DigiFinex": 2,
-   "DefiLlama unlocks": 61,
-   "CoinMarketCap new": 30
+   "DigiFinex": 2
   },
   "unlocks": [
    {
@@ -3642,7 +3640,7 @@
   ],
   "tip_en": "Be careful opening new trades right before big news or a big unlock."
  },
- "insights_time": "2026-10-19T20:05:33+00:00",
+ "insights_time": "2026-10-19T23:42:29+00:00",
  "last_insight": "2026-10-19",
  "probe_v": 2,
  "slow_hr": 82983,
@@ -3669,9 +3667,7 @@
   "Bitfinex": 0,
   "BitMart": 7,
   "XT": 3,
-  "DigiFinex": 2,
-  "DefiLlama unlocks": 61,
-  "CoinMarketCap new": 30
+  "DigiFinex": 2
  },
  "last_lesson": "2026-10-19",
  "lesson_n": 17,
@@ -4185,30 +4181,30 @@
    "time": "2026-10-07T02:27:07+00:00"
   }
  ],
- "liq_time": "2026-10-19T20:05:20+00:00",
+ "liq_time": "2026-10-19T23:42:18+00:00",
  "promo_v": "2026-10-09",
- "consensus_time": "2026-10-19T20:05:57+00:00",
+ "consensus_time": "2026-10-19T23:42:51+00:00",
  "sent_cache": {
   "BTC": {
-   "votes_up": 69.9,
-   "sent": 0.399
+   "votes_up": 73.9,
+   "sent": 0.478
   },
   "ETH": {
-   "votes_up": 86.5,
-   "sent": 0.73
+   "votes_up": 91.7,
+   "sent": 0.833
   },
   "BNB": {
-   "votes_up": 50.0,
-   "sent": 0.0
+   "votes_up": 36.4,
+   "sent": -0.273
   },
   "XRP": {
-   "votes_up": 55.9,
-   "sent": 0.119
+   "votes_up": 71.8,
+   "sent": 0.435
   }
  },
- "sent_time": "2026-10-19T14:22:56+00:00",
- "jobs_time": "2026-10-19T14:23:12+00:00",
- "videos_time": "2026-10-19T14:23:13+00:00",
+ "sent_time": "2026-10-19T23:42:52+00:00",
+ "jobs_time": "2026-10-19T23:43:09+00:00",
+ "videos_time": "2026-10-19T23:43:12+00:00",
  "yt_ids": {
   "@WhiteboardCrypto": "UCsYYksPHiGqXHPoHI-fm5sg",
   "@CoinBureau": "UCnThE8FLrlN-tYvZhZL0uaA",
@@ -4248,6 +4244,26 @@
     "opened": "2026-10-19T06:54:35+00:00",
     "status": "open",
     "also_bot": false
+   }
+  ],
+  "history": [
+   {
+    "coin": "HBAR",
+    "market": "crypto",
+    "side": "SELL",
+    "entry": 0.0842,
+    "sl": 0.0842,
+    "tp1": 0.0823245373532052,
+    "tp2": 0.08044907470641041,
+    "score": 27,
+    "agree": 6,
+    "n": 6,
+    "opened": "2026-10-19T06:54:35+00:00",
+    "status": "TP1",
+    "also_bot": false,
+    "tp1_hit": true,
+    "closed": "2026-10-19T23:43:17+00:00",
+    "exit": 0.08279
    },
    {
     "coin": "APT",
@@ -4260,49 +4276,13 @@
     "score": 26,
     "agree": 6,
     "n": 6,
-    "src": {
-     "tv1h": -0.445,
-     "tv4h": -0.491,
-     "tv1d": -0.179,
-     "engine": -0.755,
-     "rsi": 46.3,
-     "mom": -0.585,
-     "lsr": 1.41,
-     "crowd": -0.207
-    },
     "opened": "2026-10-19T06:54:35+00:00",
-    "status": "open",
+    "status": "TP1",
     "also_bot": false,
-    "tp1_hit": true
+    "tp1_hit": true,
+    "closed": "2026-10-19T23:43:17+00:00",
+    "exit": 0.7683
    },
-   {
-    "coin": "HBAR",
-    "market": "crypto",
-    "side": "SELL",
-    "entry": 0.0842,
-    "sl": 0.0842,
-    "tp1": 0.0823245373532052,
-    "tp2": 0.08044907470641041,
-    "score": 27,
-    "agree": 6,
-    "n": 6,
-    "src": {
-     "tv1h": -0.424,
-     "tv4h": -0.355,
-     "tv1d": -0.245,
-     "engine": -0.764,
-     "rsi": 45.7,
-     "mom": -0.509,
-     "lsr": 1.8,
-     "crowd": -0.399
-    },
-    "opened": "2026-10-19T06:54:35+00:00",
-    "status": "open",
-    "also_bot": false,
-    "tp1_hit": true
-   }
-  ],
-  "history": [
    {
     "coin": "USDCHF",
     "market": "forex",
@@ -5076,7 +5056,7 @@
    }
   ],
   "stats": {
-   "tp1": 14,
+   "tp1": 16,
    "tp2": 9,
    "sl": 21,
    "expired": 0

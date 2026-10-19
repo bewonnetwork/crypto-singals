@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T20:05:33+00:00",
+ "updated": "2026-10-19T23:42:29+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,105 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "730d036502",
+   "title": "Whale loses $469,000 in hours on Hyperliquid, yet re-enters with $16M ETH short bet",
+   "link": "https://cryptoslate.com/hyperliquid-wallet-adds-to-eth-short-after-19-8m-in-forced-closures/",
+   "source": "CryptoSlate",
+   "published": "2026-10-19T23:40:46+00:00",
+   "summary": "The unknown trader realized about $469,000 in losses before fees overnight, then added another 1,126 ETH of shorts. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/hyperliquid-short-risk-trap.webp"
+  },
+  {
+   "id": "6fc82efa23",
+   "title": "Crypto hacks surge 55% to $1.2B, but key theft drops by 30%",
+   "link": "https://cryptoslate.com/crypto-hacks-surge-55-to-1-2b-but-key-theft-drops-by-30/",
+   "source": "CryptoSlate",
+   "published": "2026-10-19T22:30:40+00:00",
+   "summary": "The quarterly shift toward contract losses and September's Bitget and Liquid failures challenge a fixed hierarchy of security controls. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/hacken-q3-security-failures-standard.jpg"
+  },
+  {
+   "id": "aadbe15686",
+   "title": "BlackRock files for bitcoin ETF offering downside protection and upside exposure to IBIT",
+   "link": "https://www.theblock.co/news/regulation/2026-10-19-blackrock-files-bitcoin-managed-protect-etf-downside-protection-ibit-421087",
+   "source": "The Block",
+   "published": "2026-10-19T22:00:53+00:00",
+   "summary": "One of the world's largest investment managers, BlackRock has filed for another bitcoin fund, marking its third tied to the asset.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/10/20221005_Blackrock.jpg"
+  },
+  {
+   "id": "8ffaa43b7a",
+   "title": "Strive Buys $335 Million in Bitcoin After Investors Pour In $369 Million",
+   "link": "https://decrypt.co/381382/strive-buys-335-million-bitcoin",
+   "source": "Decrypt",
+   "published": "2026-10-19T21:46:05+00:00",
+   "summary": "The Nasdaq-listed bitcoin holder bought as warrant holders exercised, bringing in $369 million, and it now plans a $630 million sale of 15% preferred stock.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-07-gID_7.png"
+  },
+  {
+   "id": "12957d606e",
+   "title": "Hoskinson reveals new code for Cardano, but $63M TVL exposes a gap",
+   "link": "https://cryptoslate.com/hoskinson-reveals-new-code-for-cardano-but-63m-tvl-exposes-a-gap/",
+   "source": "CryptoSlate",
+   "published": "2026-10-19T21:20:24+00:00",
+   "summary": "Charles Hoskinson is developing a new programming language for Cardano as the blockchain approaches a pivotal test of commercial demand. The Cardano founder said he is working with developer Lucas Rosa, a software engineer at Input Output…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/cardano-adoption-gateway.webp"
+  },
+  {
+   "id": "abd4d902e8",
+   "title": "Anthropic Gives 5% of Itself to the Public. Musk Answers by Giving Away SpaceX Shares",
+   "link": "https://decrypt.co/381371/anthropic-gives-public-musk-answers-spacex-shares",
+   "source": "Decrypt",
+   "published": "2026-10-19T21:15:04+00:00",
+   "summary": "Anthropic committed 5% of its shares to a public benefit fund, and within hours Elon Musk promised a SpaceX share to every American child.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/decrypt-style-anthropic-2-gID_7.png"
+  },
+  {
+   "id": "7cf273a6c1",
+   "title": "Solana treasury firm SkyAI sells all SOL holdings, launches $201M buyback",
+   "link": "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-19T21:04:34+00:00",
+   "summary": "The former medical device maker has liquidated its Solana treasury and is offering to repurchase shares and warrants using its $223.8 million cash holdings.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5AYKKWE9EN0JZE01QZ6T9SW/hi-how-to-swap-tokens-between-base-and-solana.png"
+  },
+  {
+   "id": "6b76c74fb5",
+   "title": "XRP Ledger Repairs Its Lending Protocol Before It Goes Live",
+   "link": "https://decrypt.co/381358/xrp-ledger-repairs-lending-protocol-before-live",
+   "source": "Decrypt",
+   "published": "2026-10-19T20:46:05+00:00",
+   "summary": "XRP developers published a second amendment to repair the ledger’s new uncollateralized lending feature while the original still awaits validator approval.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/xrp-decrypt-style-01-gID_7.png"
+  },
+  {
+   "id": "d7ebd71a9d",
+   "title": "Crypto PAC pours $362K into California race voters essentially decided in August",
+   "link": "https://cointelegraph.com/news/crypto-pac-california-race-voters-special-election?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-19T20:22:41+00:00",
+   "summary": "A Fairshake affiliate is supporting incumbent Aisha Wahab through ads in November, but the congresswoman already won a special election in the district.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5ABCKS2FMK83350383BZ19K/hi-the-great-tech-exodus-california-san-francisco.jpg"
+  },
+  {
+   "id": "1f2c607c15",
+   "title": "Tether: Senator's investigation misses positive work that's led to lower Iran volumes",
+   "link": "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes",
+   "source": "CoinDesk",
+   "published": "2026-10-19T20:21:13+00:00",
+   "summary": "The stablecoin issuer's CEO, Paolo Ardoino, has been defending against accusations that the firm's stablecoins have fueled financial activity in Iran.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/90a43294bacbd032c489ab11822a38860e95f73e-4032x3024.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-19T20:02:30+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
   {
    "id": "96b345496f",
    "title": "Kraken’s opt-in European wallet can expose spot holdings to futures losses",
@@ -297,15 +396,6 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-proof-hardware-limits.webp"
   },
   {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-19T13:19:50+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
    "id": "a0fbdbf829",
    "title": "Public companies object to OKX-ICE’s tokenized stock plan",
    "link": "https://cointelegraph.com/news/public-companies-object-okx-ice-tokenized-stock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -331,15 +421,6 @@
    "published": "2026-10-19T12:30:00+00:00",
    "summary": "Strategy added 267 Bitcoin to its holdings as it bought back 1.94 million STRC shares and boosted its preferred stock buyback program to $3 billion.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M31XS0NMWAFA2WAAJKR59VQ7/hi-strategyb-buys-bitcoin-1.jpg"
-  },
-  {
-   "id": "01d7f740a6",
-   "title": "Circle removes USDC redemption surcharges as Express keeps its 0.05% fee",
-   "link": "https://cryptoslate.com/circle-to-drop-extra-usdc-cash-out-fees-from-october-19/",
-   "source": "CryptoSlate",
-   "published": "2026-10-19T12:20:06+00:00",
-   "summary": "Existing Mint customers switch at their next billing period on or after that date; Express still costs 0.05% before conditional credits. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/circle-institutional-cashout.webp"
   },
   {
    "id": "8fc38d453a",
@@ -405,15 +486,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M59PRYYJ0CH73MJP40F9FCA9/news-crypto-studio-mica-eu-1.jpg"
   },
   {
-   "id": "62f31a93d3",
-   "title": "XRP holders can now earn fees from Kraken’s DeFi customers, but there is a catch",
-   "link": "https://cryptoslate.com/xrp-holders-can-now-earn-fees-from-krakens-defi-customers-but-there-is-a-catch/",
-   "source": "CryptoSlate",
-   "published": "2026-10-19T11:20:50+00:00",
-   "summary": "Sentora’s Firelight coverage pays premiums from vault yield, while FXRP providers’ shared backing can absorb validated losses after a stablecoin buffer. Read the full story on CryptoSlate Understand the crypto stories that matter and what…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/usdc-premium-transfer.webp"
-  },
-  {
    "id": "3edbcc22b0",
    "title": "Strategy's price chart is about to flash a major bullish signal weeks after bitcoin did",
    "link": "https://www.coindesk.com/daybook-us/2026/10/19/strategy-on-verge-of-golden-cross-just-weeks-after-bitcoin-flashed-same-bullish-signal",
@@ -448,15 +520,6 @@
    "published": "2026-10-19T10:31:09+00:00",
    "summary": "The victim was hit over the head before his teenage sister alerted police, who arrested all three men at the scene in May.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Handcuffs-gID_7.png"
-  },
-  {
-   "id": "818a8bc7ff",
-   "title": "XRP’s 13-week ETF inflow streak ends as Bitcoin and Ethereum withdrawals continue",
-   "link": "https://cryptoslate.com/xrp-etf-inflow-streak-ends-as-bitcoin-and-ethereum-outflows-continue/",
-   "source": "CryptoSlate",
-   "published": "2026-10-19T10:30:55+00:00",
-   "summary": "US-listed XRP exchange-traded funds ended a 13-week inflow streak as investors withdrew nearly $576 million from four major cryptocurrency ETF categories. Data from SoSoValue showed that XRP funds recorded $1.84 million in net outflows…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/institutional-crypto-capital-pull.webp"
   },
   {
    "id": "3e1aa39e8c",
@@ -664,69 +727,6 @@
    "published": "2026-10-18T19:50:28+00:00",
    "summary": "Kalshi, Polymarket, Robinhood and Underdog, which also received cease-and-desist orders, have not filed suits in Missouri, according to court records.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/02/20220208_Crypto_Sports_Funding.jpg"
-  },
-  {
-   "id": "6832f09253",
-   "title": "The White House's crypto chief departs: State of Crypto",
-   "link": "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto",
-   "source": "CoinDesk",
-   "published": "2026-10-18T18:30:00+00:00",
-   "summary": "Patrick Witt announced his departure from the White House last week.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/3d14ee5efae01770bbbc627c6ecb94cb0e826a8d-4027x2265.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "53d6eab2c7",
-   "title": "Wall Street freaked out Friday, but VIX and bitcoin trades say the fear may fade Monday.",
-   "link": "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last",
-   "source": "CoinDesk",
-   "published": "2026-10-18T16:33:00+00:00",
-   "summary": "Wall Street's fear gauge, the VIX index, spiked on Friday as stocks dropped. History says Friday panics usually fade on Monday. Seasonality and calm bitcoin markets suggest the same.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/432658a603b65b72bd0b963f39af9806b80609d5-1600x900.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "50507f1dc2",
-   "title": "MapQuest Now Shows Drivers Where Flock Cameras Are Watching",
-   "link": "https://decrypt.co/381255/mapquest-shows-drivers-where-flock-cameras-watching",
-   "source": "Decrypt",
-   "published": "2026-10-18T16:31:03+00:00",
-   "summary": "MapQuest’s app now offers an optional map layer that plots known license plate readers from Flock Safety and other vendors, as backlash against the cameras grows.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/08/privacy-gID_7.jpg"
-  },
-  {
-   "id": "60c973c6d2",
-   "title": "Cysic suspends bridge after attacker mints tokens and moves $727,000 to Ethereum",
-   "link": "https://www.theblock.co/news/defi/2026-10-18-cysic-suspends-bridge-after-attacker-mints-tokens-and-moves-727000-to-ethereum-418863",
-   "source": "The Block",
-   "published": "2026-10-18T16:07:43+00:00",
-   "summary": "The attacker, after minting 10 million CYS, managed to bridge about $727,000 in proceeds to Ethereum through Mayan, deBridge and SWFT's Bridgers.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/09/20210917_Hack_General.jpg"
-  },
-  {
-   "id": "cb79ce95d9",
-   "title": "Latvia eyes crypto tax payments in 2027 as parliament overhauls crypto taxation",
-   "link": "https://www.coindesk.com/policy/2026/10/18/latvia-eyes-crypto-tax-payments-in-2027-as-parliament-overhauls-crypto-taxation",
-   "source": "CoinDesk",
-   "published": "2026-10-18T16:00:00+00:00",
-   "summary": "Parliament passed a law taxing crypto withdrawals above deposits rather than individual trades, featuring a one-time declaration mechanism.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/d02365f898383e63bd7d71439d04e193ccd52d12-1920x1281.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "ab4b724143",
-   "title": "Bitcoin ETFs Shed Nearly $1 Billion in Two Weeks as Uptober Stays Red",
-   "link": "https://decrypt.co/381246/bitcoin-etfs-shed-nearly-1-billion-two-weeks-uptober-red",
-   "source": "Decrypt",
-   "published": "2026-10-18T15:01:04+00:00",
-   "summary": "Bitcoin ETFs lost a net $228.6 million this week, following a $681.1 million drain the week before and pushing October deep into the red.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/Bitcoin-decrypt-style-27-gID_7.jpg"
-  },
-  {
-   "id": "9a03a71755",
-   "title": "Stablecoin supply stalls, but payments jump 45% as Visa, Mastercard and Stripe connect crypto to cash",
-   "link": "https://www.coindesk.com/business/2026/10/18/stablecoin-supply-stalls-but-payments-jump-45-as-visa-mastercard-and-stripe-connect-crypto-to-cash",
-   "source": "CoinDesk",
-   "published": "2026-10-18T14:00:00+00:00",
-   "summary": "Analytics firm Allium said stablecoin payments hit $482 billion this year so far, up 45%, as card spending surges and global payment firms add crypto rails.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/eb1df4637820d42a650a8dcab7641953887ebff1-720x406.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   }
  ]
 }
