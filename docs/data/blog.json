@@ -1,6 +1,496 @@
 {
  "posts": [
   {
+   "slug": "market-cap-vs-fdv",
+   "type": "learn",
+   "date": "2026-10-19T06:53:27+00:00",
+   "title": "Market Cap vs FDV",
+   "title_bn": "Market Cap আর FDV-এর পার্থক্য",
+   "sum_en": "Two numbers that tell you how big a coin is today and how much new supply is still coming. A big gap between them is a warning.",
+   "sum_bn": "দুটো সংখ্যা: কয়েনটা আজ কত বড়, আর সামনে কত নতুন টোকেন আসবে। দুটোর মধ্যে বড় ফারাক একটা সতর্কবার্তা।",
+   "body": {
+    "pts_bn": [
+     "Market cap = এখন বাজারে থাকা টোকেন × দাম।",
+     "FDV = মোট যত টোকেন কখনো হবে × দাম।",
+     "FDV যদি Market cap-এর অনেক গুণ হয়, সামনে প্রচুর টোকেন বাজারে আসবে (আনলক)। সরবরাহ বাড়লে দামে চাপ পড়ে।",
+     "কেনার আগে আনলকের তারিখ দেখে নিন। সাইটের 'শেখা' পাতায় সামনের আনলকের তালিকা আছে।",
+     "কম দামের কয়েন মানেই সস্তা নয়। দাম নয়, Market cap দিয়ে তুলনা করুন।"
+    ],
+    "pts_en": [
+     "Market cap = tokens in circulation now × price.",
+     "FDV = every token that will ever exist × price.",
+     "If FDV is many times the market cap, a lot of tokens will still be unlocked. More supply puts pressure on price.",
+     "Check unlock dates before buying. The Learn page on our site lists upcoming unlocks.",
+     "A low price does not mean cheap. Compare by market cap, not by price."
+    ]
+   }
+  },
+  {
+   "slug": "crypto-market-digest-october-19-2026",
+   "type": "digest",
+   "date": "2026-10-19T06:53:17+00:00",
+   "title": "Crypto Market Digest — October 19, 2026",
+   "sum_en": "HASH leads today's movers (+18.4%) — see the full gainers and losers breakdown.",
+   "sum_bn": "আজ সবচেয়ে বেশি নড়েছে HASH (+18.4%) — কারা বাড়ল, কারা কমল, পুরো তালিকা দেখুন।",
+   "body": {
+    "gainers": [
+     {
+      "sym": "HASH",
+      "name": "Provenance Blockchain",
+      "price": 0.007341,
+      "ch": 18.44,
+      "vol": 7223.04,
+      "rank": 124
+     },
+     {
+      "sym": "Q",
+      "name": "Quack AI",
+      "price": 0.158864,
+      "ch": 16.18,
+      "vol": 76814615,
+      "rank": 91
+     },
+     {
+      "sym": "VVV",
+      "name": "Venice Token",
+      "price": 23.98,
+      "ch": 7.77,
+      "vol": 35309922,
+      "rank": 71
+     },
+     {
+      "sym": "ARB",
+      "name": "Arbitrum",
+      "price": 0.195985,
+      "ch": 6.94,
+      "vol": 152312636,
+      "rank": 66
+     },
+     {
+      "sym": "RAY",
+      "name": "Raydium",
+      "price": 1.92,
+      "ch": 6.51,
+      "vol": 32668810,
+      "rank": 113
+     },
+     {
+      "sym": "BP",
+      "name": "Backpack",
+      "price": 1.1,
+      "ch": 5.49,
+      "vol": 6292985,
+      "rank": 149
+     },
+     {
+      "sym": "ETHFI",
+      "name": "Ether.fi",
+      "price": 0.709413,
+      "ch": 5.23,
+      "vol": 39573521,
+      "rank": 95
+     },
+     {
+      "sym": "PEPE",
+      "name": "Pepe",
+      "price": 4.07e-06,
+      "ch": 4.7,
+      "vol": 226259804,
+      "rank": 60
+     }
+    ],
+    "losers": [
+     {
+      "sym": "BTW",
+      "name": "Bitway",
+      "price": 2.27,
+      "ch": -6.2,
+      "vol": 26463223,
+      "rank": 33
+     },
+     {
+      "sym": "AKE",
+      "name": "Akedo",
+      "price": 0.02817372,
+      "ch": -5.78,
+      "vol": 9026170,
+      "rank": 101
+     },
+     {
+      "sym": "STRK",
+      "name": "Starknet",
+      "price": 0.059635,
+      "ch": -5.56,
+      "vol": 98033857,
+      "rank": 121
+     },
+     {
+      "sym": "STABLE",
+      "name": "​​Stable",
+      "price": 0.02401023,
+      "ch": -4.87,
+      "vol": 8506529,
+      "rank": 99
+     },
+     {
+      "sym": "AERO",
+      "name": "Aerodrome Finance",
+      "price": 0.798869,
+      "ch": -4.6,
+      "vol": 49766262,
+      "rank": 87
+     },
+     {
+      "sym": "HBAR",
+      "name": "Hedera",
+      "price": 0.084451,
+      "ch": -3.96,
+      "vol": 193852582,
+      "rank": 32
+     },
+     {
+      "sym": "TIA",
+      "name": "Celestia",
+      "price": 0.608935,
+      "ch": -2.94,
+      "vol": 113127095,
+      "rank": 104
+     },
+     {
+      "sym": "GRASS",
+      "name": "Grass",
+      "price": 0.597834,
+      "ch": -2.51,
+      "vol": 24529467,
+      "rank": 125
+     }
+    ],
+    "majors": [
+     {
+      "sym": "BTC",
+      "name": "BTC",
+      "price": 82756.38,
+      "ch": 1.25
+     },
+     {
+      "sym": "ETH",
+      "name": "ETH",
+      "price": 2431.41,
+      "ch": 0.83
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 727.6,
+      "ch": 1.14
+     },
+     {
+      "sym": "SOL",
+      "name": "SOL",
+      "price": 105.71,
+      "ch": 2.12
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.3135,
+      "ch": 1.45
+     },
+     {
+      "sym": "ADA",
+      "name": "ADA",
+      "price": 0.2209,
+      "ch": 0.78
+     },
+     {
+      "sym": "DOGE",
+      "name": "DOGE",
+      "price": 0.0797,
+      "ch": 0.77
+     },
+     {
+      "sym": "AVAX",
+      "name": "AVAX",
+      "price": 9.767,
+      "ch": 0.32
+     },
+     {
+      "sym": "LINK",
+      "name": "LINK",
+      "price": 12.169,
+      "ch": 1.71
+     },
+     {
+      "sym": "DOT",
+      "name": "DOT",
+      "price": 1.122,
+      "ch": 2.19
+     },
+     {
+      "sym": "LTC",
+      "name": "LTC",
+      "price": 59.99,
+      "ch": 2.01
+     },
+     {
+      "sym": "UNI",
+      "name": "UNI",
+      "price": 7.391,
+      "ch": 2.67
+     },
+     {
+      "sym": "AAVE",
+      "name": "AAVE",
+      "price": 153.59,
+      "ch": 1.12
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR",
+      "price": 5.059,
+      "ch": 2.41
+     },
+     {
+      "sym": "SUI",
+      "name": "SUI",
+      "price": 1.0101,
+      "ch": 3.57
+     },
+     {
+      "sym": "POL",
+      "name": "POL",
+      "price": 0.09321,
+      "ch": 1.55
+     },
+     {
+      "sym": "ONDO",
+      "name": "ONDO",
+      "price": 0.4374,
+      "ch": -0.09
+     },
+     {
+      "sym": "PEPE",
+      "name": "PEPE",
+      "price": 4.07e-06,
+      "ch": 4.9
+     },
+     {
+      "sym": "TRX",
+      "name": "TRX",
+      "price": 0.3314,
+      "ch": -0.66
+     },
+     {
+      "sym": "TON",
+      "name": "TON",
+      "price": 1.592,
+      "ch": 0.06
+     },
+     {
+      "sym": "SHIB",
+      "name": "SHIB",
+      "price": 5.01e-06,
+      "ch": 1.01
+     },
+     {
+      "sym": "BCH",
+      "name": "BCH",
+      "price": 279.7,
+      "ch": 1.23
+     },
+     {
+      "sym": "XLM",
+      "name": "XLM",
+      "price": 0.179,
+      "ch": 1.13
+     },
+     {
+      "sym": "HBAR",
+      "name": "HBAR",
+      "price": 0.0842,
+      "ch": -1.66
+     },
+     {
+      "sym": "APT",
+      "name": "APT",
+      "price": 0.7751,
+      "ch": -1.54
+     },
+     {
+      "sym": "ARB",
+      "name": "ARB",
+      "price": 0.1936,
+      "ch": 6.67
+     },
+     {
+      "sym": "OP",
+      "name": "OP",
+      "price": 0.1249,
+      "ch": -1.03
+     },
+     {
+      "sym": "INJ",
+      "name": "INJ",
+      "price": 8.523,
+      "ch": 0.04
+     },
+     {
+      "sym": "FIL",
+      "name": "FIL",
+      "price": 1.0426,
+      "ch": -0.5
+     },
+     {
+      "sym": "ATOM",
+      "name": "ATOM",
+      "price": 1.717,
+      "ch": 1.18
+     },
+     {
+      "sym": "ICP",
+      "name": "ICP",
+      "price": 2.906,
+      "ch": 0.07
+     },
+     {
+      "sym": "ETC",
+      "name": "ETC",
+      "price": 7.81,
+      "ch": 1.3
+     },
+     {
+      "sym": "WIF",
+      "name": "WIF",
+      "price": 0.1998,
+      "ch": 1.52
+     },
+     {
+      "sym": "RENDER",
+      "name": "RENDER",
+      "price": 1.807,
+      "ch": -1.58
+     },
+     {
+      "sym": "TAO",
+      "name": "TAO",
+      "price": 274.0,
+      "ch": 2.62
+     },
+     {
+      "sym": "ENA",
+      "name": "ENA",
+      "price": 0.1914,
+      "ch": 2.03
+     },
+     {
+      "sym": "SEI",
+      "name": "SEI",
+      "price": 0.06118,
+      "ch": -1.16
+     },
+     {
+      "sym": "TIA",
+      "name": "TIA",
+      "price": 0.6138,
+      "ch": -2.11
+     },
+     {
+      "sym": "FET",
+      "name": "FET",
+      "price": 0.1911,
+      "ch": 0.47
+     },
+     {
+      "sym": "ZEC",
+      "name": "ZEC",
+      "price": 1165.94,
+      "ch": 3.34
+     }
+    ],
+    "up": 80,
+    "total": 140,
+    "fear_greed": {
+     "value": 59,
+     "label": "Greed"
+    },
+    "fx": [
+     {
+      "sym": "EURUSD",
+      "name": "EUR/USD",
+      "price": 1.12284,
+      "ch": -0.03
+     },
+     {
+      "sym": "GBPUSD",
+      "name": "GBP/USD",
+      "price": 1.33291,
+      "ch": 0.24
+     },
+     {
+      "sym": "USDJPY",
+      "name": "USD/JPY",
+      "price": 158.09599,
+      "ch": 0.14
+     },
+     {
+      "sym": "XAUUSD",
+      "name": "Gold (XAU/USD)",
+      "price": 4204.7002,
+      "ch": 0.21
+     },
+     {
+      "sym": "AUDUSD",
+      "name": "AUD/USD",
+      "price": 0.69764,
+      "ch": 0.38
+     },
+     {
+      "sym": "USDCAD",
+      "name": "USD/CAD",
+      "price": 1.4121,
+      "ch": -0.39
+     },
+     {
+      "sym": "USDCHF",
+      "name": "USD/CHF",
+      "price": 0.82454,
+      "ch": -0.24
+     },
+     {
+      "sym": "NZDUSD",
+      "name": "NZD/USD",
+      "price": 0.56583,
+      "ch": 0.04
+     },
+     {
+      "sym": "EURJPY",
+      "name": "EUR/JPY",
+      "price": 177.47501,
+      "ch": 0.15
+     },
+     {
+      "sym": "GBPJPY",
+      "name": "GBP/JPY",
+      "price": 210.73199,
+      "ch": 0.37
+     },
+     {
+      "sym": "XAGUSD",
+      "name": "Silver (XAG/USD)",
+      "price": 57.96,
+      "ch": -0.02
+     }
+    ],
+    "stats": {
+     "win": 8,
+     "loss": 13,
+     "tp2": 6,
+     "expired": 0
+    },
+    "open": 2
+   }
+  },
+  {
    "slug": "trending-in-crypto-october-18-2026",
    "type": "trending",
    "date": "2026-10-18T16:57:37+00:00",
@@ -5543,31 +6033,6 @@
    }
   },
   {
-   "slug": "market-cap-vs-fdv",
-   "type": "learn",
-   "date": "2026-10-09T07:46:23+00:00",
-   "title": "Market Cap vs FDV",
-   "title_bn": "Market Cap আর FDV-এর পার্থক্য",
-   "sum_en": "Two numbers that tell you how big a coin is today and how much new supply is still coming. A big gap between them is a warning.",
-   "sum_bn": "দুটো সংখ্যা: কয়েনটা আজ কত বড়, আর সামনে কত নতুন টোকেন আসবে। দুটোর মধ্যে বড় ফারাক একটা সতর্কবার্তা।",
-   "body": {
-    "pts_bn": [
-     "Market cap = এখন বাজারে থাকা টোকেন × দাম।",
-     "FDV = মোট যত টোকেন কখনো হবে × দাম।",
-     "FDV যদি Market cap-এর অনেক গুণ হয়, সামনে প্রচুর টোকেন বাজারে আসবে (আনলক)। সরবরাহ বাড়লে দামে চাপ পড়ে।",
-     "কেনার আগে আনলকের তারিখ দেখে নিন। সাইটের 'শেখা' পাতায় সামনের আনলকের তালিকা আছে।",
-     "কম দামের কয়েন মানেই সস্তা নয়। দাম নয়, Market cap দিয়ে তুলনা করুন।"
-    ],
-    "pts_en": [
-     "Market cap = tokens in circulation now × price.",
-     "FDV = every token that will ever exist × price.",
-     "If FDV is many times the market cap, a lot of tokens will still be unlocked. More supply puts pressure on price.",
-     "Check unlock dates before buying. The Learn page on our site lists upcoming unlocks.",
-     "A low price does not mean cheap. Compare by market cap, not by price."
-    ]
-   }
-  },
-  {
    "slug": "crypto-market-digest-october-9-2026",
    "type": "digest",
    "date": "2026-10-09T07:46:13+00:00",
@@ -7910,5 +8375,5 @@
    }
   }
  ],
- "updated": "2026-10-18T16:57:37+00:00"
+ "updated": "2026-10-19T06:53:27+00:00"
 }

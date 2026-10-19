@@ -44,38 +44,12 @@
  ],
  "stats": {
   "win": 8,
-  "loss": 12,
+  "loss": 13,
   "tp2": 6,
   "expired": 0
  },
  "min_conf": 60,
  "open": [
-  {
-   "coin": "XAGUSD",
-   "side": "SELL",
-   "entry": 57.10499954223633,
-   "sl": 57.65201075677882,
-   "tp1": 56.557988327693835,
-   "tp2": 56.010977113151334,
-   "tp1_hit": false,
-   "opened": "2026-10-16T18:00:00+00:00",
-   "rsi": 38.5,
-   "conf": 84,
-   "why": [
-    "EMA 9/21 cross + RSI in range",
-    "4h higher-timeframe trend agrees",
-    "Price below EMA 200",
-    "MACD momentum building",
-    "Moderate trend (ADX 22)",
-    "RSI 39 in the sweet spot"
-   ],
-   "market": "forex",
-   "name": "Silver (XAG/USD)",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  },
   {
    "coin": "SUI",
    "side": "BUY",
@@ -130,6 +104,31 @@
   }
  ],
  "history": [
+  {
+   "coin": "XAGUSD",
+   "side": "SELL",
+   "entry": 57.10499954223633,
+   "sl": 57.65201075677882,
+   "tp1": 56.557988327693835,
+   "tp2": 56.010977113151334,
+   "opened": "2026-10-16T18:00:00+00:00",
+   "closed": "2026-10-19T01:00:00+00:00",
+   "result": "SL",
+   "conf": 84,
+   "why": [
+    "EMA 9/21 cross + RSI in range",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "Moderate trend (ADX 22)",
+    "RSI 39 in the sweet spot"
+   ],
+   "market": "forex",
+   "name": "Silver (XAG/USD)",
+   "exit": 57.65201075677882,
+   "mdd": 0.96,
+   "h24": null
+  },
   {
    "coin": "UNI",
    "side": "SELL",
@@ -901,8 +900,8 @@
   }
  ],
  "fear_greed": {
-  "value": 53,
-  "label": "Neutral"
+  "value": 59,
+  "label": "Greed"
  },
  "forex": {
   "enabled": true,
@@ -954,61 +953,61 @@
   ],
   "quotes": {
    "EURUSD": {
-    "price": 1.12296,
-    "ch": 0.12,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 1.12284,
+    "ch": -0.03,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "GBPUSD": {
-    "price": 1.33292,
-    "ch": 0.44,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 1.33291,
+    "ch": 0.24,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "USDJPY": {
-    "price": 157.909,
-    "ch": -0.12,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 158.09599,
+    "ch": 0.14,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "XAUUSD": {
-    "price": 4194.2002,
-    "ch": 0.41,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 4204.7002,
+    "ch": 0.21,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "AUDUSD": {
-    "price": 0.69662,
-    "ch": 0.66,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 0.69764,
+    "ch": 0.38,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "USDCAD": {
-    "price": 1.41249,
-    "ch": -0.47,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 1.4121,
+    "ch": -0.39,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "USDCHF": {
-    "price": 0.8242,
-    "ch": -0.4,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 0.82454,
+    "ch": -0.24,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "NZDUSD": {
-    "price": 0.56587,
-    "ch": 0.65,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 0.56583,
+    "ch": 0.04,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "EURJPY": {
-    "price": 177.261,
-    "ch": -0.02,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 177.47501,
+    "ch": 0.15,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "GBPJPY": {
-    "price": 210.467,
-    "ch": 0.29,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 210.73199,
+    "ch": 0.37,
+    "time": "2026-10-19T05:00:00+00:00"
    },
    "XAGUSD": {
-    "price": 57.475,
-    "ch": 0.39,
-    "time": "2026-10-19T00:00:00+00:00"
+    "price": 57.96,
+    "ch": -0.02,
+    "time": "2026-10-19T05:00:00+00:00"
    }
   }
  },
- "updated": "2026-10-19T01:44:53+00:00"
+ "updated": "2026-10-19T06:54:35+00:00"
 }
