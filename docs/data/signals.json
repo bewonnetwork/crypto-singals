@@ -43,39 +43,68 @@
   "ZEC"
  ],
  "stats": {
-  "win": 8,
-  "loss": 13,
+  "win": 9,
+  "loss": 14,
   "tp2": 6,
   "expired": 0
  },
  "min_conf": 60,
  "open": [
   {
-   "coin": "SUI",
-   "side": "BUY",
-   "entry": 0.9973,
-   "sl": 0.9779575130849723,
-   "tp1": 1.0166424869150277,
-   "tp2": 1.0359849738300555,
+   "coin": "ADA",
+   "side": "SELL",
+   "entry": 0.2173,
+   "sl": 0.22049887799147602,
+   "tp1": 0.21410112200852396,
+   "tp2": 0.21090224401704794,
    "tp1_hit": false,
-   "opened": "2026-10-19T00:00:00+00:00",
-   "rsi": 60.7,
-   "conf": 61,
+   "opened": "2026-10-19T13:00:00+00:00",
+   "rsi": 42.3,
+   "conf": 65,
    "why": [
     "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
     "MACD momentum building",
-    "Strong trend (ADX 29)",
-    "Volume 1.7× the average",
-    "RSI 61 in the sweet spot",
-    "BTC moving the same way"
+    "⚠ Weak trend (ADX 18)",
+    "RSI 42 in the sweet spot",
+    "⚠ BTC moving the opposite way"
    ],
    "market": "crypto",
-   "name": "SUI",
+   "name": "ADA",
    "src": null,
    "chk": null,
    "note": null,
    "from": null
   },
+  {
+   "coin": "XAGUSD",
+   "side": "SELL",
+   "entry": 57.435001373291016,
+   "sl": 57.88864871341425,
+   "tp1": 56.98135403316778,
+   "tp2": 56.52770669304454,
+   "tp1_hit": false,
+   "opened": "2026-10-19T13:00:00+00:00",
+   "rsi": 44.5,
+   "conf": 74,
+   "why": [
+    "EMA 9/21 cross + RSI in range",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "⚠ Weak trend (ADX 14)",
+    "RSI 44 in the sweet spot"
+   ],
+   "market": "forex",
+   "name": "Silver (XAG/USD)",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  }
+ ],
+ "history": [
   {
    "coin": "EURJPY",
    "side": "SELL",
@@ -83,9 +112,9 @@
    "sl": 177.6128165574441,
    "tp1": 176.90918661638403,
    "tp2": 176.55737164585398,
-   "tp1_hit": false,
    "opened": "2026-10-19T00:00:00+00:00",
-   "rsi": 44.2,
+   "closed": "2026-10-19T11:00:00+00:00",
+   "result": "SL",
    "conf": 84,
    "why": [
     "EMA 9/21 cross + RSI in range",
@@ -97,13 +126,35 @@
    ],
    "market": "forex",
    "name": "EUR/JPY",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  }
- ],
- "history": [
+   "exit": 177.6128165574441,
+   "mdd": 0.23,
+   "h24": null
+  },
+  {
+   "coin": "SUI",
+   "side": "BUY",
+   "entry": 0.9973,
+   "sl": 0.9779575130849723,
+   "tp1": 1.0166424869150277,
+   "tp2": 1.0359849738300555,
+   "opened": "2026-10-19T00:00:00+00:00",
+   "closed": "2026-10-19T10:00:00+00:00",
+   "result": "TP1",
+   "conf": 61,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "MACD momentum building",
+    "Strong trend (ADX 29)",
+    "Volume 1.7× the average",
+    "RSI 61 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "SUI",
+   "exit": 1.0166424869150277,
+   "mdd": 0.5,
+   "h24": null
+  },
   {
    "coin": "XAGUSD",
    "side": "SELL",
@@ -709,6 +760,25 @@
  ],
  "watch": [
   {
+   "coin": "FET",
+   "name": "FET",
+   "market": "crypto",
+   "side": "SELL",
+   "price": 0.188,
+   "score": 57,
+   "chk": "3/4",
+   "why": [
+    "4H",
+    "15M",
+    "5M",
+    "⚠ run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-19T14:21:58+00:00"
+  },
+  {
    "coin": "ARB",
    "name": "ARB",
    "market": "crypto",
@@ -878,25 +948,6 @@
     "range"
    ],
    "time": "2026-10-15T18:30:35+00:00"
-  },
-  {
-   "coin": "SUI",
-   "name": "SUI",
-   "market": "crypto",
-   "side": "BUY",
-   "price": 1.0342,
-   "score": 56,
-   "chk": "4/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "5M",
-    "run-up",
-    "RSI",
-    "extension",
-    "range"
-   ],
-   "time": "2026-10-15T18:30:25+00:00"
   }
  ],
  "fear_greed": {
@@ -953,61 +1004,61 @@
   ],
   "quotes": {
    "EURUSD": {
-    "price": 1.12284,
-    "ch": -0.03,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 1.12259,
+    "ch": -0.18,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "GBPUSD": {
-    "price": 1.33291,
-    "ch": 0.24,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 1.33284,
+    "ch": -0.23,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "USDJPY": {
-    "price": 158.09599,
-    "ch": 0.14,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 158.341,
+    "ch": 0.21,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "XAUUSD": {
-    "price": 4204.7002,
-    "ch": 0.21,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 4174.2002,
+    "ch": -0.31,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "AUDUSD": {
-    "price": 0.69764,
-    "ch": 0.38,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 0.69906,
+    "ch": 0.52,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "USDCAD": {
-    "price": 1.4121,
-    "ch": -0.39,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 1.4099,
+    "ch": -0.51,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "USDCHF": {
-    "price": 0.82454,
-    "ch": -0.24,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 0.82493,
+    "ch": 0.23,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "NZDUSD": {
-    "price": 0.56583,
-    "ch": 0.04,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 0.56747,
+    "ch": 0.33,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "EURJPY": {
-    "price": 177.47501,
-    "ch": 0.15,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 177.7,
+    "ch": 0.02,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "GBPJPY": {
-    "price": 210.73199,
-    "ch": 0.37,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 211.03799,
+    "ch": 0.16,
+    "time": "2026-10-19T13:00:00+00:00"
    },
    "XAGUSD": {
-    "price": 57.96,
-    "ch": -0.02,
-    "time": "2026-10-19T05:00:00+00:00"
+    "price": 57.435,
+    "ch": -0.67,
+    "time": "2026-10-19T13:00:00+00:00"
    }
   }
  },
- "updated": "2026-10-19T06:54:35+00:00"
+ "updated": "2026-10-19T14:23:18+00:00"
 }

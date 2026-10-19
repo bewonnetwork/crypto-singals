@@ -1,6 +1,16 @@
 {
  "jobs": [
   {
+   "t": "Software Engineer, AI Coding Tasks",
+   "co": "Askable",
+   "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-coding-tasks-2091158",
+   "geo": "Worldwide",
+   "at": "2026-10-17T16:04:29",
+   "src": "Remotive",
+   "type": "Software Development",
+   "sec": "dev"
+  },
+  {
    "t": "Tech Lead Full-Stack Rails Engineer",
    "co": "Mitre Media",
    "url": "https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746",
@@ -108,16 +118,6 @@
    "at": "2026-09-18T12:23:56",
    "src": "Remotive",
    "type": "Artificial Intelligence",
-   "sec": "dev"
-  },
-  {
-   "t": "Senior .NET Full-stack Developer",
-   "co": "Lemon.io",
-   "url": "https://remotive.com/remote-jobs/software-development/senior-net-full-stack-developer-2091130",
-   "geo": "Northern America, LATAM, Europe, APAC",
-   "at": "2026-09-17T13:22:05",
-   "src": "Remotive",
-   "type": "Software Development",
    "sec": "dev"
   },
   {
@@ -521,204 +521,474 @@
    "sec": "other"
   },
   {
-   "t": "Head of Marketing - iGaming - Remote with travels to Malaysia",
-   "co": "SmartRecruitment.com",
-   "url": "https://himalayas.app/companies/smartrecruitment-com/jobs/head-of-marketing-igaming-remote-with-travels-to-malaysia?utm_source=api",
-   "geo": "Malaysia",
-   "at": "2026-10-19T05:17:25+00:00",
+   "t": "Business Banking - Portfolio Manager I",
+   "co": "Flagstar Bank",
+   "url": "https://himalayas.app/companies/flagstar-bank/jobs/business-banking-portfolio-manager-i?utm_source=api",
+   "geo": "United States",
+   "at": "2026-10-19T13:06:28+00:00",
    "src": "Himalayas",
-   "type": "Head-of-Marketing Marketing-Di",
+   "type": "Portfolio-Manager Business-Ban",
+   "sec": "other"
+  },
+  {
+   "t": "Principal Analyst - Upstream Technologies",
+   "co": "S&P Global",
+   "url": "https://himalayas.app/companies/s-p-global/jobs/principal-analyst-upstream-technologies?utm_source=api",
+   "geo": "Netherlands",
+   "at": "2026-10-19T13:03:58+00:00",
+   "src": "Himalayas",
+   "type": "Research-Analyst Industry-Anal",
    "sec": "marketing"
   },
   {
-   "t": "Senior Technical Recruiter (m/w/d)",
-   "co": "finanzen.net GmbH",
-   "url": "https://himalayas.app/companies/finanzen-net-gmbh/jobs/senior-technical-recruiter-m-w-d?utm_source=api",
-   "geo": "Germany",
-   "at": "2026-10-19T05:14:58+00:00",
+   "t": "Director, Market Growth Strategy, Molecule to Market (CMC)",
+   "co": "Dotmatics",
+   "url": "https://himalayas.app/companies/dotmatics/jobs/director-market-growth-strategy-molecule-to-market-cmc?utm_source=api",
+   "geo": "United States",
+   "at": "2026-10-19T13:03:53+00:00",
    "src": "Himalayas",
-   "type": "Technical-Recruiter Tech-Recru",
+   "type": "Product-Marketing-Director Mar",
+   "sec": "marketing"
+  },
+  {
+   "t": "Senior EHR Integration Specialist",
+   "co": "McKesson",
+   "url": "https://himalayas.app/companies/mckesson/jobs/senior-ehr-integration-specialist?utm_source=api",
+   "geo": "United States",
+   "at": "2026-10-19T13:03:16+00:00",
+   "src": "Himalayas",
+   "type": "EHR-Integration-Specialist FHI",
+   "sec": "dev"
+  },
+  {
+   "t": "Vulnerability Management Engineer",
+   "co": "Backblaze",
+   "url": "https://himalayas.app/companies/backblaze/jobs/vulnerability-management-engineer?utm_source=api",
+   "geo": "Colombia, Costa Rica",
+   "at": "2026-10-19T13:03:16+00:00",
+   "src": "Himalayas",
+   "type": "Security-Engineer Vulnerabilit",
+   "sec": "dev"
+  },
+  {
+   "t": "Czech-Speaking Customer Support – Remote, Greece (Relocation Package)",
+   "co": "Nordic Recruiters",
+   "url": "https://himalayas.app/companies/nordic-recruiters/jobs/czech-speaking-customer-support-remote-greece-relocation-package-2417022116?utm_source=api",
+   "geo": "Czechia",
+   "at": "2026-10-19T13:02:42+00:00",
+   "src": "Himalayas",
+   "type": "Customer-Support-Specialist Cu",
+   "sec": "support"
+  },
+  {
+   "t": "In-Home Nurse Practitioner or Physician Assistant Part Time - Allentown",
+   "co": "Lifelancer",
+   "url": "https://himalayas.app/companies/lifelancer/jobs/in-home-nurse-practitioner-or-physician-assistant-part-time-allentown-4136269308?utm_source=api",
+   "geo": "United States",
+   "at": "2026-10-19T13:02:26+00:00",
+   "src": "Himalayas",
+   "type": "Nurse-Practitioner Physician-A",
+   "sec": "support"
+  },
+  {
+   "t": "Patienten- und Projektmanager - Diabetes Care (m/w/d) I Region",
+   "co": "Lifelancer",
+   "url": "https://himalayas.app/companies/lifelancer/jobs/patienten-und-projektmanager-diabetes-care-m-w-d-i-region-6297620472?utm_source=api",
+   "geo": "United States",
+   "at": "2026-10-19T13:01:40+00:00",
+   "src": "Himalayas",
+   "type": "Projektmanager Healthcare-Mana",
+   "sec": "other"
+  },
+  {
+   "t": "In-Home Physician Full Time - Joplin",
+   "co": "Lifelancer",
+   "url": "https://himalayas.app/companies/lifelancer/jobs/in-home-physician-full-time-joplin-5319986865?utm_source=api",
+   "geo": "United States",
+   "at": "2026-10-19T13:00:24+00:00",
+   "src": "Himalayas",
+   "type": "Physician Home-Based-Care-Phys",
+   "sec": "other"
+  },
+  {
+   "t": "Responsable tunnels de vente",
+   "co": "Business Evasion",
+   "url": "https://himalayas.app/companies/business-evasion/jobs/responsable-tunnels-de-vente?utm_source=api",
+   "geo": "United States",
+   "at": "2026-10-19T13:00:11+00:00",
+   "src": "Himalayas",
+   "type": "CRO-Manager Growth-Manager Dig",
+   "sec": "marketing"
+  },
+  {
+   "t": "Mechanical Engineering Expert (MSc. or PhD)",
+   "co": "micro1",
+   "url": "https://himalayas.app/companies/micro1/jobs/mechanical-engineering-expert-msc-or-phd?utm_source=api",
+   "geo": "Anywhere",
+   "at": "2026-10-19T13:00:11+00:00",
+   "src": "Himalayas",
+   "type": "Mechanical-Engineering-Special",
    "sec": "design"
   },
   {
-   "t": "Instructor, FE & PE Engineering Exam Prep (PPI)",
-   "co": "Kaplan",
-   "url": "https://himalayas.app/companies/kaplan/jobs/instructor-fe-pe-engineering-exam-prep-ppi?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:14:58+00:00",
+   "t": "Hardware Expert (MSc. or PhD)",
+   "co": "micro1",
+   "url": "https://himalayas.app/companies/micro1/jobs/hardware-expert-msc-or-phd?utm_source=api",
+   "geo": "Anywhere",
+   "at": "2026-10-19T13:00:11+00:00",
    "src": "Himalayas",
-   "type": "Instructor Test-Prep-Instructo",
-   "sec": "dev"
-  },
-  {
-   "t": "Manager, AI Analytics",
-   "co": "National Debt Relief, LLC.",
-   "url": "https://himalayas.app/companies/national-debt-relief-llc/jobs/manager-ai-analytics?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:14:47+00:00",
-   "src": "Himalayas",
-   "type": "Analytics-Manager Business-Int",
-   "sec": "dev"
-  },
-  {
-   "t": "Epic Solution Consultant",
-   "co": "Marlabs Inc.",
-   "url": "https://himalayas.app/companies/marlabs-inc/jobs/epic-solution-consultant?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:14:14+00:00",
-   "src": "Himalayas",
-   "type": "Epic-Consultant Healthcare-IT-",
-   "sec": "dev"
-  },
-  {
-   "t": "Closer für Webdesign+SEO Agentur gesucht (m/w/d)",
-   "co": "SichtbarerWerden",
-   "url": "https://himalayas.app/companies/sichtbarerwerden/jobs/closer-fur-webdesign-seo-agentur-gesucht-m-w-d?utm_source=api",
-   "geo": "Germany",
-   "at": "2026-10-19T05:13:28+00:00",
-   "src": "Himalayas",
-   "type": "Sales Account-Manager Vertrieb",
+   "type": "Hardware-Engineer Hardware-Spe",
    "sec": "design"
   },
   {
-   "t": "Partner Channel Sales Director",
-   "co": "Marlabs Inc.",
-   "url": "https://himalayas.app/companies/marlabs-inc/jobs/partner-channel-sales-director?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:12:47+00:00",
+   "t": "ML Engineer (MSc. or PhD)",
+   "co": "micro1",
+   "url": "https://himalayas.app/companies/micro1/jobs/ml-engineer-msc-or-phd?utm_source=api",
+   "geo": "Anywhere",
+   "at": "2026-10-19T13:00:11+00:00",
    "src": "Himalayas",
-   "type": "Channel-Sales-Director Partner",
+   "type": "AI-ML-Engineer Machine-Learnin",
    "sec": "dev"
   },
   {
-   "t": "Product Manager - AI",
-   "co": "Wing Assistant",
-   "url": "https://himalayas.app/companies/wing-assistant/jobs/product-manager-ai-9019654549?utm_source=api",
-   "geo": "India",
-   "at": "2026-10-19T05:12:05+00:00",
+   "t": "Aerodynamics Expert (MSc. or PhD)",
+   "co": "micro1",
+   "url": "https://himalayas.app/companies/micro1/jobs/aerodynamics-expert-msc-or-phd?utm_source=api",
+   "geo": "Anywhere",
+   "at": "2026-10-19T13:00:11+00:00",
    "src": "Himalayas",
-   "type": "Product-Manager AI-Product-Man",
-   "sec": "other"
+   "type": "Aerodynamics-Specialist Aerody",
+   "sec": "design"
   },
   {
-   "t": "Account Specialist, Fargo, ND",
-   "co": "Praxis Precision Medicines",
-   "url": "https://himalayas.app/companies/praxis-precision-medicines/jobs/account-specialist-fargo-nd?utm_source=api",
+   "t": "PhysioNet Competitor (Biomedical Signal Processing & ML)",
+   "co": "micro1",
+   "url": "https://himalayas.app/companies/micro1/jobs/physionet-competitor-biomedical-signal-processing-ml?utm_source=api",
    "geo": "United States",
-   "at": "2026-10-19T05:08:38+00:00",
+   "at": "2026-10-19T13:00:11+00:00",
    "src": "Himalayas",
-   "type": "Account-Specialist Pharmaceuti",
-   "sec": "support"
-  },
-  {
-   "t": "Associate Customer Success Partner",
-   "co": "First Advantage",
-   "url": "https://himalayas.app/companies/first-advantage/jobs/associate-customer-success-partner-1658399134?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:08:32+00:00",
-   "src": "Himalayas",
-   "type": "Customer-Success-Partner Accou",
+   "type": "Biomedical-Signal-Processing M",
    "sec": "dev"
   },
   {
-   "t": "Senior Software Development Engineer - Big Data",
-   "co": "Zillow Group",
-   "url": "https://himalayas.app/companies/zillow-group/jobs/senior-software-development-engineer-big-data?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:08:11+00:00",
+   "t": "Competitive Data Scientist",
+   "co": "micro1",
+   "url": "https://himalayas.app/companies/micro1/jobs/competitive-data-scientist?utm_source=api",
+   "geo": "Anywhere",
+   "at": "2026-10-19T13:00:10+00:00",
    "src": "Himalayas",
-   "type": "Software-Engineer Big-Data-Eng",
+   "type": "Data-Scientist ML-Data-Scienti",
    "sec": "dev"
   },
   {
-   "t": "Employee Benefits Customer Service Representative",
-   "co": "Corporate Synergies",
-   "url": "https://himalayas.app/companies/corporate-synergies/jobs/employee-benefits-customer-service-representative?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:07:16+00:00",
-   "src": "Himalayas",
-   "type": "Customer-Service Benefits-Repr",
-   "sec": "support"
-  },
-  {
-   "t": "Membership Admin Account Specialist-1",
-   "co": "BlueCross BlueShield of Tennessee",
-   "url": "https://himalayas.app/companies/bluecross-blueshield-of-tennessee/jobs/membership-admin-account-specialist-1?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:07:03+00:00",
-   "src": "Himalayas",
-   "type": "Membership-Services-Representa",
-   "sec": "support"
-  },
-  {
-   "t": "VP of Technology",
-   "co": "Strong CRM",
-   "url": "https://himalayas.app/companies/strong-crm/jobs/vp-of-technology?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:06:20+00:00",
-   "src": "Himalayas",
-   "type": "Technical-Delivery-Leadership ",
-   "sec": "other"
-  },
-  {
-   "t": "Billing and Collections Associate",
-   "co": "Granicus",
-   "url": "https://himalayas.app/companies/granicus/jobs/billing-and-collections-associate?utm_source=api",
-   "geo": "Puerto Rico",
-   "at": "2026-10-19T05:06:05+00:00",
-   "src": "Himalayas",
-   "type": "Billing-And-Collections-Specia",
-   "sec": "other"
-  },
-  {
-   "t": "Clinical Associate",
-   "co": "Abbott",
-   "url": "https://himalayas.app/companies/abbott/jobs/clinical-associate-8641537706?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:05:13+00:00",
-   "src": "Himalayas",
-   "type": "Clinical-Associate Clinical-Sp",
-   "sec": "support"
-  },
-  {
-   "t": "Vendor Relations Coordinator",
-   "co": "OPENLANE",
-   "url": "https://himalayas.app/companies/openlane/jobs/vendor-relations-coordinator?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:05:13+00:00",
-   "src": "Himalayas",
-   "type": "Vendor-Relations-Specialist Ve",
-   "sec": "other"
-  },
-  {
-   "t": "Registered Nurse Care Manager",
-   "co": "Humana",
-   "url": "https://himalayas.app/companies/humana/jobs/registered-nurse-care-manager?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:04:49+00:00",
-   "src": "Himalayas",
-   "type": "Registered-Nurse Care-Manager ",
-   "sec": "other"
-  },
-  {
-   "t": "Regulatory CMC Manager - Cell & Gene Therapy (Contract)",
-   "co": "Vertex Pharmaceuticals",
-   "url": "https://himalayas.app/companies/vertex-pharmaceuticals/jobs/regulatory-cmc-manager-cell-gene-therapy-contract?utm_source=api",
-   "geo": "United States",
-   "at": "2026-10-19T05:04:27+00:00",
-   "src": "Himalayas",
-   "type": "Regulatory-Affairs CMC-Manager",
-   "sec": "other"
-  },
-  {
-   "t": "Business Development Representative",
-   "co": "Rockwell Automation",
-   "url": "https://himalayas.app/companies/rockwell-automation/jobs/business-development-representative?utm_source=api",
+   "t": "Online Ad Rater - Czech speakers in Canada",
+   "co": "TELUS International AI Inc",
+   "url": "https://himalayas.app/companies/telus-international-ai-inc/jobs/online-ad-rater-czech-speakers-in-canada?utm_source=api",
    "geo": "Canada",
-   "at": "2026-10-19T05:02:42+00:00",
+   "at": "2026-10-19T12:58:31+00:00",
    "src": "Himalayas",
-   "type": "Business-Development-Represent",
+   "type": "Online-Ad-Rater Ad-Rater Ad-Qu",
+   "sec": "other"
+  },
+  {
+   "t": "Customer Success Specialist",
+   "co": "Sourcefit",
+   "url": "https://himalayas.app/companies/sourcefit/jobs/customer-success-specialist?utm_source=api",
+   "geo": "Philippines",
+   "at": "2026-10-19T12:57:34+00:00",
+   "src": "Himalayas",
+   "type": "Customer-Success-Specialist Te",
+   "sec": "support"
+  },
+  {
+   "t": "Patient Care Coordinator | Remote",
+   "co": "Carenet Health",
+   "url": "https://himalayas.app/companies/carenet-health/jobs/patient-care-coordinator-remote-5975202802?utm_source=api",
+   "geo": "United States",
+   "at": "2026-10-19T12:55:50+00:00",
+   "src": "Himalayas",
+   "type": "Patient-Care-Coordinator Healt",
+   "sec": "other"
+  },
+  {
+   "t": "Online Ad Rater - Chinese Simplified (China)",
+   "co": "TELUS International AI Inc",
+   "url": "https://himalayas.app/companies/telus-international-ai-inc/jobs/online-ad-rater-chinese-simplified-china?utm_source=api",
+   "geo": "China",
+   "at": "2026-10-19T12:55:14+00:00",
+   "src": "Himalayas",
+   "type": "Online-Ad-Rater Ad-Rater Onlin",
+   "sec": "marketing"
+  },
+  {
+   "t": "Senior Data Engineer",
+   "co": "Growth Minded",
+   "url": "https://weworkremotely.com/remote-jobs/growth-minded-senior-data-engineer",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 12:47:58 +0000",
+   "src": "We Work Remotely",
+   "type": "Full-Stack Programming",
    "sec": "dev"
+  },
+  {
+   "t": "SAP Berater FI/CO (M/W/D)",
+   "co": "BDF EXPERTS",
+   "url": "https://weworkremotely.com/remote-jobs/bdf-experts-sap-berater-fi-co-m-w-d",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 10:01:21 +0000",
+   "src": "We Work Remotely",
+   "type": "Full-Stack Programming",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Salesforce CRM Developer",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-salesforce-crm-developer-1",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:34:23 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior QA Automation Engineer",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-qa-automation-engineer-1",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:33:08 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Platform Engineer",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-platform-engineer-1",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:31:57 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Magento Developer",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-magento-developer-5",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:30:20 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Fullstack Developer (React.js / Node.js)",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-5",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:29:00 +0000",
+   "src": "We Work Remotely",
+   "type": "Full-Stack Programming",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior DevOps Engineer (Azure)",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-devops-engineer-azure-9",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:27:34 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Data Engineer (Azure)",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-data-engineer-azure-4",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:25:58 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Cloud Engineer (Azure)",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-cloud-engineer-azure-1",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:24:44 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Backend Developer (Python)",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-python-11",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:21:57 +0000",
+   "src": "We Work Remotely",
+   "type": "Back-End Programming",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Backend Developer (Node.js / Nest.js)",
+   "co": "Proxify AB",
+   "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-4",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 09:17:52 +0000",
+   "src": "We Work Remotely",
+   "type": "Back-End Programming",
+   "sec": "dev"
+  },
+  {
+   "t": "Technical Account Manager",
+   "co": "Expel",
+   "url": "https://weworkremotely.com/remote-jobs/expel-technical-account-manager",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:28 +0000",
+   "src": "We Work Remotely",
+   "type": "Customer Support",
+   "sec": "support"
+  },
+  {
+   "t": "Systems Engineer",
+   "co": "Expel",
+   "url": "https://weworkremotely.com/remote-jobs/expel-systems-engineer",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:25 +0000",
+   "src": "We Work Remotely",
+   "type": "Full-Stack Programming",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Product Designer (Webflow) Temp to Perm",
+   "co": "Current",
+   "url": "https://weworkremotely.com/remote-jobs/current-senior-product-designer-webflow-temp-to-perm",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:25 +0000",
+   "src": "We Work Remotely",
+   "type": "Design",
+   "sec": "design"
+  },
+  {
+   "t": "Freelance Marketo Email Engineer",
+   "co": "Current",
+   "url": "https://weworkremotely.com/remote-jobs/current-freelance-marketo-email-engineer",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:25 +0000",
+   "src": "We Work Remotely",
+   "type": "Front-End Programming",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Security Engineer, Detection & Response",
+   "co": "Flexport",
+   "url": "https://weworkremotely.com/remote-jobs/flexport-senior-security-engineer-detection-response",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:25 +0000",
+   "src": "We Work Remotely",
+   "type": "DevOps and Sysadmin",
+   "sec": "dev"
+  },
+  {
+   "t": "Care Coordinator",
+   "co": "Talkspace",
+   "url": "https://weworkremotely.com/remote-jobs/talkspace-care-coordinator",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:25 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "other"
+  },
+  {
+   "t": "Senior Technical Support Engineer",
+   "co": "Alloy",
+   "url": "https://weworkremotely.com/remote-jobs/alloy-senior-technical-support-engineer",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:13 +0000",
+   "src": "We Work Remotely",
+   "type": "Customer Support",
+   "sec": "dev"
+  },
+  {
+   "t": "Billing and Claims Support Representative",
+   "co": "Talkspace",
+   "url": "https://weworkremotely.com/remote-jobs/talkspace-billing-and-claims-support-representative",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:12 +0000",
+   "src": "We Work Remotely",
+   "type": "Management and Finance",
+   "sec": "support"
+  },
+  {
+   "t": "Compliance Manager, BSA/AML Program",
+   "co": "Upstart",
+   "url": "https://weworkremotely.com/remote-jobs/upstart-compliance-manager-bsa-aml-program",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:11 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "dev"
+  },
+  {
+   "t": "Senior Solutions Engineer",
+   "co": "Alloy",
+   "url": "https://weworkremotely.com/remote-jobs/alloy-senior-solutions-engineer",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:11 +0000",
+   "src": "We Work Remotely",
+   "type": "Sales and Marketing",
+   "sec": "dev"
+  },
+  {
+   "t": "Director, AI-Enabled Fraud Prevention & Investigations",
+   "co": "Clover Health",
+   "url": "https://weworkremotely.com/remote-jobs/clover-health-director-ai-enabled-fraud-prevention-investigations",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:11 +0000",
+   "src": "We Work Remotely",
+   "type": "Full-Stack Programming",
+   "sec": "dev"
+  },
+  {
+   "t": "Data Analyst, Clinical Data Effectiveness",
+   "co": "Clover Health",
+   "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:04 +0000",
+   "src": "We Work Remotely",
+   "type": "Product",
+   "sec": "dev"
+  },
+  {
+   "t": "Capital Markets Manager",
+   "co": "Upstart",
+   "url": "https://weworkremotely.com/remote-jobs/upstart-capital-markets-manager",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:04 +0000",
+   "src": "We Work Remotely",
+   "type": "All Other Remote",
+   "sec": "marketing"
+  },
+  {
+   "t": "VP, Growth Marketing",
+   "co": "Pendo",
+   "url": "https://weworkremotely.com/remote-jobs/pendo-vp-growth-marketing",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:31:03 +0000",
+   "src": "We Work Remotely",
+   "type": "Sales and Marketing",
+   "sec": "marketing"
+  },
+  {
+   "t": "Sr. Product Marketing Manager",
+   "co": "Pendo",
+   "url": "https://weworkremotely.com/remote-jobs/pendo-sr-product-marketing-manager",
+   "geo": "Anywhere in the World",
+   "at": "Mon, 19 Oct 2026 07:30:58 +0000",
+   "src": "We Work Remotely",
+   "type": "Sales and Marketing",
+   "sec": "marketing"
   },
   {
    "t": "Senior Software Engineer, Product Platform",
@@ -749,269 +1019,21 @@
    "src": "We Work Remotely",
    "type": "Design",
    "sec": "design"
-  },
-  {
-   "t": "Founding Forward Deployed Engineer",
-   "co": "Alloy",
-   "url": "https://weworkremotely.com/remote-jobs/alloy-founding-forward-deployed-engineer",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:31:05 +0000",
-   "src": "We Work Remotely",
-   "type": "Full-Stack Programming",
-   "sec": "dev"
-  },
-  {
-   "t": "Operations Engineer, BizTech",
-   "co": "Airbnb",
-   "url": "https://weworkremotely.com/remote-jobs/airbnb-operations-engineer-biztech",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:31:05 +0000",
-   "src": "We Work Remotely",
-   "type": "Full-Stack Programming",
-   "sec": "dev"
-  },
-  {
-   "t": "Senior Software Engineer, Processing",
-   "co": "Lithic",
-   "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:59 +0000",
-   "src": "We Work Remotely",
-   "type": "Full-Stack Programming",
-   "sec": "dev"
-  },
-  {
-   "t": "Sales Development Representative",
-   "co": "Tebra",
-   "url": "https://weworkremotely.com/remote-jobs/tebra-sales-development-representative",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:59 +0000",
-   "src": "We Work Remotely",
-   "type": "Sales and Marketing",
-   "sec": "dev"
-  },
-  {
-   "t": "Client Enablement Lead",
-   "co": "Alloy",
-   "url": "https://weworkremotely.com/remote-jobs/alloy-client-enablement-lead",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:58 +0000",
-   "src": "We Work Remotely",
-   "type": "Management and Finance",
-   "sec": "other"
-  },
-  {
-   "t": "Engineering Manager, Payments",
-   "co": "Airbnb",
-   "url": "https://weworkremotely.com/remote-jobs/airbnb-engineering-manager-payments",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:58 +0000",
-   "src": "We Work Remotely",
-   "type": "Full-Stack Programming",
-   "sec": "dev"
-  },
-  {
-   "t": "Chief Risk Officer",
-   "co": "Sezzle",
-   "url": "https://weworkremotely.com/remote-jobs/sezzle-chief-risk-officer",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:58 +0000",
-   "src": "We Work Remotely",
-   "type": "All Other Remote",
-   "sec": "other"
-  },
-  {
-   "t": "Chargeback Operations Intern (Colombia)",
-   "co": "Sezzle",
-   "url": "https://weworkremotely.com/remote-jobs/sezzle-chargeback-operations-intern-colombia",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:58 +0000",
-   "src": "We Work Remotely",
-   "type": "All Other Remote",
-   "sec": "dev"
-  },
-  {
-   "t": "Enterprise Support Engineer",
-   "co": "PlanetScale",
-   "url": "https://weworkremotely.com/remote-jobs/planetscale-enterprise-support-engineer",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:58 +0000",
-   "src": "We Work Remotely",
-   "type": "DevOps and Sysadmin",
-   "sec": "dev"
-  },
-  {
-   "t": "Staff Software Engineer, Revenue Systems",
-   "co": "Squarespace",
-   "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:58 +0000",
-   "src": "We Work Remotely",
-   "type": "Back-End Programming",
-   "sec": "dev"
-  },
-  {
-   "t": "Staff Software Engineer - Connectivity",
-   "co": "Dremio",
-   "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:58 +0000",
-   "src": "We Work Remotely",
-   "type": "Full-Stack Programming",
-   "sec": "dev"
-  },
-  {
-   "t": "Brand Designer",
-   "co": "PlanetScale",
-   "url": "https://weworkremotely.com/remote-jobs/planetscale-brand-designer",
-   "geo": "Anywhere in the World",
-   "at": "Sun, 18 Oct 2026 07:30:58 +0000",
-   "src": "We Work Remotely",
-   "type": "Sales and Marketing",
-   "sec": "design"
-  },
-  {
-   "t": "Marketing/Appt Setting",
-   "co": "Atomic Construction, LLC",
-   "url": "https://weworkremotely.com/remote-jobs/atomic-construction-llc-marketing-appt-setting",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 13:11:19 +0000",
-   "src": "We Work Remotely",
-   "type": "Sales and Marketing",
-   "sec": "marketing"
-  },
-  {
-   "t": "Principal Product Manager, Agentic AI",
-   "co": "Legion",
-   "url": "https://weworkremotely.com/remote-jobs/legion-principal-product-manager-agentic-ai",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:31:02 +0000",
-   "src": "We Work Remotely",
-   "type": "Product",
-   "sec": "other"
-  },
-  {
-   "t": "Mid-Market Account Executive, EMEA",
-   "co": "Customer.io",
-   "url": "https://weworkremotely.com/remote-jobs/customer-io-mid-market-account-executive-emea",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:31:02 +0000",
-   "src": "We Work Remotely",
-   "type": "Sales and Marketing",
-   "sec": "marketing"
-  },
-  {
-   "t": "Area Vice President, West/South Central",
-   "co": "Abnormal",
-   "url": "https://weworkremotely.com/remote-jobs/abnormal-area-vice-president-west-south-central",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:31:02 +0000",
-   "src": "We Work Remotely",
-   "type": "Sales and Marketing",
-   "sec": "marketing"
-  },
-  {
-   "t": "Enterprise Account Manager - Riyadh (Saudi National)",
-   "co": "BeyondTrust",
-   "url": "https://weworkremotely.com/remote-jobs/beyondtrust-enterprise-account-manager-riyadh-saudi-national",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:31:02 +0000",
-   "src": "We Work Remotely",
-   "type": "DevOps and Sysadmin",
-   "sec": "dev"
-  },
-  {
-   "t": "Client Director - Financial Services",
-   "co": "Celonis",
-   "url": "https://weworkremotely.com/remote-jobs/celonis-client-director-financial-services",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:30:55 +0000",
-   "src": "We Work Remotely",
-   "type": "Sales and Marketing",
-   "sec": "marketing"
-  },
-  {
-   "t": "Global Controller",
-   "co": "Customer.io",
-   "url": "https://weworkremotely.com/remote-jobs/customer-io-global-controller",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:30:55 +0000",
-   "src": "We Work Remotely",
-   "type": "Product",
-   "sec": "other"
-  },
-  {
-   "t": "Customer Value Architect III",
-   "co": "Mixpanel",
-   "url": "https://weworkremotely.com/remote-jobs/mixpanel-customer-value-architect-iii-1",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:30:54 +0000",
-   "src": "We Work Remotely",
-   "type": "Full-Stack Programming",
-   "sec": "dev"
-  },
-  {
-   "t": "Enterprise Account Executive - NAMER",
-   "co": "Legion",
-   "url": "https://weworkremotely.com/remote-jobs/legion-enterprise-account-executive-namer",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:30:54 +0000",
-   "src": "We Work Remotely",
-   "type": "Sales and Marketing",
-   "sec": "marketing"
-  },
-  {
-   "t": "Senior Detection & Response Engineer",
-   "co": "Expel",
-   "url": "https://weworkremotely.com/remote-jobs/expel-senior-detection-response-engineer",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:30:54 +0000",
-   "src": "We Work Remotely",
-   "type": "DevOps and Sysadmin",
-   "sec": "dev"
-  },
-  {
-   "t": "Enterprise Account Manager - East Region (Saudi National)",
-   "co": "BeyondTrust",
-   "url": "https://weworkremotely.com/remote-jobs/beyondtrust-enterprise-account-manager-east-region-saudi-national",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:30:54 +0000",
-   "src": "We Work Remotely",
-   "type": "Sales and Marketing",
-   "sec": "marketing"
-  },
-  {
-   "t": "Manager, Professional Services",
-   "co": "Collibra",
-   "url": "https://weworkremotely.com/remote-jobs/collibra-manager-professional-services",
-   "geo": "Anywhere in the World",
-   "at": "Sat, 17 Oct 2026 07:30:50 +0000",
-   "src": "We Work Remotely",
-   "type": "DevOps and Sysadmin",
-   "sec": "dev"
-  },
-  {
-   "t": "Head of Technology",
-   "co": "Sanctuary Computer",
-   "url": "https://weworkremotely.com/remote-jobs/sanctuary-computer-head-of-technology",
-   "geo": "Anywhere in the World",
-   "at": "Fri, 16 Oct 2026 14:21:11 +0000",
-   "src": "We Work Remotely",
-   "type": "Full-Stack Programming",
-   "sec": "dev"
-  },
-  {
-   "t": "Senior Solutions Consultant",
-   "co": "PagerDuty",
-   "url": "https://weworkremotely.com/remote-jobs/pagerduty-senior-solutions-consultant",
-   "geo": "Anywhere in the World",
-   "at": "Fri, 16 Oct 2026 07:31:07 +0000",
-   "src": "We Work Remotely",
-   "type": "Product",
-   "sec": "other"
   }
  ],
  "learn": [
+  {
+   "t": "How to Detect Operational Drift Before It Becomes an Incident",
+   "url": "https://www.freecodecamp.org/news/detect-operational-drift-before-incident/",
+   "at": "Mon, 19 Oct 2026 06:53:29 +0000",
+   "src": "freeCodeCamp"
+  },
+  {
+   "t": "How to Build a Website User Interface Faster Using AI Prompts",
+   "url": "https://www.freecodecamp.org/news/how-to-build-a-website-user-interface-faster-using-ai-prompts/",
+   "at": "Mon, 19 Oct 2026 06:52:23 +0000",
+   "src": "freeCodeCamp"
+  },
   {
    "t": "How to Migrate an Application from AWS to GKE [Full Book]",
    "url": "https://www.freecodecamp.org/news/how-to-migrate-an-application-from-aws-to-gke-full-book/",
@@ -1059,18 +1081,6 @@
    "url": "https://www.freecodecamp.org/news/disaster-simulation-real-map-mapbox-three-js/",
    "at": "Thu, 15 Oct 2026 04:40:21 +0000",
    "src": "freeCodeCamp"
-  },
-  {
-   "t": "How to Stop an AI Agent from Inventing Nigerian Postcodes",
-   "url": "https://www.freecodecamp.org/news/how-to-stop-an-ai-agent-from-inventing-nigerian-postcodes/",
-   "at": "Wed, 14 Oct 2026 15:32:13 +0000",
-   "src": "freeCodeCamp"
-  },
-  {
-   "t": "How to Keep a File for Minutes, Not Years, on Cloud Run",
-   "url": "https://www.freecodecamp.org/news/how-to-keep-a-file-for-minutes-not-years-on-cloud-run/",
-   "at": "Wed, 14 Oct 2026 04:08:28 +0000",
-   "src": "freeCodeCamp"
   }
  ],
  "sources": [
@@ -1079,5 +1089,5 @@
   "Himalayas",
   "We Work Remotely"
  ],
- "updated": "2026-10-19T06:54:15+00:00"
+ "updated": "2026-10-19T14:23:13+00:00"
 }
