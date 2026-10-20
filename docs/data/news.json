@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T17:51:42+00:00",
+ "updated": "2026-10-20T21:17:47+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,150 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "582629612e",
+   "title": "JPMorgan Puts a Number on Bitcoin for the First Time: 10% a Year, With a Big Caveat",
+   "link": "https://decrypt.co/381464/jpmorgan-bitcoin-forecast-first-time-stocks-gold",
+   "source": "Decrypt",
+   "published": "2026-10-20T21:16:04+00:00",
+   "summary": "J.P. Morgan Asset Management’s 2027 Long-Term Capital Market Assumptions project a 10% annual return for Bitcoin over 10 to 15 years, though the firm isn’t adding it to its main portfolio models.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/JPMorgan-Chase-Co-building-in-New-York4-gID_7.jpg"
+  },
+  {
+   "id": "7b801a3b9f",
+   "title": "U.S. CFTC sets agenda for AI forum, exploring trading and agentic finance",
+   "link": "https://www.coindesk.com/policy/2026/10/20/u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
+   "source": "CoinDesk",
+   "published": "2026-10-20T21:12:21+00:00",
+   "summary": "A Commodity Futures Trading Commission task force is scheduled for October 28 to talk about how the latest \"super intelligence\" technology may impact markets.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/2ea663e27b7a8aedacb15a99a17ec144f1ef72ac-4928x2772.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "efe2ae2b2e",
+   "title": "Wallet Linked to Drift Exploit Sends $61 Million in Ethereum to Tornado Cash",
+   "link": "https://decrypt.co/381450/wallet-drift-exploit-sends-61-million-ethereum-tornado-cash",
+   "source": "Decrypt",
+   "published": "2026-10-20T20:46:04+00:00",
+   "summary": "The North Korea-linked attacker behind April's $295 million Drift heist pushed 25,700 ETH through the mixer in two hours, and still controls roughly $198 million more.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/crime_hacker-gID_7.png"
+  },
+  {
+   "id": "ef4b734fe8",
+   "title": "Bitwise, Hyperliquid seek SEC rule changes for token trading, airdrops",
+   "link": "https://cointelegraph.com/news/bitwise-hyperliquid-seek-sec-rule-changes-for-token-trading-airdrops?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-20T20:38:00+00:00",
+   "summary": "The firms are seeking clearer guidance on the classification of crypto assets and secondary-market trading as the SEC’s public comment period comes to a close.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5DEQWS5T9NWD3NCPZKH095N/hi-how-you-could-save-money-when-reporting-crypto-mica.png"
+  },
+  {
+   "id": "6d7e4075d7",
+   "title": "JPMorgan models Bitcoin reaching $385,000 in 10-year bull case despite CEO Jamie Dimon’s criticism",
+   "link": "https://cryptoslate.com/jpmorgan-models-bitcoin-reaching-385000-in-10-year-bull-case-despite-ceo-jamie-dimons-criticism/",
+   "source": "CryptoSlate",
+   "published": "2026-10-20T20:30:10+00:00",
+   "summary": "A report page shared by @Matt_Hougan shows the 10-to-15-year assumptions, while the firm stops short of a bitcoin allocation. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-longterm-assumptions.webp"
+  },
+  {
+   "id": "8d147affd2",
+   "title": "Microsoft, Alphabet, Goldman Sachs Join Growing List of Companies Objecting to Tokenized Stocks",
+   "link": "https://decrypt.co/381448/microsoft-alphabet-goldman-sachs-growing-list-objecting-tokenized-stocks",
+   "source": "Decrypt",
+   "published": "2026-10-20T20:16:04+00:00",
+   "summary": "Sixteen companies have now objected to having their shares traded on the planned OKX-ICE tokenized stock venue, up from nine just four days earlier, according to an updated public notice.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/stocks-gID_7.jpg"
+  },
+  {
+   "id": "ce7c11a0b4",
+   "title": "Crypto’s 2026 shutdown wave claims 82 projects. What went wrong?",
+   "link": "https://cointelegraph.com/news/crypto-project-shutdowns-2026-what-went-wrong?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-20T19:59:39+00:00",
+   "summary": "Crypto projects are struggling to survive as falling revenues, depleted funding and security breaches force closures across DeFi, blockchain infrastructure and gaming.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1H2YME5WK16MEE643RQSSVQ/layoffs-fired-human-resource-hr-leaving-quit-closing-breaking-news-3.jpg"
+  },
+  {
+   "id": "a07b20a42c",
+   "title": "Swiss Regulator Approves First Retail Fund That Holds Bitcoin Directly",
+   "link": "https://decrypt.co/381446/swiss-regulator-first-retail-fund-holds-bitcoin-directly",
+   "source": "Decrypt",
+   "published": "2026-10-20T19:31:04+00:00",
+   "summary": "FINMA waived the diversification rules for the fund but leaned hard on custody and investor-protection safeguards.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/bitcoin-decrypt-style-town-gID_7.png"
+  },
+  {
+   "id": "d3f789e89a",
+   "title": "Crypto firms, Wall Street push SEC to revise Regulation Crypto Assets as comments close",
+   "link": "https://www.theblock.co/news/regulation/2026-10-20-sec-regulation-crypto-assets-comment-period-hyperliquid-sifma-aima-421444",
+   "source": "The Block",
+   "published": "2026-10-20T19:19:54+00:00",
+   "summary": "As the SEC’s comment period on a cryptocurrency proposal draws to a close, digital asset firms and Wall Street institutions have thoughts.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/04/20250414_SEC_News_2.jpg"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-20T19:17:40+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "891faf7a2b",
+   "title": "Utah likens Kalshi to a ‘back-alley gambling den’ in lawsuit naming Susquehanna firms",
+   "link": "https://www.theblock.co/news/regulation/2026-10-20-utah-likens-kalshi-back-alley-gambling-den-lawsuit-naming-susquehanna-firms-421442",
+   "source": "The Block",
+   "published": "2026-10-20T19:12:38+00:00",
+   "summary": "Utah seeks to recover alleged gambling profits and block Kalshi bets across sports, politics and culture.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/09/20250917_Kalshi_News_2.jpg"
+  },
+  {
+   "id": "48e16ffd88",
+   "title": "US orders DeepSeek purge from federal systems as Chinese AI rival opens its technology to the world",
+   "link": "https://cryptoslate.com/us-orders-deepseek-purge-from-federal-systems-as-chinese-ai-rival-opens-its-technology-to-the-world/",
+   "source": "CryptoSlate",
+   "published": "2026-10-20T19:10:30+00:00",
+   "summary": "The October 20 notice covers tools built using DeepSeek implementations, with a 60-day exception period tied to July issuance. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/deepseek-agency-access-lock.webp"
+  },
+  {
+   "id": "49ae385ef8",
+   "title": "Bitcoin ETFs Post Their Best Day in Nearly a Month as BlackRock Does All the Buying",
+   "link": "https://decrypt.co/381444/bitcoin-etfs-best-day-nearly-month-blackrock-does-most-buying",
+   "source": "Decrypt",
+   "published": "2026-10-20T18:31:04+00:00",
+   "summary": "U.S. spot Bitcoin ETFs took in $526.7 million on Monday, their biggest day since Sept. 22. BlackRock's IBIT supplied all of it while Fidelity and Grayscale funds bled.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/09/bitcoin-etf-decrypt-style-01-gID_7.jpg"
+  },
+  {
+   "id": "99d470006f",
+   "title": "OKX-ICE co-chair Andrew Cuomo calls corporate objections a ‘natural response’ to tokenized stock plans",
+   "link": "https://www.coindesk.com/business/2026/10/20/okx-ice-s-andrew-cuomo-calls-issuer-objections-a-natural-response-to-tokenized-stock-plans",
+   "source": "CoinDesk",
+   "published": "2026-10-20T18:26:29+00:00",
+   "summary": "The former NY governor, who co-chairs the joint venture between the crypto exchange and Intercontinental Exchange, said companies were expected to take a wait-and-see approach.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/0102104c2692d915fff79b732d54ff5e49cd7c12-4066x2710.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "dd8a6fe3ed",
+   "title": "JPMorgan issues first long-term bitcoin return forecast, projecting 10% annually",
+   "link": "https://www.theblock.co/news/markets/2026-10-20-jpmorgan-bitcoin-10-year-return-forecast-ltcma-421436",
+   "source": "The Block",
+   "published": "2026-10-20T18:14:28+00:00",
+   "summary": "J.P. Morgan Asset Management's first long-term bitcoin forecast projects a 10% annual return but flags 55% volatility as a barrier to portfolio adoption.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/05/20240501_JpMorgan_News_3.jpg"
+  },
+  {
+   "id": "98d8aaab7b",
+   "title": "Elon Musk and Anthropic unveil AI wealth-sharing plans that could reach over $110 billion",
+   "link": "https://cryptoslate.com/elon-musk-and-anthropic-unveil-ai-wealth-sharing-plans-that-could-reach-over-110-billion/",
+   "source": "CryptoSlate",
+   "published": "2026-10-20T18:00:52+00:00",
+   "summary": "Musk's 2027 promise concerns his own holdings, while Anthropic's initial allocation needs stockholder approval and future additions remain discretionary. Read the full story on CryptoSlate Understand the crypto stories that matter and what…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/musk-spacex-share-card.webp"
+  },
   {
    "id": "5f9fa6052c",
    "title": "Bitcoin's Next Move: Here's What to Watch",
@@ -252,15 +396,6 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-deal-crossing.webp"
   },
   {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-20T12:50:13+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
    "id": "96b7032a02",
    "title": "Microsoft, Alphabet and Goldman Sachs join objections to OKX-ICE tokenized stock trading",
    "link": "https://www.coindesk.com/business/2026/10/19/microsoft-alphabet-and-goldman-sachs-join-objections-to-okx-ice-tokenized-stock-trading",
@@ -477,15 +612,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/88712848853d249cbc03fda73bba8e72c7da76d6-1500x914.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   },
   {
-   "id": "38da031b27",
-   "title": "BNB Chain splits asset power across 4 roles while admins hold the key",
-   "link": "https://cryptoslate.com/bnb-chain-splits-asset-power-across-4-roles-while-admins-hold-the-key/",
-   "source": "CryptoSlate",
-   "published": "2026-10-20T08:20:20+00:00",
-   "summary": "Jenner’s testnet release separates CAS20 creation from issuer powers, while shared compliance lists would depend on another network switch. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bnb-cas20-policy-controls.webp"
-  },
-  {
    "id": "ad66ee5843",
    "title": "BlackRock files for third Bitcoin ETF, still no Solana or XRP",
    "link": "https://cointelegraph.com/news/blackrock-ishares-bitcoin-managed-protection-etf-pbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -504,15 +630,6 @@
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/10/20221005_Blackrock2.jpg"
   },
   {
-   "id": "a633e474da",
-   "title": "JPMorgan drops JPM Coin on Ethereum with zero retail access",
-   "link": "https://cryptoslate.com/jpmorgan-drops-jpm-coin-on-ethereum-with-zero-retail-access/",
-   "source": "CryptoSlate",
-   "published": "2026-10-20T06:30:25+00:00",
-   "summary": "JPM Coin gives the bank's institutional clients an Ethereum payment route, with direct fund subscriptions still unannounced. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/jpmcoin-institutional-bridge.webp"
-  },
-  {
    "id": "792bd9bf7c",
    "title": "US Bitcoin ETFs draw $527M in biggest showing since September",
    "link": "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -529,15 +646,6 @@
    "published": "2026-10-20T05:14:11+00:00",
    "summary": "In June, Sophon’s developers said the costs of maintaining a standalone blockchain no longer justified its benefits and announced plans to focus on consumer finance and AI applications on Base.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5BTX2A4AWVPY2BYEAS2GXFK/hi-is-the-imf-shutting-the-door-prematurely-on-nft.jpg"
-  },
-  {
-   "id": "41dc2bf48f",
-   "title": "French MPs back crypto tax, and stablecoin swaps take the hit",
-   "link": "https://cryptoslate.com/french-mps-back-crypto-tax-and-stablecoin-swaps-take-the-hit/",
-   "source": "CryptoSlate",
-   "published": "2026-10-20T04:40:34+00:00",
-   "summary": "The October 16 first-reading votes advance a proposal covering MiCA e-money tokens, with a January 2027 start conditional on enactment. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/france-crypto-tax-crossing.webp"
   },
   {
    "id": "4410ec6528",
@@ -619,114 +727,6 @@
    "published": "2026-10-19T20:22:41+00:00",
    "summary": "A Fairshake affiliate is supporting incumbent Aisha Wahab through ads in November, but the congresswoman already won a special election in the district.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5ABCKS2FMK83350383BZ19K/hi-the-great-tech-exodus-california-san-francisco.jpg"
-  },
-  {
-   "id": "1f2c607c15",
-   "title": "Tether: Senator's investigation misses positive work that's led to lower Iran volumes",
-   "link": "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes",
-   "source": "CoinDesk",
-   "published": "2026-10-19T20:21:13+00:00",
-   "summary": "The stablecoin issuer's CEO, Paolo Ardoino, has been defending against accusations that the firm's stablecoins have fueled financial activity in Iran.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/90a43294bacbd032c489ab11822a38860e95f73e-4032x3024.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "3b237a3af1",
-   "title": "Market participants weigh in on SEC’s proposed crypto regulations",
-   "link": "https://cointelegraph.com/news/public-comments-us-sec-proposed-crypto-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-19T19:54:38+00:00",
-   "summary": "The financial agency is scheduled to close public comments on its ‘Regulation Crypto Assets’ proposed in August.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5APHDVZD1BGG3JK7KN10823/man-documents-sec.jpg"
-  },
-  {
-   "id": "69adcf08f6",
-   "title": "Hackers Are Running Apple's iOS on Android Phones for the First Time",
-   "link": "https://decrypt.co/381351/hackers-running-apple-ios-android-phones",
-   "source": "Decrypt",
-   "published": "2026-10-19T19:46:04+00:00",
-   "summary": "Hobbyists are booting iOS 16 on Xiaomi and Nothing phones and posting the proof. It barely works, but it suggests Apple's software is no longer welded to Apple's hardware.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/05/decrypt-style-apple-iphone-gID_7.png"
-  },
-  {
-   "id": "feb77cc1d4",
-   "title": "Visa, Mesh partner to enable crypto spending at 175M merchant locations",
-   "link": "https://cointelegraph.com/news/visa-mesh-partner-crypto-spending-175m-merchant-locations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-19T19:16:19+00:00",
-   "summary": "Mesh will connect crypto and stablecoin wallets to Visa’s global payment network, allowing users to spend digital assets without a separate card.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5AQTAX4CZKP1822SBZZMSMC/hi-could-those-who-left-visa-come-back.png"
-  },
-  {
-   "id": "d9cc941b31",
-   "title": "Mastercard Brings Its Fraud-Fighting Tools to Stablecoin Payments",
-   "link": "https://decrypt.co/381365/mastercard-brings-its-fraud-fighting-tools-to-stablecoin-payments",
-   "source": "Decrypt",
-   "published": "2026-10-19T19:16:04+00:00",
-   "summary": "Unveiled at Money20/20, the API-based tool combines payment and blockchain intelligence to flag fraud, scams and sanctions exposure before funds move on-chain.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/mastercard-decrypt-style-01-gID_7.png"
-  },
-  {
-   "id": "fa4f3fc9d0",
-   "title": "Mastercard launches stablecoin risk screening for banks and payment providers",
-   "link": "https://cointelegraph.com/news/mastercard-stablecoin-risk-screening-banks-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-19T19:03:23+00:00",
-   "summary": "The new service combines payment data and blockchain analytics to help banks detect suspicious stablecoin transactions before settlement.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5APDAY3V814QCHNF8PWJB4F/hi-how-mastercard-plans-to-settle-card-payments-with-stablecoins.jpg"
-  },
-  {
-   "id": "cd37a42fe5",
-   "title": "Why Some of America’s Biggest Companies Are Objecting to Tokenized Shares",
-   "link": "https://decrypt.co/381349/why-some-america-biggest-companies-objecting-tokenized-shares",
-   "source": "Decrypt",
-   "published": "2026-10-19T18:46:05+00:00",
-   "summary": "Nine companies, including Verizon, Broadcom and UnitedHealth, have objected to having their shares traded on the planned OKX-ICE tokenized stock venue.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/01/decrypt-style-wall-street-gID_7.png"
-  },
-  {
-   "id": "10d1fdd868",
-   "title": "US Orders Civilian Agencies to Rip DeepSeek Out of Government Systems",
-   "link": "https://decrypt.co/381347/us-orders-civilian-agencies-rip-deepseek-out-government-systems",
-   "source": "Decrypt",
-   "published": "2026-10-19T18:16:04+00:00",
-   "summary": "The Department of Homeland Security told civilian agencies to remove China's DeepSeek and any service built on it, and banned buying more, citing the risk of sensitive data reaching Beijing.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/08/china-deepSeek-AI-gID_7.jpg"
-  },
-  {
-   "id": "5c58d87d2b",
-   "title": "JPMorgan's JPM Coin Arrives on Ethereum, Putting Bank Dollars on a Public Blockchain",
-   "link": "https://decrypt.co/381343/jpmorgan-jpm-coin-ethereum-bank-dollars",
-   "source": "Decrypt",
-   "published": "2026-10-19T17:31:04+00:00",
-   "summary": "JPMorgan is rolling out JPM Coin on Ethereum for institutional clients, a token backed by dollars in its accounts that settles in seconds, any day of the week.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/11/jp-morgan-decrypt-style-gID_7.jpg"
-  },
-  {
-   "id": "fbe56274a8",
-   "title": "Revolut secures Gibraltar crypto license to support global expansion",
-   "link": "https://cointelegraph.com/news/revolut-secures-gibraltar-crypto-license-to-support-global-expansion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-19T17:24:49+00:00",
-   "summary": "The UK-based fintech will use the authorization to offer crypto services in additional international markets, though it has not disclosed specific countries or launch dates.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5AJ2EGPXJENGSEWEZ0NCJ4J/hi-taking-a-closer-look-at-gibraltar-and-how-the-jurisdiction-fares-in-comparison-to-other-small-ones.png"
-  },
-  {
-   "id": "de71f95471",
-   "title": "U.S. CFTC rebuffs CME legal stance in consequential fight over perpetual futures",
-   "link": "https://www.coindesk.com/policy/2026/10/19/u-s-cftc-rebuffs-cme-legal-stance-in-consequential-fight-over-perpetual-futures",
-   "source": "CoinDesk",
-   "published": "2026-10-19T16:47:00+00:00",
-   "summary": "The future of perps in the U.S. may be at stake as the CFTC argues that CME hasn't shown the new policy is hurting it after the agency OK'd its first bitcoin perp.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/3488397e93351ed3a88de739300c35ce1824573b-1420x916.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "2182850c43",
-   "title": "Abandoned Bitcoin? Wallet Targeted by Noah Doe Lawsuit Moves $33 Million",
-   "link": "https://decrypt.co/381337/abandoned-bitcoin-wallet-noah-doe-lawsuit-moves-33-million",
-   "source": "Decrypt",
-   "published": "2026-10-19T16:46:05+00:00",
-   "summary": "A Bitcoin address dormant since 2013 moved 411.45 BTC worth about $33.4 million, according to Galaxy Research, and it’s among the wallets named in the “Noah Doe” lawsuit.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/bitcoin-whale-decrypt-style-03-gID_7.png"
   }
  ]
 }
