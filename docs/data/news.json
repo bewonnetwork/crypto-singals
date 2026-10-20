@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T21:17:47+00:00",
+ "updated": "2026-10-20T23:57:17+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,60 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "0672766aef",
+   "title": "Qubic restarts blockchain, opens recovery claims after $1.4M hack",
+   "link": "https://cointelegraph.com/news/qubic-restarts-blockchain-opens-recovery-claims-after-14m-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-20T23:26:02+00:00",
+   "summary": "The network’s validators approved a recovery plan and opened claims until May 1, 2027.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5DSAH36P14HYENYBM6CHPAW/blockchain-network.jpg"
+  },
+  {
+   "id": "7a23ad7650",
+   "title": "BNB Chain burns $1.2B in October tokens, leaving real supply impact hidden",
+   "link": "https://cryptoslate.com/bnb-chain-burns-1-2b-in-october-tokens-leaving-real-supply-impact-hidden/",
+   "source": "CryptoSlate",
+   "published": "2026-10-20T22:50:17+00:00",
+   "summary": "October’s burn retired about 30,369 more BNB than July’s, while most of the dollar increase reflected a higher implied valuation per coin. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bnb-burn-freight-contrast.webp"
+  },
+  {
+   "id": "2efbdf1b77",
+   "title": "People Are Vibe Coding the Ads Out of Their Smart TVs: Here's How",
+   "link": "https://decrypt.co/381456/vibe-coding-ads-out-smart-tvs-heres-how",
+   "source": "Decrypt",
+   "published": "2026-10-20T22:16:04+00:00",
+   "summary": "A viral Claude Code prompt lets Android TV owners switch off sponsored rows and tracking software and build their own home screens, with no root access and every change reversible.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/Cozy-Living-Room-TV-Interface-gID_7.png"
+  },
+  {
+   "id": "e3608839ce",
+   "title": "OpenAI Buys Orchestra Bio to Put AI Agents in Charge of Drug Development Grunt Work",
+   "link": "https://decrypt.co/381467/openai-buys-orchestra-bio-ai-agents-drug-development",
+   "source": "Decrypt",
+   "published": "2026-10-20T21:46:04+00:00",
+   "summary": "The ChatGPT maker is folding Orchestra’s drug-program agents into Rosalind, its life sciences suite, betting AI can shave time off the decade-plus it takes to bring a medicine to patients.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/openai-decrypt-style-02-gID_7.jpg"
+  },
+  {
+   "id": "0beb454803",
+   "title": "Drift hacker washes $63M through Tornado Cash, leaving recovery claims in limbo",
+   "link": "https://cryptoslate.com/drift-hacker-washes-63m-through-tornado-cash-leaving-recovery-claims-in-limbo/",
+   "source": "CryptoSlate",
+   "published": "2026-10-20T21:40:15+00:00",
+   "summary": "The address Etherscan labels “Drift Exploiter 5” made 258 deposits on October 20, nearly emptying this wallet. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-mixer-conveyor-flow.webp"
+  },
+  {
+   "id": "d1cd54351b",
+   "title": "Utah AG sues Kalshi, pursues profits from prediction market company",
+   "link": "https://cointelegraph.com/news/utah-lawsuit-kalshi-susquehanna-prediction-markets-illegal-bets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-20T21:19:15+00:00",
+   "summary": "Derek Brown likened the prediction market company to a “public nuisance“ that was “causing a significant and substantial ongoing harm“ to state residents.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1M5NCSJSS1MAFGEDXXFPQN1/court-vs-kalshi-3.jpg"
+  },
   {
    "id": "582629612e",
    "title": "JPMorgan Puts a Number on Bitcoin for the First Time: 10% a Year, With a Big Caveat",
@@ -513,15 +567,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/mt-gox-bitcoin-decrypt-style-gID_7.jpg"
   },
   {
-   "id": "be2a8da491",
-   "title": "BlackRock’s proposed Bitcoin ETF would hold no Bitcoin or spot ETF shares",
-   "link": "https://cryptoslate.com/blackrocks-new-bitcoin-etf-wont-buy-btc-raising-questions-about-future-demand/",
-   "source": "CryptoSlate",
-   "published": "2026-10-20T10:50:15+00:00",
-   "summary": "BlackRock filed with the SEC on Oct. 19 for the iShares Bitcoin Managed Protection ETF (PBIT), a fund that would hold options and fixed-income securities and gain Bitcoin exposure through derivatives. The preliminary prospectus excludes…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-derivatives-balancing-act.webp"
-  },
-  {
    "id": "aa6a070f92",
    "title": "Bitcoin drops to $81,400 as Asian chip stocks tumble, options traders seek downside protection",
    "link": "https://www.coindesk.com/markets/2026/10/20/bitcoin-drops-to-usd81-400-as-asian-chip-stocks-tumble-options-traders-seek-downside-protection",
@@ -565,15 +610,6 @@
    "published": "2026-10-20T10:00:00+00:00",
    "summary": "The proposed acquisition would give Bitget a route into Thailand’s crypto market through a locally licensed operator.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5913E3NB29C5XXKGWE4B5TQ/thailand-2.jpg"
-  },
-  {
-   "id": "9d800307d0",
-   "title": "Bitcoin ETF comeback exposes a $630 million divide with Ethereum as BlackRock dominates",
-   "link": "https://cryptoslate.com/bitcoin-etf-comeback-exposes-a-630-million-divide-with-ethereum-as-blackrock-dominates/",
-   "source": "CryptoSlate",
-   "published": "2026-10-20T09:50:52+00:00",
-   "summary": "Monday's inflows more than offset the previous week's net withdrawals, while IBIT was the only fund with positive net flows. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-etf-uneven-rebound.webp"
   },
   {
    "id": "dc32b7185f",
@@ -691,42 +727,6 @@
    "published": "2026-10-19T21:46:05+00:00",
    "summary": "The Nasdaq-listed bitcoin holder bought as warrant holders exercised, bringing in $369 million, and it now plans a $630 million sale of 15% preferred stock.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-07-gID_7.png"
-  },
-  {
-   "id": "abd4d902e8",
-   "title": "Anthropic Gives 5% of Itself to the Public. Musk Answers by Giving Away SpaceX Shares",
-   "link": "https://decrypt.co/381371/anthropic-gives-public-musk-answers-spacex-shares",
-   "source": "Decrypt",
-   "published": "2026-10-19T21:15:04+00:00",
-   "summary": "Anthropic committed 5% of its shares to a public benefit fund, and within hours Elon Musk promised a SpaceX share to every American child.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/decrypt-style-anthropic-2-gID_7.png"
-  },
-  {
-   "id": "7cf273a6c1",
-   "title": "Solana treasury firm SkyAI sells all SOL holdings, launches $201M buyback",
-   "link": "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-19T21:04:34+00:00",
-   "summary": "The former medical device maker has liquidated its Solana treasury and is offering to repurchase shares and warrants using its $223.8 million cash holdings.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5AYKKWE9EN0JZE01QZ6T9SW/hi-how-to-swap-tokens-between-base-and-solana.png"
-  },
-  {
-   "id": "6b76c74fb5",
-   "title": "XRP Ledger Repairs Its Lending Protocol Before It Goes Live",
-   "link": "https://decrypt.co/381358/xrp-ledger-repairs-lending-protocol-before-live",
-   "source": "Decrypt",
-   "published": "2026-10-19T20:46:05+00:00",
-   "summary": "XRP developers published a second amendment to repair the ledger’s new uncollateralized lending feature while the original still awaits validator approval.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/xrp-decrypt-style-01-gID_7.png"
-  },
-  {
-   "id": "d7ebd71a9d",
-   "title": "Crypto PAC pours $362K into California race voters essentially decided in August",
-   "link": "https://cointelegraph.com/news/crypto-pac-california-race-voters-special-election?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-19T20:22:41+00:00",
-   "summary": "A Fairshake affiliate is supporting incumbent Aisha Wahab through ads in November, but the congresswoman already won a special election in the district.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5ABCKS2FMK83350383BZ19K/hi-the-great-tech-exodus-california-san-francisco.jpg"
   }
  ]
 }
