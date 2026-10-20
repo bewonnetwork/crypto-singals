@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-20-2026",
+   "type": "trending",
+   "date": "2026-10-20T17:51:38+00:00",
+   "title": "Trending in Crypto — October 20, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (PEARL, BTC, PENGU…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "PEARL",
+      "name": "Pearl",
+      "rank": 91,
+      "price": 2.16431433300413,
+      "ch": 13.76
+     },
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 82758.440865712,
+      "ch": 1.1
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 114,
+      "price": 0.007980081304394314,
+      "ch": 6.69
+     },
+     {
+      "sym": "CARDS",
+      "name": "Collector Crypt",
+      "rank": 141,
+      "price": 0.34076971733920647,
+      "ch": 22.23
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 19,
+      "price": 4.958627926672547,
+      "ch": 0.21
+     },
+     {
+      "sym": "VVV",
+      "name": "Venice Token",
+      "rank": 71,
+      "price": 25.441150286606483,
+      "ch": 6.69
+     },
+     {
+      "sym": "AERO",
+      "name": "Aerodrome Finance",
+      "rank": 85,
+      "price": 0.8628372837923435,
+      "ch": 10.76
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "rank": 10,
+      "price": 1217.9609290329083,
+      "ch": 7.89
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 733,
+      "price": 86.1443875647677,
+      "ch": -8.56
+     },
+     {
+      "sym": "TAO",
+      "name": "Bittensor",
+      "rank": 35,
+      "price": 273.0687680733775,
+      "ch": 2.37
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 82821,
+      "ch": 1.22,
+      "vol": 27442598831,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2451.34,
+      "ch": 2.38,
+      "vol": 10984067927,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 106.6,
+      "ch": 2.56,
+      "vol": 2739659434,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.33,
+      "ch": 2.26,
+      "vol": 1406869962,
+      "rank": 5
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.97,
+      "ch": 0.65,
+      "vol": 1019929223,
+      "rank": 19
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1217.04,
+      "ch": 8.14,
+      "vol": 869879477,
+      "rank": 10
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 80.36,
+      "ch": 2.94,
+      "vol": 693803629,
+      "rank": 11
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 737.75,
+      "ch": 1.57,
+      "vol": 674360607,
+      "rank": 4
+     }
+    ]
+   }
+  },
+  {
    "slug": "how-to-avoid-airdrop-scams",
    "type": "learn",
    "date": "2026-10-20T07:34:17+00:00",
@@ -8988,5 +9136,5 @@
    }
   }
  ],
- "updated": "2026-10-20T07:34:17+00:00"
+ "updated": "2026-10-20T17:51:38+00:00"
 }
