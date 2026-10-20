@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T23:42:29+00:00",
+ "updated": "2026-10-20T02:06:57+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,24 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "acc4337666",
+   "title": "Binance opens free AI trading, yet user liability remains 100%",
+   "link": "https://cryptoslate.com/binance-opens-free-ai-trading-yet-user-liability-remains-100/",
+   "source": "CryptoSlate",
+   "published": "2026-10-20T01:50:08+00:00",
+   "summary": "Standard includes 250,000 monthly usage credits and live deployment, while users must approve workflows and supply trading funds. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-ai-pro-standard.jpg"
+  },
+  {
+   "id": "e48c0a2325",
+   "title": "Bitcoin rally could revive treasury buying, but easy-money days over",
+   "link": "https://cointelegraph.com/markets/bitcoin-rally-could-revive-treasury-buying-but-easy-money-days-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-20T01:35:00+00:00",
+   "summary": "“A return to last year’s indiscriminate capital raising looks unlikely,” said Bitfinex head of derivatives Jag Kooner.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5BCJK9DVS7TSCX6JCMYXHPZ/bitcoin-treasury.jpg"
+  },
   {
    "id": "730d036502",
    "title": "Whale loses $469,000 in hours on Hyperliquid, yet re-enters with $16M ETH short bet",
@@ -387,15 +405,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4Y6ADK23SXVZZ2X6X5VB391/grounded-figure-for-taxes.png"
   },
   {
-   "id": "5708a76e09",
-   "title": "Ethereum’s faster proofs face Vitalik’s next test: a hard cost limit",
-   "link": "https://cryptoslate.com/vitaliks-zkevm-cost-demand-puts-ethereums-gas-pricing-under-a-second-test/",
-   "source": "CryptoSlate",
-   "published": "2026-10-19T13:20:55+00:00",
-   "summary": "Fast sampled blocks do not establish the maximum proving burden, while Ethereum’s CPU gas analysis excludes proof generation. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-proof-hardware-limits.webp"
-  },
-  {
    "id": "a0fbdbf829",
    "title": "Public companies object to OKX-ICE’s tokenized stock plan",
    "link": "https://cointelegraph.com/news/public-companies-object-okx-ice-tokenized-stock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -718,15 +727,6 @@
    "published": "2026-10-18T22:58:17+00:00",
    "summary": "HEX founder Richard Heart detained in early morning raid in Istanbul, Starknet plunges almost 50% as it votes to become an L1, and Bitwise says all signs point to Crypto Spring.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M58DKX7KCTJFZHWYSYH8DBTC/hodlers-crop.jpg"
-  },
-  {
-   "id": "9727f71f76",
-   "title": "Crypto.com, Novig sue Missouri over sports event contracts; Kalshi, Polymarket, Robinhood hold off",
-   "link": "https://www.theblock.co/news/regulation/2026-10-18-crypto-com-novig-sue-missouri-over-sports-event-contracts-kalshi-polymarket-robinhood-hold-off-418866",
-   "source": "The Block",
-   "published": "2026-10-18T19:50:28+00:00",
-   "summary": "Kalshi, Polymarket, Robinhood and Underdog, which also received cease-and-desist orders, have not filed suits in Missouri, according to court records.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/02/20220208_Crypto_Sports_Funding.jpg"
   }
  ]
 }
