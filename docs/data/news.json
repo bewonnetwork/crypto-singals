@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T02:06:57+00:00",
+ "updated": "2026-10-20T07:34:21+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,69 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "300c053f68",
+   "title": "BlackRock’s IBIT Bitcoin ETF draws $665 million inflow, highest since October 2025",
+   "link": "https://www.theblock.co/news/markets/2026-10-20-blackrock-ibit-bitcoin-etf-665-million-421102",
+   "source": "The Block",
+   "published": "2026-10-20T07:05:24+00:00",
+   "summary": "Min Jung, associate researcher at Presto Research, said investors could be positioning for a potential 'catch-up trade' in bitcoin.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/10/20221005_Blackrock2.jpg"
+  },
+  {
+   "id": "a633e474da",
+   "title": "JPMorgan drops JPM Coin on Ethereum with zero retail access",
+   "link": "https://cryptoslate.com/jpmorgan-drops-jpm-coin-on-ethereum-with-zero-retail-access/",
+   "source": "CryptoSlate",
+   "published": "2026-10-20T06:30:25+00:00",
+   "summary": "JPM Coin gives the bank's institutional clients an Ethereum payment route, with direct fund subscriptions still unannounced. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/jpmorgan-ethereum-products-standard.jpg"
+  },
+  {
+   "id": "792bd9bf7c",
+   "title": "US Bitcoin ETFs draw $527M in biggest showing since September",
+   "link": "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-20T05:39:20+00:00",
+   "summary": "BlackRock’s IBIT led the gains with $665.2 million in inflows, offsetting withdrawals from Fidelity and Grayscale, while other funds recorded no net flows.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5BWEPE5GWQF5EJR6RBF5RFF/bitcoin111.png"
+  },
+  {
+   "id": "7e12c0b714",
+   "title": "Sophon sets Nov. 25 withdrawal deadline ahead of mainnet shutdown",
+   "link": "https://cointelegraph.com/news/sophon-sets-nov-25-withdrawal-deadline-ahead-of-mainnet-shutdown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-20T05:14:11+00:00",
+   "summary": "In June, Sophon’s developers said the costs of maintaining a standalone blockchain no longer justified its benefits and announced plans to focus on consumer finance and AI applications on Base.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5BTX2A4AWVPY2BYEAS2GXFK/hi-is-the-imf-shutting-the-door-prematurely-on-nft.jpg"
+  },
+  {
+   "id": "41dc2bf48f",
+   "title": "French MPs back crypto tax, and stablecoin swaps take the hit",
+   "link": "https://cryptoslate.com/french-mps-back-crypto-tax-and-stablecoin-swaps-take-the-hit/",
+   "source": "CryptoSlate",
+   "published": "2026-10-20T04:40:34+00:00",
+   "summary": "The October 16 first-reading votes advance a proposal covering MiCA e-money tokens, with a January 2027 start conditional on enactment. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/france-stablecoin-tax-vote-standard.jpg"
+  },
+  {
+   "id": "4410ec6528",
+   "title": "US bans DeepSeek from civilian agency IT systems",
+   "link": "https://cointelegraph.com/news/us-bans-deepseek-from-civilian-agency-it-systems?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-20T04:07:58+00:00",
+   "summary": "The restrictions extend earlier bans within US defense and security agencies, amid concerns that DeepSeek could expose federal information to China.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5BPZ4H9R43QB2KJ6EFY4RNJ/hi-can-a-blockchain-take-over-your-job-new.jpg"
+  },
+  {
+   "id": "47f5b87ff1",
+   "title": "Blockchain Association says Treasury’s GENIUS Act rollout needs clearer DeFi, foreign issuer rules",
+   "link": "https://www.theblock.co/news/regulation/2026-10-20-blockchain-association-clearer-rules-genius-act-421092",
+   "source": "The Block",
+   "published": "2026-10-20T04:07:41+00:00",
+   "summary": "The group filed comments on Treasury's proposed rule implementing the GENIUS Act, which governs who can issue and sell payment stablecoins.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/06/20250602_Stablecoins_News.jpg"
+  },
   {
    "id": "acc4337666",
    "title": "Binance opens free AI trading, yet user liability remains 100%",
@@ -333,15 +396,6 @@
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/10/20230810_Solana_News2.jpg"
   },
   {
-   "id": "474fecc874",
-   "title": "Aave’s proposed USAT gateway could cut off the return swap after a deposit",
-   "link": "https://cryptoslate.com/aaves-proposed-usat-gateway-would-require-continuing-approval-to-swap-back/",
-   "source": "CryptoSlate",
-   "published": "2026-10-19T15:20:01+00:00",
-   "summary": "GHO would remain transferable, while a return swap, withdrawal of USAT and issuer redemption would each face separate conditions. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-usat-revocable-permissions.webp"
-  },
-  {
    "id": "c88ce09301",
    "title": "Tom Lee’s Bitmine Adds $30 Million in Ethereum as Buying Nears Its Finish Line",
    "link": "https://decrypt.co/381311/tom-lee-bitmine-adds-30-million-ethereum-buying-nears-finish-line",
@@ -367,15 +421,6 @@
    "published": "2026-10-19T14:58:40+00:00",
    "summary": "The launch comes as Zerohash bids for a federal trust charter.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/00aaef2726548e0752cbe7b20a6377d15bd4b110-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "7bd0142997",
-   "title": "Binance’s SOXL mark fell 5.9% despite a 3% price band. Here’s why",
-   "link": "https://cryptoslate.com/binances-soxl-selloff-shows-how-a-3-price-band-can-allow-larger-losses/",
-   "source": "CryptoSlate",
-   "published": "2026-10-19T14:20:42+00:00",
-   "summary": "A moving weekend index helps explain how a 5.9% opening-to-low mark decline coexisted with minute-close mark/index gaps below 3%. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-soxl-market-selloff.webp"
   },
   {
    "id": "981a6349be",
@@ -604,11 +649,11 @@
   },
   {
    "id": "058674f38d",
-   "title": "JPMorgan takes JPM Coin to Ethereum for institutional clients: Report",
+   "title": "JPMorgan takes JPM Coin to Ethereum for institutional clients",
    "link": "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "source": "Cointelegraph",
    "published": "2026-10-19T08:58:45+00:00",
-   "summary": "JPMorgan is reportedly expanding its JPM Coin deposit token to Ethereum, allowing institutional clients to make payments and settle tokenized asset transactions.",
+   "summary": "JPMorgan is expanding its JPM Coin deposit token to Ethereum, allowing institutional clients to make payments and settle tokenized asset transactions.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M59MBQFEA0ZPNG2VY870K1C7/hi-jp-morgan-chase-and-crypto-recap-1.jpg"
   },
   {
@@ -682,51 +727,6 @@
    "published": "2026-10-19T03:36:58+00:00",
    "summary": "Bitcoin, Nasdaq futures and Asian stocks rally as stronger-than-expected China GDP and falling oil prices lift risk appetite.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/19627b33884facfeb28d76262dc66c02511ae332-2185x1326.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "f95374e8d6",
-   "title": "Deutsche Bank targets Asia crypto custody expansion in 2027 as German launch nears",
-   "link": "https://www.coindesk.com/business/2026/10/18/deutsche-bank-targets-asia-crypto-custody-expansion-in-2027-as-german-launch-nears",
-   "source": "CoinDesk",
-   "published": "2026-10-19T02:00:00+00:00",
-   "summary": "The service will initially support bitcoin, ether and the stablecoins USDC, EURC and EURAU, with the bank managing clients’ wallets and private keys.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/20b41cccd25baec46feebbec67358ee865ee71db-1920x1440.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "c335a9f630",
-   "title": "World launches World ID suite for banks, makes Zoom deepfake check generally available",
-   "link": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
-   "source": "The Block",
-   "published": "2026-10-19T01:10:00+00:00",
-   "summary": "World ID for Zoom is generally available after a beta that began in April, and is designed to spot deepfaked participants on Zoom calls.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/02/20240220_Wordlcoin_News.jpg"
-  },
-  {
-   "id": "89801e7c64",
-   "title": "Qubic freezes chain after attacker drains 1.4K wallets with weak seeds",
-   "link": "https://cointelegraph.com/news/qubic-freezes-chain-after-attacker-drains-14k-wallets-with-weak-seeds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-19T01:03:27+00:00",
-   "summary": "Qubic says 87.1% of the stolen funds remain onchain and the rest were frozen at crypto exchange MEXC, as network validators prepare to vote on a recovery plan.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M58TDQ3XD133AKC254WEC04M/wallet.jpg"
-  },
-  {
-   "id": "1faa0125b8",
-   "title": "SEC tokenized stock framework faces issuer pushback as Broadcom, Verizon object to OKX-ICE listing",
-   "link": "https://www.coindesk.com/business/2026/10/18/sec-tokenized-stock-framework-faces-issuer-pushback-as-broadcom-verizon-object-to-okx-ice-listing",
-   "source": "CoinDesk",
-   "published": "2026-10-18T23:28:06+00:00",
-   "summary": "Eight more companies objected to trading on the planned OKX-ICE venue, while Nasdaq has separately said it would opt out under the SEC’s framework.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/981f113099a5d95dd101524386439043bf2a255f-6000x4000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "4fe21cbf0a",
-   "title": "Richard Heart caught ‘off-guard,’ QDay gets even closer: Hodler’s Digest",
-   "link": "https://cointelegraph.com/magazine/richard-heart-caught-with-pants-down-qday-gets-even-closer-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-18T22:58:17+00:00",
-   "summary": "HEX founder Richard Heart detained in early morning raid in Istanbul, Starknet plunges almost 50% as it votes to become an L1, and Bitwise says all signs point to Crypto Spring.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M58DKX7KCTJFZHWYSYH8DBTC/hodlers-crop.jpg"
   }
  ]
 }
