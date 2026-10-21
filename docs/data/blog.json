@@ -1,6 +1,31 @@
 {
  "posts": [
   {
+   "slug": "trend-and-timeframes",
+   "type": "learn",
+   "date": "2026-10-21T08:48:32+00:00",
+   "title": "Trend and Timeframes: Trade With the Bigger Picture",
+   "title_bn": "ট্রেন্ড ও টাইমফ্রেম: বড় ছবির সাথে ট্রেড করুন",
+   "sum_en": "A signal on a small chart works better when the bigger charts agree. Learn the simple top-down check our engine also uses.",
+   "sum_bn": "ছোট চার্টের সিগনাল তখনই ভালো কাজ করে যখন বড় চার্টও একই কথা বলে। আমাদের ইঞ্জিন যে সহজ পরীক্ষাটা করে সেটা শিখুন।",
+   "body": {
+    "pts_bn": [
+     "আগে দৈনিক আর ৪ ঘণ্টার চার্ট দেখুন: দাম উঠছে, নামছে, না পাশাপাশি চলছে?",
+     "তারপর ১ ঘণ্টার চার্টে Entry খুঁজুন, বড় ট্রেন্ডের দিকেই।",
+     "বড় ট্রেন্ডের উল্টো দিকে ট্রেড মানে স্রোতের বিপরীতে সাঁতার।",
+     "আমাদের Market Watch নোটে 'Timeframes' লাইনে ✅ মানে ওই টাইমফ্রেম একমত, ❌ মানে নয়।",
+     "সব টাইমফ্রেম একমত হলেও লাভের নিশ্চয়তা নেই; শুধু সম্ভাবনা একটু ভালো।"
+    ],
+    "pts_en": [
+     "Start with the daily and 4-hour charts: is price rising, falling or moving sideways?",
+     "Then look for an entry on the 1-hour chart, in the direction of the bigger trend.",
+     "Trading against the bigger trend is swimming against the current.",
+     "In our Market Watch notes the 'Timeframes' line shows ✅ when a timeframe agrees and ❌ when it does not.",
+     "Even when every timeframe agrees nothing is guaranteed; the odds are only somewhat better."
+    ]
+   }
+  },
+  {
    "slug": "crypto-market-digest-october-21-2026",
    "type": "digest",
    "date": "2026-10-21T03:25:47+00:00",
@@ -6356,31 +6381,6 @@
    }
   },
   {
-   "slug": "trend-and-timeframes",
-   "type": "learn",
-   "date": "2026-10-11T07:50:38+00:00",
-   "title": "Trend and Timeframes: Trade With the Bigger Picture",
-   "title_bn": "ট্রেন্ড ও টাইমফ্রেম: বড় ছবির সাথে ট্রেড করুন",
-   "sum_en": "A signal on a small chart works better when the bigger charts agree. Learn the simple top-down check our engine also uses.",
-   "sum_bn": "ছোট চার্টের সিগনাল তখনই ভালো কাজ করে যখন বড় চার্টও একই কথা বলে। আমাদের ইঞ্জিন যে সহজ পরীক্ষাটা করে সেটা শিখুন।",
-   "body": {
-    "pts_bn": [
-     "আগে দৈনিক আর ৪ ঘণ্টার চার্ট দেখুন: দাম উঠছে, নামছে, না পাশাপাশি চলছে?",
-     "তারপর ১ ঘণ্টার চার্টে Entry খুঁজুন, বড় ট্রেন্ডের দিকেই।",
-     "বড় ট্রেন্ডের উল্টো দিকে ট্রেড মানে স্রোতের বিপরীতে সাঁতার।",
-     "আমাদের Market Watch নোটে 'Timeframes' লাইনে ✅ মানে ওই টাইমফ্রেম একমত, ❌ মানে নয়।",
-     "সব টাইমফ্রেম একমত হলেও লাভের নিশ্চয়তা নেই; শুধু সম্ভাবনা একটু ভালো।"
-    ],
-    "pts_en": [
-     "Start with the daily and 4-hour charts: is price rising, falling or moving sideways?",
-     "Then look for an entry on the 1-hour chart, in the direction of the bigger trend.",
-     "Trading against the bigger trend is swimming against the current.",
-     "In our Market Watch notes the 'Timeframes' line shows ✅ when a timeframe agrees and ❌ when it does not.",
-     "Even when every timeframe agrees nothing is guaranteed; the odds are only somewhat better."
-    ]
-   }
-  },
-  {
    "slug": "crypto-market-digest-october-11-2026",
    "type": "digest",
    "date": "2026-10-11T07:50:32+00:00",
@@ -9601,5 +9601,5 @@
    }
   }
  ],
- "updated": "2026-10-21T03:25:47+00:00"
+ "updated": "2026-10-21T08:48:32+00:00"
 }
