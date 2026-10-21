@@ -620,7 +620,7 @@
    "market": "crypto",
    "side": "BUY",
    "entry": 5.206,
-   "sl": 5.047756546712603,
+   "sl": 5.206,
    "tp1": 5.364243453287398,
    "tp2": 5.522486906574796,
    "score": 82,
@@ -638,14 +638,15 @@
    },
    "opened": "2026-10-21T08:49:44+00:00",
    "status": "open",
-   "also_bot": true
+   "also_bot": true,
+   "tp1_hit": true
   },
   {
    "coin": "PEPE",
    "market": "crypto",
    "side": "BUY",
    "entry": 4.57e-06,
-   "sl": 4.458730334174986e-06,
+   "sl": 4.57e-06,
    "tp1": 4.681269665825014e-06,
    "tp2": 4.792539331650028e-06,
    "score": 78,
@@ -660,33 +661,6 @@
     "mom": 1.0,
     "lsr": 1.79,
     "crowd": -0.397
-   },
-   "opened": "2026-10-21T08:49:44+00:00",
-   "status": "open",
-   "also_bot": false
-  },
-  {
-   "coin": "ZEC",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 1271.1,
-   "sl": 1271.1,
-   "tp1": 1304.1537358707212,
-   "tp2": 1337.2074717414423,
-   "score": 77,
-   "agree": 7,
-   "n": 7,
-   "src": {
-    "tv1h": 0.512,
-    "tv4h": 0.333,
-    "tv1d": 0.242,
-    "engine": 0.951,
-    "rsi": 66.7,
-    "mom": 1.0,
-    "votes_up": 60.9,
-    "sent": 0.217,
-    "lsr": 0.62,
-    "crowd": 0.192
    },
    "opened": "2026-10-21T08:49:44+00:00",
    "status": "open",
@@ -741,6 +715,24 @@
   }
  ],
  "history": [
+  {
+   "coin": "ZEC",
+   "market": "crypto",
+   "side": "BUY",
+   "entry": 1271.1,
+   "sl": 1271.1,
+   "tp1": 1304.1537358707212,
+   "tp2": 1337.2074717414423,
+   "score": 77,
+   "agree": 7,
+   "n": 7,
+   "opened": "2026-10-21T08:49:44+00:00",
+   "status": "TP1",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-21T18:41:05+00:00",
+   "exit": 1363.0
+  },
   {
    "coin": "TRX",
    "market": "crypto",
@@ -1693,7 +1685,7 @@
   }
  ],
  "stats": {
-  "tp1": 21,
+  "tp1": 22,
   "tp2": 11,
   "sl": 22,
   "expired": 0
@@ -1717,5 +1709,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-21T14:11:10+00:00"
+ "updated": "2026-10-21T18:41:06+00:00"
 }
