@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T18:40:02+00:00",
+ "updated": "2026-10-21T22:00:21+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,96 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "ed0e670205",
+   "title": "Ken Griffin Says AI Is 'Almost Certainly' in a Bubble—And Compares GPUs to Airline Seats",
+   "link": "https://decrypt.co/381578/ken-griffin-ai-bubble-gpus-airline-seats",
+   "source": "Decrypt",
+   "published": "2026-10-21T21:31:02+00:00",
+   "summary": "Citadel's founder says investors are almost certainly in an AI bubble, warns a chip glut could crash prices like empty airline seats, yet expects the survivors to lead for decades.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/stocks-gID_7.jpg"
+  },
+  {
+   "id": "6120ea3e89",
+   "title": "Tesla–SpaceX merger talks could put 30,221 Bitcoin under one roof",
+   "link": "https://cryptoslate.com/tesla-spacex-merger-talks-bitcoin/",
+   "source": "CryptoSlate",
+   "published": "2026-10-21T21:00:13+00:00",
+   "summary": "Elon Musk confirmed that Tesla and SpaceX are exploring a merger that could combine their existing Bitcoin holdings under one company. Speaking during SpaceX's Oct. 20 earnings call, Musk said both companies had established special…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-treasury-merger-split.webp"
+  },
+  {
+   "id": "112c4fd0da",
+   "title": "Tether backs Bolivian fintech bringing USDT payments to food delivery and banking",
+   "link": "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-21T20:26:07+00:00",
+   "summary": "The investment will support Peso’s expansion across four Latin American markets, where it connects stablecoin payments to merchant services and local banking networks.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5FY16RXJTWFR0B5DJ896X4P/hi-from-ban-to-adoption-the-evolution-of-crypto-policy-in-bolivia-2.png"
+  },
+  {
+   "id": "e064bafb57",
+   "title": "Trump didn‘t mention ‘crypto’ once in White House cybercrime roundtable",
+   "link": "https://cointelegraph.com/news/white-house-cybercrime-roundtable-donald-trump-crypto-ventures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-21T20:19:39+00:00",
+   "summary": "The US President detailed many schemes defrauding Americans, but referred only to “cybercurrency“ related to scams.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5FRT1YGJA9DDV40WJKXE0EP/trump-white-house-crypto.jpg"
+  },
+  {
+   "id": "a7d8b5a189",
+   "title": "Nvidia Unveils Its Full-Stack Blueprint to Contain and Monitor AI Agents",
+   "link": "https://decrypt.co/381570/nvidia-ai-agent-containment-tools-full-stack-blueprint",
+   "source": "Decrypt",
+   "published": "2026-10-21T20:16:02+00:00",
+   "summary": "Nvidia's OpenShell Reference Architecture pairs a software sandbox on Vera CPUs with Sentry monitoring on BlueField-4 chips, aiming to let companies run autonomous agents while enforcing limits agents cannot reach.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/nvidia-logo-decrypt-style-1-gID_7.png"
+  },
+  {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-21T20:10:47+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "29168d32aa",
+   "title": "SEC’s $75 million crypto fundraising plan faces bank backlash and threats of legal action",
+   "link": "https://cryptoslate.com/secs-75-million-crypto-fundraising-plan-faces-bank-backlash-and-threats-of-legal-action/",
+   "source": "CryptoSlate",
+   "published": "2026-10-21T20:00:12+00:00",
+   "summary": "The manager wants usable Form TR filings, while Hyperliquid Policy Center challenges mandatory public analysis and seeks earlier protection. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/token-disclosure-balance.webp"
+  },
+  {
+   "id": "fecea8984c",
+   "title": "OpenAI reveals AI agents disabled safety monitors, with one falsely denying its actions",
+   "link": "https://cryptoslate.com/openai-reveals-ai-agents-disabled-safety-monitors-with-one-falsely-denying-its-actions/",
+   "source": "CryptoSlate",
+   "published": "2026-10-21T19:00:01+00:00",
+   "summary": "Sol suppressed human alerts while Astra removed a program's monitoring integration; OpenAI has updated reviews and says motive remains unresolved. Read the full story on CryptoSlate Understand the crypto stories that matter and what to…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/openai-alert-suppression.webp"
+  },
+  {
+   "id": "9db23754b2",
+   "title": "Robinhood single-stock perps could be a ‘strong positive’ for HOOD shares, Mizuho says",
+   "link": "https://www.theblock.co/news/business/2026-10-21-robinhood-single-stock-perpetual-futures-mizuho-survey-421639",
+   "source": "The Block",
+   "published": "2026-10-21T18:54:36+00:00",
+   "summary": "A Mizuho survey of 600+ Robinhood users finds 94% would trade single-stock perpetual futures, mostly with new money.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/12/20251208_Robinhood_News_3.jpg"
+  },
+  {
+   "id": "5d0ac586a1",
+   "title": "Who Found the PHP Bug That Made Governments Unplug Their Websites? ChatGPT, Of Course",
+   "link": "https://decrypt.co/381567/who-found-php-bug-governments-unplug-websites-chatgpt",
+   "source": "Decrypt",
+   "published": "2026-10-21T18:46:08+00:00",
+   "summary": "OpenAI says its models found PHP2Shell and led a two-month coalition to fix it. It's the same AI that broke into Hugging Face and an Australian government portal this year.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2022/01/shutterstock_710783008-gID_4.png"
+  },
   {
    "id": "db6f564811",
    "title": "How a SpaceX and Tesla Merger Would Reshape Musk’s AI Empire",
@@ -243,15 +333,6 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-crossroads-bitcoin-demand.webp"
   },
   {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-21T13:34:54+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
-  },
-  {
    "id": "78a2912e26",
    "title": "Big Tech’s eMudhra fixes may leave crypto bots exposed, CertiK warns",
    "link": "https://cointelegraph.com/news/certik-warning-crypto-emudhra-flaw-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -387,15 +468,6 @@
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/lido-collateral-waterfall-risk.webp"
   },
   {
-   "id": "5372601b8e",
-   "title": "Bitcoin is back near $83,000. Here’s how to assess its support",
-   "link": "https://cryptoslate.com/bitcoin-is-back-near-83000-heres-how-to-assess-its-support/",
-   "source": "CryptoSlate",
-   "published": "2026-10-21T11:20:29+00:00",
-   "summary": "Glassnode’s proximity framework sets out how nearby inventory and actual buying could confirm support before the Oct. 27–28 Fed meeting. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-demand-support-retest.webp"
-  },
-  {
    "id": "78d211d5c2",
    "title": "'Mentality Issue': PlayStation Founder Waves Away Disc Ownership Anger",
    "link": "https://decrypt.co/381483/mentality-issue-playstation-founder-waves-away-disc-ownership-anger",
@@ -450,15 +522,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5F0XMYD8030VW50866B29EH/defi-pancakeswap-icon-changed.png"
   },
   {
-   "id": "eda9b2a661",
-   "title": "Binance will reprice stock-token collateral even when Wall Street is closed",
-   "link": "https://cryptoslate.com/binance-will-reprice-stock-token-collateral-even-when-wall-street-is-closed/",
-   "source": "CryptoSlate",
-   "published": "2026-10-21T10:50:30+00:00",
-   "summary": "Starting Oct. 24, off-hours Binance prices can reduce the collateral cushion backing eligible bStocks margin accounts. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-afterhours-stock-pricing.webp"
-  },
-  {
    "id": "33cf2eafb6",
    "title": "France proposes liability for crypto exchanges offering DeFi access",
    "link": "https://cointelegraph.com/news/france-liability-crypto-exchange-defi-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -487,7 +550,7 @@
   },
   {
    "id": "c679fed24e",
-   "title": "Live updates: Bitcoin rises to $84,000 as SpaceX leads markets higher",
+   "title": "Live updates: Bitcoin holds above $84,000 as Middle East worries resurface",
    "link": "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures",
    "source": "CoinDesk",
    "published": "2026-10-21T10:30:40+00:00",
@@ -529,15 +592,6 @@
    "published": "2026-10-21T10:13:52+00:00",
    "summary": "Wallets linked to the $295 million April hack still held $138 million in Ether after sending another $46 million to the mixer Wednesday.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1K817QH0K358EBX7ENA8QG7/hacker-and-lasers-ethereum.jpg"
-  },
-  {
-   "id": "681dab2398",
-   "title": "SpaceX’s $194 billion share unlock exposes a major risk in Aave’s tokenized stock ambitions",
-   "link": "https://cryptoslate.com/spacexs-194-billion-share-unlock-exposes-a-major-risk-in-aaves-tokenized-stock-ambitions/",
-   "source": "CryptoSlate",
-   "published": "2026-10-21T09:50:35+00:00",
-   "summary": "About 1.3 billion SpaceX shares become eligible for sale on Oct. 22, worth roughly $194.3 billion at the Oct. 20 close of $147.89. A week earlier, Aave Labs proposed accepting tokenized SpaceX shares (SPCXc) as collateral on its V4…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-collateral-risk-assessment.webp"
   },
   {
    "id": "0652151f4a",
@@ -673,60 +727,6 @@
    "published": "2026-10-20T22:16:04+00:00",
    "summary": "A viral Claude Code prompt lets Android TV owners switch off sponsored rows and tracking software and build their own home screens, with no root access and every change reversible.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/Cozy-Living-Room-TV-Interface-gID_7.png"
-  },
-  {
-   "id": "e3608839ce",
-   "title": "OpenAI Buys Orchestra Bio to Put AI Agents in Charge of Drug Development Grunt Work",
-   "link": "https://decrypt.co/381467/openai-buys-orchestra-bio-ai-agents-drug-development",
-   "source": "Decrypt",
-   "published": "2026-10-20T21:46:04+00:00",
-   "summary": "The ChatGPT maker is folding Orchestra’s drug-program agents into Rosalind, its life sciences suite, betting AI can shave time off the decade-plus it takes to bring a medicine to patients.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/openai-decrypt-style-02-gID_7.jpg"
-  },
-  {
-   "id": "d1cd54351b",
-   "title": "Utah AG sues Kalshi, pursues profits from prediction market company",
-   "link": "https://cointelegraph.com/news/utah-lawsuit-kalshi-susquehanna-prediction-markets-illegal-bets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-20T21:19:15+00:00",
-   "summary": "Derek Brown likened the prediction market company to a “public nuisance“ that was “causing a significant and substantial ongoing harm“ to state residents.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1M5NCSJSS1MAFGEDXXFPQN1/court-vs-kalshi-3.jpg"
-  },
-  {
-   "id": "582629612e",
-   "title": "JPMorgan Puts a Number on Bitcoin for the First Time: 10% a Year, With a Big Caveat",
-   "link": "https://decrypt.co/381464/jpmorgan-bitcoin-forecast-first-time-stocks-gold",
-   "source": "Decrypt",
-   "published": "2026-10-20T21:16:04+00:00",
-   "summary": "J.P. Morgan Asset Management’s 2027 Long-Term Capital Market Assumptions project a 10% annual return for Bitcoin over 10 to 15 years, though the firm isn’t adding it to its main portfolio models.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/JPMorgan-Chase-Co-building-in-New-York4-gID_7.jpg"
-  },
-  {
-   "id": "7b801a3b9f",
-   "title": "U.S. CFTC sets agenda for AI forum, exploring trading and agentic finance",
-   "link": "https://www.coindesk.com/policy/2026/10/20/u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
-   "source": "CoinDesk",
-   "published": "2026-10-20T21:12:21+00:00",
-   "summary": "A Commodity Futures Trading Commission task force is scheduled for October 28 to talk about how the latest \"super intelligence\" technology may impact markets.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/2ea663e27b7a8aedacb15a99a17ec144f1ef72ac-4928x2772.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "efe2ae2b2e",
-   "title": "Wallet Linked to Drift Exploit Sends $61 Million in Ethereum to Tornado Cash",
-   "link": "https://decrypt.co/381450/wallet-drift-exploit-sends-61-million-ethereum-tornado-cash",
-   "source": "Decrypt",
-   "published": "2026-10-20T20:46:04+00:00",
-   "summary": "The North Korea-linked attacker behind April's $295 million Drift heist pushed 25,700 ETH through the mixer in two hours, and still controls roughly $198 million more.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/crime_hacker-gID_7.png"
-  },
-  {
-   "id": "ef4b734fe8",
-   "title": "Bitwise, Hyperliquid seek SEC rule changes for token trading, airdrops",
-   "link": "https://cointelegraph.com/news/bitwise-hyperliquid-seek-sec-rule-changes-for-token-trading-airdrops?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-20T20:38:00+00:00",
-   "summary": "The firms are seeking clearer guidance on the classification of crypto assets and secondary-market trading as the SEC’s public comment period comes to a close.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5DEQWS5T9NWD3NCPZKH095N/hi-how-you-could-save-money-when-reporting-crypto-mica.png"
   }
  ]
 }
