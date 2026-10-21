@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-21-2026",
+   "type": "trending",
+   "date": "2026-10-21T14:10:31+00:00",
+   "title": "Trending in Crypto — October 21, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (UHI, PENGU, AXIS…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "UHI",
+      "name": "Universal High Income",
+      "rank": 793,
+      "price": 0.023220792679633645,
+      "ch": 17.59
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 113,
+      "price": 0.008095027451070406,
+      "ch": 6.15
+     },
+     {
+      "sym": "AXIS",
+      "name": "Axis Robotics",
+      "rank": 489,
+      "price": 0.28703161200614463,
+      "ch": 0
+     },
+     {
+      "sym": "PEARL",
+      "name": "Pearl",
+      "rank": 84,
+      "price": 2.4279023823589316,
+      "ch": 23.02
+     },
+     {
+      "sym": "AERO",
+      "name": "Aerodrome Finance",
+      "rank": 86,
+      "price": 0.857368164631614,
+      "ch": 4.9
+     },
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 83816.53946385259,
+      "ch": 2.17
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "rank": 10,
+      "price": 1316.9569641088715,
+      "ch": 11.53
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 716,
+      "price": 90.06990317845917,
+      "ch": 7.58
+     },
+     {
+      "sym": "VVV",
+      "name": "Venice Token",
+      "rank": 71,
+      "price": 26.140159768913936,
+      "ch": 3.87
+     },
+     {
+      "sym": "LIT",
+      "name": "Lighter",
+      "rank": 85,
+      "price": 3.382447055682428,
+      "ch": 5.53
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 83568,
+      "ch": 0.98,
+      "vol": 27899372593,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2463.65,
+      "ch": 1.08,
+      "vol": 13381567094,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 106.32,
+      "ch": -0.24,
+      "vol": 2719122554,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.36,
+      "ch": 2.25,
+      "vol": 1751999442,
+      "rank": 5
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 5.16,
+      "ch": 5.94,
+      "vol": 1431382777,
+      "rank": 19
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1304.06,
+      "ch": 6.94,
+      "vol": 1133097830,
+      "rank": 10
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 80.3,
+      "ch": -0.71,
+      "vol": 806820086,
+      "rank": 11
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 743.46,
+      "ch": 0.92,
+      "vol": 761075955,
+      "rank": 4
+     }
+    ]
+   }
+  },
+  {
    "slug": "trend-and-timeframes",
    "type": "learn",
    "date": "2026-10-21T08:48:32+00:00",
@@ -9601,5 +9749,5 @@
    }
   }
  ],
- "updated": "2026-10-21T08:48:32+00:00"
+ "updated": "2026-10-21T14:10:31+00:00"
 }

@@ -670,7 +670,7 @@
    "market": "crypto",
    "side": "BUY",
    "entry": 1271.1,
-   "sl": 1238.0462641292786,
+   "sl": 1271.1,
    "tp1": 1304.1537358707212,
    "tp2": 1337.2074717414423,
    "score": 77,
@@ -690,32 +690,8 @@
    },
    "opened": "2026-10-21T08:49:44+00:00",
    "status": "open",
-   "also_bot": false
-  },
-  {
-   "coin": "TRX",
-   "market": "crypto",
-   "side": "SELL",
-   "entry": 0.3312,
-   "sl": 0.3318807851001278,
-   "tp1": 0.3305192148998722,
-   "tp2": 0.3298384297997444,
-   "score": 29,
-   "agree": 5,
-   "n": 6,
-   "src": {
-    "tv1h": -0.467,
-    "tv4h": -0.445,
-    "tv1d": -0.355,
-    "engine": -0.752,
-    "rsi": 46.5,
-    "mom": -0.03,
-    "lsr": 1.3,
-    "crowd": -0.148
-   },
-   "opened": "2026-10-21T08:49:44+00:00",
-   "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   },
   {
    "coin": "GBPUSD",
@@ -765,6 +741,24 @@
   }
  ],
  "history": [
+  {
+   "coin": "TRX",
+   "market": "crypto",
+   "side": "SELL",
+   "entry": 0.3312,
+   "sl": 0.3312,
+   "tp1": 0.3305192148998722,
+   "tp2": 0.3298384297997444,
+   "score": 29,
+   "agree": 5,
+   "n": 6,
+   "opened": "2026-10-21T08:49:44+00:00",
+   "status": "TP1",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-21T14:11:09+00:00",
+   "exit": 0.3319
+  },
   {
    "coin": "XAUUSD",
    "market": "forex",
@@ -1699,7 +1693,7 @@
   }
  ],
  "stats": {
-  "tp1": 20,
+  "tp1": 21,
   "tp2": 11,
   "sl": 22,
   "expired": 0
@@ -1723,5 +1717,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-21T08:49:44+00:00"
+ "updated": "2026-10-21T14:11:10+00:00"
 }
