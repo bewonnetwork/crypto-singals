@@ -612,6 +612,26 @@
    "opened": "2026-10-22T10:12:18+00:00",
    "status": "open",
    "also_bot": false
+  }
+ ],
+ "history": [
+  {
+   "coin": "XAUUSD",
+   "market": "forex",
+   "side": "SELL",
+   "entry": 4104.39990234375,
+   "sl": 4104.39990234375,
+   "tp1": 4081.870032847715,
+   "tp2": 4059.34016335168,
+   "score": 26,
+   "agree": 5,
+   "n": 5,
+   "opened": "2026-10-22T10:12:18+00:00",
+   "status": "TP1",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-22T15:18:23+00:00",
+   "exit": 4075.0
   },
   {
    "coin": "USDJPY",
@@ -624,43 +644,12 @@
    "score": 25,
    "agree": 5,
    "n": 5,
-   "src": {
-    "tv1h": -0.309,
-    "tv4h": -0.421,
-    "tv1d": -0.555,
-    "engine": -1.0,
-    "rsi": 21.6,
-    "mom": -0.101
-   },
    "opened": "2026-10-22T10:12:18+00:00",
-   "status": "open",
-   "also_bot": false
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-22T15:18:23+00:00",
+   "exit": 157.2550048828125
   },
-  {
-   "coin": "XAUUSD",
-   "market": "forex",
-   "side": "SELL",
-   "entry": 4104.39990234375,
-   "sl": 4126.929771839785,
-   "tp1": 4081.870032847715,
-   "tp2": 4059.34016335168,
-   "score": 26,
-   "agree": 5,
-   "n": 5,
-   "src": {
-    "tv1h": -0.4,
-    "tv4h": -0.355,
-    "tv1d": -0.512,
-    "engine": -0.904,
-    "rsi": 36.4,
-    "mom": -0.152
-   },
-   "opened": "2026-10-22T10:12:18+00:00",
-   "status": "open",
-   "also_bot": false
-  }
- ],
- "history": [
   {
    "coin": "GBPUSD",
    "market": "forex",
@@ -1682,29 +1671,12 @@
    "also_bot": false,
    "closed": "2026-10-12T09:14:00+00:00",
    "exit": 0.8902
-  },
-  {
-   "coin": "INJ",
-   "market": "crypto",
-   "side": "BUY",
-   "entry": 7.924,
-   "sl": 7.7348807909500925,
-   "tp1": 8.11311920904991,
-   "tp2": 8.302238418099817,
-   "score": 78,
-   "agree": 5,
-   "n": 6,
-   "opened": "2026-10-11T18:52:42+00:00",
-   "status": "SL",
-   "also_bot": false,
-   "closed": "2026-10-11T22:56:27+00:00",
-   "exit": 7.734
   }
  ],
  "stats": {
-  "tp1": 25,
+  "tp1": 26,
   "tp2": 11,
-  "sl": 23,
+  "sl": 24,
   "expired": 0
  },
  "sources": [
@@ -1726,5 +1698,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-22T10:12:18+00:00"
+ "updated": "2026-10-22T15:18:23+00:00"
 }

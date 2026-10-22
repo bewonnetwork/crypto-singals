@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-22-2026",
+   "type": "trending",
+   "date": "2026-10-22T15:17:26+00:00",
+   "title": "Trending in Crypto — October 22, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (UHI, OA, PENGU…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "UHI",
+      "name": "Universal High Income",
+      "rank": 691,
+      "price": 0.02766370565403747,
+      "ch": 20.62
+     },
+     {
+      "sym": "OA",
+      "name": "OnlyAgent",
+      "rank": 946,
+      "price": 0.015725725577109436,
+      "ch": 0
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 116,
+      "price": 0.007729757288861358,
+      "ch": -5.54
+     },
+     {
+      "sym": "AERO",
+      "name": "Aerodrome Finance",
+      "rank": 90,
+      "price": 0.8042560151375244,
+      "ch": -7.15
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 19,
+      "price": 4.954962745521763,
+      "ch": -7.74
+     },
+     {
+      "sym": "SUI",
+      "name": "Sui",
+      "rank": 29,
+      "price": 0.976735920758058,
+      "ch": -6.63
+     },
+     {
+      "sym": "ICP",
+      "name": "Internet Computer",
+      "rank": 64,
+      "price": 2.7497231422451507,
+      "ch": -6.8
+     },
+     {
+      "sym": "PEARL",
+      "name": "Pearl",
+      "rank": 88,
+      "price": 2.1085737039070556,
+      "ch": -11.74
+     },
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": 81588.44138120228,
+      "ch": -3.66
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "rank": 7,
+      "price": 104.3948485964187,
+      "ch": -3.25
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 81415,
+      "ch": -3.73,
+      "vol": 35548201906,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2392.74,
+      "ch": -4.48,
+      "vol": 12187445218,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 104.16,
+      "ch": -3.54,
+      "vol": 2717868128,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.32,
+      "ch": -4.55,
+      "vol": 1717214871,
+      "rank": 5
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1220.88,
+      "ch": -8.35,
+      "vol": 1305068566,
+      "rank": 10
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 4.93,
+      "ch": -7.86,
+      "vol": 795417175,
+      "rank": 19
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 77.49,
+      "ch": -5.76,
+      "vol": 795299361,
+      "rank": 11
+     },
+     {
+      "sym": "SUI",
+      "name": "Sui",
+      "price": 0.972471,
+      "ch": -6.96,
+      "vol": 744304012,
+      "rank": 29
+     }
+    ]
+   }
+  },
+  {
    "slug": "why-keep-a-trading-journal",
    "type": "learn",
    "date": "2026-10-22T10:11:22+00:00",
@@ -10214,5 +10362,5 @@
    }
   }
  ],
- "updated": "2026-10-22T10:11:22+00:00"
+ "updated": "2026-10-22T15:17:26+00:00"
 }
