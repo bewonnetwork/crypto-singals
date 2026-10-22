@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T15:17:30+00:00",
+ "updated": "2026-10-22T19:15:32+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,159 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "f42994df71",
+   "title": "JPMorgan says crypto regulatory moves partly offset Clarity Act failure, but risks remain",
+   "link": "https://www.theblock.co/news/regulation/2026-10-22-jpmorgan-crypto-regulatory-moves-clarity-act-failure-risks-423473",
+   "source": "The Block",
+   "published": "2026-10-22T19:14:21+00:00",
+   "summary": "JPMorgan said actions by U.S. regulators partly offset the Clarity Act setback, but longer-lasting rules are still needed.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2019/02/jpmorgan.jpg"
+  },
+  {
+   "id": "50d18a748d",
+   "title": "Meta Creates Non-Voting Stock to Fund AI Buildout, Keeping Zuckerberg in Control",
+   "link": "https://decrypt.co/381640/meta-non-voting-stock-fund-ai-buildout-zuckerberg-control",
+   "source": "Decrypt",
+   "published": "2026-10-22T19:06:02+00:00",
+   "summary": "Meta will hand shareholders a free non-voting share for every share they own in January, giving it a way to raise equity for AI spending without diluting Zuckerberg's 60.6% vote.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/08/meta-logo-decrypt-style-02-gID_7.jpg"
+  },
+  {
+   "id": "652693d0a5",
+   "title": "Blockchain Association pushes for crypto tax clarity as broader bill stalls",
+   "link": "https://www.theblock.co/news/regulation/2026-10-22-blockchain-association-pushes-crypto-tax-clarity-broader-bill-stalls-423475",
+   "source": "The Block",
+   "published": "2026-10-22T18:59:25+00:00",
+   "summary": "As progress stalls on a crypto bill, the Blockchain Association is urging Congress to pass legislation to resolve uncertainty around taxes.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/01/20210120_Capitol_Generic.jpg"
+  },
+  {
+   "id": "15f7527ae9",
+   "title": "Coinbase Fined Again in Ireland, This Time $3.6M Over Fund Safeguarding",
+   "link": "https://decrypt.co/381638/coinbase-fined-again-ireland-3-6m-fund-safeguarding",
+   "source": "Decrypt",
+   "published": "2026-10-22T18:36:03+00:00",
+   "summary": "The Central Bank of Ireland penalized Coinbase Ireland €3,252,618 for leaning too heavily on its U.S. parent and leaving its safeguarding account underfunded—its second hit to the exchange’s European arm in the last year.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Coinbase_logo-nft-nyc-decrypt-style-scaled-gID_7.jpg"
+  },
+  {
+   "id": "1236af7ff9",
+   "title": "A16z is the latest VC giant to widen bets beyond crypto and into AI and emerging tech",
+   "link": "https://www.coindesk.com/business/2026/10/22/a16z-is-the-latest-vc-giant-to-widen-bets-beyond-crypto-and-into-ai-and-emerging-tech",
+   "source": "CoinDesk",
+   "published": "2026-10-22T18:30:57+00:00",
+   "summary": "The venture investor behind early bets on Coinbase, Solana and Uniswap said is broadening its focus, joining other crypto investment firms looking beyond blockchain to artificial intelligence and tech themes.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/941dba842a1a32a077b3b9c26476efac090f9415-7081x3983.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "742ddad893",
+   "title": "Tesla's Profit Drops 43% as Musk Starts Building Robots and Plans to Sell Driverless Cabs",
+   "link": "https://decrypt.co/381624/teslas-profit-drops-musk-robots-driverless-cabs",
+   "source": "Decrypt",
+   "published": "2026-10-22T18:06:02+00:00",
+   "summary": "Tesla earned $787 million last quarter, down from $1.37 billion, as spending on robots and self-driving cars soared. Optimus is in production, and Tesla aims to get Cybercabs to customers by year-end.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2024/06/Tesla_Elon-Musk_Rokas-Tenys_shutterstock_2147719465-gID_7.jpg"
+  },
+  {
+   "id": "ded99bbbf9",
+   "title": "Bitcoin Core 32 can stall multisig signing on older nodes as fix slips to next patch",
+   "link": "https://cryptoslate.com/bitcoin-core-32s-wallet-change-can-break-co-signing-with-older-nodes/",
+   "source": "CryptoSlate",
+   "published": "2026-10-22T18:00:57+00:00",
+   "summary": "A reported PSBT v2 import failure affects mixed-version Core wallets, while an explicit RPC option still creates v0 files. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-wallet-version-divide.webp"
+  },
+  {
+   "id": "2cdb9f906b",
+   "title": "Oil Climbs Above $111 as AI Stocks Slide, Dragging the S&P 500 and Global Markets With Them",
+   "link": "https://decrypt.co/381613/oil-climbs-above-111-as-ai-stocks-slide-dragging-the-sp-500-and-global-markets-with-them",
+   "source": "Decrypt",
+   "published": "2026-10-22T17:33:38+00:00",
+   "summary": "Brent crude hit a five-month high while Nvidia, Meta and chip stocks fell, pulling Asia's benchmark indexes down by up to 3.5% a week after South Korea's Kospi plunged 7.57%.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/crypto-trading-decrypt-style-01-gID_7.png"
+  },
+  {
+   "id": "268624b87c",
+   "title": "Underdog taps zerohash to bring crypto deposits to prediction markets",
+   "link": "https://cointelegraph.com/news/underdog-taps-zerohash-to-bring-crypto-deposits-to-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-22T17:24:49+00:00",
+   "summary": "The new funding option, expected to launch later this year, will allow eligible Underdog users to deposit digital assets around the clock.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5J8K4B5TT5MGQN65E52S1DC/hi-when-will-the-prediction-market-take-place-and-what-effect-is-it-having-on-crypto-1.png"
+  },
+  {
+   "id": "d0b3990667",
+   "title": "Bitcoin hashrate hits seven-month high as AI shift fails to ease mining competition",
+   "link": "https://cointelegraph.com/news/bitcoin-mining-difficulty-hashrate-recovery-ai-shift?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-22T16:50:51+00:00",
+   "summary": "According to BlocksBridge, Bitcoin’s mining difficulty is rising despite the industry’s AI transition, with smaller operators potentially absorbing equipment abandoned by larger competitors.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4WDVRKK44RE061434J5PYP7/hi-bitcoin-miners-as-energy-buyers-ai-1.jpg"
+  },
+  {
+   "id": "144a56ce61",
+   "title": "Irish cenbank fines Coinbase arm $3.6M for oversight, safeguard failures",
+   "link": "https://cointelegraph.com/news/ireland-central-bank-coinbase-oversight-safeguard-failure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-22T16:48:00+00:00",
+   "summary": "According to the Central Bank of Ireland, Coinbase Ireland had agreed with the facts around the enforcement action and will be subject to fines and sanctions upon approval by a high court.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5J5AK9VV0TKNV4DMR09TVT7/hi-what-is-a-coinbase-transaction-ireland.jpg"
+  },
+  {
+   "id": "4d50f0cf14",
+   "title": "Bitcoin ETFs Erase October Losses With $1 Billion in Three Days",
+   "link": "https://decrypt.co/381611/bitcoin-etfs-erase-october-losses-1-billion-three-days",
+   "source": "Decrypt",
+   "published": "2026-10-22T16:31:07+00:00",
+   "summary": "Spot Bitcoin ETFs have drawn about $1.07 billion over three sessions, pushing October flows to a gain of roughly $460 million, even as Bitcoin and Ethereum prices slipped.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/bitcoin-dollar-decrypt-style-gID_7.jpg"
+  },
+  {
+   "id": "83af9214d5",
+   "title": "Solana bot turns just $12,000 into $1.4 billion in trading volume as fake liquidity floods Raydium",
+   "link": "https://cryptoslate.com/solana-bot-turns-just-12000-into-1-4-billion-in-trading-volume-as-fake-liquidity-floods-raydium/",
+   "source": "CryptoSlate",
+   "published": "2026-10-22T16:20:56+00:00",
+   "summary": "An Oct. 22 DEXScreener snapshot listed about $579 million in liquidity alongside 22.6 USDC, illustrating the limits of a pool's displayed valuation. Read the full story on CryptoSlate Understand the crypto stories that matter and what to…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/raydium-liquidity-display-gap.webp"
+  },
+  {
+   "id": "cc17c0565d",
+   "title": "Bitcoin circles $81.5K ETF cost basis as Trump Iran comments send stocks lower",
+   "link": "https://cointelegraph.com/markets/bitcoin-circles-815k-etf-cost-basis-as-trump-iran-comments-send-stocks-lower?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-22T16:20:35+00:00",
+   "summary": "Bitcoin extended daily losses to 3% as US stocks came under pressure from President Donald Trump’s comments on Iran military action.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5J5JG3Z7RPMDP2E8S5Q398C/analytics-red-trump-960x640.webp"
+  },
+  {
+   "id": "d612120212",
+   "title": "What Is a Neocloud? The GPU Clouds Powering the AI Boom",
+   "link": "https://decrypt.co/resources/what-is-a-neocloud-the-gpu-clouds-powering-the-ai-boom",
+   "source": "Decrypt",
+   "published": "2026-10-22T15:45:07+00:00",
+   "summary": "Neoclouds like CoreWeave and Nebius rent Nvidia GPUs to AI labs, and several started out mining crypto. Here's how the AI cloud model works.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/05/ai-prompt-injection-learn-gID_1-pID_2.png"
+  },
+  {
+   "id": "14a1af7a83",
+   "title": "Irish central bank fines Coinbase Ireland $3.6 million over fund safeguarding failures",
+   "link": "https://www.coindesk.com/policy/2026/10/22/irish-central-bank-fines-coinbase-ireland-usd3-6-million-over-fund-safeguarding-failures",
+   "source": "CoinDesk",
+   "published": "2026-10-22T15:40:25+00:00",
+   "summary": "When Silvergate was on the verge of collapse in 2023, Coinbase instructed 30 customers to deposit funds into an alternate account held by Coinbase at another U.S. bank.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/868ae20c7c05b3aab1825f55f45b74a9484fd851-1920x1280.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "145271a1a6",
+   "title": "Major Banks Find Rogue AI Agents Inside Customer Accounts—And They’re 'Horrified'",
+   "link": "https://decrypt.co/381602/banks-rogue-ai-agents-inside-customer-accounts",
+   "source": "Decrypt",
+   "published": "2026-10-22T15:24:18+00:00",
+   "summary": "Major banks including Morgan Stanley, JPMorgan, Bank of America, and Citi are moving to restrict third-party AI agents that log in with customers’ credentials.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/citi-decrypt-style-gID_7.jpg"
+  },
   {
    "id": "bc35bb7d29",
    "title": "Robinhood generates $51 million in blockchain fees while Ethereum settlement costs total just $69,000",
@@ -42,7 +195,7 @@
    "source": "CoinDesk",
    "published": "2026-10-22T14:37:12+00:00",
    "summary": "The company is in talks with Visa over a potential $2.5 billion acquisition, Axios reported.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/4ab20d34d6e950f76435160c3fa25498b6c30926-1500x1000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/e1c5ad64ecc191986642a138abca262584dd0195-1500x844.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   },
   {
    "id": "4f57a48809",
@@ -298,11 +451,11 @@
   },
   {
    "id": "945ec6f6fa",
-   "title": "Live updates: Bitcoin slumps below $82,000 as markets go risk off on AI selloff, oil surge",
+   "title": "Live updates: Bitcoin falls back to $81,000, with interest rates tumbling as stocks crack",
    "link": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides",
    "source": "CoinDesk",
    "published": "2026-10-22T09:54:26+00:00",
-   "summary": "South Korea's Kospi tumbled 3.5% overnight, and oil gained nearly 3% on renewed Middle East hostilities.",
+   "summary": "The Nasdaq is down more than 2% as the AI bull market trade continues to unwind. U.S. interest rates are plunging even as oil surges.",
    "image": ""
   },
   {
@@ -441,15 +594,6 @@
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/68305194f847e3aa29c580f21b6d32ae104f745f-1520x854.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   },
   {
-   "id": "9285b8dd04",
-   "title": "OCC waiver rule puts active stablecoin issuers on notice",
-   "link": "https://cryptoslate.com/occ-waiver-rule-puts-active-stablecoin-issuers-on-notice/",
-   "source": "CryptoSlate",
-   "published": "2026-10-22T03:20:53+00:00",
-   "summary": "Existing US issuers awaiting OCC approval need discretionary relief to keep issuing from Jan. 18, 2027; filing alone is insufficient. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-regulatory-deadline.webp"
-  },
-  {
    "id": "8d8e5b14c2",
    "title": "PHP Foundation admits ‘structural failure’ delayed critical security fix",
    "link": "https://cointelegraph.com/news/php-foundation-admits-structural-failure-delayed-critical-security-fix?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -466,15 +610,6 @@
    "published": "2026-10-22T00:00:00+00:00",
    "summary": "Aerodrome and Velodrome have merged to launch Aero across Ethereum mainnet, Base, Robinhood Chain, Ink, OP Mainnet, Arc, and Arbitrum.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-21-at-11.05.40.png"
-  },
-  {
-   "id": "b754647dd8",
-   "title": "Irish drug lord’s lost Bitcoin fortune comes back to life as $41 million moves to Coinbase",
-   "link": "https://cryptoslate.com/irish-drug-lords-lost-bitcoin-fortune-comes-back-to-life-as-41-million-moves-to-coinbase/",
-   "source": "CryptoSlate",
-   "published": "2026-10-21T23:10:19+00:00",
-   "summary": "The net receipt reached an address Arkham labels a Coinbase Prime deposit, a destination also used in July and August. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-dormant-wallet-transfer.webp"
   },
   {
    "id": "bbdcbe54f7",
@@ -592,141 +727,6 @@
    "published": "2026-10-21T17:10:54+00:00",
    "summary": "The OCC has finalized rules for stablecoin reserves and redemptions, with Bessent calling the GENIUS Act a “watershed moment for American finance.”",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M36AE384GN77A4QEPA6NWS0X/bessent.jpg"
-  },
-  {
-   "id": "ce9cd9fc07",
-   "title": "Dogecoin Gets a Dedicated Company to Build Out Its Ecosystem",
-   "link": "https://decrypt.co/381541/dogecoin-gets-dedicated-company-build-ecosystem",
-   "source": "Decrypt",
-   "published": "2026-10-21T16:46:04+00:00",
-   "summary": "Formed with the Dogecoin Foundation and led by MyDoge founder Jordan Jefferson, the new company consolidates the MyDoge wallet, DogeOS app platform, and Such App to build an economy around DOGE.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/dogecoin-decrypt-style-02-gID_7.png"
-  },
-  {
-   "id": "fa45bb5b9f",
-   "title": "Dataline raises $10.6 million for decentralized data network for AI agents, plans ICO",
-   "link": "https://www.theblock.co/news/deals/2026-10-21-dataline-decentralized-data-network-ai-agents-funding-ico-421596",
-   "source": "The Block",
-   "published": "2026-10-21T16:44:01+00:00",
-   "summary": "The startup also plans to hold a public token sale through Uniswap's auction platform, with details expected next week.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/04/20250411_Funding_News_3.jpg"
-  },
-  {
-   "id": "5945523c72",
-   "title": "Trump to throw spotlight on overseas crypto abuses at White House event",
-   "link": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event",
-   "source": "CoinDesk",
-   "published": "2026-10-21T16:23:44+00:00",
-   "summary": "The president is hosting a cybercrime event that will highlight U.S. authorities' efforts to crack down on crypto scams run by foreign criminal organizations.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/6e4532d237786704984596878a883a023b94ba32-4540x2554.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "2df0572f48",
-   "title": "Musk’s SpaceX-Tesla Merger Would Create a Bitcoin Treasury Behemoth",
-   "link": "https://decrypt.co/381538/musk-spacex-tesla-merger-bitcoin-treasury-behemoth",
-   "source": "Decrypt",
-   "published": "2026-10-21T16:16:05+00:00",
-   "summary": "Musk said both boards formed committees to weigh a tie-up that would combine Tesla’s 11,509 BTC and SpaceX’s 18,712 BTC—roughly $2.5 billion worth—onto a single balance sheet.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/04/decrypt-style-elon-musk-4-gID_7.png"
-  },
-  {
-   "id": "5293e4c6b9",
-   "title": "Chainlink, Cardano, other blockchain groups push SEC for clearer crypto rules",
-   "link": "https://cointelegraph.com/news/chainlink-cardano-and-other-blockchain-groups-push-sec-for-clearer-crypto-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-21T16:09:26+00:00",
-   "summary": "Six major blockchain organizations urged the SEC to formally recognize digital commodities as non-securities in its proposed regulatory framework.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5FH88750HFGGVZ9ZQN6BBTV/hi-token-burning-explained-sec.png"
-  },
-  {
-   "id": "7eac3910fe",
-   "title": "What Is a Bitcoin-Backed Loan? Borrowing Against BTC Explained",
-   "link": "https://decrypt.co/resources/what-is-a-bitcoin-backed-loan-borrowing-against-btc-explained",
-   "source": "Decrypt",
-   "published": "2026-10-21T15:43:32+00:00",
-   "summary": "Bitcoin-backed loans let holders borrow cash or stablecoins without selling BTC. Here's how collateral, LTV and liquidations work.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2019/11/bitcoin-investment_2-gID_5-pID_4.png"
-  },
-  {
-   "id": "d1ad88fc23",
-   "title": "PHP Panic: Two Critical Bugs Put 70% of the Internet at Risk, and Everyone Is Freaking Out",
-   "link": "https://decrypt.co/381519/php-panic-critical-bugs-70-percent-internet-risk-everyone-freaking-out",
-   "source": "Decrypt",
-   "published": "2026-10-21T15:35:16+00:00",
-   "summary": "Two critical bugs in PHP, the language running most of the web, let strangers take over servers without a password. The patch is out, attacks started early, and governments pulled the plug.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/panic-decrypt-style-02-gID_7.jpg"
-  },
-  {
-   "id": "8e607a0670",
-   "title": "How a16z-backed DATA is rethinking its blockchain strategy after $30 million Sui deal",
-   "link": "https://www.coindesk.com/business/2026/10/21/how-a16z-backed-data-is-rethinking-its-blockchain-strategy-after-usd30-million-sui-deal",
-   "source": "CoinDesk",
-   "published": "2026-10-21T15:22:46+00:00",
-   "summary": "The startup is retiring its own blockchain and moving to Sui with a $30 million investment as it narrows its focus to AI training data.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/cfdbc777f06832152972c765b454bf87e82c11eb-2940x1650.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "2657117945",
-   "title": "Bitcoin price tags $84.6K as US stocks head higher on SpaceX Q3 earnings beat",
-   "link": "https://cointelegraph.com/markets/bitcoin-price-tags-846k-as-us-stocks-head-higher-on-spacex-q3-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-21T15:13:17+00:00",
-   "summary": "Bitcoin extended gains to approach $85,000 after US stock markets reacted to higher-than-expected SpaceX earnings.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5FFNBMBTT9KJFWC3TVMA71T/hi-what-is-spacex-ipo-and-binance-1.jpg"
-  },
-  {
-   "id": "e1941a668e",
-   "title": "Grayscale expands in-kind subscriptions to 10 crypto ETFs and trusts",
-   "link": "https://www.theblock.co/news/markets/2026-10-21-grayscale-expands-in-kind-subscriptions-10-crypto-etfs-421559",
-   "source": "The Block",
-   "published": "2026-10-21T15:12:00+00:00",
-   "summary": "Grayscale expands in-kind subscriptions to 10 crypto funds, letting eligible investors swap tokens for shares without selling for cash.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2023/03/20230317_Grayscale.jpg"
-  },
-  {
-   "id": "9861bafb7e",
-   "title": "Bybit will look for big broker partnerships to take on Robinhood in the U.S.",
-   "link": "https://www.coindesk.com/business/2026/10/16/bybit-will-look-for-big-broker-partnerships-to-take-on-robinhood-in-the-u-s",
-   "source": "CoinDesk",
-   "published": "2026-10-21T15:09:22+00:00",
-   "summary": "When it comes to the U.S., Bybit will look to work with with someone like Interactive Brokers (IB), for example, said CEO Ben Zhou.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/0c8a0c389c4df381e479498f22f5b4aaf46b6e1e-5184x2916.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "29e38c8a40",
-   "title": "Crypto Long & Short: Why real-world assets need fixed-rate loans onchain",
-   "link": "https://www.coindesk.com/coindesk-indices/2026/10/21/crypto-long-and-short-why-real-world-assets-need-fixed-rate-loans-onchain",
-   "source": "CoinDesk",
-   "published": "2026-10-21T15:00:53+00:00",
-   "summary": "Real-world assets already back the largest stablecoins, yet borrowing against them onchain still runs through variable-rate pools. Peter Gaffney of O2O Capital Partners explains why fixed-rate, fixed-term lending is the missing piece, and…",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/2d7168e1ad119fe6bd69df2bdbad13b8b4d86c7e-7000x4500.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "88d224dd9c",
-   "title": "Anza’s Alpenglow goes live on Solana, cutting finality to 150 milliseconds",
-   "link": "https://www.theblock.co/news/ecosystems/2026-10-21-anzas-alpenglow-goes-live-on-solana-cutting-finality-to-150-milliseconds-421508",
-   "source": "The Block",
-   "published": "2026-10-21T14:24:39+00:00",
-   "summary": "Solana activated Alpenglow, replacing TowerBFT and cutting transaction finality from 12.8 seconds to about 150 milliseconds.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-21-at-10.33.23.png"
-  },
-  {
-   "id": "4ca445dc8f",
-   "title": "Solana Alpenglow Goes Live in 'Most Ambitious' Upgrade Since Ethereum's Merge",
-   "link": "https://decrypt.co/381484/solana-alpenglow-goes-live-in-most-ambitious-upgrade-since-ethereums-merge",
-   "source": "Decrypt",
-   "published": "2026-10-21T14:24:25+00:00",
-   "summary": "The new consensus protocol retires TowerBFT, which had run Solana since its 2020 launch, after a handoff on the live network.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/solana-decrypt-style-01-gID_7.png"
-  },
-  {
-   "id": "a8edd3ad0d",
-   "title": "Solana’s Alpenglow launches on mainnet, targets 99% faster finality",
-   "link": "https://cointelegraph.com/news/solanas-alpenglow-launches-mainnet-99-faster-finality?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-21T13:57:14+00:00",
-   "summary": "Solana’s first major consensus upgrade is targeting 99% finality reduction, seeking to offer users near-immediate transaction settlement and more responsive applications.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5F9M5QVFXDEA42YHSF756WB/hi-despite-the-markets-being-down-the-blockchain-industry-is-still-thriving-solana.jpg"
   }
  ]
 }

@@ -568,7 +568,7 @@
    "market": "crypto",
    "side": "SELL",
    "entry": 5.01e-06,
-   "sl": 5.07241755244553e-06,
+   "sl": 5.01e-06,
    "tp1": 4.9475824475544706e-06,
    "tp2": 4.88516489510894e-06,
    "score": 21,
@@ -586,14 +586,15 @@
    },
    "opened": "2026-10-22T10:12:18+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   },
   {
    "coin": "POL",
    "market": "crypto",
    "side": "SELL",
    "entry": 0.0914,
-   "sl": 0.09268449016833999,
+   "sl": 0.0914,
    "tp1": 0.09011550983166,
    "tp2": 0.08883101966332,
    "score": 22,
@@ -611,7 +612,8 @@
    },
    "opened": "2026-10-22T10:12:18+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   }
  ],
  "history": [
@@ -1698,5 +1700,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-22T15:18:23+00:00"
+ "updated": "2026-10-22T19:16:09+00:00"
 }
