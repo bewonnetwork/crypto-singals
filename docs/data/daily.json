@@ -620,7 +620,7 @@
    "market": "forex",
    "side": "BUY",
    "entry": 1.3389389514923096,
-   "sl": 1.3374469396588844,
+   "sl": 1.3389389514923096,
    "tp1": 1.3404309633257347,
    "tp2": 1.3419229751591597,
    "score": 77,
@@ -636,8 +636,11 @@
    },
    "opened": "2026-10-21T08:49:44+00:00",
    "status": "open",
-   "also_bot": false
-  },
+   "also_bot": false,
+   "tp1_hit": true
+  }
+ ],
+ "history": [
   {
    "coin": "AUDUSD",
    "market": "forex",
@@ -649,20 +652,12 @@
    "score": 75,
    "agree": 4,
    "n": 5,
-   "src": {
-    "tv1h": 0.558,
-    "tv4h": 0.491,
-    "tv1d": 0.198,
-    "engine": 0.974,
-    "rsi": 68.2,
-    "mom": 0.056
-   },
    "opened": "2026-10-21T08:49:44+00:00",
-   "status": "open",
-   "also_bot": false
-  }
- ],
- "history": [
+   "status": "SL",
+   "also_bot": false,
+   "closed": "2026-10-22T05:13:09+00:00",
+   "exit": 0.702049970626831
+  },
   {
    "coin": "PEPE",
    "market": "crypto",
@@ -1671,7 +1666,7 @@
  "stats": {
   "tp1": 24,
   "tp2": 11,
-  "sl": 22,
+  "sl": 23,
   "expired": 0
  },
  "sources": [
@@ -1693,5 +1688,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-21T22:00:50+00:00"
+ "updated": "2026-10-22T05:13:09+00:00"
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T00:29:29+00:00",
+ "updated": "2026-10-22T05:12:27+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,51 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "3c701d497a",
+   "title": "Bitcoin ETFs attract $1.08 billion in 3 days but it may not be enough for a steep rally",
+   "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally",
+   "source": "CoinDesk",
+   "published": "2026-10-22T04:41:59+00:00",
+   "summary": "Past steep rallies ran on about $235 million a day of net inflows into ETFs. The funds are yet to match that pace, according to data analyzed by CoinDesk.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/e0742713d55788f217ee9802b43c2a1cf22f5434-1600x900.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "d5e88e15de",
+   "title": "XRP Ledger bug fix moved to November after validator support dipped for two hours",
+   "link": "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours",
+   "source": "CoinDesk",
+   "published": "2026-10-22T04:36:20+00:00",
+   "summary": "The fix lost its two-week countdown less than two days from the finish after support slipped to 26 of 35 validators. It’s now back at 31.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/b1652fc6b3b74f0a93f6349c9b655b6a575d3cf5-1260x840.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "fd6fffa663",
+   "title": "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
+   "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves",
+   "source": "CoinDesk",
+   "published": "2026-10-22T03:51:34+00:00",
+   "summary": "BTC broke through its $84,000 ceiling late Wednesday, then slid back to the $82,500 support analysts are watching as tech futures fell.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/68305194f847e3aa29c580f21b6d32ae104f745f-1520x854.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "9285b8dd04",
+   "title": "OCC waiver rule puts active stablecoin issuers on notice",
+   "link": "https://cryptoslate.com/occ-waiver-rule-puts-active-stablecoin-issuers-on-notice/",
+   "source": "CryptoSlate",
+   "published": "2026-10-22T03:20:53+00:00",
+   "summary": "Existing US issuers awaiting OCC approval need discretionary relief to keep issuing from Jan. 18, 2027; filing alone is insufficient. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-regulatory-deadline.webp"
+  },
+  {
+   "id": "8d8e5b14c2",
+   "title": "PHP Foundation admits ‘structural failure’ delayed critical security fix",
+   "link": "https://cointelegraph.com/news/php-foundation-admits-structural-failure-delayed-critical-security-fix?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-22T00:44:00+00:00",
+   "summary": "Government websites and online services were disrupted after concerns about a PHP bug that could allow attackers to take control of vulnerable servers.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5GGTJWWHWMY5DQNPCZCMGFG/hi-what-is-dns-hijacking-2.jpg"
+  },
   {
    "id": "32c5c64650",
    "title": "Aerodrome and Velodrome merge to launch Aero across seven blockchain networks",
@@ -360,15 +405,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5F9M5QVFXDEA42YHSF756WB/hi-despite-the-markets-being-down-the-blockchain-industry-is-still-thriving-solana.jpg"
   },
   {
-   "id": "515c0c5229",
-   "title": "Crypto rallies point to slower USDC growth and faster USDT growth, study finds",
-   "link": "https://cryptoslate.com/usdc-and-usdt-growth-challenge-bitcoins-dry-powder-signal/",
-   "source": "CryptoSlate",
-   "published": "2026-10-21T13:50:28+00:00",
-   "summary": "Coin Metrics finds opposite relationships with prior non-stablecoin crypto returns, complicating the case that combined issuance measures fresh Bitcoin demand. Read the full story on CryptoSlate Understand the crypto stories that matter…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-crossroads-bitcoin-demand.webp"
-  },
-  {
    "id": "78a2912e26",
    "title": "Big Tech’s eMudhra fixes may leave crypto bots exposed, CertiK warns",
    "link": "https://cointelegraph.com/news/certik-warning-crypto-emudhra-flaw-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -691,42 +727,6 @@
    "published": "2026-10-21T04:35:52+00:00",
    "summary": "Alpenglow will replace the voting system Solana has used since 2020, targeting roughly 150-millisecond finality after months of testing that included a failed migration and rollback.",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/2e14ef9e0ece47068da06c0d0405ba1e13c15bd8-3904x2196.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "b4d2c86f8c",
-   "title": "A company that vouches for websites had secret keys so weak that 8 of them were cracked",
-   "link": "https://www.coindesk.com/tech/2026/10/21/a-company-that-vouches-for-websites-had-secret-keys-so-weak-that-8-of-them-were-cracked",
-   "source": "CoinDesk",
-   "published": "2026-10-21T04:11:58+00:00",
-   "summary": "Eight secret keys at eMudhra, an Indian firm that vouches for websites, were compromised. This is a generic, not crypto-specific, risk.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/0f8965ca6a6c0e14d1a3edfca16d04dcc3b2aefc-1500x1125.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "784012b44b",
-   "title": "Bitcoin hovers around $83,000 as AI earnings revive tech, ZEC jumps 11%",
-   "link": "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11",
-   "source": "CoinDesk",
-   "published": "2026-10-21T04:07:07+00:00",
-   "summary": "Strong results from SpaceX and Super Micro sent Asian chip stocks surging, and ZEC led crypto higher after developers set a date for its next network upgrade.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/f99e27db3acfaece32acc8d6b0dccd0e12b0fa46-1502x838.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "058b83e6d0",
-   "title": "MoonPay, Upbit parent Dunamu explore collaboration on stablecoin payments, GIWA expansion",
-   "link": "https://www.theblock.co/news/business/2026-10-20-moonpay-upbit-dunamu-421476",
-   "source": "The Block",
-   "published": "2026-10-21T02:30:08+00:00",
-   "summary": "The companies also plan to explore ways to broaden global access to Dunamu's Ethereum Layer 2, GIWA chain.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/moonpay_dunamu_stablecoins_1920x1080.jpg"
-  },
-  {
-   "id": "1fe3177b03",
-   "title": "Musk says SpaceX-Tesla merger a ‘good idea’ as AI revenue jumps ninefold",
-   "link": "https://cointelegraph.com/markets/musk-says-spacex-tesla-merger-a-good-idea-as-ai-revenue-jumps-ninefold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-21T01:19:14+00:00",
-   "summary": "A merger would bring Tesla into the same corporate group as Grok developer SpaceXAI and social media platform X.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5E0JNAWGS0RJBJ6F6WV37FG/spacex.jpg"
   }
  ]
 }
