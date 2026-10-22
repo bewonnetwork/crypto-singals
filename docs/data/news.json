@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T22:00:21+00:00",
+ "updated": "2026-10-22T00:29:29+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,42 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "32c5c64650",
+   "title": "Aerodrome and Velodrome merge to launch Aero across seven blockchain networks",
+   "link": "https://www.theblock.co/news/defi/2026-10-21-aerodrome-velodrome-merge-aero-421514",
+   "source": "The Block",
+   "published": "2026-10-22T00:00:00+00:00",
+   "summary": "Aerodrome and Velodrome have merged to launch Aero across Ethereum mainnet, Base, Robinhood Chain, Ink, OP Mainnet, Arc, and Arbitrum.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-21-at-11.05.40.png"
+  },
+  {
+   "id": "b754647dd8",
+   "title": "Irish drug lord’s lost Bitcoin fortune comes back to life as $41 million moves to Coinbase",
+   "link": "https://cryptoslate.com/irish-drug-lords-lost-bitcoin-fortune-comes-back-to-life-as-41-million-moves-to-coinbase/",
+   "source": "CryptoSlate",
+   "published": "2026-10-21T23:10:19+00:00",
+   "summary": "The net receipt reached an address Arkham labels a Coinbase Prime deposit, a destination also used in July and August. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-dormant-wallet-transfer.webp"
+  },
+  {
+   "id": "7fb3194bd5",
+   "title": "Why earning XRP yield through this wallet could actually cost you money",
+   "link": "https://cryptoslate.com/xaman-xrp-yield-fees/",
+   "source": "CryptoSlate",
+   "published": "2026-10-21T22:00:04+00:00",
+   "summary": "Xaman’s hypothetical return example puts fee recovery near 15 months for 100 XRP, while current vault terms differ. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-flare-withdrawal-delay.webp"
+  },
+  {
+   "id": "bbdcbe54f7",
+   "title": "American Bankers Association: OCC’s GENIUS rules ‘undermine’ US Congress",
+   "link": "https://cointelegraph.com/news/american-bankers-association-occ-genius-rules-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-21T21:53:48+00:00",
+   "summary": "Banking advocacy organizations are pushing back against the OCC’s finalized rules on a stablecoin law, arguing against changes to provisions on yield.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5G2G8DNS83ZJANR3X4SZBVD/policymaker-bill-us-genius-act-1.jpg"
+  },
   {
    "id": "ed0e670205",
    "title": "Ken Griffin Says AI Is 'Almost Certainly' in a Bubble—And Compares GPUs to Airline Seats",
@@ -360,15 +396,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/grand-theft-auto-vi-gta-vi-gta-6-decrypt-style-gID_7.jpg"
   },
   {
-   "id": "ed3b881ff0",
-   "title": "Stablecoins moved $891 billion in a quarter after exchanges and bots were excluded",
-   "link": "https://cryptoslate.com/stablecoins-moved-891-billion-in-q3-after-exchanges-and-bots-were-excluded/",
-   "source": "CryptoSlate",
-   "published": "2026-10-21T12:50:35+00:00",
-   "summary": "Coinbase-commissioned research measures filtered transfers, while its separate after-hours statistic covers a different period and includes automation. Read the full story on CryptoSlate Understand the crypto stories that matter and what…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-global-money-rails.webp"
-  },
-  {
    "id": "8bcff04751",
    "title": "Standard Chartered signs definitive agreements to acquire Zodia Custody",
    "link": "https://www.theblock.co/news/business/2026-10-21-standard-chartered-signs-definitive-agreements-to-acquire-zodia-custody-421535",
@@ -457,15 +484,6 @@
    "published": "2026-10-21T11:52:23+00:00",
    "summary": "The rule sets reserve, redemption and risk standards for issuers, but the OCC has yet to say when it will begin accepting applications.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/OCC-gID_7.jpg"
-  },
-  {
-   "id": "19b6c9f4d3",
-   "title": "Lido’s proposed exits would pay lenders with borrower collateral",
-   "link": "https://cryptoslate.com/lidos-proposed-exits-could-unwind-eth-loans-before-borrowers-reach-liquidation/",
-   "source": "CryptoSlate",
-   "published": "2026-10-21T11:50:55+00:00",
-   "summary": "Fallback Exits would reduce debt alongside collateral, while healthy-position eligibility and the lender’s route to ETH remain unsettled. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/lido-collateral-waterfall-risk.webp"
   },
   {
    "id": "78d211d5c2",
@@ -709,24 +727,6 @@
    "published": "2026-10-21T01:19:14+00:00",
    "summary": "A merger would bring Tesla into the same corporate group as Grok developer SpaceXAI and social media platform X.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5E0JNAWGS0RJBJ6F6WV37FG/spacex.jpg"
-  },
-  {
-   "id": "0672766aef",
-   "title": "Qubic restarts blockchain, opens recovery claims after $1.4M hack",
-   "link": "https://cointelegraph.com/news/qubic-restarts-blockchain-opens-recovery-claims-after-14m-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-20T23:26:02+00:00",
-   "summary": "The network’s validators approved a recovery plan and opened claims until May 1, 2027.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5DSAH36P14HYENYBM6CHPAW/blockchain-network.jpg"
-  },
-  {
-   "id": "2efbdf1b77",
-   "title": "People Are Vibe Coding the Ads Out of Their Smart TVs: Here's How",
-   "link": "https://decrypt.co/381456/vibe-coding-ads-out-smart-tvs-heres-how",
-   "source": "Decrypt",
-   "published": "2026-10-20T22:16:04+00:00",
-   "summary": "A viral Claude Code prompt lets Android TV owners switch off sponsored rows and tracking software and build their own home screens, with no root access and every change reversible.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/Cozy-Living-Room-TV-Interface-gID_7.png"
   }
  ]
 }
