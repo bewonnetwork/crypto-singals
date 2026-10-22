@@ -1,6 +1,31 @@
 {
  "posts": [
   {
+   "slug": "why-keep-a-trading-journal",
+   "type": "learn",
+   "date": "2026-10-22T10:11:22+00:00",
+   "title": "Why Keep a Trading Journal",
+   "title_bn": "ট্রেডিং খাতা কেন রাখবেন",
+   "sum_en": "Writing down every trade is the fastest way to find your own mistakes. Here is what to record.",
+   "sum_bn": "প্রতিটা ট্রেড লিখে রাখা নিজের ভুল ধরার সবচেয়ে দ্রুত উপায়। কী কী লিখবেন দেখুন।",
+   "body": {
+    "pts_bn": [
+     "লিখুন: কয়েন, দিক, Entry, Stop Loss, Target, কেন নিলেন, ফলাফল।",
+     "ট্রেডের সময় কেমন লাগছিল সেটাও লিখুন (ভয়, লোভ, রাগ)। আবেগের ট্রেড সহজে ধরা পড়ে।",
+     "সপ্তাহে একবার পড়ুন: কোন ধরনের ট্রেডে বেশি হারছেন?",
+     "২০–৩০টা ট্রেডের পর বুঝবেন আপনার নিয়ম আসলে কাজ করে কিনা।",
+     "সাইটের ডেমো পাতায় প্রতিটা ডেমো ট্রেডের ইতিহাস নিজে থেকে জমা হয়।"
+    ],
+    "pts_en": [
+     "Record: coin, direction, entry, stop-loss, target, why you took it, and the result.",
+     "Also write how you felt (fear, greed, anger). Emotional trades become easy to spot.",
+     "Read it once a week: which kind of trade loses most?",
+     "After 20–30 trades you will know whether your rules really work.",
+     "The demo page on our site keeps a history of every demo trade for you."
+    ]
+   }
+  },
+  {
    "slug": "crypto-market-digest-october-22-2026",
    "type": "digest",
    "date": "2026-10-22T05:12:15+00:00",
@@ -6356,31 +6381,6 @@
    }
   },
   {
-   "slug": "why-keep-a-trading-journal",
-   "type": "learn",
-   "date": "2026-10-12T09:13:05+00:00",
-   "title": "Why Keep a Trading Journal",
-   "title_bn": "ট্রেডিং খাতা কেন রাখবেন",
-   "sum_en": "Writing down every trade is the fastest way to find your own mistakes. Here is what to record.",
-   "sum_bn": "প্রতিটা ট্রেড লিখে রাখা নিজের ভুল ধরার সবচেয়ে দ্রুত উপায়। কী কী লিখবেন দেখুন।",
-   "body": {
-    "pts_bn": [
-     "লিখুন: কয়েন, দিক, Entry, Stop Loss, Target, কেন নিলেন, ফলাফল।",
-     "ট্রেডের সময় কেমন লাগছিল সেটাও লিখুন (ভয়, লোভ, রাগ)। আবেগের ট্রেড সহজে ধরা পড়ে।",
-     "সপ্তাহে একবার পড়ুন: কোন ধরনের ট্রেডে বেশি হারছেন?",
-     "২০–৩০টা ট্রেডের পর বুঝবেন আপনার নিয়ম আসলে কাজ করে কিনা।",
-     "সাইটের ডেমো পাতায় প্রতিটা ডেমো ট্রেডের ইতিহাস নিজে থেকে জমা হয়।"
-    ],
-    "pts_en": [
-     "Record: coin, direction, entry, stop-loss, target, why you took it, and the result.",
-     "Also write how you felt (fear, greed, anger). Emotional trades become easy to spot.",
-     "Read it once a week: which kind of trade loses most?",
-     "After 20–30 trades you will know whether your rules really work.",
-     "The demo page on our site keeps a history of every demo trade for you."
-    ]
-   }
-  },
-  {
    "slug": "crypto-market-digest-october-12-2026",
    "type": "digest",
    "date": "2026-10-12T02:05:09+00:00",
@@ -10214,5 +10214,5 @@
    }
   }
  ],
- "updated": "2026-10-22T05:12:15+00:00"
+ "updated": "2026-10-22T10:11:22+00:00"
 }
