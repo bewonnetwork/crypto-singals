@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T00:50:05+00:00",
+ "updated": "2026-10-23T05:46:00+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -9,13 +9,130 @@
  ],
  "items": [
   {
+   "id": "78f7a83e38",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-23T05:15:14+00:00",
+   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+  },
+  {
+   "id": "c5185165ba",
+   "title": "Ethereum delays Glamsterdam Hoodi testnet launch over security risks",
+   "link": "https://cointelegraph.com/news/ethereum-delays-glamsterdam-testnet-fork-gas-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-23T05:09:41+00:00",
+   "summary": "ChainSecurity said it identified 13 real-world examples of smart contracts potentially affected by Glamsterdam’s gas changes and is coordinating responsible disclosure with affected projects.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5KJ9Q2Z3SXSHTQY0NFK4Z54/security-ethereum-testnet.png"
+  },
+  {
+   "id": "3d07d9299c",
+   "title": "Polymarket has reportedly fired its marketing chief, also a close friend of the CEO",
+   "link": "https://www.coindesk.com/markets/2026/10/23/polymarket-has-reportedly-fired-its-marketing-chief-also-a-close-friend-of-the-ceo",
+   "source": "CoinDesk",
+   "published": "2026-10-23T05:01:19+00:00",
+   "summary": "Matthew Modabber was reportedly ousted after an internal probe of several instances of misconduct, according to the New York Post.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/8244f5db1e6b709627e3a0daa0d726294d50e8c1-8390x5593.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "0c6b347c28",
+   "title": "Ethereum delays Glamsterdam test after security devs flag risk to existing contracts",
+   "link": "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts",
+   "source": "CoinDesk",
+   "published": "2026-10-23T04:59:34+00:00",
+   "summary": "Developers canceled Monday's Hoodi activation after researchers showed how new gas rules could let smart contracts permanently record failed operations.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/c357579ddef2051b405b9e89f8525dd02709081d-5760x3240.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "b2305d0125",
+   "title": "Cardano holders are being asked to bet $5 million on copper hitting a new record",
+   "link": "https://www.coindesk.com/markets/2026/10/23/cardano-holders-are-being-asked-to-bet-usd5-million-on-copper-hitting-a-new-record",
+   "source": "CoinDesk",
+   "published": "2026-10-23T04:36:51+00:00",
+   "summary": "Toto Finance wants 22 million ADA from Cardano’s treasury to buy tokenized copper, and the metal would have to trade well above its all-time high for holders to get their money back.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/d015970fe04575c3819700e01e757b872ee9ad32-1500x1000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "dbfdabdaa6",
+   "title": "Bitcoin Core changes security policy as AI makes bugs easier to find",
+   "link": "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-23T04:34:14+00:00",
+   "summary": "Bitcoin Core says keeping certain vulnerabilities secret no longer offers much protection in the wake of AI-assisted bug hunting.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5KGJ7H1P06HPDXG7J0T2HX1/bitcoin-bug.jpg"
+  },
+  {
+   "id": "6b2615f539",
+   "title": "NEAR proposal slashes yield by 36%, dividing network validators",
+   "link": "https://cryptoslate.com/near-proposal-slashes-yield-by-36-dividing-network-validators/",
+   "source": "CryptoSlate",
+   "published": "2026-10-23T04:10:18+00:00",
+   "summary": "HSP-029 would gradually cut the annual issuance cap by 36%, while tokens bought and held or staked remain in total supply. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/near-token-supply-cut.webp"
+  },
+  {
+   "id": "3985a0ff2d",
+   "title": "HSBC rolls out its first HKD stablecoin RedCoin to retail users",
+   "link": "https://www.theblock.co/news/business/2026-10-23-hsbc-hkd-stablecoin-redcoin-424018",
+   "source": "The Block",
+   "published": "2026-10-23T04:03:09+00:00",
+   "summary": "PayMe users will be able to activate a stablecoin wallet in-app in the coming days for peer-to-peer and peer-to-merchant payments.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/hsbc-redcoin.png"
+  },
+  {
+   "id": "9509342cff",
+   "title": "Bitcoin, gold trim early losses as yen gives up gains. Oil stays near $100",
+   "link": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100",
+   "source": "CoinDesk",
+   "published": "2026-10-23T03:13:01+00:00",
+   "summary": "Bitcoin and gold pared early losses as the yen gave up gains and Asian stocks rebounded, though oil near $100 keeps inflation risks in focus.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/d45f74af3bf643e7376c8cc581b322b4ae39f779-2220x1267.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "fc6f2a8ec1",
+   "title": "Chainlink partners with LG CNS to drive Korean won stablecoin expansion",
+   "link": "https://www.theblock.co/news/business/2026-10-22-chainlink-partners-with-lg-cns-423993",
+   "source": "The Block",
+   "published": "2026-10-23T02:48:13+00:00",
+   "summary": "LG CNS is set to integrate Chainlink's cross-chain, data, and orchestration infrastructure into its digital asset platform.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/chainlink_lgcns_won_stablecoin_1920x1080.jpg"
+  },
+  {
+   "id": "a43578bf60",
+   "title": "Bitcoin slides below $81,500 as tech stock sell-off spreads to Asian equities",
+   "link": "https://www.theblock.co/news/markets/2026-10-22-bitcoin-slides-tech-stock-sell-off-423990",
+   "source": "The Block",
+   "published": "2026-10-23T02:21:30+00:00",
+   "summary": "The Wall Street sell-off extended to Asian equities on Friday morning, with South Korea's Kospi down 2.3% and Japan's Nikkei 225 down 1.6%.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/bitcoin-market.png"
+  },
+  {
+   "id": "832764f3de",
+   "title": "a16z drops crypto branding, expands $2.2B fund into AI and frontier tech",
+   "link": "https://cryptoslate.com/a16z-reportedly-pivots-2-2b-fund-but-hides-its-next-play/",
+   "source": "CryptoSlate",
+   "published": "2026-10-23T01:50:52+00:00",
+   "summary": "The Information’s unconfirmed report follows a16z crypto’s $2.2 billion fifth fund announcement on May 5, 2026. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/a16z-crypto-label-shift.webp"
+  },
+  {
+   "id": "70eb756166",
+   "title": "Switzerland approves first spot Bitcoin ETF for retail investors",
+   "link": "https://cointelegraph.com/news/switzerland-approves-first-spot-bitcoin-etf-for-retail-investors?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-23T00:59:35+00:00",
+   "summary": "BIT Asset Management’s Bitcoin Fund ETF is expected to begin trading on SIX Swiss Exchange in November, with its public offering restricted to Switzerland.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5K495GNDHMTE3BPW7ZKE90T/bitcoin-etf-6.jpg"
+  },
+  {
    "id": "e0926398e3",
    "title": "Ethereum’s long-awaited Glamsterdam upgrade hits another roadblock as 13 security risks emerge",
    "link": "https://cryptoslate.com/ethereums-long-awaited-glamsterdam-upgrade-hits-another-roadblock-as-13-security-risks-emerge/",
    "source": "CryptoSlate",
    "published": "2026-10-23T00:40:37+00:00",
    "summary": "Ethereum developers have postponed the Glamsterdam upgrade on a major test network after identifying potential security risks affecting existing smart contracts. The Ethereum Foundation confirmed on Oct. 22 that the upgrade, scheduled for…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-glamsterdam-hoodi-delay-standard.jpg"
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/glamsterdam-security-cover-fixed-2.webp"
   },
   {
    "id": "fa11a91627",
@@ -115,15 +232,6 @@
    "published": "2026-10-22T20:20:13+00:00",
    "summary": "The platform urged all users to replace stored credentials, while @tayvano_ separately alleged roughly $371,000 in cryptocurrency theft. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/railway-crypto-risk-allegation.webp"
-  },
-  {
-   "id": "78f7a83e38",
-   "title": "Here’s what happened in crypto today",
-   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-22T20:09:59+00:00",
-   "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
   },
   {
    "id": "5a99052bd4",
@@ -306,15 +414,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/citi-decrypt-style-gID_7.jpg"
   },
   {
-   "id": "bc35bb7d29",
-   "title": "Robinhood generates $51 million in blockchain fees while Ethereum settlement costs total just $69,000",
-   "link": "https://cryptoslate.com/robinhood-generates-51-million-in-blockchain-fees-while-ethereum-settlement-costs-total-just-69000/",
-   "source": "CryptoSlate",
-   "published": "2026-10-22T15:00:14+00:00",
-   "summary": "Bitwise’s Q3 estimates put most fees with the operator before business expenses, while ARB and ETH offer different economic exposures. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/layer-two-fee-divide.webp"
-  },
-  {
    "id": "7bef755b21",
    "title": "Crypto for Advisors: Stablecoins are ready for prime time",
    "link": "https://www.coindesk.com/coindesk-indices/2026/10/22/crypto-for-advisors-stablecoins-are-ready-for-prime-time",
@@ -358,15 +457,6 @@
    "published": "2026-10-22T14:03:40+00:00",
    "summary": "Coinbase Ireland fined $3.6 million for safeguarding breaches that left customer funds underfunded and mixed with group accounts.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/06/20260612_Coinbase_News.jpg"
-  },
-  {
-   "id": "f5600cf58b",
-   "title": "A Midnight privacy-vault demo needs outside signers to release Ethereum tokens",
-   "link": "https://cryptoslate.com/a-midnight-privacy-vault-demo-needs-outside-signers-to-release-ethereum-tokens/",
-   "source": "CryptoSlate",
-   "published": "2026-10-22T14:00:42+00:00",
-   "summary": "SIG’s Ethereum example burns a shielded claim before payout, while restoring it after failure requires an attested outcome. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/midnight-shielded-claim-redemption.webp"
   },
   {
    "id": "652af9ea5c",
@@ -637,96 +727,6 @@
    "published": "2026-10-22T05:35:38+00:00",
    "summary": "“Plenty will be ponzis. Plenty will get exploited. Plenty will insta die. There will be ridiculous gains, and people will get absolutely f***ing rinsed,” says Illuvium co-founder Kieran Warwick.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5H1AQMX8R4G54PG9X27A71M/crypto-meme-games.jpg"
-  },
-  {
-   "id": "0d41d71b76",
-   "title": "Solana’s biggest network change since 2020 is live. Here’s how users benefit",
-   "link": "https://www.coindesk.com/tech/2026/10/22/solana-completes-alpenglow-upgrade-here-s-what-it-means-for-users",
-   "source": "CoinDesk",
-   "published": "2026-10-22T05:24:58+00:00",
-   "summary": "The new voting system targets settlement in about 150 milliseconds, potentially shortening waits for payments and deposits. Users can keep their existing wallets.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/54c0f3b41e62df4cdf774aab4c7d68c64e5e976c-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "3c701d497a",
-   "title": "Bitcoin ETFs attract $1.08 billion in 3 days but it may not be enough for a steep rally",
-   "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally",
-   "source": "CoinDesk",
-   "published": "2026-10-22T04:41:59+00:00",
-   "summary": "Past steep rallies ran on about $235 million a day of net inflows into ETFs. The funds are yet to match that pace, according to data analyzed by CoinDesk.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/e0742713d55788f217ee9802b43c2a1cf22f5434-1600x900.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "d5e88e15de",
-   "title": "XRP Ledger bug fix moved to November after validator support dipped for two hours",
-   "link": "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours",
-   "source": "CoinDesk",
-   "published": "2026-10-22T04:36:20+00:00",
-   "summary": "The fix lost its two-week countdown less than two days from the finish after support slipped to 26 of 35 validators. It’s now back at 31.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/b1652fc6b3b74f0a93f6349c9b655b6a575d3cf5-1260x840.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "fd6fffa663",
-   "title": "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
-   "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves",
-   "source": "CoinDesk",
-   "published": "2026-10-22T03:51:34+00:00",
-   "summary": "BTC broke through its $84,000 ceiling late Wednesday, then slid back to the $82,500 support analysts are watching as tech futures fell.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/68305194f847e3aa29c580f21b6d32ae104f745f-1520x854.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "8d8e5b14c2",
-   "title": "PHP Foundation admits ‘structural failure’ delayed critical security fix",
-   "link": "https://cointelegraph.com/news/php-foundation-admits-structural-failure-delayed-critical-security-fix?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-22T00:44:00+00:00",
-   "summary": "Government websites and online services were disrupted after concerns about a PHP bug that could allow attackers to take control of vulnerable servers.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5GGTJWWHWMY5DQNPCZCMGFG/hi-what-is-dns-hijacking-2.jpg"
-  },
-  {
-   "id": "32c5c64650",
-   "title": "Aerodrome and Velodrome merge to launch Aero across seven blockchain networks",
-   "link": "https://www.theblock.co/news/defi/2026-10-21-aerodrome-velodrome-merge-aero-421514",
-   "source": "The Block",
-   "published": "2026-10-22T00:00:00+00:00",
-   "summary": "Aerodrome and Velodrome have merged to launch Aero across Ethereum mainnet, Base, Robinhood Chain, Ink, OP Mainnet, Arc, and Arbitrum.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/10/Screenshot-2026-10-21-at-11.05.40.png"
-  },
-  {
-   "id": "bbdcbe54f7",
-   "title": "American Bankers Association: OCC’s GENIUS rules ‘undermine’ US Congress",
-   "link": "https://cointelegraph.com/news/american-bankers-association-occ-genius-rules-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-21T21:53:48+00:00",
-   "summary": "Banking advocacy organizations are pushing back against the OCC’s finalized rules on a stablecoin law, arguing against changes to provisions on yield.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5G2G8DNS83ZJANR3X4SZBVD/policymaker-bill-us-genius-act-1.jpg"
-  },
-  {
-   "id": "ed0e670205",
-   "title": "Ken Griffin Says AI Is 'Almost Certainly' in a Bubble—And Compares GPUs to Airline Seats",
-   "link": "https://decrypt.co/381578/ken-griffin-ai-bubble-gpus-airline-seats",
-   "source": "Decrypt",
-   "published": "2026-10-21T21:31:02+00:00",
-   "summary": "Citadel's founder says investors are almost certainly in an AI bubble, warns a chip glut could crash prices like empty airline seats, yet expects the survivors to lead for decades.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/02/stocks-gID_7.jpg"
-  },
-  {
-   "id": "112c4fd0da",
-   "title": "Tether backs Bolivian fintech bringing USDT payments to food delivery and banking",
-   "link": "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-21T20:26:07+00:00",
-   "summary": "The investment will support Peso’s expansion across four Latin American markets, where it connects stablecoin payments to merchant services and local banking networks.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5FY16RXJTWFR0B5DJ896X4P/hi-from-ban-to-adoption-the-evolution-of-crypto-policy-in-bolivia-2.png"
-  },
-  {
-   "id": "e064bafb57",
-   "title": "Trump didn‘t mention ‘crypto’ once in White House cybercrime roundtable",
-   "link": "https://cointelegraph.com/news/white-house-cybercrime-roundtable-donald-trump-crypto-ventures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-21T20:19:39+00:00",
-   "summary": "The US President detailed many schemes defrauding Americans, but referred only to “cybercurrency“ related to scams.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5FRT1YGJA9DDV40WJKXE0EP/trump-white-house-crypto.jpg"
   }
  ]
 }
