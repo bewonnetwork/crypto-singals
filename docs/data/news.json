@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T15:25:53+00:00",
+ "updated": "2026-10-23T19:27:59+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,150 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "9e5704d505",
+   "title": "SpaceX perpetual futures traded about $6 billion after earnings",
+   "link": "https://cryptoslate.com/spacex-perpetual-futures-traded-about-6-billion-after-earnings/",
+   "source": "CryptoSlate",
+   "published": "2026-10-23T19:10:43+00:00",
+   "summary": "Talos’s combined Binance and Hyperliquid turnover figure rose sharply while Binance’s dollar exposure contracted; actual retained fees remain unquantified. Read the full story on CryptoSlate Understand the crypto stories that matter and…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/spacex-perpetual-market-divergence.webp"
+  },
+  {
+   "id": "6582a52a88",
+   "title": "SEC Flags AI 'Super Intelligence' and Tokenization as Systemic Market Risks",
+   "link": "https://decrypt.co/381745/sec-ai-super-intelligence-tokenization-2027-exam-list",
+   "source": "Decrypt",
+   "published": "2026-10-23T18:54:55+00:00",
+   "summary": "The regulator's Division of Examinations named \"super intelligence and other advanced technologies\" as a focus area alongside tokenization risks.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/12/SEC2-gID_7.jpg"
+  },
+  {
+   "id": "be8dc7c465",
+   "title": "Initia halts blockchain after exploit reportedly drains over $2.6M",
+   "link": "https://cointelegraph.com/news/initia-halts-blockchain-exploit-drained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-23T18:39:02+00:00",
+   "summary": "The blockchain suspended its layer-1 network and rollups after security researchers identified unauthorized token minting and millions in assets transferred to Ethereum.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5MZKF3C8AJPVBYK5JQWCAWW/hi-got-crypto-losses-wallet.png"
+  },
+  {
+   "id": "bc1f7dc5af",
+   "title": "Netanyahu seeking blockchain plan to prepare for possible sanctions",
+   "link": "https://www.theblock.co/news/markets/2026-10-23-netanyahu-israel-blockchain-plan-possible-sanctions-427792",
+   "source": "The Block",
+   "published": "2026-10-23T18:15:55+00:00",
+   "summary": "Netanyahu says blockchain could help Israel prepare for possible sanctions targeting its banking system.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/05/20200501_Israel_Ecosystem_Map-Genesis.jpg"
+  },
+  {
+   "id": "4742010de0",
+   "title": "Bitcoin ETFs shed $635 million as BTC tests their holdings’ estimated $81,500 cost basis",
+   "link": "https://cryptoslate.com/bitcoin-etf-outflows-holdings-cost-basis/",
+   "source": "CryptoSlate",
+   "published": "2026-10-23T18:10:49+00:00",
+   "summary": "US spot Bitcoin exchange-traded funds recorded about $635 million in net outflows Thursday as the cryptocurrency traded near the estimated cost basis of the funds' Bitcoin holdings. The Oct. 22 withdrawals were the largest daily outflow…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-etf-liquidity-drain.webp"
+  },
+  {
+   "id": "5832b32da0",
+   "title": "How I Vibe Coded My Smart TV—And Claude Killed It",
+   "link": "https://decrypt.co/381717/how-vibe-coded-my-smart-tv-claude-killed-it",
+   "source": "Decrypt",
+   "published": "2026-10-23T17:53:29+00:00",
+   "summary": "Vibe coding your TV is impressive. Doing it without knowing exactly what you're touching is how you lose a rooted LG set and get a very sincere apology from an AI.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/photo-collage.png-1-gID_7.png"
+  },
+  {
+   "id": "71bfdddaa9",
+   "title": "Sen. Blumenthal seeks answers from Tether over payments to firm founded by ex-White House crypto adviser",
+   "link": "https://www.theblock.co/news/regulation/2026-10-23-sen-blumenthal-seeks-answers-tether-payments-firm-founded-ex-white-house-crypto-adviser-427785",
+   "source": "The Block",
+   "published": "2026-10-23T17:46:09+00:00",
+   "summary": "Sen. Blumenthal said he wants answers from Tether following reports that it paid millions to a firm started by a former WH crypto adviser.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/02/image-d3d3f946-f84d-4ec0-af8e-b8e8f8da2cab-4.jpg"
+  },
+  {
+   "id": "cbf06de646",
+   "title": "US senator probes Tether after reported deal with ex-Trump crypto adviser",
+   "link": "https://cointelegraph.com/news/us-senator-probe-bo-hines-trump-crypto-adviser-tether-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-23T17:42:12+00:00",
+   "summary": "The Democratic ranking member of the Senate Permanent Subcommittee on Investigations asked Paolo Ardoino for records related to a reported deal between Tether and Nxum.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5MWKYVWPGFNQZJ4EMBSGH91/hi-probe-crypto-senator.jpg"
+  },
+  {
+   "id": "f73b2927aa",
+   "title": "Bitcoin Core Rewrites Its Security Policy for a World Where AI Finds Bugs in One Prompt",
+   "link": "https://decrypt.co/381715/bitcoin-core-security-policy-ai-threats",
+   "source": "Decrypt",
+   "published": "2026-10-23T17:16:03+00:00",
+   "summary": "Developers will now backport fixes and cut releases immediately for flaws flagged as “easily discoverable,” abandoning long embargoes for bugs an attacker can surface with a single AI prompt.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/bitcoin-decrypt-style-screen-gID_7.png"
+  },
+  {
+   "id": "0aa73d1c1f",
+   "title": "Coinbase to drop this Japanese yen stablecoin years after its price crash sparked investor lawsuits",
+   "link": "https://cryptoslate.com/coinbase-to-drop-this-japanese-yen-stablecoin-years-after-its-price-crash-sparked-investor-lawsuits/",
+   "source": "CryptoSlate",
+   "published": "2026-10-23T17:10:05+00:00",
+   "summary": "Holders who want to avoid market-rate conversion must withdraw before Monday, ahead of GMO Trust’s Nov. 11 initial direct-redemption deadline. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-gyen-usdc-transition.webp"
+  },
+  {
+   "id": "72007269a3",
+   "title": "Initia halts network after security incident as attacker reportedly mints tokens",
+   "link": "https://www.theblock.co/news/defi/2026-10-23-initia-halts-network-after-security-incident-attacker-reportedly-mints-tokens-427755",
+   "source": "The Block",
+   "published": "2026-10-23T17:03:56+00:00",
+   "summary": "Onchain data shows a $2.7 million ether transfer as Initia investigates the scope of a security incident.",
+   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2024/02/Banner_02.png"
+  },
+  {
+   "id": "f817242524",
+   "title": "Crypto Scammers Who Used Prayer Groups to Lure Victims Must Pay $1.3 Billion, Says New York",
+   "link": "https://decrypt.co/381708/crypto-scammers-prayer-groups-lure-victims-must-pay-1-3-billion-new-york",
+   "source": "Decrypt",
+   "published": "2026-10-23T16:31:03+00:00",
+   "summary": "New York’s attorney general asked a court to order NovaTech’s founders, who fled the country, to pay about $1.37 billion, and settled with four top promoters for nearly $6 million.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Judge-gID_7.png"
+  },
+  {
+   "id": "517ebfa9a6",
+   "title": "SEC flags tokenization as high-risk area in 2027 market examinations",
+   "link": "https://cointelegraph.com/news/sec-adds-tokenized-securities-to-2027-examination-priorities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-23T16:08:40+00:00",
+   "summary": "The SEC’s latest priorities highlight tokenization as an emerging market risk, while cryptocurrencies remain absent as a standalone examination category.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5MP9HHR5PTKGP6MBRZ5FNFH/hi-irs-joins-the-j5-international-crypto-tax-enforcement-coming-next1.png"
+  },
+  {
+   "id": "a3d3e14c5b",
+   "title": "Bitcoin ETFs Bleed $636 Million as October Turns Red Again",
+   "link": "https://decrypt.co/381700/bitcoin-etfs-bleed-october-turns-red-again",
+   "source": "Decrypt",
+   "published": "2026-10-23T15:50:41+00:00",
+   "summary": "Spot Bitcoin ETFs lost $635.6 million on Thursday, their biggest outflow of the month, pushing October flows back to a loss of about $176 million as Ethereum and Solana funds also bled.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/Bitcoin-decrypt-style-27-gID_7.jpg"
+  },
+  {
+   "id": "b7665203c0",
+   "title": "Evernorth’s $132 million funding option could buy more XRP while reducing XRP per share",
+   "link": "https://cryptoslate.com/evernorths-132-million-funding-option-could-buy-more-xrp-while-reducing-xrp-per-share/",
+   "source": "CryptoSlate",
+   "published": "2026-10-23T15:50:06+00:00",
+   "summary": "A conditional model puts the XRP allocation hurdle near 70%, while actual accretion depends on ownership, exercises and purchases. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/evernorth-xrp-allocation-cover.webp"
+  },
+  {
+   "id": "4b55931913",
+   "title": "Bitcoin seeks support above $81K as Brent crude oil hits highest level since March",
+   "link": "https://cointelegraph.com/markets/bitcoin-seeks-support-above-81k-as-brent-crude-oil-hits-highest-level-since-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-23T15:39:17+00:00",
+   "summary": "Bitcoin dipped below $81,000 as stocks fell and Brent crude hit its highest level since March, leaving the 50-day moving average in focus.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5MPBY5231GNMGE2Q9V1FYVN/hi-crypto-offers-russia-no-way-out-from-western-sanctions2-1.jpg"
+  },
   {
    "id": "d86cbae159",
    "title": "What Is an Agentic Activities Launchpad? Inside AX1 Console 2.0",
@@ -270,15 +414,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5M0F2CE9T8P48F2FE5V5FKF/bybit-uae-license-dubai.jpg"
   },
   {
-   "id": "ff4d42ee5b",
-   "title": "Bitcoin’s usual lifeline is failing as a bond market warning puts $80,000 at risk",
-   "link": "https://cryptoslate.com/bitcoins-usual-lifeline-is-failing-as-a-bond-market-warning-puts-80000-at-risk/",
-   "source": "CryptoSlate",
-   "published": "2026-10-23T09:30:45+00:00",
-   "summary": "Bitcoin briefly lost the $81,000 footing on Oct. 22, while the Nasdaq lost more than 2%, spot gold dropped about 2.7% to $4,025, and silver sank about 5.8% to near $54.63. The 10-year Treasury yield fell from 5.146% to below 5%, marking…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/investor-market-pressure.webp"
-  },
-  {
    "id": "9b60193c0c",
    "title": "Sweden’s central bank revives e-krona debate as stablecoins and digital euro loom",
    "link": "https://www.coindesk.com/business/2026/10/23/sweden-s-central-bank-revives-e-krona-debate-as-stablecoins-and-digital-euro-loom",
@@ -306,15 +441,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5KWVDV4958J4HW5KZ8FCECW/hsbc-redcoin-stablecoin.png"
   },
   {
-   "id": "196b65b070",
-   "title": "Memecoin investor Murad confirms $81 million roundtrip on gains, says he’s eyeing billions",
-   "link": "https://cryptoslate.com/memecoin-investor-murad-confirms-81-million-roundtrip-on-gains-says-hes-eyeing-billions/",
-   "source": "CryptoSlate",
-   "published": "2026-10-23T08:10:13+00:00",
-   "summary": "The resurfaced TOKEN2049 exchange captures his belief that the wallets will eventually reach billions despite the reported paper drawdown. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/murad-contemplating-paper-gains.webp"
-  },
-  {
    "id": "42e91d293a",
    "title": "India's largest exchange denies hack after sleuths pointed to $16 million in suspicious outflows",
    "link": "https://www.coindesk.com/markets/2026/10/23/india-s-largest-exchange-denies-hack-after-blockchain-sleuths-pointed-to-usd16-million-in-suspicious-outflows",
@@ -340,15 +466,6 @@
    "published": "2026-10-23T07:09:39+00:00",
    "summary": "Thursday’s withdrawals ended a three-day inflow streak and left US spot Bitcoin ETFs with $175 million in net outflows for October.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5KQ8H85QR2DC93BFCNF4N1X/hi-what-is-a-bitcoin-node-a-beginners-guide-on-blockchain-nodes-etf3-2.jpg"
-  },
-  {
-   "id": "f97ced73b7",
-   "title": "Old wallet addresses trap CoinDCX users, triggering potential losses",
-   "link": "https://cryptoslate.com/old-wallet-addresses-trap-coindcx-users-triggering-massive-losses/",
-   "source": "CryptoSlate",
-   "published": "2026-10-23T06:30:31+00:00",
-   "summary": "The exchange says a failed deposit-sweeping process caused losses it absorbed, while ZachXBT's $15.8 million allegation remains unreconciled. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/coindcx-loss-accounting-dispute.webp"
   },
   {
    "id": "c5185165ba",
@@ -394,15 +511,6 @@
    "published": "2026-10-23T04:34:14+00:00",
    "summary": "Bitcoin Core says keeping certain vulnerabilities secret no longer offers much protection in the wake of AI-assisted bug hunting.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5KGJ7H1P06HPDXG7J0T2HX1/bitcoin-bug.jpg"
-  },
-  {
-   "id": "6b2615f539",
-   "title": "NEAR proposal slashes yield by 36%, dividing network validators",
-   "link": "https://cryptoslate.com/near-proposal-slashes-yield-by-36-dividing-network-validators/",
-   "source": "CryptoSlate",
-   "published": "2026-10-23T04:10:18+00:00",
-   "summary": "HSP-029 would gradually cut the annual issuance cap by 36%, while tokens bought and held or staked remain in total supply. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/near-token-supply-cut.webp"
   },
   {
    "id": "3985a0ff2d",
@@ -619,114 +727,6 @@
    "published": "2026-10-22T16:48:00+00:00",
    "summary": "According to the Central Bank of Ireland, Coinbase Ireland had agreed with the facts around the enforcement action and will be subject to fines and sanctions upon approval by a high court.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5J5AK9VV0TKNV4DMR09TVT7/hi-what-is-a-coinbase-transaction-ireland.jpg"
-  },
-  {
-   "id": "4d50f0cf14",
-   "title": "Bitcoin ETFs Erase October Losses With $1 Billion in Three Days",
-   "link": "https://decrypt.co/381611/bitcoin-etfs-erase-october-losses-1-billion-three-days",
-   "source": "Decrypt",
-   "published": "2026-10-22T16:31:07+00:00",
-   "summary": "Spot Bitcoin ETFs have drawn about $1.07 billion over three sessions, pushing October flows to a gain of roughly $460 million, even as Bitcoin and Ethereum prices slipped.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/bitcoin-dollar-decrypt-style-gID_7.jpg"
-  },
-  {
-   "id": "cc17c0565d",
-   "title": "Bitcoin circles $81.5K ETF cost basis as Trump Iran comments send stocks lower",
-   "link": "https://cointelegraph.com/markets/bitcoin-circles-815k-etf-cost-basis-as-trump-iran-comments-send-stocks-lower?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-22T16:20:35+00:00",
-   "summary": "Bitcoin extended daily losses to 3% as US stocks came under pressure from President Donald Trump’s comments on Iran military action.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5J5JG3Z7RPMDP2E8S5Q398C/analytics-red-trump-960x640.webp"
-  },
-  {
-   "id": "d612120212",
-   "title": "What Is a Neocloud? The GPU Clouds Powering the AI Boom",
-   "link": "https://decrypt.co/resources/what-is-a-neocloud-the-gpu-clouds-powering-the-ai-boom",
-   "source": "Decrypt",
-   "published": "2026-10-22T15:45:07+00:00",
-   "summary": "Neoclouds like CoreWeave and Nebius rent Nvidia GPUs to AI labs, and several started out mining crypto. Here's how the AI cloud model works.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/05/ai-prompt-injection-learn-gID_1-pID_2.png"
-  },
-  {
-   "id": "14a1af7a83",
-   "title": "Irish central bank fines Coinbase Ireland $3.6 million over fund safeguarding failures",
-   "link": "https://www.coindesk.com/policy/2026/10/22/irish-central-bank-fines-coinbase-ireland-usd3-6-million-over-fund-safeguarding-failures",
-   "source": "CoinDesk",
-   "published": "2026-10-22T15:40:25+00:00",
-   "summary": "When Silvergate was on the verge of collapse in 2023, Coinbase instructed 30 customers to deposit funds into an alternate account held by Coinbase at another U.S. bank.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/868ae20c7c05b3aab1825f55f45b74a9484fd851-1920x1280.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "145271a1a6",
-   "title": "Major Banks Find Rogue AI Agents Inside Customer Accounts—And They’re 'Horrified'",
-   "link": "https://decrypt.co/381602/banks-rogue-ai-agents-inside-customer-accounts",
-   "source": "Decrypt",
-   "published": "2026-10-22T15:24:18+00:00",
-   "summary": "Major banks including Morgan Stanley, JPMorgan, Bank of America, and Citi are moving to restrict third-party AI agents that log in with customers’ credentials.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/10/citi-decrypt-style-gID_7.jpg"
-  },
-  {
-   "id": "7bef755b21",
-   "title": "Crypto for Advisors: Stablecoins are ready for prime time",
-   "link": "https://www.coindesk.com/coindesk-indices/2026/10/22/crypto-for-advisors-stablecoins-are-ready-for-prime-time",
-   "source": "CoinDesk",
-   "published": "2026-10-22T14:58:31+00:00",
-   "summary": "",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/262d7f344b93e8caa3b475afeda247c8ef340958-1920x1080.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "a0dbe03c2f",
-   "title": "Fireblocks disputes report of $2.5B Visa acquisition talks",
-   "link": "https://cointelegraph.com/news/fireblocks-disputes-report-of-25b-visa-acquisition-talks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-22T14:41:00+00:00",
-   "summary": "Fireblocks told Cointelegraph that reports of a potential $2.5 billion acquisition by Visa are “not true at present time,” while Visa declined to comment on the reported talks.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5J0A93M8W14V9Z0MG6RYGGR/fishes-shark-dolphin-new.png"
-  },
-  {
-   "id": "a0bdfbdfc5",
-   "title": "Crypto custody specialist Fireblocks denies it's in talks to be acquired by Visa",
-   "link": "https://www.coindesk.com/business/2026/10/22/crypto-custody-specialist-fireblocks-denies-its-in-talks-to-be-acquired-by-visa",
-   "source": "CoinDesk",
-   "published": "2026-10-22T14:37:12+00:00",
-   "summary": "The company is in talks with Visa over a potential $2.5 billion acquisition, Axios reported.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/e1c5ad64ecc191986642a138abca262584dd0195-1500x844.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "4f57a48809",
-   "title": "Trade Where You Read: Decrypt Brings Jupiter-Powered Trading to The Information Exchange",
-   "link": "https://decrypt.co/381593/trade-where-you-read-decrypt-brings-jupiter-powered-trading-to-the-information-exchange",
-   "source": "Decrypt",
-   "published": "2026-10-22T14:04:48+00:00",
-   "summary": "Decrypt is building a destination where readers can discover, understand and trade the news, directly where they consume information.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/information-exchange-jupiter-gID_7.png"
-  },
-  {
-   "id": "d0f0cb99bd",
-   "title": "Coinbase Ireland fined $3.6 million over customer fund segregation, oversight failures",
-   "link": "https://www.theblock.co/news/regulation/2026-10-22-coinbase-ireland-fined-3-6-million-over-customer-fund-segregation-oversight-failures-421943",
-   "source": "The Block",
-   "published": "2026-10-22T14:03:40+00:00",
-   "summary": "Coinbase Ireland fined $3.6 million for safeguarding breaches that left customer funds underfunded and mixed with group accounts.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2026/06/20260612_Coinbase_News.jpg"
-  },
-  {
-   "id": "652af9ea5c",
-   "title": "Uniswap’s aggregator hooks go live on Ethereum, Base and Robinhood Chain",
-   "link": "https://www.theblock.co/news/defi/2026-10-22-uniswaps-aggregator-hooks-go-live-ethereum-base-robinhood-chain-421932",
-   "source": "The Block",
-   "published": "2026-10-22T13:55:03+00:00",
-   "summary": "Uniswap Labs has launched aggregator hooks, allowing Uniswap v4 to route trades through liquidity held on external platforms.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2021/03/20210323_Uniswap_V3.jpg"
-  },
-  {
-   "id": "393443975c",
-   "title": "CryptoQuant CEO calls rising Bitcoin hashrate ‘indirect bullish signal’ from institutions",
-   "link": "https://cointelegraph.com/markets/cryptoquant-rising-bitcoin-hashrate-indirect-bullish-signal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "source": "Cointelegraph",
-   "published": "2026-10-22T13:42:34+00:00",
-   "summary": "Public miners backed by major TradFi players are coming back online, boosting Bitcoin’s hashrate, a positive sign for BTC’s fundamentals, according to CryptoQuant’s Ki Young Ju.",
-   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5HTMN9GYAR5H2ZXAEB803XX/hi-bitcoin-mining-difficulty-explained-how-it-affects-profitability-1.jpg"
   }
  ]
 }

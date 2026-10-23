@@ -639,56 +639,6 @@
  },
  "open": [
   {
-   "coin": "OP",
-   "market": "crypto",
-   "side": "SELL",
-   "entry": 0.1182,
-   "sl": 0.1182,
-   "tp1": 0.11605893565343667,
-   "tp2": 0.11391787130687335,
-   "score": 21,
-   "agree": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.467,
-    "tv4h": -0.558,
-    "tv1d": -0.312,
-    "engine": -0.931,
-    "rsi": 34.6,
-    "mom": -0.73,
-    "lsr": 1.77,
-    "crowd": -0.384
-   },
-   "opened": "2026-10-23T10:34:03+00:00",
-   "status": "open",
-   "also_bot": false,
-   "tp1_hit": true
-  },
-  {
-   "coin": "XAUUSD",
-   "market": "forex",
-   "side": "SELL",
-   "entry": 4038.10009765625,
-   "sl": 4038.10009765625,
-   "tp1": 4013.3328638006064,
-   "tp2": 3988.565629944963,
-   "score": 24,
-   "agree": 5,
-   "n": 5,
-   "src": {
-    "tv1h": -0.424,
-    "tv4h": -0.445,
-    "tv1d": -0.558,
-    "engine": -0.802,
-    "rsi": 43.2,
-    "mom": -0.246
-   },
-   "opened": "2026-10-23T10:34:03+00:00",
-   "status": "open",
-   "also_bot": false,
-   "tp1_hit": true
-  },
-  {
    "coin": "EURJPY",
    "market": "forex",
    "side": "SELL",
@@ -713,6 +663,42 @@
   }
  ],
  "history": [
+  {
+   "coin": "XAUUSD",
+   "market": "forex",
+   "side": "SELL",
+   "entry": 4038.10009765625,
+   "sl": 4038.10009765625,
+   "tp1": 4013.3328638006064,
+   "tp2": 3988.565629944963,
+   "score": 24,
+   "agree": 5,
+   "n": 5,
+   "opened": "2026-10-23T10:34:03+00:00",
+   "status": "TP1",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-23T19:28:35+00:00",
+   "exit": 4012.0
+  },
+  {
+   "coin": "OP",
+   "market": "crypto",
+   "side": "SELL",
+   "entry": 0.1182,
+   "sl": 0.1182,
+   "tp1": 0.11605893565343667,
+   "tp2": 0.11391787130687335,
+   "score": 21,
+   "agree": 6,
+   "n": 6,
+   "opened": "2026-10-23T10:34:03+00:00",
+   "status": "TP1",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-23T19:28:35+00:00",
+   "exit": 0.1182
+  },
   {
    "coin": "HBAR",
    "market": "crypto",
@@ -1733,46 +1719,10 @@
    "tp1_hit": true,
    "closed": "2026-10-12T19:04:44+00:00",
    "exit": 1.115946888923645
-  },
-  {
-   "coin": "USDCHF",
-   "market": "forex",
-   "side": "BUY",
-   "entry": 0.8323100209236145,
-   "sl": 0.8323100209236145,
-   "tp1": 0.8334842076466301,
-   "tp2": 0.8346583943696457,
-   "score": 76,
-   "agree": 4,
-   "n": 5,
-   "opened": "2026-10-12T09:14:17+00:00",
-   "status": "TP2",
-   "also_bot": false,
-   "tp1_hit": true,
-   "closed": "2026-10-12T19:04:43+00:00",
-   "exit": 0.8348199725151062
-  },
-  {
-   "coin": "SHIB",
-   "market": "crypto",
-   "side": "SELL",
-   "entry": 5.46e-06,
-   "sl": 5.46e-06,
-   "tp1": 5.397207019471322e-06,
-   "tp2": 5.334414038942644e-06,
-   "score": 38,
-   "agree": 4,
-   "n": 6,
-   "opened": "2026-10-12T09:14:17+00:00",
-   "status": "TP2",
-   "also_bot": false,
-   "tp1_hit": true,
-   "closed": "2026-10-12T19:04:43+00:00",
-   "exit": 5.34e-06
   }
  ],
  "stats": {
-  "tp1": 29,
+  "tp1": 31,
   "tp2": 11,
   "sl": 27,
   "expired": 0
@@ -1796,5 +1746,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-23T15:26:40+00:00"
+ "updated": "2026-10-23T19:28:35+00:00"
 }
