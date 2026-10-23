@@ -43,7 +43,7 @@
   "ZEC"
  ],
  "stats": {
-  "win": 11,
+  "win": 13,
   "loss": 15,
   "tp2": 8,
   "expired": 0
@@ -54,10 +54,10 @@
    "coin": "AVAX",
    "side": "SELL",
    "entry": 9.217,
-   "sl": 9.340803655939439,
+   "sl": 9.217,
    "tp1": 9.093196344060562,
    "tp2": 8.969392688121124,
-   "tp1_hit": false,
+   "tp1_hit": true,
    "opened": "2026-10-23T09:00:00+00:00",
    "rsi": 44.1,
    "conf": 84,
@@ -81,10 +81,10 @@
    "coin": "ONDO",
    "side": "SELL",
    "entry": 0.4345,
-   "sl": 0.44128252498678244,
+   "sl": 0.4345,
    "tp1": 0.42771747501321755,
    "tp2": 0.42093495002643505,
-   "tp1_hit": false,
+   "tp1_hit": true,
    "opened": "2026-10-23T09:00:00+00:00",
    "rsi": 45.6,
    "conf": 79,
@@ -99,6 +99,60 @@
    ],
    "market": "crypto",
    "name": "ONDO",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  },
+  {
+   "coin": "TAO",
+   "side": "SELL",
+   "entry": 259.8,
+   "sl": 264.0582362770915,
+   "tp1": 255.54176372290854,
+   "tp2": 251.28352744581707,
+   "tp1_hit": false,
+   "opened": "2026-10-23T14:00:00+00:00",
+   "rsi": 44.6,
+   "conf": 87,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "Moderate trend (ADX 22)",
+    "Volume 3.1× the average",
+    "RSI 45 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "TAO",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  },
+  {
+   "coin": "FET",
+   "side": "SELL",
+   "entry": 0.1869,
+   "sl": 0.19053427776999943,
+   "tp1": 0.1832657222300006,
+   "tp2": 0.1796314444600012,
+   "tp1_hit": false,
+   "opened": "2026-10-23T14:00:00+00:00",
+   "rsi": 47.6,
+   "conf": 78,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "⚠ Weak trend (ADX 19)",
+    "Volume 2.5× the average",
+    "RSI 48 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "FET",
    "src": null,
    "chk": null,
    "note": null,
@@ -1089,61 +1143,61 @@
   ],
   "quotes": {
    "EURUSD": {
-    "price": 1.12032,
-    "ch": -0.18,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 1.12057,
+    "ch": 0.04,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "GBPUSD": {
-    "price": 1.33804,
-    "ch": -0.11,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 1.33847,
+    "ch": 0.16,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "USDJPY": {
-    "price": 156.627,
-    "ch": -0.11,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 156.77901,
+    "ch": -0.3,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "XAUUSD": {
-    "price": 4038.1001,
-    "ch": -1.49,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 4014.3999,
+    "ch": -1.41,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "AUDUSD": {
-    "price": 0.702,
-    "ch": 0.02,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 0.70328,
+    "ch": 0.27,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "USDCAD": {
-    "price": 1.40007,
-    "ch": -0.14,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 1.3979,
+    "ch": -0.39,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "USDCHF": {
-    "price": 0.82223,
-    "ch": 0.22,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 0.82441,
+    "ch": 0.11,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "NZDUSD": {
-    "price": 0.56876,
-    "ch": 0.01,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 0.57013,
+    "ch": 0.48,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "EURJPY": {
-    "price": 175.41299,
-    "ch": -0.3,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 175.66,
+    "ch": -0.24,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "GBPJPY": {
-    "price": 209.563,
-    "ch": -0.22,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 209.85201,
+    "ch": -0.14,
+    "time": "2026-10-23T14:00:00+00:00"
    },
    "XAGUSD": {
-    "price": 53.91,
-    "ch": -3.65,
-    "time": "2026-10-23T09:00:00+00:00"
+    "price": 54.01,
+    "ch": -2.32,
+    "time": "2026-10-23T14:00:00+00:00"
    }
   }
  },
- "updated": "2026-10-23T10:34:03+00:00"
+ "updated": "2026-10-23T15:26:40+00:00"
 }

@@ -1,6 +1,154 @@
 {
  "posts": [
   {
+   "slug": "trending-in-crypto-october-23-2026",
+   "type": "trending",
+   "date": "2026-10-23T15:25:50+00:00",
+   "title": "Trending in Crypto — October 23, 2026",
+   "sum_en": "The coins getting the most attention today — most searched and volume leaders.",
+   "sum_bn": "আজ যেসব কয়েন সবচেয়ে বেশি খোঁজা হচ্ছে (UHI, DACITY, PEARL…) আর যেগুলোতে লেনদেন সবচেয়ে বেশি।",
+   "body": {
+    "hot": [
+     {
+      "sym": "UHI",
+      "name": "Universal High Income",
+      "rank": 617,
+      "price": 0.03417553243366163,
+      "ch": 37.49
+     },
+     {
+      "sym": "DACITY",
+      "name": "Dacity Coin",
+      "rank": 851,
+      "price": 0.019170747374704845,
+      "ch": 129.34
+     },
+     {
+      "sym": "PEARL",
+      "name": "Pearl",
+      "rank": 90,
+      "price": 1.9847373139255575,
+      "ch": -4.82
+     },
+     {
+      "sym": "QTC",
+      "name": "Quantus",
+      "rank": 716,
+      "price": 87.43841286430555,
+      "ch": 0.05
+     },
+     {
+      "sym": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 111,
+      "price": 0.008031298263079021,
+      "ch": 4.0
+     },
+     {
+      "sym": "IRYS",
+      "name": "Irys",
+      "rank": 272,
+      "price": 0.0500494523896174,
+      "ch": 139.85
+     },
+     {
+      "sym": "XMR",
+      "name": "Monero",
+      "rank": 13,
+      "price": 605.0832940457541,
+      "ch": -1.61
+     },
+     {
+      "sym": "PEPE",
+      "name": "Pepe",
+      "rank": 51,
+      "price": 4.8657060073576175e-06,
+      "ch": 10.12
+     },
+     {
+      "sym": "NEAR",
+      "name": "NEAR Protocol",
+      "rank": 19,
+      "price": 4.8617103268616155,
+      "ch": -1.92
+     },
+     {
+      "sym": "AERO",
+      "name": "Aerodrome Finance",
+      "rank": 98,
+      "price": 0.7440347478474773,
+      "ch": -7.7
+     }
+    ],
+    "volume": [
+     {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "price": 81470,
+      "ch": -0.18,
+      "vol": 24724649613,
+      "rank": 1
+     },
+     {
+      "sym": "ETH",
+      "name": "Ethereum",
+      "price": 2400.58,
+      "ch": -0.01,
+      "vol": 11662446295,
+      "rank": 2
+     },
+     {
+      "sym": "SOL",
+      "name": "Solana",
+      "price": 104.33,
+      "ch": -0.28,
+      "vol": 2153251500,
+      "rank": 7
+     },
+     {
+      "sym": "XRP",
+      "name": "XRP",
+      "price": 1.31,
+      "ch": -1.04,
+      "vol": 1409996032,
+      "rank": 5
+     },
+     {
+      "sym": "BNB",
+      "name": "BNB",
+      "price": 747.52,
+      "ch": 2.17,
+      "vol": 825527859,
+      "rank": 4
+     },
+     {
+      "sym": "ZEC",
+      "name": "Zcash",
+      "price": 1227.72,
+      "ch": -0.55,
+      "vol": 823583994,
+      "rank": 10
+     },
+     {
+      "sym": "HYPE",
+      "name": "Hyperliquid",
+      "price": 78.09,
+      "ch": 0.39,
+      "vol": 750110821,
+      "rank": 11
+     },
+     {
+      "sym": "PEPE",
+      "name": "Pepe",
+      "price": 4.85e-06,
+      "ch": 9.54,
+      "vol": 644503725,
+      "rank": 51
+     }
+    ]
+   }
+  },
+  {
    "slug": "what-is-a-stop-loss",
    "type": "learn",
    "date": "2026-10-23T10:33:09+00:00",
@@ -10827,5 +10975,5 @@
    }
   }
  ],
- "updated": "2026-10-23T10:33:09+00:00"
+ "updated": "2026-10-23T15:25:50+00:00"
 }
