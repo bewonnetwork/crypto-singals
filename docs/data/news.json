@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T22:22:34+00:00",
+ "updated": "2026-10-23T00:50:05+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,69 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "e0926398e3",
+   "title": "Ethereum’s long-awaited Glamsterdam upgrade hits another roadblock as 13 security risks emerge",
+   "link": "https://cryptoslate.com/ethereums-long-awaited-glamsterdam-upgrade-hits-another-roadblock-as-13-security-risks-emerge/",
+   "source": "CryptoSlate",
+   "published": "2026-10-23T00:40:37+00:00",
+   "summary": "Ethereum developers have postponed the Glamsterdam upgrade on a major test network after identifying potential security risks affecting existing smart contracts. The Ethereum Foundation confirmed on Oct. 22 that the upgrade, scheduled for…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-glamsterdam-hoodi-delay-standard.jpg"
+  },
+  {
+   "id": "fa11a91627",
+   "title": "Pentagon bans US forces from using military info to bet in prediction markets",
+   "link": "https://cointelegraph.com/news/pentagon-bans-us-forces-from-using-military-info-to-bet-in-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-22T23:50:42+00:00",
+   "summary": "Hegseth warned that prediction market wagers could expose military operations to adversaries.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5K096NQSA2F50PNPGJYG3Z7/soldier.jpg"
+  },
+  {
+   "id": "f02859ceac",
+   "title": "XRPL recovers from network slowdown as critical security upgrade faces two-week delay",
+   "link": "https://cryptoslate.com/xrpl-recovers-from-network-slowdown-as-critical-security-upgrade-faces-two-week-delay/",
+   "source": "CryptoSlate",
+   "published": "2026-10-22T23:40:48+00:00",
+   "summary": "The XRP Ledger (XRPL) has recovered from intermittent transaction-processing delays, although developers are still preparing a permanent software correction. On Oct. 22, XRP Ledger Operations confirmed that ledger-closing times had…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/xrpl-ledger-upgrade-setback.webp"
+  },
+  {
+   "id": "742463a1cb",
+   "title": "New DeepSeek ban in US, Swiss-Asia crypto ties deepen: Asia Express",
+   "link": "https://cointelegraph.com/magazine/new-deepseek-ban-in-us-swiss-asia-crypto-ties-deepen-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "source": "Cointelegraph",
+   "published": "2026-10-22T22:50:22+00:00",
+   "summary": "DeepSeek banned from US federal civilian agencies over spying fears. Singapore firm behind Europe’s only spot Bitcoin ETF, as Switzerland partners with Vietnam on crypto tech.",
+   "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5JV90GX9YTTQQZEH3XNN8PG/asia-express-1.jpg"
+  },
+  {
+   "id": "b5a1bf48bf",
+   "title": "Senate's top Democratic investigator looking into Tether payments to Bo Hines' firm",
+   "link": "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm",
+   "source": "CoinDesk",
+   "published": "2026-10-22T22:43:36+00:00",
+   "summary": "Senator Richard Blumenthal, the ranking Democrat on the investigations subcommittee, added a probe of the ex-White House crypto adviser to his list of crypto interests.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/99dc294f833b46c672b0cdc7f4decad2cdcd8126-4030x2267.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "068271f64f",
+   "title": "Bitcoin ETFs sold through 7 of 8 crashes even as Wall Street makes BTC selloffs less violent",
+   "link": "https://cryptoslate.com/bitcoin-etfs-sold-through-7-of-8-crashes-even-as-wall-street-makes-btc-selloffs-less-violent/",
+   "source": "CryptoSlate",
+   "published": "2026-10-22T22:30:38+00:00",
+   "summary": "Bitcoin ETFs recorded outflows during seven of eight major selloffs, challenging expectations that Wall Street investors would support prices during downturns. A new DWF Labs report shared with CryptoSlate found that US spot Bitcoin…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-wallstreet-outflows.webp"
+  },
+  {
+   "id": "67be6289f2",
+   "title": "Is the Internet Safe Again After the PHP Nightmare? What You Need to Know",
+   "link": "https://decrypt.co/381662/internet-safe-again-after-php-nightmare-what-you-need-know",
+   "source": "Decrypt",
+   "published": "2026-10-22T22:21:46+00:00",
+   "summary": "PHP shipped its fix, attackers launched millions of attempts, and governments say no one has broken in yet. Here's what that means for your passwords, your crypto, and your browsing.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2026/10/panic-decrypt-style-gID_7.jpg"
+  },
   {
    "id": "c8111d2614",
    "title": "Circle shareholder sues Trump, World Liberty and Steve Witkoff over crypto deals",
@@ -351,15 +414,6 @@
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5HTDR3RG1PRKW22RG4VE5A4/hi-sofi-and-mastercard-move-stablecoin-settlement-into-global-network.jpg"
   },
   {
-   "id": "7325d3f0cf",
-   "title": "Binance moves to exclude disrupted overnight data from stock-futures funding",
-   "link": "https://cryptoslate.com/binance-moves-to-exclude-disrupted-overnight-data-from-stock-futures-funding/",
-   "source": "CryptoSlate",
-   "published": "2026-10-22T13:00:21+00:00",
-   "summary": "The October 21 notice targets inputs to payments between opposing traders, but gives no resulting rates or payment amounts. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-funding-data-review.webp"
-  },
-  {
    "id": "0fa9508b87",
    "title": "Crypto is making a splash in U.S. elections — but chiefly in jabs about industry influence",
    "link": "https://www.coindesk.com/news-analysis/2026/10/21/crypto-is-making-a-splash-in-u-s-elections-but-chiefly-in-jabs-about-industry-influence",
@@ -396,15 +450,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/12/sofi-decrypt-style-gID_7.jpg"
   },
   {
-   "id": "c05757e4a8",
-   "title": "Qubic’s recovery rules require ownership checks even for unstolen funds in vulnerable wallets",
-   "link": "https://cryptoslate.com/qubics-recovery-rules-require-ownership-checks-even-for-unstolen-funds-in-vulnerable-wallets/",
-   "source": "CryptoSlate",
-   "published": "2026-10-22T12:00:24+00:00",
-   "summary": "Listed vulnerable wallets can require evidence beyond a valid signature before holders regain access, even when an attacker took nothing. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next.…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/qubic-ownership-review-barrier.webp"
-  },
-  {
    "id": "1efb64101c",
    "title": "The UK needs a workable route to regulated DeFi access",
    "link": "https://cointelegraph.com/opinion/uk-crypto-rules-regulated-defi-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -439,15 +484,6 @@
    "published": "2026-10-22T11:20:04+00:00",
    "summary": "Your day-ahead look for Oct. 21, 2026",
    "image": "https://cdn.sanity.io/images/s3y3vcno/production/f6e1819745339cda15d7d57fba10abc701690144-3268x1838.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-  },
-  {
-   "id": "d407f706e2",
-   "title": "Solana targets faster finality, while Wall Street cuts the cash that must move",
-   "link": "https://cryptoslate.com/solana-targets-faster-finality-while-wall-street-cuts-the-cash-that-must-move/",
-   "source": "CryptoSlate",
-   "published": "2026-10-22T11:00:54+00:00",
-   "summary": "Solana activated Alpenglow on mainnet on Oct. 21 at slot 459,653,000, replacing TowerBFT with a consensus design that targets about 150 milliseconds to finality. Under the new protocol, confirmed and finalized become the same state. At the…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-netting-barrier.webp"
   },
   {
    "id": "974211f74e",
@@ -691,42 +727,6 @@
    "published": "2026-10-21T20:19:39+00:00",
    "summary": "The US President detailed many schemes defrauding Americans, but referred only to “cybercurrency“ related to scams.",
    "image": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5FRT1YGJA9DDV40WJKXE0EP/trump-white-house-crypto.jpg"
-  },
-  {
-   "id": "a7d8b5a189",
-   "title": "Nvidia Unveils Its Full-Stack Blueprint to Contain and Monitor AI Agents",
-   "link": "https://decrypt.co/381570/nvidia-ai-agent-containment-tools-full-stack-blueprint",
-   "source": "Decrypt",
-   "published": "2026-10-21T20:16:02+00:00",
-   "summary": "Nvidia's OpenShell Reference Architecture pairs a software sandbox on Vera CPUs with Sentry monitoring on BlueField-4 chips, aiming to let companies run autonomous agents while enforcing limits agents cannot reach.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/nvidia-logo-decrypt-style-1-gID_7.png"
-  },
-  {
-   "id": "9db23754b2",
-   "title": "Robinhood single-stock perps could be a ‘strong positive’ for HOOD shares, Mizuho says",
-   "link": "https://www.theblock.co/news/business/2026-10-21-robinhood-single-stock-perpetual-futures-mizuho-survey-421639",
-   "source": "The Block",
-   "published": "2026-10-21T18:54:36+00:00",
-   "summary": "A Mizuho survey of 600+ Robinhood users finds 94% would trade single-stock perpetual futures, mostly with new money.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2025/12/20251208_Robinhood_News_3.jpg"
-  },
-  {
-   "id": "5d0ac586a1",
-   "title": "Who Found the PHP Bug That Made Governments Unplug Their Websites? ChatGPT, Of Course",
-   "link": "https://decrypt.co/381567/who-found-php-bug-governments-unplug-websites-chatgpt",
-   "source": "Decrypt",
-   "published": "2026-10-21T18:46:08+00:00",
-   "summary": "OpenAI says its models found PHP2Shell and led a two-month coalition to fix it. It's the same AI that broke into Hugging Face and an Australian government portal this year.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2022/01/shutterstock_710783008-gID_4.png"
-  },
-  {
-   "id": "db6f564811",
-   "title": "How a SpaceX and Tesla Merger Would Reshape Musk’s AI Empire",
-   "link": "https://decrypt.co/381543/elon-musk-spacex-tesla-merger-ai-empire",
-   "source": "Decrypt",
-   "published": "2026-10-21T18:16:03+00:00",
-   "summary": "Both boards are now studying a tie-up that would put Grok, X, Starlink, orbital data centers, a chip megafactory and Optimus robots under one roof—and under one man's control.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/08/elon-musk-decrypt-style-03-gID_7.jpg"
   }
  ]
 }
