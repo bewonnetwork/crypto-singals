@@ -9,13 +9,13 @@
   "LINK": "2026-10-16T16:00:00+00:00",
   "EURUSD": "2026-10-02T14:00:00+00:00",
   "BTC": "2026-10-19T00:00:00+00:00",
-  "AVAX": "2026-10-11T13:00:00+00:00",
+  "AVAX": "2026-10-23T09:00:00+00:00",
   "AAVE": "2026-10-11T17:00:00+00:00",
   "POL": "2026-10-09T13:00:00+00:00",
   "GBPUSD": "2026-10-22T18:00:00+00:00",
   "NEAR": "2026-10-20T16:00:00+00:00",
   "AUDUSD": "2026-10-22T21:00:00+00:00",
-  "INJ": "2026-10-21T13:00:00+00:00",
+  "INJ": "2026-10-23T09:00:00+00:00",
   "UNI": "2026-10-16T16:00:00+00:00",
   "EURJPY": "2026-10-19T00:00:00+00:00",
   "ARB": "2026-10-19T00:00:00+00:00",
@@ -36,9 +36,63 @@
   "FET": "2026-10-19T22:00:00+00:00",
   "BCH": "2026-10-20T16:00:00+00:00",
   "NZDUSD": "2026-10-21T07:00:00+00:00",
-  "ICP": "2026-10-21T23:00:00+00:00"
+  "ICP": "2026-10-21T23:00:00+00:00",
+  "ONDO": "2026-10-23T09:00:00+00:00"
  },
- "open": [],
+ "open": [
+  {
+   "coin": "AVAX",
+   "side": "SELL",
+   "entry": 9.217,
+   "sl": 9.340803655939439,
+   "tp1": 9.093196344060562,
+   "tp2": 8.969392688121124,
+   "tp1_hit": false,
+   "age": 0,
+   "checked_until": "2026-10-23T09:00:00+00:00",
+   "sl0": 9.340803655939439,
+   "opened": "2026-10-23T09:00:00+00:00",
+   "rsi": 44.1,
+   "conf": 84,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "Strong trend (ADX 27)",
+    "Volume 1.6× the average",
+    "RSI 44 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "AVAX"
+  },
+  {
+   "coin": "ONDO",
+   "side": "SELL",
+   "entry": 0.4345,
+   "sl": 0.44128252498678244,
+   "tp1": 0.42771747501321755,
+   "tp2": 0.42093495002643505,
+   "tp1_hit": false,
+   "age": 0,
+   "checked_until": "2026-10-23T09:00:00+00:00",
+   "sl0": 0.44128252498678244,
+   "opened": "2026-10-23T09:00:00+00:00",
+   "rsi": 45.6,
+   "conf": 79,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "Moderate trend (ADX 22)",
+    "Volume 1.5× the average",
+    "RSI 46 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "ONDO"
+  }
+ ],
  "last_digest": "2026-10-23",
  "stats": {
   "win": 11,
@@ -659,6 +713,20 @@
   }
  ],
  "news_posted": [
+  "https://www.coindesk.com/business/2026/10/23/hsbc-rolls-out-its-first-stablecoin-to-over-3-million-everyday-app-users",
+  "https://cointelegraph.com/news/cysic-exploiter-eth-tornado-cash-white-hat-offer?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://www.theblock.co/news/regulation/2026-10-23-new-york-seeks-over-1-3-billion-from-novatech-founders-after-couple-fled-the-us-424453",
+  "https://www.theblock.co/news/regulation/2026-10-23-south-korea-stablecoins-payment-instruments-424028",
+  "https://cointelegraph.com/news/bybit-first-full-dubai-spot-trading-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/bitcoins-usual-lifeline-is-failing-as-a-bond-market-warning-puts-80000-at-risk/",
+  "https://www.coindesk.com/business/2026/10/23/sweden-s-central-bank-revives-e-krona-debate-as-stablecoins-and-digital-euro-loom",
+  "https://decrypt.co/381666/bitcoin-in-wait-and-see-mode-and-that-might-be-a-good-thing",
+  "https://cointelegraph.com/news/hsbc-launches-redcoin-hong-kong-dollar-stablecoin-payme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/memecoin-investor-murad-confirms-81-million-roundtrip-on-gains-says-hes-eyeing-billions/",
+  "https://www.coindesk.com/markets/2026/10/23/india-s-largest-exchange-denies-hack-after-blockchain-sleuths-pointed-to-usd16-million-in-suspicious-outflows",
+  "https://cointelegraph.com/news/malaysia-thailand-join-singapores-cross-border-stablecoin-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cointelegraph.com/markets/bitcoin-etfs-erase-october-gains-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+  "https://cryptoslate.com/old-wallet-addresses-trap-coindcx-users-triggering-massive-losses/",
   "https://cointelegraph.com/news/ethereum-delays-glamsterdam-testnet-fork-gas-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
   "https://www.coindesk.com/markets/2026/10/23/polymarket-has-reportedly-fired-its-marketing-chief-also-a-close-friend-of-the-ceo",
   "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts",
@@ -1144,78 +1212,64 @@
   "https://cryptoslate.com/xrp-exchange-wallets-added-84-million-tokens-in-three-days-as-price-slipped-toward-1-30/",
   "https://decrypt.co/381077/bitwise-cio-bitcoin-wins-ai-boom-or-bust",
   "https://cryptoslate.com/south-korea-names-two-crypto-firms-in-breach-wave-that-also-hit-major-banks/",
-  "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large",
-  "https://decrypt.co/381068/blackrock-larry-fink-ai-data-center-halt-recession",
-  "https://cryptoslate.com/machi-reopens-eth-long-seven-minutes-after-269000-liquidation-loss/",
-  "https://decrypt.co/381061/google-deepmind-ai-isnt-building-itself-writes-most-code",
-  "https://cryptoslate.com/bitcoins-100000-dream-slips-away-as-939-million-crypto-wipeout-pushes-traders-toward-78000/",
-  "https://cointelegraph.com/news/bo-hines-donald-trump-crypto-advisor-nxum-tether-conflict?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-  "https://cryptoslate.com/trumps-crypto-policy-power-shifts-toward-sec-and-cftc-as-white-house-team-empties/",
-  "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-  "https://decrypt.co/381057/mastercard-bvnk-global-money-platform-fiat-stablecoins",
-  "https://www.theblock.co/news/business/2026-10-15-cleanspark-bitfufu-bitcoin-production-slip-september-canaan-remains-flat-418686",
-  "https://www.theblock.co/news/deals/2026-10-15-multiliquid-tokenized-assets-funding-418693",
-  "https://cryptoslate.com/australia-eyes-a14-million-capital-rule-as-crypto-regulatory-crackdown-deepens/",
-  "https://www.theblock.co/news/markets/2026-10-15-defi-development-chad-dividend-rate-14-418694",
-  "https://cointelegraph.com/news/mastercard-bvnk-global-money-platform-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-  "https://decrypt.co/381044/bitcoin-whipsaws-crypto-liquidations-near-1-billion"
+  "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large"
  ],
  "news_seeded": true,
  "fx_quotes": {
   "EURUSD": {
-   "price": 1.1212,
-   "ch": -0.31,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 1.12032,
+   "ch": -0.18,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "GBPUSD": {
-   "price": 1.33894,
-   "ch": -0.07,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 1.33804,
+   "ch": -0.11,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "USDJPY": {
-   "price": 156.967,
-   "ch": -0.47,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 156.627,
+   "ch": -0.11,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "XAUUSD": {
-   "price": 4018.69995,
-   "ch": -2.16,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 4038.1001,
+   "ch": -1.49,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "AUDUSD": {
-   "price": 0.70087,
-   "ch": -0.17,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 0.702,
+   "ch": 0.02,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "USDCAD": {
-   "price": 1.40122,
-   "ch": -0.13,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 1.40007,
+   "ch": -0.14,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "USDCHF": {
-   "price": 0.82152,
-   "ch": -0.17,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 0.82223,
+   "ch": 0.22,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "NZDUSD": {
-   "price": 0.56922,
-   "ch": 0.02,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 0.56876,
+   "ch": 0.01,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "EURJPY": {
-   "price": 175.944,
-   "ch": -0.78,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 175.41299,
+   "ch": -0.3,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "GBPJPY": {
-   "price": 210.161,
-   "ch": -0.53,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 209.563,
+   "ch": -0.22,
+   "time": "2026-10-23T09:00:00+00:00"
   },
   "XAGUSD": {
-   "price": 53.795,
-   "ch": -4.59,
-   "time": "2026-10-23T04:00:00+00:00"
+   "price": 53.91,
+   "ch": -3.65,
+   "time": "2026-10-23T09:00:00+00:00"
   }
  },
  "vol_last": {
@@ -1306,9 +1360,11 @@
   "2026-10-20": 59.54,
   "2026-10-21": 59.69,
   "2026-10-22": 59.51,
-  "2026-10-23": 59.42
+  "2026-10-23": 59.99
  },
  "feed_posted": [
+  "https://xtsupport.zendesk.com/hc/en-us/articles/63543106184473-Invite-Friends-to-XT-Share-100-000-in-DNA",
+  "https://www.okx.com/en-us/help/okx-to-support-velodrome-crypto-migration",
   "https://blog.kraken.com/product/asset-listings/dna-is-available-for-trading",
   "https://blog.kraken.com/product/asset-listings/nexo-is-available-for-trading",
   "https://www.kucoin.com/announcement/en-announcement-title-kumining-halloween-keep-the-mine-lit-50000-usdt-in-rewards?lang=en_US",
@@ -1509,12 +1565,12 @@
  "feed_seeded": true,
  "insights": {
   "dominance": {
-   "btc": 59.42,
-   "eth": 10.62,
-   "mcap": 2756634681880,
-   "mcap_ch": -3.81,
-   "ch_1d": -0.09,
-   "ch_7d": 0.04,
+   "btc": 59.99,
+   "eth": 10.72,
+   "mcap": 2732143975134,
+   "mcap_ch": -2.81,
+   "ch_1d": 0.48,
+   "ch_7d": 0.61,
    "history": [
     {
      "d": "2026-10-02",
@@ -1602,517 +1658,517 @@
     },
     {
      "d": "2026-10-23",
-     "v": 59.42
+     "v": 59.99
     }
    ]
   },
   "walls": [
    {
     "coin": "BTC",
-    "price": 81806.545,
+    "price": 81726.005,
     "support": {
-     "price": 81806.54500000001,
-     "usd": 9740133
+     "price": 81726.005,
+     "usd": 9463050
     },
     "resistance": {
-     "price": 81806.54500000001,
-     "usd": 9570704
-    },
-    "buy_pct": 54
-   },
-   {
-    "coin": "ETH",
-    "price": 2405.215,
-    "support": {
-     "price": 2405.215,
-     "usd": 3408705
-    },
-    "resistance": {
-     "price": 2405.215,
-     "usd": 3784373
+     "price": 81726.005,
+     "usd": 10291326
     },
     "buy_pct": 49
    },
    {
-    "coin": "BNB",
-    "price": 742.495,
+    "coin": "ETH",
+    "price": 2400.745,
     "support": {
-     "price": 740.6387625,
-     "usd": 903706
+     "price": 2394.7431374999996,
+     "usd": 3621304
     },
     "resistance": {
-     "price": 744.3512375,
-     "usd": 1208945
+     "price": 2406.7468624999997,
+     "usd": 3667969
     },
     "buy_pct": 50
    },
    {
-    "coin": "SOL",
-    "price": 104.495,
+    "coin": "BNB",
+    "price": 748.155,
     "support": {
-     "price": 100.05396250000001,
-     "usd": 3111106
+     "price": 746.2846125,
+     "usd": 2285881
     },
     "resistance": {
-     "price": 107.8910875,
-     "usd": 1500851
+     "price": 750.0253875,
+     "usd": 1425380
     },
-    "buy_pct": 53
+    "buy_pct": 57
+   },
+   {
+    "coin": "SOL",
+    "price": 104.205,
+    "support": {
+     "price": 100.0368,
+     "usd": 3082501
+    },
+    "resistance": {
+     "price": 104.46551249999999,
+     "usd": 1580036
+    },
+    "buy_pct": 51
    },
    {
     "coin": "XRP",
-    "price": 1.3280500000000002,
+    "price": 1.3192499999999998,
     "support": {
-     "price": 1.3247298750000003,
-     "usd": 956683
+     "price": 1.3159518749999997,
+     "usd": 839055
     },
     "resistance": {
-     "price": 1.3313701250000003,
-     "usd": 1024245
+     "price": 1.3225481249999997,
+     "usd": 1174729
     },
     "buy_pct": 46
    },
    {
     "coin": "ADA",
-    "price": 0.21715,
+    "price": 0.21625,
     "support": {
-     "price": 0.21606425,
-     "usd": 210840
+     "price": 0.21570937499999998,
+     "usd": 197831
     },
     "resistance": {
-     "price": 0.21769287500000004,
-     "usd": 177603
+     "price": 0.21733125,
+     "usd": 175144
     },
-    "buy_pct": 54
+    "buy_pct": 55
    },
    {
     "coin": "DOGE",
-    "price": 0.079985,
+    "price": 0.08019499999999999,
     "support": {
-     "price": 0.0797850375,
-     "usd": 704426
+     "price": 0.07999451249999999,
+     "usd": 643391
     },
     "resistance": {
-     "price": 0.08018496250000001,
-     "usd": 606680
-    },
-    "buy_pct": 57
-   },
-   {
-    "coin": "AVAX",
-    "price": 9.3335,
-    "support": {
-     "price": 9.310166250000002,
-     "usd": 174503
-    },
-    "resistance": {
-     "price": 9.356833750000002,
-     "usd": 164433
-    },
-    "buy_pct": 47
-   },
-   {
-    "coin": "LINK",
-    "price": 12.2045,
-    "support": {
-     "price": 11.99092125,
-     "usd": 237840
-    },
-    "resistance": {
-     "price": 12.23501125,
-     "usd": 213117
+     "price": 0.0803954875,
+     "usd": 493063
     },
     "buy_pct": 58
    },
    {
-    "coin": "DOT",
-    "price": 1.1804999999999999,
+    "coin": "AVAX",
+    "price": 9.2275,
     "support": {
-     "price": 1.17754875,
-     "usd": 189168
+     "price": 9.204431249999999,
+     "usd": 172229
     },
     "resistance": {
-     "price": 1.1834512499999998,
-     "usd": 82340
+     "price": 9.25056875,
+     "usd": 164532
     },
-    "buy_pct": 52
+    "buy_pct": 57
+   },
+   {
+    "coin": "LINK",
+    "price": 12.1085,
+    "support": {
+     "price": 12.07822875,
+     "usd": 190807
+    },
+    "resistance": {
+     "price": 12.13877125,
+     "usd": 80739
+    },
+    "buy_pct": 72
+   },
+   {
+    "coin": "DOT",
+    "price": 1.1785,
+    "support": {
+     "price": 1.1755537500000002,
+     "usd": 122252
+    },
+    "resistance": {
+     "price": 1.1814462500000003,
+     "usd": 94190
+    },
+    "buy_pct": 57
    },
    {
     "coin": "LTC",
-    "price": 59.735,
+    "price": 59.215,
     "support": {
-     "price": 59.585662500000005,
-     "usd": 167646
+     "price": 58.91892500000001,
+     "usd": 176381
     },
     "resistance": {
-     "price": 60.033675,
-     "usd": 135809
-    },
-    "buy_pct": 61
-   },
-   {
-    "coin": "UNI",
-    "price": 7.2245,
-    "support": {
-     "price": 7.20643875,
-     "usd": 225422
-    },
-    "resistance": {
-     "price": 7.2425612500000005,
-     "usd": 180277
+     "price": 59.511075000000005,
+     "usd": 118258
     },
     "buy_pct": 53
    },
    {
-    "coin": "AAVE",
-    "price": 149.445,
+    "coin": "UNI",
+    "price": 7.185499999999999,
     "support": {
-     "price": 149.07138750000001,
-     "usd": 86011
+     "price": 7.149572499999999,
+     "usd": 227970
     },
     "resistance": {
-     "price": 149.445,
-     "usd": 156711
+     "price": 7.185499999999998,
+     "usd": 115372
     },
-    "buy_pct": 47
+    "buy_pct": 54
+   },
+   {
+    "coin": "AAVE",
+    "price": 148.215,
+    "support": {
+     "price": 147.84446250000002,
+     "usd": 195604
+    },
+    "resistance": {
+     "price": 149.3266125,
+     "usd": 109141
+    },
+    "buy_pct": 55
    },
    {
     "coin": "NEAR",
-    "price": 4.9704999999999995,
+    "price": 4.9155,
     "support": {
-     "price": 4.7965325,
-     "usd": 308922
+     "price": 4.6943025,
+     "usd": 617371
     },
     "resistance": {
-     "price": 5.05748375,
-     "usd": 297477
+     "price": 5.013809999999999,
+     "usd": 268368
     },
-    "buy_pct": 49
+    "buy_pct": 63
    },
    {
     "coin": "SUI",
-    "price": 0.99875,
+    "price": 0.99125,
     "support": {
-     "price": 0.996253125,
-     "usd": 277214
+     "price": 0.988771875,
+     "usd": 236523
     },
     "resistance": {
-     "price": 1.001246875,
-     "usd": 258782
+     "price": 0.993728125,
+     "usd": 239844
     },
     "buy_pct": 55
    },
    {
     "coin": "POL",
-    "price": 0.092255,
+    "price": 0.091785,
     "support": {
-     "price": 0.091793725,
-     "usd": 37901
+     "price": 0.0915555375,
+     "usd": 37047
     },
     "resistance": {
-     "price": 0.092255,
-     "usd": 28875
+     "price": 0.091785,
+     "usd": 25992
     },
-    "buy_pct": 54
+    "buy_pct": 57
    },
    {
     "coin": "ONDO",
-    "price": 0.43745,
+    "price": 0.43415,
     "support": {
-     "price": 0.41776475,
-     "usd": 91175
+     "price": 0.433064625,
+     "usd": 87888
     },
     "resistance": {
-     "price": 0.438543625,
-     "usd": 89136
+     "price": 0.435235375,
+     "usd": 62371
     },
-    "buy_pct": 48
+    "buy_pct": 60
    },
    {
     "coin": "PEPE",
-    "price": 4.635e-06,
+    "price": 4.985e-06,
     "support": {
-     "price": 4.472775e-06,
-     "usd": 272411
+     "price": 4.9725375e-06,
+     "usd": 466521
     },
     "resistance": {
-     "price": 4.704525e-06,
-     "usd": 199423
-    },
-    "buy_pct": 52
-   },
-   {
-    "coin": "TRX",
-    "price": 0.32965,
-    "support": {
-     "price": 0.328825875,
-     "usd": 783422
-    },
-    "resistance": {
-     "price": 0.330474125,
-     "usd": 719810
-    },
-    "buy_pct": 56
-   },
-   {
-    "coin": "SHIB",
-    "price": 5.055e-06,
-    "support": {
-     "price": 4.9159875e-06,
-     "usd": 54328
-    },
-    "resistance": {
-     "price": 5.10555e-06,
-     "usd": 36281
-    },
-    "buy_pct": 54
-   },
-   {
-    "coin": "BCH",
-    "price": 286.45,
-    "support": {
-     "price": 285.01775,
-     "usd": 169883
-    },
-    "resistance": {
-     "price": 287.88225,
-     "usd": 225822
-    },
-    "buy_pct": 48
-   },
-   {
-    "coin": "XLM",
-    "price": 0.17865,
-    "support": {
-     "price": 0.178203375,
-     "usd": 174477
-    },
-    "resistance": {
-     "price": 0.179096625,
-     "usd": 151725
-    },
-    "buy_pct": 54
-   },
-   {
-    "coin": "HBAR",
-    "price": 0.08146500000000001,
-    "support": {
-     "price": 0.08024302500000001,
-     "usd": 335250
-    },
-    "resistance": {
-     "price": 0.08309430000000001,
-     "usd": 298503
-    },
-    "buy_pct": 51
-   },
-   {
-    "coin": "APT",
-    "price": 0.77615,
-    "support": {
-     "price": 0.774209625,
-     "usd": 57558
-    },
-    "resistance": {
-     "price": 0.78003075,
-     "usd": 65559
+     "price": 4.9974625e-06,
+     "usd": 1350807
     },
     "buy_pct": 40
    },
    {
-    "coin": "ARB",
-    "price": 0.18335,
+    "coin": "TRX",
+    "price": 0.32975,
     "support": {
-     "price": 0.182891625,
-     "usd": 95034
+     "price": 0.328925625,
+     "usd": 1081196
     },
     "resistance": {
-     "price": 0.183808375,
-     "usd": 98083
+     "price": 0.33057437500000003,
+     "usd": 703430
     },
-    "buy_pct": 52
+    "buy_pct": 59
    },
    {
-    "coin": "OP",
-    "price": 0.12065000000000001,
+    "coin": "SHIB",
+    "price": 5.085e-06,
     "support": {
-     "price": 0.11853862500000001,
-     "usd": 148709
+     "price": 5.0722875e-06,
+     "usd": 64376
     },
     "resistance": {
-     "price": 0.122761375,
-     "usd": 154536
-    },
-    "buy_pct": 47
-   },
-   {
-    "coin": "INJ",
-    "price": 8.2945,
-    "support": {
-     "price": 8.273763749999999,
-     "usd": 136259
-    },
-    "resistance": {
-     "price": 8.31523625,
-     "usd": 105192
-    },
-    "buy_pct": 52
-   },
-   {
-    "coin": "FIL",
-    "price": 0.9941,
-    "support": {
-     "price": 0.99161475,
-     "usd": 106629
-    },
-    "resistance": {
-     "price": 0.99658525,
-     "usd": 115291
+     "price": 5.085e-06,
+     "usd": 51459
     },
     "buy_pct": 51
    },
    {
-    "coin": "ATOM",
-    "price": 1.8065,
+    "coin": "BCH",
+    "price": 285.45,
     "support": {
-     "price": 1.8019837500000002,
-     "usd": 60368
+     "price": 284.02275,
+     "usd": 208918
     },
     "resistance": {
-     "price": 1.8110162500000002,
-     "usd": 47916
-    },
-    "buy_pct": 53
-   },
-   {
-    "coin": "ICP",
-    "price": 2.7835,
-    "support": {
-     "price": 2.7347887500000003,
-     "usd": 61221
-    },
-    "resistance": {
-     "price": 2.7904587500000004,
-     "usd": 95129
+     "price": 286.87725,
+     "usd": 207616
     },
     "buy_pct": 49
    },
    {
-    "coin": "ETC",
-    "price": 7.895,
+    "coin": "XLM",
+    "price": 0.17695,
     "support": {
-     "price": 7.875262499999999,
-     "usd": 81250
+     "price": 0.176507625,
+     "usd": 142943
     },
     "resistance": {
-     "price": 7.914737499999999,
-     "usd": 51334
+     "price": 0.177392375,
+     "usd": 148257
+    },
+    "buy_pct": 51
+   },
+   {
+    "coin": "HBAR",
+    "price": 0.079415,
+    "support": {
+     "price": 0.0780252375,
+     "usd": 357288
+    },
+    "resistance": {
+     "price": 0.0808047625,
+     "usd": 299888
+    },
+    "buy_pct": 57
+   },
+   {
+    "coin": "APT",
+    "price": 0.77035,
+    "support": {
+     "price": 0.768424125,
+     "usd": 67304
+    },
+    "resistance": {
+     "price": 0.7722758750000001,
+     "usd": 53063
+    },
+    "buy_pct": 51
+   },
+   {
+    "coin": "ARB",
+    "price": 0.18085,
+    "support": {
+     "price": 0.180397875,
+     "usd": 179851
+    },
+    "resistance": {
+     "price": 0.181302125,
+     "usd": 104102
+    },
+    "buy_pct": 61
+   },
+   {
+    "coin": "OP",
+    "price": 0.11825,
+    "support": {
+     "price": 0.116180625,
+     "usd": 153866
+    },
+    "resistance": {
+     "price": 0.12031937499999999,
+     "usd": 153764
+    },
+    "buy_pct": 51
+   },
+   {
+    "coin": "INJ",
+    "price": 7.9955,
+    "support": {
+     "price": 7.97551125,
+     "usd": 141647
+    },
+    "resistance": {
+     "price": 8.01548875,
+     "usd": 119414
+    },
+    "buy_pct": 51
+   },
+   {
+    "coin": "FIL",
+    "price": 0.99115,
+    "support": {
+     "price": 0.988672125,
+     "usd": 115558
+    },
+    "resistance": {
+     "price": 0.993627875,
+     "usd": 107700
+    },
+    "buy_pct": 49
+   },
+   {
+    "coin": "ATOM",
+    "price": 1.7814999999999999,
+    "support": {
+     "price": 1.7770462499999997,
+     "usd": 68106
+    },
+    "resistance": {
+     "price": 1.7859537499999998,
+     "usd": 53752
+    },
+    "buy_pct": 61
+   },
+   {
+    "coin": "ICP",
+    "price": 2.7615,
+    "support": {
+     "price": 2.75459625,
+     "usd": 67773
+    },
+    "resistance": {
+     "price": 2.80982625,
+     "usd": 77158
+    },
+    "buy_pct": 46
+   },
+   {
+    "coin": "ETC",
+    "price": 7.875,
+    "support": {
+     "price": 7.8553125,
+     "usd": 73456
+    },
+    "resistance": {
+     "price": 7.8946875,
+     "usd": 60013
+    },
+    "buy_pct": 51
+   },
+   {
+    "coin": "WIF",
+    "price": 0.20074999999999998,
+    "support": {
+     "price": 0.20024812499999997,
+     "usd": 29641
+    },
+    "resistance": {
+     "price": 0.20125187499999997,
+     "usd": 27149
+    },
+    "buy_pct": 54
+   },
+   {
+    "coin": "RENDER",
+    "price": 1.7685,
+    "support": {
+     "price": 1.7331299999999998,
+     "usd": 158499
+    },
+    "resistance": {
+     "price": 1.79944875,
+     "usd": 165334
     },
     "buy_pct": 55
    },
    {
-    "coin": "WIF",
-    "price": 0.20145000000000002,
+    "coin": "TAO",
+    "price": 260.95,
     "support": {
-     "price": 0.200946375,
-     "usd": 24513
+     "price": 249.85962500000002,
+     "usd": 186544
     },
     "resistance": {
-     "price": 0.20245725000000003,
-     "usd": 24338
+     "price": 265.51662500000003,
+     "usd": 165116
+    },
+    "buy_pct": 50
+   },
+   {
+    "coin": "ENA",
+    "price": 0.19974999999999998,
+    "support": {
+     "price": 0.19825187499999997,
+     "usd": 280562
+    },
+    "resistance": {
+     "price": 0.20024937499999998,
+     "usd": 237192
+    },
+    "buy_pct": 53
+   },
+   {
+    "coin": "SEI",
+    "price": 0.057715,
+    "support": {
+     "price": 0.0575707125,
+     "usd": 73615
+    },
+    "resistance": {
+     "price": 0.0578592875,
+     "usd": 69717
     },
     "buy_pct": 52
    },
    {
-    "coin": "RENDER",
-    "price": 1.799,
-    "support": {
-     "price": 1.7630199999999998,
-     "usd": 157726
-    },
-    "resistance": {
-     "price": 1.8349799999999998,
-     "usd": 181617
-    },
-    "buy_pct": 53
-   },
-   {
-    "coin": "TAO",
-    "price": 263.25,
-    "support": {
-     "price": 258.643125,
-     "usd": 144125
-    },
-    "resistance": {
-     "price": 267.856875,
-     "usd": 149452
-    },
-    "buy_pct": 49
-   },
-   {
-    "coin": "ENA",
-    "price": 0.20185,
-    "support": {
-     "price": 0.201345375,
-     "usd": 279724
-    },
-    "resistance": {
-     "price": 0.205887,
-     "usd": 221244
-    },
-    "buy_pct": 48
-   },
-   {
-    "coin": "SEI",
-    "price": 0.059054999999999996,
-    "support": {
-     "price": 0.058759725,
-     "usd": 73369
-    },
-    "resistance": {
-     "price": 0.0592026375,
-     "usd": 57974
-    },
-    "buy_pct": 53
-   },
-   {
     "coin": "TIA",
-    "price": 0.55985,
+    "price": 0.55055,
     "support": {
-     "price": 0.5584503749999999,
-     "usd": 81619
+     "price": 0.549173625,
+     "usd": 84466
     },
     "resistance": {
-     "price": 0.5626492499999999,
-     "usd": 78010
+     "price": 0.551926375,
+     "usd": 72286
     },
-    "buy_pct": 48
+    "buy_pct": 46
    },
    {
     "coin": "FET",
-    "price": 0.18905,
+    "price": 0.18725,
     "support": {
-     "price": 0.188577375,
-     "usd": 89392
+     "price": 0.18022812500000002,
+     "usd": 161809
     },
     "resistance": {
-     "price": 0.189522625,
-     "usd": 156689
+     "price": 0.187718125,
+     "usd": 93810
     },
-    "buy_pct": 47
+    "buy_pct": 53
    },
    {
     "coin": "ZEC",
-    "price": 1224.645,
+    "price": 1216.6350000000002,
     "support": {
-     "price": 1218.521775,
-     "usd": 733211
+     "price": 1210.5518250000002,
+     "usd": 674969
     },
     "resistance": {
-     "price": 1236.8914499999998,
-     "usd": 632159
+     "price": 1222.7181750000002,
+     "usd": 794938
     },
-    "buy_pct": 47
+    "buy_pct": 48
    }
   ],
   "topics": {
@@ -2128,12 +2184,6 @@
      "link": "https://u.today/massive-xrp-giveaway-announced-by-binance",
      "source": "U.Today",
      "published": "2026-10-21T14:00:49+00:00"
-    },
-    {
-     "title": "Hyperliquid Policy Center Pushes SEC for 5 Major Changes to Proposed Crypto Rules",
-     "link": "https://cryptopotato.com/hyperliquid-policy-center-pushes-sec-for-5-major-changes-to-proposed-crypto-rules/",
-     "source": "CryptoPotato",
-     "published": "2026-10-20T22:30:26+00:00"
     },
     {
      "title": "Quip Network Full Guide: Node & Airdrop Points",
@@ -2203,16 +2253,18 @@
      "link": "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm",
      "source": "CoinDesk",
      "published": "2026-10-22T22:43:36+00:00"
-    },
-    {
-     "title": "Solana bot turns just $12,000 into $1.4 billion in trading volume as fake liquidity floods Raydium",
-     "link": "https://cryptoslate.com/solana-bot-turns-just-12000-into-1-4-billion-in-trading-volume-as-fake-liquidity-floods-raydium/",
-     "source": "CryptoSlate",
-     "published": "2026-10-22T16:20:56+00:00"
     }
    ]
   },
   "listings": [
+   {
+    "ex": "OKX",
+    "title": "OKX to support VELODROME crypto migration",
+    "url": "https://www.okx.com/en-us/help/okx-to-support-velodrome-crypto-migration",
+    "token": "",
+    "announced": "2026-10-23T10:30:10+00:00",
+    "trade": ""
+   },
    {
     "ex": "Kraken",
     "title": "NEXO is available for trading!",
@@ -2676,17 +2728,17 @@
     "token": "",
     "announced": "2026-04-30T10:15:08+00:00",
     "trade": ""
-   },
-   {
-    "ex": "OKX",
-    "title": "OKX to list RLUSD (Ripple USD) for spot trading",
-    "url": "https://www.okx.com/en-us/help/okx-to-list-rlusd-ripple-usd-for-spot-trading",
-    "token": "",
-    "announced": "2026-04-29T11:00:10+00:00",
-    "trade": ""
    }
   ],
   "earn": [
+   {
+    "ex": "XT",
+    "title": "Invite Friends to XT & Share $100,000 in DNA",
+    "url": "https://xtsupport.zendesk.com/hc/en-us/articles/63543106184473-Invite-Friends-to-XT-Share-100-000-in-DNA",
+    "token": "",
+    "announced": "2026-10-23T09:30:06+00:00",
+    "trade": ""
+   },
    {
     "ex": "Binance",
     "title": "Binance Alpha Trading Competition: Trade Orochi Network (ON) and Share $200K Worth of Rewards (2026-10-22)",
@@ -2757,14 +2809,6 @@
     "url": "https://www.binance.com/en/support/announcement/ade351b5d80842b69784d836e0338a6d",
     "token": "",
     "announced": "2026-10-20T07:00:11+00:00",
-    "trade": ""
-   },
-   {
-    "ex": "XT",
-    "title": "EEE Fixed Savings | Earn Up to 60% APR",
-    "url": "https://xtsupport.zendesk.com/hc/en-us/articles/63424921890585-EEE-Fixed-Savings-Earn-Up-to-60-APR",
-    "token": "",
-    "announced": "2026-10-20T06:30:27+00:00",
     "trade": ""
    },
    {
@@ -2881,12 +2925,12 @@
    }
   ],
   "tip": "সামনে বড় টোকেন আনলক আছে কিনা দেখে নিন। সরবরাহ বাড়লে দামে চাপ পড়তে পারে।",
-  "updated": "2026-10-23T05:46:00+00:00",
+  "updated": "2026-10-23T10:33:12+00:00",
   "sources": {
    "Airdrops.io": 10,
    "AirdropAlert": 0,
    "Bitcoin.com": 0,
-   "CryptoPotato": 1,
+   "CryptoPotato": 0,
    "BeInCrypto": 0,
    "U.Today": 1,
    "NewsBTC": 0,
@@ -2895,7 +2939,7 @@
    "Blockworks": 0,
    "DailyHodl": 0,
    "Bitcoinist": 1,
-   "CoinJournal": -1,
+   "CoinJournal": 0,
    "OKX": 19,
    "KuCoin": 17,
    "Binance": 20,
@@ -2905,7 +2949,9 @@
    "Bitfinex": 0,
    "BitMart": 7,
    "XT": 3,
-   "DigiFinex": 2
+   "DigiFinex": 2,
+   "DefiLlama unlocks": 59,
+   "CoinMarketCap new": 30
   },
   "unlocks": [
    {
@@ -3383,12 +3429,78 @@
   ],
   "newcoins": [
    {
+    "name": "Amgen Inc (Derivatives)",
+    "sym": "AMGN",
+    "added": "2026-10-23T07:11:09.000Z",
+    "price": 444.85105538561453,
+    "ch24": -0.70820267,
+    "vol": 0.0,
+    "mcap": 0.0,
+    "chain": "",
+    "url": "https://coinmarketcap.com/currencies/amgen-inc-derivatives/"
+   },
+   {
+    "name": "AbbVie Inc (Derivatives)",
+    "sym": "ABBV",
+    "added": "2026-10-23T07:08:51.000Z",
+    "price": 284.58845352936066,
+    "ch24": -0.14017561,
+    "vol": 0.0,
+    "mcap": 0.0,
+    "chain": "",
+    "url": "https://coinmarketcap.com/currencies/abbvibe-inc-derivatives/"
+   },
+   {
+    "name": "General Electric Company (Derivatives)",
+    "sym": "GE",
+    "added": "2026-10-23T07:05:45.000Z",
+    "price": 293.41952321400066,
+    "ch24": -0.09935454,
+    "vol": 0.0,
+    "mcap": 0.0,
+    "chain": "",
+    "url": "https://coinmarketcap.com/currencies/general-electric-company-derivatives/"
+   },
+   {
+    "name": "NeoIDR",
+    "sym": "NEOIDR",
+    "added": "2026-10-23T07:03:04.000Z",
+    "price": 0.059422013917065676,
+    "ch24": 0.00290471,
+    "vol": 10405.92365514,
+    "mcap": 0.0,
+    "chain": "Ethereum",
+    "url": "https://coinmarketcap.com/currencies/neoidr/"
+   },
+   {
+    "name": "Woon",
+    "sym": "WOON",
+    "added": "2026-10-23T02:12:02.000Z",
+    "price": 1.0275655996705367e-05,
+    "ch24": 9.10594563,
+    "vol": 6836.59906848,
+    "mcap": 0.0,
+    "chain": "Solana",
+    "url": "https://coinmarketcap.com/currencies/woon/"
+   },
+   {
+    "name": "Dacity Coin (dacitycoin.bar)",
+    "sym": "DACITY",
+    "added": "2026-10-22T15:38:29.000Z",
+    "price": 3.1997644143410397e-06,
+    "ch24": 289.53824181,
+    "vol": 25806.56634048,
+    "mcap": 0.0,
+    "chain": "BNB",
+    "url": "https://coinmarketcap.com/currencies/dacity-coin-bar/"
+   },
+   {
     "name": "Universal High Income",
     "sym": "UHI",
     "added": "2026-10-22T12:15:05.000Z",
-    "price": 0.030803463000460777,
-    "ch24": 10.69686554,
-    "vol": 15188483.53578967,
+    "price": 0.034086303755650436,
+    "ch24": 22.4942463,
+    "vol": 16523929.31748356,
     "mcap": 0.0,
     "chain": "Robinhood",
     "url": "https://coinmarketcap.com/currencies/universal-high-income/"
@@ -3397,9 +3509,9 @@
     "name": "Giga Tenev",
     "sym": "GIGATENEV",
     "added": "2026-10-22T11:12:04.000Z",
-    "price": 0.0017238779046035509,
-    "ch24": 3.32326093,
-    "vol": 1296551.15242814,
+    "price": 0.0010480310036136828,
+    "ch24": -37.18465759,
+    "vol": 1295548.79186516,
     "mcap": 0.0,
     "chain": "Robinhood",
     "url": "https://coinmarketcap.com/currencies/giga-tenev/"
@@ -3408,9 +3520,9 @@
     "name": "Infinite Money Glitch (glitchonsol.com)",
     "sym": "GLITCH",
     "added": "2026-10-22T00:42:03.000Z",
-    "price": 0.001927272115001078,
-    "ch24": 0.63757133,
-    "vol": 188641.6508946,
+    "price": 0.002007575723577799,
+    "ch24": -6.33964885,
+    "vol": 136474.11800686,
     "mcap": 0.0,
     "chain": "Solana",
     "url": "https://coinmarketcap.com/currencies/glitchonsol/"
@@ -3419,8 +3531,8 @@
     "name": "Predict.fun",
     "sym": "PREDICT",
     "added": "2026-10-21T17:03:00.000Z",
-    "price": 1.758074978112456,
-    "ch24": 1.63644167,
+    "price": 1.9406959623331594,
+    "ch24": 14.31579429,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "",
@@ -3430,10 +3542,10 @@
     "name": "Aura Final Boss",
     "sym": "KIMCHI",
     "added": "2026-10-21T14:10:16.000Z",
-    "price": 0.013513103778522087,
-    "ch24": -44.89609377,
-    "vol": 18577076.22001137,
-    "mcap": 13455104.12,
+    "price": 0.011690264846843773,
+    "ch24": -46.86729411,
+    "vol": 17109684.28915659,
+    "mcap": 11640089.01,
     "chain": "Solana",
     "url": "https://coinmarketcap.com/currencies/aura-final-boss/"
    },
@@ -3441,9 +3553,9 @@
     "name": "Nova USD",
     "sym": "USDN",
     "added": "2026-10-21T10:27:53.000Z",
-    "price": 0.9988185453188155,
-    "ch24": -0.04990437,
-    "vol": 146279.80100878,
+    "price": 0.9985924497260882,
+    "ch24": -0.01805619,
+    "vol": 143984.15696611,
     "mcap": 0.0,
     "chain": "Ethereum",
     "url": "https://coinmarketcap.com/currencies/nova-usd/"
@@ -3452,9 +3564,9 @@
     "name": "Dacity Coin",
     "sym": "DACITY",
     "added": "2026-10-21T03:57:02.000Z",
-    "price": 0.02269842684635428,
-    "ch24": 150.4821121,
-    "vol": 4661654.91369439,
+    "price": 0.015831510841007923,
+    "ch24": 106.62647747,
+    "vol": 4085857.03693026,
     "mcap": 0.0,
     "chain": "Ethereum",
     "url": "https://coinmarketcap.com/currencies/dacity-coin/"
@@ -3463,10 +3575,10 @@
     "name": "Vistra Corp Tokenized bStocks",
     "sym": "VSTB",
     "added": "2026-10-19T13:49:09.000Z",
-    "price": 141.53189023754604,
-    "ch24": -8.30963204,
-    "vol": 128317.1284351,
-    "mcap": 449681.72,
+    "price": 141.9781951068098,
+    "ch24": -6.44464833,
+    "vol": 109576.42896442,
+    "mcap": 460590.01,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/vistra-corp-tokenized-bstocks/"
    },
@@ -3474,10 +3586,10 @@
     "name": "Berkshire Hathaway Tokenized bStocks",
     "sym": "BRKBB",
     "added": "2026-10-19T13:43:50.000Z",
-    "price": 548.7107688872977,
-    "ch24": 1.69024839,
-    "vol": 71220.47889935,
-    "mcap": 556879.33,
+    "price": 545.4791650826824,
+    "ch24": 1.02631225,
+    "vol": 43604.62614903,
+    "mcap": 574459.85,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/berkshire-hathaway-tokenized-bstocks/"
    },
@@ -3485,10 +3597,10 @@
     "name": "KraneShares STAR Market 50 ETF Tokenized",
     "sym": "KSTRB",
     "added": "2026-10-19T13:41:11.000Z",
-    "price": 18.789148669723186,
-    "ch24": -3.39816447,
-    "vol": 640799.06070087,
-    "mcap": 483390.52,
+    "price": 19.48415678491284,
+    "ch24": 2.92109753,
+    "vol": 401852.98884584,
+    "mcap": 547255.85,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/kraneshares-star-market-50-etf-tokenized-bstocks/"
    },
@@ -3496,10 +3608,10 @@
     "name": "RoboStrategy Inc Tokenized bStocks",
     "sym": "BOTB",
     "added": "2026-10-19T13:38:30.000Z",
-    "price": 21.45209035146151,
-    "ch24": -9.96069973,
-    "vol": 469350.92372924,
-    "mcap": 368764.42,
+    "price": 22.356237382784393,
+    "ch24": -3.28782504,
+    "vol": 896669.92998567,
+    "mcap": 394816.16,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/robostrategy-inc-tokenized-bstocks/"
    },
@@ -3507,10 +3619,10 @@
     "name": "Direxion Daily 20 Year Treasury Bull 3X ",
     "sym": "TMFB",
     "added": "2026-10-19T13:36:01.000Z",
-    "price": 29.84689530180331,
-    "ch24": 5.30235447,
-    "vol": 107267.39130007,
-    "mcap": 413010.58,
+    "price": 29.693489137977988,
+    "ch24": 3.04341463,
+    "vol": 75913.06861527,
+    "mcap": 415229.91,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/direxion-daily-20-year-treasury-bull-3x-etf-tokenized-bstocks/"
    },
@@ -3518,10 +3630,10 @@
     "name": "Papertrade",
     "sym": "PAPER",
     "added": "2026-10-19T09:21:37.000Z",
-    "price": 0.03272801092900469,
-    "ch24": 12.71418628,
-    "vol": 280823.3918858,
-    "mcap": 1823803.11,
+    "price": 0.05227217497120582,
+    "ch24": 78.97175473,
+    "vol": 261458.81777157,
+    "mcap": 2906349.49,
     "chain": "Hyperliquid",
     "url": "https://coinmarketcap.com/currencies/papertrade/"
    },
@@ -3529,8 +3641,8 @@
     "name": "Doge Pepe (dogepepeeth.lol)",
     "sym": "DOPE",
     "added": "2026-10-16T12:57:02.000Z",
-    "price": 7.906287000372997e-05,
-    "ch24": -11.44796037,
+    "price": 8.085150520728276e-05,
+    "ch24": -4.04755031,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "Ethereum",
@@ -3540,9 +3652,9 @@
     "name": "ESGIN Token",
     "sym": "ESGIN",
     "added": "2026-10-16T01:21:03.000Z",
-    "price": 1.665188060359567,
-    "ch24": -3.56400891,
-    "vol": 825581.69612642,
+    "price": 1.6764876301956981,
+    "ch24": -0.24877928,
+    "vol": 970274.09072387,
     "mcap": 0.0,
     "chain": "Ethereum",
     "url": "https://coinmarketcap.com/currencies/esgin-token/"
@@ -3551,9 +3663,9 @@
     "name": "Six Seven AI",
     "sym": "67AI",
     "added": "2026-10-16T00:00:02.000Z",
-    "price": 0.001145438125155686,
-    "ch24": 21.43686463,
-    "vol": 4827.27781274,
+    "price": 0.0009113756900892066,
+    "ch24": -1.44088495,
+    "vol": 6181.38455301,
     "mcap": 0.0,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/six-seven-ai/"
@@ -3562,9 +3674,9 @@
     "name": "Flip (useflip.io)",
     "sym": "FLIP",
     "added": "2026-10-15T14:24:02.000Z",
-    "price": 0.0014756115705728485,
-    "ch24": 22.19901492,
-    "vol": 53096.52198004,
+    "price": 0.0014493176641977527,
+    "ch24": 27.10884058,
+    "vol": 43463.94796236,
     "mcap": 0.0,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/useflip/"
@@ -3573,9 +3685,9 @@
     "name": "Corvantis",
     "sym": "CRVT",
     "added": "2026-10-15T10:39:02.000Z",
-    "price": 0.06572042437508911,
-    "ch24": 32.82965471,
-    "vol": 5444.638167,
+    "price": 0.06286587015033787,
+    "ch24": 10.53166084,
+    "vol": 8089.8381196,
     "mcap": 0.0,
     "chain": "Arbitrum",
     "url": "https://coinmarketcap.com/currencies/corvantis/"
@@ -3584,9 +3696,9 @@
     "name": "ATEG.DV",
     "sym": "ATEG",
     "added": "2026-10-14T14:12:03.000Z",
-    "price": 0.5392980964770594,
-    "ch24": 23.17605528,
-    "vol": 484378.55662396,
+    "price": 0.5234545920586378,
+    "ch24": 26.08155141,
+    "vol": 496849.4286816,
     "mcap": 0.0,
     "chain": "Ethereum",
     "url": "https://coinmarketcap.com/currencies/ateg-dv/"
@@ -3595,8 +3707,8 @@
     "name": "Jio Platforms Ltd. (Derivatives)",
     "sym": "JIO",
     "added": "2026-10-14T13:54:24.000Z",
-    "price": 12.055203504117904,
-    "ch24": 0.49775456,
+    "price": 12.304186123006568,
+    "ch24": 2.28346195,
     "vol": 0.0,
     "mcap": 0.0,
     "chain": "",
@@ -3606,10 +3718,10 @@
     "name": "WangChai",
     "sym": "旺柴",
     "added": "2026-10-14T08:54:04.000Z",
-    "price": 0.00885470387854833,
-    "ch24": -7.81217314,
-    "vol": 1574491.31044829,
-    "mcap": 8854703.88,
+    "price": 0.009899539009261377,
+    "ch24": 5.69241107,
+    "vol": 868410.60458465,
+    "mcap": 9899539.01,
     "chain": "BNB",
     "url": "https://coinmarketcap.com/currencies/wangchai/"
    },
@@ -3617,10 +3729,10 @@
     "name": "WeRide Inc. Tokenized Stock (Coinbase)",
     "sym": "WRDc",
     "added": "2026-10-14T03:37:03.000Z",
-    "price": 4.118322675386198,
-    "ch24": -3.61637568,
-    "vol": 0.0,
-    "mcap": 39824.18,
+    "price": 4.145856868931214,
+    "ch24": 2.09367926,
+    "vol": 823.92207468,
+    "mcap": 40090.44,
     "chain": "Base",
     "url": "https://coinmarketcap.com/currencies/weride-inc-tokenized-stock-coinbase/"
    },
@@ -3628,10 +3740,10 @@
     "name": "Unilever Plc Tokenized Stock (Coinbase)",
     "sym": "ULc",
     "added": "2026-10-14T03:37:02.000Z",
-    "price": 66.68254680382495,
-    "ch24": 3.65648948,
+    "price": 65.69792253423552,
+    "ch24": 3.12337635,
     "vol": 0.0,
-    "mcap": 39276.02,
+    "mcap": 38696.08,
     "chain": "Base",
     "url": "https://coinmarketcap.com/currencies/unilever-plc-tokenized-stock-coinbase/"
    },
@@ -3639,91 +3751,25 @@
     "name": "Hesai Group Tokenized Stock (Coinbase)",
     "sym": "HSAIc",
     "added": "2026-10-14T03:37:01.000Z",
-    "price": 12.030861341760223,
-    "ch24": -4.63407437,
-    "vol": 944.40041356,
-    "mcap": 36790.37,
+    "price": 13.055717930841485,
+    "ch24": 6.81846325,
+    "vol": 12580.51407678,
+    "mcap": 30824.55,
     "chain": "Base",
     "url": "https://coinmarketcap.com/currencies/hesai-group-tokenized-stock-coinbase/"
-   },
-   {
-    "name": "SK hynix Inc. Tokenized Stock (Coinbase)",
-    "sym": "SKHYc",
-    "added": "2026-10-14T03:37:01.000Z",
-    "price": 133.15847075388587,
-    "ch24": -6.96048151,
-    "vol": 83016.97410951,
-    "mcap": 156131.53,
-    "chain": "Base",
-    "url": "https://coinmarketcap.com/currencies/sk-hynix-inc-tokenized-stock-coinbase/"
-   },
-   {
-    "name": "Vale S.A. Tokenized Stock (Coinbase)",
-    "sym": "VALEc",
-    "added": "2026-10-14T03:37:00.000Z",
-    "price": 12.20111796322373,
-    "ch24": -4.35225135,
-    "vol": 0.0,
-    "mcap": 48950.89,
-    "chain": "Base",
-    "url": "https://coinmarketcap.com/currencies/vale-sa-tokenized-stock-coinbase/"
-   },
-   {
-    "name": "Novo Nordisk A/S Tokenized Stock (Coinba",
-    "sym": "NVOc",
-    "added": "2026-10-14T03:36:59.000Z",
-    "price": 39.416357939347776,
-    "ch24": 1.85994843,
-    "vol": 0.0,
-    "mcap": 42214.92,
-    "chain": "Base",
-    "url": "https://coinmarketcap.com/currencies/novo-nordisk-as-tokenized-stock-coinbase/"
-   },
-   {
-    "name": "Infosys Limited Tokenized Stock (Coinbas",
-    "sym": "INFYc",
-    "added": "2026-10-14T03:36:59.000Z",
-    "price": 12.824156962476206,
-    "ch24": 0.25631412,
-    "vol": 6670.8903906,
-    "mcap": 39511.23,
-    "chain": "Base",
-    "url": "https://coinmarketcap.com/currencies/infosys-limited-tokenized-stock-coinbase/"
-   },
-   {
-    "name": "Nokia Corporation Tokenized Stock (Coinb",
-    "sym": "NOKc",
-    "added": "2026-10-14T03:36:58.000Z",
-    "price": 7.989510986793536,
-    "ch24": -13.47133778,
-    "vol": 42151.28739683,
-    "mcap": 42048.8,
-    "chain": "Base",
-    "url": "https://coinmarketcap.com/currencies/nokia-corporation-tokenized-stock-coinbase/"
-   },
-   {
-    "name": "Banco Santander, S.A. Tokenized Stock (C",
-    "sym": "SANc",
-    "added": "2026-10-14T03:36:56.000Z",
-    "price": 12.972900638107017,
-    "ch24": 0.34149754,
-    "vol": 333.64078082,
-    "mcap": 43160.84,
-    "chain": "Base",
-    "url": "https://coinmarketcap.com/currencies/banco-santander-sa-tokenized-stock-coinbase/"
    }
   ],
   "tip_en": "Check for a big token unlock ahead. More supply can pressure the price."
  },
- "insights_time": "2026-10-23T05:46:00+00:00",
- "last_insight": "2026-10-22",
+ "insights_time": "2026-10-23T10:33:12+00:00",
+ "last_insight": "2026-10-23",
  "probe_v": 2,
- "slow_hr": 82996,
+ "slow_hr": 82997,
  "src_seen": {
   "Airdrops.io": 10,
   "AirdropAlert": 0,
   "Bitcoin.com": 0,
-  "CryptoPotato": 1,
+  "CryptoPotato": 0,
   "BeInCrypto": 0,
   "U.Today": 1,
   "NewsBTC": 0,
@@ -3732,7 +3778,7 @@
   "Blockworks": 0,
   "DailyHodl": 0,
   "Bitcoinist": 1,
-  "CoinJournal": -1,
+  "CoinJournal": 0,
   "OKX": 19,
   "KuCoin": 17,
   "Binance": 20,
@@ -3742,13 +3788,34 @@
   "Bitfinex": 0,
   "BitMart": 7,
   "XT": 3,
-  "DigiFinex": 2
+  "DigiFinex": 2,
+  "DefiLlama unlocks": 59,
+  "CoinMarketCap new": 30
  },
- "last_lesson": "2026-10-22",
- "lesson_n": 20,
+ "last_lesson": "2026-10-23",
+ "lesson_n": 21,
  "lab_v": 1,
  "last_trending": "2026-10-22",
  "watch_notes": [
+  {
+   "coin": "INJ",
+   "name": "INJ",
+   "market": "crypto",
+   "side": "SELL",
+   "price": 8.014,
+   "score": 56,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "15M",
+    "⚠ 5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-23T10:32:40+00:00"
+  },
   {
    "coin": "BNB",
    "name": "BNB",
@@ -4109,30 +4176,11 @@
     "⚠ range"
    ],
    "time": "2026-10-15T00:18:30+00:00"
-  },
-  {
-   "coin": "USDCAD",
-   "name": "USD/CAD",
-   "market": "forex",
-   "side": "SELL",
-   "price": 1.421339988708496,
-   "score": 41,
-   "chk": "4/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "⚠ 5M",
-    "run-up",
-    "RSI",
-    "extension",
-    "range"
-   ],
-   "time": "2026-10-15T00:18:29+00:00"
   }
  ],
  "watch": {
   "day": "2026-10-23",
-  "n": 1
+  "n": 2
  },
  "alerts": [
   {
@@ -4264,9 +4312,9 @@
    "time": "2026-10-07T02:27:07+00:00"
   }
  ],
- "liq_time": "2026-10-23T05:45:48+00:00",
+ "liq_time": "2026-10-23T10:32:59+00:00",
  "promo_v": "2026-10-09",
- "consensus_time": "2026-10-23T05:46:20+00:00",
+ "consensus_time": "2026-10-23T10:33:37+00:00",
  "sent_cache": {
   "BTC": {
    "votes_up": 65.7,
@@ -4314,7 +4362,179 @@
  "pro_video_v": "2026-10-09-pro2",
  "nftnode_video_v": "2026-10-12-nftnode",
  "daily_picks": {
-  "open": [],
+  "open": [
+   {
+    "coin": "PEPE",
+    "market": "crypto",
+    "side": "BUY",
+    "entry": 4.93e-06,
+    "sl": 4.801230582388808e-06,
+    "tp1": 5.058769417611193e-06,
+    "tp2": 5.187538835222385e-06,
+    "score": 84,
+    "agree": 5,
+    "n": 6,
+    "src": {
+     "tv1h": 0.558,
+     "tv4h": 0.648,
+     "tv1d": 0.558,
+     "engine": 1.0,
+     "rsi": 82.6,
+     "mom": 1.0,
+     "lsr": 1.71,
+     "crowd": -0.353
+    },
+    "opened": "2026-10-23T10:34:03+00:00",
+    "status": "open",
+    "also_bot": false
+   },
+   {
+    "coin": "DOT",
+    "market": "crypto",
+    "side": "BUY",
+    "entry": 1.191,
+    "sl": 1.1636352985656637,
+    "tp1": 1.2183647014343364,
+    "tp2": 1.2457294028686727,
+    "score": 76,
+    "agree": 5,
+    "n": 6,
+    "src": {
+     "tv1h": 0.4,
+     "tv4h": 0.445,
+     "tv1d": 0.379,
+     "engine": 0.954,
+     "rsi": 66.9,
+     "mom": 0.699,
+     "lsr": 1.6,
+     "crowd": -0.299
+    },
+    "opened": "2026-10-23T10:34:03+00:00",
+    "status": "open",
+    "also_bot": false
+   },
+   {
+    "coin": "BCH",
+    "market": "crypto",
+    "side": "BUY",
+    "entry": 286.5,
+    "sl": 282.09019665938655,
+    "tp1": 290.90980334061345,
+    "tp2": 295.3196066812269,
+    "score": 74,
+    "agree": 5,
+    "n": 6,
+    "src": {
+     "tv1h": 0.4,
+     "tv4h": 0.536,
+     "tv1d": 0.312,
+     "engine": 0.945,
+     "rsi": 66.4,
+     "mom": 0.371,
+     "lsr": 1.52,
+     "crowd": -0.262
+    },
+    "opened": "2026-10-23T10:34:03+00:00",
+    "status": "open",
+    "also_bot": false
+   },
+   {
+    "coin": "HBAR",
+    "market": "crypto",
+    "side": "SELL",
+    "entry": 0.07925,
+    "sl": 0.0803912816397157,
+    "tp1": 0.0781087183602843,
+    "tp2": 0.07696743672056858,
+    "score": 21,
+    "agree": 6,
+    "n": 6,
+    "src": {
+     "tv1h": -0.445,
+     "tv4h": -0.648,
+     "tv1d": -0.491,
+     "engine": -0.927,
+     "rsi": 34.9,
+     "mom": -0.445,
+     "lsr": 1.25,
+     "crowd": -0.125
+    },
+    "opened": "2026-10-23T10:34:03+00:00",
+    "status": "open",
+    "also_bot": false
+   },
+   {
+    "coin": "OP",
+    "market": "crypto",
+    "side": "SELL",
+    "entry": 0.1182,
+    "sl": 0.12034106434656333,
+    "tp1": 0.11605893565343667,
+    "tp2": 0.11391787130687335,
+    "score": 21,
+    "agree": 6,
+    "n": 6,
+    "src": {
+     "tv1h": -0.467,
+     "tv4h": -0.558,
+     "tv1d": -0.312,
+     "engine": -0.931,
+     "rsi": 34.6,
+     "mom": -0.73,
+     "lsr": 1.77,
+     "crowd": -0.384
+    },
+    "opened": "2026-10-23T10:34:03+00:00",
+    "status": "open",
+    "also_bot": false
+   },
+   {
+    "coin": "XAUUSD",
+    "market": "forex",
+    "side": "SELL",
+    "entry": 4038.10009765625,
+    "sl": 4062.8673315118936,
+    "tp1": 4013.3328638006064,
+    "tp2": 3988.565629944963,
+    "score": 24,
+    "agree": 5,
+    "n": 5,
+    "src": {
+     "tv1h": -0.424,
+     "tv4h": -0.445,
+     "tv1d": -0.558,
+     "engine": -0.802,
+     "rsi": 43.2,
+     "mom": -0.246
+    },
+    "opened": "2026-10-23T10:34:03+00:00",
+    "status": "open",
+    "also_bot": false
+   },
+   {
+    "coin": "EURJPY",
+    "market": "forex",
+    "side": "SELL",
+    "entry": 175.41299438476562,
+    "sl": 175.8734751799797,
+    "tp1": 174.95251358955156,
+    "tp2": 174.4920327943375,
+    "score": 24,
+    "agree": 4,
+    "n": 5,
+    "src": {
+     "tv1h": -0.355,
+     "tv4h": -0.512,
+     "tv1d": -0.555,
+     "engine": -0.979,
+     "rsi": 31.4,
+     "mom": -0.062
+    },
+    "opened": "2026-10-23T10:34:03+00:00",
+    "status": "open",
+    "also_bot": false
+   }
+  ],
   "history": [
    {
     "coin": "POL",
@@ -5434,78 +5654,130 @@
    "expired": 0
   },
   "today": {
-   "date": "2026-10-22",
+   "date": "2026-10-23",
    "picks": [
     {
-     "coin": "SHIB",
+     "coin": "PEPE",
+     "market": "crypto",
+     "side": "BUY",
+     "entry": 4.93e-06,
+     "sl": 4.801230582388808e-06,
+     "tp1": 5.058769417611193e-06,
+     "tp2": 5.187538835222385e-06,
+     "score": 84,
+     "agree": 5,
+     "n": 6,
+     "src": {
+      "tv1h": 0.558,
+      "tv4h": 0.648,
+      "tv1d": 0.558,
+      "engine": 1.0,
+      "rsi": 82.6,
+      "mom": 1.0,
+      "lsr": 1.71,
+      "crowd": -0.353
+     },
+     "opened": "2026-10-23T10:34:03+00:00",
+     "status": "open",
+     "also_bot": false
+    },
+    {
+     "coin": "DOT",
+     "market": "crypto",
+     "side": "BUY",
+     "entry": 1.191,
+     "sl": 1.1636352985656637,
+     "tp1": 1.2183647014343364,
+     "tp2": 1.2457294028686727,
+     "score": 76,
+     "agree": 5,
+     "n": 6,
+     "src": {
+      "tv1h": 0.4,
+      "tv4h": 0.445,
+      "tv1d": 0.379,
+      "engine": 0.954,
+      "rsi": 66.9,
+      "mom": 0.699,
+      "lsr": 1.6,
+      "crowd": -0.299
+     },
+     "opened": "2026-10-23T10:34:03+00:00",
+     "status": "open",
+     "also_bot": false
+    },
+    {
+     "coin": "BCH",
+     "market": "crypto",
+     "side": "BUY",
+     "entry": 286.5,
+     "sl": 282.09019665938655,
+     "tp1": 290.90980334061345,
+     "tp2": 295.3196066812269,
+     "score": 74,
+     "agree": 5,
+     "n": 6,
+     "src": {
+      "tv1h": 0.4,
+      "tv4h": 0.536,
+      "tv1d": 0.312,
+      "engine": 0.945,
+      "rsi": 66.4,
+      "mom": 0.371,
+      "lsr": 1.52,
+      "crowd": -0.262
+     },
+     "opened": "2026-10-23T10:34:03+00:00",
+     "status": "open",
+     "also_bot": false
+    },
+    {
+     "coin": "HBAR",
      "market": "crypto",
      "side": "SELL",
-     "entry": 5.01e-06,
-     "sl": 5.07241755244553e-06,
-     "tp1": 4.9475824475544706e-06,
-     "tp2": 4.88516489510894e-06,
+     "entry": 0.07925,
+     "sl": 0.0803912816397157,
+     "tp1": 0.0781087183602843,
+     "tp2": 0.07696743672056858,
      "score": 21,
      "agree": 6,
      "n": 6,
      "src": {
       "tv1h": -0.445,
-      "tv4h": -0.558,
-      "tv1d": -0.512,
-      "engine": -1.0,
-      "rsi": 28.9,
-      "mom": -0.238,
-      "lsr": 2.22,
-      "crowd": -0.5
+      "tv4h": -0.648,
+      "tv1d": -0.491,
+      "engine": -0.927,
+      "rsi": 34.9,
+      "mom": -0.445,
+      "lsr": 1.25,
+      "crowd": -0.125
      },
-     "opened": "2026-10-22T10:12:18+00:00",
+     "opened": "2026-10-23T10:34:03+00:00",
      "status": "open",
      "also_bot": false
     },
     {
-     "coin": "POL",
+     "coin": "OP",
      "market": "crypto",
      "side": "SELL",
-     "entry": 0.0914,
-     "sl": 0.09268449016833999,
-     "tp1": 0.09011550983166,
-     "tp2": 0.08883101966332,
-     "score": 22,
+     "entry": 0.1182,
+     "sl": 0.12034106434656333,
+     "tp1": 0.11605893565343667,
+     "tp2": 0.11391787130687335,
+     "score": 21,
      "agree": 6,
      "n": 6,
      "src": {
-      "tv1h": -0.445,
-      "tv4h": -0.491,
-      "tv1d": -0.445,
-      "engine": -1.0,
-      "rsi": 29.3,
-      "mom": -0.483,
-      "lsr": 1.37,
-      "crowd": -0.184
+      "tv1h": -0.467,
+      "tv4h": -0.558,
+      "tv1d": -0.312,
+      "engine": -0.931,
+      "rsi": 34.6,
+      "mom": -0.73,
+      "lsr": 1.77,
+      "crowd": -0.384
      },
-     "opened": "2026-10-22T10:12:18+00:00",
-     "status": "open",
-     "also_bot": false
-    },
-    {
-     "coin": "USDJPY",
-     "market": "forex",
-     "side": "SELL",
-     "entry": 156.8040008544922,
-     "sl": 157.14837104379146,
-     "tp1": 156.45963066519292,
-     "tp2": 156.11526047589362,
-     "score": 25,
-     "agree": 5,
-     "n": 5,
-     "src": {
-      "tv1h": -0.309,
-      "tv4h": -0.421,
-      "tv1d": -0.555,
-      "engine": -1.0,
-      "rsi": 21.6,
-      "mom": -0.101
-     },
-     "opened": "2026-10-22T10:12:18+00:00",
+     "opened": "2026-10-23T10:34:03+00:00",
      "status": "open",
      "also_bot": false
     },
@@ -5513,71 +5785,148 @@
      "coin": "XAUUSD",
      "market": "forex",
      "side": "SELL",
-     "entry": 4104.39990234375,
-     "sl": 4126.929771839785,
-     "tp1": 4081.870032847715,
-     "tp2": 4059.34016335168,
-     "score": 26,
+     "entry": 4038.10009765625,
+     "sl": 4062.8673315118936,
+     "tp1": 4013.3328638006064,
+     "tp2": 3988.565629944963,
+     "score": 24,
      "agree": 5,
      "n": 5,
      "src": {
-      "tv1h": -0.4,
-      "tv4h": -0.355,
-      "tv1d": -0.512,
-      "engine": -0.904,
-      "rsi": 36.4,
-      "mom": -0.152
+      "tv1h": -0.424,
+      "tv4h": -0.445,
+      "tv1d": -0.558,
+      "engine": -0.802,
+      "rsi": 43.2,
+      "mom": -0.246
      },
-     "opened": "2026-10-22T10:12:18+00:00",
+     "opened": "2026-10-23T10:34:03+00:00",
+     "status": "open",
+     "also_bot": false
+    },
+    {
+     "coin": "EURJPY",
+     "market": "forex",
+     "side": "SELL",
+     "entry": 175.41299438476562,
+     "sl": 175.8734751799797,
+     "tp1": 174.95251358955156,
+     "tp2": 174.4920327943375,
+     "score": 24,
+     "agree": 4,
+     "n": 5,
+     "src": {
+      "tv1h": -0.355,
+      "tv4h": -0.512,
+      "tv1d": -0.555,
+      "engine": -0.979,
+      "rsi": 31.4,
+      "mom": -0.062
+     },
+     "opened": "2026-10-23T10:34:03+00:00",
      "status": "open",
      "also_bot": false
     }
    ],
    "board": [
     {
-     "c": "GBPUSD",
-     "m": "forex",
-     "score": 63,
-     "buy": 3,
-     "sell": 1,
-     "n": 5,
-     "ch24": -0.01
-    },
-    {
-     "c": "ZEC",
-     "m": "crypto",
-     "score": 56,
-     "buy": 5,
-     "sell": 2,
-     "n": 7,
-     "ch24": -1.09
-    },
-    {
      "c": "PEPE",
      "m": "crypto",
-     "score": 55,
-     "buy": 3,
-     "sell": 2,
+     "score": 84,
+     "buy": 5,
+     "sell": 1,
      "n": 6,
-     "ch24": -1.97
+     "ch24": 10.04
     },
     {
-     "c": "AUDUSD",
-     "m": "forex",
-     "score": 50,
-     "buy": 1,
+     "c": "DOT",
+     "m": "crypto",
+     "score": 76,
+     "buy": 5,
      "sell": 1,
-     "n": 5,
-     "ch24": -0.13
+     "n": 6,
+     "ch24": 6.82
+    },
+    {
+     "c": "BCH",
+     "m": "crypto",
+     "score": 74,
+     "buy": 5,
+     "sell": 1,
+     "n": 6,
+     "ch24": 3.92
+    },
+    {
+     "c": "BNB",
+     "m": "crypto",
+     "score": 73,
+     "buy": 6,
+     "sell": 1,
+     "n": 7,
+     "ch24": 1.6
+    },
+    {
+     "c": "ATOM",
+     "m": "crypto",
+     "score": 70,
+     "buy": 5,
+     "sell": 1,
+     "n": 6,
+     "ch24": 5.48
     },
     {
      "c": "NZDUSD",
      "m": "forex",
-     "score": 46,
-     "buy": 0,
-     "sell": 2,
+     "score": 57,
+     "buy": 2,
+     "sell": 1,
      "n": 5,
-     "ch24": -0.03
+     "ch24": 0.01
+    },
+    {
+     "c": "AUDUSD",
+     "m": "forex",
+     "score": 56,
+     "buy": 2,
+     "sell": 0,
+     "n": 5,
+     "ch24": 0.02
+    },
+    {
+     "c": "USDCHF",
+     "m": "forex",
+     "score": 51,
+     "buy": 2,
+     "sell": 1,
+     "n": 5,
+     "ch24": 0.22
+    },
+    {
+     "c": "SHIB",
+     "m": "crypto",
+     "score": 50,
+     "buy": 2,
+     "sell": 2,
+     "n": 6,
+     "ch24": 1.4
+    },
+    {
+     "c": "ETC",
+     "m": "crypto",
+     "score": 48,
+     "buy": 1,
+     "sell": 2,
+     "n": 6,
+     "ch24": 0.51
+    },
+    {
+     "c": "GBPUSD",
+     "m": "forex",
+     "score": 48,
+     "buy": 1,
+     "sell": 3,
+     "n": 5,
+     "ch24": -0.11
     },
     {
      "c": "TON",
@@ -5589,220 +5938,283 @@
      "ch24": 0.06
     },
     {
-     "c": "BNB",
+     "c": "ZEC",
      "m": "crypto",
-     "score": 41,
+     "score": 43,
      "buy": 1,
-     "sell": 4,
+     "sell": 3,
      "n": 7,
-     "ch24": -1.74
+     "ch24": -2.59
     },
     {
-     "c": "EURUSD",
-     "m": "forex",
-     "score": 36,
+     "c": "DOGE",
+     "m": "crypto",
+     "score": 42,
      "buy": 0,
-     "sell": 4,
-     "n": 5,
-     "ch24": 0.0
-    },
-    {
-     "c": "TIA",
-     "m": "crypto",
-     "score": 35,
-     "buy": 1,
-     "sell": 4,
+     "sell": 3,
      "n": 6,
-     "ch24": -5.97
-    },
-    {
-     "c": "XRP",
-     "m": "crypto",
-     "score": 34,
-     "buy": 1,
-     "sell": 5,
-     "n": 7,
-     "ch24": -1.98
-    },
-    {
-     "c": "NEAR",
-     "m": "crypto",
-     "score": 34,
-     "buy": 1,
-     "sell": 4,
-     "n": 6,
-     "ch24": -4.37
-    },
-    {
-     "c": "ENA",
-     "m": "crypto",
-     "score": 33,
-     "buy": 0,
-     "sell": 4,
-     "n": 6,
-     "ch24": -2.46
-    },
-    {
-     "c": "ETH",
-     "m": "crypto",
-     "score": 32,
-     "buy": 1,
-     "sell": 6,
-     "n": 7,
-     "ch24": -1.95
-    },
-    {
-     "c": "INJ",
-     "m": "crypto",
-     "score": 32,
-     "buy": 1,
-     "sell": 5,
-     "n": 6,
-     "ch24": -6.9
-    },
-    {
-     "c": "BTC",
-     "m": "crypto",
-     "score": 31,
-     "buy": 1,
-     "sell": 6,
-     "n": 7,
-     "ch24": -1.77
-    },
-    {
-     "c": "RENDER",
-     "m": "crypto",
-     "score": 31,
-     "buy": 0,
-     "sell": 5,
-     "n": 6,
-     "ch24": -1.98
-    },
-    {
-     "c": "USDCAD",
-     "m": "forex",
-     "score": 30,
-     "buy": 0,
-     "sell": 4,
-     "n": 5,
-     "ch24": -0.24
-    },
-    {
-     "c": "GBPJPY",
-     "m": "forex",
-     "score": 30,
-     "buy": 0,
-     "sell": 4,
-     "n": 5,
-     "ch24": -0.87
-    },
-    {
-     "c": "SOL",
-     "m": "crypto",
-     "score": 28,
-     "buy": 1,
-     "sell": 6,
-     "n": 7,
-     "ch24": -2.16
+     "ch24": 0.98
     },
     {
      "c": "TRX",
      "m": "crypto",
-     "score": 28,
+     "score": 42,
+     "buy": 0,
+     "sell": 2,
+     "n": 6,
+     "ch24": -0.27
+    },
+    {
+     "c": "ADA",
+     "m": "crypto",
+     "score": 40,
+     "buy": 0,
+     "sell": 4,
+     "n": 6,
+     "ch24": 0.0
+    },
+    {
+     "c": "UNI",
+     "m": "crypto",
+     "score": 40,
+     "buy": 0,
+     "sell": 3,
+     "n": 6,
+     "ch24": 1.4
+    },
+    {
+     "c": "SUI",
+     "m": "crypto",
+     "score": 39,
      "buy": 0,
      "sell": 5,
      "n": 6,
-     "ch24": -0.03
+     "ch24": 0.54
+    },
+    {
+     "c": "WIF",
+     "m": "crypto",
+     "score": 39,
+     "buy": 0,
+     "sell": 4,
+     "n": 6,
+     "ch24": -0.1
+    },
+    {
+     "c": "POL",
+     "m": "crypto",
+     "score": 38,
+     "buy": 0,
+     "sell": 5,
+     "n": 6,
+     "ch24": 0.31
+    },
+    {
+     "c": "BTC",
+     "m": "crypto",
+     "score": 37,
+     "buy": 1,
+     "sell": 4,
+     "n": 7,
+     "ch24": -0.33
+    },
+    {
+     "c": "LINK",
+     "m": "crypto",
+     "score": 36,
+     "buy": 0,
+     "sell": 5,
+     "n": 6,
+     "ch24": 0.33
+    },
+    {
+     "c": "AAVE",
+     "m": "crypto",
+     "score": 36,
+     "buy": 0,
+     "sell": 5,
+     "n": 6,
+     "ch24": -0.01
+    },
+    {
+     "c": "TAO",
+     "m": "crypto",
+     "score": 36,
+     "buy": 0,
+     "sell": 5,
+     "n": 6,
+     "ch24": 0.5
+    },
+    {
+     "c": "ENA",
+     "m": "crypto",
+     "score": 36,
+     "buy": 0,
+     "sell": 4,
+     "n": 6,
+     "ch24": 0.45
     },
     {
      "c": "FIL",
      "m": "crypto",
-     "score": 28,
+     "score": 35,
      "buy": 0,
      "sell": 5,
      "n": 6,
-     "ch24": -3.73
+     "ch24": -1.27
     },
     {
-     "c": "USDCHF",
-     "m": "forex",
-     "score": 28,
+     "c": "FET",
+     "m": "crypto",
+     "score": 35,
      "buy": 0,
      "sell": 5,
+     "n": 6,
+     "ch24": 0.21
+    },
+    {
+     "c": "ETH",
+     "m": "crypto",
+     "score": 33,
+     "buy": 1,
+     "sell": 6,
+     "n": 7,
+     "ch24": -0.39
+    },
+    {
+     "c": "SOL",
+     "m": "crypto",
+     "score": 32,
+     "buy": 1,
+     "sell": 5,
+     "n": 7,
+     "ch24": -0.12
+    },
+    {
+     "c": "NEAR",
+     "m": "crypto",
+     "score": 32,
+     "buy": 0,
+     "sell": 4,
+     "n": 6,
+     "ch24": -0.93
+    },
+    {
+     "c": "XRP",
+     "m": "crypto",
+     "score": 31,
+     "buy": 1,
+     "sell": 6,
+     "n": 7,
+     "ch24": -0.78
+    },
+    {
+     "c": "INJ",
+     "m": "crypto",
+     "score": 30,
+     "buy": 0,
+     "sell": 4,
+     "n": 6,
+     "ch24": -1.23
+    },
+    {
+     "c": "ICP",
+     "m": "crypto",
+     "score": 30,
+     "buy": 0,
+     "sell": 6,
+     "n": 6,
+     "ch24": -1.04
+    },
+    {
+     "c": "AVAX",
+     "m": "crypto",
+     "score": 29,
+     "buy": 0,
+     "sell": 6,
+     "n": 6,
+     "ch24": -0.4
+    },
+    {
+     "c": "USDCAD",
+     "m": "forex",
+     "score": 29,
+     "buy": 0,
+     "sell": 4,
      "n": 5,
-     "ch24": -0.64
+     "ch24": -0.14
     },
     {
-     "c": "DOT",
+     "c": "LTC",
+     "m": "crypto",
+     "score": 28,
+     "buy": 0,
+     "sell": 6,
+     "n": 6,
+     "ch24": -0.47
+    },
+    {
+     "c": "ONDO",
+     "m": "crypto",
+     "score": 28,
+     "buy": 0,
+     "sell": 6,
+     "n": 6,
+     "ch24": -0.8
+    },
+    {
+     "c": "APT",
      "m": "crypto",
      "score": 27,
      "buy": 0,
      "sell": 6,
      "n": 6,
-     "ch24": -3.21
+     "ch24": -1.13
     },
     {
-     "c": "ATOM",
-     "m": "crypto",
-     "score": 27,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -2.75
-    },
-    {
-     "c": "XAUUSD",
+     "c": "EURUSD",
      "m": "forex",
+     "score": 27,
+     "buy": 0,
+     "sell": 4,
+     "n": 5,
+     "ch24": -0.18
+    },
+    {
+     "c": "XLM",
+     "m": "crypto",
      "score": 26,
      "buy": 0,
-     "sell": 5,
-     "n": 5,
-     "ch24": -0.81
+     "sell": 6,
+     "n": 6,
+     "ch24": -0.79
     },
     {
-     "c": "EURJPY",
+     "c": "ARB",
+     "m": "crypto",
+     "score": 26,
+     "buy": 0,
+     "sell": 6,
+     "n": 6,
+     "ch24": 0.39
+    },
+    {
+     "c": "USDJPY",
      "m": "forex",
      "score": 26,
      "buy": 0,
      "sell": 4,
      "n": 5,
-     "ch24": -0.85
+     "ch24": -0.11
     },
     {
-     "c": "LINK",
-     "m": "crypto",
-     "score": 25,
+     "c": "GBPJPY",
+     "m": "forex",
+     "score": 26,
      "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -2.34
-    },
-    {
-     "c": "SUI",
-     "m": "crypto",
-     "score": 25,
-     "buy": 0,
-     "sell": 5,
-     "n": 6,
-     "ch24": -4.23
-    },
-    {
-     "c": "ONDO",
-     "m": "crypto",
-     "score": 25,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -3.84
-    },
-    {
-     "c": "WIF",
-     "m": "crypto",
-     "score": 25,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -3.55
+     "sell": 4,
+     "n": 5,
+     "ch24": -0.22
     },
     {
      "c": "SEI",
@@ -5811,193 +6223,76 @@
      "buy": 0,
      "sell": 6,
      "n": 6,
-     "ch24": -5.47
+     "ch24": -1.16
     },
     {
-     "c": "USDJPY",
+     "c": "RENDER",
+     "m": "crypto",
+     "score": 24,
+     "buy": 0,
+     "sell": 4,
+     "n": 6,
+     "ch24": -3.44
+    },
+    {
+     "c": "TIA",
+     "m": "crypto",
+     "score": 24,
+     "buy": 0,
+     "sell": 5,
+     "n": 6,
+     "ch24": -5.49
+    },
+    {
+     "c": "XAUUSD",
      "m": "forex",
-     "score": 25,
+     "score": 24,
      "buy": 0,
      "sell": 5,
      "n": 5,
-     "ch24": -0.86
+     "ch24": -1.49
     },
     {
-     "c": "LTC",
-     "m": "crypto",
+     "c": "EURJPY",
+     "m": "forex",
      "score": 24,
      "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -3.25
-    },
-    {
-     "c": "AAVE",
-     "m": "crypto",
-     "score": 24,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -4.85
-    },
-    {
-     "c": "APT",
-     "m": "crypto",
-     "score": 24,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -5.54
-    },
-    {
-     "c": "ARB",
-     "m": "crypto",
-     "score": 24,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -5.22
-    },
-    {
-     "c": "ICP",
-     "m": "crypto",
-     "score": 24,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -4.68
-    },
-    {
-     "c": "ETC",
-     "m": "crypto",
-     "score": 24,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -3.22
-    },
-    {
-     "c": "TAO",
-     "m": "crypto",
-     "score": 24,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -4.56
-    },
-    {
-     "c": "ADA",
-     "m": "crypto",
-     "score": 23,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -4.0
-    },
-    {
-     "c": "DOGE",
-     "m": "crypto",
-     "score": 23,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -3.25
-    },
-    {
-     "c": "AVAX",
-     "m": "crypto",
-     "score": 23,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -4.55
-    },
-    {
-     "c": "UNI",
-     "m": "crypto",
-     "score": 23,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -5.68
-    },
-    {
-     "c": "BCH",
-     "m": "crypto",
-     "score": 23,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -4.04
-    },
-    {
-     "c": "XLM",
-     "m": "crypto",
-     "score": 23,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -3.37
-    },
-    {
-     "c": "POL",
-     "m": "crypto",
-     "score": 22,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -4.8
+     "sell": 4,
+     "n": 5,
+     "ch24": -0.3
     },
     {
      "c": "HBAR",
-     "m": "crypto",
-     "score": 22,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -4.4
-    },
-    {
-     "c": "OP",
-     "m": "crypto",
-     "score": 22,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -6.66
-    },
-    {
-     "c": "FET",
-     "m": "crypto",
-     "score": 22,
-     "buy": 0,
-     "sell": 6,
-     "n": 6,
-     "ch24": -5.34
-    },
-    {
-     "c": "SHIB",
      "m": "crypto",
      "score": 21,
      "buy": 0,
      "sell": 6,
      "n": 6,
-     "ch24": -3.09
+     "ch24": -2.06
+    },
+    {
+     "c": "OP",
+     "m": "crypto",
+     "score": 21,
+     "buy": 0,
+     "sell": 6,
+     "n": 6,
+     "ch24": -3.11
     },
     {
      "c": "XAGUSD",
      "m": "forex",
-     "score": 11,
+     "score": 10,
      "buy": 0,
      "sell": 2,
      "n": 2,
-     "ch24": -2.41
+     "ch24": -3.65
     }
    ],
    "n": 51
   }
  },
- "daily_picks_day": "2026-10-22",
+ "daily_picks_day": "2026-10-23",
  "last_week": "2026-10-19",
  "liq_post_hour": "2026-10-23 00",
  "liq_alert_hour": "2026-10-21T13:00:00+00:00"

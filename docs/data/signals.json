@@ -49,7 +49,62 @@
   "expired": 0
  },
  "min_conf": 60,
- "open": [],
+ "open": [
+  {
+   "coin": "AVAX",
+   "side": "SELL",
+   "entry": 9.217,
+   "sl": 9.340803655939439,
+   "tp1": 9.093196344060562,
+   "tp2": 8.969392688121124,
+   "tp1_hit": false,
+   "opened": "2026-10-23T09:00:00+00:00",
+   "rsi": 44.1,
+   "conf": 84,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "Strong trend (ADX 27)",
+    "Volume 1.6× the average",
+    "RSI 44 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "AVAX",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  },
+  {
+   "coin": "ONDO",
+   "side": "SELL",
+   "entry": 0.4345,
+   "sl": 0.44128252498678244,
+   "tp1": 0.42771747501321755,
+   "tp2": 0.42093495002643505,
+   "tp1_hit": false,
+   "opened": "2026-10-23T09:00:00+00:00",
+   "rsi": 45.6,
+   "conf": 79,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "Moderate trend (ADX 22)",
+    "Volume 1.5× the average",
+    "RSI 46 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "ONDO",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  }
+ ],
  "history": [
   {
    "coin": "NEAR",
@@ -790,6 +845,25 @@
  ],
  "watch": [
   {
+   "coin": "INJ",
+   "name": "INJ",
+   "market": "crypto",
+   "side": "SELL",
+   "price": 8.014,
+   "score": 56,
+   "chk": "4/4",
+   "why": [
+    "⚠ 4H",
+    "15M",
+    "⚠ 5M",
+    "run-up",
+    "RSI",
+    "extension",
+    "range"
+   ],
+   "time": "2026-10-23T10:32:40+00:00"
+  },
+  {
    "coin": "BNB",
    "name": "BNB",
    "market": "crypto",
@@ -959,25 +1033,6 @@
     "range"
    ],
    "time": "2026-10-19T01:43:54+00:00"
-  },
-  {
-   "coin": "NEAR",
-   "name": "NEAR",
-   "market": "crypto",
-   "side": "BUY",
-   "price": 5.01,
-   "score": 50,
-   "chk": "3/4",
-   "why": [
-    "⚠ 4H",
-    "⚠ 15M",
-    "5M",
-    "run-up",
-    "⚠ RSI",
-    "extension",
-    "range"
-   ],
-   "time": "2026-10-19T01:43:48+00:00"
   }
  ],
  "fear_greed": {
@@ -1034,61 +1089,61 @@
   ],
   "quotes": {
    "EURUSD": {
-    "price": 1.1212,
-    "ch": -0.31,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 1.12032,
+    "ch": -0.18,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "GBPUSD": {
-    "price": 1.33894,
-    "ch": -0.07,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 1.33804,
+    "ch": -0.11,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "USDJPY": {
-    "price": 156.967,
-    "ch": -0.47,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 156.627,
+    "ch": -0.11,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "XAUUSD": {
-    "price": 4018.69995,
-    "ch": -2.16,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 4038.1001,
+    "ch": -1.49,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "AUDUSD": {
-    "price": 0.70087,
-    "ch": -0.17,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 0.702,
+    "ch": 0.02,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "USDCAD": {
-    "price": 1.40122,
-    "ch": -0.13,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 1.40007,
+    "ch": -0.14,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "USDCHF": {
-    "price": 0.82152,
-    "ch": -0.17,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 0.82223,
+    "ch": 0.22,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "NZDUSD": {
-    "price": 0.56922,
-    "ch": 0.02,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 0.56876,
+    "ch": 0.01,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "EURJPY": {
-    "price": 175.944,
-    "ch": -0.78,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 175.41299,
+    "ch": -0.3,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "GBPJPY": {
-    "price": 210.161,
-    "ch": -0.53,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 209.563,
+    "ch": -0.22,
+    "time": "2026-10-23T09:00:00+00:00"
    },
    "XAGUSD": {
-    "price": 53.795,
-    "ch": -4.59,
-    "time": "2026-10-23T04:00:00+00:00"
+    "price": 53.91,
+    "ch": -3.65,
+    "time": "2026-10-23T09:00:00+00:00"
    }
   }
  },
- "updated": "2026-10-23T05:46:43+00:00"
+ "updated": "2026-10-23T10:34:03+00:00"
 }
