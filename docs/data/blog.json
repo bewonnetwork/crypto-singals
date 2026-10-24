@@ -1,6 +1,31 @@
 {
  "posts": [
   {
+   "slug": "position-size-and-the-1-percent-rule",
+   "type": "learn",
+   "date": "2026-10-24T09:44:13+00:00",
+   "title": "Position Size and the 1% Rule",
+   "title_bn": "এক ট্রেডে কত টাকা? ১% নিয়ম",
+   "sum_en": "How much you risk per trade matters more than which coin you pick. The 1% rule keeps one bad trade from hurting your account.",
+   "sum_bn": "কোন কয়েন কিনছেন তার চেয়ে বড় কথা এক ট্রেডে কত ঝুঁকি নিচ্ছেন। ১% নিয়ম একটা খারাপ ট্রেড থেকে আপনার টাকা বাঁচায়।",
+   "body": {
+    "pts_bn": [
+     "নিয়ম: এক ট্রেডে মোট টাকার ১–২%-এর বেশি হারানোর ঝুঁকি নেবেন না।",
+     "হিসাব: ঝুঁকির টাকা ÷ (Entry থেকে Stop Loss-এর দূরত্ব %) = ট্রেডের আকার। যেমন ১০০০ ডলারে ১% = ১০ ডলার ঝুঁকি; Stop Loss ২% দূরে হলে ট্রেডের আকার ৫০০ ডলার।",
+     "Stop Loss দূরে হলে ট্রেড ছোট হবে, কাছে হলে বড় হতে পারে। ঝুঁকির টাকা একই থাকে।",
+     "টানা ১০টা ট্রেড হারলেও এই নিয়মে মাত্র ১০% মতো যায়, আপনি খেলায় টিকে থাকেন।",
+     "ওয়েবসাইটের ডেমো পাতায় নকল টাকায় এই হিসাব প্র্যাকটিস করুন।"
+    ],
+    "pts_en": [
+     "Rule: never risk more than 1–2% of your total money on one trade.",
+     "Maths: risk amount ÷ (distance from entry to stop-loss in %) = position size. With $1,000, 1% is $10 of risk; if the stop is 2% away the position is $500.",
+     "A wider stop means a smaller position, a tighter stop allows a bigger one. The money at risk stays the same.",
+     "Even ten losing trades in a row cost only about 10%, so you stay in the game.",
+     "Practise this with play money on the demo page of our site."
+    ]
+   }
+  },
+  {
    "slug": "crypto-market-digest-october-24-2026",
    "type": "digest",
    "date": "2026-10-24T05:24:19+00:00",
@@ -6356,31 +6381,6 @@
    }
   },
   {
-   "slug": "position-size-and-the-1-percent-rule",
-   "type": "learn",
-   "date": "2026-10-14T09:03:08+00:00",
-   "title": "Position Size and the 1% Rule",
-   "title_bn": "এক ট্রেডে কত টাকা? ১% নিয়ম",
-   "sum_en": "How much you risk per trade matters more than which coin you pick. The 1% rule keeps one bad trade from hurting your account.",
-   "sum_bn": "কোন কয়েন কিনছেন তার চেয়ে বড় কথা এক ট্রেডে কত ঝুঁকি নিচ্ছেন। ১% নিয়ম একটা খারাপ ট্রেড থেকে আপনার টাকা বাঁচায়।",
-   "body": {
-    "pts_bn": [
-     "নিয়ম: এক ট্রেডে মোট টাকার ১–২%-এর বেশি হারানোর ঝুঁকি নেবেন না।",
-     "হিসাব: ঝুঁকির টাকা ÷ (Entry থেকে Stop Loss-এর দূরত্ব %) = ট্রেডের আকার। যেমন ১০০০ ডলারে ১% = ১০ ডলার ঝুঁকি; Stop Loss ২% দূরে হলে ট্রেডের আকার ৫০০ ডলার।",
-     "Stop Loss দূরে হলে ট্রেড ছোট হবে, কাছে হলে বড় হতে পারে। ঝুঁকির টাকা একই থাকে।",
-     "টানা ১০টা ট্রেড হারলেও এই নিয়মে মাত্র ১০% মতো যায়, আপনি খেলায় টিকে থাকেন।",
-     "ওয়েবসাইটের ডেমো পাতায় নকল টাকায় এই হিসাব প্র্যাকটিস করুন।"
-    ],
-    "pts_en": [
-     "Rule: never risk more than 1–2% of your total money on one trade.",
-     "Maths: risk amount ÷ (distance from entry to stop-loss in %) = position size. With $1,000, 1% is $10 of risk; if the stop is 2% away the position is $500.",
-     "A wider stop means a smaller position, a tighter stop allows a bigger one. The money at risk stays the same.",
-     "Even ten losing trades in a row cost only about 10%, so you stay in the game.",
-     "Practise this with play money on the demo page of our site."
-    ]
-   }
-  },
-  {
    "slug": "crypto-market-digest-october-14-2026",
    "type": "digest",
    "date": "2026-10-14T03:39:19+00:00",
@@ -11440,5 +11440,5 @@
    }
   }
  ],
- "updated": "2026-10-24T05:24:20+00:00"
+ "updated": "2026-10-24T09:44:13+00:00"
 }

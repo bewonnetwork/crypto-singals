@@ -1,356 +1,154 @@
 {
  "coins": [
   {
-   "c": "BNB",
-   "name": "BNB",
-   "rank": 4,
-   "score": 44,
-   "label": "Neutral",
-   "agree": 0,
-   "against": 3,
-   "n": 7,
-   "src": {
-    "tv1h": -0.379,
-    "tv4h": -0.088,
-    "tv1d": 0.045,
-    "mom": 0.048,
-    "engine": -0.027,
-    "rsi": 48.2,
-    "votes_up": 33.3,
-    "sent": -0.333,
-    "lsr": 1.57,
-    "crowd": -0.286
-   }
-  },
-  {
    "c": "TRX",
    "name": "TRON",
    "rank": 8,
-   "score": 44,
-   "label": "Neutral",
+   "score": 38,
+   "label": "Sell",
    "agree": 0,
-   "against": 2,
+   "against": 3,
    "n": 6,
    "src": {
-    "tv1h": 0.045,
-    "tv4h": -0.288,
+    "tv1h": -0.536,
+    "tv4h": -0.309,
     "tv1d": -0.424,
-    "mom": -0.035,
-    "engine": 0.05,
-    "rsi": 53.3,
+    "mom": -0.048,
+    "engine": -0.017,
+    "rsi": 48.9,
     "lsr": 0.97,
-    "crowd": 0.013
-   }
-  },
-  {
-   "c": "ETH",
-   "name": "Ethereum",
-   "rank": 2,
-   "score": 31,
-   "label": "Sell",
-   "agree": 1,
-   "against": 6,
-   "n": 7,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.603,
-    "tv1d": -0.245,
-    "mom": -0.141,
-    "engine": -0.799,
-    "rsi": 43.4,
-    "votes_up": 86.7,
-    "sent": 0.733,
-    "lsr": 1.88,
-    "crowd": -0.442
+    "crowd": 0.014
    }
   },
   {
    "c": "BTC",
    "name": "Bitcoin",
    "rank": 1,
-   "score": 29,
-   "label": "Strong sell",
-   "agree": 1,
-   "against": 6,
-   "n": 7,
-   "src": {
-    "tv1h": -0.558,
-    "tv4h": -0.603,
-    "tv1d": -0.2,
-    "mom": -0.124,
-    "engine": -0.859,
-    "rsi": 39.4,
-    "votes_up": 68.0,
-    "sent": 0.359,
-    "lsr": 1.94,
-    "crowd": -0.472
-   }
-  },
-  {
-   "c": "ZEC",
-   "name": "Zcash",
-   "rank": 10,
-   "score": 29,
-   "label": "Strong sell",
-   "agree": 1,
-   "against": 5,
-   "n": 7,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.467,
-    "tv1d": -0.2,
-    "mom": -0.331,
-    "engine": -0.909,
-    "rsi": 36.1,
-    "votes_up": 60.9,
-    "sent": 0.217,
-    "lsr": 1.19,
-    "crowd": -0.096
-   }
-  },
-  {
-   "c": "XRP",
-   "name": "XRP",
-   "rank": 5,
    "score": 28,
    "label": "Strong sell",
    "agree": 1,
    "against": 6,
    "n": 7,
    "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.4,
-    "tv1d": -0.445,
-    "mom": -0.254,
-    "engine": -0.891,
-    "rsi": 37.3,
-    "votes_up": 67.1,
-    "sent": 0.342,
-    "lsr": 2.22,
-    "crowd": -0.5
+    "tv1h": -0.603,
+    "tv4h": -0.603,
+    "tv1d": -0.2,
+    "mom": -0.155,
+    "engine": -0.897,
+    "rsi": 36.9,
+    "votes_up": 68.0,
+    "sent": 0.359,
+    "lsr": 1.97,
+    "crowd": -0.485
+   }
+  },
+  {
+   "c": "ETH",
+   "name": "Ethereum",
+   "rank": 2,
+   "score": 28,
+   "label": "Strong sell",
+   "agree": 1,
+   "against": 6,
+   "n": 7,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.603,
+    "tv1d": -0.312,
+    "mom": -0.218,
+    "engine": -0.885,
+    "rsi": 37.6,
+    "votes_up": 86.7,
+    "sent": 0.733,
+    "lsr": 1.98,
+    "crowd": -0.49
+   }
+  },
+  {
+   "c": "BNB",
+   "name": "BNB",
+   "rank": 4,
+   "score": 26,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 7,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.558,
+    "tv1d": -0.245,
+    "mom": -0.092,
+    "engine": -0.895,
+    "rsi": 37.0,
+    "votes_up": 33.3,
+    "sent": -0.333,
+    "lsr": 1.55,
+    "crowd": -0.274
    }
   },
   {
    "c": "SOL",
    "name": "Solana",
    "rank": 7,
-   "score": 28,
+   "score": 26,
    "label": "Strong sell",
    "agree": 1,
    "against": 6,
    "n": 7,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.512,
-    "tv1d": -0.245,
-    "mom": -0.231,
-    "engine": -0.863,
-    "rsi": 39.1,
-    "votes_up": 56.0,
-    "sent": 0.12,
-    "lsr": 2.27,
-    "crowd": -0.5
-   }
-  },
-  {
-   "c": "HYPE",
-   "name": "Hyperliquid",
-   "rank": 11,
-   "score": 27,
-   "label": "Strong sell",
-   "agree": 1,
-   "against": 6,
-   "n": 7,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.521,
-    "tv1d": -0.5,
-    "mom": -0.229,
-    "engine": -0.769,
-    "rsi": 45.4,
-    "votes_up": 58.8,
-    "sent": 0.176,
-    "lsr": 2.02,
-    "crowd": -0.5
-   }
-  },
-  {
-   "c": "NEAR",
-   "name": "NEAR Protocol",
-   "rank": 20,
-   "score": 26,
-   "label": "Strong sell",
-   "agree": 0,
-   "against": 5,
-   "n": 6,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.309,
-    "tv1d": -0.067,
-    "mom": -0.834,
-    "engine": -0.887,
-    "rsi": 37.5,
-    "lsr": 1.31,
-    "crowd": -0.154
-   }
-  },
-  {
-   "c": "AVAX",
-   "name": "Avalanche",
-   "rank": 28,
-   "score": 26,
-   "label": "Strong sell",
-   "agree": 0,
-   "against": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.421,
-    "tv4h": -0.445,
-    "tv1d": -0.2,
-    "mom": -0.555,
-    "engine": -0.774,
-    "rsi": 45.1,
-    "lsr": 1.55,
-    "crowd": -0.273
-   }
-  },
-  {
-   "c": "LINK",
-   "name": "Chainlink",
-   "rank": 16,
-   "score": 25,
-   "label": "Strong sell",
-   "agree": 0,
-   "against": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.491,
-    "tv1d": -0.291,
-    "mom": -0.378,
-    "engine": -0.8,
-    "rsi": 43.3,
-    "lsr": 1.64,
-    "crowd": -0.319
-   }
-  },
-  {
-   "c": "ADA",
-   "name": "Cardano",
-   "rank": 18,
-   "score": 25,
-   "label": "Strong sell",
-   "agree": 0,
-   "against": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.445,
-    "tv1d": -0.355,
-    "mom": -0.401,
-    "engine": -0.803,
-    "rsi": 43.1,
-    "lsr": 1.57,
-    "crowd": -0.285
-   }
-  },
-  {
-   "c": "UNI",
-   "name": "Uniswap",
-   "rank": 26,
-   "score": 25,
-   "label": "Strong sell",
-   "agree": 0,
-   "against": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.491,
-    "tv1d": -0.245,
-    "mom": -0.444,
-    "engine": -0.788,
-    "rsi": 44.1,
-    "lsr": 2.32,
-    "crowd": -0.5
-   }
-  },
-  {
-   "c": "BCH",
-   "name": "Bitcoin Cash",
-   "rank": 22,
-   "score": 24,
-   "label": "Strong sell",
-   "agree": 0,
-   "against": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.467,
-    "tv4h": -0.467,
-    "tv1d": -0.515,
-    "mom": -0.326,
-    "engine": -0.854,
-    "rsi": 39.8,
-    "lsr": 1.6,
-    "crowd": -0.301
-   }
-  },
-  {
-   "c": "LTC",
-   "name": "Litecoin",
-   "rank": 25,
-   "score": 24,
-   "label": "Strong sell",
-   "agree": 0,
-   "against": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.4,
-    "tv1d": -0.245,
-    "mom": -0.528,
-    "engine": -0.908,
-    "rsi": 36.1,
-    "lsr": 2.11,
-    "crowd": -0.5
-   }
-  },
-  {
-   "c": "SUI",
-   "name": "Sui",
-   "rank": 30,
-   "score": 24,
-   "label": "Strong sell",
-   "agree": 0,
-   "against": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.512,
-    "tv4h": -0.4,
-    "tv1d": -0.267,
-    "mom": -0.477,
-    "engine": -0.847,
-    "rsi": 40.2,
-    "lsr": 2.71,
-    "crowd": -0.5
-   }
-  },
-  {
-   "c": "DOGE",
-   "name": "Dogecoin",
-   "rank": 12,
-   "score": 22,
-   "label": "Strong sell",
-   "agree": 0,
-   "against": 6,
-   "n": 6,
    "src": {
     "tv1h": -0.603,
-    "tv4h": -0.603,
+    "tv4h": -0.467,
+    "tv1d": -0.245,
+    "mom": -0.332,
+    "engine": -0.946,
+    "rsi": 33.6,
+    "votes_up": 56.0,
+    "sent": 0.12,
+    "lsr": 2.31,
+    "crowd": -0.5
+   }
+  },
+  {
+   "c": "ZEC",
+   "name": "Zcash",
+   "rank": 10,
+   "score": 26,
+   "label": "Strong sell",
+   "agree": 1,
+   "against": 6,
+   "n": 7,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.558,
+    "tv1d": -0.2,
+    "mom": -0.561,
+    "engine": -0.937,
+    "rsi": 34.2,
+    "votes_up": 60.9,
+    "sent": 0.217,
+    "lsr": 1.22,
+    "crowd": -0.108
+   }
+  },
+  {
+   "c": "XRP",
+   "name": "XRP",
+   "rank": 5,
+   "score": 24,
+   "label": "Strong sell",
+   "agree": 1,
+   "against": 6,
+   "n": 7,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.512,
     "tv1d": -0.512,
-    "mom": -0.205,
-    "engine": -0.8,
-    "rsi": 43.4,
-    "lsr": 3.44,
+    "mom": -0.347,
+    "engine": -0.992,
+    "rsi": 30.5,
+    "votes_up": 67.1,
+    "sent": 0.342,
+    "lsr": 2.29,
     "crowd": -0.5
    }
   },
@@ -358,37 +156,59 @@
    "c": "XMR",
    "name": "Monero",
    "rank": 13,
-   "score": 22,
+   "score": 24,
    "label": "Strong sell",
    "agree": 0,
    "against": 3,
    "n": 3,
    "src": {
-    "mom": -0.312,
+    "mom": -0.179,
     "engine": -0.852,
     "rsi": 39.9,
-    "lsr": 1.35,
-    "crowd": -0.177
+    "lsr": 1.34,
+    "crowd": -0.169
    }
   },
   {
-   "c": "XLM",
-   "name": "Stellar",
-   "rank": 19,
-   "score": 22,
+   "c": "HYPE",
+   "name": "Hyperliquid",
+   "rank": 11,
+   "score": 21,
+   "label": "Strong sell",
+   "agree": 1,
+   "against": 6,
+   "n": 7,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.552,
+    "tv1d": -0.611,
+    "mom": -0.513,
+    "engine": -0.984,
+    "rsi": 31.1,
+    "votes_up": 58.8,
+    "sent": 0.176,
+    "lsr": 2.04,
+    "crowd": -0.5
+   }
+  },
+  {
+   "c": "BCH",
+   "name": "Bitcoin Cash",
+   "rank": 22,
+   "score": 21,
    "label": "Strong sell",
    "agree": 0,
    "against": 6,
    "n": 6,
    "src": {
     "tv1h": -0.603,
-    "tv4h": -0.4,
-    "tv1d": -0.558,
-    "mom": -0.386,
-    "engine": -0.866,
-    "rsi": 38.9,
-    "lsr": 1.57,
-    "crowd": -0.284
+    "tv4h": -0.603,
+    "tv1d": -0.515,
+    "mom": -0.336,
+    "engine": -0.889,
+    "rsi": 37.4,
+    "lsr": 1.56,
+    "crowd": -0.281
    }
   },
   {
@@ -401,14 +221,194 @@
    "against": 6,
    "n": 6,
    "src": {
-    "tv1h": -0.603,
-    "tv4h": -0.309,
+    "tv1h": -0.512,
+    "tv4h": -0.4,
     "tv1d": -0.462,
-    "mom": -0.762,
-    "engine": -0.91,
-    "rsi": 36.0,
-    "lsr": 1.43,
-    "crowd": -0.215
+    "mom": -0.741,
+    "engine": -0.941,
+    "rsi": 34.0,
+    "lsr": 1.48,
+    "crowd": -0.242
+   }
+  },
+  {
+   "c": "LINK",
+   "name": "Chainlink",
+   "rank": 16,
+   "score": 20,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 6,
+   "src": {
+    "tv1h": -0.648,
+    "tv4h": -0.603,
+    "tv1d": -0.291,
+    "mom": -0.546,
+    "engine": -0.972,
+    "rsi": 31.8,
+    "lsr": 1.66,
+    "crowd": -0.332
+   }
+  },
+  {
+   "c": "UNI",
+   "name": "Uniswap",
+   "rank": 26,
+   "score": 20,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 6,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.558,
+    "tv1d": -0.245,
+    "mom": -0.647,
+    "engine": -0.918,
+    "rsi": 35.5,
+    "lsr": 2.35,
+    "crowd": -0.5
+   }
+  },
+  {
+   "c": "SUI",
+   "name": "Sui",
+   "rank": 30,
+   "score": 19,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 6,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.603,
+    "tv1d": -0.312,
+    "mom": -0.625,
+    "engine": -0.966,
+    "rsi": 32.3,
+    "lsr": 2.53,
+    "crowd": -0.5
+   }
+  },
+  {
+   "c": "DOGE",
+   "name": "Dogecoin",
+   "rank": 12,
+   "score": 18,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 6,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.603,
+    "tv1d": -0.558,
+    "mom": -0.438,
+    "engine": -0.971,
+    "rsi": 31.9,
+    "lsr": 3.65,
+    "crowd": -0.5
+   }
+  },
+  {
+   "c": "ADA",
+   "name": "Cardano",
+   "rank": 18,
+   "score": 18,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 6,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.603,
+    "tv1d": -0.512,
+    "mom": -0.595,
+    "engine": -0.979,
+    "rsi": 31.4,
+    "lsr": 1.64,
+    "crowd": -0.318
+   }
+  },
+  {
+   "c": "XLM",
+   "name": "Stellar",
+   "rank": 19,
+   "score": 18,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 6,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.603,
+    "tv1d": -0.558,
+    "mom": -0.528,
+    "engine": -1.0,
+    "rsi": 27.7,
+    "lsr": 1.5,
+    "crowd": -0.251
+   }
+  },
+  {
+   "c": "NEAR",
+   "name": "NEAR Protocol",
+   "rank": 20,
+   "score": 18,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 6,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.558,
+    "tv1d": -0.203,
+    "mom": -1.0,
+    "engine": -1.0,
+    "rsi": 29.9,
+    "lsr": 1.41,
+    "crowd": -0.206
+   }
+  },
+  {
+   "c": "LTC",
+   "name": "Litecoin",
+   "rank": 25,
+   "score": 18,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 6,
+   "src": {
+    "tv1h": -0.648,
+    "tv4h": -0.536,
+    "tv1d": -0.379,
+    "mom": -0.589,
+    "engine": -1.0,
+    "rsi": 29.0,
+    "lsr": 2.16,
+    "crowd": -0.5
+   }
+  },
+  {
+   "c": "AVAX",
+   "name": "Avalanche",
+   "rank": 29,
+   "score": 18,
+   "label": "Strong sell",
+   "agree": 0,
+   "against": 6,
+   "n": 6,
+   "src": {
+    "tv1h": -0.603,
+    "tv4h": -0.603,
+    "tv1d": -0.47,
+    "mom": -0.72,
+    "engine": -0.935,
+    "rsi": 34.3,
+    "lsr": 1.57,
+    "crowd": -0.285
    }
   }
  ],
@@ -426,5 +426,5 @@
   "label": "Neutral"
  },
  "method": "Weighted average of every source that answered, from -1 (sell) to +1 (buy), shown as 0-100.",
- "updated": "2026-10-24T05:25:12+00:00"
+ "updated": "2026-10-24T09:44:49+00:00"
 }
