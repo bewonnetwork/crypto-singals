@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T09:44:16+00:00",
+ "updated": "2026-10-24T13:37:04+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,51 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "cfa2697540",
+   "title": "Ethereum sees biggest exchange withdrawal in four months as October ETF losses top $1 billion",
+   "link": "https://cryptoslate.com/ethereum-sees-biggest-exchange-withdrawal-in-four-months-as-october-etf-losses-top-1-billion/",
+   "source": "CryptoSlate",
+   "published": "2026-10-24T13:30:53+00:00",
+   "summary": "About 169,770 ETH left centralized exchanges on net in one day, Santiment reported Oct. 23, the largest daily withdrawal in more than four months and worth about $407 million at the $2,400 reference price. The last bigger episode came June…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-etf-outflow-pressure.webp"
+  },
+  {
+   "id": "8770799e7d",
+   "title": "Hong Kong’s Biggest Bank Puts a Stablecoin in 3 Million Wallets",
+   "link": "https://decrypt.co/381760/hong-kong-bank-hsbc-stablecoin-3-million-wallets",
+   "source": "Decrypt",
+   "published": "2026-10-24T13:01:02+00:00",
+   "summary": "HSBC switched on its Hong Kong dollar stablecoin inside PayMe on Friday, testing whether a bank-issued token can become everyday money.",
+   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/07/hong-kong-decrypt-style-gID_7.jpg"
+  },
+  {
+   "id": "494968d159",
+   "title": "Wall Street’s $359 billion-a-day repo market has found a use for blockchain",
+   "link": "https://cryptoslate.com/wall-streets-359-billion-a-day-repo-market-has-found-a-use-for-blockchain/",
+   "source": "CryptoSlate",
+   "published": "2026-10-24T12:00:47+00:00",
+   "summary": "Wall Street has found a use for blockchain that involves neither memecoins nor replacing the banking system. It's now helping institutions borrow billions between breakfast and lunch, usually because they have government bonds but not…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/wall-street-repo-settlement.webp"
+  },
+  {
+   "id": "514e3857f3",
+   "title": "U.S. Clarity Act failure gives Asia and Middle East a competitive edge, says Apex Group CEO",
+   "link": "https://www.coindesk.com/policy/2026/10/24/u-s-clarity-act-failure-gives-asia-and-middle-east-a-competitive-edge-says-apex-group-ceo",
+   "source": "CoinDesk",
+   "published": "2026-10-24T12:00:00+00:00",
+   "summary": "Apex Group CEO Peter Hughes warned that the failure of the U.S. Clarity Act will drive digital asset businesses toward faster-moving jurisdictions in Asia and the Middle East.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/cb2a91ec8eda764f9a0f74f30550a6a716563fda-2517x1416.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "3d1be27955",
+   "title": "Senator probes Tether’s reported $6 million payments to ex-White House crypto adviser’s firm",
+   "link": "https://cryptoslate.com/senator-probes-tethers-reported-6-million-payments-to-ex-white-house-crypto-advisers-firm/",
+   "source": "CryptoSlate",
+   "published": "2026-10-24T11:00:33+00:00",
+   "summary": "Tether faces US Senate scrutiny over multimillion-dollar payments to a consulting firm co-owned by a former White House crypto adviser. On Oct. 22, Senator Richard Blumenthal, the ranking Democrat on the Senate Permanent Subcommittee on…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/tether-payment-papertrail.webp"
+  },
   {
    "id": "21a9fa65e8",
    "title": "Ethereum staking yield is losing to cash rates, so why are investors still lining up?",
@@ -126,15 +171,6 @@
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/04/decrypt-style-elon-musk-5-gID_7.png"
   },
   {
-   "id": "9e5704d505",
-   "title": "SpaceX perpetual futures traded about $6 billion after earnings",
-   "link": "https://cryptoslate.com/spacex-perpetual-futures-traded-about-6-billion-after-earnings/",
-   "source": "CryptoSlate",
-   "published": "2026-10-23T19:10:43+00:00",
-   "summary": "Talos’s combined Binance and Hyperliquid turnover figure rose sharply while Binance’s dollar exposure contracted; actual retained fees remain unquantified. Read the full story on CryptoSlate Understand the crypto stories that matter and…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/spacex-perpetual-market-divergence.webp"
-  },
-  {
    "id": "6582a52a88",
    "title": "SEC Flags AI 'Super Intelligence' and Tokenization as Systemic Market Risks",
    "link": "https://decrypt.co/381745/sec-ai-super-intelligence-tokenization-2027-exam-list",
@@ -160,15 +196,6 @@
    "published": "2026-10-23T18:15:55+00:00",
    "summary": "Netanyahu says blockchain could help Israel prepare for possible sanctions targeting its banking system.",
    "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2020/05/20200501_Israel_Ecosystem_Map-Genesis.jpg"
-  },
-  {
-   "id": "4742010de0",
-   "title": "Bitcoin ETFs shed $635 million as BTC tests their holdings’ estimated $81,500 cost basis",
-   "link": "https://cryptoslate.com/bitcoin-etf-outflows-holdings-cost-basis/",
-   "source": "CryptoSlate",
-   "published": "2026-10-23T18:10:49+00:00",
-   "summary": "US spot Bitcoin exchange-traded funds recorded about $635 million in net outflows Thursday as the cryptocurrency traded near the estimated cost basis of the funds' Bitcoin holdings. The Oct. 22 withdrawals were the largest daily outflow…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-etf-liquidity-drain.webp"
   },
   {
    "id": "5832b32da0",
@@ -205,15 +232,6 @@
    "published": "2026-10-23T17:16:03+00:00",
    "summary": "Developers will now backport fixes and cut releases immediately for flaws flagged as “easily discoverable,” abandoning long embargoes for bugs an attacker can surface with a single AI prompt.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/06/bitcoin-decrypt-style-screen-gID_7.png"
-  },
-  {
-   "id": "0aa73d1c1f",
-   "title": "Coinbase to drop this Japanese yen stablecoin years after its price crash sparked investor lawsuits",
-   "link": "https://cryptoslate.com/coinbase-to-drop-this-japanese-yen-stablecoin-years-after-its-price-crash-sparked-investor-lawsuits/",
-   "source": "CryptoSlate",
-   "published": "2026-10-23T17:10:05+00:00",
-   "summary": "Holders who want to avoid market-rate conversion must withdraw before Monday, ahead of GMO Trust’s Nov. 11 initial direct-redemption deadline. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-gyen-usdc-transition.webp"
   },
   {
    "id": "72007269a3",
@@ -709,24 +727,6 @@
    "published": "2026-10-22T19:06:02+00:00",
    "summary": "Meta will hand shareholders a free non-voting share for every share they own in January, giving it a way to raise equity for AI spending without diluting Zuckerberg's 60.6% vote.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2026/08/meta-logo-decrypt-style-02-gID_7.jpg"
-  },
-  {
-   "id": "652693d0a5",
-   "title": "Blockchain Association pushes for crypto tax clarity as broader bill stalls",
-   "link": "https://www.theblock.co/news/regulation/2026-10-22-blockchain-association-pushes-crypto-tax-clarity-broader-bill-stalls-423475",
-   "source": "The Block",
-   "published": "2026-10-22T18:59:25+00:00",
-   "summary": "As progress stalls on a crypto bill, the Blockchain Association is urging Congress to pass legislation to resolve uncertainty around taxes.",
-   "image": "https://www.tbstat.com/cdn-cgi/image/width=1600,height=900,fit=cover,format=jpeg,quality=80/wp/uploads/2022/01/20210120_Capitol_Generic.jpg"
-  },
-  {
-   "id": "15f7527ae9",
-   "title": "Coinbase Fined Again in Ireland, This Time $3.6M Over Fund Safeguarding",
-   "link": "https://decrypt.co/381638/coinbase-fined-again-ireland-3-6m-fund-safeguarding",
-   "source": "Decrypt",
-   "published": "2026-10-22T18:36:03+00:00",
-   "summary": "The Central Bank of Ireland penalized Coinbase Ireland €3,252,618 for leaning too heavily on its U.S. parent and leaving its safeguarding account underfunded—its second hit to the exchange’s European arm in the last year.",
-   "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Coinbase_logo-nft-nyc-decrypt-style-scaled-gID_7.jpg"
   }
  ]
 }
