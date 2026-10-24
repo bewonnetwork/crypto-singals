@@ -442,36 +442,11 @@
    "also_bot": false
   },
   {
-   "coin": "WIF",
-   "market": "crypto",
-   "side": "SELL",
-   "entry": 0.1857,
-   "sl": 0.18912509260268798,
-   "tp1": 0.18227490739731203,
-   "tp2": 0.17884981479462408,
-   "score": 15,
-   "agree": 6,
-   "n": 6,
-   "src": {
-    "tv1h": -0.648,
-    "tv4h": -0.536,
-    "tv1d": -0.558,
-    "engine": -1.0,
-    "rsi": 29.3,
-    "mom": -0.96,
-    "lsr": 1.79,
-    "crowd": -0.393
-   },
-   "opened": "2026-10-24T09:45:01+00:00",
-   "status": "open",
-   "also_bot": false
-  },
-  {
    "coin": "APT",
    "market": "crypto",
    "side": "SELL",
    "entry": 0.7179,
-   "sl": 0.73309039468567,
+   "sl": 0.7179,
    "tp1": 0.7027096053143299,
    "tp2": 0.6875192106286598,
    "score": 16,
@@ -489,10 +464,29 @@
    },
    "opened": "2026-10-24T09:45:01+00:00",
    "status": "open",
-   "also_bot": false
+   "also_bot": false,
+   "tp1_hit": true
   }
  ],
  "history": [
+  {
+   "coin": "WIF",
+   "market": "crypto",
+   "side": "SELL",
+   "entry": 0.1857,
+   "sl": 0.1857,
+   "tp1": 0.18227490739731203,
+   "tp2": 0.17884981479462408,
+   "score": 15,
+   "agree": 6,
+   "n": 6,
+   "opened": "2026-10-24T09:45:01+00:00",
+   "status": "TP2",
+   "also_bot": false,
+   "tp1_hit": true,
+   "closed": "2026-10-24T17:00:31+00:00",
+   "exit": 0.1804
+  },
   {
    "coin": "XAUUSD",
    "market": "forex",
@@ -1531,29 +1525,11 @@
    "also_bot": false,
    "closed": "2026-10-13T15:18:57+00:00",
    "exit": 0.5853
-  },
-  {
-   "coin": "EURUSD",
-   "market": "forex",
-   "side": "SELL",
-   "entry": 1.1195701360702515,
-   "sl": 1.1195701360702515,
-   "tp1": 1.1182794107441634,
-   "tp2": 1.116988685418075,
-   "score": 25,
-   "agree": 4,
-   "n": 5,
-   "opened": "2026-10-12T09:14:17+00:00",
-   "status": "TP2",
-   "also_bot": false,
-   "tp1_hit": true,
-   "closed": "2026-10-12T19:04:44+00:00",
-   "exit": 1.115946888923645
   }
  ],
  "stats": {
   "tp1": 31,
-  "tp2": 11,
+  "tp2": 12,
   "sl": 27,
   "expired": 0
  },
@@ -1576,5 +1552,5 @@
   "expire_h": 48,
   "hour_utc": 6
  },
- "updated": "2026-10-24T09:45:01+00:00"
+ "updated": "2026-10-24T17:00:31+00:00"
 }

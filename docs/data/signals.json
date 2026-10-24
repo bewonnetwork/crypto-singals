@@ -49,7 +49,36 @@
   "expired": 0
  },
  "min_conf": 60,
- "open": [],
+ "open": [
+  {
+   "coin": "TRX",
+   "side": "SELL",
+   "entry": 0.3291,
+   "sl": 0.3298325210537223,
+   "tp1": 0.3283674789462777,
+   "tp2": 0.3276349578925555,
+   "tp1_hit": false,
+   "opened": "2026-10-24T15:00:00+00:00",
+   "rsi": 37.2,
+   "conf": 77,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "MACD momentum building",
+    "⚠ Weak trend (ADX 14)",
+    "Volume 2.8× the average",
+    "RSI 37 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "TRX",
+   "src": null,
+   "chk": null,
+   "note": null,
+   "from": null
+  }
+ ],
  "history": [
   {
    "coin": "FET",
@@ -1194,5 +1223,5 @@
    }
   }
  },
- "updated": "2026-10-24T05:25:19+00:00"
+ "updated": "2026-10-24T17:00:31+00:00"
 }
