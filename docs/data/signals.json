@@ -43,104 +43,24 @@
   "ZEC"
  ],
  "stats": {
-  "win": 14,
+  "win": 15,
   "loss": 15,
-  "tp2": 8,
+  "tp2": 12,
   "expired": 0
  },
  "min_conf": 60,
- "open": [
-  {
-   "coin": "AVAX",
-   "side": "SELL",
-   "entry": 9.217,
-   "sl": 9.217,
-   "tp1": 9.093196344060562,
-   "tp2": 8.969392688121124,
-   "tp1_hit": true,
-   "opened": "2026-10-23T09:00:00+00:00",
-   "rsi": 44.1,
-   "conf": 84,
-   "why": [
-    "EMA 9/21 cross + RSI in range + above-average volume",
-    "4h higher-timeframe trend agrees",
-    "Price below EMA 200",
-    "Strong trend (ADX 27)",
-    "Volume 1.6× the average",
-    "RSI 44 in the sweet spot",
-    "BTC moving the same way"
-   ],
-   "market": "crypto",
-   "name": "AVAX",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  },
-  {
-   "coin": "ONDO",
-   "side": "SELL",
-   "entry": 0.4345,
-   "sl": 0.4345,
-   "tp1": 0.42771747501321755,
-   "tp2": 0.42093495002643505,
-   "tp1_hit": true,
-   "opened": "2026-10-23T09:00:00+00:00",
-   "rsi": 45.6,
-   "conf": 79,
-   "why": [
-    "EMA 9/21 cross + RSI in range + above-average volume",
-    "4h higher-timeframe trend agrees",
-    "Price below EMA 200",
-    "Moderate trend (ADX 22)",
-    "Volume 1.5× the average",
-    "RSI 46 in the sweet spot",
-    "BTC moving the same way"
-   ],
-   "market": "crypto",
-   "name": "ONDO",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  },
-  {
-   "coin": "TAO",
-   "side": "SELL",
-   "entry": 259.8,
-   "sl": 264.0582362770915,
-   "tp1": 255.54176372290854,
-   "tp2": 251.28352744581707,
-   "tp1_hit": false,
-   "opened": "2026-10-23T14:00:00+00:00",
-   "rsi": 44.6,
-   "conf": 87,
-   "why": [
-    "EMA 9/21 cross + RSI in range + above-average volume",
-    "4h higher-timeframe trend agrees",
-    "Price below EMA 200",
-    "Moderate trend (ADX 22)",
-    "Volume 3.1× the average",
-    "RSI 45 in the sweet spot",
-    "BTC moving the same way"
-   ],
-   "market": "crypto",
-   "name": "TAO",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  },
+ "open": [],
+ "history": [
   {
    "coin": "FET",
    "side": "SELL",
    "entry": 0.1869,
-   "sl": 0.1869,
+   "sl": 0.19053427776999943,
    "tp1": 0.1832657222300006,
    "tp2": 0.1796314444600012,
-   "tp1_hit": true,
    "opened": "2026-10-23T14:00:00+00:00",
-   "rsi": 47.6,
+   "closed": "2026-10-23T22:00:00+00:00",
+   "result": "TP2",
    "conf": 78,
    "why": [
     "EMA 9/21 cross + RSI in range + above-average volume",
@@ -153,13 +73,88 @@
    ],
    "market": "crypto",
    "name": "FET",
-   "src": null,
-   "chk": null,
-   "note": null,
-   "from": null
-  }
- ],
- "history": [
+   "exit": 0.1796314444600012,
+   "mdd": 0.7,
+   "h24": null
+  },
+  {
+   "coin": "TAO",
+   "side": "SELL",
+   "entry": 259.8,
+   "sl": 264.0582362770915,
+   "tp1": 255.54176372290854,
+   "tp2": 251.28352744581707,
+   "opened": "2026-10-23T14:00:00+00:00",
+   "closed": "2026-10-23T22:00:00+00:00",
+   "result": "TP2",
+   "conf": 87,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "Moderate trend (ADX 22)",
+    "Volume 3.1× the average",
+    "RSI 45 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "TAO",
+   "exit": 251.28352744581707,
+   "mdd": 0.89,
+   "h24": null
+  },
+  {
+   "coin": "ONDO",
+   "side": "SELL",
+   "entry": 0.4345,
+   "sl": 0.44128252498678244,
+   "tp1": 0.42771747501321755,
+   "tp2": 0.42093495002643505,
+   "opened": "2026-10-23T09:00:00+00:00",
+   "closed": "2026-10-23T22:00:00+00:00",
+   "result": "TP2",
+   "conf": 79,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "Moderate trend (ADX 22)",
+    "Volume 1.5× the average",
+    "RSI 46 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "ONDO",
+   "exit": 0.42093495002643505,
+   "mdd": 0.51,
+   "h24": null
+  },
+  {
+   "coin": "AVAX",
+   "side": "SELL",
+   "entry": 9.217,
+   "sl": 9.340803655939439,
+   "tp1": 9.093196344060562,
+   "tp2": 8.969392688121124,
+   "opened": "2026-10-23T09:00:00+00:00",
+   "closed": "2026-10-23T22:00:00+00:00",
+   "result": "TP2",
+   "conf": 84,
+   "why": [
+    "EMA 9/21 cross + RSI in range + above-average volume",
+    "4h higher-timeframe trend agrees",
+    "Price below EMA 200",
+    "Strong trend (ADX 27)",
+    "Volume 1.6× the average",
+    "RSI 44 in the sweet spot",
+    "BTC moving the same way"
+   ],
+   "market": "crypto",
+   "name": "AVAX",
+   "exit": 8.969392688121124,
+   "mdd": 0.43,
+   "h24": null
+  },
   {
    "coin": "NEAR",
    "side": "BUY",
@@ -1199,5 +1194,5 @@
    }
   }
  },
- "updated": "2026-10-23T22:31:21+00:00"
+ "updated": "2026-10-24T00:59:04+00:00"
 }
