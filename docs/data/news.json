@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T00:58:28+00:00",
+ "updated": "2026-10-24T05:24:32+00:00",
  "sources": [
   "CoinDesk",
   "Decrypt",
@@ -8,6 +8,24 @@
   "The Block"
  ],
  "items": [
+  {
+   "id": "68a42d19b6",
+   "title": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
+   "link": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
+   "source": "CoinDesk",
+   "published": "2026-10-24T04:45:43+00:00",
+   "summary": "Two subscriptions on Thursday nearly quadrupled the fund’s tokens on the network. The receiving wallet shares its authorized signers with the issuer.",
+   "image": "https://cdn.sanity.io/images/s3y3vcno/production/38b95887c36694f1eb6785def8e9fef7464fc126-7680x4320.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+  },
+  {
+   "id": "807e7411e5",
+   "title": "3.3M users gain HSBC RedCoin, yet 1 strict rule blocks them",
+   "link": "https://cryptoslate.com/3-3m-users-gain-hsbc-redcoin-yet-1-strict-rule-blocks-them/",
+   "source": "CryptoSlate",
+   "published": "2026-10-24T02:20:15+00:00",
+   "summary": "Eligible users can activate RedCoin wallets for payments as access expands over coming days, while investment subscriptions remain planned for later in 2026. Read the full story on CryptoSlate Understand the crypto stories that matter and…",
+   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/redcoin-banking-barrier.webp"
+  },
   {
    "id": "69330f87b5",
    "title": "New OCC stablecoin rule resets redemptions, and banks face big shifts",
@@ -241,15 +259,6 @@
    "published": "2026-10-23T14:50:48+00:00",
    "summary": "QVAC’s dense-model example falls short of a new laptop’s cheap-cloud break-even, even using refreshed Singapore prices. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst…",
    "image": "https://cryptoslate.com/wp-content/uploads/2026/10/laptop-cloud-balance.webp"
-  },
-  {
-   "id": "e9bbc947b4",
-   "title": "Bitcoin’s $80,000 recovery faces liquidity questions as Binance’s Tether flows swing $14 billion",
-   "link": "https://cryptoslate.com/bitcoins-80000-recovery-faces-liquidity-questions-as-binances-tether-flows-swing-14-billion/",
-   "source": "CryptoSlate",
-   "published": "2026-10-23T14:00:15+00:00",
-   "summary": "The 2026 Ethereum and Tron totals measure a treasury route, without proving an equivalent cash exit from crypto. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your…",
-   "image": "https://cryptoslate.com/wp-content/uploads/2026/10/tether-token-flow-imbalance.webp"
   },
   {
    "id": "96d136b78e",
@@ -718,15 +727,6 @@
    "published": "2026-10-22T18:36:03+00:00",
    "summary": "The Central Bank of Ireland penalized Coinbase Ireland €3,252,618 for leaning too heavily on its U.S. parent and leaving its safeguarding account underfunded—its second hit to the exchange’s European arm in the last year.",
    "image": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Coinbase_logo-nft-nyc-decrypt-style-scaled-gID_7.jpg"
-  },
-  {
-   "id": "1236af7ff9",
-   "title": "A16z is the latest VC giant to widen bets beyond crypto and into AI and emerging tech",
-   "link": "https://www.coindesk.com/business/2026/10/22/a16z-is-the-latest-vc-giant-to-widen-bets-beyond-crypto-and-into-ai-and-emerging-tech",
-   "source": "CoinDesk",
-   "published": "2026-10-22T18:30:57+00:00",
-   "summary": "The venture investor behind early bets on Coinbase, Solana and Uniswap said is broadening its focus, joining other crypto investment firms looking beyond blockchain to artificial intelligence and tech themes.",
-   "image": "https://cdn.sanity.io/images/s3y3vcno/production/941dba842a1a32a077b3b9c26476efac090f9415-7081x3983.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
   }
  ]
 }
